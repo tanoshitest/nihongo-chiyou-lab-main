@@ -226,4 +226,179 @@ export const kanjiData: KanjiCard[] = [
       },
     ],
   },
+  {
+    id: 7,
+    kanji: "土",
+    onyomi: "ド、ト",
+    kunyomi: "つち",
+    meaning: "Đất",
+    sinoVietnamese: "Thổ",
+    examples: [
+      {
+        japanese: "土曜日は休みです",
+        romaji: "Doyoubi wa yasumi desu",
+        vietnamese: "Thứ bảy là ngày nghỉ",
+      },
+      {
+        japanese: "土を触ります",
+        romaji: "Tsuchi o sawarimasu",
+        vietnamese: "Chạm vào đất",
+      },
+      {
+        japanese: "お土産を買います",
+        romaji: "Omiyage o kaimasu",
+        vietnamese: "Mua quà lưu niệm",
+      },
+      {
+        japanese: "土地が高いです",
+        romaji: "Tochi ga takai desu",
+        vietnamese: "Giá đất cao",
+      },
+      {
+        japanese: "土木工事",
+        romaji: "Doboku kouji",
+        vietnamese: "Công trình xây dựng",
+      },
+    ],
+  },
+  {
+    id: 8,
+    kanji: "山",
+    onyomi: "サン",
+    kunyomi: "やま",
+    meaning: "Núi",
+    sinoVietnamese: "Sơn",
+    examples: [
+      {
+        japanese: "あの山は高いです",
+        romaji: "Ano yama wa takai desu",
+        vietnamese: "Ngọn núi kia cao",
+      },
+      {
+        japanese: "富士山に登りたいです",
+        romaji: "Fujisan ni noboritai desu",
+        vietnamese: "Tôi muốn leo núi Phú Sĩ",
+      },
+      {
+        japanese: "登山が好きです",
+        romaji: "Tozan ga suki desu",
+        vietnamese: "Tôi thích leo núi",
+      },
+      {
+        japanese: "山道",
+        romaji: "Yamamichi",
+        vietnamese: "Đường núi",
+      },
+      {
+        japanese: "火山",
+        romaji: "Kazan",
+        vietnamese: "Núi lửa",
+      },
+    ],
+  },
+  {
+    id: 9,
+    kanji: "川",
+    onyomi: "セン",
+    kunyomi: "かわ",
+    meaning: "Sông",
+    sinoVietnamese: "Xuyên",
+    examples: [
+      {
+        japanese: "川で泳ぎます",
+        romaji: "Kawa de oyogimasu",
+        vietnamese: "Bơi ở sông",
+      },
+      {
+        japanese: "小川",
+        romaji: "Ogawa",
+        vietnamese: "Con suối nhỏ",
+      },
+      {
+        japanese: "ナイル川",
+        romaji: "Nairu-gawa",
+        vietnamese: "Sông Nile",
+      },
+      {
+        japanese: "川岸を歩きます",
+        romaji: "Kawagishi o arukimasu",
+        vietnamese: "Đi bộ bên bờ sông",
+      },
+      {
+        japanese: "川口",
+        romaji: "Kawaguchi",
+        vietnamese: "Cửa sông",
+      },
+    ],
+  },
+  {
+    id: 10,
+    kanji: "田",
+    onyomi: "デン",
+    kunyomi: "た",
+    meaning: "Ruộng lúa",
+    sinoVietnamese: "Điền",
+    examples: [
+      {
+        japanese: "田んぼがあります",
+        romaji: "Tanbo ga arimasu",
+        vietnamese: "Có ruộng lúa",
+      },
+      {
+        japanese: "水田",
+        romaji: "Suiden",
+        vietnamese: "Ruộng nước",
+      },
+      {
+        japanese: "田舎に帰ります",
+        romaji: "Inaka ni kaerimasu",
+        vietnamese: "Về quê",
+      },
+      {
+        japanese: "油田",
+        romaji: "Yuden",
+        vietnamese: "Mỏ dầu",
+      },
+      {
+        japanese: "山田さんは親切です",
+        romaji: "Yamada-san wa shinsetsu desu",
+        vietnamese: "Anh Yamada rất tốt bụng",
+      },
+    ],
+  },
+  {
+    id: 11,
+    kanji: "人",
+    onyomi: "ジン、ニン",
+    kunyomi: "ひと",
+    meaning: "Người",
+    sinoVietnamese: "Nhân",
+    examples: [
+      {
+        japanese: "あの人は誰ですか",
+        romaji: "Ano hito wa dare desu ka",
+        vietnamese: "Người kia là ai vậy?",
+      },
+      {
+        japanese: "日本人",
+        romaji: "Nihonjin",
+        vietnamese: "Người Nhật",
+      },
+      {
+        japanese: "一人で食べます",
+        romaji: "Hitori de tabemasu",
+        vietnamese: "Ăn một mình",
+      },
+      {
+        japanese: "大人",
+        romaji: "Otona",
+        vietnamese: "Người lớn",
+      },
+      {
+        japanese: "恋人がいます",
+        romaji: "Koibito ga imasu",
+        vietnamese: "Có người yêu",
+      },
+    ],
+  },
 ];
