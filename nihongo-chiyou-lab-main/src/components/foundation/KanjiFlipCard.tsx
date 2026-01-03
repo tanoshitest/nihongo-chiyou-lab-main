@@ -101,7 +101,7 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
             {/* Main Content: Mnemonic Image if exists, else Big Kanji */}
             <div className="flex-1 flex flex-col items-center justify-center min-h-0">
               {kanji.imageUrl ? (
-                <div className="relative w-full h-full max-h-[220px] flex items-center justify-center">
+                <div className="relative w-full h-full max-h-[180px] flex items-center justify-center">
                   <img
                     src={kanji.imageUrl}
                     alt={`Mnemonic: ${kanji.meaning}`}
