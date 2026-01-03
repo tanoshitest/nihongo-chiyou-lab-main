@@ -1,3 +1,4 @@
+import React from "react";
 import { KanjiCard } from "@/data/kanjiData";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
@@ -14,6 +15,33 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
   const svgUrl = `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/${unicodeHex}.svg`;
   // Using a reliable GIF source. 'mistval/kanji_images' uses lowercase hex.
   const gifUrl = `https://raw.githubusercontent.com/mistval/kanji_images/master/gifs/${kanji.kanji.charCodeAt(0).toString(16).toLowerCase()}.gif`;
+
+  const [svgContent, setSvgContent] = React.useState<string | null>(null);
+
+  React.useEffect(() => {
+    // Fetch SVG content to manipulate it (Hide paths, Bold numbers)
+    fetch(svgUrl)
+      .then((res) => res.text())
+      .then((text) => {
+        // 1. Hide the black stroke paths so they don't obscure the GIF
+        // Format is usually: <g id="kvg:StrokePaths_..." style="fill:none;stroke:#000000;...">
+        // We replace the style to display:none
+        let processed = text.replace(
+          /id="kvg:StrokePaths_[^"]*" style="[^"]*"/g,
+          'style="display:none"'
+        );
+
+        // 2. Make numbers bolder and darker
+        // Format is usually: <g id="kvg:StrokeNumbers_..." style="font-size:8;fill:#808080">
+        processed = processed.replace(
+          /style="font-size:8;fill:#808080"/g,
+          'style="font-size:10px;fill:#000000;font-weight:900;"'
+        );
+
+        setSvgContent(processed);
+      })
+      .catch((err) => console.error("Failed to load SVG", err));
+  }, [svgUrl]);
 
   return (
     <div
@@ -117,14 +145,13 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
                   onError={(e) => { e.currentTarget.style.display = 'none'; }}
                 />
 
-                {/* Layer 2: Static SVG with Numbers (Overlay) 
-                    Set opacity low so black strokes don't block GIF, but numbers remain visible-ish.
-                */}
-                <img
-                  src={svgUrl}
-                  alt="Numbers"
-                  className="absolute inset-0 w-full h-full object-contain z-20 opacity-30 pointer-events-none"
-                />
+                {/* Layer 2: Modified Inline SVG (Only numbers, bold) */}
+                {svgContent && (
+                  <div
+                    className="absolute inset-0 w-full h-full z-20 pointer-events-none"
+                    dangerouslySetInnerHTML={{ __html: svgContent }}
+                  />
+                )}
               </div>
             </div>
 
