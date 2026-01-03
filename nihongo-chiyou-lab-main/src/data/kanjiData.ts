@@ -8,7 +8,9 @@ export interface KanjiCard {
   id: number;
   kanji: string;
   onyomi: string;
+  onyomiRomaji?: string;
   kunyomi: string;
+  kunyomiRomaji?: string;
   meaning: string;
   sinoVietnamese: string;
   imageUrl?: string;
@@ -16,16 +18,18 @@ export interface KanjiCard {
   examples: KanjiExample[];
 }
 
-export const kanjiData: KanjiCard[] = [
+export const kanjiList: KanjiCard[] = [
   {
     id: 1,
     kanji: "日",
     lesson: 1,
     imageUrl: "/images/kanji/1_sun_anime_v2.png",
     onyomi: "ニチ、ジツ",
+    onyomiRomaji: "nichi, jitsu",
     kunyomi: "ひ、か",
+    kunyomiRomaji: "hi, ka",
     meaning: "Mặt trời, Ngày",
-    sinoVietnamese: "Nhật",
+    sinoVietnamese: "NHẬT",
     examples: [
       {
         japanese: "日曜日に行きます",

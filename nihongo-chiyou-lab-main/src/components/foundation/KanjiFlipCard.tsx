@@ -125,17 +125,42 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
             </div>
 
             {/* Meaning & Readings */}
-            <div className="text-center mt-4 pt-4 border-t border-border/50">
-              <p className="text-lg font-medium text-foreground">
+            <div className="text-center mt-4 pt-4 border-t border-border/50 w-full">
+              <p className="text-lg font-bold text-foreground mb-3 uppercase tracking-wide">
                 {kanji.meaning}
               </p>
-              <p className="text-sm text-muted-foreground mt-1">
-                音: {kanji.onyomi} | 訓: {kanji.kunyomi}
-              </p>
+
+              <div className="space-y-2 text-sm text-left px-4">
+                {/* Onyomi Row */}
+                <div className="flex items-start gap-2">
+                  <span className="font-semibold text-muted-foreground w-16 shrink-0">Âm On:</span>
+                  <div className="flex flex-col">
+                    <span className="font-medium text-foreground">{kanji.onyomi}</span>
+                    {kanji.onyomiRomaji && (
+                      <span className="text-xs text-muted-foreground italic">
+                        {kanji.onyomiRomaji}
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                {/* Kunyomi Row */}
+                <div className="flex items-start gap-2">
+                  <span className="font-semibold text-muted-foreground w-16 shrink-0">Âm Kun:</span>
+                  <div className="flex flex-col">
+                    <span className="font-medium text-foreground">{kanji.kunyomi}</span>
+                    {kanji.kunyomiRomaji && (
+                      <span className="text-xs text-muted-foreground italic">
+                        {kanji.kunyomiRomaji}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Click hint */}
-            <p className="text-xs text-muted-foreground text-center mt-3">
+            <p className="text-xs text-muted-foreground text-center mt-auto pt-2">
               Click để xem cách viết
             </p>
           </div>
