@@ -46,12 +46,13 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
         `;
 
         // Generate delay for each stroke (s1, s2, s3...)
-        // Id pattern in KanjiVG is "kvg:xxxxx-sN"
+        // We add .animate-drawing class requirement so animation only triggers when flipped
+        // We also add 300ms base delay to wait for flip to partially complete
         for (let i = 1; i <= 30; i++) {
           styles += `
-             path[id$="-s${i}"] {
+             .animate-drawing path[id$="-s${i}"] {
                animation: draw 0.8s linear forwards;
-               animation-delay: ${(i - 1) * 0.8}s;
+               animation-delay: ${0.4 + (i - 1) * 0.8}s; 
              }
            `;
         }
@@ -161,9 +162,7 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
               <div className="w-[180px] h-[180px] relative flex items-center justify-center">
                 {svgContent ? (
                   <div
-                    className="w-full h-full"
-                    // Force re-render when flipped to restart animation
-                    key={isFlipped ? 'playing' : 'stopped'}
+                    className={cn("w-full h-full", isFlipped && "animate-drawing")}
                     dangerouslySetInnerHTML={{ __html: svgContent }}
                   />
                 ) : (
