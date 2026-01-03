@@ -10,9 +10,10 @@ interface KanjiFlipCardProps {
 
 const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
   // Get Unicode hex code for the Kanji (e.g. '日' -> '65e5')
-  // KanjiVG files use lowercase hex, usually padded to 5 chars (e.g. 065e5)
   const unicodeHex = kanji.kanji.charCodeAt(0).toString(16).toLowerCase().padStart(5, '0');
   const svgUrl = `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/${unicodeHex}.svg`;
+  // Using a reliable GIF source. 'mistval/kanji_images' uses lowercase hex.
+  const gifUrl = `https://raw.githubusercontent.com/mistval/kanji_images/master/gifs/${kanji.kanji.charCodeAt(0).toString(16).toLowerCase()}.gif`;
 
   return (
     <div
@@ -89,7 +90,7 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
           </div>
         </div>
 
-        {/* Back Side - Stroke Order Diagram & Examples */}
+        {/* Back Side - Stroke Order GIF & Numbered SVG Overlay */}
         <div
           className="absolute inset-0 w-full h-full backface-hidden rotate-y-180"
           style={{
@@ -101,22 +102,28 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
             {/* Header */}
             <div className="text-center border-b border-border pb-2 mb-2">
               <h3 className="text-sm font-semibold text-foreground">
-                Thứ tự nét (Có số)
+                Thứ tự nét (GIF + Số)
               </h3>
             </div>
 
-            {/* Stroke Order SVG - Square & Centered */}
-            <div className="flex justify-center mb-3 bg-white rounded-lg p-2 border border-border/50 shadow-sm">
+            {/* Stroke Order Visual Area */}
+            <div className="flex justify-center mb-3 bg-white rounded-lg p-2 border border-border/50 shadow-sm relative overflow-hidden">
               <div className="w-[180px] h-[180px] relative">
+                {/* Layer 1: Animated GIF */}
+                <img
+                  src={gifUrl}
+                  alt="Animation"
+                  className="absolute inset-0 w-full h-full object-contain z-10"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                />
+
+                {/* Layer 2: Static SVG with Numbers (Overlay) 
+                    Set opacity low so black strokes don't block GIF, but numbers remain visible-ish.
+                */}
                 <img
                   src={svgUrl}
-                  alt={`Thứ tự nét viết ${kanji.kanji}`}
-                  className="w-full h-full object-contain"
-                  style={{ filter: "grayscale(100%) brightness(0.2)" }}
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.parentElement!.innerText = 'Không có ảnh hướng dẫn';
-                  }}
+                  alt="Numbers"
+                  className="absolute inset-0 w-full h-full object-contain z-20 opacity-30 pointer-events-none"
                 />
               </div>
             </div>
