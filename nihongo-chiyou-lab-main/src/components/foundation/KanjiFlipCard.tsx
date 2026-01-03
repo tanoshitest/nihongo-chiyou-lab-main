@@ -13,31 +13,53 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
   // Get Unicode hex code for the Kanji (e.g. '日' -> '65e5')
   const unicodeHex = kanji.kanji.charCodeAt(0).toString(16).toLowerCase().padStart(5, '0');
   const svgUrl = `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/${unicodeHex}.svg`;
-  // Using a reliable GIF source. 'mistval/kanji_images' uses lowercase hex.
-  const gifUrl = `https://raw.githubusercontent.com/mistval/kanji_images/master/gifs/${kanji.kanji.charCodeAt(0).toString(16).toLowerCase()}.gif`;
 
   const [svgContent, setSvgContent] = React.useState<string | null>(null);
 
   React.useEffect(() => {
-    // Fetch SVG content to manipulate it (Hide paths, Bold numbers)
+    setSvgContent(null); // Reset on kanji change
+
     fetch(svgUrl)
       .then((res) => res.text())
       .then((text) => {
-        // 1. Hide the black stroke paths so they don't obscure the GIF
-        // Format is usually: <g id="kvg:StrokePaths_..." style="fill:none;stroke:#000000;...">
-        // We replace the style to display:none
-        let processed = text.replace(
-          /id="kvg:StrokePaths_[^"]*" style="[^"]*"/g,
-          'style="display:none"'
-        );
+        // We will inject a <style> block into the SVG to animate the paths
 
-        // 2. Make numbers bolder and darker
-        // Format is usually: <g id="kvg:StrokeNumbers_..." style="font-size:8;fill:#808080">
-        processed = processed.replace(
-          /style="font-size:8;fill:#808080"/g,
-          'style="font-size:10px;fill:#000000;font-weight:900;"'
-        );
+        // 1. Generate Keyframes and Animation Delay for up to 30 strokes
+        let styles = `
+          @keyframes draw { to { stroke-dashoffset: 0; } }
+          path { 
+            stroke-dasharray: 500; 
+            stroke-dashoffset: 500; 
+            stroke: #000000; 
+            stroke-width: 3; 
+            stroke-linecap: round; 
+            stroke-linejoin: round; 
+          }
+          /* Style numbers: Bold and Black */
+          text { 
+            font-size: 8px !important; 
+            font-family: sans-serif; 
+            font-weight: 900 !important; 
+            fill: #000000 !important; 
+            opacity: 0.6;
+          }
+        `;
 
+        // Generate delay for each stroke (s1, s2, s3...)
+        // Id pattern in KanjiVG is "kvg:xxxxx-sN"
+        for (let i = 1; i <= 30; i++) {
+          styles += `
+             path[id$="-s${i}"] {
+               animation: draw 0.8s linear forwards;
+               animation-delay: ${(i - 1) * 0.8}s;
+             }
+           `;
+        }
+
+        const styleBlock = `<style>${styles}</style>`;
+
+        // Insert style before closing svg tag
+        const processed = text.replace('</svg>', `${styleBlock}</svg>`);
         setSvgContent(processed);
       })
       .catch((err) => console.error("Failed to load SVG", err));
@@ -118,7 +140,7 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
           </div>
         </div>
 
-        {/* Back Side - Stroke Order GIF & Numbered SVG Overlay */}
+        {/* Back Side - Animated Stroke Order & Numbers */}
         <div
           className="absolute inset-0 w-full h-full backface-hidden rotate-y-180"
           style={{
@@ -130,27 +152,22 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
             {/* Header */}
             <div className="text-center border-b border-border pb-2 mb-2">
               <h3 className="text-sm font-semibold text-foreground">
-                Thứ tự nét (GIF + Số)
+                Thứ tự nét (Hoạt họa)
               </h3>
             </div>
 
-            {/* Stroke Order Visual Area */}
+            {/* Stroke Order Visual Area - White BG */}
             <div className="flex justify-center mb-3 bg-white rounded-lg p-2 border border-border/50 shadow-sm relative overflow-hidden">
-              <div className="w-[180px] h-[180px] relative">
-                {/* Layer 1: Animated GIF */}
-                <img
-                  src={gifUrl}
-                  alt="Animation"
-                  className="absolute inset-0 w-full h-full object-contain z-10"
-                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                />
-
-                {/* Layer 2: Modified Inline SVG (Only numbers, bold) */}
-                {svgContent && (
+              <div className="w-[180px] h-[180px] relative flex items-center justify-center">
+                {svgContent ? (
                   <div
-                    className="absolute inset-0 w-full h-full z-20 pointer-events-none"
+                    className="w-full h-full"
+                    // Force re-render when flipped to restart animation
+                    key={isFlipped ? 'playing' : 'stopped'}
                     dangerouslySetInnerHTML={{ __html: svgContent }}
                   />
+                ) : (
+                  <div className="text-xs text-muted-foreground">Loading guide...</div>
                 )}
               </div>
             </div>
