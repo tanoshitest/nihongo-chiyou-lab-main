@@ -18,12 +18,12 @@ export interface KanjiCard {
   examples: KanjiExample[];
 }
 
-export const kanjiList: KanjiCard[] = [
+export const kanjiData: KanjiCard[] = [
   {
     id: 1,
     kanji: "日",
     lesson: 1,
-    imageUrl: "/images/kanji/1_sun_3d.png",
+    imageUrl: "/images/kanji/1_sun_3d_iso.png",
     onyomi: "ニチ、ジツ",
     onyomiRomaji: "nichi, jitsu",
     kunyomi: "ひ、か",
@@ -62,8 +62,11 @@ export const kanjiList: KanjiCard[] = [
     id: 2,
     kanji: "月",
     lesson: 1,
+    imageUrl: "/images/kanji/2_moon_3d.png",
     onyomi: "ゲツ、ガツ",
+    onyomiRomaji: "getsu, gatsu",
     kunyomi: "つき",
+    kunyomiRomaji: "tsuki",
     meaning: "Mặt trăng, Tháng",
     sinoVietnamese: "Nguyệt",
     examples: [
@@ -98,8 +101,11 @@ export const kanjiList: KanjiCard[] = [
     id: 3,
     kanji: "火",
     lesson: 1,
+    imageUrl: "/images/kanji/3_fire_3d.png",
     onyomi: "カ",
+    onyomiRomaji: "ka",
     kunyomi: "ひ",
+    kunyomiRomaji: "hi",
     meaning: "Lửa",
     sinoVietnamese: "Hỏa",
     examples: [
@@ -134,8 +140,11 @@ export const kanjiList: KanjiCard[] = [
     id: 4,
     kanji: "水",
     lesson: 1,
+    imageUrl: "/images/kanji/4_water_3d.png",
     onyomi: "スイ",
+    onyomiRomaji: "sui",
     kunyomi: "みず",
+    kunyomiRomaji: "mizu",
     meaning: "Nước",
     sinoVietnamese: "Thủy",
     examples: [
@@ -170,8 +179,11 @@ export const kanjiList: KanjiCard[] = [
     id: 5,
     kanji: "木",
     lesson: 1,
+    imageUrl: "/images/kanji/5_tree_3d.png",
     onyomi: "モク、ボク",
+    onyomiRomaji: "moku, boku",
     kunyomi: "き、こ",
+    kunyomiRomaji: "ki, ko",
     meaning: "Cây, Gỗ",
     sinoVietnamese: "Mộc",
     examples: [
@@ -206,8 +218,11 @@ export const kanjiList: KanjiCard[] = [
     id: 6,
     kanji: "金",
     lesson: 1,
+    imageUrl: "/images/kanji/6_gold_3d.png",
     onyomi: "キン、コン",
+    onyomiRomaji: "kin, kon",
     kunyomi: "かね、かな",
+    kunyomiRomaji: "kane, kana",
     meaning: "Vàng, Tiền",
     sinoVietnamese: "Kim",
     examples: [
@@ -242,8 +257,11 @@ export const kanjiList: KanjiCard[] = [
     id: 7,
     kanji: "土",
     lesson: 1,
+    imageUrl: "/images/kanji/7_earth_3d.png",
     onyomi: "ド、ト",
+    onyomiRomaji: "do, to",
     kunyomi: "つち",
+    kunyomiRomaji: "tsuchi",
     meaning: "Đất",
     sinoVietnamese: "Thổ",
     examples: [
@@ -278,8 +296,11 @@ export const kanjiList: KanjiCard[] = [
     id: 8,
     kanji: "山",
     lesson: 1,
+    imageUrl: "/images/kanji/8_mountain_3d.png",
     onyomi: "サン",
+    onyomiRomaji: "san",
     kunyomi: "やま",
+    kunyomiRomaji: "yama",
     meaning: "Núi",
     sinoVietnamese: "Sơn",
     examples: [
@@ -314,8 +335,11 @@ export const kanjiList: KanjiCard[] = [
     id: 9,
     kanji: "川",
     lesson: 1,
+    imageUrl: "/images/kanji/9_river_3d.png",
     onyomi: "セン",
+    onyomiRomaji: "sen",
     kunyomi: "かわ",
+    kunyomiRomaji: "kawa",
     meaning: "Sông",
     sinoVietnamese: "Xuyên",
     examples: [
@@ -350,8 +374,11 @@ export const kanjiList: KanjiCard[] = [
     id: 10,
     kanji: "田",
     lesson: 1,
+    imageUrl: "/images/kanji/10_ricefield_3d.png",
     onyomi: "デン",
+    onyomiRomaji: "den",
     kunyomi: "た",
+    kunyomiRomaji: "ta",
     meaning: "Ruộng lúa",
     sinoVietnamese: "Điền",
     examples: [
@@ -386,8 +413,11 @@ export const kanjiList: KanjiCard[] = [
     id: 11,
     kanji: "人",
     lesson: 1,
+    imageUrl: "/images/kanji/11_person_3d.png",
     onyomi: "ジン、ニン",
+    onyomiRomaji: "jin, nin",
     kunyomi: "ひと",
+    kunyomiRomaji: "hito",
     meaning: "Người",
     sinoVietnamese: "Nhân",
     examples: [

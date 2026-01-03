@@ -105,7 +105,7 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
                   <img
                     src={kanji.imageUrl}
                     alt={`Mnemonic: ${kanji.meaning}`}
-                    className="w-full h-full object-contain rounded-md"
+                    className="w-full h-full object-contain rounded-md mix-blend-multiply"
                   />
                 </div>
               ) : (
