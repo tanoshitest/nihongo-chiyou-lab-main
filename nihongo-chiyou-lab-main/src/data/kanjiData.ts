@@ -9913,386 +9913,251 @@ export const kanjiData: KanjiCard[] = [
   },
   {
     id: 313,
-    kanji: "政",
-    onyomi: "セイ",
-    kunyomi: "まつりごと",
-    meaning: "Chính, Chính trị",
-    sinoVietnamese: "Chính",
+    kanji: "波",
+    onyomi: "ハ",
+    kunyomi: "なみ",
+    meaning: "Ba, Sóng",
+    sinoVietnamese: "Ba",
     examples: [
       {
-        japanese: "政治",
-        romaji: "Seiji",
-        vietnamese: "Chính trị"
+        japanese: "波",
+        romaji: "Nami",
+        vietnamese: "Sóng"
       },
       {
-        japanese: "政府",
-        romaji: "Seifu",
-        vietnamese: "Chính phủ"
+        japanese: "電波",
+        romaji: "Denpa",
+        vietnamese: "Sóng điện"
       },
       {
-        japanese: "行政",
-        romaji: "Gyousei",
-        vietnamese: "Hành chính"
+        japanese: "津波",
+        romaji: "Tsunami",
+        vietnamese: "Sóng thần"
       }
     ]
   },
   {
     id: 314,
-    kanji: "治",
-    onyomi: "ジ、チ",
-    kunyomi: "おさ・める、なお・る",
-    meaning: "Trị, Cai trị, Chữa trị",
-    sinoVietnamese: "Trị",
+    kanji: "場",
+    onyomi: "ジョウ",
+    kunyomi: "ば",
+    meaning: "Trường, Nơi chốn",
+    sinoVietnamese: "Trường",
     examples: [
       {
-        japanese: "政治",
-        romaji: "Seiji",
-        vietnamese: "Chính trị"
+        japanese: "場所",
+        romaji: "Basho",
+        vietnamese: "Nơi chốn"
       },
       {
-        japanese: "治します",
-        romaji: "Naoshimasu",
-        vietnamese: "Chữa bệnh"
+        japanese: "工場",
+        romaji: "Koujou",
+        vietnamese: "Nhà máy"
       },
       {
-        japanese: "明治",
-        romaji: "Meiji",
-        vietnamese: "Thời Minh Trị"
+        japanese: "会場",
+        romaji: "Kaijou",
+        vietnamese: "Hội trường"
       }
     ]
   },
   {
     id: 315,
-    kanji: "経",
-    onyomi: "ケイ",
-    kunyomi: "へ・る",
-    meaning: "Kinh, Kinh tế",
-    sinoVietnamese: "Kinh",
+    kanji: "戸",
+    onyomi: "コ",
+    kunyomi: "と",
+    meaning: "Hộ, Cửa",
+    sinoVietnamese: "Hộ",
     examples: [
       {
-        japanese: "経済",
-        romaji: "Keizai",
-        vietnamese: "Kinh tế"
+        japanese: "戸",
+        romaji: "To",
+        vietnamese: "Cửa"
       },
       {
-        japanese: "経営",
-        romaji: "Keiei",
-        vietnamese: "Kinh doanh"
+        japanese: "井戸",
+        romaji: "Ido",
+        vietnamese: "Cái giếng"
       },
       {
-        japanese: "経験",
-        romaji: "Keiken",
-        vietnamese: "Kinh nghiệm"
+        japanese: "神戸",
+        romaji: "Koube",
+        vietnamese: "Kobe (tên địa danh)"
       }
     ]
   },
   {
     id: 316,
-    kanji: "済",
-    onyomi: "サイ",
-    kunyomi: "す・む",
-    meaning: "Tế, Hoàn thành",
-    sinoVietnamese: "Tế",
+    kanji: "所",
+    onyomi: "ショ",
+    kunyomi: "ところ",
+    meaning: "Sở, Nơi chốn",
+    sinoVietnamese: "Sở",
     examples: [
       {
-        japanese: "経済",
-        romaji: "Keizai",
-        vietnamese: "Kinh tế"
+        japanese: "所",
+        romaji: "Tokoro",
+        vietnamese: "Nơi chốn"
       },
       {
-        japanese: "済みます",
-        romaji: "Sumimasu",
-        vietnamese: "Xong, hoàn thành"
+        japanese: "台所",
+        romaji: "Daidokoro",
+        vietnamese: "Nhà bếp"
       },
       {
-        japanese: "返済",
-        romaji: "Hensai",
-        vietnamese: "Hoàn trả"
+        japanese: "住所",
+        romaji: "Juusho",
+        vietnamese: "Địa chỉ"
+      },
+      {
+        japanese: "事務所",
+        romaji: "Jimusho",
+        vietnamese: "Văn phòng"
       }
     ]
   },
   {
     id: 317,
-    kanji: "歴",
-    onyomi: "レキ",
-    kunyomi: "",
-    meaning: "Lịch, Lý lịch",
-    sinoVietnamese: "Lịch",
+    kanji: "屋",
+    onyomi: "オク",
+    kunyomi: "や",
+    meaning: "Ốc, Mái nhà, Cửa hàng",
+    sinoVietnamese: "Ốc",
     examples: [
       {
-        japanese: "歴史",
-        romaji: "Rekishi",
-        vietnamese: "Lịch sử"
+        japanese: "部屋",
+        romaji: "Heya",
+        vietnamese: "Căn phòng"
       },
       {
-        japanese: "履歴書",
-        romaji: "Rirekisho",
-        vietnamese: "Sơ yếu lý lịch"
+        japanese: "本屋",
+        romaji: "Honya",
+        vietnamese: "Hiệu sách"
       },
       {
-        japanese: "学歴",
-        romaji: "Gakureki",
-        vietnamese: "Học vấn"
+        japanese: "屋上",
+        romaji: "Okujou",
+        vietnamese: "Sân thượng"
+      },
+      {
+        japanese: "八百屋",
+        romaji: "Yaoya",
+        vietnamese: "Cửa hàng rau"
       }
     ]
   },
   {
     id: 318,
-    kanji: "史",
-    onyomi: "シ",
+    kanji: "堂",
+    onyomi: "ドウ",
     kunyomi: "",
-    meaning: "Sử, Lịch sử",
-    sinoVietnamese: "Sử",
+    meaning: "Đường, Nhà lớn",
+    sinoVietnamese: "Đường",
     examples: [
       {
-        japanese: "歴史",
-        romaji: "Rekishi",
-        vietnamese: "Lịch sử"
+        japanese: "食堂",
+        romaji: "Shokudou",
+        vietnamese: "Nhà ăn"
       },
       {
-        japanese: "日本史",
-        romaji: "Nihonshi",
-        vietnamese: "Lịch sử Nhật Bản"
+        japanese: "公会堂",
+        romaji: "Koukaidou",
+        vietnamese: "Tòa thị chính"
+      },
+      {
+        japanese: "講堂",
+        romaji: "Koudou",
+        vietnamese: "Giảng đường"
       }
     ]
   },
   {
     id: 319,
-    kanji: "育",
-    onyomi: "イク",
-    kunyomi: "そだ・つ、そだ・てる",
-    meaning: "Dục, Giáo dục",
-    sinoVietnamese: "Dục",
+    kanji: "都",
+    onyomi: "ト、ツ",
+    kunyomi: "みやこ",
+    meaning: "Đô, Kinh đô",
+    sinoVietnamese: "Đô",
     examples: [
       {
-        japanese: "育てます",
-        romaji: "Sodatemasu",
-        vietnamese: "Nuôi nấng"
+        japanese: "東京都",
+        romaji: "Toukyouto",
+        vietnamese: "Thủ đô Tokyo"
       },
       {
-        japanese: "教育",
-        romaji: "Kyouiku",
-        vietnamese: "Giáo dục"
+        japanese: "都会",
+        romaji: "Tokai",
+        vietnamese: "Thành thị"
       },
       {
-        japanese: "体育",
-        romaji: "Taiiku",
-        vietnamese: "Thể dục"
+        japanese: "都合",
+        romaji: "Tsugou",
+        vietnamese: "Hoàn cảnh, thuận tiện"
+      },
+      {
+        japanese: "京都",
+        romaji: "Kyouto",
+        vietnamese: "Kyoto"
       }
     ]
   },
   {
     id: 320,
-    kanji: "化",
-    onyomi: "カ、ケ",
-    kunyomi: "ば・ける",
-    meaning: "Hóa, Biến hóa",
-    sinoVietnamese: "Hóa",
+    kanji: "県",
+    onyomi: "ケン",
+    kunyomi: "",
+    meaning: "Huyện, Tỉnh",
+    sinoVietnamese: "Huyện",
     examples: [
       {
-        japanese: "文化",
-        romaji: "Bunka",
-        vietnamese: "Văn hóa"
+        japanese: "県",
+        romaji: "Ken",
+        vietnamese: "Tỉnh"
       },
       {
-        japanese: "化学",
-        romaji: "Kagaku",
-        vietnamese: "Hóa học"
+        japanese: "県知事",
+        romaji: "Kenchiji",
+        vietnamese: "Tỉnh trưởng"
       },
       {
-        japanese: "変化",
-        romaji: "Henka",
-        vietnamese: "Biến hóa"
-      },
-      {
-        japanese: "お化け",
-        romaji: "Obake",
-        vietnamese: "Ma quỷ"
+        japanese: "県庁",
+        romaji: "Kenchou",
+        vietnamese: "Ủy ban tỉnh"
       }
     ]
   },
   {
     id: 321,
-    kanji: "理",
-    onyomi: "リ",
+    kanji: "区",
+    onyomi: "ク",
     kunyomi: "",
-    meaning: "Lý, Lý do",
-    sinoVietnamese: "Lý",
+    meaning: "Khu, Quận",
+    sinoVietnamese: "Khu",
     examples: [
       {
-        japanese: "理由",
-        romaji: "Riyuu",
-        vietnamese: "Lý do"
+        japanese: "区",
+        romaji: "Ku",
+        vietnamese: "Quận"
       },
       {
-        japanese: "物理",
-        romaji: "Butsuri",
-        vietnamese: "Vật lý"
+        japanese: "区役所",
+        romaji: "Kuyakusho",
+        vietnamese: "Ủy ban quận"
       },
       {
-        japanese: "料理",
-        romaji: "Ryouri",
-        vietnamese: "Món ăn"
+        japanese: "区別",
+        romaji: "Kubetsu",
+        vietnamese: "Phân biệt"
       },
       {
-        japanese: "無理な",
-        romaji: "Muri na",
-        vietnamese: "Vô lý, quá sức"
+        japanese: "地区",
+        romaji: "Chiku",
+        vietnamese: "Khu vực"
       }
     ]
   },
   {
     id: 322,
-    kanji: "科",
-    onyomi: "カ",
-    kunyomi: "",
-    meaning: "Khoa, Khoa học",
-    sinoVietnamese: "Khoa",
-    examples: [
-      {
-        japanese: "科学",
-        romaji: "Kagaku",
-        vietnamese: "Khoa học"
-      },
-      {
-        japanese: "教科書",
-        romaji: "Kyoukasho",
-        vietnamese: "Sách giáo khoa"
-      },
-      {
-        japanese: "学科",
-        romaji: "Gakka",
-        vietnamese: "Khoa (trường học)"
-      }
-    ]
-  },
-  {
-    id: 323,
-    kanji: "数",
-    onyomi: "スウ",
-    kunyomi: "かず、かぞ・える",
-    meaning: "Số, Số học",
-    sinoVietnamese: "Số",
-    examples: [
-      {
-        japanese: "数",
-        romaji: "Kazu",
-        vietnamese: "Số"
-      },
-      {
-        japanese: "数えます",
-        romaji: "Kazoemasu",
-        vietnamese: "Đếm"
-      },
-      {
-        japanese: "数学",
-        romaji: "Suugaku",
-        vietnamese: "Toán học"
-      },
-      {
-        japanese: "数字",
-        romaji: "Suuji",
-        vietnamese: "Con số"
-      }
-    ]
-  },
-  {
-    id: 324,
-    kanji: "法",
-    onyomi: "ホウ",
-    kunyomi: "",
-    meaning: "Pháp, Pháp luật",
-    sinoVietnamese: "Pháp",
-    examples: [
-      {
-        japanese: "法律",
-        romaji: "Houritsu",
-        vietnamese: "Pháp luật"
-      },
-      {
-        japanese: "方法",
-        romaji: "Houhou",
-        vietnamese: "Phương pháp"
-      },
-      {
-        japanese: "文法",
-        romaji: "Bunpou",
-        vietnamese: "Ngữ pháp"
-      }
-    ]
-  },
-  {
-    id: 325,
-    kanji: "律",
-    onyomi: "リツ",
-    kunyomi: "",
-    meaning: "Luật, Luật pháp",
-    sinoVietnamese: "Luật",
-    examples: [
-      {
-        japanese: "法律",
-        romaji: "Houritsu",
-        vietnamese: "Pháp luật"
-      },
-      {
-        japanese: "規律",
-        romaji: "Kiritsu",
-        vietnamese: "Kỷ luật"
-      }
-    ]
-  },
-  {
-    id: 326,
-    kanji: "際",
-    onyomi: "サイ",
-    kunyomi: "きわ",
-    meaning: "Tế, Quốc tế",
-    sinoVietnamese: "Tế",
-    examples: [
-      {
-        japanese: "国際",
-        romaji: "Kokusai",
-        vietnamese: "Quốc tế"
-      },
-      {
-        japanese: "交際",
-        romaji: "Kousai",
-        vietnamese: "Giao du, hẹn hò"
-      },
-      {
-        japanese: "実際",
-        romaji: "Jissai",
-        vietnamese: "Thực tế"
-      }
-    ]
-  },
-  {
-    id: 327,
-    kanji: "院",
-    onyomi: "イン",
-    kunyomi: "",
-    meaning: "Viện, Bệnh viện",
-    sinoVietnamese: "Viện",
-    examples: [
-      {
-        japanese: "病院",
-        romaji: "Byouin",
-        vietnamese: "Bệnh viện"
-      },
-      {
-        japanese: "入院",
-        romaji: "Nyuuin",
-        vietnamese: "Nhập viện"
-      },
-      {
-        japanese: "大学院",
-        romaji: "Daigakuin",
-        vietnamese: "Cao học"
-      }
-    ]
-  },
-  {
-    id: 328,
     kanji: "信",
     onyomi: "シン",
     kunyomi: "",
@@ -10322,7 +10187,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 329,
+    id: 323,
     kanji: "映",
     onyomi: "エイ",
     kunyomi: "うつ・る、うつ・す",
@@ -10347,7 +10212,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 330,
+    id: 324,
     kanji: "画",
     onyomi: "ガ、カク",
     kunyomi: "",
@@ -10377,7 +10242,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 331,
+    id: 325,
     kanji: "写",
     onyomi: "シャ",
     kunyomi: "うつ・す、うつ・る",
@@ -10402,7 +10267,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 332,
+    id: 326,
     kanji: "真",
     onyomi: "シン",
     kunyomi: "ま",
@@ -10432,7 +10297,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 333,
+    id: 327,
     kanji: "音",
     onyomi: "オン",
     kunyomi: "おと、ね",
@@ -10457,7 +10322,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 334,
+    id: 328,
     kanji: "楽",
     onyomi: "ガク、ラク",
     kunyomi: "たの・しい",
@@ -10487,7 +10352,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 335,
+    id: 329,
     kanji: "料",
     onyomi: "リョウ",
     kunyomi: "",
@@ -10517,7 +10382,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 336,
+    id: 330,
     kanji: "組",
     onyomi: "ソ",
     kunyomi: "く・む、くみ",
@@ -10542,207 +10407,562 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 337,
-    kanji: "歌",
-    onyomi: "カ",
-    kunyomi: "うた、うた・う",
-    meaning: "Ca, Bài hát",
-    sinoVietnamese: "Ca",
+    id: 331,
+    kanji: "思",
+    onyomi: "シ",
+    kunyomi: "おも・う",
+    meaning: "Tư, Nghĩ",
+    sinoVietnamese: "Tư",
     examples: [
       {
-        japanese: "歌",
-        romaji: "Uta",
-        vietnamese: "Bài hát"
+        japanese: "思います",
+        romaji: "Omoimasu",
+        vietnamese: "Nghĩ"
       },
       {
-        japanese: "歌います",
-        romaji: "Utaimasu",
-        vietnamese: "Hát"
+        japanese: "思い出します",
+        romaji: "Omoidashimasu",
+        vietnamese: "Nhớ lại"
       },
       {
-        japanese: "歌手",
-        romaji: "Kashu",
-        vietnamese: "Ca sĩ"
+        japanese: "思い出",
+        romaji: "Omoide",
+        vietnamese: "Kỷ niệm"
+      }
+    ]
+  },
+  {
+    id: 332,
+    kanji: "色",
+    onyomi: "ショク、シキ",
+    kunyomi: "いろ",
+    meaning: "Sắc, Màu sắc",
+    sinoVietnamese: "Sắc",
+    examples: [
+      {
+        japanese: "色",
+        romaji: "Iro",
+        vietnamese: "Màu sắc"
       },
       {
-        japanese: "歌詞",
-        romaji: "Kashi",
-        vietnamese: "Lời bài hát"
+        japanese: "景色",
+        romaji: "Keshiki",
+        vietnamese: "Phong cảnh"
+      },
+      {
+        japanese: "特色",
+        romaji: "Tokushoku",
+        vietnamese: "Đặc sắc"
+      }
+    ]
+  },
+  {
+    id: 333,
+    kanji: "白",
+    onyomi: "ハク",
+    kunyomi: "しろ、しろ・い",
+    meaning: "Bạch, Trắng",
+    sinoVietnamese: "Bạch",
+    examples: [
+      {
+        japanese: "白い",
+        romaji: "Shiroi",
+        vietnamese: "Trắng"
+      },
+      {
+        japanese: "白鳥",
+        romaji: "Hakuchou",
+        vietnamese: "Thiên nga"
+      },
+      {
+        japanese: "白紙",
+        romaji: "Hakushi",
+        vietnamese: "Giấy trắng"
+      }
+    ]
+  },
+  {
+    id: 334,
+    kanji: "黒",
+    onyomi: "コク",
+    kunyomi: "くろ、くろ・い",
+    meaning: "Hắc, Đen",
+    sinoVietnamese: "Hắc",
+    examples: [
+      {
+        japanese: "黒い",
+        romaji: "Kuroi",
+        vietnamese: "Đen"
+      },
+      {
+        japanese: "黒字",
+        romaji: "Kuroji",
+        vietnamese: "Lãi (thặng dư)"
+      },
+      {
+        japanese: "黒板",
+        romaji: "Kokuban",
+        vietnamese: "Bảng đen"
+      }
+    ]
+  },
+  {
+    id: 335,
+    kanji: "赤",
+    onyomi: "セキ",
+    kunyomi: "あか、あか・い",
+    meaning: "Xích, Đỏ",
+    sinoVietnamese: "Xích",
+    examples: [
+      {
+        japanese: "赤い",
+        romaji: "Akai",
+        vietnamese: "Đỏ"
+      },
+      {
+        japanese: "赤ちゃん",
+        romaji: "Akachan",
+        vietnamese: "Em bé sơ sinh"
+      },
+      {
+        japanese: "赤字",
+        romaji: "Akaji",
+        vietnamese: "Lỗ (thâm hụt)"
+      }
+    ]
+  },
+  {
+    id: 336,
+    kanji: "青",
+    onyomi: "セイ",
+    kunyomi: "あお、あお・い",
+    meaning: "Thanh, Xanh dương",
+    sinoVietnamese: "Thanh",
+    examples: [
+      {
+        japanese: "青い",
+        romaji: "Aoi",
+        vietnamese: "Xanh dương"
+      },
+      {
+        japanese: "青年",
+        romaji: "Seinen",
+        vietnamese: "Thanh niên"
+      },
+      {
+        japanese: "青空",
+        romaji: "Aozora",
+        vietnamese: "Bầu trời xanh"
+      }
+    ]
+  },
+  {
+    id: 337,
+    kanji: "政",
+    onyomi: "セイ",
+    kunyomi: "まつりごと",
+    meaning: "Chính, Chính trị",
+    sinoVietnamese: "Chính",
+    examples: [
+      {
+        japanese: "政治",
+        romaji: "Seiji",
+        vietnamese: "Chính trị"
+      },
+      {
+        japanese: "政府",
+        romaji: "Seifu",
+        vietnamese: "Chính phủ"
+      },
+      {
+        japanese: "行政",
+        romaji: "Gyousei",
+        vietnamese: "Hành chính"
       }
     ]
   },
   {
     id: 338,
-    kanji: "天",
-    onyomi: "テン",
-    kunyomi: "あめ、あま",
-    meaning: "Thiên, Trời",
-    sinoVietnamese: "Thiên",
+    kanji: "治",
+    onyomi: "ジ、チ",
+    kunyomi: "おさ・める、なお・る",
+    meaning: "Trị, Cai trị, Chữa trị",
+    sinoVietnamese: "Trị",
     examples: [
       {
-        japanese: "天気",
-        romaji: "Tenki",
-        vietnamese: "Thời tiết"
+        japanese: "政治",
+        romaji: "Seiji",
+        vietnamese: "Chính trị"
       },
       {
-        japanese: "天国",
-        romaji: "Tengoku",
-        vietnamese: "Thiên đường"
+        japanese: "治します",
+        romaji: "Naoshimasu",
+        vietnamese: "Chữa bệnh"
       },
       {
-        japanese: "天皇",
-        romaji: "Tennou",
-        vietnamese: "Thiên hoàng"
+        japanese: "明治",
+        romaji: "Meiji",
+        vietnamese: "Thời Minh Trị"
       }
     ]
   },
   {
     id: 339,
-    kanji: "晴",
-    onyomi: "セイ",
-    kunyomi: "は・れる",
-    meaning: "Tình, Nắng",
-    sinoVietnamese: "Tình",
+    kanji: "経",
+    onyomi: "ケイ",
+    kunyomi: "へ・る",
+    meaning: "Kinh, Kinh tế",
+    sinoVietnamese: "Kinh",
     examples: [
       {
-        japanese: "晴れ",
-        romaji: "Hare",
-        vietnamese: "Nắng, đẹp trời"
+        japanese: "経済",
+        romaji: "Keizai",
+        vietnamese: "Kinh tế"
       },
       {
-        japanese: "晴れます",
-        romaji: "Haremasu",
-        vietnamese: "Trời nắng"
+        japanese: "経営",
+        romaji: "Keiei",
+        vietnamese: "Kinh doanh"
       },
       {
-        japanese: "晴天",
-        romaji: "Seiten",
-        vietnamese: "Bầu trời quang đãng"
+        japanese: "経験",
+        romaji: "Keiken",
+        vietnamese: "Kinh nghiệm"
       }
     ]
   },
   {
     id: 340,
-    kanji: "雲",
-    onyomi: "ウン",
-    kunyomi: "くも",
-    meaning: "Vân, Mây",
-    sinoVietnamese: "Vân",
+    kanji: "済",
+    onyomi: "サイ",
+    kunyomi: "す・む",
+    meaning: "Tế, Hoàn thành",
+    sinoVietnamese: "Tế",
     examples: [
       {
-        japanese: "雲",
-        romaji: "Kumo",
-        vietnamese: "Mây"
+        japanese: "経済",
+        romaji: "Keizai",
+        vietnamese: "Kinh tế"
       },
       {
-        japanese: "雨雲",
-        romaji: "Amagumo",
-        vietnamese: "Mây đen"
+        japanese: "済みます",
+        romaji: "Sumimasu",
+        vietnamese: "Xong, hoàn thành"
+      },
+      {
+        japanese: "返済",
+        romaji: "Hensai",
+        vietnamese: "Hoàn trả"
       }
     ]
   },
   {
     id: 341,
-    kanji: "雪",
-    onyomi: "セツ",
-    kunyomi: "ゆき",
-    meaning: "Tuyết",
-    sinoVietnamese: "Tuyết",
+    kanji: "歴",
+    onyomi: "レキ",
+    kunyomi: "",
+    meaning: "Lịch, Lý lịch",
+    sinoVietnamese: "Lịch",
     examples: [
       {
-        japanese: "雪",
-        romaji: "Yuki",
-        vietnamese: "Tuyết"
+        japanese: "歴史",
+        romaji: "Rekishi",
+        vietnamese: "Lịch sử"
       },
       {
-        japanese: "新雪",
-        romaji: "Shinsetsu",
-        vietnamese: "Tuyết mới"
+        japanese: "履歴書",
+        romaji: "Rirekisho",
+        vietnamese: "Sơ yếu lý lịch"
       },
       {
-        japanese: "雪国",
-        romaji: "Yukiguni",
-        vietnamese: "Xứ tuyết"
+        japanese: "学歴",
+        romaji: "Gakureki",
+        vietnamese: "Học vấn"
       }
     ]
   },
   {
     id: 342,
-    kanji: "風",
-    onyomi: "フウ",
-    kunyomi: "かぜ",
-    meaning: "Phong, Gió",
-    sinoVietnamese: "Phong",
+    kanji: "史",
+    onyomi: "シ",
+    kunyomi: "",
+    meaning: "Sử, Lịch sử",
+    sinoVietnamese: "Sử",
     examples: [
       {
-        japanese: "風",
-        romaji: "Kaze",
-        vietnamese: "Gió"
+        japanese: "歴史",
+        romaji: "Rekishi",
+        vietnamese: "Lịch sử"
       },
       {
-        japanese: "風邪",
-        romaji: "Kaze",
-        vietnamese: "Cảm lạnh"
-      },
-      {
-        japanese: "台風",
-        romaji: "Taifuu",
-        vietnamese: "Bão"
-      },
-      {
-        japanese: "和風",
-        romaji: "Wafuu",
-        vietnamese: "Kiểu Nhật"
+        japanese: "日本史",
+        romaji: "Nihonshi",
+        vietnamese: "Lịch sử Nhật Bản"
       }
     ]
   },
   {
     id: 343,
-    kanji: "雷",
-    onyomi: "ライ",
-    kunyomi: "かみなり",
-    meaning: "Lôi, Sấm",
-    sinoVietnamese: "Lôi",
+    kanji: "育",
+    onyomi: "イク",
+    kunyomi: "そだ・つ、そだ・てる",
+    meaning: "Dục, Giáo dục",
+    sinoVietnamese: "Dục",
     examples: [
       {
-        japanese: "雷",
-        romaji: "Kaminari",
-        vietnamese: "Sấm sét"
+        japanese: "育てます",
+        romaji: "Sodatemasu",
+        vietnamese: "Nuôi nấng"
       },
       {
-        japanese: "雷雨",
-        romaji: "Raiu",
-        vietnamese: "Mưa giông"
+        japanese: "教育",
+        romaji: "Kyouiku",
+        vietnamese: "Giáo dục"
+      },
+      {
+        japanese: "体育",
+        romaji: "Taiiku",
+        vietnamese: "Thể dục"
       }
     ]
   },
   {
     id: 344,
-    kanji: "波",
-    onyomi: "ハ",
-    kunyomi: "なみ",
-    meaning: "Ba, Sóng",
-    sinoVietnamese: "Ba",
+    kanji: "化",
+    onyomi: "カ、ケ",
+    kunyomi: "ば・ける",
+    meaning: "Hóa, Biến hóa",
+    sinoVietnamese: "Hóa",
     examples: [
       {
-        japanese: "波",
-        romaji: "Nami",
-        vietnamese: "Sóng"
+        japanese: "文化",
+        romaji: "Bunka",
+        vietnamese: "Văn hóa"
       },
       {
-        japanese: "電波",
-        romaji: "Denpa",
-        vietnamese: "Sóng điện"
+        japanese: "化学",
+        romaji: "Kagaku",
+        vietnamese: "Hóa học"
       },
       {
-        japanese: "津波",
-        romaji: "Tsunami",
-        vietnamese: "Sóng thần"
+        japanese: "変化",
+        romaji: "Henka",
+        vietnamese: "Biến hóa"
+      },
+      {
+        japanese: "お化け",
+        romaji: "Obake",
+        vietnamese: "Ma quỷ"
       }
     ]
   },
   {
     id: 345,
+    kanji: "理",
+    onyomi: "リ",
+    kunyomi: "",
+    meaning: "Lý, Lý do",
+    sinoVietnamese: "Lý",
+    examples: [
+      {
+        japanese: "理由",
+        romaji: "Riyuu",
+        vietnamese: "Lý do"
+      },
+      {
+        japanese: "物理",
+        romaji: "Butsuri",
+        vietnamese: "Vật lý"
+      },
+      {
+        japanese: "料理",
+        romaji: "Ryouri",
+        vietnamese: "Món ăn"
+      },
+      {
+        japanese: "無理な",
+        romaji: "Muri na",
+        vietnamese: "Vô lý, quá sức"
+      }
+    ]
+  },
+  {
+    id: 346,
+    kanji: "科",
+    onyomi: "カ",
+    kunyomi: "",
+    meaning: "Khoa, Khoa học",
+    sinoVietnamese: "Khoa",
+    examples: [
+      {
+        japanese: "科学",
+        romaji: "Kagaku",
+        vietnamese: "Khoa học"
+      },
+      {
+        japanese: "教科書",
+        romaji: "Kyoukasho",
+        vietnamese: "Sách giáo khoa"
+      },
+      {
+        japanese: "学科",
+        romaji: "Gakka",
+        vietnamese: "Khoa (trường học)"
+      }
+    ]
+  },
+  {
+    id: 347,
+    kanji: "数",
+    onyomi: "スウ",
+    kunyomi: "かず、かぞ・える",
+    meaning: "Số, Số học",
+    sinoVietnamese: "Số",
+    examples: [
+      {
+        japanese: "数",
+        romaji: "Kazu",
+        vietnamese: "Số"
+      },
+      {
+        japanese: "数えます",
+        romaji: "Kazoemasu",
+        vietnamese: "Đếm"
+      },
+      {
+        japanese: "数学",
+        romaji: "Suugaku",
+        vietnamese: "Toán học"
+      },
+      {
+        japanese: "数字",
+        romaji: "Suuji",
+        vietnamese: "Con số"
+      }
+    ]
+  },
+  {
+    id: 348,
+    kanji: "医",
+    onyomi: "イ",
+    kunyomi: "",
+    meaning: "Y, Y học",
+    sinoVietnamese: "Y",
+    examples: [
+      {
+        japanese: "医学",
+        romaji: "Igaku",
+        vietnamese: "Y học"
+      },
+      {
+        japanese: "医院",
+        romaji: "Iin",
+        vietnamese: "Phòng khám"
+      },
+      {
+        japanese: "医者",
+        romaji: "Isha",
+        vietnamese: "Bác sĩ"
+      }
+    ]
+  },
+  {
+    id: 349,
+    kanji: "法",
+    onyomi: "ホウ",
+    kunyomi: "",
+    meaning: "Pháp, Pháp luật",
+    sinoVietnamese: "Pháp",
+    examples: [
+      {
+        japanese: "法律",
+        romaji: "Houritsu",
+        vietnamese: "Pháp luật"
+      },
+      {
+        japanese: "方法",
+        romaji: "Houhou",
+        vietnamese: "Phương pháp"
+      },
+      {
+        japanese: "文法",
+        romaji: "Bunpou",
+        vietnamese: "Ngữ pháp"
+      }
+    ]
+  },
+  {
+    id: 350,
+    kanji: "律",
+    onyomi: "リツ",
+    kunyomi: "",
+    meaning: "Luật, Luật pháp",
+    sinoVietnamese: "Luật",
+    examples: [
+      {
+        japanese: "法律",
+        romaji: "Houritsu",
+        vietnamese: "Pháp luật"
+      },
+      {
+        japanese: "規律",
+        romaji: "Kiritsu",
+        vietnamese: "Kỷ luật"
+      }
+    ]
+  },
+  {
+    id: 351,
+    kanji: "際",
+    onyomi: "サイ",
+    kunyomi: "きわ",
+    meaning: "Tế, Quốc tế",
+    sinoVietnamese: "Tế",
+    examples: [
+      {
+        japanese: "国際",
+        romaji: "Kokusai",
+        vietnamese: "Quốc tế"
+      },
+      {
+        japanese: "交際",
+        romaji: "Kousai",
+        vietnamese: "Giao du, hẹn hò"
+      },
+      {
+        japanese: "実際",
+        romaji: "Jissai",
+        vietnamese: "Thực tế"
+      }
+    ]
+  },
+  {
+    id: 352,
+    kanji: "院",
+    onyomi: "イン",
+    kunyomi: "",
+    meaning: "Viện, Bệnh viện",
+    sinoVietnamese: "Viện",
+    examples: [
+      {
+        japanese: "病院",
+        romaji: "Byouin",
+        vietnamese: "Bệnh viện"
+      },
+      {
+        japanese: "入院",
+        romaji: "Nyuuin",
+        vietnamese: "Nhập viện"
+      },
+      {
+        japanese: "大学院",
+        romaji: "Daigakuin",
+        vietnamese: "Cao học"
+      }
+    ]
+  },
+  {
+    id: 353,
     kanji: "覚",
     onyomi: "カク",
     kunyomi: "おぼ・える、さ・める",
@@ -10767,7 +10987,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 346,
+    id: 354,
     kanji: "忘",
     onyomi: "ボウ",
     kunyomi: "わす・れる",
@@ -10792,7 +11012,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 347,
+    id: 355,
     kanji: "決",
     onyomi: "ケツ",
     kunyomi: "き・める、き・まる",
@@ -10817,7 +11037,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 348,
+    id: 356,
     kanji: "定",
     onyomi: "テイ、ジョウ",
     kunyomi: "さだ・める",
@@ -10842,7 +11062,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 349,
+    id: 357,
     kanji: "比",
     onyomi: "ヒ",
     kunyomi: "くら・べる",
@@ -10867,7 +11087,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 350,
+    id: 358,
     kanji: "受",
     onyomi: "ジュ",
     kunyomi: "う・ける、う・かる",
@@ -10892,7 +11112,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 351,
+    id: 359,
     kanji: "授",
     onyomi: "ジュ",
     kunyomi: "さず・ける",
@@ -10917,7 +11137,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 352,
+    id: 360,
     kanji: "徒",
     onyomi: "ト",
     kunyomi: "",
@@ -10937,7 +11157,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 353,
+    id: 361,
     kanji: "練",
     onyomi: "レン",
     kunyomi: "ね・る",
@@ -10957,7 +11177,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 354,
+    id: 362,
     kanji: "復",
     onyomi: "フク",
     kunyomi: "",
@@ -10982,7 +11202,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 355,
+    id: 363,
     kanji: "表",
     onyomi: "ヒョウ",
     kunyomi: "おもて、あらわ・す",
@@ -11012,7 +11232,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 356,
+    id: 364,
     kanji: "卒",
     onyomi: "ソツ",
     kunyomi: "",
@@ -11032,7 +11252,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 357,
+    id: 365,
     kanji: "違",
     onyomi: "イ",
     kunyomi: "ちが・う",
@@ -11057,7 +11277,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 358,
+    id: 366,
     kanji: "役",
     onyomi: "ヤク、エキ",
     kunyomi: "",
@@ -11082,7 +11302,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 359,
+    id: 367,
     kanji: "皆",
     onyomi: "カイ",
     kunyomi: "みな",
@@ -11102,7 +11322,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 360,
+    id: 368,
     kanji: "彼",
     onyomi: "ヒ",
     kunyomi: "かれ、かの",
@@ -11127,7 +11347,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 361,
+    id: 369,
     kanji: "全",
     onyomi: "ゼン",
     kunyomi: "すべ・て",
@@ -11157,7 +11377,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 362,
+    id: 370,
     kanji: "部",
     onyomi: "ブ",
     kunyomi: "",
@@ -11187,7 +11407,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 363,
+    id: 371,
     kanji: "必",
     onyomi: "ヒツ",
     kunyomi: "かなら・ず",
@@ -11212,7 +11432,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 364,
+    id: 372,
     kanji: "要",
     onyomi: "ヨウ",
     kunyomi: "い・る",
@@ -11242,7 +11462,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 365,
+    id: 373,
     kanji: "荷",
     onyomi: "カ",
     kunyomi: "に",
@@ -11267,7 +11487,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 366,
+    id: 374,
     kanji: "由",
     onyomi: "ユ、ユウ",
     kunyomi: "",
@@ -11292,7 +11512,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 367,
+    id: 375,
     kanji: "届",
     onyomi: "",
     kunyomi: "とど・ける、とど・く",
@@ -11317,7 +11537,32 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 368,
+    id: 376,
+    kanji: "利",
+    onyomi: "リ",
+    kunyomi: "き・く",
+    meaning: "Lợi, Lợi ích",
+    sinoVietnamese: "Lợi",
+    examples: [
+      {
+        japanese: "便利",
+        romaji: "Benri",
+        vietnamese: "Tiện lợi"
+      },
+      {
+        japanese: "利用",
+        romaji: "Riyou",
+        vietnamese: "Sử dụng"
+      },
+      {
+        japanese: "利益",
+        romaji: "Rieki",
+        vietnamese: "Lợi ích"
+      }
+    ]
+  },
+  {
+    id: 377,
     kanji: "払",
     onyomi: "フツ",
     kunyomi: "はら・う",
@@ -11337,7 +11582,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 369,
+    id: 378,
     kanji: "濯",
     onyomi: "タク",
     kunyomi: "",
@@ -11357,7 +11602,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 370,
+    id: 379,
     kanji: "寝",
     onyomi: "シン",
     kunyomi: "ね・る",
@@ -11382,7 +11627,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 371,
+    id: 380,
     kanji: "踊",
     onyomi: "ヨウ",
     kunyomi: "おど・る",
@@ -11402,7 +11647,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 372,
+    id: 381,
     kanji: "活",
     onyomi: "カツ",
     kunyomi: "",
@@ -11427,7 +11672,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 373,
+    id: 382,
     kanji: "末",
     onyomi: "マツ",
     kunyomi: "すえ",
@@ -11457,7 +11702,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 374,
+    id: 383,
     kanji: "宅",
     onyomi: "タク",
     kunyomi: "",
@@ -11482,7 +11727,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 375,
+    id: 384,
     kanji: "祭",
     onyomi: "サイ",
     kunyomi: "まつ・り",
@@ -11502,7 +11747,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 376,
+    id: 385,
     kanji: "平",
     onyomi: "ヘイ、ビョウ",
     kunyomi: "たい・ら、ひら",
@@ -11532,7 +11777,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 377,
+    id: 386,
     kanji: "戦",
     onyomi: "セン",
     kunyomi: "たたか・う",
@@ -11557,7 +11802,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 378,
+    id: 387,
     kanji: "争",
     onyomi: "ソウ",
     kunyomi: "あらそ・う",
@@ -11582,7 +11827,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 379,
+    id: 388,
     kanji: "交",
     onyomi: "コウ",
     kunyomi: "まじ・わる",
@@ -11607,7 +11852,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 380,
+    id: 389,
     kanji: "可",
     onyomi: "カ",
     kunyomi: "",
@@ -11632,7 +11877,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 381,
+    id: 390,
     kanji: "能",
     onyomi: "ノウ",
     kunyomi: "",
@@ -11657,7 +11902,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 382,
+    id: 391,
     kanji: "収",
     onyomi: "シュウ",
     kunyomi: "おさ・める",
@@ -11682,7 +11927,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 383,
+    id: 392,
     kanji: "支",
     onyomi: "シ",
     kunyomi: "ささ・える",
@@ -11707,7 +11952,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 384,
+    id: 393,
     kanji: "厚",
     onyomi: "コウ",
     kunyomi: "あつ・い",
@@ -11727,7 +11972,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 385,
+    id: 394,
     kanji: "薄",
     onyomi: "ハク",
     kunyomi: "うす・い",
@@ -11747,7 +11992,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 386,
+    id: 395,
     kanji: "神",
     onyomi: "シン、ジン",
     kunyomi: "かみ",
@@ -11772,7 +12017,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 387,
+    id: 396,
     kanji: "公",
     onyomi: "コウ",
     kunyomi: "おおやけ",
@@ -11797,7 +12042,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 388,
+    id: 397,
     kanji: "園",
     onyomi: "エン",
     kunyomi: "その",
@@ -11822,7 +12067,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 389,
+    id: 398,
     kanji: "込",
     onyomi: "",
     kunyomi: "こ・む、こ・める",
@@ -11847,7 +12092,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 390,
+    id: 399,
     kanji: "連",
     onyomi: "レン",
     kunyomi: "つ・れる、つら・なる",
@@ -11872,7 +12117,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 391,
+    id: 400,
     kanji: "窓",
     onyomi: "ソウ",
     kunyomi: "まど",
@@ -11897,7 +12142,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 392,
+    id: 401,
     kanji: "側",
     onyomi: "ソク",
     kunyomi: "かわ",
@@ -11922,7 +12167,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 393,
+    id: 402,
     kanji: "葉",
     onyomi: "ヨウ",
     kunyomi: "は",
@@ -11947,7 +12192,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 394,
+    id: 403,
     kanji: "景",
     onyomi: "ケイ",
     kunyomi: "",
@@ -11972,7 +12217,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 395,
+    id: 404,
     kanji: "色",
     onyomi: "ショク、シキ",
     kunyomi: "いろ",
@@ -11997,7 +12242,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 396,
+    id: 405,
     kanji: "容",
     onyomi: "ヨウ",
     kunyomi: "",
@@ -12022,7 +12267,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 397,
+    id: 406,
     kanji: "美",
     onyomi: "ビ",
     kunyomi: "うつく・しい",
@@ -12047,7 +12292,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 398,
+    id: 407,
     kanji: "遊",
     onyomi: "ユウ",
     kunyomi: "あそ・ぶ",
@@ -12067,7 +12312,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 399,
+    id: 408,
     kanji: "疲",
     onyomi: "ヒ",
     kunyomi: "つか・れる",
@@ -12087,7 +12332,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 400,
+    id: 409,
     kanji: "泳",
     onyomi: "エイ",
     kunyomi: "およ・ぐ",
@@ -12107,7 +12352,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 401,
+    id: 410,
     kanji: "暖",
     onyomi: "ダン",
     kunyomi: "あたた・かい",
@@ -12132,7 +12377,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 402,
+    id: 411,
     kanji: "涼",
     onyomi: "リョウ",
     kunyomi: "すず・しい",
@@ -12152,7 +12397,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 403,
+    id: 412,
     kanji: "静",
     onyomi: "セイ",
     kunyomi: "しず・か",
@@ -12172,7 +12417,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 404,
+    id: 413,
     kanji: "輪",
     onyomi: "リン",
     kunyomi: "わ",
@@ -12197,7 +12442,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 405,
+    id: 414,
     kanji: "港",
     onyomi: "コウ",
     kunyomi: "みなと",
@@ -12222,7 +12467,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 406,
+    id: 415,
     kanji: "途",
     onyomi: "ト",
     kunyomi: "",
@@ -12242,7 +12487,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 407,
+    id: 416,
     kanji: "降",
     onyomi: "コウ",
     kunyomi: "お・りる、ふ・る",
@@ -12267,7 +12512,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 408,
+    id: 417,
     kanji: "換",
     onyomi: "カン",
     kunyomi: "か・える",
@@ -12292,7 +12537,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 409,
+    id: 418,
     kanji: "吉",
     onyomi: "キチ、キツ",
     kunyomi: "",
@@ -12317,7 +12562,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 410,
+    id: 419,
     kanji: "供",
     onyomi: "キョウ",
     kunyomi: "とも、そな・える",
@@ -12337,7 +12582,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 411,
+    id: 420,
     kanji: "両",
     onyomi: "リョウ",
     kunyomi: "",
@@ -12362,7 +12607,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 412,
+    id: 421,
     kanji: "若",
     onyomi: "ジャク",
     kunyomi: "わか・い",
@@ -12382,7 +12627,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 413,
+    id: 422,
     kanji: "老",
     onyomi: "ロウ",
     kunyomi: "お・いる",
@@ -12402,7 +12647,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 414,
+    id: 423,
     kanji: "息",
     onyomi: "ソク",
     kunyomi: "いき",
@@ -12427,7 +12672,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 415,
+    id: 424,
     kanji: "娘",
     onyomi: "",
     kunyomi: "むすめ",
@@ -12442,7 +12687,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 416,
+    id: 425,
     kanji: "奥",
     onyomi: "オウ",
     kunyomi: "おく",
@@ -12462,7 +12707,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 417,
+    id: 426,
     kanji: "将",
     onyomi: "ショウ",
     kunyomi: "",
@@ -12477,7 +12722,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 418,
+    id: 427,
     kanji: "祖",
     onyomi: "ソ",
     kunyomi: "",
@@ -12502,7 +12747,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 419,
+    id: 428,
     kanji: "招",
     onyomi: "ショウ",
     kunyomi: "まね・く",
@@ -12522,7 +12767,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 420,
+    id: 429,
     kanji: "慣",
     onyomi: "カン",
     kunyomi: "な・れる",
@@ -12542,7 +12787,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 421,
+    id: 430,
     kanji: "席",
     onyomi: "セキ",
     kunyomi: "",
@@ -12567,7 +12812,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 422,
+    id: 431,
     kanji: "泊",
     onyomi: "ハク",
     kunyomi: "と・まる",
@@ -12592,7 +12837,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 423,
+    id: 432,
     kanji: "訪",
     onyomi: "ホウ",
     kunyomi: "たず・ねる",
@@ -12612,7 +12857,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 424,
+    id: 433,
     kanji: "替",
     onyomi: "タイ",
     kunyomi: "か・える",
@@ -12637,7 +12882,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 425,
+    id: 434,
     kanji: "取",
     onyomi: "シュ",
     kunyomi: "と・る",
@@ -12662,7 +12907,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 426,
+    id: 435,
     kanji: "最",
     onyomi: "サイ",
     kunyomi: "もっと・も",
@@ -12687,7 +12932,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 427,
+    id: 436,
     kanji: "初",
     onyomi: "ショ",
     kunyomi: "はじ・め、はつ",
@@ -12712,7 +12957,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 428,
+    id: 437,
     kanji: "番",
     onyomi: "バン",
     kunyomi: "",
@@ -12737,7 +12982,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 429,
+    id: 438,
     kanji: "周",
     onyomi: "シュウ",
     kunyomi: "まわ・り",
@@ -12757,7 +13002,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 430,
+    id: 439,
     kanji: "囲",
     onyomi: "イ",
     kunyomi: "かこ・む",
@@ -12777,7 +13022,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 431,
+    id: 440,
     kanji: "協",
     onyomi: "キョウ",
     kunyomi: "",
@@ -12797,11 +13042,11 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 432,
+    id: 441,
     kanji: "互",
     onyomi: "ゴ",
     kunyomi: "たが・い",
-    meaning: "Hỗ, Hỗ trợ",
+    meaning: "Hỗ, Lẫn nhau",
     sinoVietnamese: "Hỗ",
     examples: [
       {
@@ -12817,7 +13062,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 433,
+    id: 442,
     kanji: "票",
     onyomi: "ヒョウ",
     kunyomi: "",
@@ -12837,7 +13082,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 434,
+    id: 443,
     kanji: "姿",
     onyomi: "シ",
     kunyomi: "すがた",
@@ -12857,7 +13102,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 435,
+    id: 444,
     kanji: "勢",
     onyomi: "セイ",
     kunyomi: "いきお・い",
@@ -12877,7 +13122,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 436,
+    id: 445,
     kanji: "偉",
     onyomi: "イ",
     kunyomi: "えら・い",
@@ -12897,7 +13142,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 437,
+    id: 446,
     kanji: "達",
     onyomi: "タツ",
     kunyomi: "たち",
@@ -12922,7 +13167,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 438,
+    id: 447,
     kanji: "損",
     onyomi: "ソン",
     kunyomi: "そこ・なう",
@@ -12942,7 +13187,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 439,
+    id: 448,
     kanji: "予",
     onyomi: "ヨ",
     kunyomi: "",
@@ -12967,7 +13212,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 440,
+    id: 449,
     kanji: "算",
     onyomi: "サン",
     kunyomi: "",
@@ -12987,7 +13232,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 441,
+    id: 450,
     kanji: "勝",
     onyomi: "ショウ",
     kunyomi: "か・つ",
@@ -13012,7 +13257,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 442,
+    id: 451,
     kanji: "負",
     onyomi: "フ",
     kunyomi: "ま・ける",
@@ -13037,7 +13282,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 443,
+    id: 452,
     kanji: "賛",
     onyomi: "サン",
     kunyomi: "",
@@ -13052,7 +13297,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 444,
+    id: 453,
     kanji: "成",
     onyomi: "セイ",
     kunyomi: "な・る",
@@ -13077,7 +13322,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 445,
+    id: 454,
     kanji: "絶",
     onyomi: "ゼツ",
     kunyomi: "た・える",
@@ -13097,7 +13342,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 446,
+    id: 455,
     kanji: "対",
     onyomi: "タイ",
     kunyomi: "",
@@ -13122,7 +13367,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 447,
+    id: 456,
     kanji: "続",
     onyomi: "ゾク",
     kunyomi: "つづ・く",
@@ -13147,7 +13392,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 448,
+    id: 457,
     kanji: "辞",
     onyomi: "ジ",
     kunyomi: "や・める",
@@ -13172,7 +13417,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 449,
+    id: 458,
     kanji: "投",
     onyomi: "トウ",
     kunyomi: "な・げる",
@@ -13197,7 +13442,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 450,
+    id: 459,
     kanji: "巻",
     onyomi: "カン",
     kunyomi: "ま・く",
@@ -13222,7 +13467,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 451,
+    id: 460,
     kanji: "約",
     onyomi: "ヤク",
     kunyomi: "",
@@ -13247,7 +13492,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 452,
+    id: 461,
     kanji: "束",
     onyomi: "ソク",
     kunyomi: "たば",
@@ -13272,7 +13517,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 453,
+    id: 462,
     kanji: "守",
     onyomi: "シュ、ス",
     kunyomi: "まも・る",
@@ -13297,7 +13542,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 454,
+    id: 463,
     kanji: "過",
     onyomi: "カ",
     kunyomi: "す・ぎる",
@@ -13322,7 +13567,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 455,
+    id: 464,
     kanji: "夢",
     onyomi: "ム",
     kunyomi: "ゆめ",
@@ -13347,7 +13592,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 456,
+    id: 465,
     kanji: "的",
     onyomi: "テキ",
     kunyomi: "まと",
@@ -13372,7 +13617,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 457,
+    id: 466,
     kanji: "飛",
     onyomi: "ヒ",
     kunyomi: "と・ぶ",
@@ -13397,7 +13642,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 458,
+    id: 467,
     kanji: "機",
     onyomi: "キ",
     kunyomi: "",
@@ -13422,7 +13667,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 459,
+    id: 468,
     kanji: "失",
     onyomi: "シツ",
     kunyomi: "うしな・う",
@@ -13447,7 +13692,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 460,
+    id: 469,
     kanji: "鉄",
     onyomi: "テツ",
     kunyomi: "",
@@ -13472,7 +13717,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 461,
+    id: 470,
     kanji: "速",
     onyomi: "ソク",
     kunyomi: "はや・い",
@@ -13497,7 +13742,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 462,
+    id: 471,
     kanji: "遅",
     onyomi: "チ",
     kunyomi: "おそ・い、おく・れる",
@@ -13522,7 +13767,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 463,
+    id: 472,
     kanji: "駐",
     onyomi: "チュウ",
     kunyomi: "",
@@ -13542,7 +13787,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 464,
+    id: 473,
     kanji: "船",
     onyomi: "セン",
     kunyomi: "ふね",
@@ -13567,7 +13812,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 465,
+    id: 474,
     kanji: "座",
     onyomi: "ザ",
     kunyomi: "すわ・る",
@@ -13592,7 +13837,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 466,
+    id: 475,
     kanji: "島",
     onyomi: "トウ",
     kunyomi: "しま",
@@ -13617,7 +13862,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 467,
+    id: 476,
     kanji: "陸",
     onyomi: "リク",
     kunyomi: "",
@@ -13642,7 +13887,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 468,
+    id: 477,
     kanji: "橋",
     onyomi: "キョウ",
     kunyomi: "はし",
@@ -13662,7 +13907,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 469,
+    id: 478,
     kanji: "皿",
     onyomi: "",
     kunyomi: "さら",
@@ -13682,7 +13927,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 470,
+    id: 479,
     kanji: "茶",
     onyomi: "チャ、サ",
     kunyomi: "",
@@ -13707,7 +13952,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 471,
+    id: 480,
     kanji: "係",
     onyomi: "ケイ",
     kunyomi: "かか・る",
@@ -13727,7 +13972,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 472,
+    id: 481,
     kanji: "礼",
     onyomi: "レイ",
     kunyomi: "",
@@ -13747,7 +13992,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 473,
+    id: 482,
     kanji: "申",
     onyomi: "シン",
     kunyomi: "もう・す",
@@ -13772,7 +14017,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 474,
+    id: 483,
     kanji: "様",
     onyomi: "ヨウ",
     kunyomi: "さま",
@@ -13797,7 +14042,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 475,
+    id: 484,
     kanji: "調",
     onyomi: "チョウ",
     kunyomi: "しら・べる",
@@ -13822,7 +14067,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 476,
+    id: 485,
     kanji: "案",
     onyomi: "アン",
     kunyomi: "",
@@ -13842,7 +14087,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 477,
+    id: 486,
     kanji: "内",
     onyomi: "ナイ",
     kunyomi: "うち",
@@ -13867,7 +14112,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 478,
+    id: 487,
     kanji: "談",
     onyomi: "ダン",
     kunyomi: "",
@@ -13892,7 +14137,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 479,
+    id: 488,
     kanji: "説",
     onyomi: "セツ",
     kunyomi: "",
@@ -13917,7 +14162,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 480,
+    id: 489,
     kanji: "課",
     onyomi: "カ",
     kunyomi: "",
@@ -13937,7 +14182,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 481,
+    id: 490,
     kanji: "願",
     onyomi: "ガン",
     kunyomi: "ねが・う",
@@ -13957,7 +14202,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 482,
+    id: 491,
     kanji: "頼",
     onyomi: "ライ",
     kunyomi: "たの・む",
@@ -13977,7 +14222,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 483,
+    id: 492,
     kanji: "絡",
     onyomi: "ラク",
     kunyomi: "から・む",
@@ -13992,7 +14237,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 484,
+    id: 493,
     kanji: "伝",
     onyomi: "デン",
     kunyomi: "つた・える",
@@ -14017,7 +14262,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 485,
+    id: 494,
     kanji: "募",
     onyomi: "ボ",
     kunyomi: "つの・る",
@@ -14037,7 +14282,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 486,
+    id: 495,
     kanji: "想",
     onyomi: "ソウ、ソ",
     kunyomi: "",
@@ -14062,7 +14307,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 487,
+    id: 496,
     kanji: "念",
     onyomi: "ネン",
     kunyomi: "",
@@ -14082,7 +14327,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 488,
+    id: 497,
     kanji: "因",
     onyomi: "イン",
     kunyomi: "",
@@ -14097,7 +14342,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 489,
+    id: 498,
     kanji: "危",
     onyomi: "キ",
     kunyomi: "あぶ・ない",
@@ -14117,7 +14362,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 490,
+    id: 499,
     kanji: "険",
     onyomi: "ケン",
     kunyomi: "けわ・しい",
@@ -14142,7 +14387,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 491,
+    id: 500,
     kanji: "拾",
     onyomi: "シュウ",
     kunyomi: "ひろ・う",
@@ -14157,7 +14402,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 492,
+    id: 501,
     kanji: "捨",
     onyomi: "シャ",
     kunyomi: "す・てる",
@@ -14172,7 +14417,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 493,
+    id: 502,
     kanji: "戻",
     onyomi: "レイ",
     kunyomi: "もど・る",
@@ -14192,7 +14437,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 494,
+    id: 503,
     kanji: "吸",
     onyomi: "キュウ",
     kunyomi: "す・う",
@@ -14212,7 +14457,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 495,
+    id: 504,
     kanji: "呼",
     onyomi: "コ",
     kunyomi: "よ・ぶ",
@@ -14232,7 +14477,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 496,
+    id: 505,
     kanji: "押",
     onyomi: "オウ",
     kunyomi: "お・す",
@@ -14252,7 +14497,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 497,
+    id: 506,
     kanji: "亡",
     onyomi: "ボウ",
     kunyomi: "な・くなる",
@@ -14272,7 +14517,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 498,
+    id: 507,
     kanji: "君",
     onyomi: "クン",
     kunyomi: "きみ",
@@ -14292,7 +14537,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 499,
+    id: 508,
     kanji: "然",
     onyomi: "ゼン、ネン",
     kunyomi: "",
@@ -14317,7 +14562,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 500,
+    id: 509,
     kanji: "引",
     onyomi: "イン",
     kunyomi: "ひ・く",
@@ -14342,7 +14587,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 501,
+    id: 510,
     kanji: "退",
     onyomi: "タイ",
     kunyomi: "しりぞ・く",
@@ -14367,7 +14612,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 502,
+    id: 511,
     kanji: "局",
     onyomi: "キョク",
     kunyomi: "",
@@ -14392,7 +14637,7 @@ export const kanjiData: KanjiCard[] = [
     ]
   },
   {
-    id: 503,
+    id: 512,
     kanji: "専",
     onyomi: "セン",
     kunyomi: "もっぱ・ら",
@@ -14411,24 +14656,5 @@ export const kanjiData: KanjiCard[] = [
       }
     ]
   },
-  {
-    id: 504,
-    kanji: "許",
-    onyomi: "キョ",
-    kunyomi: "ゆる・す",
-    meaning: "Hứa, Cho phép",
-    sinoVietnamese: "Hứa",
-    examples: [
-      {
-        japanese: "許可",
-        romaji: "Kyoka",
-        vietnamese: "Sự cho phép"
-      },
-      {
-        japanese: "許します",
-        romaji: "Yurushimasu",
-        vietnamese: "Tha thứ, cho phép"
-      }
-    ]
-  }
+
 ];
