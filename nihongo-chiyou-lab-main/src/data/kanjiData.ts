@@ -11530,5 +11530,2905 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Bình đẳng"
       }
     ]
+  },
+  {
+    id: 377,
+    kanji: "戦",
+    onyomi: "セン",
+    kunyomi: "たたか・う",
+    meaning: "Chiến, Chiến tranh",
+    sinoVietnamese: "Chiến",
+    examples: [
+      {
+        japanese: "戦争",
+        romaji: "Sensou",
+        vietnamese: "Chiến tranh"
+      },
+      {
+        japanese: "戦います",
+        romaji: "Tatakaimasu",
+        vietnamese: "Chiến đấu"
+      },
+      {
+        japanese: "作戦",
+        romaji: "Sakusen",
+        vietnamese: "Chiến lược"
+      }
+    ]
+  },
+  {
+    id: 378,
+    kanji: "争",
+    onyomi: "ソウ",
+    kunyomi: "あらそ・う",
+    meaning: "Tranh, Cạnh tranh",
+    sinoVietnamese: "Tranh",
+    examples: [
+      {
+        japanese: "戦争",
+        romaji: "Sensou",
+        vietnamese: "Chiến tranh"
+      },
+      {
+        japanese: "競争",
+        romaji: "Kyousou",
+        vietnamese: "Cạnh tranh"
+      },
+      {
+        japanese: "争います",
+        romaji: "Arasoimasu",
+        vietnamese: "Tranh giành"
+      }
+    ]
+  },
+  {
+    id: 379,
+    kanji: "交",
+    onyomi: "コウ",
+    kunyomi: "まじ・わる",
+    meaning: "Giao, Giao thông",
+    sinoVietnamese: "Giao",
+    examples: [
+      {
+        japanese: "交通",
+        romaji: "Koutsuu",
+        vietnamese: "Giao thông"
+      },
+      {
+        japanese: "交流",
+        romaji: "Kouryuu",
+        vietnamese: "Giao lưu"
+      },
+      {
+        japanese: "交番",
+        romaji: "Kouban",
+        vietnamese: "Đồn cảnh sát"
+      }
+    ]
+  },
+  {
+    id: 380,
+    kanji: "可",
+    onyomi: "カ",
+    kunyomi: "",
+    meaning: "Khả, Có thể",
+    sinoVietnamese: "Khả",
+    examples: [
+      {
+        japanese: "可能性",
+        romaji: "Kanousei",
+        vietnamese: "Tính khả thi"
+      },
+      {
+        japanese: "可愛い",
+        romaji: "Kawaii",
+        vietnamese: "Đáng yêu"
+      },
+      {
+        japanese: "許可",
+        romaji: "Kyoka",
+        vietnamese: "Sự cho phép"
+      }
+    ]
+  },
+  {
+    id: 381,
+    kanji: "能",
+    onyomi: "ノウ",
+    kunyomi: "",
+    meaning: "Năng, Khả năng",
+    sinoVietnamese: "Năng",
+    examples: [
+      {
+        japanese: "能力",
+        romaji: "Nouryoku",
+        vietnamese: "Năng lực"
+      },
+      {
+        japanese: "可能",
+        romaji: "Kanou",
+        vietnamese: "Khả năng"
+      },
+      {
+        japanese: "才能",
+        romaji: "Sainou",
+        vietnamese: "Tài năng"
+      }
+    ]
+  },
+  {
+    id: 382,
+    kanji: "収",
+    onyomi: "シュウ",
+    kunyomi: "おさ・める",
+    meaning: "Thu, Thu nhập",
+    sinoVietnamese: "Thu",
+    examples: [
+      {
+        japanese: "収入",
+        romaji: "Shuunyuu",
+        vietnamese: "Thu nhập"
+      },
+      {
+        japanese: "収集",
+        romaji: "Shuushuu",
+        vietnamese: "Thu thập"
+      },
+      {
+        japanese: "収めます",
+        romaji: "Osamemasu",
+        vietnamese: "Thu được, giao nộp"
+      }
+    ]
+  },
+  {
+    id: 383,
+    kanji: "支",
+    onyomi: "シ",
+    kunyomi: "ささ・える",
+    meaning: "Chi, Chi nhánh, Hỗ trợ",
+    sinoVietnamese: "Chi",
+    examples: [
+      {
+        japanese: "支店",
+        romaji: "Shiten",
+        vietnamese: "Chi nhánh"
+      },
+      {
+        japanese: "支払います",
+        romaji: "Shiharaimasu",
+        vietnamese: "Chi trả"
+      },
+      {
+        japanese: "支えます",
+        romaji: "Sasaemasu",
+        vietnamese: "Nâng đỡ, hỗ trợ"
+      }
+    ]
+  },
+  {
+    id: 384,
+    kanji: "厚",
+    onyomi: "コウ",
+    kunyomi: "あつ・い",
+    meaning: "Hậu, Dày",
+    sinoVietnamese: "Hậu",
+    examples: [
+      {
+        japanese: "厚い",
+        romaji: "Atsui",
+        vietnamese: "Dày"
+      },
+      {
+        japanese: "濃厚な",
+        romaji: "Noukou na",
+        vietnamese: "Đậm đà"
+      }
+    ]
+  },
+  {
+    id: 385,
+    kanji: "薄",
+    onyomi: "ハク",
+    kunyomi: "うす・い",
+    meaning: "Bạc, Mỏng",
+    sinoVietnamese: "Bạc",
+    examples: [
+      {
+        japanese: "薄い",
+        romaji: "Usui",
+        vietnamese: "Mỏng, nhạt"
+      },
+      {
+        japanese: "薄暗い",
+        romaji: "Usugurai",
+        vietnamese: "Mờ tối"
+      }
+    ]
+  },
+  {
+    id: 386,
+    kanji: "神",
+    onyomi: "シン、ジン",
+    kunyomi: "かみ",
+    meaning: "Thần, Thần thánh",
+    sinoVietnamese: "Thần",
+    examples: [
+      {
+        japanese: "神様",
+        romaji: "Kamisama",
+        vietnamese: "Thần"
+      },
+      {
+        japanese: "神社",
+        romaji: "Jinja",
+        vietnamese: "Đền thờ đạo Shinto"
+      },
+      {
+        japanese: "精神",
+        romaji: "Seishin",
+        vietnamese: "Tinh thần"
+      }
+    ]
+  },
+  {
+    id: 387,
+    kanji: "公",
+    onyomi: "コウ",
+    kunyomi: "おおやけ",
+    meaning: "Công, Công cộng",
+    sinoVietnamese: "Công",
+    examples: [
+      {
+        japanese: "公園",
+        romaji: "Kouen",
+        vietnamese: "Công viên"
+      },
+      {
+        japanese: "公立",
+        romaji: "Kouritsu",
+        vietnamese: "Công lập"
+      },
+      {
+        japanese: "公開",
+        romaji: "Koukai",
+        vietnamese: "Công khai"
+      }
+    ]
+  },
+  {
+    id: 388,
+    kanji: "園",
+    onyomi: "エン",
+    kunyomi: "その",
+    meaning: "Viên, Vườn, Công viên",
+    sinoVietnamese: "Viên",
+    examples: [
+      {
+        japanese: "公園",
+        romaji: "Kouen",
+        vietnamese: "Công viên"
+      },
+      {
+        japanese: "動物園",
+        romaji: "Doubutsuen",
+        vietnamese: "Sở thú"
+      },
+      {
+        japanese: "遊園地",
+        romaji: "Yuuenchi",
+        vietnamese: "Khu vui chơi"
+      }
+    ]
+  },
+  {
+    id: 389,
+    kanji: "込",
+    onyomi: "",
+    kunyomi: "こ・む、こ・める",
+    meaning: "Vào, Đông đúc",
+    sinoVietnamese: "Vào",
+    examples: [
+      {
+        japanese: "込みます",
+        romaji: "Komimasu",
+        vietnamese: "Đông đúc"
+      },
+      {
+        japanese: "申し込み",
+        romaji: "Moushikomi",
+        vietnamese: "Đăng ký"
+      },
+      {
+        japanese: "飛び込む",
+        romaji: "Tobikomu",
+        vietnamese: "Nhảy vào"
+      }
+    ]
+  },
+  {
+    id: 390,
+    kanji: "連",
+    onyomi: "レン",
+    kunyomi: "つ・れる、つら・なる",
+    meaning: "Liên, Liên lạc",
+    sinoVietnamese: "Liên",
+    examples: [
+      {
+        japanese: "連絡",
+        romaji: "Renraku",
+        vietnamese: "Liên lạc"
+      },
+      {
+        japanese: "連れて行きます",
+        romaji: "Tsureteikimasu",
+        vietnamese: "Dẫn đi"
+      },
+      {
+        japanese: "連休",
+        romaji: "Renkyuu",
+        vietnamese: "Kỳ nghỉ dài"
+      }
+    ]
+  },
+  {
+    id: 391,
+    kanji: "窓",
+    onyomi: "ソウ",
+    kunyomi: "まど",
+    meaning: "Song, Cửa sổ",
+    sinoVietnamese: "Song",
+    examples: [
+      {
+        japanese: "窓",
+        romaji: "Mado",
+        vietnamese: "Cửa sổ"
+      },
+      {
+        japanese: "窓口",
+        romaji: "Madoguchi",
+        vietnamese: "Quầy giao dịch"
+      },
+      {
+        japanese: "同窓会",
+        romaji: "Dousoukai",
+        vietnamese: "Hội cựu học sinh"
+      }
+    ]
+  },
+  {
+    id: 392,
+    kanji: "側",
+    onyomi: "ソク",
+    kunyomi: "かわ",
+    meaning: "Trắc, Phía",
+    sinoVietnamese: "Trắc",
+    examples: [
+      {
+        japanese: "側",
+        romaji: "Kawa",
+        vietnamese: "Phía"
+      },
+      {
+        japanese: "右側",
+        romaji: "Migigawa",
+        vietnamese: "Phía bên phải"
+      },
+      {
+        japanese: "内側",
+        romaji: "Uchigawa",
+        vietnamese: "Phía bên trong"
+      }
+    ]
+  },
+  {
+    id: 393,
+    kanji: "葉",
+    onyomi: "ヨウ",
+    kunyomi: "は",
+    meaning: "Diệp, Lá",
+    sinoVietnamese: "Diệp",
+    examples: [
+      {
+        japanese: "葉",
+        romaji: "Ha",
+        vietnamese: "Lá"
+      },
+      {
+        japanese: "言葉",
+        romaji: "Kotoba",
+        vietnamese: "Từ vựng, lời nói"
+      },
+      {
+        japanese: "紅葉",
+        romaji: "Momiji",
+        vietnamese: "Lá đỏ"
+      }
+    ]
+  },
+  {
+    id: 394,
+    kanji: "景",
+    onyomi: "ケイ",
+    kunyomi: "",
+    meaning: "Cảnh, Cảnh sắc",
+    sinoVietnamese: "Cảnh",
+    examples: [
+      {
+        japanese: "景色",
+        romaji: "Keshiki",
+        vietnamese: "Phong cảnh"
+      },
+      {
+        japanese: "景気",
+        romaji: "Keiki",
+        vietnamese: "Tình hình kinh tế"
+      },
+      {
+        japanese: "風景",
+        romaji: "Fuukei",
+        vietnamese: "Phong cảnh"
+      }
+    ]
+  },
+  {
+    id: 395,
+    kanji: "色",
+    onyomi: "ショク、シキ",
+    kunyomi: "いろ",
+    meaning: "Sắc, Màu sắc",
+    sinoVietnamese: "Sắc",
+    examples: [
+      {
+        japanese: "色",
+        romaji: "Iro",
+        vietnamese: "Màu sắc"
+      },
+      {
+        japanese: "景色",
+        romaji: "Keshiki",
+        vietnamese: "Phong cảnh"
+      },
+      {
+        japanese: "色々",
+        romaji: "Iroiro",
+        vietnamese: "Nhiều, đa dạng"
+      }
+    ]
+  },
+  {
+    id: 396,
+    kanji: "容",
+    onyomi: "ヨウ",
+    kunyomi: "",
+    meaning: "Dung, Nội dung",
+    sinoVietnamese: "Dung",
+    examples: [
+      {
+        japanese: "内容",
+        romaji: "Naiyou",
+        vietnamese: "Nội dung"
+      },
+      {
+        japanese: "美容院",
+        romaji: "Biyouin",
+        vietnamese: "Thẩm mỹ viện"
+      },
+      {
+        japanese: "容器",
+        romaji: "Youki",
+        vietnamese: "Đồ đựng"
+      }
+    ]
+  },
+  {
+    id: 397,
+    kanji: "美",
+    onyomi: "ビ",
+    kunyomi: "うつく・しい",
+    meaning: "Mỹ, Đẹp",
+    sinoVietnamese: "Mỹ",
+    examples: [
+      {
+        japanese: "美しい",
+        romaji: "Utsukushii",
+        vietnamese: "Đẹp"
+      },
+      {
+        japanese: "美人",
+        romaji: "Bijin",
+        vietnamese: "Người đẹp"
+      },
+      {
+        japanese: "美容院",
+        romaji: "Biyouin",
+        vietnamese: "Thẩm mỹ viện"
+      }
+    ]
+  },
+  {
+    id: 398,
+    kanji: "遊",
+    onyomi: "ユウ",
+    kunyomi: "あそ・ぶ",
+    meaning: "Du, Chơi",
+    sinoVietnamese: "Du",
+    examples: [
+      {
+        japanese: "遊びます",
+        romaji: "Asobimasu",
+        vietnamese: "Chơi"
+      },
+      {
+        japanese: "遊園地",
+        romaji: "Yuuenchi",
+        vietnamese: "Khu vui chơi"
+      }
+    ]
+  },
+  {
+    id: 399,
+    kanji: "疲",
+    onyomi: "ヒ",
+    kunyomi: "つか・れる",
+    meaning: "Bì, Mệt",
+    sinoVietnamese: "Bì",
+    examples: [
+      {
+        japanese: "疲れます",
+        romaji: "Tsukaremasu",
+        vietnamese: "Mệt"
+      },
+      {
+        japanese: "疲れ",
+        romaji: "Tsukare",
+        vietnamese: "Sự mệt mỏi"
+      }
+    ]
+  },
+  {
+    id: 400,
+    kanji: "泳",
+    onyomi: "エイ",
+    kunyomi: "およ・ぐ",
+    meaning: "Vịnh, Bơi",
+    sinoVietnamese: "Vịnh",
+    examples: [
+      {
+        japanese: "泳ぎます",
+        romaji: "Oyogimasu",
+        vietnamese: "Bơi"
+      },
+      {
+        japanese: "水泳",
+        romaji: "Suiei",
+        vietnamese: "Bơi lội"
+      }
+    ]
+  },
+  {
+    id: 401,
+    kanji: "暖",
+    onyomi: "ダン",
+    kunyomi: "あたた・かい",
+    meaning: "Noãn, Ấm",
+    sinoVietnamese: "Noãn",
+    examples: [
+      {
+        japanese: "暖かい",
+        romaji: "Atatakai",
+        vietnamese: "Ấm áp"
+      },
+      {
+        japanese: "暖房",
+        romaji: "Danbou",
+        vietnamese: "Lò sưởi"
+      },
+      {
+        japanese: "温暖な",
+        romaji: "Ondan na",
+        vietnamese: "Ôn hòa"
+      }
+    ]
+  },
+  {
+    id: 402,
+    kanji: "涼",
+    onyomi: "リョウ",
+    kunyomi: "すず・しい",
+    meaning: "Lương, Mát",
+    sinoVietnamese: "Lương",
+    examples: [
+      {
+        japanese: "涼しい",
+        romaji: "Suzushii",
+        vietnamese: "Mát mẻ"
+      },
+      {
+        japanese: "涼みます",
+        romaji: "Suzumimasu",
+        vietnamese: "Hóng mát"
+      }
+    ]
+  },
+  {
+    id: 403,
+    kanji: "静",
+    onyomi: "セイ",
+    kunyomi: "しず・か",
+    meaning: "Tĩnh, Yên tĩnh",
+    sinoVietnamese: "Tĩnh",
+    examples: [
+      {
+        japanese: "静かな",
+        romaji: "Shizuka na",
+        vietnamese: "Yên tĩnh"
+      },
+      {
+        japanese: "冷静な",
+        romaji: "Reisei na",
+        vietnamese: "Điềm tĩnh"
+      }
+    ]
+  },
+  {
+    id: 404,
+    kanji: "輪",
+    onyomi: "リン",
+    kunyomi: "わ",
+    meaning: "Luân, Bánh xe, Vòng",
+    sinoVietnamese: "Luân",
+    examples: [
+      {
+        japanese: "指輪",
+        romaji: "Yubiwa",
+        vietnamese: "Nhẫn"
+      },
+      {
+        japanese: "車輪",
+        romaji: "Sharin",
+        vietnamese: "Bánh xe"
+      },
+      {
+        japanese: "五輪",
+        romaji: "Gorin",
+        vietnamese: "Olympic"
+      }
+    ]
+  },
+  {
+    id: 405,
+    kanji: "港",
+    onyomi: "コウ",
+    kunyomi: "みなと",
+    meaning: "Cảng, Hải cảng",
+    sinoVietnamese: "Cảng",
+    examples: [
+      {
+        japanese: "港",
+        romaji: "Minato",
+        vietnamese: "Cảng"
+      },
+      {
+        japanese: "空港",
+        romaji: "Kuukou",
+        vietnamese: "Sân bay"
+      },
+      {
+        japanese: "見送ります",
+        romaji: "Miokurimasu",
+        vietnamese: "Tiễn"
+      }
+    ]
+  },
+  {
+    id: 406,
+    kanji: "途",
+    onyomi: "ト",
+    kunyomi: "",
+    meaning: "Đồ, Giữa đường",
+    sinoVietnamese: "Đồ",
+    examples: [
+      {
+        japanese: "途中",
+        romaji: "Tochuu",
+        vietnamese: "Giữa đường"
+      },
+      {
+        japanese: "用途",
+        romaji: "Youto",
+        vietnamese: "Công dụng"
+      }
+    ]
+  },
+  {
+    id: 407,
+    kanji: "降",
+    onyomi: "コウ",
+    kunyomi: "お・りる、ふ・る",
+    meaning: "Giáng, Xuống, Mưa",
+    sinoVietnamese: "Giáng",
+    examples: [
+      {
+        japanese: "降ります",
+        romaji: "Orimasu",
+        vietnamese: "Xuống (xe)"
+      },
+      {
+        japanese: "雨が降ります",
+        romaji: "Ame ga furimasu",
+        vietnamese: "Mưa rơi"
+      },
+      {
+        japanese: "以降",
+        romaji: "Ikou",
+        vietnamese: "Sau đó"
+      }
+    ]
+  },
+  {
+    id: 408,
+    kanji: "換",
+    onyomi: "カン",
+    kunyomi: "か・える",
+    meaning: "Hoán, Thay đổi",
+    sinoVietnamese: "Hoán",
+    examples: [
+      {
+        japanese: "換えます",
+        romaji: "Kaemasu",
+        vietnamese: "Trao đổi"
+      },
+      {
+        japanese: "乗り換え",
+        romaji: "Norikae",
+        vietnamese: "Đổi tàu/xe"
+      },
+      {
+        japanese: "交換",
+        romaji: "Koukan",
+        vietnamese: "Trao đổi"
+      }
+    ]
+  },
+  {
+    id: 409,
+    kanji: "吉",
+    onyomi: "キチ、キツ",
+    kunyomi: "",
+    meaning: "Cát, Tốt lành",
+    sinoVietnamese: "Cát",
+    examples: [
+      {
+        japanese: "吉",
+        romaji: "Kichi",
+        vietnamese: "Điềm lành"
+      },
+      {
+        japanese: "大吉",
+        romaji: "Daikichi",
+        vietnamese: "Đại cát"
+      },
+      {
+        japanese: "不吉な",
+        romaji: "Fukitsu na",
+        vietnamese: "Chẳng lành"
+      }
+    ]
+  },
+  {
+    id: 410,
+    kanji: "供",
+    onyomi: "キョウ",
+    kunyomi: "とも、そな・える",
+    meaning: "Cung, Cung cấp",
+    sinoVietnamese: "Cung",
+    examples: [
+      {
+        japanese: "子供",
+        romaji: "Kodomo",
+        vietnamese: "Trẻ em"
+      },
+      {
+        japanese: "提供",
+        romaji: "Teikyou",
+        vietnamese: "Cung cấp"
+      }
+    ]
+  },
+  {
+    id: 411,
+    kanji: "両",
+    onyomi: "リョウ",
+    kunyomi: "",
+    meaning: "Lưỡng, Cả hai",
+    sinoVietnamese: "Lưỡng",
+    examples: [
+      {
+        japanese: "両親",
+        romaji: "Ryoushin",
+        vietnamese: "Bố mẹ"
+      },
+      {
+        japanese: "両方",
+        romaji: "Ryouhou",
+        vietnamese: "Cả hai"
+      },
+      {
+        japanese: "両手",
+        romaji: "Ryoute",
+        vietnamese: "Hai tay"
+      }
+    ]
+  },
+  {
+    id: 412,
+    kanji: "若",
+    onyomi: "ジャク",
+    kunyomi: "わか・い",
+    meaning: "Nhược, Trẻ",
+    sinoVietnamese: "Nhược",
+    examples: [
+      {
+        japanese: "若い",
+        romaji: "Wakai",
+        vietnamese: "Trẻ"
+      },
+      {
+        japanese: "若者",
+        romaji: "Wakamono",
+        vietnamese: "Giới trẻ"
+      }
+    ]
+  },
+  {
+    id: 413,
+    kanji: "老",
+    onyomi: "ロウ",
+    kunyomi: "お・いる",
+    meaning: "Lão, Già",
+    sinoVietnamese: "Lão",
+    examples: [
+      {
+        japanese: "老人",
+        romaji: "Roujin",
+        vietnamese: "Người già"
+      },
+      {
+        japanese: "敬老の日",
+        romaji: "Keirou no hi",
+        vietnamese: "Ngày kính lão"
+      }
+    ]
+  },
+  {
+    id: 414,
+    kanji: "息",
+    onyomi: "ソク",
+    kunyomi: "いき",
+    meaning: "Tức, Hơi thở",
+    sinoVietnamese: "Tức",
+    examples: [
+      {
+        japanese: "息子",
+        romaji: "Musuko",
+        vietnamese: "Con trai"
+      },
+      {
+        japanese: "息",
+        romaji: "Iki",
+        vietnamese: "Hơi thở"
+      },
+      {
+        japanese: "休息",
+        romaji: "Kyuusoku",
+        vietnamese: "Nghỉ giải lao"
+      }
+    ]
+  },
+  {
+    id: 415,
+    kanji: "娘",
+    onyomi: "",
+    kunyomi: "むすめ",
+    meaning: "Nương, Con gái",
+    sinoVietnamese: "Nương",
+    examples: [
+      {
+        japanese: "娘",
+        romaji: "Musume",
+        vietnamese: "Con gái"
+      }
+    ]
+  },
+  {
+    id: 416,
+    kanji: "奥",
+    onyomi: "オウ",
+    kunyomi: "おく",
+    meaning: "Áo, Vợ, Bên trong",
+    sinoVietnamese: "Áo",
+    examples: [
+      {
+        japanese: "奥さん",
+        romaji: "Okusan",
+        vietnamese: "Vợ (người khác)"
+      },
+      {
+        japanese: "奥",
+        romaji: "Oku",
+        vietnamese: "Phía trong cùng"
+      }
+    ]
+  },
+  {
+    id: 417,
+    kanji: "将",
+    onyomi: "ショウ",
+    kunyomi: "",
+    meaning: "Tương, Tương lai",
+    sinoVietnamese: "Tương",
+    examples: [
+      {
+        japanese: "将来",
+        romaji: "Shourai",
+        vietnamese: "Tương lai"
+      }
+    ]
+  },
+  {
+    id: 418,
+    kanji: "祖",
+    onyomi: "ソ",
+    kunyomi: "",
+    meaning: "Tổ, Tổ tiên",
+    sinoVietnamese: "Tổ",
+    examples: [
+      {
+        japanese: "祖父",
+        romaji: "Sofu",
+        vietnamese: "Ông"
+      },
+      {
+        japanese: "祖母",
+        romaji: "Sobo",
+        vietnamese: "Bà"
+      },
+      {
+        japanese: "祖先",
+        romaji: "Sosen",
+        vietnamese: "Tổ tiên"
+      }
+    ]
+  },
+  {
+    id: 419,
+    kanji: "招",
+    onyomi: "ショウ",
+    kunyomi: "まね・く",
+    meaning: "Chiêu, Mời",
+    sinoVietnamese: "Chiêu",
+    examples: [
+      {
+        japanese: "招待",
+        romaji: "Shoutai",
+        vietnamese: "Chiêu đãi, mời"
+      },
+      {
+        japanese: "招きます",
+        romaji: "Manekimasu",
+        vietnamese: "Mời, rủ"
+      }
+    ]
+  },
+  {
+    id: 420,
+    kanji: "慣",
+    onyomi: "カン",
+    kunyomi: "な・れる",
+    meaning: "Quán, Quen, Tập quán",
+    sinoVietnamese: "Quán",
+    examples: [
+      {
+        japanese: "習慣",
+        romaji: "Shuukan",
+        vietnamese: "Tập quán, thói quen"
+      },
+      {
+        japanese: "慣れます",
+        romaji: "Naremasu",
+        vietnamese: "Quen với"
+      }
+    ]
+  },
+  {
+    id: 421,
+    kanji: "席",
+    onyomi: "セキ",
+    kunyomi: "",
+    meaning: "Tịch, Chỗ ngồi",
+    sinoVietnamese: "Tịch",
+    examples: [
+      {
+        japanese: "出席",
+        romaji: "Shusseki",
+        vietnamese: "Sự tham gia (có mặt)"
+      },
+      {
+        japanese: "座席",
+        romaji: "Zaseki",
+        vietnamese: "Chỗ ngồi"
+      },
+      {
+        japanese: "欠席",
+        romaji: "Kesseki",
+        vietnamese: "Vắng mặt"
+      }
+    ]
+  },
+  {
+    id: 422,
+    kanji: "泊",
+    onyomi: "ハク",
+    kunyomi: "と・まる",
+    meaning: "Bạc, Trọ lại",
+    sinoVietnamese: "Bạc",
+    examples: [
+      {
+        japanese: "泊まります",
+        romaji: "Tomarimasu",
+        vietnamese: "Trọ lại"
+      },
+      {
+        japanese: "一泊",
+        romaji: "Ippaku",
+        vietnamese: "Một đêm"
+      },
+      {
+        japanese: "宿泊",
+        romaji: "Shukuhaku",
+        vietnamese: "Trọ lại"
+      }
+    ]
+  },
+  {
+    id: 423,
+    kanji: "訪",
+    onyomi: "ホウ",
+    kunyomi: "たず・ねる",
+    meaning: "Phỏng, Thăm",
+    sinoVietnamese: "Phỏng",
+    examples: [
+      {
+        japanese: "訪問",
+        romaji: "Houmon",
+        vietnamese: "Thăm hỏi"
+      },
+      {
+        japanese: "訪ねます",
+        romaji: "Tazunemasu",
+        vietnamese: "Ghé thăm"
+      }
+    ]
+  },
+  {
+    id: 424,
+    kanji: "替",
+    onyomi: "タイ",
+    kunyomi: "か・える",
+    meaning: "Thế, Thay",
+    sinoVietnamese: "Thế",
+    examples: [
+      {
+        japanese: "着替え",
+        romaji: "Kigae",
+        vietnamese: "Thay quần áo"
+      },
+      {
+        japanese: "取り替えます",
+        romaji: "Torikaemasu",
+        vietnamese: "Đổi, thay"
+      },
+      {
+        japanese: "交替",
+        romaji: "Koutai",
+        vietnamese: "Thay phiên"
+      }
+    ]
+  },
+  {
+    id: 425,
+    kanji: "取",
+    onyomi: "シュ",
+    kunyomi: "と・る",
+    meaning: "Thủ, Lấy",
+    sinoVietnamese: "Thủ",
+    examples: [
+      {
+        japanese: "取ります",
+        romaji: "Torimasu",
+        vietnamese: "Lấy"
+      },
+      {
+        japanese: "受け取ります",
+        romaji: "Uketorimasu",
+        vietnamese: "Nhận"
+      },
+      {
+        japanese: "取得",
+        romaji: "Shutoku",
+        vietnamese: "Giành được"
+      }
+    ]
+  },
+  {
+    id: 426,
+    kanji: "最",
+    onyomi: "サイ",
+    kunyomi: "もっと・も",
+    meaning: "Tối, Nhất",
+    sinoVietnamese: "Tối",
+    examples: [
+      {
+        japanese: "最近",
+        romaji: "Saikin",
+        vietnamese: "Gần đây"
+      },
+      {
+        japanese: "最高",
+        romaji: "Saikou",
+        vietnamese: "Tuyệt nhất"
+      },
+      {
+        japanese: "最後",
+        romaji: "Saigo",
+        vietnamese: "Cuối cùng"
+      }
+    ]
+  },
+  {
+    id: 427,
+    kanji: "初",
+    onyomi: "ショ",
+    kunyomi: "はじ・め、はつ",
+    meaning: "Sơ, Đầu tiên",
+    sinoVietnamese: "Sơ",
+    examples: [
+      {
+        japanese: "初めて",
+        romaji: "Hajimete",
+        vietnamese: "Lần đầu tiên"
+      },
+      {
+        japanese: "最初",
+        romaji: "Saisho",
+        vietnamese: "Đầu tiên"
+      },
+      {
+        japanese: "初級",
+        romaji: "Shokyuu",
+        vietnamese: "Sơ cấp"
+      }
+    ]
+  },
+  {
+    id: 428,
+    kanji: "番",
+    onyomi: "バン",
+    kunyomi: "",
+    meaning: "Phiên, Lượt, Số",
+    sinoVietnamese: "Phiên",
+    examples: [
+      {
+        japanese: "一番",
+        romaji: "Ichiban",
+        vietnamese: "Số một, nhất"
+      },
+      {
+        japanese: "番号",
+        romaji: "Bangou",
+        vietnamese: "Số hiệu"
+      },
+      {
+        japanese: "交番",
+        romaji: "Kouban",
+        vietnamese: "Đồn cảnh sát"
+      }
+    ]
+  },
+  {
+    id: 429,
+    kanji: "周",
+    onyomi: "シュウ",
+    kunyomi: "まわ・り",
+    meaning: "Chu, Chu vi, Xung quanh",
+    sinoVietnamese: "Chu",
+    examples: [
+      {
+        japanese: "周り",
+        romaji: "Mawari",
+        vietnamese: "Xung quanh"
+      },
+      {
+        japanese: "周辺",
+        romaji: "Shuuhen",
+        vietnamese: "Vùng xung quanh"
+      }
+    ]
+  },
+  {
+    id: 430,
+    kanji: "囲",
+    onyomi: "イ",
+    kunyomi: "かこ・む",
+    meaning: "Vi, Bao quanh",
+    sinoVietnamese: "Vi",
+    examples: [
+      {
+        japanese: "囲みます",
+        romaji: "Kakomimasu",
+        vietnamese: "Bao quanh"
+      },
+      {
+        japanese: "周囲",
+        romaji: "Shuui",
+        vietnamese: "Chu vi"
+      }
+    ]
+  },
+  {
+    id: 431,
+    kanji: "協",
+    onyomi: "キョウ",
+    kunyomi: "",
+    meaning: "Hiệp, Hợp lực",
+    sinoVietnamese: "Hiệp",
+    examples: [
+      {
+        japanese: "協力",
+        romaji: "Kyouryoku",
+        vietnamese: "Hợp lực"
+      },
+      {
+        japanese: "協会",
+        romaji: "Kyoukai",
+        vietnamese: "Hiệp hội"
+      }
+    ]
+  },
+  {
+    id: 432,
+    kanji: "互",
+    onyomi: "ゴ",
+    kunyomi: "たが・い",
+    meaning: "Hỗ, Hỗ trợ",
+    sinoVietnamese: "Hỗ",
+    examples: [
+      {
+        japanese: "お互いに",
+        romaji: "Otagai ni",
+        vietnamese: "Lẫn nhau"
+      },
+      {
+        japanese: "相互",
+        romaji: "Sougo",
+        vietnamese: "Tương hỗ"
+      }
+    ]
+  },
+  {
+    id: 433,
+    kanji: "票",
+    onyomi: "ヒョウ",
+    kunyomi: "",
+    meaning: "Phiếu, Bỏ phiếu",
+    sinoVietnamese: "Phiếu",
+    examples: [
+      {
+        japanese: "投票",
+        romaji: "Touhyou",
+        vietnamese: "Bỏ phiếu"
+      },
+      {
+        japanese: "伝票",
+        romaji: "Denpyou",
+        vietnamese: "Hóa đơn"
+      }
+    ]
+  },
+  {
+    id: 434,
+    kanji: "姿",
+    onyomi: "シ",
+    kunyomi: "すがた",
+    meaning: "Tư, Dáng vẻ",
+    sinoVietnamese: "Tư",
+    examples: [
+      {
+        japanese: "姿",
+        romaji: "Sugata",
+        vietnamese: "Dáng vẻ"
+      },
+      {
+        japanese: "姿勢",
+        romaji: "Shisei",
+        vietnamese: "Tư thế"
+      }
+    ]
+  },
+  {
+    id: 435,
+    kanji: "勢",
+    onyomi: "セイ",
+    kunyomi: "いきお・い",
+    meaning: "Thế, Tư thế",
+    sinoVietnamese: "Thế",
+    examples: [
+      {
+        japanese: "姿勢",
+        romaji: "Shisei",
+        vietnamese: "Tư thế"
+      },
+      {
+        japanese: "勢い",
+        romaji: "Ikioi",
+        vietnamese: "Mạnh mẽ, tràn trề"
+      }
+    ]
+  },
+  {
+    id: 436,
+    kanji: "偉",
+    onyomi: "イ",
+    kunyomi: "えら・い",
+    meaning: "Vĩ, Vĩ đại",
+    sinoVietnamese: "Vĩ",
+    examples: [
+      {
+        japanese: "偉い",
+        romaji: "Erai",
+        vietnamese: "Vĩ đại, giỏi"
+      },
+      {
+        japanese: "偉大な",
+        romaji: "Idai na",
+        vietnamese: "Vĩ đại"
+      }
+    ]
+  },
+  {
+    id: 437,
+    kanji: "達",
+    onyomi: "タツ",
+    kunyomi: "たち",
+    meaning: "Đạt, Đạt được",
+    sinoVietnamese: "Đạt",
+    examples: [
+      {
+        japanese: "友達",
+        romaji: "Tomodachi",
+        vietnamese: "Bạn bè"
+      },
+      {
+        japanese: "配達",
+        romaji: "Haitatsu",
+        vietnamese: "Phân phát"
+      },
+      {
+        japanese: "上達",
+        romaji: "Joutatsu",
+        vietnamese: "Tiến bộ"
+      }
+    ]
+  },
+  {
+    id: 438,
+    kanji: "損",
+    onyomi: "ソン",
+    kunyomi: "そこ・なう",
+    meaning: "Tổn, Thua lỗ",
+    sinoVietnamese: "Tổn",
+    examples: [
+      {
+        japanese: "損",
+        romaji: "Son",
+        vietnamese: "Lỗ, thiệt hại"
+      },
+      {
+        japanese: "損害",
+        romaji: "Songai",
+        vietnamese: "Tổn hại"
+      }
+    ]
+  },
+  {
+    id: 439,
+    kanji: "予",
+    onyomi: "ヨ",
+    kunyomi: "",
+    meaning: "Dự, Dự định",
+    sinoVietnamese: "Dự",
+    examples: [
+      {
+        japanese: "予定",
+        romaji: "Yotei",
+        vietnamese: "Dự định"
+      },
+      {
+        japanese: "予約",
+        romaji: "Yoyaku",
+        vietnamese: "Đặt trước"
+      },
+      {
+        japanese: "天気予報",
+        romaji: "Tenkiyohou",
+        vietnamese: "Dự báo thời tiết"
+      }
+    ]
+  },
+  {
+    id: 440,
+    kanji: "算",
+    onyomi: "サン",
+    kunyomi: "",
+    meaning: "Toán, Tính toán",
+    sinoVietnamese: "Toán",
+    examples: [
+      {
+        japanese: "計算",
+        romaji: "Keisan",
+        vietnamese: "Tính toán"
+      },
+      {
+        japanese: "予算",
+        romaji: "Yosan",
+        vietnamese: "Ngân sách"
+      }
+    ]
+  },
+  {
+    id: 441,
+    kanji: "勝",
+    onyomi: "ショウ",
+    kunyomi: "か・つ",
+    meaning: "Thắng, Chiến thắng",
+    sinoVietnamese: "Thắng",
+    examples: [
+      {
+        japanese: "勝ちます",
+        romaji: "Kachimasu",
+        vietnamese: "Thắng"
+      },
+      {
+        japanese: "優勝",
+        romaji: "Yuushou",
+        vietnamese: "Vô địch"
+      },
+      {
+        japanese: "勝負",
+        romaji: "Shoubu",
+        vietnamese: "Thắng thua, trận đấu"
+      }
+    ]
+  },
+  {
+    id: 442,
+    kanji: "負",
+    onyomi: "フ",
+    kunyomi: "ま・ける",
+    meaning: "Phụ, Thua",
+    sinoVietnamese: "Phụ",
+    examples: [
+      {
+        japanese: "負けます",
+        romaji: "Makemasu",
+        vietnamese: "Thua"
+      },
+      {
+        japanese: "勝負",
+        romaji: "Shoubu",
+        vietnamese: "Thắng thua"
+      },
+      {
+        japanese: "背負います",
+        romaji: "Seoimasu",
+        vietnamese: "Cõng, vác"
+      }
+    ]
+  },
+  {
+    id: 443,
+    kanji: "賛",
+    onyomi: "サン",
+    kunyomi: "",
+    meaning: "Tán, Tán thành",
+    sinoVietnamese: "Tán",
+    examples: [
+      {
+        japanese: "賛成",
+        romaji: "Sansei",
+        vietnamese: "Tán thành"
+      }
+    ]
+  },
+  {
+    id: 444,
+    kanji: "成",
+    onyomi: "セイ",
+    kunyomi: "な・る",
+    meaning: "Thành, Trở thành, Thành công",
+    sinoVietnamese: "Thành",
+    examples: [
+      {
+        japanese: "成功",
+        romaji: "Seikou",
+        vietnamese: "Thành công"
+      },
+      {
+        japanese: "成人の日",
+        romaji: "Seijin no hi",
+        vietnamese: "Ngày lễ thành nhân"
+      },
+      {
+        japanese: "完成",
+        romaji: "Kansei",
+        vietnamese: "Hoàn thành"
+      }
+    ]
+  },
+  {
+    id: 445,
+    kanji: "絶",
+    onyomi: "ゼツ",
+    kunyomi: "た・える",
+    meaning: "Tuyệt, Tuyệt đối",
+    sinoVietnamese: "Tuyệt",
+    examples: [
+      {
+        japanese: "絶対に",
+        romaji: "Zettai ni",
+        vietnamese: "Tuyệt đối"
+      },
+      {
+        japanese: "絶望",
+        romaji: "Zetsubou",
+        vietnamese: "Tuyệt vọng"
+      }
+    ]
+  },
+  {
+    id: 446,
+    kanji: "対",
+    onyomi: "タイ",
+    kunyomi: "",
+    meaning: "Đối, Đối diện",
+    sinoVietnamese: "Đối",
+    examples: [
+      {
+        japanese: "反対",
+        romaji: "Hantai",
+        vietnamese: "Phản đối"
+      },
+      {
+        japanese: "絶対",
+        romaji: "Zettai",
+        vietnamese: "Tuyệt đối"
+      },
+      {
+        japanese: "対象",
+        romaji: "Taishou",
+        vietnamese: "Đối tượng"
+      }
+    ]
+  },
+  {
+    id: 447,
+    kanji: "続",
+    onyomi: "ゾク",
+    kunyomi: "つづ・く",
+    meaning: "Tục, Tiếp tục",
+    sinoVietnamese: "Tục",
+    examples: [
+      {
+        japanese: "続きます",
+        romaji: "Tsuzukimasu",
+        vietnamese: "Tiếp tục"
+      },
+      {
+        japanese: "手続き",
+        romaji: "Tetsuzuki",
+        vietnamese: "Thủ tục"
+      },
+      {
+        japanese: "連続",
+        romaji: "Renzoku",
+        vietnamese: "Liên tục"
+      }
+    ]
+  },
+  {
+    id: 448,
+    kanji: "辞",
+    onyomi: "ジ",
+    kunyomi: "や・める",
+    meaning: "Từ, Từ bỏ, Từ ngữ",
+    sinoVietnamese: "Từ",
+    examples: [
+      {
+        japanese: "辞めます",
+        romaji: "Yamemasu",
+        vietnamese: "Từ bỏ, nghỉ việc"
+      },
+      {
+        japanese: "辞書",
+        romaji: "Jisho",
+        vietnamese: "Từ điển"
+      },
+      {
+        japanese: "辞職",
+        romaji: "Jishoku",
+        vietnamese: "Từ chức"
+      }
+    ]
+  },
+  {
+    id: 449,
+    kanji: "投",
+    onyomi: "トウ",
+    kunyomi: "な・げる",
+    meaning: "Đầu, Ném",
+    sinoVietnamese: "Đầu",
+    examples: [
+      {
+        japanese: "投げます",
+        romaji: "Nagemasu",
+        vietnamese: "Ném"
+      },
+      {
+        japanese: "投資",
+        romaji: "Toushi",
+        vietnamese: "Đầu tư"
+      },
+      {
+        japanese: "投手",
+        romaji: "Toushu",
+        vietnamese: "Cầu thủ ném bóng (bóng chày)"
+      }
+    ]
+  },
+  {
+    id: 450,
+    kanji: "巻",
+    onyomi: "カン",
+    kunyomi: "ま・く",
+    meaning: "Quyển, Cuộn",
+    sinoVietnamese: "Quyển",
+    examples: [
+      {
+        japanese: "巻きます",
+        romaji: "Makimasu",
+        vietnamese: "Cuộn, quấn"
+      },
+      {
+        japanese: "～巻",
+        romaji: "Kan",
+        vietnamese: "Quyển (tập sách)"
+      },
+      {
+        japanese: "海苔巻き",
+        romaji: "Norimaki",
+        vietnamese: "Cơm cuộn rong biển"
+      }
+    ]
+  },
+  {
+    id: 451,
+    kanji: "約",
+    onyomi: "ヤク",
+    kunyomi: "",
+    meaning: "Ước, Lời hứa, Khoảng",
+    sinoVietnamese: "Ước",
+    examples: [
+      {
+        japanese: "約束",
+        romaji: "Yakusoku",
+        vietnamese: "Lời hứa"
+      },
+      {
+        japanese: "予約",
+        romaji: "Yoyaku",
+        vietnamese: "Đặt trước"
+      },
+      {
+        japanese: "約",
+        romaji: "Yaku",
+        vietnamese: "Khoảng"
+      }
+    ]
+  },
+  {
+    id: 452,
+    kanji: "束",
+    onyomi: "ソク",
+    kunyomi: "たば",
+    meaning: "Thúc, Bó",
+    sinoVietnamese: "Thúc",
+    examples: [
+      {
+        japanese: "花束",
+        romaji: "Hanataba",
+        vietnamese: "Bó hoa"
+      },
+      {
+        japanese: "約束",
+        romaji: "Yakusoku",
+        vietnamese: "Lời hứa"
+      },
+      {
+        japanese: "結束",
+        romaji: "Kessoku",
+        vietnamese: "Đoàn kết"
+      }
+    ]
+  },
+  {
+    id: 453,
+    kanji: "守",
+    onyomi: "シュ、ス",
+    kunyomi: "まも・る",
+    meaning: "Thủ, Bảo vệ, Giữ",
+    sinoVietnamese: "Thủ",
+    examples: [
+      {
+        japanese: "守ります",
+        romaji: "Mamorimasu",
+        vietnamese: "Bảo vệ, tuân thủ"
+      },
+      {
+        japanese: "留守",
+        romaji: "Rusu",
+        vietnamese: "Vắng nhà"
+      },
+      {
+        japanese: "お守り",
+        romaji: "Omamori",
+        vietnamese: "Bùa hộ mệnh"
+      }
+    ]
+  },
+  {
+    id: 454,
+    kanji: "過",
+    onyomi: "カ",
+    kunyomi: "す・ぎる",
+    meaning: "Quá, Qua, Quá khứ",
+    sinoVietnamese: "Quá",
+    examples: [
+      {
+        japanese: "過ぎます",
+        romaji: "Sugimasu",
+        vietnamese: "Quá, trôi qua"
+      },
+      {
+        japanese: "過去",
+        romaji: "Kako",
+        vietnamese: "Quá khứ"
+      },
+      {
+        japanese: "通過",
+        romaji: "Tsuuka",
+        vietnamese: "Thông qua"
+      }
+    ]
+  },
+  {
+    id: 455,
+    kanji: "夢",
+    onyomi: "ム",
+    kunyomi: "ゆめ",
+    meaning: "Mộng, Giấc mơ",
+    sinoVietnamese: "Mộng",
+    examples: [
+      {
+        japanese: "夢",
+        romaji: "Yume",
+        vietnamese: "Giấc mơ"
+      },
+      {
+        japanese: "夢中",
+        romaji: "Muchuu",
+        vietnamese: "Say mê"
+      },
+      {
+        japanese: "悪夢",
+        romaji: "Akumu",
+        vietnamese: "Ác mộng"
+      }
+    ]
+  },
+  {
+    id: 456,
+    kanji: "的",
+    onyomi: "テキ",
+    kunyomi: "まと",
+    meaning: "Đích, Mục đích, Tính chất",
+    sinoVietnamese: "Đích",
+    examples: [
+      {
+        japanese: "目的",
+        romaji: "Mokuteki",
+        vietnamese: "Mục đích"
+      },
+      {
+        japanese: "的",
+        romaji: "Mato",
+        vietnamese: "Cái đích"
+      },
+      {
+        japanese: "具体的",
+        romaji: "Gutaiteki",
+        vietnamese: "Cụ thể"
+      }
+    ]
+  },
+  {
+    id: 457,
+    kanji: "飛",
+    onyomi: "ヒ",
+    kunyomi: "と・ぶ",
+    meaning: "Phi, Bay",
+    sinoVietnamese: "Phi",
+    examples: [
+      {
+        japanese: "飛びます",
+        romaji: "Tobimasu",
+        vietnamese: "Bay"
+      },
+      {
+        japanese: "飛行機",
+        romaji: "Hikouki",
+        vietnamese: "Máy bay"
+      },
+      {
+        japanese: "飛び出します",
+        romaji: "Tobidashimasu",
+        vietnamese: "Lao ra"
+      }
+    ]
+  },
+  {
+    id: 458,
+    kanji: "機",
+    onyomi: "キ",
+    kunyomi: "",
+    meaning: "Cơ, Máy móc, Cơ hội",
+    sinoVietnamese: "Cơ",
+    examples: [
+      {
+        japanese: "機械",
+        romaji: "Kikai",
+        vietnamese: "Máy móc"
+      },
+      {
+        japanese: "飛行機",
+        romaji: "Hikouki",
+        vietnamese: "Máy bay"
+      },
+      {
+        japanese: "機会",
+        romaji: "Kikai",
+        vietnamese: "Cơ hội"
+      }
+    ]
+  },
+  {
+    id: 459,
+    kanji: "失",
+    onyomi: "シツ",
+    kunyomi: "うしな・う",
+    meaning: "Thất, Mất",
+    sinoVietnamese: "Thất",
+    examples: [
+      {
+        japanese: "失敗",
+        romaji: "Shippai",
+        vietnamese: "Thất bại"
+      },
+      {
+        japanese: "失礼な",
+        romaji: "Shitsurei na",
+        vietnamese: "Thất lễ"
+      },
+      {
+        japanese: "失います",
+        romaji: "Ushinaimasu",
+        vietnamese: "Mất"
+      }
+    ]
+  },
+  {
+    id: 460,
+    kanji: "鉄",
+    onyomi: "テツ",
+    kunyomi: "",
+    meaning: "Thiết, Sắt, Đường sắt",
+    sinoVietnamese: "Thiết",
+    examples: [
+      {
+        japanese: "地下鉄",
+        romaji: "Chikatetsu",
+        vietnamese: "Tàu điện ngầm"
+      },
+      {
+        japanese: "鉄道",
+        romaji: "Tetsudou",
+        vietnamese: "Đường sắt"
+      },
+      {
+        japanese: "私鉄",
+        romaji: "Shitetsu",
+        vietnamese: "Đường sắt tư nhân"
+      }
+    ]
+  },
+  {
+    id: 461,
+    kanji: "速",
+    onyomi: "ソク",
+    kunyomi: "はや・い",
+    meaning: "Tốc, Nhanh",
+    sinoVietnamese: "Tốc",
+    examples: [
+      {
+        japanese: "速い",
+        romaji: "Hayai",
+        vietnamese: "Nhanh"
+      },
+      {
+        japanese: "速達",
+        romaji: "Sokutatsu",
+        vietnamese: "Chuyển phát nhanh"
+      },
+      {
+        japanese: "速度",
+        romaji: "Sokudo",
+        vietnamese: "Tốc độ"
+      }
+    ]
+  },
+  {
+    id: 462,
+    kanji: "遅",
+    onyomi: "チ",
+    kunyomi: "おそ・い、おく・れる",
+    meaning: "Trì, Muộn, Chậm",
+    sinoVietnamese: "Trì",
+    examples: [
+      {
+        japanese: "遅い",
+        romaji: "Osoi",
+        vietnamese: "Chậm, muộn"
+      },
+      {
+        japanese: "遅れます",
+        romaji: "Okuremasu",
+        vietnamese: "Trễ, muộn"
+      },
+      {
+        japanese: "遅国",
+        romaji: "Chikoku",
+        vietnamese: "Đến muộn"
+      }
+    ]
+  },
+  {
+    id: 463,
+    kanji: "駐",
+    onyomi: "チュウ",
+    kunyomi: "",
+    meaning: "Trú, Đỗ xe",
+    sinoVietnamese: "Trú",
+    examples: [
+      {
+        japanese: "駐車場",
+        romaji: "Chuushajou",
+        vietnamese: "Bãi đỗ xe"
+      },
+      {
+        japanese: "駐車",
+        romaji: "Chuusha",
+        vietnamese: "Đỗ xe"
+      }
+    ]
+  },
+  {
+    id: 464,
+    kanji: "船",
+    onyomi: "セン",
+    kunyomi: "ふね",
+    meaning: "Thuyền, Tàu thủy",
+    sinoVietnamese: "Thuyền",
+    examples: [
+      {
+        japanese: "船",
+        romaji: "Fune",
+        vietnamese: "Tàu, thuyền"
+      },
+      {
+        japanese: "風船",
+        romaji: "Fuusen",
+        vietnamese: "Bóng bay"
+      },
+      {
+        japanese: "船便",
+        romaji: "Funabin",
+        vietnamese: "Gửi bằng đường tàu"
+      }
+    ]
+  },
+  {
+    id: 465,
+    kanji: "座",
+    onyomi: "ザ",
+    kunyomi: "すわ・る",
+    meaning: "Tọa, Ngồi, Chỗ ngồi",
+    sinoVietnamese: "Tọa",
+    examples: [
+      {
+        japanese: "座ります",
+        romaji: "Suwarimasu",
+        vietnamese: "Ngồi"
+      },
+      {
+        japanese: "座席",
+        romaji: "Zaseki",
+        vietnamese: "Chỗ ngồi"
+      },
+      {
+        japanese: "口座",
+        romaji: "Kouza",
+        vietnamese: "Tài khoản (ngân hàng)"
+      }
+    ]
+  },
+  {
+    id: 466,
+    kanji: "島",
+    onyomi: "トウ",
+    kunyomi: "しま",
+    meaning: "Đảo, Hòn đảo",
+    sinoVietnamese: "Đảo",
+    examples: [
+      {
+        japanese: "島",
+        romaji: "Shima",
+        vietnamese: "Đảo"
+      },
+      {
+        japanese: "半島",
+        romaji: "Hantou",
+        vietnamese: "Bán đảo"
+      },
+      {
+        japanese: "島国",
+        romaji: "Shimaguni",
+        vietnamese: "Quốc đảo"
+      }
+    ]
+  },
+  {
+    id: 467,
+    kanji: "陸",
+    onyomi: "リク",
+    kunyomi: "",
+    meaning: "Lục, Lục đia, Đất liền",
+    sinoVietnamese: "Lục",
+    examples: [
+      {
+        japanese: "大陸",
+        romaji: "Tairiku",
+        vietnamese: "Lục địa"
+      },
+      {
+        japanese: "陸",
+        romaji: "Riku",
+        vietnamese: "Đất liền"
+      },
+      {
+        japanese: "着陸",
+        romaji: "Chakuriku",
+        vietnamese: "Hạ cánh"
+      }
+    ]
+  },
+  {
+    id: 468,
+    kanji: "橋",
+    onyomi: "キョウ",
+    kunyomi: "はし",
+    meaning: "Kiều, Cây cầu",
+    sinoVietnamese: "Kiều",
+    examples: [
+      {
+        japanese: "橋",
+        romaji: "Hashi",
+        vietnamese: "Cầu"
+      },
+      {
+        japanese: "歩道橋",
+        romaji: "Hodoukyou",
+        vietnamese: "Cầu vượt cho người đi bộ"
+      }
+    ]
+  },
+  {
+    id: 469,
+    kanji: "皿",
+    onyomi: "",
+    kunyomi: "さら",
+    meaning: "Mãnh, Cái đĩa",
+    sinoVietnamese: "Mãnh",
+    examples: [
+      {
+        japanese: "皿",
+        romaji: "Sara",
+        vietnamese: "Cái đĩa"
+      },
+      {
+        japanese: "灰皿",
+        romaji: "Haizara",
+        vietnamese: "Gạt tàn"
+      }
+    ]
+  },
+  {
+    id: 470,
+    kanji: "茶",
+    onyomi: "チャ、サ",
+    kunyomi: "",
+    meaning: "Trà, Trà đạo",
+    sinoVietnamese: "Trà",
+    examples: [
+      {
+        japanese: "お茶",
+        romaji: "Ocha",
+        vietnamese: "Trà"
+      },
+      {
+        japanese: "茶色",
+        romaji: "Chairo",
+        vietnamese: "Màu nâu"
+      },
+      {
+        japanese: "紅茶",
+        romaji: "Koucha",
+        vietnamese: "Hồng trà"
+      }
+    ]
+  },
+  {
+    id: 471,
+    kanji: "係",
+    onyomi: "ケイ",
+    kunyomi: "かか・る",
+    meaning: "Hệ, Quan hệ, Phụ trách",
+    sinoVietnamese: "Hệ",
+    examples: [
+      {
+        japanese: "関係",
+        romaji: "Kankei",
+        vietnamese: "Quan hệ"
+      },
+      {
+        japanese: "係員",
+        romaji: "Kakariin",
+        vietnamese: "Người phụ trách"
+      }
+    ]
+  },
+  {
+    id: 472,
+    kanji: "礼",
+    onyomi: "レイ",
+    kunyomi: "",
+    meaning: "Lễ, Lễ nghi, Cảm ơn",
+    sinoVietnamese: "Lễ",
+    examples: [
+      {
+        japanese: "お礼",
+        romaji: "Orei",
+        vietnamese: "Lời cảm ơn"
+      },
+      {
+        japanese: "失礼な",
+        romaji: "Shitsurei na",
+        vietnamese: "Thất lễ"
+      }
+    ]
+  },
+  {
+    id: 473,
+    kanji: "申",
+    onyomi: "シン",
+    kunyomi: "もう・す",
+    meaning: "Thân, Nói (khiêm nhường)",
+    sinoVietnamese: "Thân",
+    examples: [
+      {
+        japanese: "申します",
+        romaji: "Moushimasu",
+        vietnamese: "Nói (khiêm nhường), Tên là"
+      },
+      {
+        japanese: "申し込み",
+        romaji: "Moushikomi",
+        vietnamese: "Đăng ký"
+      },
+      {
+        japanese: "申請",
+        romaji: "Shinsei",
+        vietnamese: "Thỉnh cầu, đăng ký"
+      }
+    ]
+  },
+  {
+    id: 474,
+    kanji: "様",
+    onyomi: "ヨウ",
+    kunyomi: "さま",
+    meaning: "Dạng, Ngài, Hình dáng",
+    sinoVietnamese: "Dạng",
+    examples: [
+      {
+        japanese: "～様",
+        romaji: "Sama",
+        vietnamese: "Ngài ~"
+      },
+      {
+        japanese: "様子",
+        romaji: "Yousu",
+        vietnamese: "Tình trạng"
+      },
+      {
+        japanese: "様な",
+        romaji: "You na",
+        vietnamese: "Giống như"
+      }
+    ]
+  },
+  {
+    id: 475,
+    kanji: "調",
+    onyomi: "チョウ",
+    kunyomi: "しら・べる",
+    meaning: "Điều, Điều tra, Tình trạng",
+    sinoVietnamese: "Điều",
+    examples: [
+      {
+        japanese: "調べます",
+        romaji: "Shirabemasu",
+        vietnamese: "Điều tra, tra cứu"
+      },
+      {
+        japanese: "調子",
+        romaji: "Choushi",
+        vietnamese: "Tình trạng"
+      },
+      {
+        japanese: "強調",
+        romaji: "Kyouchou",
+        vietnamese: "Nhấn mạnh"
+      }
+    ]
+  },
+  {
+    id: 476,
+    kanji: "案",
+    onyomi: "アン",
+    kunyomi: "",
+    meaning: "Án, Đề án, Hướng dẫn",
+    sinoVietnamese: "Án",
+    examples: [
+      {
+        japanese: "案内",
+        romaji: "Annai",
+        vietnamese: "Hướng dẫn"
+      },
+      {
+        japanese: "提案",
+        romaji: "Teian",
+        vietnamese: "Đề xuất"
+      }
+    ]
+  },
+  {
+    id: 477,
+    kanji: "内",
+    onyomi: "ナイ",
+    kunyomi: "うち",
+    meaning: "Nội, Bên trong",
+    sinoVietnamese: "Nội",
+    examples: [
+      {
+        japanese: "家内",
+        romaji: "Kanai",
+        vietnamese: "Vợ (mình)"
+      },
+      {
+        japanese: "以内",
+        romaji: "Inai",
+        vietnamese: "Trong vòng"
+      },
+      {
+        japanese: "国内",
+        romaji: "Kokunai",
+        vietnamese: "Trong nước"
+      }
+    ]
+  },
+  {
+    id: 478,
+    kanji: "談",
+    onyomi: "ダン",
+    kunyomi: "",
+    meaning: "Đàm, Hội đàm, Bàn bạc",
+    sinoVietnamese: "Đàm",
+    examples: [
+      {
+        japanese: "相談",
+        romaji: "Soudan",
+        vietnamese: "Thảo luận"
+      },
+      {
+        japanese: "冗談",
+        romaji: "Joudan",
+        vietnamese: "Đùa"
+      },
+      {
+        japanese: "会談",
+        romaji: "Kaidan",
+        vietnamese: "Hội đàm"
+      }
+    ]
+  },
+  {
+    id: 479,
+    kanji: "説",
+    onyomi: "セツ",
+    kunyomi: "",
+    meaning: "Thuyết, Thuyết minh, Giải thích",
+    sinoVietnamese: "Thuyết",
+    examples: [
+      {
+        japanese: "説明",
+        romaji: "Setsumei",
+        vietnamese: "Giải thích"
+      },
+      {
+        japanese: "小説",
+        romaji: "Shousetsu",
+        vietnamese: "Tiểu thuyết"
+      },
+      {
+        japanese: "伝説",
+        romaji: "Densetsu",
+        vietnamese: "Truyền thuyết"
+      }
+    ]
+  },
+  {
+    id: 480,
+    kanji: "課",
+    onyomi: "カ",
+    kunyomi: "",
+    meaning: "Khóa, Bài học, Phòng ban",
+    sinoVietnamese: "Khóa",
+    examples: [
+      {
+        japanese: "課長",
+        romaji: "Kachou",
+        vietnamese: "Trưởng phòng"
+      },
+      {
+        japanese: "第～課",
+        romaji: "Dai~ka",
+        vietnamese: "Bài thứ ~"
+      }
+    ]
+  },
+  {
+    id: 481,
+    kanji: "願",
+    onyomi: "ガン",
+    kunyomi: "ねが・う",
+    meaning: "Nguyện, Mong ước",
+    sinoVietnamese: "Nguyện",
+    examples: [
+      {
+        japanese: "お願いします",
+        romaji: "Onegaishimasu",
+        vietnamese: "Làm ơn"
+      },
+      {
+        japanese: "願書",
+        romaji: "Gansho",
+        vietnamese: "Đơn nguyện vọng"
+      }
+    ]
+  },
+  {
+    id: 482,
+    kanji: "頼",
+    onyomi: "ライ",
+    kunyomi: "たの・む",
+    meaning: "Lại, Nhờ cậy, Tin cậy",
+    sinoVietnamese: "Lại",
+    examples: [
+      {
+        japanese: "頼みます",
+        romaji: "Tanomimasu",
+        vietnamese: "Nhờ vả"
+      },
+      {
+        japanese: "信頼",
+        romaji: "Shinrai",
+        vietnamese: "Tin cậy"
+      }
+    ]
+  },
+  {
+    id: 483,
+    kanji: "絡",
+    onyomi: "ラク",
+    kunyomi: "から・む",
+    meaning: "Lạc, Liên lạc, Rối",
+    sinoVietnamese: "Lạc",
+    examples: [
+      {
+        japanese: "連絡",
+        romaji: "Renraku",
+        vietnamese: "Liên lạc"
+      }
+    ]
+  },
+  {
+    id: 484,
+    kanji: "伝",
+    onyomi: "デン",
+    kunyomi: "つた・える",
+    meaning: "Truyền, Truyền đạt",
+    sinoVietnamese: "Truyền",
+    examples: [
+      {
+        japanese: "伝えます",
+        romaji: "Tsutaemasu",
+        vietnamese: "Truyền đạt"
+      },
+      {
+        japanese: "手伝います",
+        romaji: "Tetsudaimasu",
+        vietnamese: "Giúp đỡ"
+      },
+      {
+        japanese: "伝説",
+        romaji: "Densetsu",
+        vietnamese: "Truyền thuyết"
+      }
+    ]
+  },
+  {
+    id: 485,
+    kanji: "募",
+    onyomi: "ボ",
+    kunyomi: "つの・る",
+    meaning: "Mộ, Chiêu mộ",
+    sinoVietnamese: "Mộ",
+    examples: [
+      {
+        japanese: "募集",
+        romaji: "Boshuu",
+        vietnamese: "Tuyển dụng"
+      },
+      {
+        japanese: "募金",
+        romaji: "Bokin",
+        vietnamese: "Quyên tiền"
+      }
+    ]
+  },
+  {
+    id: 486,
+    kanji: "想",
+    onyomi: "ソウ、ソ",
+    kunyomi: "",
+    meaning: "Tưởng, Tưởng tượng",
+    sinoVietnamese: "Tưởng",
+    examples: [
+      {
+        japanese: "想像",
+        romaji: "Souzou",
+        vietnamese: "Tưởng tượng"
+      },
+      {
+        japanese: "感想",
+        romaji: "Kansou",
+        vietnamese: "Cảm nghĩ"
+      },
+      {
+        japanese: "理想",
+        romaji: "Risou",
+        vietnamese: "Lý tưởng"
+      }
+    ]
+  },
+  {
+    id: 487,
+    kanji: "念",
+    onyomi: "ネン",
+    kunyomi: "",
+    meaning: "Niệm, Kỷ niệm, Suy nghĩ",
+    sinoVietnamese: "Niệm",
+    examples: [
+      {
+        japanese: "残念",
+        romaji: "Zannen",
+        vietnamese: "Đáng tiếc"
+      },
+      {
+        japanese: "記念",
+        romaji: "Kinen",
+        vietnamese: "Kỷ niệm"
+      }
+    ]
+  },
+  {
+    id: 488,
+    kanji: "因",
+    onyomi: "イン",
+    kunyomi: "",
+    meaning: "Nhân, Nguyên nhân",
+    sinoVietnamese: "Nhân",
+    examples: [
+      {
+        japanese: "原因",
+        romaji: "Genin",
+        vietnamese: "Nguyên nhân"
+      }
+    ]
+  },
+  {
+    id: 489,
+    kanji: "危",
+    onyomi: "キ",
+    kunyomi: "あぶ・ない",
+    meaning: "Nguy, Nguy hiểm",
+    sinoVietnamese: "Nguy",
+    examples: [
+      {
+        japanese: "危ない",
+        romaji: "Abunai",
+        vietnamese: "Nguy hiểm"
+      },
+      {
+        japanese: "危険",
+        romaji: "Kiken",
+        vietnamese: "Sự nguy hiểm"
+      }
+    ]
+  },
+  {
+    id: 490,
+    kanji: "険",
+    onyomi: "ケン",
+    kunyomi: "けわ・しい",
+    meaning: "Hiểm, Hiểm trở, Nguy hiểm",
+    sinoVietnamese: "Hiểm",
+    examples: [
+      {
+        japanese: "危険",
+        romaji: "Kiken",
+        vietnamese: "Nguy hiểm"
+      },
+      {
+        japanese: "保険",
+        romaji: "Hoken",
+        vietnamese: "Bảo hiểm"
+      },
+      {
+        japanese: "冒険",
+        romaji: "Bouken",
+        vietnamese: "Mạo hiểm"
+      }
+    ]
+  },
+  {
+    id: 491,
+    kanji: "拾",
+    onyomi: "シュウ",
+    kunyomi: "ひろ・う",
+    meaning: "Thập, Nhặt",
+    sinoVietnamese: "Thập",
+    examples: [
+      {
+        japanese: "拾います",
+        romaji: "Hiroimasu",
+        vietnamese: "Nhặt"
+      }
+    ]
+  },
+  {
+    id: 492,
+    kanji: "捨",
+    onyomi: "シャ",
+    kunyomi: "す・てる",
+    meaning: "Xả, Vứt bỏ",
+    sinoVietnamese: "Xả",
+    examples: [
+      {
+        japanese: "捨てます",
+        romaji: "Sutemasu",
+        vietnamese: "Vứt bỏ"
+      }
+    ]
+  },
+  {
+    id: 493,
+    kanji: "戻",
+    onyomi: "レイ",
+    kunyomi: "もど・る",
+    meaning: "Lệ, Quay lại",
+    sinoVietnamese: "Lệ",
+    examples: [
+      {
+        japanese: "戻ります",
+        romaji: "Modorimasu",
+        vietnamese: "Quay lại"
+      },
+      {
+        japanese: "戻します",
+        romaji: "Modoshimasu",
+        vietnamese: "Để lại, hoàn lại"
+      }
+    ]
+  },
+  {
+    id: 494,
+    kanji: "吸",
+    onyomi: "キュウ",
+    kunyomi: "す・う",
+    meaning: "Hấp, Hút",
+    sinoVietnamese: "Hấp",
+    examples: [
+      {
+        japanese: "吸います",
+        romaji: "Suimasu",
+        vietnamese: "Hút"
+      },
+      {
+        japanese: "呼吸",
+        romaji: "Kokyuu",
+        vietnamese: "Hô hấp"
+      }
+    ]
+  },
+  {
+    id: 495,
+    kanji: "呼",
+    onyomi: "コ",
+    kunyomi: "よ・ぶ",
+    meaning: "Hô, Gọi, Hô hấp",
+    sinoVietnamese: "Hô",
+    examples: [
+      {
+        japanese: "呼びます",
+        romaji: "Yobimasu",
+        vietnamese: "Gọi"
+      },
+      {
+        japanese: "呼吸",
+        romaji: "Kokyuu",
+        vietnamese: "Hô hấp"
+      }
+    ]
+  },
+  {
+    id: 496,
+    kanji: "押",
+    onyomi: "オウ",
+    kunyomi: "お・す",
+    meaning: "Áp, Ấn, Đẩy",
+    sinoVietnamese: "Áp",
+    examples: [
+      {
+        japanese: "押します",
+        romaji: "Oshimasu",
+        vietnamese: "Ấn, đẩy"
+      },
+      {
+        japanese: "押入れ",
+        romaji: "Oshiire",
+        vietnamese: "Tủ âm tường"
+      }
+    ]
+  },
+  {
+    id: 497,
+    kanji: "亡",
+    onyomi: "ボウ",
+    kunyomi: "な・くなる",
+    meaning: "Vong, Mất, Chết",
+    sinoVietnamese: "Vong",
+    examples: [
+      {
+        japanese: "亡くなります",
+        romaji: "Nakunarimasu",
+        vietnamese: "Mất, qua đời"
+      },
+      {
+        japanese: "死亡",
+        romaji: "Shibou",
+        vietnamese: "Tử vong"
+      }
+    ]
+  },
+  {
+    id: 498,
+    kanji: "君",
+    onyomi: "クン",
+    kunyomi: "きみ",
+    meaning: "Quân, Bạn, Em, Vua",
+    sinoVietnamese: "Quân",
+    examples: [
+      {
+        japanese: "君",
+        romaji: "Kimi",
+        vietnamese: "Bạn, em"
+      },
+      {
+        japanese: "～君",
+        romaji: "Kun",
+        vietnamese: "Cậu ~"
+      }
+    ]
+  },
+  {
+    id: 499,
+    kanji: "然",
+    onyomi: "ゼン、ネン",
+    kunyomi: "",
+    meaning: "Nhiên, Tự nhiên",
+    sinoVietnamese: "Nhiên",
+    examples: [
+      {
+        japanese: "全然",
+        romaji: "Zenzen",
+        vietnamese: "Hoàn toàn (không)"
+      },
+      {
+        japanese: "自然",
+        romaji: "Shizen",
+        vietnamese: "Tự nhiên"
+      },
+      {
+        japanese: "突然",
+        romaji: "Totsuzen",
+        vietnamese: "Đột nhiên"
+      }
+    ]
+  },
+  {
+    id: 500,
+    kanji: "引",
+    onyomi: "イン",
+    kunyomi: "ひ・く",
+    meaning: "Dẫn, Kéo",
+    sinoVietnamese: "Dẫn",
+    examples: [
+      {
+        japanese: "引きます",
+        romaji: "Hikimasu",
+        vietnamese: "Kéo"
+      },
+      {
+        japanese: "引き出し",
+        romaji: "Hikidashi",
+        vietnamese: "Ngăn kéo"
+      },
+      {
+        japanese: "引越し",
+        romaji: "Hikkoshi",
+        vietnamese: "Chuyển nhà"
+      }
+    ]
+  },
+  {
+    id: 501,
+    kanji: "退",
+    onyomi: "タイ",
+    kunyomi: "しりぞ・く",
+    meaning: "Thoái, Rút lui, Nghỉ việc",
+    sinoVietnamese: "Thoái",
+    examples: [
+      {
+        japanese: "退院",
+        romaji: "Taiin",
+        vietnamese: "Xuất viện"
+      },
+      {
+        japanese: "退学",
+        romaji: "Taigaku",
+        vietnamese: "Thôi học"
+      },
+      {
+        japanese: "引退",
+        romaji: "Intai",
+        vietnamese: "Giải nghệ"
+      }
+    ]
+  },
+  {
+    id: 502,
+    kanji: "局",
+    onyomi: "キョク",
+    kunyomi: "",
+    meaning: "Cục, Cục, Ván cờ",
+    sinoVietnamese: "Cục",
+    examples: [
+      {
+        japanese: "郵便局",
+        romaji: "Yuubinkyoku",
+        vietnamese: "Bưu điện"
+      },
+      {
+        japanese: "薬局",
+        romaji: "Yakkyoku",
+        vietnamese: "Hiệu thuốc"
+      },
+      {
+        japanese: "放送局",
+        romaji: "Housoukyoku",
+        vietnamese: "Đài truyền hình"
+      }
+    ]
+  },
+  {
+    id: 503,
+    kanji: "専",
+    onyomi: "セン",
+    kunyomi: "もっぱ・ら",
+    meaning: "Chuyên, Chuyên môn",
+    sinoVietnamese: "Chuyên",
+    examples: [
+      {
+        japanese: "専門",
+        romaji: "Senmon",
+        vietnamese: "Chuyên môn"
+      },
+      {
+        japanese: "専攻",
+        romaji: "Senkou",
+        vietnamese: "Chuyên ngành"
+      }
+    ]
+  },
+  {
+    id: 504,
+    kanji: "許",
+    onyomi: "キョ",
+    kunyomi: "ゆる・す",
+    meaning: "Hứa, Cho phép",
+    sinoVietnamese: "Hứa",
+    examples: [
+      {
+        japanese: "許可",
+        romaji: "Kyoka",
+        vietnamese: "Sự cho phép"
+      },
+      {
+        japanese: "許します",
+        romaji: "Yurushimasu",
+        vietnamese: "Tha thứ, cho phép"
+      }
+    ]
   }
 ];
