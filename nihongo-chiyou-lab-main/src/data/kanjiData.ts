@@ -21,7 +21,7 @@ export const kanjiData: KanjiCard[] = [
     id: 1,
     kanji: "日",
     lesson: 1,
-    imageUrl: "/images/kanji/1_sun.png",
+    imageUrl: "/images/kanji/1_sun_anime.png",
     onyomi: "ニチ、ジツ",
     kunyomi: "ひ、か",
     meaning: "Mặt trời, Ngày",
