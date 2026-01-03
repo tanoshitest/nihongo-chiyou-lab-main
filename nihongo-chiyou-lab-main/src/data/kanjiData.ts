@@ -12,6 +12,7 @@ export interface KanjiCard {
   meaning: string;
   sinoVietnamese: string;
   imageUrl?: string;
+  lesson?: number;
   examples: KanjiExample[];
 }
 
@@ -19,6 +20,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 1,
     kanji: "日",
+    lesson: 1,
     onyomi: "ニチ、ジツ",
     kunyomi: "ひ、か",
     meaning: "Mặt trời, Ngày",
@@ -54,6 +56,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 2,
     kanji: "月",
+    lesson: 1,
     onyomi: "ゲツ、ガツ",
     kunyomi: "つき",
     meaning: "Mặt trăng, Tháng",
@@ -89,6 +92,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 3,
     kanji: "火",
+    lesson: 1,
     onyomi: "カ",
     kunyomi: "ひ",
     meaning: "Lửa",
@@ -124,6 +128,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 4,
     kanji: "水",
+    lesson: 1,
     onyomi: "スイ",
     kunyomi: "みず",
     meaning: "Nước",
@@ -159,6 +164,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 5,
     kanji: "木",
+    lesson: 1,
     onyomi: "モク、ボク",
     kunyomi: "き、こ",
     meaning: "Cây, Gỗ",
@@ -194,6 +200,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 6,
     kanji: "金",
+    lesson: 1,
     onyomi: "キン、コン",
     kunyomi: "かね、かな",
     meaning: "Vàng, Tiền",
@@ -229,6 +236,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 7,
     kanji: "土",
+    lesson: 1,
     onyomi: "ド、ト",
     kunyomi: "つち",
     meaning: "Đất",
@@ -264,6 +272,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 8,
     kanji: "山",
+    lesson: 1,
     onyomi: "サン",
     kunyomi: "やま",
     meaning: "Núi",
@@ -299,6 +308,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 9,
     kanji: "川",
+    lesson: 1,
     onyomi: "セン",
     kunyomi: "かわ",
     meaning: "Sông",
@@ -334,6 +344,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 10,
     kanji: "田",
+    lesson: 1,
     onyomi: "デン",
     kunyomi: "た",
     meaning: "Ruộng lúa",
@@ -369,6 +380,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 11,
     kanji: "人",
+    lesson: 1,
     onyomi: "ジン、ニン",
     kunyomi: "ひと",
     meaning: "Người",
@@ -404,6 +416,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 12,
     kanji: "口",
+    lesson: 1,
     onyomi: "コウ、ク",
     kunyomi: "くち",
     meaning: "Miệng",
@@ -439,6 +452,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 13,
     kanji: "車",
+    lesson: 1,
     onyomi: "シャ",
     kunyomi: "くるま",
     meaning: "Xe",
@@ -474,6 +488,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 14,
     kanji: "門",
+    lesson: 1,
     onyomi: "モン",
     kunyomi: "かど",
     meaning: "Cổng",
@@ -509,6 +524,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 15,
     kanji: "子",
+    lesson: 1,
     onyomi: "シ、ス",
     kunyomi: "こ",
     meaning: "Con, Trẻ em",
@@ -544,6 +560,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 16,
     kanji: "女",
+    lesson: 1,
     onyomi: "ジョ",
     kunyomi: "おんな",
     meaning: "Nữ, Phụ nữ",
@@ -579,6 +596,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 17,
     kanji: "学",
+    lesson: 2,
     onyomi: "ガク",
     kunyomi: "まな・ぶ",
     meaning: "Học",
@@ -614,6 +632,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 18,
     kanji: "生",
+    lesson: 2,
     onyomi: "セイ、ショウ",
     kunyomi: "い・きる、う・まれる、なま",
     meaning: "Sinh, Sống",
@@ -649,6 +668,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 19,
     kanji: "先",
+    lesson: 2,
     onyomi: "セン",
     kunyomi: "さき",
     meaning: "Trước, Tiên",
@@ -684,6 +704,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 20,
     kanji: "私",
+    lesson: 2,
     onyomi: "シ",
     kunyomi: "わたし、わたくし",
     meaning: "Tôi, Tư",
@@ -719,6 +740,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 21,
     kanji: "一",
+    lesson: 2,
     onyomi: "イチ、イツ",
     kunyomi: "ひと・つ",
     meaning: "Một",
@@ -754,6 +776,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 22,
     kanji: "二",
+    lesson: 2,
     onyomi: "ニ",
     kunyomi: "ふた・つ",
     meaning: "Hai",
@@ -789,6 +812,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 23,
     kanji: "三",
+    lesson: 2,
     onyomi: "サン",
     kunyomi: "みっ・つ",
     meaning: "Ba",
@@ -824,6 +848,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 24,
     kanji: "四",
+    lesson: 2,
     onyomi: "シ",
     kunyomi: "よっ・つ、よん、よ",
     meaning: "Bốn",
@@ -859,6 +884,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 25,
     kanji: "五",
+    lesson: 2,
     onyomi: "ゴ",
     kunyomi: "いつ・つ",
     meaning: "Năm",
@@ -894,6 +920,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 26,
     kanji: "六",
+    lesson: 2,
     onyomi: "ロク",
     kunyomi: "むっ・つ",
     meaning: "Sáu",
@@ -929,6 +956,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 27,
     kanji: "七",
+    lesson: 2,
     onyomi: "シチ",
     kunyomi: "なな・つ、なな",
     meaning: "Bảy",
@@ -964,6 +992,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 28,
     kanji: "八",
+    lesson: 2,
     onyomi: "ハチ",
     kunyomi: "やっ・つ",
     meaning: "Tám",
@@ -999,6 +1028,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 29,
     kanji: "九",
+    lesson: 2,
     onyomi: "キュウ、ク",
     kunyomi: "ここの・つ",
     meaning: "Chín",
@@ -1034,6 +1064,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 30,
     kanji: "十",
+    lesson: 2,
     onyomi: "ジュウ、ジッ",
     kunyomi: "とお",
     meaning: "Mười",
@@ -1069,6 +1100,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 31,
     kanji: "百",
+    lesson: 2,
     onyomi: "ヒャク",
     kunyomi: "",
     meaning: "Trăm",
@@ -1104,6 +1136,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 32,
     kanji: "千",
+    lesson: 2,
     onyomi: "セン",
     kunyomi: "ち",
     meaning: "Nghìn",
@@ -1139,6 +1172,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 33,
     kanji: "上",
+    lesson: 3,
     onyomi: "ジョウ",
     kunyomi: "うえ、あ・げる",
     meaning: "Trên",
@@ -1174,6 +1208,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 34,
     kanji: "下",
+    lesson: 3,
     onyomi: "カ、ゲ",
     kunyomi: "した、さ・げる",
     meaning: "Dưới",
@@ -1209,6 +1244,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 35,
     kanji: "中",
+    lesson: 3,
     onyomi: "チュウ",
     kunyomi: "なか",
     meaning: "Trong, Giữa",
@@ -1244,6 +1280,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 36,
     kanji: "大",
+    lesson: 3,
     onyomi: "ダイ、タイ",
     kunyomi: "おお・きい",
     meaning: "To, Lớn",
@@ -1279,6 +1316,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 37,
     kanji: "小",
+    lesson: 3,
     onyomi: "ショウ",
     kunyomi: "ちい・さい",
     meaning: "Nhỏ",
@@ -1314,6 +1352,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 38,
     kanji: "本",
+    lesson: 3,
     onyomi: "ホン",
     kunyomi: "もと",
     meaning: "Sách/Gốc",
@@ -1349,6 +1388,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 39,
     kanji: "半",
+    lesson: 3,
     onyomi: "ハン",
     kunyomi: "なか・ば",
     meaning: "Nửa",
@@ -1384,6 +1424,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 40,
     kanji: "分",
+    lesson: 3,
     onyomi: "フン、ブン、ブ",
     kunyomi: "わ・かる",
     meaning: "Phút/Phần/Hiểu",
@@ -1419,6 +1460,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 41,
     kanji: "力",
+    lesson: 3,
     onyomi: "リョク",
     kunyomi: "ちから",
     meaning: "Sức lực",
@@ -1454,6 +1496,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 42,
     kanji: "何",
+    lesson: 3,
     onyomi: "カ",
     kunyomi: "なに、なん",
     meaning: "Cái gì",
@@ -1489,6 +1532,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 43,
     kanji: "明",
+    lesson: 3,
     onyomi: "メイ、ミョウ",
     kunyomi: "あ・かるい",
     meaning: "Sáng",
@@ -1524,6 +1568,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 44,
     kanji: "休",
+    lesson: 3,
     onyomi: "キュウ",
     kunyomi: "やす・む",
     meaning: "Nghỉ",
@@ -1559,6 +1604,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 45,
     kanji: "体",
+    lesson: 3,
     onyomi: "タイ",
     kunyomi: "からだ",
     meaning: "Cơ thể",
@@ -1594,6 +1640,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 46,
     kanji: "好",
+    lesson: 3,
     onyomi: "コウ",
     kunyomi: "す・き",
     meaning: "Thích",
@@ -1629,6 +1676,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 47,
     kanji: "男",
+    lesson: 3,
     onyomi: "ダン、ナン",
     kunyomi: "おとこ",
     meaning: "Nam",
@@ -1664,6 +1712,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 48,
     kanji: "林",
+    lesson: 3,
     onyomi: "リン",
     kunyomi: "はやし",
     meaning: "Rừng thưa",
@@ -1699,6 +1748,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 49,
     kanji: "森",
+    lesson: 4,
     onyomi: "シン",
     kunyomi: "もり",
     meaning: "Rừng rậm",
@@ -1734,6 +1784,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 50,
     kanji: "間",
+    lesson: 4,
     onyomi: "カン、ゲン",
     kunyomi: "あいだ、ま",
     meaning: "Giữa, Gian",
@@ -1769,6 +1820,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 51,
     kanji: "畑",
+    lesson: 4,
     onyomi: "",
     kunyomi: "はたけ",
     meaning: "Ruộng đồng",
@@ -1804,6 +1856,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 52,
     kanji: "岩",
+    lesson: 4,
     onyomi: "ガン",
     kunyomi: "いわ",
     meaning: "Đá tảng",
@@ -1839,6 +1892,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 53,
     kanji: "目",
+    lesson: 4,
     onyomi: "モク",
     kunyomi: "め",
     meaning: "Mắt",
@@ -1874,6 +1928,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 54,
     kanji: "耳",
+    lesson: 4,
     onyomi: "ジ",
     kunyomi: "みみ",
     meaning: "Tai",
@@ -1909,6 +1964,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 55,
     kanji: "手",
+    lesson: 4,
     onyomi: "シュ",
     kunyomi: "て",
     meaning: "Tay",
@@ -1944,6 +2000,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 56,
     kanji: "足",
+    lesson: 4,
     onyomi: "ソク",
     kunyomi: "あし、た・りる",
     meaning: "Chân",
@@ -1979,6 +2036,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 57,
     kanji: "雨",
+    lesson: 4,
     onyomi: "ウ",
     kunyomi: "あめ",
     meaning: "Mưa",
@@ -2014,6 +2072,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 58,
     kanji: "竹",
+    lesson: 4,
     onyomi: "チク",
     kunyomi: "たけ",
     meaning: "Tre",
@@ -2049,6 +2108,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 59,
     kanji: "米",
+    lesson: 4,
     onyomi: "ベイ、マイ",
     kunyomi: "こめ",
     meaning: "Gạo",
@@ -2084,6 +2144,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 60,
     kanji: "貝",
+    lesson: 4,
     onyomi: "",
     kunyomi: "かい",
     meaning: "Sò, Hến",
@@ -2119,6 +2180,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 61,
     kanji: "石",
+    lesson: 4,
     onyomi: "セキ",
     kunyomi: "いし",
     meaning: "Đá",
@@ -2154,6 +2216,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 62,
     kanji: "糸",
+    lesson: 4,
     onyomi: "シ",
     kunyomi: "いと",
     meaning: "Sợi chỉ",
@@ -2189,6 +2252,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 63,
     kanji: "花",
+    lesson: 4,
     onyomi: "カ",
     kunyomi: "はな",
     meaning: "Hoa",
@@ -2224,6 +2288,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 64,
     kanji: "茶",
+    lesson: 4,
     onyomi: "チャ、サ",
     kunyomi: "",
     meaning: "Trà",
@@ -2259,6 +2324,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 65,
     kanji: "行",
+    lesson: 6,
     onyomi: "コウ、ギョウ",
     kunyomi: "い・く、おこな・う",
     meaning: "Đi",
@@ -2294,6 +2360,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 66,
     kanji: "来",
+    lesson: 6,
     onyomi: "ライ",
     kunyomi: "く・る",
     meaning: "Đến",
@@ -2329,6 +2396,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 67,
     kanji: "食",
+    lesson: 6,
     onyomi: "ショク",
     kunyomi: "た・べる",
     meaning: "Ăn",
@@ -2364,6 +2432,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 68,
     kanji: "飲",
+    lesson: 6,
     onyomi: "イン",
     kunyomi: "の・む",
     meaning: "Uống",
@@ -2399,6 +2468,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 69,
     kanji: "見",
+    lesson: 6,
     onyomi: "ケン",
     kunyomi: "み・る",
     meaning: "Nhìn/Xem",
@@ -2434,6 +2504,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 70,
     kanji: "聞",
+    lesson: 6,
     onyomi: "ブン、モン",
     kunyomi: "き・く",
     meaning: "Nghe",
@@ -2469,6 +2540,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 71,
     kanji: "言",
+    lesson: 7,
     onyomi: "ゲン、ゴン",
     kunyomi: "い・う",
     meaning: "Nói",
@@ -2504,6 +2576,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 72,
     kanji: "話",
+    lesson: 6,
     onyomi: "ワ",
     kunyomi: "はな・す、はなし",
     meaning: "Nói chuyện",
@@ -2539,6 +2612,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 73,
     kanji: "立",
+    lesson: 8,
     onyomi: "リツ",
     kunyomi: "た・つ",
     meaning: "Đứng",
@@ -2574,6 +2648,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 74,
     kanji: "待",
+    lesson: 7,
     onyomi: "タイ",
     kunyomi: "ま・つ",
     meaning: "Đợi",
@@ -2609,6 +2684,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 75,
     kanji: "会",
+    lesson: 11,
     onyomi: "カイ、エ",
     kunyomi: "あ・う",
     meaning: "Gặp",
@@ -2644,6 +2720,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 76,
     kanji: "出",
+    lesson: 8,
     onyomi: "シュツ",
     kunyomi: "で・る、だ・す",
     meaning: "Ra/Xuất",
@@ -2679,6 +2756,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 77,
     kanji: "入",
+    lesson: 8,
     onyomi: "ニュウ",
     kunyomi: "はい・る、い・れる",
     meaning: "Vào/Nhập",
@@ -2714,6 +2792,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 78,
     kanji: "週",
+    lesson: 7,
     onyomi: "シュウ",
     kunyomi: "",
     meaning: "Tuần",
@@ -2749,6 +2828,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 79,
     kanji: "良",
+    lesson: 5,
     onyomi: "リョウ",
     kunyomi: "よ・い",
     meaning: "Tốt",
@@ -2784,6 +2864,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 80,
     kanji: "帰",
+    lesson: 6,
     onyomi: "キ",
     kunyomi: "かえ・る",
     meaning: "Về",
@@ -2819,6 +2900,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 81,
     kanji: "高",
+    lesson: 5,
     onyomi: "コウ",
     kunyomi: "たか・い",
     meaning: "Cao / Đắt",
@@ -2854,6 +2936,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 82,
     kanji: "安",
+    lesson: 5,
     onyomi: "アン",
     kunyomi: "やす・い",
     meaning: "Rẻ / An tâm",
@@ -2889,6 +2972,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 83,
     kanji: "新",
+    lesson: 5,
     onyomi: "シン",
     kunyomi: "あたら・しい",
     meaning: "Mới",
@@ -2924,6 +3008,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 84,
     kanji: "古",
+    lesson: 5,
     onyomi: "コ",
     kunyomi: "ふる・い",
     meaning: "Cũ",
@@ -2959,6 +3044,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 85,
     kanji: "多",
+    lesson: 6,
     onyomi: "タ",
     kunyomi: "おお・い",
     meaning: "Nhiều",
@@ -2994,6 +3080,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 86,
     kanji: "少",
+    lesson: 6,
     onyomi: "ショウ",
     kunyomi: "すく・ない、すこ・し",
     meaning: "Ít / Một chút",
@@ -3029,6 +3116,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 87,
     kanji: "広",
+    lesson: 10,
     onyomi: "コウ",
     kunyomi: "ひろ・い",
     meaning: "Rộng",
@@ -3064,6 +3152,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 88,
     kanji: "早",
+    lesson: 9,
     onyomi: "ソウ",
     kunyomi: "はや・い",
     meaning: "Sớm",
@@ -3099,6 +3188,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 89,
     kanji: "長",
+    lesson: 5,
     onyomi: "チョウ",
     kunyomi: "なが・い",
     meaning: "Dài / Trưởng",
@@ -3134,6 +3224,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 90,
     kanji: "友",
+    lesson: 14,
     onyomi: "ユウ",
     kunyomi: "とも",
     meaning: "Bạn bè",
@@ -3169,6 +3260,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 91,
     kanji: "父",
+    lesson: 6,
     onyomi: "フ",
     kunyomi: "ちち",
     meaning: "Bố (của mình)",
@@ -3204,6 +3296,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 92,
     kanji: "母",
+    lesson: 6,
     onyomi: "ボ",
     kunyomi: "はは",
     meaning: "Mẹ (của mình)",
@@ -3239,6 +3332,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 93,
     kanji: "元",
+    lesson: 9,
     onyomi: "ゲン、ガン",
     kunyomi: "もと",
     meaning: "Gốc / Khỏe",
@@ -3274,6 +3368,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 94,
     kanji: "気",
+    lesson: 9,
     onyomi: "キ",
     kunyomi: "",
     meaning: "Khí / Tinh thần",
@@ -3309,6 +3404,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 95,
     kanji: "北",
+    lesson: 6,
     onyomi: "ホク",
     kunyomi: "きた",
     meaning: "Phía Bắc",
@@ -3344,6 +3440,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 96,
     kanji: "南",
+    lesson: 6,
     onyomi: "ナン",
     kunyomi: "みなみ",
     meaning: "Phía Nam",
@@ -3379,6 +3476,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 97,
     kanji: "市",
+    lesson: 7,
     onyomi: "シ",
     kunyomi: "いち",
     meaning: "Thành phố / Chợ",
@@ -3414,6 +3512,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 98,
     kanji: "町",
+    lesson: 7,
     onyomi: "チョウ",
     kunyomi: "まち",
     meaning: "Thị trấn / Khu phố",
@@ -3449,6 +3548,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 99,
     kanji: "村",
+    lesson: 7,
     onyomi: "ソン",
     kunyomi: "むら",
     meaning: "Thôn làng",
@@ -3484,6 +3584,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 100,
     kanji: "電",
+    lesson: 7,
     onyomi: "デン",
     kunyomi: "",
     meaning: "Điện",
@@ -3519,6 +3620,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 101,
     kanji: "馬",
+    lesson: 5,
     onyomi: "バ",
     kunyomi: "うま",
     meaning: "Ngựa",
@@ -3554,6 +3656,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 102,
     kanji: "駅",
+    lesson: 15,
     onyomi: "エキ",
     kunyomi: "",
     meaning: "Nhà ga",
@@ -3589,6 +3692,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 103,
     kanji: "社",
+    lesson: 8,
     onyomi: "シャ",
     kunyomi: "やしろ",
     meaning: "Công ty / Đền thần",
@@ -3624,6 +3728,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 104,
     kanji: "校",
+    lesson: 7,
     onyomi: "コウ",
     kunyomi: "",
     meaning: "Trường học",
@@ -3659,6 +3764,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 105,
     kanji: "店",
+    lesson: 8,
     onyomi: "テン",
     kunyomi: "みせ",
     meaning: "Cửa hàng",
@@ -3694,6 +3800,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 106,
     kanji: "銀",
+    lesson: 7,
     onyomi: "ギン",
     kunyomi: "",
     meaning: "Bạc",
@@ -3729,6 +3836,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 107,
     kanji: "病",
+    lesson: 10,
     onyomi: "ビョウ",
     kunyomi: "や・む",
     meaning: "Bệnh",
@@ -3764,6 +3872,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 108,
     kanji: "院",
+    lesson: 10,
     onyomi: "イン",
     kunyomi: "",
     meaning: "Viện",
@@ -3799,6 +3908,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 109,
     kanji: "走",
+    lesson: 7,
     onyomi: "ソウ",
     kunyomi: "はし・る",
     meaning: "Chạy",
@@ -3834,6 +3944,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 110,
     kanji: "起",
+    lesson: 8,
     onyomi: "キ",
     kunyomi: "お・きる、お・こす",
     meaning: "Thức dậy / Khởi",
@@ -3869,6 +3980,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 111,
     kanji: "買",
+    lesson: 6,
     onyomi: "バイ",
     kunyomi: "か・う",
     meaning: "Mua",
@@ -3904,6 +4016,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 112,
     kanji: "売",
+    lesson: 7,
     onyomi: "バイ",
     kunyomi: "う・る",
     meaning: "Bán",
@@ -3939,6 +4052,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 113,
     kanji: "読",
+    lesson: 6,
     onyomi: "ドク",
     kunyomi: "よ・む",
     meaning: "Đọc",
@@ -3974,6 +4088,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 114,
     kanji: "書",
+    lesson: 6,
     onyomi: "ショ",
     kunyomi: "か・く",
     meaning: "Viết",
@@ -4009,6 +4124,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 115,
     kanji: "勉",
+    lesson: 8,
     onyomi: "ベン",
     kunyomi: "つと・める",
     meaning: "Cố gắng / Miễn",
@@ -4039,6 +4155,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 116,
     kanji: "強",
+    lesson: 8,
     onyomi: "キョウ、ゴウ",
     kunyomi: "つよ・い",
     meaning: "Mạnh",
@@ -4074,6 +4191,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 117,
     kanji: "弓",
+    lesson: 8,
     onyomi: "キュウ",
     kunyomi: "ゆみ",
     meaning: "Cung (tên)",
@@ -4099,6 +4217,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 118,
     kanji: "虫",
+    lesson: 8,
     onyomi: "チュウ",
     kunyomi: "むし",
     meaning: "Côn trùng",
@@ -4134,6 +4253,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 119,
     kanji: "持",
+    lesson: 8,
     onyomi: "ジ",
     kunyomi: "も・つ",
     meaning: "Cầm / Mang",
@@ -4169,6 +4289,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 120,
     kanji: "名",
+    lesson: 8,
     onyomi: "メイ、ミョウ",
     kunyomi: "な",
     meaning: "Tên / Danh",
@@ -4204,6 +4325,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 121,
     kanji: "語",
+    lesson: 8,
     onyomi: "ゴ",
     kunyomi: "かた・る",
     meaning: "Ngôn ngữ / Kể",
@@ -4239,6 +4361,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 122,
     kanji: "春",
+    lesson: 10,
     onyomi: "シュン",
     kunyomi: "はる",
     meaning: "Mùa xuân",
@@ -4274,6 +4397,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 123,
     kanji: "夏",
+    lesson: 10,
     onyomi: "カ、ゲ",
     kunyomi: "なつ",
     meaning: "Mùa hạ",
@@ -4309,6 +4433,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 124,
     kanji: "秋",
+    lesson: 10,
     onyomi: "シュウ",
     kunyomi: "あき",
     meaning: "Mùa thu",
@@ -4344,6 +4469,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 125,
     kanji: "冬",
+    lesson: 10,
     onyomi: "トウ",
     kunyomi: "ふゆ",
     meaning: "Mùa đông",
@@ -4379,6 +4505,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 126,
     kanji: "朝",
+    lesson: 6,
     onyomi: "チョウ",
     kunyomi: "あさ",
     meaning: "Buổi sáng",
@@ -4414,6 +4541,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 127,
     kanji: "昼",
+    lesson: 6,
     onyomi: "チュウ",
     kunyomi: "ひる",
     meaning: "Buổi trưa",
@@ -4449,6 +4577,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 128,
     kanji: "夕",
+    lesson: 8,
     onyomi: "セキ",
     kunyomi: "ゆう",
     meaning: "Buổi chiều tối",
@@ -4484,6 +4613,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 129,
     kanji: "方",
+    lesson: 9,
     onyomi: "ホウ",
     kunyomi: "かた",
     meaning: "Phương, hướng, vị",
@@ -4519,6 +4649,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 130,
     kanji: "晩",
+    lesson: 7,
     onyomi: "バン",
     kunyomi: "",
     meaning: "Buổi tối",
@@ -4554,6 +4685,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 131,
     kanji: "夜",
+    lesson: 7,
     onyomi: "ヤ",
     kunyomi: "よる、よ",
     meaning: "Đêm, Buổi tối",
@@ -4589,6 +4721,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 132,
     kanji: "心",
+    lesson: 9,
     onyomi: "シン",
     kunyomi: "こころ",
     meaning: "Tim, Tấm lòng",
@@ -4624,6 +4757,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 133,
     kanji: "手",
+    lesson: 4,
     onyomi: "シュ、ズ",
     kunyomi: "て、た",
     meaning: "Tay",
@@ -4659,6 +4793,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 134,
     kanji: "足",
+    lesson: 4,
     onyomi: "ソク",
     kunyomi: "あし、た・りる",
     meaning: "Chân, Đủ",
@@ -4694,6 +4829,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 135,
     kanji: "体",
+    lesson: 3,
     onyomi: "タイ、テイ",
     kunyomi: "からだ",
     meaning: "Cơ thể",
@@ -4729,6 +4865,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 136,
     kanji: "首",
+    lesson: 9,
     onyomi: "シュ",
     kunyomi: "くび",
     meaning: "Cổ",
@@ -4764,6 +4901,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 137,
     kanji: "林",
+    lesson: 3,
     onyomi: "リン",
     kunyomi: "はやし",
     meaning: "Rừng thưa",
@@ -4799,6 +4937,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 138,
     kanji: "森",
+    lesson: 4,
     onyomi: "シン",
     kunyomi: "もり",
     meaning: "Rừng rậm",
@@ -4834,6 +4973,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 139,
     kanji: "空",
+    lesson: 15,
     onyomi: "クウ",
     kunyomi: "そら、あ・く、から",
     meaning: "Bầu trời, Trống rỗng",
@@ -4869,6 +5009,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 140,
     kanji: "天",
+    lesson: 9,
     onyomi: "テン",
     kunyomi: "あま",
     meaning: "Trời, Thiên",
@@ -4904,6 +5045,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 141,
     kanji: "気",
+    lesson: 9,
     onyomi: "キ",
     kunyomi: "",
     meaning: "Khí, Tinh thần",
@@ -4939,6 +5081,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 142,
     kanji: "雨",
+    lesson: 4,
     onyomi: "ウ",
     kunyomi: "あめ",
     meaning: "Mưa",
@@ -4974,6 +5117,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 143,
     kanji: "雪",
+    lesson: 9,
     onyomi: "セツ",
     kunyomi: "ゆき",
     meaning: "Tuyết",
@@ -5009,6 +5153,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 144,
     kanji: "風",
+    lesson: 9,
     onyomi: "フウ",
     kunyomi: "かぜ",
     meaning: "Gió, Phong cách",
@@ -5044,6 +5189,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 145,
     kanji: "花",
+    lesson: 4,
     onyomi: "カ",
     kunyomi: "はな",
     meaning: "Hoa",
@@ -5079,6 +5225,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 146,
     kanji: "石",
+    lesson: 4,
     onyomi: "セキ",
     kunyomi: "いし",
     meaning: "Đá",
@@ -5114,6 +5261,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 147,
     kanji: "竹",
+    lesson: 4,
     onyomi: "チク",
     kunyomi: "たけ",
     meaning: "Tre, Trúc",
@@ -5149,6 +5297,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 148,
     kanji: "犬",
+    lesson: 10,
     onyomi: "ケン",
     kunyomi: "いぬ",
     meaning: "Chó",
@@ -5184,6 +5333,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 149,
     kanji: "耳",
+    lesson: 4,
     onyomi: "ジ",
     kunyomi: "みみ",
     meaning: "Tai",
@@ -5219,6 +5369,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 150,
     kanji: "目",
+    lesson: 4,
     onyomi: "モク",
     kunyomi: "め",
     meaning: "Mắt, Mục",
@@ -5254,6 +5405,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 151,
     kanji: "顔",
+    lesson: 10,
     onyomi: "ガン",
     kunyomi: "かお",
     meaning: "Khuôn mặt",
@@ -5289,6 +5441,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 152,
     kanji: "頭",
+    lesson: 10,
     onyomi: "トウ、ズ",
     kunyomi: "あたま",
     meaning: "Đầu",
@@ -5324,6 +5477,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 153,
     kanji: "牛",
+    lesson: 5,
     onyomi: "ギュウ",
     kunyomi: "うし",
     meaning: "Bò",
@@ -5359,6 +5513,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 154,
     kanji: "鳥",
+    lesson: 5,
     onyomi: "チョウ",
     kunyomi: "とり",
     meaning: "Chim",
@@ -5394,6 +5549,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 155,
     kanji: "魚",
+    lesson: 5,
     onyomi: "ギョ",
     kunyomi: "さかな、うお",
     meaning: "Cá",
@@ -5429,6 +5585,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 156,
     kanji: "肉",
+    lesson: 5,
     onyomi: "ニク",
     kunyomi: "",
     meaning: "Thịt",
@@ -5464,6 +5621,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 157,
     kanji: "飯",
+    lesson: 9,
     onyomi: "ハン",
     kunyomi: "めし",
     meaning: "Cơm, Bữa ăn",
@@ -5499,6 +5657,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 158,
     kanji: "茶",
+    lesson: 4,
     onyomi: "チャ、サ",
     kunyomi: "",
     meaning: "Trà",
@@ -5534,6 +5693,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 159,
     kanji: "酒",
+    lesson: 16,
     onyomi: "シュ",
     kunyomi: "さけ、さか",
     meaning: "Rượu",
@@ -5569,6 +5729,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 160,
     kanji: "料",
+    lesson: 16,
     onyomi: "リョウ",
     kunyomi: "",
     meaning: "Nguyên liệu, Phí",
@@ -5604,6 +5765,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 161,
     kanji: "理",
+    lesson: 16,
     onyomi: "リ",
     kunyomi: "",
     meaning: "Lý, Lý do",
@@ -5639,6 +5801,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 162,
     kanji: "反",
+    lesson: 11,
     onyomi: "ハン",
     kunyomi: "そ・る",
     meaning: "Phản, Cong",
@@ -5674,6 +5837,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 163,
     kanji: "物",
+    lesson: 5,
     onyomi: "ブツ、モツ",
     kunyomi: "もの",
     meaning: "Vật, Đồ vật",
@@ -5709,6 +5873,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 164,
     kanji: "野",
+    lesson: 16,
     onyomi: "ヤ",
     kunyomi: "の",
     meaning: "Cánh đồng, Dã",
@@ -5744,6 +5909,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 165,
     kanji: "菜",
+    lesson: 16,
     onyomi: "サイ",
     kunyomi: "な",
     meaning: "Rau",
@@ -5779,6 +5945,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 166,
     kanji: "味",
+    lesson: 10,
     onyomi: "ミ",
     kunyomi: "あじ、あじ・わう",
     meaning: "Vị, Mùi vị",
@@ -5814,6 +5981,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 167,
     kanji: "悪",
+    lesson: 11,
     onyomi: "アク、オ",
     kunyomi: "わる・い",
     meaning: "Xấu, Ác",
@@ -5849,6 +6017,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 168,
     kanji: "作",
+    lesson: 11,
     onyomi: "サク、サ",
     kunyomi: "つく・る",
     meaning: "Làm, Chế tạo",
@@ -5884,6 +6053,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 169,
     kanji: "音",
+    lesson: 7,
     onyomi: "オン、イン",
     kunyomi: "おと、ね",
     meaning: "Âm thanh",
@@ -5919,6 +6089,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 170,
     kanji: "楽",
+    lesson: 7,
     onyomi: "ガク、ラク",
     kunyomi: "たの・しい",
     meaning: "Vui, Nhạc",
@@ -5954,6 +6125,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 171,
     kanji: "歌",
+    lesson: 7,
     onyomi: "カ",
     kunyomi: "うた、うた・う",
     meaning: "Hát, Bài hát",
@@ -5989,6 +6161,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 172,
     kanji: "自",
+    lesson: 12,
     onyomi: "ジ、シ",
     kunyomi: "みずか・ら",
     meaning: "Tự, Bản thân",
@@ -6024,6 +6197,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 173,
     kanji: "転",
+    lesson: 11,
     onyomi: "テン",
     kunyomi: "ころ・ぶ",
     meaning: "Chuyển, Lăn",
@@ -6059,6 +6233,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 174,
     kanji: "乗",
+    lesson: 11,
     onyomi: "ジョウ",
     kunyomi: "の・る、の・せる",
     meaning: "Lên xe, Thừa",
@@ -6094,6 +6269,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 175,
     kanji: "写",
+    lesson: 11,
     onyomi: "シャ",
     kunyomi: "うつ・す、うつ・る",
     meaning: "Tả, Sao chép, Chụp",
@@ -6129,6 +6305,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 176,
     kanji: "真",
+    lesson: 11,
     onyomi: "シン",
     kunyomi: "ま",
     meaning: "Chân, Thật",
@@ -6164,6 +6341,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 177,
     kanji: "台",
+    lesson: 12,
     onyomi: "ダイ、タイ",
     kunyomi: "",
     meaning: "Đài, Bệ",
@@ -6199,6 +6377,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 178,
     kanji: "央",
+    lesson: 12,
     onyomi: "オウ",
     kunyomi: "",
     meaning: "Ương, Trung ương",
@@ -6214,6 +6393,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 179,
     kanji: "映",
+    lesson: 11,
     onyomi: "エイ",
     kunyomi: "うつ・る、うつ・す",
     meaning: "Ánh, Chiếu",
@@ -6244,6 +6424,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 180,
     kanji: "画",
+    lesson: 28,
     onyomi: "ガ、カク",
     kunyomi: "",
     meaning: "Họa, Hoạch",
@@ -6279,6 +6460,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 181,
     kanji: "羊",
+    lesson: 12,
     onyomi: "ヨウ",
     kunyomi: "ひつじ",
     meaning: "Cừu",
@@ -6304,6 +6486,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 182,
     kanji: "洋",
+    lesson: 10,
     onyomi: "ヨウ",
     kunyomi: "",
     meaning: "Dương, Đại dương",
@@ -6339,6 +6522,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 183,
     kanji: "服",
+    lesson: 10,
     onyomi: "フク",
     kunyomi: "",
     meaning: "Phục, Quần áo",
@@ -6374,6 +6558,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 184,
     kanji: "着",
+    lesson: 17,
     onyomi: "チャク",
     kunyomi: "き・る、つ・く",
     meaning: "Trước, Mặc, Đến",
@@ -6409,6 +6594,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 185,
     kanji: "家",
+    lesson: 21,
     onyomi: "カ、ケ",
     kunyomi: "いえ、うち",
     meaning: "Nhà",
@@ -6444,6 +6630,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 186,
     kanji: "矢",
+    lesson: 12,
     onyomi: "シ",
     kunyomi: "や",
     meaning: "Mũi tên",
@@ -6469,6 +6656,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 187,
     kanji: "族",
+    lesson: 12,
     onyomi: "ゾク",
     kunyomi: "",
     meaning: "Gia đình, Tộc",
@@ -6494,6 +6682,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 188,
     kanji: "親",
+    lesson: 9,
     onyomi: "シン",
     kunyomi: "おや、した・しい",
     meaning: "Bố mẹ, Thân thiết",
@@ -6529,6 +6718,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 189,
     kanji: "兄",
+    lesson: 11,
     onyomi: "ケイ、キョウ",
     kunyomi: "あに",
     meaning: "Anh trai",
@@ -6559,6 +6749,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 190,
     kanji: "姉",
+    lesson: 11,
     onyomi: "シ",
     kunyomi: "あね",
     meaning: "Chị gái",
@@ -6584,6 +6775,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 191,
     kanji: "弟",
+    lesson: 11,
     onyomi: "ダイ、テイ",
     kunyomi: "おとうと",
     meaning: "Em trai",
@@ -6609,6 +6801,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 192,
     kanji: "妹",
+    lesson: 12,
     onyomi: "マイ",
     kunyomi: "いもうと",
     meaning: "Em gái",
@@ -6629,6 +6822,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 193,
     kanji: "僕",
+    lesson: 13,
     onyomi: "ボク",
     kunyomi: "",
     meaning: "Tôi (nam)",
@@ -6644,6 +6838,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 194,
     kanji: "妻",
+    lesson: 13,
     onyomi: "サイ",
     kunyomi: "つま",
     meaning: "Vợ",
@@ -6669,6 +6864,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 195,
     kanji: "夫",
+    lesson: 17,
     onyomi: "フ",
     kunyomi: "おっと",
     meaning: "Chồng",
@@ -6699,6 +6895,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 196,
     kanji: "主",
+    lesson: 12,
     onyomi: "シュ",
     kunyomi: "おも、ぬし",
     meaning: "Chủ, Chính",
@@ -6729,6 +6926,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 197,
     kanji: "住",
+    lesson: 12,
     onyomi: "ジュウ",
     kunyomi: "す・む",
     meaning: "Sống, Trú",
@@ -6759,6 +6957,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 198,
     kanji: "糸",
+    lesson: 4,
     onyomi: "シ",
     kunyomi: "いと",
     meaning: "Sợi chỉ",
@@ -6779,6 +6978,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 199,
     kanji: "氏",
+    lesson: 13,
     onyomi: "シ",
     kunyomi: "うじ",
     meaning: "Thị, Họ",
@@ -6799,6 +6999,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 200,
     kanji: "紙",
+    lesson: 13,
     onyomi: "シ",
     kunyomi: "かみ",
     meaning: "Giấy",
@@ -6829,6 +7030,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 201,
     kanji: "教",
+    lesson: 6,
     onyomi: "キョウ",
     kunyomi: "おし・える、おそ・わる",
     meaning: "Dạy",
@@ -6864,6 +7066,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 202,
     kanji: "室",
+    lesson: 9,
     onyomi: "シツ",
     kunyomi: "むろ",
     meaning: "Phòng",
@@ -6894,6 +7097,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 203,
     kanji: "羽",
+    lesson: 13,
     onyomi: "ウ",
     kunyomi: "はね",
     meaning: "Cánh, Lông vũ",
@@ -6914,6 +7118,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 204,
     kanji: "習",
+    lesson: 19,
     onyomi: "シュウ",
     kunyomi: "なら・う",
     meaning: "Học, Tập",
@@ -6949,6 +7154,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 205,
     kanji: "漢",
+    lesson: 13,
     onyomi: "カン",
     kunyomi: "",
     meaning: "Hán",
@@ -6969,6 +7175,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 206,
     kanji: "字",
+    lesson: 5,
     onyomi: "ジ",
     kunyomi: "あざ",
     meaning: "Chữ",
@@ -7004,6 +7211,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 207,
     kanji: "式",
+    lesson: 20,
     onyomi: "シキ",
     kunyomi: "",
     meaning: "Lễ, Hình thức",
@@ -7034,6 +7242,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 208,
     kanji: "試",
+    lesson: 13,
     onyomi: "シ",
     kunyomi: "ため・す、こころ・みる",
     meaning: "Thử",
@@ -7064,6 +7273,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 209,
     kanji: "験",
+    lesson: 19,
     onyomi: "ケン",
     kunyomi: "",
     meaning: "Nghiệm, Kiểm tra",
@@ -7094,6 +7304,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 210,
     kanji: "宿",
+    lesson: 15,
     onyomi: "シュク",
     kunyomi: "やど",
     meaning: "Trọ, Chỗ ở",
@@ -7124,6 +7335,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 211,
     kanji: "題",
+    lesson: 13,
     onyomi: "ダイ",
     kunyomi: "",
     meaning: "Đề, Đề bài",
@@ -7154,6 +7366,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 212,
     kanji: "文",
+    lesson: 5,
     onyomi: "ブン、モン",
     kunyomi: "ふみ",
     meaning: "Văn, Văn chương",
@@ -7189,6 +7402,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 213,
     kanji: "英",
+    lesson: 14,
     onyomi: "エイ",
     kunyomi: "",
     meaning: "Anh, Tài năng",
@@ -7214,6 +7428,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 214,
     kanji: "質",
+    lesson: 13,
     onyomi: "シツ",
     kunyomi: "",
     meaning: "Chất, Chất lượng",
@@ -7239,6 +7454,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 215,
     kanji: "問",
+    lesson: 13,
     onyomi: "モン",
     kunyomi: "と・う",
     meaning: "Vấn, Hỏi",
@@ -7269,6 +7485,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 216,
     kanji: "説",
+    lesson: 14,
     onyomi: "セツ",
     kunyomi: "と・く",
     meaning: "Thuyết, Giải thích",
@@ -7294,6 +7511,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 217,
     kanji: "遠",
+    lesson: 14,
     onyomi: "エン",
     kunyomi: "とお・い",
     meaning: "Xa",
@@ -7324,6 +7542,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 218,
     kanji: "近",
+    lesson: 14,
     onyomi: "キン",
     kunyomi: "ちか・い",
     meaning: "Gần",
@@ -7354,6 +7573,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 219,
     kanji: "者",
+    lesson: 10,
     onyomi: "シャ",
     kunyomi: "もの",
     meaning: "Người, Kẻ",
@@ -7384,6 +7604,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 220,
     kanji: "暑",
+    lesson: 14,
     onyomi: "ショ",
     kunyomi: "あつ・い",
     meaning: "Nóng (thời tiết)",
@@ -7409,6 +7630,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 221,
     kanji: "寒",
+    lesson: 14,
     onyomi: "カン",
     kunyomi: "さむ・い",
     meaning: "Lạnh (thời tiết)",
@@ -7434,6 +7656,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 222,
     kanji: "重",
+    lesson: 14,
     onyomi: "ジュウ、チョウ",
     kunyomi: "おも・い、かさ・ねる",
     meaning: "Nặng, Trọng",
@@ -7464,6 +7687,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 223,
     kanji: "軽",
+    lesson: 14,
     onyomi: "ケイ",
     kunyomi: "かる・い",
     meaning: "Nhẹ",
@@ -7489,6 +7713,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 224,
     kanji: "低",
+    lesson: 5,
     onyomi: "テイ",
     kunyomi: "ひく・い",
     meaning: "Thấp",
@@ -7514,6 +7739,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 225,
     kanji: "広",
+    lesson: 10,
     onyomi: "コウ",
     kunyomi: "ひろ・い",
     meaning: "Rộng",
@@ -7539,6 +7765,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 226,
     kanji: "暗",
+    lesson: 5,
     onyomi: "アン",
     kunyomi: "くら・い",
     meaning: "Tối",
@@ -7564,6 +7791,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 227,
     kanji: "太",
+    lesson: 15,
     onyomi: "タイ、タ",
     kunyomi: "ふと・い",
     meaning: "Béo, Thái",
@@ -7594,6 +7822,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 228,
     kanji: "若",
+    lesson: 26,
     onyomi: "ジャク",
     kunyomi: "わか・い",
     meaning: "Trẻ",
@@ -7614,6 +7843,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 229,
     kanji: "忙",
+    lesson: 15,
     onyomi: "ボウ",
     kunyomi: "いそが・しい",
     meaning: "Bận",
@@ -7634,6 +7864,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 230,
     kanji: "短",
+    lesson: 5,
     onyomi: "タン",
     kunyomi: "みじか・い",
     meaning: "Ngắn",
@@ -7659,6 +7890,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 231,
     kanji: "弱",
+    lesson: 15,
     onyomi: "ジャク",
     kunyomi: "よわ・い",
     meaning: "Yếu",
@@ -7684,6 +7916,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 232,
     kanji: "豆",
+    lesson: 15,
     onyomi: "トウ、ズ",
     kunyomi: "まめ",
     meaning: "Đậu",
@@ -7714,6 +7947,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 233,
     kanji: "運",
+    lesson: 11,
     onyomi: "ウン",
     kunyomi: "はこ・ぶ",
     meaning: "Vận, Vận chuyển",
@@ -7744,6 +7978,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 234,
     kanji: "動",
+    lesson: 15,
     onyomi: "ドウ",
     kunyomi: "うご・く",
     meaning: "Động, Chuyển động",
@@ -7774,6 +8009,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 235,
     kanji: "止",
+    lesson: 15,
     onyomi: "シ",
     kunyomi: "と・まる、と・める",
     meaning: "Chỉ, Dừng",
@@ -7804,6 +8040,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 236,
     kanji: "歩",
+    lesson: 15,
     onyomi: "ホ、ポ",
     kunyomi: "ある・く",
     meaning: "Bộ, Đi bộ",
@@ -7834,6 +8071,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 237,
     kanji: "使",
+    lesson: 8,
     onyomi: "シ",
     kunyomi: "つか・う",
     meaning: "Sử, Sử dụng",
@@ -7859,6 +8097,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 238,
     kanji: "送",
+    lesson: 23,
     onyomi: "ソウ",
     kunyomi: "おく・る",
     meaning: "Tống, Gửi, Tiễn",
@@ -7884,6 +8123,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 239,
     kanji: "洗",
+    lesson: 17,
     onyomi: "セン",
     kunyomi: "あら・う",
     meaning: "Tẩy, Rửa",
@@ -7909,6 +8149,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 240,
     kanji: "急",
+    lesson: 15,
     onyomi: "キュウ",
     kunyomi: "いそ・ぐ",
     meaning: "Cấp, Vội",
@@ -7939,6 +8180,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 241,
     kanji: "開",
+    lesson: 16,
     onyomi: "カイ",
     kunyomi: "あ・く、あ・ける、ひら・く",
     meaning: "Khai, Mở",
@@ -7969,6 +8211,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 242,
     kanji: "閉",
+    lesson: 18,
     onyomi: "ヘイ",
     kunyomi: "し・まる、し・める、と・じる",
     meaning: "Bế, Đóng",
@@ -7994,6 +8237,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 243,
     kanji: "押",
+    lesson: 16,
     onyomi: "オウ",
     kunyomi: "お・す",
     meaning: "Áp, Ấn",
@@ -8014,6 +8258,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 244,
     kanji: "引",
+    lesson: 16,
     onyomi: "イン",
     kunyomi: "ひ・く",
     meaning: "Dẫn, Kéo",
@@ -8039,6 +8284,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 245,
     kanji: "思",
+    lesson: 7,
     onyomi: "シ",
     kunyomi: "おも・う",
     meaning: "Tư, Nghĩ",
@@ -8064,6 +8310,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 246,
     kanji: "知",
+    lesson: 16,
     onyomi: "チ",
     kunyomi: "し・る",
     meaning: "Tri, Biết",
@@ -8094,6 +8341,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 247,
     kanji: "考",
+    lesson: 12,
     onyomi: "コウ",
     kunyomi: "かんが・える",
     meaning: "Khảo, Suy nghĩ",
@@ -8119,6 +8367,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 248,
     kanji: "死",
+    lesson: 10,
     onyomi: "シ",
     kunyomi: "し・ぬ",
     meaning: "Tử, Chết",
@@ -8144,6 +8393,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 249,
     kanji: "医",
+    lesson: 10,
     onyomi: "イ",
     kunyomi: "",
     meaning: "Y, Bác sĩ",
@@ -8174,6 +8424,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 250,
     kanji: "始",
+    lesson: 11,
     onyomi: "シ",
     kunyomi: "はじ・まる、はじ・める",
     meaning: "Thủy, Bắt đầu",
@@ -8204,6 +8455,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 251,
     kanji: "終",
+    lesson: 11,
     onyomi: "シュウ",
     kunyomi: "お・わる、お・える",
     meaning: "Chung, Kết thúc",
@@ -8234,6 +8486,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 252,
     kanji: "研",
+    lesson: 12,
     onyomi: "ケン",
     kunyomi: "と・ぐ",
     meaning: "Nghiên, Mài",
@@ -8259,6 +8512,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 253,
     kanji: "究",
+    lesson: 12,
     onyomi: "キュウ",
     kunyomi: "きわ・める",
     meaning: "Cứu, Nghiên cứu",
@@ -8279,6 +8533,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 254,
     kanji: "留",
+    lesson: 18,
     onyomi: "リュウ、ル",
     kunyomi: "と・める、と・まる",
     meaning: "Lưu, Ở lại",
@@ -8309,6 +8564,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 255,
     kanji: "有",
+    lesson: 9,
     onyomi: "ユウ、ウ",
     kunyomi: "あ・る",
     meaning: "Hữu, Có",
@@ -8339,6 +8595,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 256,
     kanji: "産",
+    lesson: 14,
     onyomi: "サン",
     kunyomi: "う・む、う・まれる",
     meaning: "Sản, Sản xuất",
@@ -8369,6 +8626,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 257,
     kanji: "業",
+    lesson: 14,
     onyomi: "ギョウ、ゴウ",
     kunyomi: "わざ",
     meaning: "Nghiệp, Công nghiệp",
@@ -8399,6 +8657,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 258,
     kanji: "薬",
+    lesson: 17,
     onyomi: "ヤク",
     kunyomi: "くすり",
     meaning: "Dược, Thuốc",
@@ -8429,6 +8688,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 259,
     kanji: "働",
+    lesson: 31,
     onyomi: "ドウ",
     kunyomi: "はたら・く",
     meaning: "Động, Làm việc",
@@ -8449,6 +8709,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 260,
     kanji: "員",
+    lesson: 8,
     onyomi: "イン",
     kunyomi: "",
     meaning: "Viên, Nhân viên",
@@ -8479,6 +8740,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 261,
     kanji: "士",
+    lesson: 32,
     onyomi: "シ",
     kunyomi: "",
     meaning: "Sĩ, Chiến sĩ",
@@ -8504,6 +8766,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 262,
     kanji: "仕",
+    lesson: 8,
     onyomi: "シ、ジ",
     kunyomi: "つか・える",
     meaning: "Sĩ, Phục vụ",
@@ -8529,6 +8792,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 263,
     kanji: "事",
+    lesson: 8,
     onyomi: "ジ、ズ",
     kunyomi: "こと",
     meaning: "Sự, Việc",
@@ -8564,6 +8828,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 264,
     kanji: "図",
+    lesson: 8,
     onyomi: "ズ、ト",
     kunyomi: "はか・る",
     meaning: "Đồ, Bản đồ",
@@ -8594,6 +8859,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 265,
     kanji: "合",
+    lesson: 13,
     onyomi: "ゴウ、ガッ",
     kunyomi: "あ・う、あ・わせる",
     meaning: "Hợp, Vừa",
@@ -8624,6 +8890,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 266,
     kanji: "格",
+    lesson: 19,
     onyomi: "カク、コウ",
     kunyomi: "",
     meaning: "Cách, Tính cách",
@@ -8649,6 +8916,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 267,
     kanji: "祝",
+    lesson: 20,
     onyomi: "シュク、シュウ",
     kunyomi: "いわ・う",
     meaning: "Chúc, Chúc mừng",
@@ -8674,6 +8942,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 268,
     kanji: "選",
+    lesson: 29,
     onyomi: "セン",
     kunyomi: "えら・ぶ",
     meaning: "Tuyển, Chọn",
@@ -8699,6 +8968,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 269,
     kanji: "誕",
+    lesson: 17,
     onyomi: "タン",
     kunyomi: "",
     meaning: "Đản, Sinh ra",
@@ -8719,6 +8989,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 270,
     kanji: "結",
+    lesson: 17,
     onyomi: "ケツ",
     kunyomi: "むす・ぶ、ゆ・う",
     meaning: "Kết, Kết hôn",
@@ -8749,6 +9020,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 271,
     kanji: "婚",
+    lesson: 17,
     onyomi: "コン",
     kunyomi: "",
     meaning: "Hôn, Kết hôn",
@@ -8774,6 +9046,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 272,
     kanji: "計",
+    lesson: 17,
     onyomi: "ケイ",
     kunyomi: "はか・る",
     meaning: "Kế, Kế hoạch",
@@ -8804,6 +9077,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 273,
     kanji: "幸",
+    lesson: 18,
     onyomi: "コウ",
     kunyomi: "さいわ・い、さち、しあわ・せ",
     meaning: "Hạnh, Hạnh phúc",
@@ -8834,6 +9108,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 274,
     kanji: "困",
+    lesson: 18,
     onyomi: "コン",
     kunyomi: "こま・る",
     meaning: "Khốn, Khó khăn",
@@ -8859,6 +9134,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 275,
     kanji: "消",
+    lesson: 20,
     onyomi: "ショウ",
     kunyomi: "き・える、け・す",
     meaning: "Tiêu, Tắt/Xóa",
@@ -8889,6 +9165,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 276,
     kanji: "防",
+    lesson: 20,
     onyomi: "ボウ",
     kunyomi: "ふせ・ぐ",
     meaning: "Phòng, Phòng chống",
@@ -8914,6 +9191,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 277,
     kanji: "救",
+    lesson: 18,
     onyomi: "キュウ",
     kunyomi: "すく・う",
     meaning: "Cứu, Cứu giúp",
@@ -8939,6 +9217,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 278,
     kanji: "警",
+    lesson: 20,
     onyomi: "ケイ",
     kunyomi: "",
     meaning: "Cảnh, Cảnh sát",
@@ -8964,6 +9243,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 279,
     kanji: "察",
+    lesson: 20,
     onyomi: "サツ",
     kunyomi: "",
     meaning: "Sát, Cảnh sát",
@@ -8989,6 +9269,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 280,
     kanji: "故",
+    lesson: 20,
     onyomi: "コ",
     kunyomi: "ゆえ",
     meaning: "Cố, Sự cố",
@@ -9014,6 +9295,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 281,
     kanji: "別",
+    lesson: 18,
     onyomi: "ベツ",
     kunyomi: "わか・れる",
     meaning: "Biệt, Đặc biệt",
@@ -9044,6 +9326,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 282,
     kanji: "答",
+    lesson: 13,
     onyomi: "トウ",
     kunyomi: "こた・える、こた・え",
     meaning: "Đáp, Trả lời",
@@ -9069,6 +9352,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 283,
     kanji: "正",
+    lesson: 18,
     onyomi: "セイ、ショウ",
     kunyomi: "ただ・しい",
     meaning: "Chính, Đúng",
@@ -9099,6 +9383,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 284,
     kanji: "同",
+    lesson: 9,
     onyomi: "ドウ",
     kunyomi: "おな・じ",
     meaning: "Đồng, Giống",
@@ -9129,6 +9414,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 285,
     kanji: "集",
+    lesson: 18,
     onyomi: "シュウ",
     kunyomi: "あつ・まる、あつ・める",
     meaning: "Tập, Tập hợp",
@@ -9159,6 +9445,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 286,
     kanji: "特",
+    lesson: 15,
     onyomi: "トク",
     kunyomi: "",
     meaning: "Đặc, Đặc biệt",
@@ -9189,6 +9476,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 287,
     kanji: "不",
+    lesson: 18,
     onyomi: "フ、ブ",
     kunyomi: "",
     meaning: "Bất, Không",
@@ -9219,6 +9507,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 288,
     kanji: "便",
+    lesson: 23,
     onyomi: "ベン、ビン",
     kunyomi: "たよ・り",
     meaning: "Tiện, Tiện lợi",
@@ -9249,6 +9538,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 289,
     kanji: "声",
+    lesson: 19,
     onyomi: "セイ",
     kunyomi: "こえ",
     meaning: "Thanh, Tiếng",
@@ -9274,6 +9564,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 290,
     kanji: "曜",
+    lesson: 7,
     onyomi: "ヨウ",
     kunyomi: "",
     meaning: "Diệu, Ngày trong tuần",
@@ -9294,6 +9585,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 291,
     kanji: "利",
+    lesson: 23,
     onyomi: "リ",
     kunyomi: "き・く",
     meaning: "Lợi, Tiện lợi",
@@ -9324,6 +9616,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 292,
     kanji: "元",
+    lesson: 9,
     onyomi: "ゲン、ガン",
     kunyomi: "もと",
     meaning: "Nguyên, Gốc",
@@ -9354,6 +9647,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 293,
     kanji: "配",
+    lesson: 23,
     onyomi: "ハイ",
     kunyomi: "くば・る",
     meaning: "Phối, Phân phối",
@@ -9384,6 +9678,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 294,
     kanji: "痛",
+    lesson: 19,
     onyomi: "ツウ",
     kunyomi: "いた・い、いた・む",
     meaning: "Thống, Đau",
@@ -9414,6 +9709,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 295,
     kanji: "赤",
+    lesson: 19,
     onyomi: "セキ",
     kunyomi: "あか、あか・い",
     meaning: "Xích, Đỏ",
@@ -9444,6 +9740,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 296,
     kanji: "青",
+    lesson: 19,
     onyomi: "セイ",
     kunyomi: "あお、あお・い",
     meaning: "Thanh, Xanh dương",
@@ -9474,6 +9771,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 297,
     kanji: "場",
+    lesson: 23,
     onyomi: "ジョウ",
     kunyomi: "ば",
     meaning: "Trường, Nơi chốn",
@@ -9504,6 +9802,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 298,
     kanji: "戸",
+    lesson: 19,
     onyomi: "コ",
     kunyomi: "と",
     meaning: "Hộ, Cửa",
@@ -9529,6 +9828,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 299,
     kanji: "所",
+    lesson: 19,
     onyomi: "ショ",
     kunyomi: "ところ",
     meaning: "Sở, Nơi chốn",
@@ -9559,6 +9859,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 300,
     kanji: "屋",
+    lesson: 9,
     onyomi: "オク",
     kunyomi: "や",
     meaning: "Ốc, Mái nhà, Cửa hàng",
@@ -9589,6 +9890,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 301,
     kanji: "堂",
+    lesson: 9,
     onyomi: "ドウ",
     kunyomi: "",
     meaning: "Đường, Nhà lớn",
@@ -9614,6 +9916,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 302,
     kanji: "都",
+    lesson: 19,
     onyomi: "ト、ツ",
     kunyomi: "みやこ",
     meaning: "Đô, Kinh đô",
@@ -9644,6 +9947,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 303,
     kanji: "県",
+    lesson: 19,
     onyomi: "ケン",
     kunyomi: "",
     meaning: "Huyện, Tỉnh",
@@ -9669,6 +9973,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 304,
     kanji: "区",
+    lesson: 19,
     onyomi: "ク",
     kunyomi: "",
     meaning: "Khu, Quận",
@@ -9699,6 +10004,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 305,
     kanji: "市",
+    lesson: 7,
     onyomi: "シ",
     kunyomi: "いち",
     meaning: "Thị, Thành phố, Chợ",
@@ -9729,6 +10035,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 306,
     kanji: "町",
+    lesson: 20,
     onyomi: "チョウ",
     kunyomi: "まち",
     meaning: "Đinh, Thị trấn",
@@ -9754,6 +10061,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 307,
     kanji: "村",
+    lesson: 20,
     onyomi: "ソン",
     kunyomi: "むら",
     meaning: "Thôn, Làng",
@@ -9779,6 +10087,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 308,
     kanji: "明",
+    lesson: 3,
     onyomi: "メイ、ミョウ",
     kunyomi: "あか・るい、あ・ける",
     meaning: "Minh, Sáng",
@@ -9809,6 +10118,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 309,
     kanji: "黒",
+    lesson: 20,
     onyomi: "コク",
     kunyomi: "くろ、くろ・い",
     meaning: "Hắc, Đen",
@@ -9834,6 +10144,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 310,
     kanji: "京",
+    lesson: 20,
     onyomi: "キョウ、ケイ",
     kunyomi: "",
     meaning: "Kinh, Kinh đô",
@@ -9859,6 +10170,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 311,
     kanji: "森",
+    lesson: 4,
     onyomi: "シン",
     kunyomi: "もり",
     meaning: "Sâm, Rừng rậm",
@@ -9884,6 +10196,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 312,
     kanji: "白",
+    lesson: 20,
     onyomi: "ハク、ビャク",
     kunyomi: "しろ、しろ・い",
     meaning: "Bạch, Trắng",
@@ -9914,6 +10227,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 313,
     kanji: "波",
+    lesson: 20,
     onyomi: "ハ",
     kunyomi: "なみ",
     meaning: "Ba, Sóng",
@@ -9939,6 +10253,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 314,
     kanji: "場",
+    lesson: 23,
     onyomi: "ジョウ",
     kunyomi: "ば",
     meaning: "Trường, Nơi chốn",
@@ -9964,6 +10279,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 315,
     kanji: "戸",
+    lesson: 20,
     onyomi: "コ",
     kunyomi: "と",
     meaning: "Hộ, Cửa",
@@ -9989,6 +10305,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 316,
     kanji: "所",
+    lesson: 20,
     onyomi: "ショ",
     kunyomi: "ところ",
     meaning: "Sở, Nơi chốn",
@@ -10019,6 +10336,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 317,
     kanji: "屋",
+    lesson: 9,
     onyomi: "オク",
     kunyomi: "や",
     meaning: "Ốc, Mái nhà, Cửa hàng",
@@ -10049,6 +10367,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 318,
     kanji: "堂",
+    lesson: 9,
     onyomi: "ドウ",
     kunyomi: "",
     meaning: "Đường, Nhà lớn",
@@ -10074,6 +10393,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 319,
     kanji: "都",
+    lesson: 20,
     onyomi: "ト、ツ",
     kunyomi: "みやこ",
     meaning: "Đô, Kinh đô",
@@ -10104,6 +10424,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 320,
     kanji: "県",
+    lesson: 20,
     onyomi: "ケン",
     kunyomi: "",
     meaning: "Huyện, Tỉnh",
@@ -10129,6 +10450,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 321,
     kanji: "区",
+    lesson: 21,
     onyomi: "ク",
     kunyomi: "",
     meaning: "Khu, Quận",
@@ -10159,6 +10481,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 322,
     kanji: "信",
+    lesson: 22,
     onyomi: "シン",
     kunyomi: "",
     meaning: "Tín, Tin tưởng",
@@ -10189,6 +10512,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 323,
     kanji: "映",
+    lesson: 11,
     onyomi: "エイ",
     kunyomi: "うつ・る、うつ・す",
     meaning: "Ánh, Phản chiếu",
@@ -10214,6 +10538,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 324,
     kanji: "画",
+    lesson: 28,
     onyomi: "ガ、カク",
     kunyomi: "",
     meaning: "Họa, Hoạch",
@@ -10244,6 +10569,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 325,
     kanji: "写",
+    lesson: 11,
     onyomi: "シャ",
     kunyomi: "うつ・す、うつ・る",
     meaning: "Tả, Sao chép",
@@ -10269,6 +10595,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 326,
     kanji: "真",
+    lesson: 11,
     onyomi: "シン",
     kunyomi: "ま",
     meaning: "Chân, Thật",
@@ -10299,6 +10626,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 327,
     kanji: "音",
+    lesson: 7,
     onyomi: "オン",
     kunyomi: "おと、ね",
     meaning: "Âm, Âm thanh",
@@ -10324,6 +10652,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 328,
     kanji: "楽",
+    lesson: 7,
     onyomi: "ガク、ラク",
     kunyomi: "たの・しい",
     meaning: "Lạc, Nhạc, Vui",
@@ -10354,6 +10683,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 329,
     kanji: "料",
+    lesson: 16,
     onyomi: "リョウ",
     kunyomi: "",
     meaning: "Liệu, Nguyên liệu",
@@ -10384,6 +10714,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 330,
     kanji: "組",
+    lesson: 31,
     onyomi: "ソ",
     kunyomi: "く・む、くみ",
     meaning: "Tổ, Nhóm",
@@ -10409,6 +10740,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 331,
     kanji: "思",
+    lesson: 7,
     onyomi: "シ",
     kunyomi: "おも・う",
     meaning: "Tư, Nghĩ",
@@ -10434,6 +10766,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 332,
     kanji: "色",
+    lesson: 21,
     onyomi: "ショク、シキ",
     kunyomi: "いろ",
     meaning: "Sắc, Màu sắc",
@@ -10459,6 +10792,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 333,
     kanji: "白",
+    lesson: 21,
     onyomi: "ハク",
     kunyomi: "しろ、しろ・い",
     meaning: "Bạch, Trắng",
@@ -10484,6 +10818,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 334,
     kanji: "黒",
+    lesson: 21,
     onyomi: "コク",
     kunyomi: "くろ、くろ・い",
     meaning: "Hắc, Đen",
@@ -10509,6 +10844,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 335,
     kanji: "赤",
+    lesson: 21,
     onyomi: "セキ",
     kunyomi: "あか、あか・い",
     meaning: "Xích, Đỏ",
@@ -10534,6 +10870,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 336,
     kanji: "青",
+    lesson: 21,
     onyomi: "セイ",
     kunyomi: "あお、あお・い",
     meaning: "Thanh, Xanh dương",
@@ -10559,6 +10896,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 337,
     kanji: "政",
+    lesson: 21,
     onyomi: "セイ",
     kunyomi: "まつりごと",
     meaning: "Chính, Chính trị",
@@ -10584,6 +10922,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 338,
     kanji: "治",
+    lesson: 21,
     onyomi: "ジ、チ",
     kunyomi: "おさ・める、なお・る",
     meaning: "Trị, Cai trị, Chữa trị",
@@ -10609,6 +10948,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 339,
     kanji: "経",
+    lesson: 21,
     onyomi: "ケイ",
     kunyomi: "へ・る",
     meaning: "Kinh, Kinh tế",
@@ -10634,6 +10974,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 340,
     kanji: "済",
+    lesson: 21,
     onyomi: "サイ",
     kunyomi: "す・む",
     meaning: "Tế, Hoàn thành",
@@ -10659,6 +11000,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 341,
     kanji: "歴",
+    lesson: 21,
     onyomi: "レキ",
     kunyomi: "",
     meaning: "Lịch, Lý lịch",
@@ -10684,6 +11026,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 342,
     kanji: "史",
+    lesson: 21,
     onyomi: "シ",
     kunyomi: "",
     meaning: "Sử, Lịch sử",
@@ -10704,6 +11047,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 343,
     kanji: "育",
+    lesson: 21,
     onyomi: "イク",
     kunyomi: "そだ・つ、そだ・てる",
     meaning: "Dục, Giáo dục",
@@ -10729,6 +11073,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 344,
     kanji: "化",
+    lesson: 22,
     onyomi: "カ、ケ",
     kunyomi: "ば・ける",
     meaning: "Hóa, Biến hóa",
@@ -10759,6 +11104,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 345,
     kanji: "理",
+    lesson: 16,
     onyomi: "リ",
     kunyomi: "",
     meaning: "Lý, Lý do",
@@ -10789,6 +11135,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 346,
     kanji: "科",
+    lesson: 22,
     onyomi: "カ",
     kunyomi: "",
     meaning: "Khoa, Khoa học",
@@ -10814,6 +11161,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 347,
     kanji: "数",
+    lesson: 18,
     onyomi: "スウ",
     kunyomi: "かず、かぞ・える",
     meaning: "Số, Số học",
@@ -10844,6 +11192,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 348,
     kanji: "医",
+    lesson: 10,
     onyomi: "イ",
     kunyomi: "",
     meaning: "Y, Y học",
@@ -10869,6 +11218,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 349,
     kanji: "法",
+    lesson: 29,
     onyomi: "ホウ",
     kunyomi: "",
     meaning: "Pháp, Pháp luật",
@@ -10894,6 +11244,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 350,
     kanji: "律",
+    lesson: 29,
     onyomi: "リツ",
     kunyomi: "",
     meaning: "Luật, Luật pháp",
@@ -10914,6 +11265,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 351,
     kanji: "際",
+    lesson: 30,
     onyomi: "サイ",
     kunyomi: "きわ",
     meaning: "Tế, Quốc tế",
@@ -10939,6 +11291,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 352,
     kanji: "院",
+    lesson: 10,
     onyomi: "イン",
     kunyomi: "",
     meaning: "Viện, Bệnh viện",
@@ -10964,6 +11317,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 353,
     kanji: "覚",
+    lesson: 23,
     onyomi: "カク",
     kunyomi: "おぼ・える、さ・める",
     meaning: "Giác, Nhớ, Cảm giác",
@@ -10989,6 +11343,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 354,
     kanji: "忘",
+    lesson: 23,
     onyomi: "ボウ",
     kunyomi: "わす・れる",
     meaning: "Vong, Quên",
@@ -11014,6 +11369,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 355,
     kanji: "決",
+    lesson: 32,
     onyomi: "ケツ",
     kunyomi: "き・める、き・まる",
     meaning: "Quyết, Quyết định",
@@ -11039,6 +11395,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 356,
     kanji: "定",
+    lesson: 23,
     onyomi: "テイ、ジョウ",
     kunyomi: "さだ・める",
     meaning: "Định, Ổn định",
@@ -11064,6 +11421,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 357,
     kanji: "比",
+    lesson: 23,
     onyomi: "ヒ",
     kunyomi: "くら・べる",
     meaning: "Tỷ, So sánh",
@@ -11089,6 +11447,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 358,
     kanji: "受",
+    lesson: 23,
     onyomi: "ジュ",
     kunyomi: "う・ける、う・かる",
     meaning: "Thụ, Nhận",
@@ -11114,6 +11473,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 359,
     kanji: "授",
+    lesson: 19,
     onyomi: "ジュ",
     kunyomi: "さず・ける",
     meaning: "Thụ, Trao tặng",
@@ -11139,6 +11499,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 360,
     kanji: "徒",
+    lesson: 23,
     onyomi: "ト",
     kunyomi: "",
     meaning: "Đồ, Học trò",
@@ -11159,6 +11520,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 361,
     kanji: "練",
+    lesson: 19,
     onyomi: "レン",
     kunyomi: "ね・る",
     meaning: "Luyện, Luyện tập",
@@ -11179,6 +11541,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 362,
     kanji: "復",
+    lesson: 19,
     onyomi: "フク",
     kunyomi: "",
     meaning: "Phục, Ôn tập",
@@ -11204,6 +11567,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 363,
     kanji: "表",
+    lesson: 23,
     onyomi: "ヒョウ",
     kunyomi: "おもて、あらわ・す",
     meaning: "Biểu, Biểu hiện",
@@ -11234,6 +11598,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 364,
     kanji: "卒",
+    lesson: 20,
     onyomi: "ソツ",
     kunyomi: "",
     meaning: "Tốt, Tốt nghiệp",
@@ -11254,6 +11619,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 365,
     kanji: "違",
+    lesson: 23,
     onyomi: "イ",
     kunyomi: "ちが・う",
     meaning: "Vi, Khác, Sai",
@@ -11279,6 +11645,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 366,
     kanji: "役",
+    lesson: 13,
     onyomi: "ヤク、エキ",
     kunyomi: "",
     meaning: "Dịch, Vai trò",
@@ -11304,6 +11671,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 367,
     kanji: "皆",
+    lesson: 23,
     onyomi: "カイ",
     kunyomi: "みな",
     meaning: "Giai, Mọi người",
@@ -11324,6 +11692,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 368,
     kanji: "彼",
+    lesson: 23,
     onyomi: "ヒ",
     kunyomi: "かれ、かの",
     meaning: "Bỉ, Anh ấy",
@@ -11349,6 +11718,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 369,
     kanji: "全",
+    lesson: 24,
     onyomi: "ゼン",
     kunyomi: "すべ・て",
     meaning: "Toàn, Toàn bộ",
@@ -11379,6 +11749,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 370,
     kanji: "部",
+    lesson: 24,
     onyomi: "ブ",
     kunyomi: "",
     meaning: "Bộ, Bộ phận",
@@ -11409,6 +11780,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 371,
     kanji: "必",
+    lesson: 24,
     onyomi: "ヒツ",
     kunyomi: "かなら・ず",
     meaning: "Tất, Tất yếu",
@@ -11434,6 +11806,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 372,
     kanji: "要",
+    lesson: 24,
     onyomi: "ヨウ",
     kunyomi: "い・る",
     meaning: "Yếu, Cần thiết",
@@ -11464,6 +11837,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 373,
     kanji: "荷",
+    lesson: 24,
     onyomi: "カ",
     kunyomi: "に",
     meaning: "Hà, Hành lý",
@@ -11489,6 +11863,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 374,
     kanji: "由",
+    lesson: 24,
     onyomi: "ユ、ユウ",
     kunyomi: "",
     meaning: "Do, Lý do",
@@ -11514,6 +11889,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 375,
     kanji: "届",
+    lesson: 24,
     onyomi: "",
     kunyomi: "とど・ける、とど・く",
     meaning: "Giới, Gửi đến",
@@ -11539,6 +11915,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 376,
     kanji: "利",
+    lesson: 23,
     onyomi: "リ",
     kunyomi: "き・く",
     meaning: "Lợi, Lợi ích",
@@ -11564,6 +11941,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 377,
     kanji: "払",
+    lesson: 24,
     onyomi: "フツ",
     kunyomi: "はら・う",
     meaning: "Phất, Trả tiền",
@@ -11584,6 +11962,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 378,
     kanji: "濯",
+    lesson: 17,
     onyomi: "タク",
     kunyomi: "",
     meaning: "Trạc, Giặt",
@@ -11604,6 +11983,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 379,
     kanji: "寝",
+    lesson: 24,
     onyomi: "シン",
     kunyomi: "ね・る",
     meaning: "Tẩm, Ngủ",
@@ -11629,6 +12009,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 380,
     kanji: "踊",
+    lesson: 28,
     onyomi: "ヨウ",
     kunyomi: "おど・る",
     meaning: "Dũng, Nhảy múa",
@@ -11649,6 +12030,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 381,
     kanji: "活",
+    lesson: 24,
     onyomi: "カツ",
     kunyomi: "",
     meaning: "Hoạt, Sinh hoạt",
@@ -11674,6 +12056,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 382,
     kanji: "末",
+    lesson: 24,
     onyomi: "マツ",
     kunyomi: "すえ",
     meaning: "Mạt, Cuối",
@@ -11704,6 +12087,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 383,
     kanji: "宅",
+    lesson: 15,
     onyomi: "タク",
     kunyomi: "",
     meaning: "Trạch, Nhà",
@@ -11729,6 +12113,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 384,
     kanji: "祭",
+    lesson: 20,
     onyomi: "サイ",
     kunyomi: "まつ・り",
     meaning: "Tế, Lễ hội",
@@ -11749,6 +12134,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 385,
     kanji: "平",
+    lesson: 25,
     onyomi: "ヘイ、ビョウ",
     kunyomi: "たい・ら、ひら",
     meaning: "Bình, Hòa bình",
@@ -11779,6 +12165,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 386,
     kanji: "戦",
+    lesson: 25,
     onyomi: "セン",
     kunyomi: "たたか・う",
     meaning: "Chiến, Chiến tranh",
@@ -11804,6 +12191,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 387,
     kanji: "争",
+    lesson: 25,
     onyomi: "ソウ",
     kunyomi: "あらそ・う",
     meaning: "Tranh, Cạnh tranh",
@@ -11829,6 +12217,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 388,
     kanji: "交",
+    lesson: 30,
     onyomi: "コウ",
     kunyomi: "まじ・わる",
     meaning: "Giao, Giao thông",
@@ -11854,6 +12243,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 389,
     kanji: "可",
+    lesson: 25,
     onyomi: "カ",
     kunyomi: "",
     meaning: "Khả, Có thể",
@@ -11879,6 +12269,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 390,
     kanji: "能",
+    lesson: 25,
     onyomi: "ノウ",
     kunyomi: "",
     meaning: "Năng, Khả năng",
@@ -11904,6 +12295,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 391,
     kanji: "収",
+    lesson: 25,
     onyomi: "シュウ",
     kunyomi: "おさ・める",
     meaning: "Thu, Thu nhập",
@@ -11929,6 +12321,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 392,
     kanji: "支",
+    lesson: 25,
     onyomi: "シ",
     kunyomi: "ささ・える",
     meaning: "Chi, Chi nhánh, Hỗ trợ",
@@ -11954,6 +12347,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 393,
     kanji: "厚",
+    lesson: 25,
     onyomi: "コウ",
     kunyomi: "あつ・い",
     meaning: "Hậu, Dày",
@@ -11974,6 +12368,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 394,
     kanji: "薄",
+    lesson: 18,
     onyomi: "ハク",
     kunyomi: "うす・い",
     meaning: "Bạc, Mỏng",
@@ -11994,6 +12389,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 395,
     kanji: "神",
+    lesson: 25,
     onyomi: "シン、ジン",
     kunyomi: "かみ",
     meaning: "Thần, Thần thánh",
@@ -12019,6 +12415,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 396,
     kanji: "公",
+    lesson: 25,
     onyomi: "コウ",
     kunyomi: "おおやけ",
     meaning: "Công, Công cộng",
@@ -12044,6 +12441,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 397,
     kanji: "園",
+    lesson: 25,
     onyomi: "エン",
     kunyomi: "その",
     meaning: "Viên, Vườn, Công viên",
@@ -12069,6 +12467,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 398,
     kanji: "込",
+    lesson: 25,
     onyomi: "",
     kunyomi: "こ・む、こ・める",
     meaning: "Vào, Đông đúc",
@@ -12094,6 +12493,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 399,
     kanji: "連",
+    lesson: 30,
     onyomi: "レン",
     kunyomi: "つ・れる、つら・なる",
     meaning: "Liên, Liên lạc",
@@ -12119,6 +12519,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 400,
     kanji: "窓",
+    lesson: 25,
     onyomi: "ソウ",
     kunyomi: "まど",
     meaning: "Song, Cửa sổ",
@@ -12144,6 +12545,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 401,
     kanji: "側",
+    lesson: 26,
     onyomi: "ソク",
     kunyomi: "かわ",
     meaning: "Trắc, Phía",
@@ -12169,6 +12571,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 402,
     kanji: "葉",
+    lesson: 26,
     onyomi: "ヨウ",
     kunyomi: "は",
     meaning: "Diệp, Lá",
@@ -12194,6 +12597,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 403,
     kanji: "景",
+    lesson: 26,
     onyomi: "ケイ",
     kunyomi: "",
     meaning: "Cảnh, Cảnh sắc",
@@ -12219,6 +12623,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 404,
     kanji: "色",
+    lesson: 26,
     onyomi: "ショク、シキ",
     kunyomi: "いろ",
     meaning: "Sắc, Màu sắc",
@@ -12244,6 +12649,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 405,
     kanji: "容",
+    lesson: 26,
     onyomi: "ヨウ",
     kunyomi: "",
     meaning: "Dung, Nội dung",
@@ -12269,6 +12675,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 406,
     kanji: "美",
+    lesson: 22,
     onyomi: "ビ",
     kunyomi: "うつく・しい",
     meaning: "Mỹ, Đẹp",
@@ -12294,6 +12701,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 407,
     kanji: "遊",
+    lesson: 26,
     onyomi: "ユウ",
     kunyomi: "あそ・ぶ",
     meaning: "Du, Chơi",
@@ -12314,6 +12722,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 408,
     kanji: "疲",
+    lesson: 26,
     onyomi: "ヒ",
     kunyomi: "つか・れる",
     meaning: "Bì, Mệt",
@@ -12334,6 +12743,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 409,
     kanji: "泳",
+    lesson: 26,
     onyomi: "エイ",
     kunyomi: "およ・ぐ",
     meaning: "Vịnh, Bơi",
@@ -12354,6 +12764,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 410,
     kanji: "暖",
+    lesson: 26,
     onyomi: "ダン",
     kunyomi: "あたた・かい",
     meaning: "Noãn, Ấm",
@@ -12379,6 +12790,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 411,
     kanji: "涼",
+    lesson: 26,
     onyomi: "リョウ",
     kunyomi: "すず・しい",
     meaning: "Lương, Mát",
@@ -12399,6 +12811,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 412,
     kanji: "静",
+    lesson: 26,
     onyomi: "セイ",
     kunyomi: "しず・か",
     meaning: "Tĩnh, Yên tĩnh",
@@ -12419,6 +12832,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 413,
     kanji: "輪",
+    lesson: 26,
     onyomi: "リン",
     kunyomi: "わ",
     meaning: "Luân, Bánh xe, Vòng",
@@ -12444,6 +12858,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 414,
     kanji: "港",
+    lesson: 15,
     onyomi: "コウ",
     kunyomi: "みなと",
     meaning: "Cảng, Hải cảng",
@@ -12469,6 +12884,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 415,
     kanji: "途",
+    lesson: 26,
     onyomi: "ト",
     kunyomi: "",
     meaning: "Đồ, Giữa đường",
@@ -12489,6 +12905,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 416,
     kanji: "降",
+    lesson: 26,
     onyomi: "コウ",
     kunyomi: "お・りる、ふ・る",
     meaning: "Giáng, Xuống, Mưa",
@@ -12514,6 +12931,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 417,
     kanji: "換",
+    lesson: 17,
     onyomi: "カン",
     kunyomi: "か・える",
     meaning: "Hoán, Thay đổi",
@@ -12539,6 +12957,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 418,
     kanji: "吉",
+    lesson: 27,
     onyomi: "キチ、キツ",
     kunyomi: "",
     meaning: "Cát, Tốt lành",
@@ -12564,6 +12983,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 419,
     kanji: "供",
+    lesson: 27,
     onyomi: "キョウ",
     kunyomi: "とも、そな・える",
     meaning: "Cung, Cung cấp",
@@ -12584,6 +13004,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 420,
     kanji: "両",
+    lesson: 12,
     onyomi: "リョウ",
     kunyomi: "",
     meaning: "Lưỡng, Cả hai",
@@ -12609,6 +13030,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 421,
     kanji: "若",
+    lesson: 26,
     onyomi: "ジャク",
     kunyomi: "わか・い",
     meaning: "Nhược, Trẻ",
@@ -12629,6 +13051,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 422,
     kanji: "老",
+    lesson: 26,
     onyomi: "ロウ",
     kunyomi: "お・いる",
     meaning: "Lão, Già",
@@ -12649,6 +13072,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 423,
     kanji: "息",
+    lesson: 27,
     onyomi: "ソク",
     kunyomi: "いき",
     meaning: "Tức, Hơi thở",
@@ -12674,6 +13098,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 424,
     kanji: "娘",
+    lesson: 27,
     onyomi: "",
     kunyomi: "むすめ",
     meaning: "Nương, Con gái",
@@ -12689,6 +13114,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 425,
     kanji: "奥",
+    lesson: 27,
     onyomi: "オウ",
     kunyomi: "おく",
     meaning: "Áo, Vợ, Bên trong",
@@ -12709,6 +13135,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 426,
     kanji: "将",
+    lesson: 27,
     onyomi: "ショウ",
     kunyomi: "",
     meaning: "Tương, Tương lai",
@@ -12724,6 +13151,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 427,
     kanji: "祖",
+    lesson: 27,
     onyomi: "ソ",
     kunyomi: "",
     meaning: "Tổ, Tổ tiên",
@@ -12749,6 +13177,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 428,
     kanji: "招",
+    lesson: 27,
     onyomi: "ショウ",
     kunyomi: "まね・く",
     meaning: "Chiêu, Mời",
@@ -12769,6 +13198,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 429,
     kanji: "慣",
+    lesson: 27,
     onyomi: "カン",
     kunyomi: "な・れる",
     meaning: "Quán, Quen, Tập quán",
@@ -12789,6 +13219,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 430,
     kanji: "席",
+    lesson: 27,
     onyomi: "セキ",
     kunyomi: "",
     meaning: "Tịch, Chỗ ngồi",
@@ -12814,6 +13245,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 431,
     kanji: "泊",
+    lesson: 15,
     onyomi: "ハク",
     kunyomi: "と・まる",
     meaning: "Bạc, Trọ lại",
@@ -12839,6 +13271,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 432,
     kanji: "訪",
+    lesson: 27,
     onyomi: "ホウ",
     kunyomi: "たず・ねる",
     meaning: "Phỏng, Thăm",
@@ -12859,6 +13292,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 433,
     kanji: "替",
+    lesson: 28,
     onyomi: "タイ",
     kunyomi: "か・える",
     meaning: "Thế, Thay",
@@ -12884,6 +13318,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 434,
     kanji: "取",
+    lesson: 28,
     onyomi: "シュ",
     kunyomi: "と・る",
     meaning: "Thủ, Lấy",
@@ -12909,6 +13344,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 435,
     kanji: "最",
+    lesson: 28,
     onyomi: "サイ",
     kunyomi: "もっと・も",
     meaning: "Tối, Nhất",
@@ -12934,6 +13370,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 436,
     kanji: "初",
+    lesson: 28,
     onyomi: "ショ",
     kunyomi: "はじ・め、はつ",
     meaning: "Sơ, Đầu tiên",
@@ -12959,6 +13396,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 437,
     kanji: "番",
+    lesson: 22,
     onyomi: "バン",
     kunyomi: "",
     meaning: "Phiên, Lượt, Số",
@@ -12984,6 +13422,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 438,
     kanji: "周",
+    lesson: 28,
     onyomi: "シュウ",
     kunyomi: "まわ・り",
     meaning: "Chu, Chu vi, Xung quanh",
@@ -13004,6 +13443,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 439,
     kanji: "囲",
+    lesson: 28,
     onyomi: "イ",
     kunyomi: "かこ・む",
     meaning: "Vi, Bao quanh",
@@ -13024,6 +13464,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 440,
     kanji: "協",
+    lesson: 31,
     onyomi: "キョウ",
     kunyomi: "",
     meaning: "Hiệp, Hợp lực",
@@ -13044,6 +13485,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 441,
     kanji: "互",
+    lesson: 28,
     onyomi: "ゴ",
     kunyomi: "たが・い",
     meaning: "Hỗ, Lẫn nhau",
@@ -13064,6 +13506,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 442,
     kanji: "票",
+    lesson: 28,
     onyomi: "ヒョウ",
     kunyomi: "",
     meaning: "Phiếu, Bỏ phiếu",
@@ -13084,6 +13527,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 443,
     kanji: "姿",
+    lesson: 28,
     onyomi: "シ",
     kunyomi: "すがた",
     meaning: "Tư, Dáng vẻ",
@@ -13104,6 +13548,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 444,
     kanji: "勢",
+    lesson: 28,
     onyomi: "セイ",
     kunyomi: "いきお・い",
     meaning: "Thế, Tư thế",
@@ -13124,6 +13569,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 445,
     kanji: "偉",
+    lesson: 28,
     onyomi: "イ",
     kunyomi: "えら・い",
     meaning: "Vĩ, Vĩ đại",
@@ -13144,6 +13590,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 446,
     kanji: "達",
+    lesson: 14,
     onyomi: "タツ",
     kunyomi: "たち",
     meaning: "Đạt, Đạt được",
@@ -13169,6 +13616,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 447,
     kanji: "損",
+    lesson: 28,
     onyomi: "ソン",
     kunyomi: "そこ・なう",
     meaning: "Tổn, Thua lỗ",
@@ -13189,6 +13637,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 448,
     kanji: "予",
+    lesson: 19,
     onyomi: "ヨ",
     kunyomi: "",
     meaning: "Dự, Dự định",
@@ -13214,6 +13663,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 449,
     kanji: "算",
+    lesson: 29,
     onyomi: "サン",
     kunyomi: "",
     meaning: "Toán, Tính toán",
@@ -13234,6 +13684,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 450,
     kanji: "勝",
+    lesson: 29,
     onyomi: "ショウ",
     kunyomi: "か・つ",
     meaning: "Thắng, Chiến thắng",
@@ -13259,6 +13710,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 451,
     kanji: "負",
+    lesson: 29,
     onyomi: "フ",
     kunyomi: "ま・ける",
     meaning: "Phụ, Thua",
@@ -13284,6 +13736,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 452,
     kanji: "賛",
+    lesson: 29,
     onyomi: "サン",
     kunyomi: "",
     meaning: "Tán, Tán thành",
@@ -13299,6 +13752,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 453,
     kanji: "成",
+    lesson: 29,
     onyomi: "セイ",
     kunyomi: "な・る",
     meaning: "Thành, Trở thành, Thành công",
@@ -13324,6 +13778,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 454,
     kanji: "絶",
+    lesson: 29,
     onyomi: "ゼツ",
     kunyomi: "た・える",
     meaning: "Tuyệt, Tuyệt đối",
@@ -13344,6 +13799,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 455,
     kanji: "対",
+    lesson: 29,
     onyomi: "タイ",
     kunyomi: "",
     meaning: "Đối, Đối diện",
@@ -13369,6 +13825,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 456,
     kanji: "続",
+    lesson: 29,
     onyomi: "ゾク",
     kunyomi: "つづ・く",
     meaning: "Tục, Tiếp tục",
@@ -13394,6 +13851,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 457,
     kanji: "辞",
+    lesson: 29,
     onyomi: "ジ",
     kunyomi: "や・める",
     meaning: "Từ, Từ bỏ, Từ ngữ",
@@ -13419,6 +13877,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 458,
     kanji: "投",
+    lesson: 29,
     onyomi: "トウ",
     kunyomi: "な・げる",
     meaning: "Đầu, Ném",
@@ -13444,6 +13903,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 459,
     kanji: "巻",
+    lesson: 29,
     onyomi: "カン",
     kunyomi: "ま・く",
     meaning: "Quyển, Cuộn",
@@ -13469,6 +13929,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 460,
     kanji: "約",
+    lesson: 29,
     onyomi: "ヤク",
     kunyomi: "",
     meaning: "Ước, Lời hứa, Khoảng",
@@ -13494,6 +13955,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 461,
     kanji: "束",
+    lesson: 29,
     onyomi: "ソク",
     kunyomi: "たば",
     meaning: "Thúc, Bó",
@@ -13519,6 +13981,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 462,
     kanji: "守",
+    lesson: 18,
     onyomi: "シュ、ス",
     kunyomi: "まも・る",
     meaning: "Thủ, Bảo vệ, Giữ",
@@ -13544,6 +14007,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 463,
     kanji: "過",
+    lesson: 29,
     onyomi: "カ",
     kunyomi: "す・ぎる",
     meaning: "Quá, Qua, Quá khứ",
@@ -13569,6 +14033,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 464,
     kanji: "夢",
+    lesson: 29,
     onyomi: "ム",
     kunyomi: "ゆめ",
     meaning: "Mộng, Giấc mơ",
@@ -13594,6 +14059,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 465,
     kanji: "的",
+    lesson: 30,
     onyomi: "テキ",
     kunyomi: "まと",
     meaning: "Đích, Mục đích, Tính chất",
@@ -13619,6 +14085,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 466,
     kanji: "飛",
+    lesson: 19,
     onyomi: "ヒ",
     kunyomi: "と・ぶ",
     meaning: "Phi, Bay",
@@ -13644,6 +14111,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 467,
     kanji: "機",
+    lesson: 19,
     onyomi: "キ",
     kunyomi: "",
     meaning: "Cơ, Máy móc, Cơ hội",
@@ -13669,6 +14137,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 468,
     kanji: "失",
+    lesson: 30,
     onyomi: "シツ",
     kunyomi: "うしな・う",
     meaning: "Thất, Mất",
@@ -13694,6 +14163,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 469,
     kanji: "鉄",
+    lesson: 15,
     onyomi: "テツ",
     kunyomi: "",
     meaning: "Thiết, Sắt, Đường sắt",
@@ -13719,6 +14189,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 470,
     kanji: "速",
+    lesson: 30,
     onyomi: "ソク",
     kunyomi: "はや・い",
     meaning: "Tốc, Nhanh",
@@ -13744,6 +14215,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 471,
     kanji: "遅",
+    lesson: 30,
     onyomi: "チ",
     kunyomi: "おそ・い、おく・れる",
     meaning: "Trì, Muộn, Chậm",
@@ -13769,6 +14241,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 472,
     kanji: "駐",
+    lesson: 30,
     onyomi: "チュウ",
     kunyomi: "",
     meaning: "Trú, Đỗ xe",
@@ -13789,6 +14262,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 473,
     kanji: "船",
+    lesson: 23,
     onyomi: "セン",
     kunyomi: "ふね",
     meaning: "Thuyền, Tàu thủy",
@@ -13814,6 +14288,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 474,
     kanji: "座",
+    lesson: 30,
     onyomi: "ザ",
     kunyomi: "すわ・る",
     meaning: "Tọa, Ngồi, Chỗ ngồi",
@@ -13839,6 +14314,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 475,
     kanji: "島",
+    lesson: 30,
     onyomi: "トウ",
     kunyomi: "しま",
     meaning: "Đảo, Hòn đảo",
@@ -13864,6 +14340,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 476,
     kanji: "陸",
+    lesson: 30,
     onyomi: "リク",
     kunyomi: "",
     meaning: "Lục, Lục đia, Đất liền",
@@ -13889,6 +14366,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 477,
     kanji: "橋",
+    lesson: 30,
     onyomi: "キョウ",
     kunyomi: "はし",
     meaning: "Kiều, Cây cầu",
@@ -13909,6 +14387,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 478,
     kanji: "皿",
+    lesson: 30,
     onyomi: "",
     kunyomi: "さら",
     meaning: "Mãnh, Cái đĩa",
@@ -13929,6 +14408,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 479,
     kanji: "茶",
+    lesson: 4,
     onyomi: "チャ、サ",
     kunyomi: "",
     meaning: "Trà, Trà đạo",
@@ -13954,6 +14434,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 480,
     kanji: "係",
+    lesson: 18,
     onyomi: "ケイ",
     kunyomi: "かか・る",
     meaning: "Hệ, Quan hệ, Phụ trách",
@@ -13974,6 +14455,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 481,
     kanji: "礼",
+    lesson: 31,
     onyomi: "レイ",
     kunyomi: "",
     meaning: "Lễ, Lễ nghi, Cảm ơn",
@@ -13994,6 +14476,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 482,
     kanji: "申",
+    lesson: 31,
     onyomi: "シン",
     kunyomi: "もう・す",
     meaning: "Thân, Nói (khiêm nhường)",
@@ -14019,6 +14502,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 483,
     kanji: "様",
+    lesson: 31,
     onyomi: "ヨウ",
     kunyomi: "さま",
     meaning: "Dạng, Ngài, Hình dáng",
@@ -14044,6 +14528,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 484,
     kanji: "調",
+    lesson: 31,
     onyomi: "チョウ",
     kunyomi: "しら・べる",
     meaning: "Điều, Điều tra, Tình trạng",
@@ -14069,6 +14554,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 485,
     kanji: "案",
+    lesson: 31,
     onyomi: "アン",
     kunyomi: "",
     meaning: "Án, Đề án, Hướng dẫn",
@@ -14089,6 +14575,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 486,
     kanji: "内",
+    lesson: 31,
     onyomi: "ナイ",
     kunyomi: "うち",
     meaning: "Nội, Bên trong",
@@ -14114,6 +14601,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 487,
     kanji: "談",
+    lesson: 31,
     onyomi: "ダン",
     kunyomi: "",
     meaning: "Đàm, Hội đàm, Bàn bạc",
@@ -14139,6 +14627,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 488,
     kanji: "説",
+    lesson: 31,
     onyomi: "セツ",
     kunyomi: "",
     meaning: "Thuyết, Thuyết minh, Giải thích",
@@ -14164,6 +14653,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 489,
     kanji: "課",
+    lesson: 31,
     onyomi: "カ",
     kunyomi: "",
     meaning: "Khóa, Bài học, Phòng ban",
@@ -14184,6 +14674,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 490,
     kanji: "願",
+    lesson: 31,
     onyomi: "ガン",
     kunyomi: "ねが・う",
     meaning: "Nguyện, Mong ước",
@@ -14204,6 +14695,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 491,
     kanji: "頼",
+    lesson: 31,
     onyomi: "ライ",
     kunyomi: "たの・む",
     meaning: "Lại, Nhờ cậy, Tin cậy",
@@ -14224,6 +14716,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 492,
     kanji: "絡",
+    lesson: 30,
     onyomi: "ラク",
     kunyomi: "から・む",
     meaning: "Lạc, Liên lạc, Rối",
@@ -14239,6 +14732,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 493,
     kanji: "伝",
+    lesson: 31,
     onyomi: "デン",
     kunyomi: "つた・える",
     meaning: "Truyền, Truyền đạt",
@@ -14264,6 +14758,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 494,
     kanji: "募",
+    lesson: 31,
     onyomi: "ボ",
     kunyomi: "つの・る",
     meaning: "Mộ, Chiêu mộ",
@@ -14284,6 +14779,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 495,
     kanji: "想",
+    lesson: 31,
     onyomi: "ソウ、ソ",
     kunyomi: "",
     meaning: "Tưởng, Tưởng tượng",
@@ -14309,6 +14805,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 496,
     kanji: "念",
+    lesson: 13,
     onyomi: "ネン",
     kunyomi: "",
     meaning: "Niệm, Kỷ niệm, Suy nghĩ",
@@ -14329,6 +14826,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 497,
     kanji: "因",
+    lesson: 32,
     onyomi: "イン",
     kunyomi: "",
     meaning: "Nhân, Nguyên nhân",
@@ -14344,6 +14842,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 498,
     kanji: "危",
+    lesson: 32,
     onyomi: "キ",
     kunyomi: "あぶ・ない",
     meaning: "Nguy, Nguy hiểm",
@@ -14364,6 +14863,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 499,
     kanji: "険",
+    lesson: 32,
     onyomi: "ケン",
     kunyomi: "けわ・しい",
     meaning: "Hiểm, Hiểm trở, Nguy hiểm",
@@ -14389,6 +14889,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 500,
     kanji: "拾",
+    lesson: 17,
     onyomi: "シュウ",
     kunyomi: "ひろ・う",
     meaning: "Thập, Nhặt",
@@ -14404,6 +14905,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 501,
     kanji: "捨",
+    lesson: 17,
     onyomi: "シャ",
     kunyomi: "す・てる",
     meaning: "Xả, Vứt bỏ",
@@ -14419,6 +14921,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 502,
     kanji: "戻",
+    lesson: 32,
     onyomi: "レイ",
     kunyomi: "もど・る",
     meaning: "Lệ, Quay lại",
@@ -14439,6 +14942,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 503,
     kanji: "吸",
+    lesson: 32,
     onyomi: "キュウ",
     kunyomi: "す・う",
     meaning: "Hấp, Hút",
@@ -14459,6 +14963,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 504,
     kanji: "呼",
+    lesson: 32,
     onyomi: "コ",
     kunyomi: "よ・ぶ",
     meaning: "Hô, Gọi, Hô hấp",
@@ -14479,6 +14984,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 505,
     kanji: "押",
+    lesson: 32,
     onyomi: "オウ",
     kunyomi: "お・す",
     meaning: "Áp, Ấn, Đẩy",
@@ -14499,6 +15005,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 506,
     kanji: "亡",
+    lesson: 32,
     onyomi: "ボウ",
     kunyomi: "な・くなる",
     meaning: "Vong, Mất, Chết",
@@ -14519,6 +15026,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 507,
     kanji: "君",
+    lesson: 32,
     onyomi: "クン",
     kunyomi: "きみ",
     meaning: "Quân, Bạn, Em, Vua",
@@ -14539,6 +15047,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 508,
     kanji: "然",
+    lesson: 32,
     onyomi: "ゼン、ネン",
     kunyomi: "",
     meaning: "Nhiên, Tự nhiên",
@@ -14564,6 +15073,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 509,
     kanji: "引",
+    lesson: 32,
     onyomi: "イン",
     kunyomi: "ひ・く",
     meaning: "Dẫn, Kéo",
@@ -14589,6 +15099,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 510,
     kanji: "退",
+    lesson: 32,
     onyomi: "タイ",
     kunyomi: "しりぞ・く",
     meaning: "Thoái, Rút lui, Nghỉ việc",
@@ -14614,6 +15125,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 511,
     kanji: "局",
+    lesson: 23,
     onyomi: "キョク",
     kunyomi: "",
     meaning: "Cục, Cục, Ván cờ",
@@ -14639,6 +15151,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 512,
     kanji: "専",
+    lesson: 32,
     onyomi: "セン",
     kunyomi: "もっぱ・ら",
     meaning: "Chuyên, Chuyên môn",
