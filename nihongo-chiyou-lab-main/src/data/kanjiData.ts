@@ -23,7 +23,7 @@ export const kanjiList: KanjiCard[] = [
     id: 1,
     kanji: "日",
     lesson: 1,
-    imageUrl: "/images/kanji/1_sun_anime_v2.png",
+    imageUrl: "/images/kanji/1_sun_3d.png",
     onyomi: "ニチ、ジツ",
     onyomiRomaji: "nichi, jitsu",
     kunyomi: "ひ、か",
