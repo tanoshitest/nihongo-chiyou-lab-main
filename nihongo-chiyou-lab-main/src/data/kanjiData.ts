@@ -3739,6 +3739,7 @@ export const kanjiData: KanjiCard[] = [
     id: 98,
     kanji: "町",
     lesson: 7,
+    imageUrl: "/images/kanji/98_town_3d.png",
     onyomi: "チョウ",
     kunyomi: "まち",
     meaning: "Thị trấn / Khu phố",
