@@ -4324,6 +4324,11 @@ export const kanjiData: KanjiCard[] = [
         japanese: "訓読み",
         romaji: "Kunyomi",
         vietnamese: "Âm Kun"
+      },
+      {
+        japanese: "読解",
+        romaji: "Dokkai",
+        vietnamese: "Đọc hiểu"
       }
     ]
   },
