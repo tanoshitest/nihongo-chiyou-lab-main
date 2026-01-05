@@ -1325,10 +1325,11 @@ const TranslationQuiz = ({ vocabulary, grammar }: { vocabulary: VocabularyItem[]
   );
 };
 
+// Helpers for question generation
+const shuffleArray = <T,>(array: T[]): T[] => [...array].sort(() => Math.random() - 0.5);
+
 // Quiz Tab Component
 const QuizTab = ({ vocabulary, grammar, quiz }: { vocabulary: VocabularyItem[]; grammar: GrammarPoint[]; quiz: QuizQuestion[] }) => {
-  // Helpers for question generation
-  const shuffleArray = <T,>(array: T[]): T[] => [...array].sort(() => Math.random() - 0.5);
 
   const generateVocabQuestions = (): QuizQuestion[] => {
     let questions: QuizQuestion[] = [];
