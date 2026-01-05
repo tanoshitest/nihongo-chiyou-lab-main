@@ -1488,6 +1488,128 @@ const QuizTab = ({ vocabulary, grammar, quiz }: { vocabulary: VocabularyItem[]; 
   );
 };
 
+// JLPT Tab Component
+const JLPTTab = ({ vocabulary, grammar }: { vocabulary: VocabularyItem[]; grammar: GrammarPoint[] }) => {
+  const allLessonKanjiDetails = useMemo(() => {
+    return vocabulary.reduce((acc: KanjiDetail[], item) => {
+      if (item.kanjiDetails) {
+        item.kanjiDetails.forEach(detail => {
+          if (!acc.some(d => d.kanji === detail.kanji)) acc.push(detail);
+        });
+      }
+      return acc;
+    }, []);
+  }, [vocabulary]);
+
+  const generateJLPTQuestions = (): QuizQuestion[] => {
+    let questions: QuizQuestion[] = [];
+    const allExamples = [...vocabulary.flatMap(v => v.examples || []), ...grammar.flatMap(g => g.examples || [])];
+
+    for (let i = 0; i < 100; i++) {
+      const type = i % 3; // Cycle through JLPT question types
+      const item = vocabulary[i % vocabulary.length];
+
+      if (type === 0) {
+        // Type 1: Kanji Reading (漢字読み)
+        const otherReadings = vocabulary.filter(v => v.word !== item.word).map(v => v.word);
+        questions.push({
+          id: 5000 + i,
+          question: `Chữ Kanji "${item.kanji || item.word}" được đọc là gì?`,
+          correctAnswer: item.word,
+          options: shuffleArray([item.word, ...shuffleArray(otherReadings).slice(0, 3)]),
+          explanation: `Chữ Kanji "${item.kanji || item.word}" có cách đọc Hiragana là "${item.word}".`,
+          metadata: { vocab: item }
+        });
+      } else if (type === 1) {
+        // Type 2: Orthography (表記)
+        const otherKanjis = vocabulary.filter(v => v.word !== item.word).map(v => v.kanji || v.word);
+        questions.push({
+          id: 5100 + i,
+          question: `Từ "${item.word}" có cách viết Kanji nào sau đây?`,
+          correctAnswer: item.kanji || item.word,
+          options: shuffleArray([item.kanji || item.word, ...shuffleArray(otherKanjis).slice(0, 3)]),
+          explanation: `Từ "${item.word}" có cách viết Kanji là "${item.kanji || item.word}".`,
+          metadata: { vocab: item }
+        });
+      } else {
+        // Type 3: Contextual (文脈規定) / Grammar (文法)
+        if (allExamples.length > 0) {
+          const ex = allExamples[i % allExamples.length];
+          // Try to create a blank from a word in the sentence
+          const qText = ex.jp.replace(item.word, " (____) ");
+
+          if (qText.includes("(____)")) {
+            const otherWords = vocabulary.filter(v => v.word !== item.word).map(v => v.word);
+            questions.push({
+              id: 5200 + i,
+              question: `Chọn từ thích hợp điền vào chỗ trống: "${qText}"`,
+              correctAnswer: item.word,
+              options: shuffleArray([item.word, ...shuffleArray(otherWords).slice(0, 3)]),
+              explanation: `Câu hoàn chỉnh: "${ex.jp}" - Nghĩa: ${ex.vn}`,
+              metadata: { vocab: item }
+            });
+          } else {
+            // Fallback to simple meaning question if blank generation fails
+            questions.push({
+              id: 5300 + i,
+              question: `Nghĩa của từ "${item.word}" trong cấu trúc JLPT là gì?`,
+              correctAnswer: item.mean,
+              options: shuffleArray([item.mean, ...shuffleArray(vocabulary.filter(v => v.word !== item.word).map(v => v.mean)).slice(0, 3)]),
+              explanation: `"${item.word}" có nghĩa là "${item.mean}".`,
+              metadata: { vocab: item }
+            });
+          }
+        } else {
+          // Fallback if no examples
+          questions.push({
+            id: 5400 + i,
+            question: `"${item.word}" (${item.kanji || item.word}) nghĩa là:`,
+            correctAnswer: item.mean,
+            options: shuffleArray([item.mean, ...shuffleArray(vocabulary.filter(v => v.word !== item.word).map(v => v.mean)).slice(0, 3)]),
+            explanation: `"${item.word}" nghĩa là "${item.mean}".`,
+            metadata: { vocab: item }
+          });
+        }
+      }
+    }
+    return questions;
+  };
+
+  const jlptQuestions = useMemo(() => generateJLPTQuestions(), [vocabulary, grammar]);
+
+  return (
+    <div className="space-y-6">
+      <div className="bg-[#008001]/10 border border-[#008001]/20 rounded-lg p-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-12 h-12 rounded-full bg-[#008001] flex items-center justify-center text-white">
+            <Trophy className="w-6 h-6" />
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-[#008001]">JLPT N5 Mock Test</h3>
+            <p className="text-sm text-muted-foreground">Cấu trúc đề thi thực tế (100 câu trắc nghiệm)</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-[#008001]" />
+            漢字読み (Cách đọc Kanji)
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-[#008001]" />
+            表記 (Cách viết chữ)
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-[#008001]" />
+            文脈規定 (Điền từ theo ngữ cảnh)
+          </div>
+        </div>
+      </div>
+
+      <QuizEngine questions={jlptQuestions} />
+    </div>
+  );
+};
+
 // Main Lesson Detail Page
 const LessonDetail = () => {
   const { id } = useParams<{ id: string }>();
