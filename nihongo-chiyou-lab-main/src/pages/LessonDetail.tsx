@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import { ArrowLeft, Volume2, BookOpen, MessageSquare, PenTool, CheckCircle2, XCircle, RotateCcw, ChevronDown, ChevronUp, BookMarked } from "lucide-react";
+import { ArrowLeft, Volume2, BookOpen, MessageSquare, PenTool, CheckCircle2, XCircle, RotateCcw, ChevronDown, ChevronUp, BookMarked, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -181,6 +181,173 @@ const KanjiWithHover = ({ kanjiText, kanjiDetails }: { kanjiText: string; kanjiD
       showFurigana={false}
       kanjiDetails={kanjiDetails}
     />
+  );
+};
+
+// Helper component to render detailed translation breakdown
+const DetailedExplanation = ({ jp, vn, vocabulary, grammar, type }: { jp: string; vn: string; vocabulary: VocabularyItem[]; grammar: GrammarPoint[]; type: 'jp-vn' | 'vn-jp' }) => {
+  // Collect all Kanji details from lesson
+  const allLessonKanjiDetails = useMemo(() => {
+    return vocabulary.reduce((acc: KanjiDetail[], item) => {
+      if (item.kanjiDetails) {
+        item.kanjiDetails.forEach(detail => {
+          if (!acc.some(d => d.kanji === detail.kanji)) acc.push(detail);
+        });
+      }
+      return acc;
+    }, []);
+  }, [vocabulary]);
+
+  // Find relevant vocabulary in the sentence
+  const relevantVocab = useMemo(() => {
+    return vocabulary.filter(v => jp.includes(v.kanji) || jp.includes(v.word));
+  }, [jp, vocabulary]);
+
+  // Find relevant grammar in the sentence
+  const relevantGrammar = useMemo(() => {
+    return grammar.filter(g => jp.includes(g.pattern.split(' ')[0])); // Simple check
+  }, [jp, grammar]);
+
+  // Extract Kanji from sentence
+  const sentenceKanji = useMemo(() => {
+    const kanjiChars = jp.match(/[\u4e00-\u9faf]/g) || [];
+    return [...new Set(kanjiChars)].map(char => {
+      return allLessonKanjiDetails.find(d => d.kanji === char);
+    }).filter(Boolean) as KanjiDetail[];
+  }, [jp, allLessonKanjiDetails]);
+
+  return (
+    <div className="space-y-6 mt-4 pt-4 border-t border-dashed animate-in fade-in slide-in-from-top-2 duration-300">
+      {/* 0. Final Answer */}
+      <div className="space-y-2">
+        <p className="text-sm font-bold text-[#008001]">Đáp án:</p>
+        <div className="bg-[#008001]/5 p-4 rounded-lg border border-[#008001]/20 space-y-2">
+          {type === 'jp-vn' ? (
+            <p className="text-lg font-medium text-foreground">
+              {vn}
+            </p>
+          ) : (
+            <div className="text-lg font-medium text-foreground font-japanese">
+              <SentenceWithFurigana
+                sentence={{
+                  jp: jp,
+                  vn: "",
+                  furigana: relevantVocab.map(v => ({
+                    kanji: v.kanji || v.word,
+                    reading: v.word,
+                    meaning: v.kanji ? v.kanji.split('').map(c => allLessonKanjiDetails.find(d => d.kanji === c)?.sinoVietnamese).filter(Boolean).join(' ') : ""
+                  })) as VocabExampleFurigana[]
+                }}
+                showFurigana={true}
+                kanjiDetails={allLessonKanjiDetails}
+              />
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* 1. Vocabulary & Kanji Breakdown */}
+      <div className="space-y-3">
+        <h4 className="text-sm font-bold text-foreground flex items-center gap-2">
+          <span className="flex items-center justify-center w-5 h-5 rounded bg-[#008001] text-white text-[10px]">1</span>
+          Phân tích Từ vựng & Kanji
+        </h4>
+        <div className="space-y-4 ml-7">
+          {relevantVocab.map((v, i) => (
+            <div key={i} className="space-y-2">
+              <p className="text-sm font-medium text-[#008001]">
+                {String.fromCharCode(65 + i)}. {v.kanji || v.word} ({v.word})
+              </p>
+              <div className="text-xs space-y-1 text-muted-foreground bg-muted/30 p-2 rounded border border-dashed">
+                <p><span className="font-semibold text-foreground">Hiragana:</span> {v.word}</p>
+                {v.kanji && sentenceKanji.some(sk => v.kanji.includes(sk.kanji)) && (
+                  <div>
+                    <span className="font-semibold text-foreground">Hán tự:</span> {v.kanji} (Hán Việt: {
+                      v.kanji.split('').map(c => allLessonKanjiDetails.find(d => d.kanji === c)?.sinoVietnamese).filter(Boolean).join(' ')
+                    })
+                  </div>
+                )}
+                <p><span className="font-semibold text-foreground">Nghĩa:</span> {v.mean}</p>
+              </div>
+            </div>
+          ))}
+
+          {sentenceKanji.length > 0 && (
+            <div className="mt-2 text-[11px] overflow-hidden rounded-md border border-border">
+              <div className="overflow-x-auto">
+                <table className="w-full text-left">
+                  <thead className="bg-muted/50 border-b">
+                    <tr>
+                      <th className="p-2 font-semibold">Kanji</th>
+                      <th className="p-2 font-semibold">Hán Việt</th>
+                      <th className="p-2 font-semibold">Nghĩa</th>
+                      <th className="p-2 font-semibold">Âm On</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y">
+                    {sentenceKanji.map((k, i) => (
+                      <tr key={i} className="bg-background">
+                        <td className="p-2 font-bold text-[#008001] text-sm">{k.kanji}</td>
+                        <td className="p-2 uppercase font-medium">{k.sinoVietnamese}</td>
+                        <td className="p-2">{k.meaning}</td>
+                        <td className="p-2">{k.onyomi}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* 2. Grammar Analysis */}
+      <div className="space-y-3">
+        <h4 className="text-sm font-bold text-foreground flex items-center gap-2">
+          <span className="flex items-center justify-center w-5 h-5 rounded bg-[#008001] text-white text-[10px]">2</span>
+          Phân tích Ngữ pháp
+        </h4>
+        <div className="ml-7 space-y-3">
+          <div className="text-xs space-y-2 text-muted-foreground p-3 border-l-2 border-l-[#008001] bg-[#008001]/5 rounded-r-md">
+            {jp.includes("は") && (
+              <div>
+                <p className="font-bold text-[#008001] mb-1">Trợ từ は (Wa)</p>
+                <p>Đứng sau danh từ để đánh dấu chủ đề của câu. Viết là "HA" nhưng đọc là "WA".</p>
+              </div>
+            )}
+            {jp.includes("です") && (
+              <div>
+                <p className="font-bold text-[#008001] mb-1">Đuôi câu です (Desu)</p>
+                <p>Dùng để khẳng định và thể hiện sự lịch sự. Tương đương with "là" trong tiếng Việt.</p>
+              </div>
+            )}
+            {relevantGrammar.length > 0 && relevantGrammar.map((g, i) => (
+              <div key={i}>
+                <p className="font-bold text-[#008001] mb-1">{g.pattern}</p>
+                <p>{g.explanation}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* 3. Pronunciation Tips */}
+      <div className="space-y-3">
+        <h4 className="text-sm font-bold text-foreground flex items-center gap-2">
+          <span className="flex items-center justify-center w-5 h-5 rounded bg-[#008001] text-white text-[10px]">3</span>
+          Lưu ý Phát âm (Biến âm)
+        </h4>
+        <ul className="ml-10 list-disc text-xs text-muted-foreground space-y-1">
+          {jp.includes("です") && (
+            <li><span className="font-semibold text-foreground">Desu:</span> Chữ "u" cuối cùng thường được đọc rất nhẹ hoặc ngắt (đọc là "đết-s").</li>
+          )}
+          {jp.includes("く") && (
+            <li><span className="font-semibold text-foreground">Âm ngắt:</span> Chữ "ku" ở giữa một số từ (như "gakusei") thường được đọc lướt nhanh.</li>
+          )}
+          <li>Phát âm giọng mũi nhẹ đối với các âm có hàng "na, ni, nu, ne, no".</li>
+        </ul>
+      </div>
+    </div>
   );
 };
 
@@ -424,7 +591,7 @@ const VocabularyTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabular
 
 // Grammar Tab Component
 const GrammarTab = ({ grammar, vocabulary }: { grammar: LessonDetailType['grammar'], vocabulary: LessonDetailType['vocabulary'] }) => {
-  const [showFurigana, setShowFurigana] = useState(false);
+  const [showFurigana, setShowFurigana] = useState(true);
 
   // Collect all unique Kanji from vocabulary kanjiDetails for the whole tab
   const allLessonKanjiDetails = vocabulary.reduce((acc: KanjiDetail[], item) => {
@@ -498,34 +665,14 @@ const GrammarTab = ({ grammar, vocabulary }: { grammar: LessonDetailType['gramma
                 </p>
                 <div className="grid gap-3">
                   {point.examples.map((ex, exIndex) => (
-                    <div
+                    <GrammarExampleItem
                       key={exIndex}
-                      className="bg-muted/30 rounded-lg overflow-hidden border-l-2 border-[#008001]"
-                    >
-                      {/* Ảnh minh hoạ - nằm trên cùng như Irodori */}
-                      {ex.image && (
-                        <div className="border-b">
-                          <img
-                            src={ex.image}
-                            alt={`Minh hoạ: ${ex.vn}`}
-                            className="w-full h-40 object-cover"
-                          />
-                        </div>
-                      )}
-
-                      {/* Nội dung câu ví dụ */}
-                      <div className="p-3">
-                        <p className="font-medium text-foreground text-sm flex items-start gap-2">
-                          <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#008001]/20 text-[#008001] text-xs flex items-center justify-center">
-                            {exIndex + 1}
-                          </span>
-                          <span className="flex-1">
-                            {renderWithFurigana(ex.jp, ex.furigana)}
-                          </span>
-                        </p>
-                        <p className="text-sm text-muted-foreground mt-1 ml-7">{ex.vn}</p>
-                      </div>
-                    </div>
+                      ex={ex}
+                      exIndex={exIndex}
+                      vocabulary={vocabulary}
+                      grammar={grammar}
+                      renderWithFurigana={renderWithFurigana}
+                    />
                   ))}
                 </div>
               </div>
@@ -533,6 +680,64 @@ const GrammarTab = ({ grammar, vocabulary }: { grammar: LessonDetailType['gramma
           </CardContent>
         </Card>
       ))}
+    </div>
+  );
+};
+
+// Sub-component for individual Grammar Example with collapsible explanation
+const GrammarExampleItem = ({
+  ex,
+  exIndex,
+  vocabulary,
+  grammar,
+  renderWithFurigana
+}: {
+  ex: any;
+  exIndex: number;
+  vocabulary: VocabularyItem[];
+  grammar: GrammarPoint[];
+  renderWithFurigana: (text: string, furiganaList?: FuriganaWord[]) => React.ReactNode;
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="bg-muted/30 rounded-lg overflow-hidden border-l-2 border-[#008001]">
+      <div className="p-3">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div className="flex-1">
+            <p className="font-medium text-foreground text-sm flex items-start gap-2">
+              <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#008001]/20 text-[#008001] text-xs flex items-center justify-center">
+                {exIndex + 1}
+              </span>
+              <span className="flex-1">
+                {renderWithFurigana(ex.jp, ex.furigana)}
+              </span>
+            </p>
+            <p className="text-sm text-muted-foreground mt-1 ml-7">{ex.vn}</p>
+          </div>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setIsOpen(!isOpen)}
+            className="flex-shrink-0 ml-7 md:ml-0 h-8 text-[#008001] hover:text-[#006801] hover:bg-[#008001]/10 gap-1 self-start md:self-center"
+          >
+            {isOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+            <span className="text-xs font-semibold uppercase tracking-wider">Giải thích</span>
+          </Button>
+        </div>
+
+        {isOpen && (
+          <div className="pl-7">
+            <DetailedExplanation
+              jp={ex.jp}
+              vn={ex.vn}
+              vocabulary={vocabulary}
+              grammar={grammar}
+              type="jp-vn"
+            />
+          </div>
+        )}
+      </div>
     </div>
   );
 };
@@ -884,13 +1089,95 @@ const QuizEngine = ({ questions }: { questions: QuizQuestion[] }) => {
 
               {showResult && (
                 <div className={cn(
-                  "p-4 rounded-lg border-l-4",
+                  "p-4 rounded-lg border-l-4 space-y-3",
                   isCorrect ? "bg-[#008001]/5 border-[#008001]" : "bg-amber-50 dark:bg-amber-950/20 border-amber-500"
                 )}>
-                  <p className="text-sm font-medium mb-1">
-                    {isCorrect ? "✅ Chính xác!" : "💡 Giải thích:"}
+                  <p className="text-sm font-bold flex items-center gap-2">
+                    {isCorrect ? (
+                      <>
+                        <CheckCircle2 className="w-4 h-4 text-[#008001]" />
+                        <span className="text-[#008001]">Chính xác!</span>
+                      </>
+                    ) : (
+                      <>
+                        <MessageSquare className="w-4 h-4 text-amber-600" />
+                        <span className="text-amber-700 dark:text-amber-400">Giải thích chi tiết:</span>
+                      </>
+                    )}
                   </p>
-                  <p className="text-sm text-muted-foreground">{question.explanation}</p>
+
+                  <p className="text-sm text-muted-foreground font-medium">{question.explanation}</p>
+
+                  {/* Rich Metadata Explanation */}
+                  {question.metadata && (
+                    <div className="mt-3 pt-3 border-t border-dashed border-muted-foreground/20 space-y-4">
+                      {/* Vocab Details */}
+                      {question.metadata.vocab && (
+                        <div className="space-y-3">
+                          <div className="flex items-start gap-3">
+                            <div className="w-10 h-10 rounded bg-[#008001]/10 flex items-center justify-center text-xl font-bold text-[#008001]">
+                              {question.metadata.vocab.word[0]}
+                            </div>
+                            <div>
+                              <p className="text-sm font-bold text-foreground">{question.metadata.vocab.word} ({question.metadata.vocab.kanji || '—'})</p>
+                              <p className="text-xs text-muted-foreground">{question.metadata.vocab.romaji} • {question.metadata.vocab.mean}</p>
+                            </div>
+                          </div>
+
+                          {question.metadata.vocab.kanjiDetails && question.metadata.vocab.kanjiDetails.length > 0 && (
+                            <div className="grid grid-cols-1 gap-2">
+                              {question.metadata.vocab.kanjiDetails.map((k, ki) => (
+                                <div key={ki} className="text-xs bg-background/50 p-2 rounded border border-dashed flex justify-between items-center">
+                                  <div>
+                                    <span className="font-bold text-[#008001] mr-2">{k.kanji}</span>
+                                    <span className="text-muted-foreground uppercase font-medium">[{k.sinoVietnamese}]</span>
+                                  </div>
+                                  <span className="text-muted-foreground">{k.meaning}</span>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Kanji Details */}
+                      {question.metadata.kanji && (
+                        <div className="space-y-3">
+                          <div className="flex items-center gap-3">
+                            <div className="w-12 h-12 rounded-lg bg-[#008001] flex items-center justify-center text-2xl font-bold text-white">
+                              {question.metadata.kanji.kanji}
+                            </div>
+                            <div>
+                              <p className="text-sm font-bold text-foreground uppercase">Hán Việt: {question.metadata.kanji.sinoVietnamese}</p>
+                              <p className="text-xs text-muted-foreground">Nghĩa: {question.metadata.kanji.meaning}</p>
+                            </div>
+                          </div>
+
+                          <div className="grid grid-cols-2 gap-2 text-[11px]">
+                            <div className="bg-background/50 p-2 rounded border">
+                              <p className="font-semibold text-[#008001]">On: {question.metadata.kanji.onyomi}</p>
+                            </div>
+                            <div className="bg-background/50 p-2 rounded border">
+                              <p className="font-semibold text-[#008001]">Kun: {question.metadata.kanji.kunyomi}</p>
+                            </div>
+                          </div>
+
+                          {question.metadata.kanji.examples && question.metadata.kanji.examples.length > 0 && (
+                            <div className="space-y-1">
+                              <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">Từ vựng ví dụ:</p>
+                              <div className="flex flex-wrap gap-1">
+                                {question.metadata.kanji.examples.map((ex, exi) => (
+                                  <Badge key={exi} variant="outline" className="text-[10px] font-normal py-0">
+                                    {ex}
+                                  </Badge>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               )}
             </CardContent>
@@ -914,160 +1201,6 @@ const QuizEngine = ({ questions }: { questions: QuizQuestion[] }) => {
   );
 };
 
-// Helper component to render detailed translation breakdown
-const DetailedExplanation = ({ jp, vn, vocabulary, grammar, type }: { jp: string; vn: string; vocabulary: VocabularyItem[]; grammar: GrammarPoint[]; type: 'jp-vn' | 'vn-jp' }) => {
-  // Collect all Kanji details from lesson
-  const allLessonKanjiDetails = useMemo(() => {
-    return vocabulary.reduce((acc: KanjiDetail[], item) => {
-      if (item.kanjiDetails) {
-        item.kanjiDetails.forEach(detail => {
-          if (!acc.some(d => d.kanji === detail.kanji)) acc.push(detail);
-        });
-      }
-      return acc;
-    }, []);
-  }, [vocabulary]);
-
-  // Find relevant vocabulary in the sentence
-  const relevantVocab = useMemo(() => {
-    return vocabulary.filter(v => jp.includes(v.kanji) || jp.includes(v.word));
-  }, [jp, vocabulary]);
-
-  // Find relevant grammar in the sentence
-  const relevantGrammar = useMemo(() => {
-    return grammar.filter(g => jp.includes(g.pattern.split(' ')[0])); // Simple check
-  }, [jp, grammar]);
-
-  // Extract Kanji from sentence
-  const sentenceKanji = useMemo(() => {
-    const kanjiChars = jp.match(/[\u4e00-\u9faf]/g) || [];
-    return [...new Set(kanjiChars)].map(char => {
-      return allLessonKanjiDetails.find(d => d.kanji === char);
-    }).filter(Boolean) as KanjiDetail[];
-  }, [jp, allLessonKanjiDetails]);
-
-  return (
-    <div className="space-y-6 mt-4 pt-4 border-t border-dashed animate-in fade-in slide-in-from-top-2 duration-300">
-      {/* 0. Final Answer */}
-      <div className="space-y-2">
-        <p className="text-sm font-bold text-[#008001]">Đáp án:</p>
-        <div className="bg-[#008001]/5 p-4 rounded-lg border border-[#008001]/20 space-y-2">
-          <p className={cn("text-lg font-medium text-foreground", type === 'vn-jp' && "font-japanese")}>
-            {type === 'jp-vn' ? vn : jp}
-          </p>
-          {type === 'vn-jp' && (
-            <p className="text-sm text-muted-foreground border-t border-dashed border-[#008001]/20 pt-2">
-              <span className="font-semibold italic text-[10px] uppercase">Cách đọc: </span>
-              {relevantVocab.reduce((acc, v) => v.kanji ? acc.replace(v.kanji, v.word) : acc, jp)}
-            </p>
-          )}
-        </div>
-      </div>
-
-      {/* 1. Vocabulary & Kanji Breakdown */}
-      <div className="space-y-3">
-        <h4 className="text-sm font-bold text-foreground flex items-center gap-2">
-          <span className="flex items-center justify-center w-5 h-5 rounded bg-[#008001] text-white text-[10px]">1</span>
-          Phân tích Từ vựng & Kanji
-        </h4>
-        <div className="space-y-4 ml-7">
-          {relevantVocab.map((v, i) => (
-            <div key={i} className="space-y-2">
-              <p className="text-sm font-medium text-[#008001]">
-                {String.fromCharCode(65 + i)}. {v.kanji || v.word} ({v.word})
-              </p>
-              <div className="text-xs space-y-1 text-muted-foreground bg-muted/30 p-2 rounded border border-dashed">
-                <p><span className="font-semibold text-foreground">Hiragana:</span> {v.word}</p>
-                {v.kanji && sentenceKanji.some(sk => v.kanji.includes(sk.kanji)) && (
-                  <div>
-                    <span className="font-semibold text-foreground">Hán tự:</span> {v.kanji} (Hán Việt: {
-                      v.kanji.split('').map(c => allLessonKanjiDetails.find(d => d.kanji === c)?.sinoVietnamese).filter(Boolean).join(' ')
-                    })
-                  </div>
-                )}
-                <p><span className="font-semibold text-foreground">Nghĩa:</span> {v.mean}</p>
-              </div>
-            </div>
-          ))}
-
-          {sentenceKanji.length > 0 && (
-            <div className="mt-2 text-[11px] overflow-hidden rounded-md border border-border">
-              <div className="overflow-x-auto">
-                <table className="w-full text-left">
-                  <thead className="bg-muted/50 border-b">
-                    <tr>
-                      <th className="p-2 font-semibold">Kanji</th>
-                      <th className="p-2 font-semibold">Hán Việt</th>
-                      <th className="p-2 font-semibold">Nghĩa</th>
-                      <th className="p-2 font-semibold">Âm On</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y">
-                    {sentenceKanji.map((k, i) => (
-                      <tr key={i} className="bg-background">
-                        <td className="p-2 font-bold text-[#008001] text-sm">{k.kanji}</td>
-                        <td className="p-2 uppercase font-medium">{k.sinoVietnamese}</td>
-                        <td className="p-2">{k.meaning}</td>
-                        <td className="p-2">{k.onyomi}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* 2. Grammar Analysis */}
-      <div className="space-y-3">
-        <h4 className="text-sm font-bold text-foreground flex items-center gap-2">
-          <span className="flex items-center justify-center w-5 h-5 rounded bg-[#008001] text-white text-[10px]">2</span>
-          Phân tích Ngữ pháp
-        </h4>
-        <div className="ml-7 space-y-3">
-          <div className="text-xs space-y-2 text-muted-foreground p-3 border-l-2 border-l-[#008001] bg-[#008001]/5 rounded-r-md">
-            {jp.includes("は") && (
-              <div>
-                <p className="font-bold text-[#008001] mb-1">Trợ từ は (Wa)</p>
-                <p>Đứng sau danh từ để đánh dấu chủ đề của câu. Viết là "HA" nhưng đọc là "WA".</p>
-              </div>
-            )}
-            {jp.includes("です") && (
-              <div>
-                <p className="font-bold text-[#008001] mb-1">Đuôi câu です (Desu)</p>
-                <p>Dùng để khẳng định và thể hiện sự lịch sự. Tương đương với "là" trong tiếng Việt.</p>
-              </div>
-            )}
-            {relevantGrammar.length > 0 && relevantGrammar.map((g, i) => (
-              <div key={i}>
-                <p className="font-bold text-[#008001] mb-1">{g.pattern}</p>
-                <p>{g.explanation}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* 3. Pronunciation Tips */}
-      <div className="space-y-3">
-        <h4 className="text-sm font-bold text-foreground flex items-center gap-2">
-          <span className="flex items-center justify-center w-5 h-5 rounded bg-[#008001] text-white text-[10px]">3</span>
-          Lưu ý Phát âm (Biến âm)
-        </h4>
-        <ul className="ml-10 list-disc text-xs text-muted-foreground space-y-1">
-          {jp.includes("です") && (
-            <li><span className="font-semibold text-foreground">Desu:</span> Chữ "u" cuối cùng thường được đọc rất nhẹ hoặc ngắt (đọc là "đết-s").</li>
-          )}
-          {jp.includes("く") && (
-            <li><span className="font-semibold text-foreground">Âm ngắt:</span> Chữ "ku" ở giữa một số từ (như "gakusei") thường được đọc lướt nhanh.</li>
-          )}
-          <li>Phát âm giọng mũi nhẹ đối với các âm có hàng "na, ni, nu, ne, no".</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
 
 // Translation Practice Component
 const TranslationQuiz = ({ vocabulary, grammar }: { vocabulary: VocabularyItem[]; grammar: GrammarPoint[] }) => {
@@ -1216,7 +1349,8 @@ const QuizTab = ({ vocabulary, grammar, quiz }: { vocabulary: VocabularyItem[]; 
           question: `Từ "${item.word}" có nghĩa là gì?`,
           correctAnswer: item.mean,
           options: shuffleArray([item.mean, ...shuffleArray(otherMeans).slice(0, 3)]),
-          explanation: `"${item.word}" (${item.romaji}) nghĩa là "${item.mean}".`
+          explanation: `"${item.word}" (${item.romaji}) nghĩa là "${item.mean}".`,
+          metadata: { vocab: item }
         };
       } else if (type === 1) {
         q = {
@@ -1224,7 +1358,8 @@ const QuizTab = ({ vocabulary, grammar, quiz }: { vocabulary: VocabularyItem[]; 
           question: `Từ nào có nghĩa là "${item.mean}"?`,
           correctAnswer: item.word,
           options: shuffleArray([item.word, ...shuffleArray(otherWords).slice(0, 3)]),
-          explanation: `"${item.word}" nghĩa là "${item.mean}".`
+          explanation: `"${item.word}" nghĩa là "${item.mean}".`,
+          metadata: { vocab: item }
         };
       } else {
         q = {
@@ -1232,7 +1367,8 @@ const QuizTab = ({ vocabulary, grammar, quiz }: { vocabulary: VocabularyItem[]; 
           question: `Cách đọc Romaji của "${item.word}" là gì?`,
           correctAnswer: item.romaji,
           options: shuffleArray([item.romaji, ...shuffleArray(otherReadings).slice(0, 3)]),
-          explanation: `"${item.word}" được đọc là "${item.romaji}".`
+          explanation: `"${item.word}" được đọc là "${item.romaji}".`,
+          metadata: { vocab: item }
         };
       }
       questions.push(q);
@@ -1260,7 +1396,8 @@ const QuizTab = ({ vocabulary, grammar, quiz }: { vocabulary: VocabularyItem[]; 
           question: `Âm Hán Việt của chữ "${kanji.kanji}" là gì?`,
           correctAnswer: kanji.sinoVietnamese || kanji.meaning,
           options: shuffleArray([kanji.sinoVietnamese || kanji.meaning, ...shuffleArray(otherSino).slice(0, 3)]),
-          explanation: `Chữ "${kanji.kanji}" có âm Hán Việt là "${kanji.sinoVietnamese || kanji.meaning}".`
+          explanation: `Chữ "${kanji.kanji}" có âm Hán Việt là "${kanji.sinoVietnamese || kanji.meaning}".`,
+          metadata: { kanji: kanji }
         };
       } else if (type === 1) {
         q = {
@@ -1268,7 +1405,8 @@ const QuizTab = ({ vocabulary, grammar, quiz }: { vocabulary: VocabularyItem[]; 
           question: `Nghĩa của chữ "${kanji.kanji}" là gì?`,
           correctAnswer: kanji.meaning,
           options: shuffleArray([kanji.meaning, ...shuffleArray(otherMeans).slice(0, 3)]),
-          explanation: `"${kanji.kanji}" có nghĩa là "${kanji.meaning}".`
+          explanation: `"${kanji.kanji}" có nghĩa là "${kanji.meaning}".`,
+          metadata: { kanji: kanji }
         };
       } else {
         q = {
@@ -1276,7 +1414,8 @@ const QuizTab = ({ vocabulary, grammar, quiz }: { vocabulary: VocabularyItem[]; 
           question: `Âm Onyomi của chữ "${kanji.kanji}" là gì?`,
           correctAnswer: kanji.onyomi,
           options: shuffleArray([kanji.onyomi, ...shuffleArray(otherOns).slice(0, 3)]),
-          explanation: `Âm Onyomi của "${kanji.kanji}" là "${kanji.onyomi}".`
+          explanation: `Âm Onyomi của "${kanji.kanji}" là "${kanji.onyomi}".`,
+          metadata: { kanji: kanji }
         };
       }
       questions.push(q);
@@ -1395,7 +1534,7 @@ const LessonDetail = () => {
         {/* Main Content with Tabs */}
         <main className="container mx-auto px-4 py-6">
           <Tabs defaultValue="vocabulary" className="space-y-6">
-            <TabsList className="grid w-full grid-cols-5 h-auto p-1">
+            <TabsList className="grid w-full grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 h-auto p-1">
               <TabsTrigger value="vocabulary" className="flex flex-col sm:flex-row items-center gap-1 py-2 data-[state=active]:bg-[#008001] data-[state=active]:text-white">
                 <BookOpen className="w-4 h-4" />
                 <span className="text-xs sm:text-sm">Từ vựng</span>
@@ -1415,6 +1554,10 @@ const LessonDetail = () => {
               <TabsTrigger value="quiz" className="flex flex-col sm:flex-row items-center gap-1 py-2 data-[state=active]:bg-[#008001] data-[state=active]:text-white">
                 <CheckCircle2 className="w-4 h-4" />
                 <span className="text-xs sm:text-sm">Luyện tập</span>
+              </TabsTrigger>
+              <TabsTrigger value="jlpt" className="flex flex-col sm:flex-row items-center gap-1 py-2 data-[state=active]:bg-[#008001] data-[state=active]:text-white">
+                <Trophy className="w-4 h-4" />
+                <span className="text-xs sm:text-sm">JLPT</span>
               </TabsTrigger>
             </TabsList>
 
@@ -1436,6 +1579,10 @@ const LessonDetail = () => {
 
             <TabsContent value="quiz">
               <QuizTab vocabulary={lesson.vocabulary} grammar={lesson.grammar} quiz={lesson.quiz} />
+            </TabsContent>
+
+            <TabsContent value="jlpt">
+              <JLPTTab vocabulary={lesson.vocabulary} grammar={lesson.grammar} />
             </TabsContent>
           </Tabs>
         </main>

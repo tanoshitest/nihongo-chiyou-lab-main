@@ -75,6 +75,10 @@ export interface QuizQuestion {
   options: string[];
   correctAnswer: string;
   explanation: string;
+  metadata?: {
+    vocab?: VocabularyItem;
+    kanji?: KanjiDetail;
+  };
 }
 
 export interface LessonDetail {
@@ -2855,16 +2859,16 @@ export const lesson1Data: LessonDetail = {
       explanation: 'Dùng để khẳng định N1 là N2. Trợ từ "は" (wa) đánh dấu chủ đề của câu, "です" là động từ "là" ở thể lịch sự.',
       example: '私は学生です。(Watashi wa gakusei desu.) - Tôi là sinh viên.',
       examples: [
-        { jp: '私は学生です。', vn: 'Tôi là sinh viên.', furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }], image: '/placeholder.svg' },
-        { jp: '田中さんは先生です。', vn: 'Anh Tanaka là giáo viên.', furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }], image: '/placeholder.svg' },
-        { jp: '山田さんは医者です。', vn: 'Anh Yamada là bác sĩ.', furigana: [{ kanji: '山田', reading: 'やまだ', meaning: 'SƠN ĐIỀN' }, { kanji: '医者', reading: 'いしゃ', meaning: 'Y GIẢ' }], image: '/placeholder.svg' },
-        { jp: 'ミラーさんはアメリカ人です。', vn: 'Anh Miller là người Mỹ.', furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }], image: '/placeholder.svg' },
-        { jp: '佐藤さんは会社員です。', vn: 'Anh Satou là nhân viên công ty.', furigana: [{ kanji: '佐藤', reading: 'さとう', meaning: 'TÁ ĐẰNG' }, { kanji: '会社員', reading: 'かいしゃいん', meaning: 'HỘI XÃ VIÊN' }], image: '/placeholder.svg' },
-        { jp: 'あの人はエンジニアです。', vn: 'Người kia là kỹ sư.', furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }], image: '/placeholder.svg' },
-        { jp: '私は日本人です。', vn: 'Tôi là người Nhật.', furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }], image: '/placeholder.svg' },
-        { jp: 'キムさんは韓国人です。', vn: 'Chị Kim là người Hàn Quốc.', furigana: [{ kanji: '韓国人', reading: 'かんこくじん', meaning: 'HÀN QUỐC NHÂN' }], image: '/placeholder.svg' },
-        { jp: 'マリアさんはブラジル人です。', vn: 'Chị Maria là người Brazil.', furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }], image: '/placeholder.svg' },
-        { jp: '私は銀行員です。', vn: 'Tôi là nhân viên ngân hàng.', furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '銀行員', reading: 'ぎんこういん', meaning: 'NGÂN HÀNG VIÊN' }], image: '/placeholder.svg' }
+        { jp: '私は学生です。', vn: 'Tôi là sinh viên.', furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }] },
+        { jp: '田中さんは先生です。', vn: 'Anh Tanaka là giáo viên.', furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }] },
+        { jp: '山田さんは医者です。', vn: 'Anh Yamada là bác sĩ.', furigana: [{ kanji: '山田', reading: 'やまだ', meaning: 'SƠN ĐIỀN' }, { kanji: '医者', reading: 'いしゃ', meaning: 'Y GIẢ' }] },
+        { jp: 'ミラーさんはアメリカ人です。', vn: 'Anh Miller là người Mỹ.', furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }] },
+        { jp: '佐藤さんは会社員です。', vn: 'Anh Satou là nhân viên công ty.', furigana: [{ kanji: '佐藤', reading: 'さとう', meaning: 'TÁ ĐẰNG' }, { kanji: '会社員', reading: 'かいしゃいん', meaning: 'HỘI XÃ VIÊN' }] },
+        { jp: 'あの人はエンジニアです。', vn: 'Người kia là kỹ sư.', furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }] },
+        { jp: '私は日本人です。', vn: 'Tôi là người Nhật.', furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }] },
+        { jp: 'キムさんは韓国人です。', vn: 'Chị Kim là người Hàn Quốc.', furigana: [{ kanji: '韓国人', reading: 'かんこくじん', meaning: 'HÀN QUỐC NHÂN' }] },
+        { jp: 'マリアさんはブラジル人です。', vn: 'Chị Maria là người Brazil.', furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }] },
+        { jp: '私は銀行員です。', vn: 'Tôi là nhân viên ngân hàng.', furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '銀行員', reading: 'ぎんこういん', meaning: 'NGÂN HÀNG VIÊN' }] }
       ]
     },
     {
