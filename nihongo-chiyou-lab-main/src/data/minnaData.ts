@@ -23,6 +23,7 @@ export interface KanjiDetail {
   radicals?: string; // Bộ thủ
   components?: { char: string; meaning: string }[]; // Các bộ thủ/chữ cấu thành
   mnemonic?: string; // Câu chuyện/Logic gợi nhớ
+  imageUrl?: string; // Ảnh minh họa cho Kanji
   examples?: string[]; // Từ vựng ví dụ
   exampleSentences?: VocabularyExample[]; // Câu ví dụ dùng Kanji này
 }

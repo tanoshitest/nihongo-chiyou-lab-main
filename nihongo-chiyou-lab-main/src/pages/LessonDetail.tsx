@@ -880,12 +880,32 @@ const KanjiTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabulary'] }
                 </p>
               </div>
             </div>
-            <Badge variant="outline" className="text-[#008001] border-[#008001]/30">
-              {kanji.jlpt || 'N5'}
-            </Badge>
+            <div className="flex flex-col items-end gap-2">
+              <Badge variant="outline" className="text-[#008001] border-[#008001]/30">
+                {kanji.jlpt || 'N5'}
+              </Badge>
+            </div>
           </div>
 
           <CardContent className="p-5 space-y-4">
+            {/* Image Placeholder or Actual Image */}
+            <div className="w-full aspect-video rounded-lg border-2 border-dashed border-[#008001]/20 bg-[#008001]/5 flex items-center justify-center overflow-hidden">
+              {kanji.imageUrl ? (
+                <img
+                  src={kanji.imageUrl}
+                  alt={`Minh họa cho ${kanji.kanji}`}
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <div className="flex flex-col items-center gap-2 text-[#008001]/40">
+                  <div className="w-10 h-10 rounded-full bg-[#008001]/10 flex items-center justify-center">
+                    <span className="text-xl">🖼️</span>
+                  </div>
+                  <span className="text-xs font-medium uppercase tracking-wider">Hình minh họa</span>
+                </div>
+              )}
+            </div>
+
             <div className="grid grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <p className="text-xs text-muted-foreground uppercase font-semibold">Âm ON</p>
