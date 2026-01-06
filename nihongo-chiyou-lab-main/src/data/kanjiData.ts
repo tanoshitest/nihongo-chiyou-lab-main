@@ -5690,6 +5690,7 @@ export const kanjiData: KanjiCard[] = [
     id: 151,
     kanji: "顔",
     lesson: 10,
+    imageUrl: "/images/kanji/151_face_3d.png",
     onyomi: "ガン",
     kunyomi: "かお",
     meaning: "Khuôn mặt",
@@ -5726,6 +5727,7 @@ export const kanjiData: KanjiCard[] = [
     id: 152,
     kanji: "頭",
     lesson: 10,
+    imageUrl: "/images/kanji/152_head_3d.png",
     onyomi: "トウ、ズ",
     kunyomi: "あたま",
     meaning: "Đầu",
@@ -5762,6 +5764,7 @@ export const kanjiData: KanjiCard[] = [
     id: 153,
     kanji: "牛",
     lesson: 5,
+    imageUrl: "/images/kanji/153_cow_3d.png",
     onyomi: "ギュウ",
     kunyomi: "うし",
     meaning: "Bò",
@@ -5798,6 +5801,7 @@ export const kanjiData: KanjiCard[] = [
     id: 154,
     kanji: "鳥",
     lesson: 5,
+    imageUrl: "/images/kanji/154_bird_3d.png",
     onyomi: "チョウ",
     kunyomi: "とり",
     meaning: "Chim",
@@ -5834,6 +5838,7 @@ export const kanjiData: KanjiCard[] = [
     id: 155,
     kanji: "魚",
     lesson: 5,
+    imageUrl: "/images/kanji/155_fish_3d.png",
     onyomi: "ギョ",
     kunyomi: "さかな、うお",
     meaning: "Cá",
@@ -5870,6 +5875,7 @@ export const kanjiData: KanjiCard[] = [
     id: 156,
     kanji: "肉",
     lesson: 5,
+    imageUrl: "/images/kanji/156_meat_3d.png",
     onyomi: "ニク",
     kunyomi: "",
     meaning: "Thịt",
@@ -5906,6 +5912,7 @@ export const kanjiData: KanjiCard[] = [
     id: 157,
     kanji: "飯",
     lesson: 9,
+    imageUrl: "/images/kanji/157_meal_3d.png",
     onyomi: "ハン",
     kunyomi: "めし",
     meaning: "Cơm, Bữa ăn",
@@ -5942,6 +5949,7 @@ export const kanjiData: KanjiCard[] = [
     id: 158,
     kanji: "茶",
     lesson: 4,
+    imageUrl: "/images/kanji/158_tea_3d.png",
     onyomi: "チャ、サ",
     kunyomi: "",
     meaning: "Trà",
@@ -5978,6 +5986,7 @@ export const kanjiData: KanjiCard[] = [
     id: 159,
     kanji: "酒",
     lesson: 16,
+    imageUrl: "/images/kanji/159_alcohol_3d.png",
     onyomi: "シュ",
     kunyomi: "さけ、さか",
     meaning: "Rượu",
@@ -6014,6 +6023,7 @@ export const kanjiData: KanjiCard[] = [
     id: 160,
     kanji: "料",
     lesson: 16,
+    imageUrl: "/images/kanji/160_ingredients_3d.png",
     onyomi: "リョウ",
     kunyomi: "",
     meaning: "Nguyên liệu, Phí",
@@ -15453,5 +15463,268 @@ export const kanjiData: KanjiCard[] = [
       }
     ]
   },
-
+  {
+    id: 513,
+    kanji: "逃",
+    lesson: 33,
+    imageUrl: "/images/kanji/513_escape_3d.png",
+    onyomi: "トウ",
+    kunyomi: "に・げる",
+    meaning: "Đào/Chạy trốn",
+    sinoVietnamese: "Đào",
+    examples: [
+      {
+        japanese: "逃げます",
+        romaji: "Nigemasu",
+        vietnamese: "Chạy trốn"
+      },
+      {
+        japanese: "逃走",
+        romaji: "Tousou",
+        vietnamese: "Đào tẩu"
+      }
+    ]
+  },
+  {
+    id: 514,
+    kanji: "騒",
+    lesson: 33,
+    imageUrl: "/images/kanji/514_noise_3d.png",
+    onyomi: "ソウ",
+    kunyomi: "さわ・ぐ",
+    meaning: "Tao/Ồn ào",
+    sinoVietnamese: "Tao",
+    examples: [
+      {
+        japanese: "騒ぎます",
+        romaji: "Sawagimasu",
+        vietnamese: "Làm ồn"
+      },
+      {
+        japanese: "騒音",
+        romaji: "Souon",
+        vietnamese: "Tiếng ồn"
+      }
+    ]
+  },
+  {
+    id: 515,
+    kanji: "諦",
+    lesson: 33,
+    imageUrl: "/images/kanji/515_give_up_3d.png",
+    onyomi: "テイ",
+    kunyomi: "あきら・める",
+    meaning: "Đế/Từ bỏ",
+    sinoVietnamese: "Đế",
+    examples: [
+      {
+        japanese: "諦めます",
+        romaji: "Akiramemasu",
+        vietnamese: "Từ bỏ/Đầu hàng"
+      }
+    ]
+  },
+  {
+    id: 516,
+    kanji: "濯",
+    lesson: 33,
+    imageUrl: "/images/kanji/516_laundry_3d.png",
+    onyomi: "タク",
+    kunyomi: "すす・ぐ",
+    meaning: "Trạc/Rửa, giặt",
+    sinoVietnamese: "Trạc",
+    examples: [
+      {
+        japanese: "洗濯",
+        romaji: "Sentaku",
+        vietnamese: "Giặt giũ"
+      },
+      {
+        japanese: "洗濯機",
+        romaji: "Sentakuki",
+        vietnamese: "Máy giặt"
+      }
+    ]
+  },
+  {
+    id: 517,
+    kanji: "規",
+    lesson: 33,
+    imageUrl: "/images/kanji/517_standard_3d.png",
+    onyomi: "キ",
+    kunyomi: "",
+    meaning: "Quy/Quy tắc",
+    sinoVietnamese: "Quy",
+    examples: [
+      {
+        japanese: "規則",
+        romaji: "Kisoku",
+        vietnamese: "Quy tắc/Kỷ luật"
+      },
+      {
+        japanese: "定規",
+        romaji: "Jougi",
+        vietnamese: "Thước kẻ"
+      }
+    ]
+  },
+  {
+    id: 518,
+    kanji: "則",
+    lesson: 33,
+    imageUrl: "/images/kanji/518_rule_3d.png",
+    onyomi: "ソク",
+    kunyomi: "",
+    meaning: "Tắc/Quy tắc",
+    sinoVietnamese: "Tắc",
+    examples: [
+      {
+        japanese: "規則",
+        romaji: "Kisoku",
+        vietnamese: "Quy tắc"
+      },
+      {
+        japanese: "法則",
+        romaji: "Housoku",
+        vietnamese: "Định luật"
+      }
+    ]
+  },
+  {
+    id: 519,
+    kanji: "警",
+    lesson: 33,
+    imageUrl: "/images/kanji/519_police_3d.png",
+    onyomi: "ケイ",
+    kunyomi: "",
+    meaning: "Cảnh/Cảnh sát",
+    sinoVietnamese: "Cảnh",
+    examples: [
+      {
+        japanese: "警察",
+        romaji: "Keisatsu",
+        vietnamese: "Cảnh sát"
+      },
+      {
+        japanese: "警告",
+        romaji: "Keikoku",
+        vietnamese: "Cảnh cáo"
+      }
+    ]
+  },
+  {
+    id: 520,
+    kanji: "察",
+    lesson: 33,
+    imageUrl: "/images/kanji/520_inspect_3d.png",
+    onyomi: "サツ",
+    kunyomi: "",
+    meaning: "Sát/Quan sát",
+    sinoVietnamese: "Sát",
+    examples: [
+      {
+        japanese: "警察",
+        romaji: "Keisatsu",
+        vietnamese: "Cảnh sát"
+      },
+      {
+        japanese: "観察",
+        romaji: "Kansatsu",
+        vietnamese: "Quan sát"
+      }
+    ]
+  },
+  {
+    id: 521,
+    kanji: "罰",
+    lesson: 33,
+    imageUrl: "/images/kanji/521_punishment_3d.png",
+    onyomi: "バツ",
+    kunyomi: "",
+    meaning: "Phạt/Hình phạt",
+    sinoVietnamese: "Phạt",
+    examples: [
+      {
+        japanese: "罰金",
+        romaji: "Bakkin",
+        vietnamese: "Tiền phạt"
+      },
+      {
+        japanese: "処罰",
+        romaji: "Shobatsu",
+        vietnamese: "Xử phạt"
+      }
+    ]
+  },
+  {
+    id: 522,
+    kanji: "標",
+    lesson: 33,
+    imageUrl: "/images/kanji/522_signpost_3d.png",
+    onyomi: "ヒョウ",
+    kunyomi: "しるべ",
+    meaning: "Tiêu/Mục tiêu, Dấu hiệu",
+    sinoVietnamese: "Tiêu",
+    examples: [
+      {
+        japanese: "標識",
+        romaji: "Hyoushiki",
+        vietnamese: "Biển báo"
+      },
+      {
+        japanese: "目標",
+        romaji: "Mokuhyou",
+        vietnamese: "Mục tiêu"
+      }
+    ]
+  },
+  {
+    id: 523,
+    kanji: "磨",
+    lesson: 34,
+    imageUrl: "/images/kanji/523_polish_3d.png",
+    onyomi: "マ",
+    kunyomi: "みが・く",
+    meaning: "Ma/Mài, đánh",
+    sinoVietnamese: "Ma",
+    examples: [
+      {
+        japanese: "磨きます",
+        romaji: "Migakimasu",
+        vietnamese: "Mài, đánh (răng)"
+      },
+      {
+        japanese: "歯磨き",
+        romaji: "Hamigaki",
+        vietnamese: "Việc đánh răng"
+      }
+    ]
+  },
+  {
+    id: 524,
+    kanji: "組",
+    lesson: 34,
+    imageUrl: "/images/kanji/524_assemble_3d.png",
+    onyomi: "ソ",
+    kunyomi: "く・む, くみ",
+    meaning: "Tổ/Tổ chức, lắp ghép",
+    sinoVietnamese: "Tổ",
+    examples: [
+      {
+        japanese: "組み立てます",
+        romaji: "Kumitatemasu",
+        vietnamese: "Lắp ráp"
+      },
+      {
+        japanese: "番組",
+        romaji: "Bangumi",
+        vietnamese: "Chương trình (TV)"
+      },
+      {
+        japanese: "組織",
+        romaji: "Soshiki",
+        vietnamese: "Tổ chức"
+      }
+    ]
+  }
 ];

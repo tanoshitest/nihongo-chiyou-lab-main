@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import { BookOpen, GraduationCap, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
+
 import { lessonsNhapMon, lessonsSoCap1, lessonsSoCap2, LessonSummary } from "@/data/irodoriData";
 
 interface LessonCardProps {
@@ -25,17 +25,11 @@ const LessonCard = ({ lesson, levelPath }: LessonCardProps) => {
       </CardHeader>
       <CardContent className="pb-3">
         <p className="text-sm text-muted-foreground">{lesson.description}</p>
-        <div className="mt-3 space-y-1">
-          <div className="flex justify-between text-xs text-muted-foreground">
-            <span>Tiến độ</span>
-            <span>0%</span>
-          </div>
-          <Progress value={0} className="h-1.5" />
-        </div>
+
       </CardContent>
       <CardFooter>
         <Link to={`/irodori/${levelPath}/${lesson.id}`} className="w-full">
-          <Button 
+          <Button
             className="w-full bg-[#008001] hover:bg-[#006801] text-white"
           >
             Vào học
@@ -46,15 +40,15 @@ const LessonCard = ({ lesson, levelPath }: LessonCardProps) => {
   );
 };
 
-const LessonSection = ({ 
-  title, 
-  subtitle, 
+const LessonSection = ({
+  title,
+  subtitle,
   lessons,
   levelPath,
-  icon: Icon 
-}: { 
-  title: string; 
-  subtitle: string; 
+  icon: Icon
+}: {
+  title: string;
+  subtitle: string;
   lessons: LessonSummary[];
   levelPath: string;
   icon: React.ElementType;

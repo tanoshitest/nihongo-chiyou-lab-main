@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import { BookOpen, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
+
 import { lessonsN5, lessonsN4, LessonSummary } from "@/data/minnaData";
 
 const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
@@ -20,17 +20,11 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
       </CardHeader>
       <CardContent className="pb-3">
         <p className="text-sm text-muted-foreground">{lesson.description}</p>
-        <div className="mt-3 space-y-1">
-          <div className="flex justify-between text-xs text-muted-foreground">
-            <span>Tiến độ</span>
-            <span>0%</span>
-          </div>
-          <Progress value={0} className="h-1.5" />
-        </div>
+
       </CardContent>
       <CardFooter>
         <Link to={`/minna/${lesson.id}`} className="w-full">
-          <Button 
+          <Button
             className="w-full bg-[#008001] hover:bg-[#006801] text-white"
           >
             Vào học
@@ -41,14 +35,14 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
   );
 };
 
-const LessonSection = ({ 
-  title, 
-  subtitle, 
-  lessons, 
-  icon: Icon 
-}: { 
-  title: string; 
-  subtitle: string; 
+const LessonSection = ({
+  title,
+  subtitle,
+  lessons,
+  icon: Icon
+}: {
+  title: string;
+  subtitle: string;
   lessons: LessonSummary[];
   icon: React.ElementType;
 }) => {
