@@ -30,20 +30,27 @@ const ComponentHoverCard = ({ char, meaning, allKanjiDetails }: { char: string; 
         onyomi: masterDetail.onyomi,
         kunyomi: masterDetail.kunyomi,
         sinoVietnamese: masterDetail.sinoVietnamese,
-        imageUrl: masterDetail.imageUrl
+        imageUrl: masterDetail.imageUrl,
+        strokes: 0, // Default properties for master data
+        jlpt: "N/A"
       };
     }
   }
+
+  // Visual badge for the component
+  const componentBadge = (
+    <div className="flex items-center gap-1.5 px-2 py-1 bg-muted rounded-md text-sm border shadow-sm cursor-help hover:bg-muted/80 transition-colors group">
+      <span className="font-bold text-[#008001] bg-white px-1.5 rounded border border-[#008001]/10 group-hover:bg-[#008001] group-hover:text-white transition-colors">{char}</span>
+      <span className="text-xs">{meaning}</span>
+    </div>
+  );
 
   if (!detail) {
     // Basic tooltip if no details found
     return (
       <HoverCard openDelay={200} closeDelay={100}>
         <HoverCardTrigger asChild>
-          <div className="flex items-center gap-1.5 px-2 py-1 bg-muted rounded-md text-sm border shadow-sm cursor-help hover:bg-muted/80 transition-colors">
-            <span className="font-bold text-[#008001] bg-white px-1.5 rounded border border-[#008001]/10">{char}</span>
-            <span className="text-xs">{meaning}</span>
-          </div>
+          {componentBadge}
         </HoverCardTrigger>
         <HoverCardContent className="w-auto bg-background border shadow-lg z-50 p-3">
           <p className="font-bold text-[#008001] text-lg text-center">{char}</p>
@@ -53,65 +60,42 @@ const ComponentHoverCard = ({ char, meaning, allKanjiDetails }: { char: string; 
     );
   }
 
+  // Use KanjiHoverCard for rich details
   return (
-    <HoverCard openDelay={200} closeDelay={100}>
-      <HoverCardTrigger asChild>
-        <div className="flex items-center gap-1.5 px-2 py-1 bg-muted rounded-md text-sm border shadow-sm cursor-help hover:bg-muted/80 transition-colors group">
-          <span className="font-bold text-[#008001] bg-white px-1.5 rounded border border-[#008001]/10 group-hover:bg-[#008001] group-hover:text-white transition-colors">{char}</span>
-          <span className="text-xs">{meaning}</span>
-        </div>
-      </HoverCardTrigger>
-      <HoverCardContent className="w-72 bg-background border shadow-lg z-50 p-4" side="top">
-        <div className="flex gap-4">
-          <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#008001]/10 border border-[#008001]/20 flex items-center justify-center overflow-hidden">
-            {detail.imageUrl ? (
-              <img src={detail.imageUrl} alt={detail.kanji} className="w-full h-full object-contain p-1" />
-            ) : (
-              <span className="text-2xl font-bold text-[#008001]">{detail.kanji}</span>
-            )}
-          </div>
-          <div className="flex-1 min-w-0">
-            <h4 className="font-bold text-lg text-[#008001] uppercase leading-none mb-1">{detail.sinoVietnamese || detail.meaning}</h4>
-            <p className="text-sm text-foreground font-medium">{detail.meaning}</p>
-          </div>
-        </div>
-
-        <div className="mt-3 grid grid-cols-2 gap-2 text-xs border-t pt-2">
-          <div>
-            <span className="text-muted-foreground font-semibold block uppercase text-[10px]">On:</span>
-            <span className="text-foreground">{detail.onyomi || '—'}</span>
-          </div>
-          <div>
-            <span className="text-muted-foreground font-semibold block uppercase text-[10px]">Kun:</span>
-            <span className="text-foreground">{detail.kunyomi || '—'}</span>
-          </div>
-        </div>
-      </HoverCardContent>
-    </HoverCard>
+    <KanjiHoverCard kanjiChar={char} detail={detail}>
+      {componentBadge}
+    </KanjiHoverCard>
   );
 };
 
 // Kanji Hover Component - hiển thị chi tiết từng kanji khi rê chuột
-const KanjiHoverCard = ({ kanjiChar, detail }: { kanjiChar: string; detail: KanjiDetail }) => {
+const KanjiHoverCard = ({ kanjiChar, detail, children }: { kanjiChar: string; detail: KanjiDetail; children?: React.ReactNode }) => {
   return (
     <HoverCard openDelay={200} closeDelay={100}>
       <HoverCardTrigger asChild>
-        <span className="cursor-help hover:text-[#008001] hover:underline decoration-dotted transition-colors">
-          {kanjiChar}
-        </span>
+        {children || (
+          <span className="cursor-help hover:text-[#008001] hover:underline decoration-dotted transition-colors">
+            {kanjiChar}
+          </span>
+        )}
       </HoverCardTrigger>
       <HoverCardContent className="w-80 bg-background border shadow-lg z-50" side="top">
         <div className="space-y-3">
           {/* Header với Kanji lớn */}
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#008001]/10 border-2 border-[#008001] flex items-center justify-center">
-              <span className="text-4xl font-bold text-[#008001]">{detail.kanji}</span>
+            <div className="flex-shrink-0 w-16 h-16 rounded-lg bg-[#008001]/10 border-2 border-[#008001] flex items-center justify-center overflow-hidden">
+              {detail.imageUrl ? (
+                <img src={detail.imageUrl} alt={detail.kanji} className="w-full h-full object-contain p-1" />
+              ) : (
+                <span className="text-4xl font-bold text-[#008001]">{detail.kanji}</span>
+              )}
             </div>
             <div className="flex-1 min-w-0">
               <p className="font-bold text-foreground text-lg">{detail.meaning}</p>
               <div className="flex flex-wrap gap-1 mt-1">
-                <Badge variant="secondary" className="text-xs">JLPT {detail.jlpt}</Badge>
-                <Badge variant="outline" className="text-xs">{detail.strokes} nét</Badge>
+                <Badge variant="secondary" className="text-xs">JLPT {detail.jlpt || 'N/A'}</Badge>
+                {detail.strokes > 0 && <Badge variant="outline" className="text-xs">{detail.strokes} nét</Badge>}
+                {detail.sinoVietnamese && <Badge variant="outline" className="text-xs text-[#008001] border-[#008001]/30">{detail.sinoVietnamese}</Badge>}
               </div>
             </div>
           </div>
@@ -120,11 +104,11 @@ const KanjiHoverCard = ({ kanjiChar, detail }: { kanjiChar: string; detail: Kanj
           <div className="space-y-1.5 text-sm">
             <div className="flex gap-2">
               <span className="font-medium text-[#008001] w-16">Âm On:</span>
-              <span className="text-foreground">{detail.onyomi}</span>
+              <span className="text-foreground">{detail.onyomi || '—'}</span>
             </div>
             <div className="flex gap-2">
               <span className="font-medium text-[#008001] w-16">Âm Kun:</span>
-              <span className="text-foreground">{detail.kunyomi}</span>
+              <span className="text-foreground">{detail.kunyomi || '—'}</span>
             </div>
             {detail.radicals && (
               <div className="flex gap-2">
