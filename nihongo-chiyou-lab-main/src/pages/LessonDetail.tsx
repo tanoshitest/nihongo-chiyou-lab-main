@@ -10,9 +10,86 @@ import { Label } from "@/components/ui/label";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
 import { getLessonData, LessonDetail as LessonDetailType, KanjiDetail, VocabExampleFurigana, VocabularyExample, FuriganaWord, KaiwaFurigana, QuizQuestion, VocabularyItem, GrammarPoint } from "@/data/minnaData";
+import { kanjiData as masterKanjiData } from "@/data/kanjiData";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Badge } from "@/components/ui/badge";
+
+// Component Hover Card - hiển thị chi tiết bộ thủ/thành phần
+const ComponentHoverCard = ({ char, meaning, allKanjiDetails }: { char: string; meaning: string; allKanjiDetails: KanjiDetail[] }) => {
+  // Try to find details in current lesson first
+  let detail: any = allKanjiDetails.find(d => d.kanji === char);
+
+  // If not found, look in master dictionary
+  if (!detail) {
+    const masterDetail = masterKanjiData.find(k => k.kanji === char);
+    if (masterDetail) {
+      detail = {
+        kanji: masterDetail.kanji,
+        meaning: masterDetail.meaning,
+        onyomi: masterDetail.onyomi,
+        kunyomi: masterDetail.kunyomi,
+        sinoVietnamese: masterDetail.sinoVietnamese,
+        imageUrl: masterDetail.imageUrl
+      };
+    }
+  }
+
+  if (!detail) {
+    // Basic tooltip if no details found
+    return (
+      <HoverCard openDelay={200} closeDelay={100}>
+        <HoverCardTrigger asChild>
+          <div className="flex items-center gap-1.5 px-2 py-1 bg-muted rounded-md text-sm border shadow-sm cursor-help hover:bg-muted/80 transition-colors">
+            <span className="font-bold text-[#008001] bg-white px-1.5 rounded border border-[#008001]/10">{char}</span>
+            <span className="text-xs">{meaning}</span>
+          </div>
+        </HoverCardTrigger>
+        <HoverCardContent className="w-auto bg-background border shadow-lg z-50 p-3">
+          <p className="font-bold text-[#008001] text-lg text-center">{char}</p>
+          <p className="text-sm text-foreground text-center">{meaning}</p>
+        </HoverCardContent>
+      </HoverCard>
+    );
+  }
+
+  return (
+    <HoverCard openDelay={200} closeDelay={100}>
+      <HoverCardTrigger asChild>
+        <div className="flex items-center gap-1.5 px-2 py-1 bg-muted rounded-md text-sm border shadow-sm cursor-help hover:bg-muted/80 transition-colors group">
+          <span className="font-bold text-[#008001] bg-white px-1.5 rounded border border-[#008001]/10 group-hover:bg-[#008001] group-hover:text-white transition-colors">{char}</span>
+          <span className="text-xs">{meaning}</span>
+        </div>
+      </HoverCardTrigger>
+      <HoverCardContent className="w-72 bg-background border shadow-lg z-50 p-4" side="top">
+        <div className="flex gap-4">
+          <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#008001]/10 border border-[#008001]/20 flex items-center justify-center overflow-hidden">
+            {detail.imageUrl ? (
+              <img src={detail.imageUrl} alt={detail.kanji} className="w-full h-full object-contain p-1" />
+            ) : (
+              <span className="text-2xl font-bold text-[#008001]">{detail.kanji}</span>
+            )}
+          </div>
+          <div className="flex-1 min-w-0">
+            <h4 className="font-bold text-lg text-[#008001] uppercase leading-none mb-1">{detail.sinoVietnamese || detail.meaning}</h4>
+            <p className="text-sm text-foreground font-medium">{detail.meaning}</p>
+          </div>
+        </div>
+
+        <div className="mt-3 grid grid-cols-2 gap-2 text-xs border-t pt-2">
+          <div>
+            <span className="text-muted-foreground font-semibold block uppercase text-[10px]">On:</span>
+            <span className="text-foreground">{detail.onyomi || '—'}</span>
+          </div>
+          <div>
+            <span className="text-muted-foreground font-semibold block uppercase text-[10px]">Kun:</span>
+            <span className="text-foreground">{detail.kunyomi || '—'}</span>
+          </div>
+        </div>
+      </HoverCardContent>
+    </HoverCard>
+  );
+};
 
 // Kanji Hover Component - hiển thị chi tiết từng kanji khi rê chuột
 const KanjiHoverCard = ({ kanjiChar, detail }: { kanjiChar: string; detail: KanjiDetail }) => {
@@ -929,10 +1006,12 @@ const KanjiTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabulary'] }
                 <p className="text-xs text-muted-foreground uppercase font-semibold">Cấu tạo (Bộ thủ)</p>
                 <div className="flex flex-wrap gap-2">
                   {kanji.components.map((comp, i) => (
-                    <div key={i} className="flex items-center gap-1.5 px-2 py-1 bg-muted rounded-md text-sm border shadow-sm">
-                      <span className="font-bold text-[#008001] bg-white px-1.5 rounded border border-[#008001]/10">{comp.char}</span>
-                      <span className="text-xs">{comp.meaning}</span>
-                    </div>
+                    <ComponentHoverCard
+                      key={i}
+                      char={comp.char}
+                      meaning={comp.meaning}
+                      allKanjiDetails={allKanjiDetails}
+                    />
                   ))}
                 </div>
               </div>
