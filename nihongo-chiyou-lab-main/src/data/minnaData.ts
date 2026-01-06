@@ -7734,7 +7734,140 @@ export const lesson2Data: LessonDetail = {
       ]
     }
   ],
-  grammar: [],
+  grammar: [
+    {
+      pattern: 'これ／それ／あれ',
+      explanation: '「これ」「それ」và「あれ」là những đại từ chỉ thị. Về mặt ngữ pháp chúng được dùng như những danh từ.\n\n- 「これ」: dùng để chỉ một vật ở gần người nói.\n- 「それ」: dùng để chỉ một vật ở gần người nghe.\n- 「あれ」: dùng để chỉ một vật ở xa cả người nói và người nghe.',
+      example: 'それは辞書ですか。',
+      examples: [
+        {
+          jp: 'それは辞書（じしょ）ですか。',
+          vn: 'Đó có phải là quyển từ điển không?',
+          furigana: [
+            { kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }
+          ]
+        },
+        {
+          jp: 'これをください。',
+          vn: 'Cho tôi cái này (lấy cái này).',
+          furigana: []
+        }
+      ]
+    },
+    {
+      pattern: 'この N／その N／あの N',
+      explanation: '「この」「その」và「あの」bổ nghĩa cho danh từ.\n\n- 「この N」: nói tới một vật/người ở gần người nói.\n- 「その N」: nói tới một vật/người ở gần người nghe.\n- 「あの N」: nói tới một vật/người ở xa cả hai.',
+      example: 'この本はわたしのです。',
+      examples: [
+        {
+          jp: 'この本（ほん）はわたしのです。',
+          vn: 'Quyển sách này là của tôi.',
+          furigana: [
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' }
+          ]
+        },
+        {
+          jp: 'あの方（かた）はどなたですか。',
+          vn: 'Vị kia là ai?',
+          furigana: [
+            { kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }
+          ]
+        }
+      ]
+    },
+    {
+      pattern: 'そうです／そうじゃありません',
+      explanation: 'Được dùng trong câu nghi vấn danh từ để xác nhận xem nội dung nào đó là đúng hay sai.\n\n- Đúng: 「はい、そうです。」\n- Sai: 「いいえ、そうじゃありません。」 hoặc 「いいえ、ちがいます。」',
+      example: 'それはテレホンカードですか。',
+      examples: [
+        {
+          jp: 'それはテレホンカードですか。\n……はい、そうです。',
+          vn: 'Đó có phải là thẻ điện thoại không?\n……Vâng, phải.',
+          furigana: []
+        },
+        {
+          jp: 'それはテレホンカードですか。\n……いいえ、そうじゃありません。',
+          vn: 'Đó có phải là thẻ điện thoại không?\n……Không, không phải.',
+          furigana: []
+        },
+        {
+          jp: 'それはテレホンカードですか。\n……いいえ、違（ちが）います。',
+          vn: 'Đó có phải là thẻ điện thoại không?\n……Không, nhầm rồi.',
+          furigana: [
+            { kanji: '違', reading: 'ちが', meaning: 'VI' }
+          ]
+        }
+      ]
+    },
+    {
+      pattern: 'Câu 1 か、Câu 2 か',
+      explanation: 'Mẫu câu nghi vấn này dùng để hỏi về sự lựa chọn của người nghe. Người nghe sẽ lựa chọn Câu 1 hoặc Câu 2 để trả lời (không dùng 「はい」 hay 「いいえ」).',
+      example: 'これは「９」ですか、「７」ですか。',
+      examples: [
+        {
+          jp: 'これは「９」ですか、「７」ですか。\n……「９」です。',
+          vn: 'Đây là số "9" hay số "7"?\n……Đó là số "9".',
+          furigana: []
+        }
+      ]
+    },
+    {
+      pattern: 'N1 の N2',
+      explanation: 'Ở bài 1, chúng ta đã học từ 「の」 dùng để nối hai danh từ. Ở bài này chúng ta sẽ học thêm hai cách dùng khác:\n\n1. N1 giải thích N2 nói về cái gì.\n2. N1 giải thích N2 thuộc sở hữu của ai.\n\n*Lưu ý:* Danh từ thường được giản lược trong trường hợp đã rõ nghĩa (N2 bị lược bỏ). Tuy nhiên, nếu N2 là danh từ chỉ người thì không giản lược được.',
+      example: 'これはコンピューターの本です。',
+      examples: [
+        {
+          jp: 'これはコンピューターの本（ほん）です。',
+          vn: 'Đây là quyển sách về máy vi tính.',
+          furigana: [
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' }
+          ]
+        },
+        {
+          jp: 'これは私（わたし）の本（ほん）です。',
+          vn: 'Đây là quyển sách của tôi.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' }
+          ]
+        },
+        {
+          jp: 'あれはだれのかばんですか。\n……佐藤（さとう）さんのです。',
+          vn: 'Kia là cái cặp sách của ai?\n……Đó là cái cặp sách của chị Sato.',
+          furigana: [
+            { kanji: '佐藤', reading: 'さとう', meaning: 'TÁ ĐẰNG' }
+          ]
+        },
+        {
+          jp: 'このかばんはあなたのですか。\n……いいえ、わたしのではありません。',
+          vn: 'Cái cặp sách này có phải là của chị không?\n……Không, không phải là của tôi.',
+          furigana: []
+        },
+        {
+          jp: 'ミラーさんは IMC の社員（しゃいん）ですか。\n……はい、IMC の社員（しゃいん）です。',
+          vn: 'Anh Miller có phải là nhân viên Công ty IMC không?\n……Vâng, anh ấy là nhân viên Công ty IMC.',
+          furigana: [
+            { kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }
+          ]
+        }
+      ]
+    },
+    {
+      pattern: 'そうですか',
+      explanation: 'Được dùng khi người nói tiếp nhận được thông tin mới nào đó và muốn bày tỏ thái độ tiếp nhận của mình đối với thông tin đó (Thế à / Vậy à).',
+      example: 'この傘はあなたのですか。',
+      examples: [
+        {
+          jp: 'この傘（かさ）はあなたのですか。\n……いいえ、違（ちが）います。シュミットさんのです。\nそうですか。',
+          vn: 'Cái ô này có phải là của anh không?\n……Không, không phải. Của anh Schmidt.\nThế à.',
+          furigana: [
+            { kanji: '傘', reading: 'かさ', meaning: 'TẢN' },
+            { kanji: '違', reading: 'ちが', meaning: 'VI' }
+          ]
+        }
+      ]
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
