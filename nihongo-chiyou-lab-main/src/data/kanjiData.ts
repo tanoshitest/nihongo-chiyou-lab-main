@@ -15463,4 +15463,24 @@ export const kanjiData: KanjiCard[] = [
       }
     ]
   },
+  {
+    id: 513,
+    kanji: "禾",
+    lesson: 0,
+    onyomi: "カ",
+    kunyomi: "いね",
+    meaning: "Lúa, Cây lúa",
+    sinoVietnamese: "HÒA",
+    examples: []
+  },
+  {
+    id: 514,
+    kanji: "ム",
+    lesson: 0,
+    onyomi: "シ",
+    kunyomi: "わたくし",
+    meaning: "Riêng tư, Cá nhân",
+    sinoVietnamese: "KHƯ/TƯ",
+    examples: []
+  }
 ];
