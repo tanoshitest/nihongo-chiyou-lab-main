@@ -248,6 +248,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '私たちは友達です。', romaji: 'Watashitachi wa tomodachi desu.', vn: 'Chúng tôi là bạn bè.',
           furigana: [{ kanji: '私たち', reading: 'わたしたち', meaning: 'TƯ' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }]
+        },
+        {
+          jp: '私たちは日本人じゃありません。', romaji: 'Watashitachi wa Nihonjin ja arimasen.', vn: 'Chúng tôi không phải là người Nhật.',
+          furigana: [{ kanji: '私たち', reading: 'わたしたち', meaning: 'TƯ' }, { kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }]
         }
       ]
     },
@@ -256,7 +260,7 @@ export const lesson1Data: LessonDetail = {
       examples: [
         {
           jp: 'あなたは先生ですか。', romaji: 'Anata wa sensei desu ka.', vn: 'Bạn có phải là giáo viên không?',
-          furigana: [{ kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }]
+          furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
         },
         {
           jp: 'あなたは何歳ですか。', romaji: 'Anata wa nansai desu ka.', vn: 'Bạn bao nhiêu tuổi?',
@@ -273,6 +277,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: 'あなたはどこから来ましたか。', romaji: 'Anata wa doko kara kimashita ka.', vn: 'Bạn đến từ đâu?',
           furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'あなたは学生じゃありませんか。', romaji: 'Anata wa gakusei ja arimasen ka.', vn: 'Bạn không phải là học sinh à?',
+          furigana: [{ kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }]
         }
       ]
     },
@@ -330,11 +338,15 @@ export const lesson1Data: LessonDetail = {
         },
         {
           jp: 'あの人はアメリカ人です。', romaji: 'Ano hito wa Amerikajin desu.', vn: 'Người đó là người Mỹ.',
-          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+          furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
         },
         {
           jp: 'あの人は私の先生です。', romaji: 'Ano hito wa watashi no sensei desu.', vn: 'Người kia là thầy của tôi.',
           furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
+        },
+        {
+          jp: 'あの人は学生じゃありません。', romaji: 'Ano hito wa gakusei ja arimasen.', vn: 'Người đó không phải là học sinh.',
+          furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }]
         }
       ]
     },
@@ -384,7 +396,7 @@ export const lesson1Data: LessonDetail = {
         },
         {
           jp: 'あの方はどなたですか。', romaji: 'Ano kata wa donata desu ka.', vn: 'Vị kia là ai ạ?',
-          furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }]
+          furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: 'どなた', reading: 'どなた', meaning: 'THÙY' }]
         },
         {
           jp: 'あの方は社長です。', romaji: 'Ano kata wa shachou desu.', vn: 'Vị đó là giám đốc.',
@@ -392,11 +404,15 @@ export const lesson1Data: LessonDetail = {
         },
         {
           jp: 'あの方は韓国の方です。', romaji: 'Ano kata wa Kankoku no kata desu.', vn: 'Vị đó là người Hàn Quốc.',
-          furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '韓国', reading: 'かんこく', meaning: 'HÀN QUỐC' }]
+          furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '韓国', reading: 'かんこく', meaning: 'HÀN QUỐC' }, { kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }]
         },
         {
           jp: 'あの方はIMCの社員です。', romaji: 'Ano kata wa IMC no shain desu.', vn: 'Vị đó là nhân viên công ty IMC.',
           furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }]
+        },
+        {
+          jp: 'あの方は銀行員じゃありません。', romaji: 'Ano kata wa ginkouin ja arimasen.', vn: 'Vị đó không phải là nhân viên ngân hàng.',
+          furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '銀行員', reading: 'ぎんこういん', meaning: 'NGÂN HÀNH VIÊN' }]
         }
       ]
     },
@@ -459,6 +475,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '皆さん、どうぞよろしく。', romaji: 'Minasan, douzo yoroshiku.', vn: 'Mong các bạn giúp đỡ.',
           furigana: [{ kanji: '皆さん', reading: 'みなさん', meaning: 'GIAI' }]
+        },
+        {
+          jp: '皆さんは日本人じゃありません。', romaji: 'Minasan wa Nihonjin ja arimasen.', vn: 'Các bạn không phải là người Nhật.',
+          furigana: [{ kanji: '皆さん', reading: 'みなさん', meaning: 'GIAI' }, { kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }]
         }
       ]
     },
@@ -486,6 +506,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: 'キムさんは韓国人です。', romaji: 'Kimu-san wa Kankokujin desu.', vn: 'Chị Kim là người Hàn Quốc.',
           furigana: [{ kanji: '韓国人', reading: 'かんこくじん', meaning: 'HÀN QUỐC NHÂN' }]
+        },
+        {
+          jp: 'ワンさんは中国人です。', romaji: 'Wan-san wa Chuugokujin desu.', vn: 'Anh Wang là người Trung Quốc.',
+          furigana: [{ kanji: '中国人', reading: 'ちゅうごくじん', meaning: 'TRUNG QUỐC NHÂN' }]
         }
       ]
     },
@@ -511,6 +535,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: 'あいちゃんは3歳です。', romaji: 'Ai-chan wa san sai desu.', vn: 'Bé Ai 3 tuổi.',
           furigana: [{ kanji: '歳', reading: 'さい', meaning: 'TUẾ' }]
+        },
+        {
+          jp: 'りなちゃんはどこですか。', romaji: 'Rina-chan wa doko desu ka.', vn: 'Bé Rina ở đâu vậy?',
+          furigana: []
         }
       ]
     },
@@ -573,6 +601,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: 'りょうくんは8歳です。', romaji: 'Ryou-kun wa hachi sai desu.', vn: 'Cậu Ryou 8 tuổi.',
           furigana: [{ kanji: '歳', reading: 'さい', meaning: 'TUẾ' }]
+        },
+        {
+          jp: 'たろうくんはどこですか。', romaji: 'Tarou-kun wa doko desu ka.', vn: 'Cậu Taro ở đâu vậy?',
+          furigana: []
         }
       ]
     },
@@ -598,6 +630,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '田中さんは中国人じゃありません。', romaji: 'Tanaka-san wa Chuugokujin ja arimasen.', vn: 'Anh Tanaka không phải là người Trung Quốc.',
           furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '中国人', reading: 'ちゅうごくじん', meaning: 'TRUNG QUỐC NHÂN' }]
+        },
+        {
+          jp: 'サントスさんはブラジル人です。', romaji: 'Santosu-san wa Burajirujin desu.', vn: 'Anh Santos là người Brazil.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
         }
       ]
     },
@@ -619,12 +655,16 @@ export const lesson1Data: LessonDetail = {
           furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
         },
         {
-          jp: '先生、おはようございます。', romaji: 'Sensei, ohayou gozaimasu.', vn: 'Chào thầy/cô ạ.',
+          jp: '先生, おはようございます。', romaji: 'Sensei, ohayou gozaimasu.', vn: 'Chào thầy/cô ạ.',
           furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
         },
         {
           jp: 'あの人は私の先生です。', romaji: 'Ano hito wa watashi no sensei desu.', vn: 'Người kia là thầy của tôi.',
           furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
+        },
+        {
+          jp: '将来, 日本語の先生になりたいです。', romaji: 'Shourai, nihongo no sensei ni naritai desu.', vn: 'Trong tương lai, tôi muốn trở thành giáo viên tiếng Nhật.',
+          furigana: [{ kanji: '将来', reading: 'しょうらい', meaning: 'TƯƠNG LAI' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
         }
       ],
       kanjiDetails: [
@@ -775,11 +815,30 @@ export const lesson1Data: LessonDetail = {
         }
       ],
       examples: [
-        { jp: '私は教師です。', romaji: 'Watashi wa kyoushi desu.', vn: 'Tôi là giáo viên.' },
-        { jp: '彼は高校の教師です。', romaji: 'Kare wa koukou no kyoushi desu.', vn: 'Anh ấy là giáo viên trung học.' },
-        { jp: '山田さんは英語の教師です。', romaji: 'Yamada-san wa eigo no kyoushi desu.', vn: 'Anh Yamada là giáo viên tiếng Anh.' },
-        { jp: '私は日本語教師です。', romaji: 'Watashi wa nihongo kyoushi desu.', vn: 'Tôi là giáo viên tiếng Nhật.' },
-        { jp: '田中さんは大学の教師です。', romaji: 'Tanaka-san wa daigaku no kyoushi desu.', vn: 'Anh Tanaka là giảng viên đại học.' }
+        {
+          jp: '私は教師です。', romaji: 'Watashi wa kyoushi desu.', vn: 'Tôi là giáo viên.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '教師', reading: 'きょうし', meaning: 'GIÁO SƯ' }]
+        },
+        {
+          jp: '彼は高校の教師です。', romaji: 'Kare wa koukou no kyoushi desu.', vn: 'Anh ấy là giáo viên trung học.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '高校', reading: 'こうこう', meaning: 'CAO HIỆU' }, { kanji: '教師', reading: 'きょうし', meaning: 'GIÁO SƯ' }]
+        },
+        {
+          jp: '山田さんは英語の教師です。', romaji: 'Yamada-san wa eigo no kyoushi desu.', vn: 'Anh Yamada là giáo viên tiếng Anh.',
+          furigana: [{ kanji: '山田', reading: 'やまだ', meaning: 'SƠN ĐIỀN' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '教師', reading: 'きょうし', meaning: 'GIÁO SƯ' }]
+        },
+        {
+          jp: '私は日本語教師です。', romaji: 'Watashi wa nihongo kyoushi desu.', vn: 'Tôi là giáo viên tiếng Nhật.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '教師', reading: 'きょうし', meaning: 'GIÁO SƯ' }]
+        },
+        {
+          jp: '田中さんは大学の教師です。', romaji: 'Tanaka-san wa daigaku no kyoushi desu.', vn: 'Anh Tanaka là giảng viên đại học.',
+          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '教師', reading: 'きょうし', meaning: 'GIÁO SƯ' }]
+        },
+        {
+          jp: '母は小学校の教師です。', romaji: 'Haha wa shougakkou no kyoushi desu.', vn: 'Mẹ tôi là giáo viên tiểu học.',
+          furigana: [{ kanji: '母', reading: 'はは', meaning: 'MẪU' }, { kanji: '小学校', reading: 'しょうがっこう', meaning: 'TIỂU HỌC HIỆU' }, { kanji: '教師', reading: 'きょうし', meaning: 'GIÁO SƯ' }]
+        }
       ]
     },
     {
@@ -791,7 +850,7 @@ export const lesson1Data: LessonDetail = {
         },
         {
           jp: '田中さんは富士大学の学生です。', romaji: 'Tanaka-san wa Fuji daigaku no gakusei desu.', vn: 'Anh Tanaka là sinh viên đại học Fuji.',
-          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '富士', reading: 'ふじ', meaning: 'PHÚ SĨ' }, { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }]
+          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }]
         },
         {
           jp: '弟は高校生です。', romaji: 'Otouto wa koukousei desu.', vn: 'Em trai tôi là học sinh cấp 3.',
@@ -804,6 +863,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '留学生がたくさんいます。', romaji: 'Ryuugakusei ga takusan imasu.', vn: 'Có rất nhiều du học sinh.',
           furigana: [{ kanji: '留学生', reading: 'りゅうがくせい', meaning: 'LƯU HỌC SINH' }]
+        },
+        {
+          jp: '学生は毎日勉強します。', romaji: 'Gakusei wa mainichi benkyou shimasu.', vn: 'Học sinh học bài mỗi ngày.',
+          furigana: [{ kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }, { kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
         }
       ]
     },
@@ -936,17 +999,40 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '将来は会社員になりたいです。', romaji: 'Shourai wa kaishain ni naritai desu.', vn: 'Tương lai tôi muốn trở thành nhân viên công ty.',
           furigana: [{ kanji: '将来', reading: 'しょうらい', meaning: 'TƯƠNG LAI' }, { kanji: '会社員', reading: 'かいしゃいん', meaning: 'HỘI XÃ VIÊN' }]
+        },
+        {
+          jp: 'あの人はどこかの会社員ですか。', romaji: 'Ano hito wa dokoka no kaishain desu ka.', vn: 'Người kia có phải là nhân viên công ty nào đó không?',
+          furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '会社員', reading: 'かいしゃいん', meaning: 'HỘI XÃ VIÊN' }]
         }
       ]
     },
     {
       word: 'しゃいん', kanji: '社員', romaji: 'shain', mean: 'Nhân viên Công ty ~ (dùng kèm theo tên công ty; ví dụ: IMCのしゃいん)',
       examples: [
-        { jp: '私はIMCの社員です。', romaji: 'Watashi wa IMC no shain desu.', vn: 'Tôi là nhân viên công ty IMC.' },
-        { jp: '佐藤さんはパワー電気の社員です。', romaji: 'Satou-san wa Pawaa Denki no shain desu.', vn: 'Anh Satou là nhân viên công ty Power Điện khí.' },
-        { jp: 'ミラーさんもIMCの社員です。', romaji: 'Miraa-san mo IMC no shain desu.', vn: 'Anh Miller cũng là nhân viên công ty IMC.' },
-        { jp: 'あの方はトヨタの社員です。', romaji: 'Ano kata wa Toyota no shain desu.', vn: 'Vị đó là nhân viên công ty Toyota.' },
-        { jp: '田中さんはAKCの社員ですか。', romaji: 'Tanaka-san wa AKC no shain desu ka.', vn: 'Anh Tanaka có phải là nhân viên công ty AKC không?' }
+        {
+          jp: '私はIMCの社員です。', romaji: 'Watashi wa IMC no shain desu.', vn: 'Tôi là nhân viên công ty IMC.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }]
+        },
+        {
+          jp: '佐藤さんはパワー電気の社員です。', romaji: 'Satou-san wa Pawaa Denki no shain desu.', vn: 'Anh Satou là nhân viên công ty Power Điện khí.',
+          furigana: [{ kanji: '佐藤', reading: 'さとう', meaning: 'TÁ ĐẰNG' }, { kanji: 'パワー電気', reading: 'ぱわーでんき', meaning: 'ĐIỆN KHÍ' }, { kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }]
+        },
+        {
+          jp: 'ミラーさんもIMCの社員です。', romaji: 'Miraa-san mo IMC no shain desu.', vn: 'Anh Miller cũng là nhân viên công ty IMC.',
+          furigana: [{ kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }]
+        },
+        {
+          jp: 'あの方はトヨタの社員です。', romaji: 'Ano kata wa Toyota no shain desu.', vn: 'Vị đó là nhân viên công ty Toyota.',
+          furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }]
+        },
+        {
+          jp: '田中さんはAKCの社員ですか。', romaji: 'Tanaka-san wa AKC no shain desu ka.', vn: 'Anh Tanaka có phải là nhân viên công ty AKC không?',
+          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }]
+        },
+        {
+          jp: 'ソニーの社員に会いました。', romaji: 'Sonii no shain ni aimashita.', vn: 'Tôi đã gặp nhân viên công ty Sony.',
+          furigana: [{ kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }, { kanji: '会', reading: 'あ', meaning: 'HỘI' }]
+        }
       ]
     },
     {
@@ -1056,6 +1142,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '銀行員になりたいですか。', romaji: 'Ginkouin ni naritai desu ka.', vn: 'Bạn có muốn trở thành nhân viên ngân hàng không?',
           furigana: [{ kanji: '銀行員', reading: 'ぎんこういん', meaning: 'NGÂN HÀNH VIÊN' }]
+        },
+        {
+          jp: '銀行員は十時に休憩（きゅうけい）します。', romaji: 'Ginkouin wa juuji ni kyuukei shimasu.', vn: 'Nhân viên ngân hàng nghỉ trưa lúc 10 giờ (ví dụ).',
+          furigana: [{ kanji: '銀行員', reading: 'ぎんこういん', meaning: 'NGÂN HÀNH VIÊN' }, { kanji: '十時', reading: 'じゅうじ', meaning: 'THẬP THỜI' }]
         }
       ]
     },
@@ -1138,6 +1228,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '私の夢は医者になることです。', romaji: 'Watashi no yume wa isha ni naru koto desu.', vn: 'Ước mơ của tôi là trở thành bác sĩ.',
           furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '夢', reading: 'ゆめ', meaning: 'MỘNG' }, { kanji: '医者', reading: 'いしゃ', meaning: 'Y GIẢ' }]
+        },
+        {
+          jp: '医者に診てもらいましょう。', romaji: 'Isha ni mite moraimashou.', vn: 'Hãy cùng đi khám bác sĩ nào.',
+          furigana: [{ kanji: '医者', reading: 'いしゃ', meaning: 'Y GIẢ' }, { kanji: '診', reading: 'み', meaning: 'CHẨN' }]
         }
       ]
     },
@@ -1255,17 +1349,40 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '弟は物理の研究者になります。', romaji: 'Otouto wa butsuri no kenkyuusha ni narimasu.', vn: 'Em trai tôi sẽ thành nhà nghiên cứu vật lý.',
           furigana: [{ kanji: '弟', reading: 'おとうと', meaning: 'ĐỆ' }, { kanji: '物理', reading: 'ぶつり', meaning: 'VẬT LÝ' }, { kanji: '研究者', reading: 'けんきゅうしゃ', meaning: 'NGHIÊN CỨU GIẢ' }]
+        },
+        {
+          jp: 'あの方は有名な研究者です。', romaji: 'Ano kata wa yuumei na kenkyuusha desu.', vn: 'Vị đó là một nhà nghiên cứu nổi tiếng.',
+          furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }, { kanji: '研究者', reading: 'けんきゅうしゃ', meaning: 'NGHIÊN CỨU GIẢ' }]
         }
       ]
     },
     {
       word: 'エンジニア', kanji: '', romaji: 'enjinia', mean: 'Kỹ sư',
       examples: [
-        { jp: '私はエンジニアです。', romaji: 'Watashi wa enjinia desu.', vn: 'Tôi là kỹ sư.' },
-        { jp: 'ミラーさんはエンジニアです。', romaji: 'Miraa-san wa enjinia desu.', vn: 'Anh Miller là kỹ sư.' },
-        { jp: '田中さんはエンジニアですか。', romaji: 'Tanaka-san wa enjinia desu ka.', vn: 'Anh Tanaka có phải là kỹ sư không?' },
-        { jp: '私はエンジニアじゃありません。', romaji: 'Watashi wa enjinia ja arimasen.', vn: 'Tôi không phải là kỹ sư.' },
-        { jp: 'あの人もエンジニアです。', romaji: 'Ano hito mo enjinia desu.', vn: 'Người kia cũng là kỹ sư.' }
+        {
+          jp: '私はエンジニアです。', romaji: 'Watashi wa enjinia desu.', vn: 'Tôi là kỹ sư.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }]
+        },
+        {
+          jp: 'ミラーさんはエンジニアです。', romaji: 'Miraa-san wa enjinia desu.', vn: 'Anh Miller là kỹ sư.',
+          furigana: []
+        },
+        {
+          jp: '田中さんはエンジニアですか。', romaji: 'Tanaka-san wa enjinia desu ka.', vn: 'Anh Tanaka có phải là kỹ sư không?',
+          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }]
+        },
+        {
+          jp: '私はエンジニアじゃありません。', romaji: 'Watashi wa enjinia ja arimasen.', vn: 'Tôi không phải là kỹ sư.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }]
+        },
+        {
+          jp: 'あの人もエンジニアです。', romaji: 'Ano hito mo enjinia desu.', vn: 'Người kia cũng là kỹ sư.',
+          furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }]
+        },
+        {
+          jp: '将来はいいエンジニアになりたいです。', romaji: 'Shourai wa ii enjinia ni naritai desu.', vn: 'Tương lai tôi muốn trở thành một kỹ sư giỏi.',
+          furigana: [{ kanji: '将来', reading: 'しょうらい', meaning: 'TƯƠNG LAI' }]
+        }
       ]
     },
 
@@ -1364,6 +1481,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: 'ハノイ大学は有名です。', romaji: 'Hanoi daigaku wa yuumei desu.', vn: 'Đại học Hà Nội rất nổi tiếng.',
           furigana: [{ kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
+        },
+        {
+          jp: 'どこの大学ですか。', romaji: 'Doko no daigaku desu ka.', vn: 'Bạn học ở trường đại học nào?',
+          furigana: [{ kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }]
         }
       ]
     },
@@ -1461,6 +1582,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '病院の隣に公園があります。', romaji: 'Byouin no tonari ni kouen ga arimasu.', vn: 'Bên cạnh bệnh viện có công viên.',
           furigana: [{ kanji: '病院', reading: 'びょういん', meaning: 'BỆNH VIỆN' }, { kanji: '隣', reading: 'となり', meaning: 'LÂN' }, { kanji: '公園', reading: 'こうえん', meaning: 'CÔNG VIÊN' }]
+        },
+        {
+          jp: '病院の電話番号を知っていますか。', romaji: 'Byouin no denwa bangou wo shitte imasu ka.', vn: 'Bạn có biết số điện thoại của bệnh viện không?',
+          furigana: [{ kanji: '病院', reading: 'びょういん', meaning: 'BỆNH VIỆN' }, { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
         }
       ]
     },
@@ -1558,6 +1683,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '電気代が高いです。', romaji: 'Denkidai ga takai desu.', vn: 'Tiền điện đắt quá.',
           furigana: [{ kanji: '電気代', reading: 'でんきだい', meaning: 'ĐIỆN KHÍ ĐẠI' }, { kanji: '高', reading: 'たか', meaning: 'CAO' }]
+        },
+        {
+          jp: '会社に電気がありません。', romaji: 'Kaisha ni denki ga arimasen.', vn: 'Ở công ty không có điện.',
+          furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '電気', reading: 'でんき', meaning: 'ĐIỆN KHÍ' }]
         }
       ]
     },
@@ -1571,20 +1700,24 @@ export const lesson1Data: LessonDetail = {
           furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '誰', reading: 'だれ', meaning: 'THÙY' }]
         },
         {
-          jp: 'あの方はどなたですか。', romaji: 'Ano kata wa donata desu ka.', vn: 'Vị kia là vị nào (ai) vậy? (Lịch sự)',
-          furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }]
+          jp: '誰が来ましたか。', romaji: 'Dare ga kimashita ka.', vn: 'Ai đã đến vậy?',
+          furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }, { kanji: '来', reading: 'き', meaning: 'LAI' }]
         },
         {
-          jp: '誰と行きますか。', romaji: 'Dare to ikimasu ka.', vn: 'Bạn đi cùng với ai?',
-          furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+          jp: '誰と日本へ行きますか。', romaji: 'Dare to Nihon e ikimasu ka.', vn: 'Bạn đi Nhật cùng với ai?',
+          furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }, { kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
         },
         {
-          jp: '犯人は誰ですか。', romaji: 'Hannin wa dare desu ka.', vn: 'Hung thủ là ai?',
-          furigana: [{ kanji: '犯人', reading: 'はんにん', meaning: 'PHẠM NHÂN' }, { kanji: '誰', reading: 'だれ', meaning: 'THÙY' }]
+          jp: '誰の鞄ですか。', romaji: 'Dare no kaban desu ka.', vn: 'Cái cặp này của ai?',
+          furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }, { kanji: '鞄', reading: 'かばん', meaning: 'BẠC/CÁI TÚI' }]
         },
         {
-          jp: '誰の傘ですか。', romaji: 'Dare no kasa desu ka.', vn: 'Ô của ai vậy?',
-          furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }, { kanji: '傘', reading: 'かさ', meaning: 'TẢN' }]
+          jp: '誰に日本語を習いますか。', romaji: 'Dare ni nihongo wo naraimasu ka.', vn: 'Bạn học tiếng Nhật từ ai?',
+          furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        },
+        {
+          jp: '教室に誰がいますか。', romaji: 'Kyoushitsu ni dare ga imasu ka.', vn: 'Trong lớp học có ai không?',
+          furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }, { kanji: '誰', reading: 'だれ', meaning: 'THÙY' }]
         }
       ]
     },
@@ -1610,6 +1743,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: 'どなたが田中先生ですか。', romaji: 'Donata ga Tanaka sensei desu ka.', vn: 'Ai là thầy Tanaka ạ?',
           furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
+        },
+        {
+          jp: 'どなたか、この問題が分かりますか。', romaji: 'Donata ka, kono mondai ga wakarimasu ka.', vn: 'Có ai hiểu vấn đề này không?',
+          furigana: [{ kanji: '問題', reading: 'もんだい', meaning: 'VẤN ĐỀ' }, { kanji: '分', reading: 'わ', meaning: 'PHÂN' }]
         }
       ]
     },
@@ -1634,24 +1771,28 @@ export const lesson1Data: LessonDetail = {
       ],
       examples: [
         {
-          jp: '私は20歳です。', romaji: 'Watashi wa nijus sai desu.', vn: 'Tôi 20 tuổi.',
+          jp: '私は25歳です。', romaji: 'Watashi wa nijuugo sai desu.', vn: 'Tôi 25 tuổi.',
           furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '歳', reading: 'さい', meaning: 'TUẾ' }]
         },
         {
-          jp: '娘は3歳になります。', romaji: 'Musume wa san sai ni narimasu.', vn: 'Con gái tôi lên 3 tuổi.',
-          furigana: [{ kanji: '娘', reading: 'むすめ', meaning: 'NƯƠNG' }, { kanji: '歳', reading: 'さい', meaning: 'TUẾ' }]
+          jp: '田中さんは30歳です。', romaji: 'Tanaka-san wa sanjuu sai desu.', vn: 'Anh Tanaka 30 tuổi.',
+          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '歳', reading: 'さい', meaning: 'TUẾ' }]
         },
         {
-          jp: '息子は15歳です。', romaji: 'Musuko wa juu-go sai desu.', vn: 'Con trai tôi 15 tuổi.',
-          furigana: [{ kanji: '息子', reading: 'むすこ', meaning: 'TỨC TỬ' }, { kanji: '歳', reading: 'さい', meaning: 'TUẾ' }]
+          jp: '妹は18歳です。', romaji: 'Imouto wa juuhachi sai desu.', vn: 'Em gái tôi 18 tuổi.',
+          furigana: [{ kanji: '妹', reading: 'いもうと', meaning: 'MUỘI' }, { kanji: '歳', reading: 'さい', meaning: 'TUẾ' }]
         },
         {
-          jp: '20歳を「はたち」と言います。', romaji: 'Nijus sai wo "hatachi" to iimasu.', vn: '20 tuổi được gọi là "hatachi".',
-          furigana: [{ kanji: '歳', reading: 'さい', meaning: 'TUẾ' }, { kanji: '言', reading: 'い', meaning: 'NGÔN' }]
+          jp: 'あの子は何歳ですか。', romaji: 'Ano ko wa nansai desu ka.', vn: 'Đứa bé kia mấy tuổi rồi?',
+          furigana: [{ kanji: '子', reading: 'こ', meaning: 'TỬ' }, { kanji: '何歳', reading: 'なんさい', meaning: 'HÀ TUẾ' }]
         },
         {
-          jp: 'おいくつ（何歳）ですか。', romaji: 'Oikutsu (nansai) desu ka.', vn: 'Bạn bao nhiêu tuổi?',
-          furigana: [{ kanji: '何歳', reading: 'なんさい', meaning: 'HÀ TUẾ' }]
+          jp: '二十歳（はたち）になりました。', romaji: 'Hatachi ni narimashita.', vn: 'Tôi đã tròn 20 tuổi.',
+          furigana: [{ kanji: '二十歳', reading: 'はたち', meaning: 'NHỊ THẬP TUẾ' }]
+        },
+        {
+          jp: '来年、26歳になります。', romaji: 'Rainen, nijuuroku sai ni narimasu.', vn: 'Sang năm tôi sẽ 26 tuổi.',
+          furigana: [{ kanji: '来年', reading: 'らいねん', meaning: 'LAI NIÊN' }, { kanji: '歳', reading: 'さい', meaning: 'TUẾ' }]
         }
       ]
     },
@@ -1730,11 +1871,30 @@ export const lesson1Data: LessonDetail = {
         }
       ],
       examples: [
-        { jp: 'あなたは何歳ですか。', romaji: 'Anata wa nansai desu ka.', vn: 'Bạn bao nhiêu tuổi?' },
-        { jp: '田中さんは何歳ですか。', romaji: 'Tanaka-san wa nansai desu ka.', vn: 'Anh Tanaka bao nhiêu tuổi?' },
-        { jp: '私は25歳です。', romaji: 'Watashi wa nijuugo sai desu.', vn: 'Tôi 25 tuổi.' },
-        { jp: 'お子さんは何歳ですか。', romaji: 'Okosan wa nansai desu ka.', vn: 'Con bạn bao nhiêu tuổi?' },
-        { jp: 'あの人は何歳ですか。', romaji: 'Ano hito wa nansai desu ka.', vn: 'Người kia bao nhiêu tuổi?' }
+        {
+          jp: 'あなたは何歳ですか。', romaji: 'Anata wa nansai desu ka.', vn: 'Bạn bao nhiêu tuổi?',
+          furigana: [{ kanji: '何歳', reading: 'なんさい', meaning: 'HÀ TUẾ' }]
+        },
+        {
+          jp: 'さくらちゃんは何歳ですか。', romaji: 'Sakura-chan wa nansai desu ka.', vn: 'Bé Sakura mấy tuổi rồi?',
+          furigana: [{ kanji: '何歳', reading: 'なんさい', meaning: 'HÀ TUẾ' }]
+        },
+        {
+          jp: '失礼ですが、何歳ですか。', romaji: 'Shitsurei desuga, nansai desu ka.', vn: 'Xin lỗi, bạn bao nhiêu tuổi ạ?',
+          furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }, { kanji: '何歳', reading: 'なんさい', meaning: 'HÀ TUẾ' }]
+        },
+        {
+          jp: '弟さんは何歳ですか。', romaji: 'Otouto-san wa nansai desu ka.', vn: 'Em trai bạn bao nhiêu tuổi?',
+          furigana: [{ kanji: '弟', reading: 'おとうと', meaning: 'ĐỆ' }, { kanji: '何歳', reading: 'なんさい', meaning: 'HÀ TUẾ' }]
+        },
+        {
+          jp: '何歳から日本語を勉強しましたか。', romaji: 'Nansai kara nihongo wo benkyou shimashita ka.', vn: 'Bạn học tiếng Nhật từ khi mấy tuổi?',
+          furigana: [{ kanji: '何歳', reading: 'なんさい', meaning: 'HÀ TUẾ' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: '何歳に見えますか。', romaji: 'Nansai ni miemasu ka.', vn: 'Trông tôi như bao nhiêu tuổi?',
+          furigana: [{ kanji: '何歳', reading: 'なんさい', meaning: 'HÀ TUẾ' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        }
       ]
     },
     {
@@ -1759,6 +1919,10 @@ export const lesson1Data: LessonDetail = {
         {
           jp: 'お母さんはおいくつですか。', romaji: 'Okaasan wa oikutsu desu ka.', vn: 'Mẹ bạn bao nhiêu tuổi ạ?',
           furigana: [{ kanji: '母', reading: 'かあ', meaning: 'MẪU' }]
+        },
+        {
+          jp: 'お子さんはおいくつですか。', romaji: 'Okosan wa oikutsu desu ka.', vn: 'Cháu nhà mình bao nhiêu tuổi rồi ạ?',
+          furigana: [{ kanji: '子', reading: 'こ', meaning: 'TỬ' }]
         }
       ]
     },
@@ -1772,20 +1936,24 @@ export const lesson1Data: LessonDetail = {
           furigana: []
         },
         {
+          jp: 'はい、分かりました。', romaji: 'Hai, wakarimashita.', vn: 'Vâng, tôi đã hiểu.',
+          furigana: [{ kanji: '分', reading: 'わ', meaning: 'PHÂN' }]
+        },
+        {
+          jp: 'はい、日本語が分かります。', romaji: 'Hai, nihongo ga wakarimasu.', vn: 'Vâng, tôi hiểu tiếng Nhật.',
+          furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '分', reading: 'わ', meaning: 'PHÂN' }]
+        },
+        {
           jp: 'はい、私は学生です。', romaji: 'Hai, watashi wa gakusei desu.', vn: 'Vâng, tôi là sinh viên.',
           furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }]
         },
         {
-          jp: 'はい、田中です。', romaji: 'Hai, Tanaka desu.', vn: 'Vâng, tôi là Tanaka.',
-          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }]
+          jp: 'はい、十歳です。', romaji: 'Hai, jussai desu.', vn: 'Vâng, 10 tuổi ạ.',
+          furigana: [{ kanji: '十歳', reading: 'じゅっさい', meaning: 'THẬP TUẾ' }]
         },
         {
-          jp: 'はい、わかりました。', romaji: 'Hai, wakarimashita.', vn: 'Vâng, tôi hiểu rồi.',
-          furigana: []
-        },
-        {
-          jp: 'はい、日本人です。', romaji: 'Hai, Nihonjin desu.', vn: 'Vâng, tôi là người Nhật.',
-          furigana: [{ kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }]
+          jp: 'はい、行きましょう。', romaji: 'Hai, ikimashou.', vn: 'Vâng, cùng đi nào.',
+          furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }]
         }
       ]
     },
@@ -1793,24 +1961,28 @@ export const lesson1Data: LessonDetail = {
       word: 'いいえ', kanji: '', romaji: 'iie', mean: 'Không',
       examples: [
         {
-          jp: 'いいえ、違います。', romaji: 'Iie, chigaimasu.', vn: 'Không, không phải.',
+          jp: 'いいえ、違います。', romaji: 'Iiye, chigaimasu.', vn: 'Không, không phải.',
           furigana: [{ kanji: '違', reading: 'ちが', meaning: 'VI' }]
         },
         {
-          jp: 'いいえ、学生じゃありません。', romaji: 'Iie, gakusei ja arimasen.', vn: 'Không, tôi không phải sinh viên.',
-          furigana: [{ kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }]
+          jp: 'いいえ、私は医者じゃありません。', romaji: 'Iiye, watashi wa isha ja arimasen.', vn: 'Không, tôi không phải bác sĩ.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '医者', reading: 'いしゃ', meaning: 'Y GIẢ' }]
         },
         {
-          jp: 'いいえ、日本人じゃありません。', romaji: 'Iie, Nihonjin ja arimasen.', vn: 'Không, tôi không phải người Nhật.',
+          jp: 'いいえ、分かりません。', romaji: 'Iiye, wakarimasen.', vn: 'Không, tôi không hiểu.',
+          furigana: [{ kanji: '分', reading: 'わ', meaning: 'PHÂN' }]
+        },
+        {
+          jp: 'いいえ、日本人じゃありません。', romaji: 'Iiye, Nihonjin ja arimasen.', vn: 'Không, không phải người Nhật.',
           furigana: [{ kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }]
         },
         {
-          jp: 'いいえ、会社員です。', romaji: 'Iie, kaishain desu.', vn: 'Không, tôi là nhân viên công ty.',
-          furigana: [{ kanji: '会社員', reading: 'かいしゃいん', meaning: 'HỘI XÃ VIÊN' }]
+          jp: 'いいえ、結構（けっこう）です。', romaji: 'Iiye, kekkou desu.', vn: 'Không, tôi đủ rồi/không cần đâu.',
+          furigana: [{ kanji: '結構', reading: 'けっこう', meaning: 'KẾT CẤU' }]
         },
         {
-          jp: 'いいえ、田中さんじゃありません。', romaji: 'Iie, Tanaka-san ja arimasen.', vn: 'Không, đó không phải anh Tanaka.',
-          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }]
+          jp: 'いいえ、大丈夫（だいじょうぶ）です。', romaji: 'Iiye, daijoubu desu.', vn: 'Không, tôi ổn.',
+          furigana: [{ kanji: '大丈夫', reading: 'だいじょうぶ', meaning: 'ĐẠI TRƯỢNG PHU' }]
         }
       ]
     },
@@ -1892,29 +2064,33 @@ export const lesson1Data: LessonDetail = {
       ],
       examples: [
         {
-          jp: '失礼ですが、お名前は？', romaji: 'Shitsurei desu ga, onamae wa?', vn: 'Xin lỗi, tên của bạn là gì?',
+          jp: '失礼ですが、どちら様（さま）ですか。', romaji: 'Shitsurei desuga, dochira sama desu ka.', vn: 'Xin lỗi, vị nào đấy ạ?',
+          furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }, { kanji: '様', reading: 'さま', meaning: 'DẠNG' }]
+        },
+        {
+          jp: '失礼ですが、お名前は？', romaji: 'Shitsurei desuga, onamae wa?', vn: 'Xin lỗi, tên bạn là gì ạ?',
           furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }, { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }]
         },
         {
-          jp: '失礼ですが、おいくつですか。', romaji: 'Shitsurei desu ga, oikutsu desu ka.', vn: 'Xin lỗi, bạn bao nhiêu tuổi ạ?',
+          jp: '失礼ですが、何歳ですか。', romaji: 'Shitsurei desuga, nansai desu ka.', vn: 'Xin lỗi, bạn bao nhiêu tuổi ạ?',
+          furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }, { kanji: '何歳', reading: 'なんさい', meaning: 'HÀ TUẾ' }]
+        },
+        {
+          jp: '失礼ですが、どちらから来ましたか。', romaji: 'Shitsurei desuga, dochira kara kimashita ka.', vn: 'Xin lỗi, bạn đến từ đâu vậy ạ?',
+          furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }, { kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: '失礼ですが、おいくつですか。', romaji: 'Shitsurei desuga, oikutsu desu ka.', vn: 'Xin lỗi, bạn bao nhiêu tuổi ạ?',
           furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }]
         },
         {
-          jp: '失礼ですが、どなたですか。', romaji: 'Shitsurei desu ga, donata desu ka.', vn: 'Xin lỗi, ngài là ai ạ?',
-          furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }]
-        },
-        {
-          jp: '失礼ですが、ベトナム人ですか。', romaji: 'Shitsurei desu ga, Betonamujin desu ka.', vn: 'Xin lỗi, bạn có phải là người Việt Nam không?',
-          furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
-        },
-        {
-          jp: '失礼ですが、田中さんですか。', romaji: 'Shitsurei desu ga, Tanaka-san desu ka.', vn: 'Xin lỗi, bạn có phải là anh Tanaka không?',
-          furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }, { kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }]
+          jp: '失礼ですが、先生ですか。', romaji: 'Shitsurei desuga, sensei desu ka.', vn: 'Xin lỗi, bạn có phải giáo viên không?',
+          furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
         }
       ]
     },
     {
-      word: 'おなまえは？', kanji: 'お名前は？', romaji: 'onamae wa?', mean: 'Tên anh/chị là gì?',
+      word: 'おなまえは？', kanji: 'お名前は？', romaji: 'O-namae wa?', mean: 'Tên bạn là gì?',
       kanjiDetails: [
         {
           kanji: '名',
@@ -1986,6 +2162,32 @@ export const lesson1Data: LessonDetail = {
             }
           ]
         }
+      ],
+      examples: [
+        {
+          jp: '失礼ですが、お名前は？', romaji: 'Shitsurei desu ga, o-namae wa?', vn: 'Xin lỗi, tên bạn là gì ạ?',
+          furigana: [{ kanji: '失礼', reading: 'しつれい', meaning: 'THẤT LỄ' }, { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }]
+        },
+        {
+          jp: 'お名前は何ですか。', romaji: 'O-namae wa nan desu ka.', vn: 'Tên của bạn là gì?',
+          furigana: [{ kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: 'あの方のお名前は？', romaji: 'Ano kata no o-namae wa?', vn: 'Tên của vị kia là gì?',
+          furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }]
+        },
+        {
+          jp: 'お子さんのお名前は何ですか。', romaji: 'Okosan no o-namae wa nan desu ka.', vn: 'Tên của cháu nhà mình là gì vậy ạ?',
+          furigana: [{ kanji: '子', reading: 'こ', meaning: 'TỬ' }, { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: 'お名前を教えてください。', romaji: 'O-namae wo oshiete kudasai.', vn: 'Hãy cho tôi biết tên của bạn.',
+          furigana: [{ kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }, { kanji: '教', reading: 'おし', meaning: 'GIÁO' }]
+        },
+        {
+          jp: 'お名前はどこに書きますか。', romaji: 'O-namae wa doko ni kakimasu ka.', vn: 'Viết tên vào đâu ạ?',
+          furigana: [{ kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }]
+        }
       ]
     },
     {
@@ -2029,28 +2231,60 @@ export const lesson1Data: LessonDetail = {
       ],
       examples: [
         {
-          jp: '初めまして。', romaji: 'Hajimemashite.', vn: 'Rất hân hạnh được gặp bạn.',
-          furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }]
+          jp: 'はじめまして。田中です。', romaji: 'Hajimemashite. Tanaka desu.', vn: 'Rất hân hạnh được gặp bạn. Tôi là Tanaka.',
+          furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }, { kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }]
         },
         {
-          jp: '初めまして。ミラーです。', romaji: 'Hajimemashite. Miraa desu.', vn: 'Rất hân hạnh được gặp bạn. Tôi là Miller.',
-          furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }]
-        },
-        {
-          jp: '初めまして。どうぞよろしくお願いします。', romaji: 'Hajimemashite. Douzo yoroshiku onegaishimasu.', vn: 'Rất hân hạnh được gặp bạn. Mong được giúp đỡ.',
-          furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
-        },
-        {
-          jp: '初めまして。ベトナムから来ました。', romaji: 'Hajimemashite. Betonamu kara kimashita.', vn: 'Rất hân hạnh được gặp bạn. Tôi đến từ Việt Nam.',
+          jp: 'はじめまして。ベトナムから来ました。', romaji: 'Hajimemashite. Betonamu kara kimashita.', vn: 'Rất hân hạnh. Tôi đến từ Việt Nam.',
           furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }, { kanji: '来', reading: 'き', meaning: 'LAI' }]
         },
         {
-          jp: '初めまして。学生です。', romaji: 'Hajimemashite. Gakusei desu.', vn: 'Rất hân hạnh được gặp bạn. Tôi là sinh viên.',
-          furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }]
+          jp: '皆さん、はじめまして。', romaji: 'Minasan, hajimemashite.', vn: 'Chào mọi người, rất hân hạnh được làm quen.',
+          furigana: [{ kanji: '皆さん', reading: 'みなさん', meaning: 'GIAI' }, { kanji: '初', reading: 'はじ', meaning: 'SƠ' }]
+        },
+        {
+          jp: 'はじめまして。どうぞよろしく。', romaji: 'Hajimemashite. Douzo yoroshiku.', vn: 'Rất vui được gặp bạn. Mong được giúp đỡ.',
+          furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }]
+        },
+        {
+          jp: 'はじめまして。私の名前はミラーです。', romaji: 'Hajimemashite. Watashi no namae wa Miraa desu.', vn: 'Rất vui được gặp. Tên tôi là Miller.',
+          furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }, { kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }]
+        },
+        {
+          jp: 'はじめまして。日本から来ました。', romaji: 'Hajimemashite. Nihon kara kimashita.', vn: 'Rất vui được gặp. Tôi đến từ Nhật Bản.',
+          furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }, { kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '来', reading: 'き', meaning: 'LAI' }]
         }
       ]
     },
-    { word: 'どうぞよろしく', kanji: '', romaji: 'douzo yoroshiku', mean: 'Rất mong được sự giúp đỡ' },
+    {
+      word: 'どうぞよろしく', kanji: '', romaji: 'Douzo yoroshiku', mean: 'Rất hân hạnh được làm quen',
+      examples: [
+        {
+          jp: 'はじめまして。どうぞよろしく。', romaji: 'Hajimemashite. Douzo yoroshiku.', vn: 'Rất vui được gặp bạn. Mong được giúp đỡ.',
+          furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }]
+        },
+        {
+          jp: 'どうぞよろしくお願いします。', romaji: 'Douzo yoroshiku onegaishimasu.', vn: 'Rất mong nhận được sự giúp đỡ của bạn.',
+          furigana: [{ kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
+        },
+        {
+          jp: '皆さん、どうぞよろしく。', romaji: 'Minasan, douzo yoroshiku.', vn: 'Chào mọi người, mong mọi người giúp đỡ.',
+          furigana: [{ kanji: '皆さん', reading: 'みなさん', meaning: 'GIAI' }]
+        },
+        {
+          jp: 'こちらこそ、どうぞよろしく。', romaji: 'Kochira koso, douzo yoroshiku.', vn: 'Chính tôi mới là người cần sự giúp đỡ.',
+          furigana: []
+        },
+        {
+          jp: '今後とも、どうぞよろしく。', romaji: 'Kongo tomo, douzo yoroshiku.', vn: 'Từ nay về sau cũng xin được giúp đỡ.',
+          furigana: [{ kanji: '今後', reading: 'こんご', meaning: 'KIM HẬU' }]
+        },
+        {
+          jp: '山田さん、どうぞよろしく。', romaji: 'Yamada-san, douzo yoroshiku.', vn: 'Anh Yamada, rất mong được anh giúp đỡ.',
+          furigana: [{ kanji: '山田', reading: 'やまだ', meaning: 'SƠN ĐIỀN' }]
+        }
+      ]
+    },
     {
       word: 'どうぞよろしくおねがいします', kanji: 'どうぞよろしくお願いします', romaji: 'douzo yoroshiku onegaishimasu', mean: 'Rất mong được sự giúp đỡ của anh/chị (lịch sự)',
       kanjiDetails: [
@@ -2092,28 +2326,60 @@ export const lesson1Data: LessonDetail = {
       ],
       examples: [
         {
-          jp: 'どうぞよろしくお願いします。', romaji: 'Douzo yoroshiku onegaishimasu.', vn: 'Rất mong nhận được sự giúp đỡ.',
+          jp: 'はじめまして。どうぞよろしくお願いします。', romaji: 'Hajimemashite. Douzo yoroshiku onegai shimasu.', vn: 'Rất hân hạnh được gặp bạn. Rất mong nhận được sự giúp đỡ.',
+          furigana: [{ kanji: '初', reading: 'はじ', meaning: 'SƠ' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
+        },
+        {
+          jp: 'こちらこそ、どうぞよろしくお願いします。', romaji: 'Kochira koso, douzo yoroshiku onegai shimasu.', vn: 'Chính tôi mới là người mong nhận được sự giúp đỡ.',
           furigana: [{ kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
         },
         {
-          jp: '田中です。よろしくお願いします。', romaji: 'Tanaka desu. Yoroshiku onegaishimasu.', vn: 'Tôi là Tanaka. Mong được giúp đỡ.',
-          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
+          jp: 'これからお世話になります。どうぞよろしくお願いします。', romaji: 'Kore kara osewa ni narimasu. Douzo yoroshiku onegai shimasu.', vn: 'Từ nay về sau mong được anh giúp đỡ.',
+          furigana: [{ kanji: '世', reading: 'せ', meaning: 'THẾ' }, { kanji: '話', reading: 'わ', meaning: 'THOẠI' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
         },
         {
-          jp: 'これからよろしくお願いします。', romaji: 'Korekara yoroshiku onegaishimasu.', vn: 'Từ nay mong được giúp đỡ.',
-          furigana: [{ kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
+          jp: '今後とも、どうぞよろしくお願いします。', romaji: 'Kongo tomo, douzo yoroshiku onegai shimasu.', vn: 'Từ nay về sau cũng xin được giúp đỡ cho.',
+          furigana: [{ kanji: '今後', reading: 'こんご', meaning: 'KIM HẬU' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
         },
         {
-          jp: 'ミラーと申します。よろしくお願いします。', romaji: 'Miraa to moushimasu. Yoroshiku onegaishimasu.', vn: 'Tôi tên là Miller. Mong được giúp đỡ.',
-          furigana: [{ kanji: '申', reading: 'もう', meaning: 'THÂN' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
+          jp: '本日はどうぞよろしくお願いします。', romaji: 'Honjitsu wa douzo yoroshiku onegai shimasu.', vn: 'Ngày hôm nay rất mong được giúp đỡ.',
+          furigana: [{ kanji: '本日', reading: 'ほんじつ', meaning: 'BẢN NHẬT' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
         },
         {
-          jp: '明日からよろしくお願いします。', romaji: 'Ashita kara yoroshiku onegaishimasu.', vn: 'Từ ngày mai mong được giúp đỡ.',
-          furigana: [{ kanji: '明日', reading: 'あした', meaning: 'MINH NHẬT' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
+          jp: '先生, どうぞよろしくお願いします。', romaji: 'Sensei, douzo yoroshiku onegaishimasu.', vn: 'Thầy/cô giáo, rất mong được thầy/cô giúp đỡ ạ.',
+          furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }]
         }
       ]
     },
-    { word: 'こちらは～さんです', kanji: '', romaji: 'kochira wa ~san desu', mean: 'Đây là anh/chị/ông/bà ~' },
+    {
+      word: 'こちらは～さんです', kanji: '', romaji: 'Kochira wa ~san desu', mean: 'Đây là anh/chị ~',
+      examples: [
+        {
+          jp: 'こちらは佐藤さんです。', romaji: 'Kochira wa Satou-san desu.', vn: 'Đây là anh Satou.',
+          furigana: [{ kanji: '佐藤', reading: 'さとう', meaning: 'TÁ ĐẰNG' }]
+        },
+        {
+          jp: 'こちらはミラーさんです。', romaji: 'Kochira wa Miraa-san desu.', vn: 'Đây là anh Miller.',
+          furigana: []
+        },
+        {
+          jp: 'こちらは私の先生です。', romaji: 'Kochira wa watashi no sensei desu.', vn: 'Đây là thầy giáo của tôi.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
+        },
+        {
+          jp: '田中さん、こちらは山田さんです。', romaji: 'Tanaka-san, kochira wa Yamada-san desu.', vn: 'Anh Tanaka ơi, đây là anh Yamada.',
+          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '山田', reading: 'やまだ', meaning: 'SƠN ĐIỀN' }]
+        },
+        {
+          jp: 'こちらは母です。', romaji: 'Kochira wa haha desu.', vn: 'Đây là mẹ tôi.',
+          furigana: [{ kanji: '母', reading: 'はは', meaning: 'MẪU' }]
+        },
+        {
+          jp: 'こちらは新しい学生です。', romaji: 'Kochira wa atarashii gakusei desu.', vn: 'Đây là học sinh mới.',
+          furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }]
+        }
+      ]
+    },
     {
       word: '～からきました', kanji: '～から来ました', romaji: '~kara kimashita', mean: '(Tôi) đến từ ~',
       kanjiDetails: [
@@ -2173,20 +2439,276 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '日本から来ました。', romaji: 'Nihon kara kimashita.', vn: 'Tôi đến từ Nhật Bản.',
           furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: '彼は中国から来ました。', romaji: 'Kare wa Chuugoku kara kimashita.', vn: 'Anh ấy đến từ Trung Quốc.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '中国', reading: 'ちゅうごく', meaning: 'TRUNG QUỐC' }, { kanji: '来', reading: 'き', meaning: 'LAI' }]
         }
       ]
     },
 
     // Quốc gia
-    { word: 'アメリカ', kanji: '', romaji: 'Amerika', mean: 'Mỹ' },
-    { word: 'イギリス', kanji: '', romaji: 'Igirisu', mean: 'Anh' },
-    { word: 'イタリア', kanji: '', romaji: 'Itaria', mean: 'Ý' },
-    { word: 'イラン', kanji: '', romaji: 'Iran', mean: 'Iran' },
-    { word: 'インド', kanji: '', romaji: 'Indo', mean: 'Ấn Độ' },
-    { word: 'インドネシア', kanji: '', romaji: 'Indoneshia', mean: 'Indonesia' },
-    { word: 'エジプト', kanji: '', romaji: 'Ejiputo', mean: 'Ai Cập' },
-    { word: 'オーストラリア', kanji: '', romaji: 'Oosutoraria', mean: 'Úc' },
-    { word: 'カナダ', kanji: '', romaji: 'Kanada', mean: 'Canada' },
+    {
+      word: 'アメリカ', kanji: '', romaji: 'Amerika', mean: 'Mỹ',
+      examples: [
+        {
+          jp: 'アメリカから来ました。', romaji: 'Amerika kara kimashita.', vn: 'Tôi đến từ Mỹ.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'アメリカは大きいです。', romaji: 'Amerika wa ookii desu.', vn: 'Nước Mỹ rất rộng lớn.',
+          furigana: [{ kanji: '大', reading: 'おお', meaning: 'ĐẠI' }]
+        },
+        {
+          jp: 'アメリカの料理はパンです。', romaji: 'Amerika no ryouri wa pan desu.', vn: 'Món ăn của Mỹ là bánh mì (ví dụ).',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }]
+        },
+        {
+          jp: '昨日アメリカへ行きました。', romaji: 'Kinou Amerika e ikimashita.', vn: 'Hôm qua tôi đã đi Mỹ.',
+          furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'アメリカ人の友達がいます。', romaji: 'Amerikajin no tomodachi ga imasu.', vn: 'Tôi có bạn là người Mỹ.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }]
+        },
+        {
+          jp: 'アメリカで英語を話します。', romaji: 'Amerika de eigo wo hanashimasu.', vn: 'Ở Mỹ người ta nói tiếng Anh.',
+          furigana: [{ kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'イギリス', kanji: '', romaji: 'Igirisu', mean: 'Anh',
+      examples: [
+        {
+          jp: 'イギリスから来ました。', romaji: 'Igirisu kara kimashita.', vn: 'Tôi đến từ Anh.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'イギリスの天気はどうですか。', romaji: 'Igirisu no tenki wa dou desu ka.', vn: 'Thời tiết ở Anh thế nào?',
+          furigana: [{ kanji: '天気', reading: 'てんき', meaning: 'THIÊN KHÍ' }]
+        },
+        {
+          jp: 'イギリスは島国です。', romaji: 'Igirisu wa shimaguni desu.', vn: 'Nước Anh là một quốc đảo.',
+          furigana: [{ kanji: '島国', reading: 'しまぐに', meaning: 'ĐẢO QUỐC' }]
+        },
+        {
+          jp: 'イギリスで英語を勉強します。', romaji: 'Igirisu de eigo wo benkyou shimasu.', vn: 'Học tiếng Anh ở Anh.',
+          furigana: [{ kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'イギリスのデザインが好きです。', romaji: 'Igirisu no dezain ga suki desu.', vn: 'Tôi thích thiết kế của Anh.',
+          furigana: [{ kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        },
+        {
+          jp: '彼はイギリス人です。', romaji: 'Kare wa Igirisujin desu.', vn: 'Anh ấy là người Anh.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        }
+      ]
+    },
+    {
+      word: 'イタリア', kanji: '', romaji: 'Itaria', mean: 'Ý',
+      examples: [
+        {
+          jp: 'イタリアから来ました。', romaji: 'Itaria kara kimashita.', vn: 'Tôi đến từ Ý.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'イタリアの料理はピザです。', romaji: 'Itaria no ryouri wa piza desu.', vn: 'Món ăn của Ý là pizza.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }]
+        },
+        {
+          jp: 'イタリアは歴史が深いです。', romaji: 'Itaria wa rekishi ga fukai desu.', vn: 'Nước Ý có lịch sử lâu đời.',
+          furigana: [{ kanji: '歴史', reading: 'れきし', meaning: 'LỊCH SỬ' }, { kanji: '深', reading: 'ふか', meaning: 'THÂM' }]
+        },
+        {
+          jp: 'イタリアの車はかっこいいです。', romaji: 'Itaria no kuruma wa kakkoii desu.', vn: 'Xe hơi của Ý rất ngầu.',
+          furigana: [{ kanji: '車', reading: 'くるま', meaning: 'XA' }]
+        },
+        {
+          jp: 'いつイタリアへ行きますか。', romaji: 'Itsu Itaria e ikimasu ka.', vn: 'Khi nào bạn đi Ý?',
+          furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '彼はイタリア語を話します。', romaji: 'Kare wa Itariago wo hanashimasu.', vn: 'Anh ấy nói tiếng Ý.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'イラン', kanji: '', romaji: 'Iran', mean: 'Iran',
+      examples: [
+        {
+          jp: 'イランから来ました。', romaji: 'Iran kara kimashita.', vn: 'Tôi đến từ Iran.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'イランは西アジアにあります。', romaji: 'Iran wa nishi ajia ni arimasu.', vn: 'Iran nằm ở Tây Á.',
+          furigana: [{ kanji: '西', reading: 'にし', meaning: 'TÂY' }]
+        },
+        {
+          jp: 'イランの文化を学びます。', romaji: 'Iran no bunka wo manabimasu.', vn: 'Học về văn hóa Iran.',
+          furigana: [{ kanji: '文化', reading: 'ぶんか', meaning: 'VĂN HÓA' }, { kanji: '学', reading: 'まな', meaning: 'HỌC' }]
+        },
+        {
+          jp: '彼はイラン人ですか。', romaji: 'Kare wa Iranjin desu ka.', vn: 'Anh ấy có phải người Iran không?',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'イランの料理を食べたいです。', romaji: 'Iran no ryouri wo tabetai desu.', vn: 'Tôi muốn ăn món ăn Iran.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
+        },
+        {
+          jp: 'イランは大きな国です。', romaji: 'Iran wa ookina kuni desu.', vn: 'Iran là một đất nước lớn.',
+          furigana: [{ kanji: '大', reading: 'おお', meaning: 'ĐẠI' }, { kanji: '国', reading: 'くに', meaning: 'QUỐC' }]
+        }
+      ]
+    },
+    {
+      word: 'インド', kanji: '', romaji: 'Indo', mean: 'Ấn Độ',
+      examples: [
+        {
+          jp: 'インドから来ました。', romaji: 'Indo kara kimashita.', vn: 'Tôi đến từ Ấn Độ.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'インドのカレーはおいしいです。', romaji: 'Indo no karee wa oishii desu.', vn: 'Cà phê Ấn Độ rất ngon (nghĩa rộng là món cà ri).',
+          furigana: []
+        },
+        {
+          jp: 'インドは人口が多いです。', romaji: 'Indo wa jinkou ga oi desu.', vn: 'Ấn Độ có dân số đông.',
+          furigana: [{ kanji: '人口', reading: 'じんこう', meaning: 'NHÂN KHẨU' }, { kanji: '多', reading: 'おお', meaning: 'ĐA' }]
+        },
+        {
+          jp: 'インドへ旅行に行きたいです。', romaji: 'Indo e ryokou ni ikitai desu.', vn: 'Tôi muốn đi du lịch Ấn Độ.',
+          furigana: [{ kanji: '旅行', reading: 'りょこう', meaning: 'LỮ HÀNH' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'インドの映画は長いです。', romaji: 'Indo no eiga wa nagai desu.', vn: 'Phim Ấn Độ rất dài.',
+          furigana: [{ kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' }]
+        },
+        {
+          jp: '彼はインドのエンジニアです。', romaji: 'Kare wa Indo no enjinia desu.', vn: 'Anh ấy là kỹ sư người Ấn Độ.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }]
+        }
+      ]
+    },
+    {
+      word: 'インドネシア', kanji: '', romaji: 'Indoneshia', mean: 'Indonesia',
+      examples: [
+        {
+          jp: 'インドネシアから来ました。', romaji: 'Indoneshia kara kimashita.', vn: 'Tôi đến từ Indonesia.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'インドネシアは暑いですか。', romaji: 'Indoneshia wa atsui desu ka.', vn: 'Indonesia có nóng không?',
+          furigana: [{ kanji: '暑', reading: 'あつ', meaning: 'THỬ' }]
+        },
+        {
+          jp: 'インドネシアの海はきれいです。', romaji: 'Indoneshia no umi wa kirei desu.', vn: 'Biển ở Indonesia rất đẹp.',
+          furigana: [{ kanji: '海', reading: 'うみ', meaning: 'HẢI' }]
+        },
+        {
+          jp: '彼はインドネシア人です。', romaji: 'Kare wa Indoneshiajin desu.', vn: 'Anh ấy là người Indonesia.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'インドネシアへ仕事に行きます。', romaji: 'Indoneshia e shigoto ni ikimasu.', vn: 'Tôi đi Indonesia làm việc.',
+          furigana: [{ kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'インドネシア語は易しいですか。', romaji: 'Indoneshiago wa yasashii desu ka.', vn: 'Tiếng Indonesia có dễ không?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '易', reading: 'やさ', meaning: 'DỊ' }]
+        }
+      ]
+    },
+    {
+      word: 'エジプト', kanji: '', romaji: 'Ejiputo', mean: 'Ai Cập',
+      examples: [
+        {
+          jp: 'エジプトから来ました。', romaji: 'Ejiputo kara kimashita.', vn: 'Tôi đến từ Ai Cập.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'エジプトはピラミッドが有名です。', romaji: 'Ejiputo wa piramiddo ga yuumei desu.', vn: 'Ai Cập nổi tiếng với kim tự tháp.',
+          furigana: [{ kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
+        },
+        {
+          jp: 'エジプトの歴史を勉強します。', romaji: 'Ejiputo no rekishi wo benkyou shimasu.', vn: 'Tôi học lịch sử Ai Cập.',
+          furigana: [{ kanji: '歴史', reading: 'れきし', meaning: 'LỊCH SỬ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'エジプトへ行きたいです。', romaji: 'Ejiputo e ikitai desu.', vn: 'Tôi muốn đi Ai Cập.',
+          furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '彼はエジプト人ですか。', romaji: 'Kare wa Ejiputojin desu ka.', vn: 'Anh ấy có phải người Ai Cập không?',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'エジプトの料理はおいしいです。', romaji: 'Ejiputo no ryouri wa oishii desu.', vn: 'Món ăn Ai Cập rất ngon.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }]
+        }
+      ]
+    },
+    {
+      word: 'オーストラリア', kanji: '', romaji: 'Oosutoraria', mean: 'Úc',
+      examples: [
+        {
+          jp: 'オーストラリアから来ました。', romaji: 'Oosutoraria kara kimashita.', vn: 'Tôi đến từ Úc.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'オーストラリアは南にあります。', romaji: 'Oosutoraria wa minami ni arimasu.', vn: 'Nước Úc nằm ở phía Nam.',
+          furigana: [{ kanji: '南', reading: 'みなみ', meaning: 'NAM' }]
+        },
+        {
+          jp: 'コアラはオーストラリアにいます。', romaji: 'Koara wa Oosutoraria ni imasu.', vn: 'Gấu Koala có ở Úc.',
+          furigana: []
+        },
+        {
+          jp: 'オーストラリアの海で泳ぎます。', romaji: 'Oosutoraria no umi de oyogimasu.', vn: 'Bơi ở biển nước Úc.',
+          furigana: [{ kanji: '海', reading: 'うみ', meaning: 'HÀI' }, { kanji: '泳', reading: 'およ', meaning: 'VỊNH' }]
+        },
+        {
+          jp: '彼はオーストラリア人です。', romaji: 'Kare wa Oosutorariajin desu.', vn: 'Anh ấy là người Úc.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'オーストラリアへ留学します。', romaji: 'Oosutoraria e ryuugaku shimasu.', vn: 'Tôi đi du học ở Úc.',
+          furigana: [{ kanji: '留学', reading: 'りゅうがく', meaning: 'LƯU HỌC' }]
+        }
+      ]
+    },
+    {
+      word: 'カナダ', kanji: '', romaji: 'Kanada', mean: 'Canada',
+      examples: [
+        {
+          jp: 'カナダから来ました。', romaji: 'Kanada kara kimashita.', vn: 'Tôi đến từ Canada.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'カナダは大きいです。', romaji: 'Kanada wa ookii desu.', vn: 'Canada rất rộng lớn.',
+          furigana: [{ kanji: '大', reading: 'おお', meaning: 'ĐẠI' }]
+        },
+        {
+          jp: 'カナダの冬はとても寒いです。', romaji: 'Kanada no fuyu wa totemo samui desu.', vn: 'Mùa đông ở Canada rất lạnh.',
+          furigana: [{ kanji: '冬', reading: 'ふゆ', meaning: 'ĐÔNG' }, { kanji: '寒', reading: 'さむ', meaning: 'HÀN' }]
+        },
+        {
+          jp: 'カナダへメープルシロップを買いに行きます。', romaji: 'Kanada e meepuru shiroppu wo kai ni ikimasu.', vn: 'Tôi đi Canada để mua siro lá phong.',
+          furigana: [{ kanji: '買', reading: 'か', meaning: 'MÃI' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '彼はカナダ人です。', romaji: 'Kare wa Kanadajin desu.', vn: 'Anh ấy là người Canada.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'カナダには湖がたくさんあります。', romaji: 'Kanada ni wa mizuumi ga takusan arimasu.', vn: 'Ở Canada có rất nhiều hồ.',
+          furigana: [{ kanji: '湖', reading: 'みずうみ', meaning: 'HỒ' }]
+        }
+      ]
+    },
     {
       word: 'かんこく', kanji: '韓国', romaji: 'Kankoku', mean: 'Hàn Quốc',
       kanjiDetails: [
@@ -2281,13 +2803,129 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '韓国は近いです。', romaji: 'Kankoku wa chikai desu.', vn: 'Hàn Quốc thì gần.',
           furigana: [{ kanji: '韓国', reading: 'かんこく', meaning: 'HÀN QUỐC' }, { kanji: '近', reading: 'ちか', meaning: 'CẬN' }]
+        },
+        {
+          jp: '韓国のドラマは人気があります。', romaji: 'Kankoku no dorama wa ninki ga arimasu.', vn: 'Phim truyền hình Hàn Quốc rất được ưa chuộng.',
+          furigana: [{ kanji: '韓国', reading: 'かんこく', meaning: 'HÀN QUỐC' }, { kanji: '人気', reading: 'にんき', meaning: 'NHÂN KHÍ' }]
         }
       ]
     },
-    { word: 'サウジアラビア', kanji: '', romaji: 'Saujiarabia', mean: 'Ả-rập Xê-út' },
-    { word: 'シンガポール', kanji: '', romaji: 'Shingapooru', mean: 'Singapore' },
-    { word: 'スペイン', kanji: '', romaji: 'Supein', mean: 'Tây Ban Nha' },
-    { word: 'タイ', kanji: '', romaji: 'Tai', mean: 'Thái Lan' },
+    {
+      word: 'サウジアラビア', kanji: '', romaji: 'Saujiarabia', mean: 'Ả-rập Xê-út',
+      examples: [
+        {
+          jp: 'サウジアラビアから来ました。', romaji: 'Saujiarabia kara kimashita.', vn: 'Tôi đến từ Ả-rập Xê-út.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'サウジアラビアは暑いですか。', romaji: 'Saujiarabia wa atsui desu ka.', vn: 'Ả-rập Xê-út có nóng không?',
+          furigana: [{ kanji: '暑', reading: 'あつ', meaning: 'THỬ' }]
+        },
+        {
+          jp: '石油（せきゆ）はサウジアラビアにあります。', romaji: 'Sekiyu wa Saujiarabia ni arimasu.', vn: 'Dầu mỏ có ở Ả-rập Xê-út.',
+          furigana: [{ kanji: '石油', reading: 'せきゆ', meaning: 'THẠCH DU' }]
+        },
+        {
+          jp: '彼はサウジアラビア人です。', romaji: 'Kare wa Saujiarabiajin desu.', vn: 'Anh ấy là người Ả-rập Xê-út.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'サウジアラビアへ仕事に行きます。', romaji: 'Saujiarabia e shigoto ni ikimasu.', vn: 'Tôi đi Ả-rập Xê-út làm việc.',
+          furigana: [{ kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'サウジアラビアの砂漠（さばく）は広いです。', romaji: 'Saujiarabia no sabaku wa hiroi desu.', vn: 'Sa mạc ở Ả-rập Xê-út rất rộng.',
+          furigana: [{ kanji: '砂漠', reading: 'さばく', meaning: 'SA MẠC' }, { kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }]
+        }
+      ]
+    },
+    {
+      word: 'シンガポール', kanji: '', romaji: 'Shingapooru', mean: 'Singapore',
+      examples: [
+        {
+          jp: 'シンガポールから来ました。', romaji: 'Shingapooru kara kimashita.', vn: 'Tôi đến từ Singapore.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'シンガポールはきれいな町です。', romaji: 'Shingapooru wa kirei na machi desu.', vn: 'Singapore là một thành phố đẹp.',
+          furigana: [{ kanji: '町', reading: 'まち', meaning: 'ĐINH' }]
+        },
+        {
+          jp: 'シンガポールの料理を食べます。', romaji: 'Shingapooru no ryouri wo tabemasu.', vn: 'Tôi ăn món ăn Singapore.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
+        },
+        {
+          jp: 'シンガポールへ旅行に行きます。', romaji: 'Shingapooru e ryokou ni ikimasu.', vn: 'Tôi đi du lịch Singapore.',
+          furigana: [{ kanji: '旅行', reading: 'りょこう', meaning: 'LỮ HÀNH' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '彼はシンガポール人ですか。', romaji: 'Kare wa Shingapoorujin desu ka.', vn: 'Anh ấy có phải người Singapore không?',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'シンガポールは暑い国です。', romaji: 'Shingapooru wa atsui kuni desu.', vn: 'Singapore là một đất nước nóng.',
+          furigana: [{ kanji: '暑', reading: 'あつ', meaning: 'THỬ' }, { kanji: '国', reading: 'くに', meaning: 'QUỐC' }]
+        }
+      ]
+    },
+    {
+      word: 'スペイン', kanji: '', romaji: 'Supein', mean: 'Tây Ban Nha',
+      examples: [
+        {
+          jp: 'スペインから来ました。', romaji: 'Supein kara kimashita.', vn: 'Tôi đến từ Tây Ban Nha.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'スペインの料理はパエリアです。', romaji: 'Supein no ryouri wa paeria desu.', vn: 'Món ăn của Tây Ban Nha là Paella.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }]
+        },
+        {
+          jp: 'スペインでサッカーを見ます。', romaji: 'Supein de sakkaa wo mimasu.', vn: 'Xem bóng đá ở Tây Ban Nha.',
+          furigana: [{ kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: 'スペインの町は賑やかです。', romaji: 'Supein no machi wa nigiyaka desu.', vn: 'Thành phố ở Tây Ban Nha rất nhộn nhịp.',
+          furigana: [{ kanji: '町', reading: 'まち', meaning: 'ĐINH' }, { kanji: '賑', reading: 'にぎ', meaning: 'CHẨN' }]
+        },
+        {
+          jp: '彼はスペイン人です。', romaji: 'Kare wa Supeinjin desu.', vn: 'Anh ấy là người Tây Ban Nha.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'スペインへ行きたいですね。', romaji: 'Supein e ikitai desu ne.', vn: 'Tôi muốn đi Tây Ban Nha quá.',
+          furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        }
+      ]
+    },
+    {
+      word: 'タイ', kanji: '', romaji: 'Tai', mean: 'Thái Lan',
+      examples: [
+        {
+          jp: 'タイから来ました。', romaji: 'Tai kara kimashita.', vn: 'Tôi đến từ Thái Lan.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'タイは暑いですか。', romaji: 'Tai wa atsui desu ka.', vn: 'Thái Lan có nóng không?',
+          furigana: [{ kanji: '暑', reading: 'あつ', meaning: 'THỬ' }]
+        },
+        {
+          jp: 'タイの料理はおいしいです。', romaji: 'Tai no ryouri wa oishii desu.', vn: 'Món ăn Thái rất ngon.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }]
+        },
+        {
+          jp: '田中さんはタイへ行きました。', romaji: 'Tanaka-san wa Tai e ikimashita.', vn: 'Anh Tanaka đã đi Thái Lan.',
+          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '彼はタイ人ですか。', romaji: 'Kare wa Taijin desu ka.', vn: 'Anh ấy có phải người Thái không?',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'タイで仕事をします。', romaji: 'Tai de shigoto wo shimasu.', vn: 'Tôi làm việc ở Thái Lan.',
+          furigana: [{ kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }]
+        }
+      ]
+    },
     {
       word: 'ちゅうごく', kanji: '中国', romaji: 'Chuugoku', mean: 'Trung Quốc',
       kanjiDetails: [
@@ -2360,10 +2998,42 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '中国の歴史が好きです。', romaji: 'Chuugoku no rekishi ga suki desu.', vn: 'Tôi thích lịch sử Trung Quốc.',
           furigana: [{ kanji: '中国', reading: 'ちゅうごく', meaning: 'TRUNG QUỐC' }, { kanji: '歴史', reading: 'れきし', meaning: 'LỊCH SỬ' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        },
+        {
+          jp: '中国へパンダを見に行きたいです。', romaji: 'Chuugoku e panda wo mi ni ikitai desu.', vn: 'Tôi muốn đi Trung Quốc để xem gấu trúc.',
+          furigana: [{ kanji: '中国', reading: 'ちゅうごく', meaning: 'TRUNG QUỐC' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
         }
       ]
     },
-    { word: 'ドイツ', kanji: '', romaji: 'Doitsu', mean: 'Đức' },
+    {
+      word: 'ドイツ', kanji: '', romaji: 'Doitsu', mean: 'Đức',
+      examples: [
+        {
+          jp: 'ドイツから来ました。', romaji: 'Doitsu kara kimashita.', vn: 'Tôi đến từ Đức.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'ドイツのビールは有名です。', romaji: 'Doitsu no biiru wa yuumei desu.', vn: 'Bia Đức rất nổi tiếng.',
+          furigana: [{ kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
+        },
+        {
+          jp: 'ドイツで車を造っています。', romaji: 'Doitsu de kuruma wo tsukutte imasu.', vn: 'Người ta đang chế tạo xe hơi ở Đức.',
+          furigana: [{ kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '造', reading: 'つく', meaning: 'TẠO' }]
+        },
+        {
+          jp: 'ドイツの歴史を学びました。', romaji: 'Doitsu no rekishi wo manabimashita.', vn: 'Tôi đã học lịch sử của Đức.',
+          furigana: [{ kanji: '歴史', reading: 'れきし', meaning: 'LỊCH SỬ' }, { kanji: '学', reading: 'まな', meaning: 'HỌC' }]
+        },
+        {
+          jp: '彼はドイツ人ですか。', romaji: 'Kare wa Doitsujin desu ka.', vn: 'Anh ấy có phải người Đức không?',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'ドイツへ旅行に行きたいです。', romaji: 'Doitsu e ryokou ni ikitai desu.', vn: 'Tôi muốn đi du lịch Đức.',
+          furigana: [{ kanji: '旅行', reading: 'りょこう', meaning: 'LỮ HÀNH' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        }
+      ]
+    },
     {
       word: 'にほん', kanji: '日本', romaji: 'Nihon', mean: 'Nhật Bản',
       kanjiDetails: [
@@ -2457,47 +3127,945 @@ export const lesson1Data: LessonDetail = {
         },
         {
           jp: '日本の文化に興味があります。', romaji: 'Nihon no bunka ni kyoumi ga arimasu.', vn: 'Tôi có hứng thú với văn hóa Nhật Bản.',
-          furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '文化', reading: 'ぶんか', meaning: 'VĂN HÓA' }, { kanji: '興味', reading: 'きょうmi', meaning: 'HỨNG VỊ' }]
+          furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '文化', reading: 'ぶんか', meaning: 'VĂN HÓA' }, { kanji: '興味', reading: 'きょうみ', meaning: 'HỨNG VỊ' }]
+        },
+        {
+          jp: '日本へ旅行に行きます。', romaji: 'Nihon e ryokou ni ikimasu.', vn: 'Tôi đi du lịch Nhật Bản.',
+          furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '旅行', reading: 'りょこう', meaning: 'LỮ HÀNH' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
         }
       ]
     },
-    { word: 'フランス', kanji: '', romaji: 'Furansu', mean: 'Pháp' },
-    { word: 'フィリピン', kanji: '', romaji: 'Firipin', mean: 'Philippines' },
-    { word: 'ブラジル', kanji: '', romaji: 'Burajiru', mean: 'Brazil' },
-    { word: 'ベトナム', kanji: '', romaji: 'Betonamu', mean: 'Việt Nam' },
-    { word: 'マレーシア', kanji: '', romaji: 'Mareeshia', mean: 'Malaysia' },
-    { word: 'メキシコ', kanji: '', romaji: 'Mekishiko', mean: 'Mexico' },
-    { word: 'ロシア', kanji: '', romaji: 'Roshia', mean: 'Nga' },
+    {
+      word: 'フランス', kanji: '', romaji: 'Furansu', mean: 'Pháp',
+      examples: [
+        {
+          jp: 'フランスから来ました。', romaji: 'Furansu kara kimashita.', vn: 'Tôi đến từ Pháp.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'フランスのワインはおいしい。', romaji: 'Furansu no wain wa oishii.', vn: 'Rượu vang Pháp rất ngon.',
+          furigana: []
+        },
+        {
+          jp: 'フランスは芸術（げいじゅつ）の国です。', romaji: 'Furansu wa geijutsu no kuni desu.', vn: 'Pháp là đất nước của nghệ thuật.',
+          furigana: [{ kanji: '芸術', reading: 'げいじゅつ', meaning: 'NGHỆ THUẬT' }, { kanji: '国', reading: 'くに', meaning: 'QUỐC' }]
+        },
+        {
+          jp: 'パリはフランスの首都です。', romaji: 'Pari wa Furansu no shuto desu.', vn: 'Paris là thủ đô của Pháp.',
+          furigana: [{ kanji: '首都', reading: 'しゅと', meaning: 'THỦ ĐÔ' }]
+        },
+        {
+          jp: '彼はフランス人です。', romaji: 'Kare wa Furansujin desu.', vn: 'Anh ấy là người Pháp.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'フランスへ行ってみたいです。', romaji: 'Furansu e itte mitai desu.', vn: 'Tôi muốn thử đi Pháp.',
+          furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        }
+      ]
+    },
+    {
+      word: 'フィリピン', kanji: '', romaji: 'Firipin', mean: 'Philippines',
+      examples: [
+        {
+          jp: 'フィリピンから来ました。', romaji: 'Firipin kara kimashita.', vn: 'Tôi đến từ Philippines.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'フィリピンは島がたくさんあります。', romaji: 'Firipin wa shima ga takusan arimasu.', vn: 'Philippines có nhiều đảo.',
+          furigana: [{ kanji: '島', reading: 'しま', meaning: 'ĐẢO' }]
+        },
+        {
+          jp: 'フィリピンのマンゴーは有名です。', romaji: 'Firipin no mangoo wa yuumei desu.', vn: 'Xoài của Philippines rất nổi tiếng.',
+          furigana: [{ kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
+        },
+        {
+          jp: '彼はフィリピン人ですか。', romaji: 'Kare wa Firipinjin desu ka.', vn: 'Anh ấy có phải người Philippines không?',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'フィリピンへダイビングに行きます。', romaji: 'Firipin e daibingu ni ikimasu.', vn: 'Tôi đi Philippines để lặn biển.',
+          furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'フィリピンの海はきれいです。', romaji: 'Firipin no umi wa kirei desu.', vn: 'Biển của Philippines rất đẹp.',
+          furigana: [{ kanji: '海', reading: 'うみ', meaning: 'HÀI' }]
+        }
+      ]
+    },
+    {
+      word: 'ブラジル', kanji: '', romaji: 'Burajiru', mean: 'Brazil',
+      examples: [
+        {
+          jp: 'ブラジルから来ました。', romaji: 'Burajiru kara kimashita.', vn: 'Tôi đến từ Brazil.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'ブラジルは南米にあります。', romaji: 'Burajiru wa nanbei ni arimasu.', vn: 'Brazil nằm ở Nam Mỹ.',
+          furigana: [{ kanji: '南米', reading: 'なんべい', meaning: 'NAM MỄ' }]
+        },
+        {
+          jp: 'ブラジルのサッカーは凄いです。', romaji: 'Burajiru no sakkaa wa sugoi desu.', vn: 'Bóng đá của Brazil rất tuyệt vời.',
+          furigana: [{ kanji: '凄', reading: 'すご', meaning: 'THÊ' }]
+        },
+        {
+          jp: '彼はブラジル人です。', romaji: 'Kare wa Burajirujin desu.', vn: 'Anh ấy là người Brazil.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'ブラジルへコーヒーを買いに行きます。', romaji: 'Burajiru e koohii wo kai ni ikimasu.', vn: 'Tôi đi Brazil để mua cà phê.',
+          furigana: [{ kanji: '買', reading: 'か', meaning: 'MÃI' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'ブラジルの踊り（おどり）を知っていますか。', romaji: 'Burajiru no odori wo shitte imasu ka.', vn: 'Bạn có biết điệu nhảy của Brazil không?',
+          furigana: [{ kanji: '踊', reading: 'おど', meaning: 'DŨNG' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        }
+      ]
+    },
+    {
+      word: 'ベトナム', kanji: '', romaji: 'Betonamu', mean: 'Việt Nam',
+      examples: [
+        {
+          jp: 'ベトナムから来ました。', romaji: 'Betonamu kara kimashita.', vn: 'Tôi đến từ Việt Nam.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'ベトナムは暑い国です。', romaji: 'Betonamu wa atsui kuni desu.', vn: 'Việt Nam là một đất nước nóng.',
+          furigana: [{ kanji: '暑', reading: 'あつ', meaning: 'THỬ' }, { kanji: '国', reading: 'くに', meaning: 'QUỐC' }]
+        },
+        {
+          jp: 'ベトナム料理はヘルシーです。', romaji: 'Betonamu ryouri wa herushii desu.', vn: 'Món ăn Việt Nam rất tốt cho sức khỏe.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }]
+        },
+        {
+          jp: 'いつベトナムへ帰りますか。', romaji: 'Itsu Betonamu e kaerimasu ka.', vn: 'Khi nào bạn trở về Việt Nam?',
+          furigana: [{ kanji: '帰', reading: 'かえ', meaning: 'QUY' }]
+        },
+        {
+          jp: 'ベトナムのコーヒーが好きです。', romaji: 'Betonamu no koohii ga suki desu.', vn: 'Tôi thích cà phê Việt Nam.',
+          furigana: [{ kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        },
+        {
+          jp: 'ベトナムは景色が美しいです。', romaji: 'Betonamu wa keshiki ga utsukushii desu.', vn: 'Cảnh sắc Việt Nam rất đẹp.',
+          furigana: [{ kanji: '景色', reading: 'けしき', meaning: 'CẢNH SẮC' }, { kanji: '美', reading: 'うつく', meaning: 'MỸ' }]
+        }
+      ]
+    },
+    {
+      word: 'マレーシア', kanji: '', romaji: 'Mareeshia', mean: 'Malaysia',
+      examples: [
+        {
+          jp: 'マレーシアから来ました。', romaji: 'Mareeshia kara kimashita.', vn: 'Tôi đến từ Malaysia.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'マレーシアはクアラルンプールが首都です。', romaji: 'Mareeshia wa Kuararunpuuru ga shuto desu.', vn: 'Kuala Lumpur là thủ đô của Malaysia.',
+          furigana: [{ kanji: '首都', reading: 'しゅと', meaning: 'THỦ ĐÔ' }]
+        },
+        {
+          jp: '彼はマレーシア人ですか。', romaji: 'Kare wa Mareeshiajin desu ka.', vn: 'Anh ấy có phải người Malaysia không?',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'マレーシアの果物はおいしいです。', romaji: 'Mareeshia no kudamono wa oishii desu.', vn: 'Trái cây của Malaysia rất ngon.',
+          furigana: [{ kanji: '果物', reading: 'くだもの', meaning: 'QUẢ VẬT' }]
+        },
+        {
+          jp: 'マレーシアへ出張（しゅっちょう）します。', romaji: 'Mareeshia e shucchou shimasu.', vn: 'Tôi đi công tác ở Malaysia.',
+          furigana: [{ kanji: '出張', reading: 'しゅっちょう', meaning: 'XUẤT TRƯƠNG' }]
+        },
+        {
+          jp: 'マレーシアの海できれいです。', romaji: 'Mareeshia no umi de kirei desu.', vn: 'Biển ở Malaysia rất đẹp.',
+          furigana: [{ kanji: '海', reading: 'うみ', meaning: 'HÀI' }]
+        }
+      ]
+    },
+    {
+      word: 'メキシコ', kanji: '', romaji: 'Mekishiko', mean: 'Mexico',
+      examples: [
+        {
+          jp: 'メキシコから来ました。', romaji: 'Mekishiko kara kimashita.', vn: 'Tôi đến từ Mexico.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'メキシコはタコスが有名です。', romaji: 'Mekishiko wa takosu ga yuumei desu.', vn: 'Mexico nổi tiếng với món tacos.',
+          furigana: [{ kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
+        },
+        {
+          jp: '彼はメキシコ人です。', romaji: 'Kare wa Mekishikojin desu.', vn: 'Anh ấy là người Mexico.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'メキシコの音楽が好きです。', romaji: 'Mekishiko no ongaku ga suki desu.', vn: 'Tôi thích âm nhạc của Mexico.',
+          furigana: [{ kanji: '音楽', reading: 'おんがく', meaning: 'ÂM NHẠC' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        },
+        {
+          jp: 'メキシコへ旅行に行きたいです。', romaji: 'Mekishiko e ryokou ni ikitai desu.', vn: 'Tôi muốn đi du lịch Mexico.',
+          furigana: [{ kanji: '旅行', reading: 'りょこう', meaning: 'LỮ HÀNH' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'メキシコは暑い国ですね。', romaji: 'Mekishiko wa atsui kuni desu ne.', vn: 'Mexico là một đất nước nóng nhỉ.',
+          furigana: [{ kanji: '暑', reading: 'あつ', meaning: 'THỬ' }, { kanji: '国', reading: 'くに', meaning: 'QUỐC' }]
+        }
+      ]
+    },
+    {
+      word: 'ロシア', kanji: '', romaji: 'Roshia', mean: 'Nga',
+      examples: [
+        {
+          jp: 'ロシアから来ました。', romaji: 'Roshia kara kimashita.', vn: 'Tôi đến từ Nga.',
+          furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: 'ロシアは北にあります。', romaji: 'Roshia wa kita ni arimasu.', vn: 'Nước Nga nằm ở phía Bắc.',
+          furigana: [{ kanji: '北', reading: 'きた', meaning: 'BẮC' }]
+        },
+        {
+          jp: '彼はロシア人ですか。', romaji: 'Kare wa Roshiajin desu ka.', vn: 'Anh ấy có phải người Nga không?',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'ロシアの冬はとても寒いです。', romaji: 'Roshia no fuyu wa totemo samui desu.', vn: 'Mùa đông ở Nga rất lạnh.',
+          furigana: [{ kanji: '冬', reading: 'ふゆ', meaning: 'ĐÔNG' }, { kanji: '寒', reading: 'さむ', meaning: 'HÀN' }]
+        },
+        {
+          jp: 'ロシアの料理を食べたいです。', romaji: 'Roshia no ryouri wo tabetai desu.', vn: 'Tôi muốn ăn món ăn Nga.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
+        },
+        {
+          jp: 'ロシアへ出張に行きます。', romaji: 'Roshia e shucchou ni ikimasu.', vn: 'Tôi đi công tác ở Nga.',
+          furigana: [{ kanji: '出張', reading: 'しゅっちょう', meaning: 'XUẤT TRƯƠNG' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        }
+      ]
+    },
 
     // Người (quốc tịch)
-    { word: 'アメリカじん', kanji: 'アメリカ人', romaji: 'Amerikajin', mean: 'Người Mỹ' },
-    { word: 'イギリスじん', kanji: 'イギリス人', romaji: 'Igirisujin', mean: 'Người Anh' },
-    { word: 'イタリアじん', kanji: 'イタリア人', romaji: 'Itariajin', mean: 'Người Ý' },
-    { word: 'イランじん', kanji: 'イラン人', romaji: 'Iranjin', mean: 'Người Iran' },
-    { word: 'インドじん', kanji: 'インド人', romaji: 'Indojin', mean: 'Người Ấn Độ' },
-    { word: 'インドネシアじん', kanji: 'インドネシア人', romaji: 'Indoneshiajin', mean: 'Người Indonesia' },
-    { word: 'エジプトじん', kanji: 'エジプト人', romaji: 'Ejiputojin', mean: 'Người Ai Cập' },
-    { word: 'オーストラリアじん', kanji: 'オーストラリア人', romaji: 'Oosutoraraiajin', mean: 'Người Úc' },
-    { word: 'カナダじん', kanji: 'カナダ人', romaji: 'Kanadajin', mean: 'Người Canada' },
-    { word: 'かんこくじん', kanji: '韓国人', romaji: 'Kankokujin', mean: 'Người Hàn Quốc' },
-    { word: 'サウジアラビアじん', kanji: 'サウジアラビア人', romaji: 'Saujiarabiajin', mean: 'Người Ả-rập Xê-út' },
-    { word: 'シンガポールじん', kanji: 'シンガポール人', romaji: 'Shingapoorujin', mean: 'Người Singapore' },
-    { word: 'スペインじん', kanji: 'スペイン人', romaji: 'Supeinjin', mean: 'Người Tây Ban Nha' },
-    { word: 'タイじん', kanji: 'タイ人', romaji: 'Taijin', mean: 'Người Thái Lan' },
-    { word: 'ちゅうごくじん', kanji: '中国人', romaji: 'Chuugokujin', mean: 'Người Trung Quốc' },
-    { word: 'ドイツじん', kanji: 'ドイツ人', romaji: 'Doitsujin', mean: 'Người Đức' },
-    { word: 'にほんじん', kanji: '日本人', romaji: 'Nihonjin', mean: 'Người Nhật' },
-    { word: 'フランスじん', kanji: 'フランス人', romaji: 'Furansujin', mean: 'Người Pháp' },
-    { word: 'フィリピンじん', kanji: 'フィリピン人', romaji: 'Firipinjin', mean: 'Người Philippines' },
-    { word: 'ブラジルじん', kanji: 'ブラジル人', romaji: 'Burajirujin', mean: 'Người Brazil' },
-    { word: 'ベトナムじん', kanji: 'ベトナム人', romaji: 'Betonamujin', mean: 'Người Việt Nam' },
-    { word: 'マレーシアじん', kanji: 'マレーシア人', romaji: 'Mareeshiajin', mean: 'Người Malaysia' },
-    { word: 'メキシコじん', kanji: 'メキシコ人', romaji: 'Mekishikojin', mean: 'Người Mexico' },
-    { word: 'ロシアじん', kanji: 'ロシア人', romaji: 'Roshiagin', mean: 'Người Nga' },
+    {
+      word: 'アメリカじん', kanji: 'アメリカ人', romaji: 'Amerikajin', mean: 'Người Mỹ',
+      examples: [
+        {
+          jp: '彼はアメリカ人です。', romaji: 'Kare wa Amerikajin desu.', vn: 'Anh ấy là người Mỹ.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'アメリカ人の友達がいます。', romaji: 'Amerikajin no tomodachi ga imasu.', vn: 'Tôi có bạn là người Mỹ.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }]
+        },
+        {
+          jp: '彼女はアメリカ人じゃありません。', romaji: 'Kanojo wa Amerikajin ja arimasen.', vn: 'Cô ấy không phải người Mỹ.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あの方はアメリカ人ですか。', romaji: 'Ano kata wa Amerikajin desu ka.', vn: 'Vị kia là người Mỹ phải không?',
+          furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: '多くのアメリカ人が日本にいます。', romaji: 'Ooku no Amerikajin ga Nihon ni imasu.', vn: 'Nhiều người Mỹ đang ở Nhật Bản.',
+          furigana: [{ kanji: '多', reading: 'おお', meaning: 'ĐA' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }]
+        },
+        {
+          jp: 'アメリカ人と英語で話します。', romaji: 'Amerikajin to eigo de hanashimasu.', vn: 'Nói chuyện với người Mỹ bằng tiếng Anh.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'イギリスじん', kanji: 'イギリス人', romaji: 'Igirisujin', mean: 'Người Anh',
+      examples: [
+        {
+          jp: '彼女はイギリス人です。', romaji: 'Kanojo wa Igirisujin desu.', vn: 'Cô ấy là người Anh.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'イギリス人の先生に習います。', romaji: 'Igirisujin no sensei ni naraimasu.', vn: 'Học từ giáo viên người Anh.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        },
+        {
+          jp: '彼はイギリス人じゃありません。', romaji: 'Kare wa Igirisujin ja arimasen.', vn: 'Anh ấy không phải người Anh.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'イギリス人と結婚（けっこう）しました。', romaji: 'Igirisujin to kekkon shimashita.', vn: 'Tôi đã kết hôn với người Anh.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '結婚', reading: 'けっこん', meaning: 'KẾT HÔN' }]
+        },
+        {
+          jp: 'あのイギリス人は親切です。', romaji: 'Ano Igirisujin wa shinsetsu desu.', vn: 'Người Anh kia rất thân thiện.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: 'イギリス人の友達を作りたいです。', romaji: 'Igirisujin no tomodachi wo tsukuritai desu.', vn: 'Tôi muốn kết bạn với người Anh.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }]
+        }
+      ]
+    },
+    {
+      word: 'イタリアじん', kanji: 'イタリア人', romaji: 'Itariajin', mean: 'Người Ý',
+      examples: [
+        {
+          jp: '彼はイタリア人です。', romaji: 'Kare wa Itariajin desu.', vn: 'Anh ấy là người Ý.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'イタリア人の友達がいます。', romaji: 'Itariajin no tomodachi ga imasu.', vn: 'Tôi có bạn là người Ý.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }]
+        },
+        {
+          jp: 'イタリア人とピザを食べます。', romaji: 'Itariajin to piza wo tabemasu.', vn: 'Ăn pizza cùng người Ý.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
+        },
+        {
+          jp: '彼女はイタリア人ですか。', romaji: 'Kanojo wa Itariajin desu ka.', vn: 'Cô ấy là người Ý phải không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのイタリア人は親切です。', romaji: 'Ano Itariajin wa shinsetsu desu.', vn: 'Người Ý đó rất thân thiện.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: 'イタリア人とイタリア語で話します。', romaji: 'Itariajin to Itariago de hanashimasu.', vn: 'Nói chuyện với người Ý bằng tiếng Ý.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'イランじん', kanji: 'イラン人', romaji: 'Iranjin', mean: 'Người Iran',
+      examples: [
+        {
+          jp: '彼はイラン人です。', romaji: 'Kare wa Iranjin desu.', vn: 'Anh ấy là người Iran.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'イラン人の友達を招待（しょうたい）します。', romaji: 'Iranjin no tomodachi wo shoutai shimasu.', vn: 'Mời một người bạn người Iran.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '招待', reading: 'しょうたい', meaning: 'CHIÊU ĐÃI' }]
+        },
+        {
+          jp: 'イラン人と伝統（でんとう）料理を食べます。', romaji: 'Iranjin to dentou ryouri wo tabemasu.', vn: 'Ăn món ăn truyền thống cùng người Iran.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '伝統', reading: 'でんとう', meaning: 'TRUYỀN THỐNG' }, { kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
+        },
+        {
+          jp: '彼女はイラン人じゃありません。', romaji: 'Kanojo wa Iranjin ja arimasen.', vn: 'Cô ấy không phải người Iran.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのイラン人は優しいです。', romaji: 'Ano Iranjin wa yasashii desu.', vn: 'Người Iran đó rất hiền.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '優', reading: 'やさ', meaning: 'ƯU' }]
+        },
+        {
+          jp: 'イラン人とペルシャ語で話します。', romaji: 'Iranjin to perushago de hanashimasu.', vn: 'Nói chuyện với người Iran bằng tiếng Ba Tư.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'インドじん', kanji: 'インド人', romaji: 'Indojin', mean: 'Người Ấn Độ',
+      examples: [
+        {
+          jp: '彼はインド人です。', romaji: 'Kare wa Indojin desu.', vn: 'Anh ấy là người Ấn Độ.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'インド人の料理は辛（から）いです。', romaji: 'Indojin no ryouri wa karai desu.', vn: 'Món ăn của người Ấn Độ rất cay.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }, { kanji: '辛', reading: 'から', meaning: 'TÂN' }]
+        },
+        {
+          jp: 'インド人と一緒に働きます。', romaji: 'Indojin to issho ni hatarakimasu.', vn: 'Làm việc cùng với người Ấn Độ.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }]
+        },
+        {
+          jp: '彼女はインド人ですか。', romaji: 'Kanojo wa Indojin desu ka.', vn: 'Cô ấy là người Ấn Độ phải không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'インド人の友達を紹介（しょうかい）します。', romaji: 'Indojin no tomodachi wo shoukai shimasu.', vn: 'Giới thiệu một người bạn Ấn Độ.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '紹介', reading: 'しょうかい', meaning: 'THIỆU GIỚI' }]
+        },
+        {
+          jp: '多くのインド人がIT業界（ぎょうかい）にいます。', romaji: 'Ooku no Indojin ga IT gyoukai ni imasu.', vn: 'Nhiều người Ấn Độ làm trong ngành IT.',
+          furigana: [{ kanji: '多', reading: 'おお', meaning: 'ĐA' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '業界', reading: 'ぎょうかい', meaning: 'NGHIỆP GIỚI' }]
+        }
+      ]
+    },
+    {
+      word: 'インドネシアじん', kanji: 'インドネシア人', romaji: 'Indoneshiajin', mean: 'Người Indonesia',
+      examples: [
+        {
+          jp: '彼はインドネシア人です。', romaji: 'Kare wa Indoneshiajin desu.', vn: 'Anh ấy là người Indonesia.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'インドネシア人の友達がいます。', romaji: 'Indoneshiajin no tomodachi ga imasu.', vn: 'Tôi có bạn là người Indonesia.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }]
+        },
+        {
+          jp: 'インドネシア人と話をします。', romaji: 'Indoneshiajin to hanashi wo shimasu.', vn: 'Nói chuyện với người Indonesia.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: '彼女はインドネシア人ですか。', romaji: 'Kanojo wa Indoneshiajin desu ka.', vn: 'Cô ấy có phải người Indonesia không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのインドネシア人は明るいです。', romaji: 'Ano Indoneshiajin wa akarui desu.', vn: 'Người Indonesia đó rất vui vẻ.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '明', reading: 'あか', meaning: 'MINH' }]
+        },
+        {
+          jp: 'インドネシア人と協力（きょうりょく）します。', romaji: 'Indoneshiajin to kyouryoku shimasu.', vn: 'Hợp tác với người Indonesia.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '協力', reading: 'きょうりょく', meaning: 'HIỆP LỰC' }]
+        }
+      ]
+    },
+    {
+      word: 'エジプトじん', kanji: 'エジプト人', romaji: 'Ejiputojin', mean: 'Người Ai Cập',
+      examples: [
+        {
+          jp: '彼はエジプト人です。', romaji: 'Kare wa Ejiputojin desu.', vn: 'Anh ấy là người Ai Cập.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'エジプト人の友達がいます。', romaji: 'Ejiputojin no tomodachi ga imasu.', vn: 'Tôi có bạn là người Ai Cập.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }]
+        },
+        {
+          jp: 'エジプト人とアラビア語で話します。', romaji: 'Ejiputojin to arabiago de hanashimasu.', vn: 'Nói chuyện với người Ai Cập bằng tiếng Ả Rập.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: '彼女はエジプト人ですか。', romaji: 'Kanojo wa Ejiputojin desu ka.', vn: 'Cô ấy có phải người Ai Cập không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのエジプト人は背（せ）が高いです。', romaji: 'Ano Ejiputojin wa se ga takai desu.', vn: 'Người Ai Cập đó rất cao.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '背', reading: 'せ', meaning: 'BỐI' }, { kanji: '高', reading: 'たか', meaning: 'CAO' }]
+        },
+        {
+          jp: 'エジプト人と一緒に仕事をします。', romaji: 'Ejiputojin to issho ni shigoto wo shimasu.', vn: 'Làm việc cùng người Ai Cập.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }]
+        }
+      ]
+    },
+    {
+      word: 'オーストラリアじん', kanji: 'オーストラリア人', romaji: 'Oosutoraraiajin', mean: 'Người Úc',
+      examples: [
+        {
+          jp: '彼はオーストラリア人です。', romaji: 'Kare wa Oosutorariajin desu.', vn: 'Anh ấy là người Úc.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'オーストラリア人の友達が多いです。', romaji: 'Oosutorariajin no tomodachi ga oi desu.', vn: 'Tôi có nhiều bạn là người Úc.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '多', reading: 'おお', meaning: 'ĐA' }]
+        },
+        {
+          jp: 'オーストラリア人と英語で話します。', romaji: 'Oosutorariajin to eigo de hanashimasu.', vn: 'Nói chuyện với người Úc bằng tiếng Anh.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: '彼女はオーストラリア人じゃありません。', romaji: 'Kanojo wa Oosutorariajin ja arimasen.', vn: 'Cô ấy không phải người Úc.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのオーストラリア人は親切です。', romaji: 'Ano Oosutorariajin wa shinsetsu desu.', vn: 'Người Úc đó rất thân thiện.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: 'オーストラリア人と一緒に泳ぎます。', romaji: 'Oosutorariajin to issho ni oyogimasu.', vn: 'Đi bơi cùng người Úc.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '泳', reading: 'およ', meaning: 'VỊNH' }]
+        }
+      ]
+    },
+    {
+      word: 'カナダじん', kanji: 'カナダ人', romaji: 'Kanadajin', mean: 'Người Canada',
+      examples: [
+        {
+          jp: '彼はカナダ人です。', romaji: 'Kare wa Kanadajin desu.', vn: 'Anh ấy là người Canada.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'カナダ人の知り合いを訪ねます。', romaji: 'Kanadajin no shiriai wo tazunemasu.', vn: 'Đến thăm người quen là người Canada.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '知', reading: 'し', meaning: 'TRI' }, { kanji: '訪', reading: 'たず', meaning: 'PHỎNG' }]
+        },
+        {
+          jp: 'カナダ人と一緒にスキーをします。', romaji: 'Kanadajin to issho ni sukii wo shimasu.', vn: 'Đi trượt tuyết cùng người Canada.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }]
+        },
+        {
+          jp: '彼女はカナダ人ですか。', romaji: 'Kanojo wa Kanadajin desu ka.', vn: 'Cô ấy là người Canada phải không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのカナダ人は明るいです。', romaji: 'Ano Kanadajin wa akarui desu.', vn: 'Người Canada đó rất vui vẻ.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '明', reading: 'あか', meaning: 'MINH' }]
+        },
+        {
+          jp: 'カナダ人と英語で話をします。', romaji: 'Kanadajin to eigo de hanashi wo shimasu.', vn: 'Nói chuyện với người Canada bằng tiếng Anh.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'かんこくじん', kanji: '韓国人', romaji: 'Kankokujin', mean: 'Người Hàn Quốc',
+      examples: [
+        {
+          jp: '彼は韓国人です。', romaji: 'Kare wa Kankokujin desu.', vn: 'Anh ấy là người Hàn Quốc.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '韓国人', reading: 'かんこくじん', meaning: 'HÀN QUỐC NHÂN' }]
+        },
+        {
+          jp: '韓国人の友達が多いです。', romaji: 'Kankokujin no tomodachi ga oi desu.', vn: 'Tôi có nhiều bạn người Hàn Quốc.',
+          furigana: [{ kanji: '韓国人', reading: 'かんこくじん', meaning: 'HÀN QUỐC NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '多', reading: 'おお', meaning: 'ĐA' }]
+        },
+        {
+          jp: '彼女は韓国人じゃありません。', romaji: 'Kanojo wa Kankokujin ja arimasen.', vn: 'Cô ấy không phải người Hàn Quốc.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '韓国人', reading: 'かんこくじん', meaning: 'HÀN QUỐC NHÂN' }]
+        },
+        {
+          jp: 'あの韓国人は俳優（はいゆう）ですか。', romaji: 'Ano Kankokujin wa haiyuu desu ka.', vn: 'Người Hàn Quốc kia là diễn viên phải không?',
+          furigana: [{ kanji: '韓国人', reading: 'かんこくじん', meaning: 'HÀN QUỐC NHÂN' }, { kanji: '俳優', reading: 'はいゆう', meaning: 'BÀI ƯU' }]
+        },
+        {
+          jp: '韓国人と日本語で話します。', romaji: 'Kankokujin to Nihongo de hanashimasu.', vn: 'Nói chuyện với người Hàn Quốc bằng tiếng Nhật.',
+          furigana: [{ kanji: '韓国人', reading: 'かんこくじん', meaning: 'HÀN QUỐC NHÂN' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: '韓国人と一緒にご飯を食べます。', romaji: 'Kankokujin to issho ni gohan wo tabemasu.', vn: 'Ăn cơm cùng với người Hàn Quốc.',
+          furigana: [{ kanji: '韓国人', reading: 'かんこくじん', meaning: 'HÀN QUỐC NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '飯', reading: 'はん', meaning: 'PHẠN' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
+        }
+      ]
+    },
+    {
+      word: 'サウジアラビアじん', kanji: 'サウジアラビア人', romaji: 'Saujiarabiajin', mean: 'Người Ả-rập Xê-út',
+      examples: [
+        {
+          jp: '彼はサウジアラビア人です。', romaji: 'Kare wa Saujiarabiajin desu.', vn: 'Anh ấy là người Ả-rập Xê-út.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'サウジアラビア人の友達を訪ねます。', romaji: 'Saujiarabiajin no tomodachi wo tazunemasu.', vn: 'Đến thăm người bạn Ả-rập Xê-út.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '訪', reading: 'たず', meaning: 'PHỎNG' }]
+        },
+        {
+          jp: 'サウジアラビア人と一緒に働きます。', romaji: 'Saujiarabiajin to issho ni hatarakimasu.', vn: 'Làm việc cùng người Ả-rập Xê-út.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }]
+        },
+        {
+          jp: '彼女はサウジアラビア人ですか。', romaji: 'Kanojo wa Saujiarabiajin desu ka.', vn: 'Cô ấy có phải người Ả-rập Xê-út không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのサウジアラビア人はとても親切です。', romaji: 'Ano Saujiarabiajin wa totemo shinsetsu desu.', vn: 'Người Ả-rập Xê-út đó rất thân thiện.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: 'サウジアラビア人と秘密を共有（きょうゆう）します。', romaji: 'Saujiarabiajin to himitsu wo kyouyuu shimasu.', vn: 'Chia sẻ bí mật với người Ả-rập Xê-út.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '秘密', reading: 'ひみつ', meaning: 'BÍ MẬT' }, { kanji: '共有', reading: 'きょうゆう', meaning: 'CỘNG HỮU' }]
+        }
+      ]
+    },
+    {
+      word: 'シンガポールじん', kanji: 'シンガポール人', romaji: 'Shingapoorujin', mean: 'Người Singapore',
+      examples: [
+        {
+          jp: '彼はシンガポール人です。', romaji: 'Kare wa Shingapoorujin desu.', vn: 'Anh ấy là người Singapore.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'シンガポール人の友達を招待（しょうたい）しました。', romaji: 'Shingapoorujin no tomodachi wo shoutai shimashita.', vn: 'Tôi đã mời người bạn người Singapore.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '招待', reading: 'しょうたい', meaning: 'CHIÊU ĐÃI' }]
+        },
+        {
+          jp: 'シンガポール人と一緒に仕事をします。', romaji: 'Shingapoorujin to issho ni shigoto wo shimasu.', vn: 'Làm việc cùng người Singapore.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }]
+        },
+        {
+          jp: '彼女はシンガポール人ですか。', romaji: 'Kanojo wa Shingapoorujin desu ka.', vn: 'Cô ấy có phải người Singapore không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのシンガポール人は礼儀（れいぎ）正しいです。', romaji: 'Ano Shingapoorujin wa reigi tadashii desu.', vn: 'Người Singapore đó rất lịch sự.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '礼儀正', reading: 'れいぎただ', meaning: 'LỄ NGHI CHÍNH' }]
+        },
+        {
+          jp: 'シンガポール人と英語で話をします。', romaji: 'Shingapoorujin to eigo de hanashi wo shimasu.', vn: 'Nói chuyện với người Singapore bằng tiếng Anh.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'スペインじん', kanji: 'スペイン人', romaji: 'Supeinjin', mean: 'Người Tây Ban Nha',
+      examples: [
+        {
+          jp: '彼はスペイン人です。', romaji: 'Kare wa Supeinjin desu.', vn: 'Anh ấy là người Tây Ban Nha.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'スペイン人の友達を紹介（しょうかい）します。', romaji: 'Supeinjin no tomodachi wo shoukai shimasu.', vn: 'Giới thiệu người bạn Tây Ban Nha.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '紹介', reading: 'しょうかい', meaning: 'THIỆU GIỚI' }]
+        },
+        {
+          jp: 'スペイン人とサッカーを見に行きます。', romaji: 'Supeinjin to sakkaa wo mi ni ikimasu.', vn: 'Đi xem bóng đá cùng người Tây Ban Nha.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '彼女はスペイン人じゃありません。', romaji: 'Kanojo wa Supeinjin ja arimasen.', vn: 'Cô ấy không phải người Tây Ban Nha.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのスペイン人は賑やかです。', romaji: 'Ano Supeinjin wa nigiyaka desu.', vn: 'Người Tây Ban Nha đó rất nhộn nhịp.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '賑', reading: 'にぎ', meaning: 'CHẨN' }]
+        },
+        {
+          jp: 'スペイン人とスペイン語で話します。', romaji: 'Supeinjin to Supeingo de hanashimasu.', vn: 'Nói chuyện với người Tây Ban Nha bằng tiếng Tây Ban Nha.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'タイじん', kanji: 'タイ人', romaji: 'Taijin', mean: 'Người Thái Lan',
+      examples: [
+        {
+          jp: '彼はタイ人です。', romaji: 'Kare wa Taijin desu.', vn: 'Anh ấy là người Thái Lan.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'タイ人の友達がいます。', romaji: 'Taijin no tomodachi ga imasu.', vn: 'Tôi có bạn là người Thái Lan.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }]
+        },
+        {
+          jp: 'タイ人と一緒に辛（から）い料理を食べます。', romaji: 'Taijin to issho ni karai ryouri wo tabemasu.', vn: 'Ăn món ăn cay cùng người Thái Lan.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '辛', reading: 'から', meaning: 'TÂN' }, { kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
+        },
+        {
+          jp: '彼女はタイ人ですか。', romaji: 'Kanojo wa Taijin desu ka.', vn: 'Cô ấy là người Thái Lan phải không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのタイ人は親切ですね。', romaji: 'Ano Taijin wa shinsetsu desu ne.', vn: 'Người Thái Lan đó rất thân thiện nhỉ.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: 'タイ人と一緒に仕事をします。', romaji: 'Taijin to issho ni shigoto wo shimasu.', vn: 'Làm việc cùng người Thái Lan.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }]
+        }
+      ]
+    },
+    {
+      word: 'ちゅうごくじん', kanji: '中国人', romaji: 'Chuugokujin', mean: 'Người Trung Quốc',
+      examples: [
+        {
+          jp: '彼は中国人です。', romaji: 'Kare wa Chuugokujin desu.', vn: 'Anh ấy là người Trung Quốc.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '中国人', reading: 'ちゅうごくじん', meaning: 'TRUNG QUỐC NHÂN' }]
+        },
+        {
+          jp: '中国人の知り合いがいます。', romaji: 'Chuugokujin no shiriai ga imasu.', vn: 'Tôi có người quen là người Trung Quốc.',
+          furigana: [{ kanji: '中国人', reading: 'ちゅうごくじん', meaning: 'TRUNG QUỐC NHÂN' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: '彼女は中国人じゃありません。', romaji: 'Kanojo wa Chuugokujin ja arimasen.', vn: 'Cô ấy không phải người Trung Quốc.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '中国人', reading: 'ちゅうごくじん', meaning: 'TRUNG QUỐC NHÂN' }]
+        },
+        {
+          jp: 'あの中国人は優しいです。', romaji: 'Ano Chuugokujin wa yasashii desu.', vn: 'Người Trung Quốc kia rất hiền.',
+          furigana: [{ kanji: '中国人', reading: 'ちゅうごくじん', meaning: 'TRUNG QUỐC NHÂN' }, { kanji: '優', reading: 'やさ', meaning: 'ƯU' }]
+        },
+        {
+          jp: '中国人と一緒に勉強します。', romaji: 'Chuugokujin to issho ni benkyou shimasu.', vn: 'Học cùng với người Trung Quốc.',
+          furigana: [{ kanji: '中国人', reading: 'ちゅうごくじん', meaning: 'TRUNG QUỐC NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: '中国人と仕事をします。', romaji: 'Chuugokujin to shigoto wo shimasu.', vn: 'Làm việc với người Trung Quốc.',
+          furigana: [{ kanji: '中国人', reading: 'ちゅうごくじん', meaning: 'TRUNG QUỐC NHÂN' }, { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }]
+        }
+      ]
+    },
+    {
+      word: 'ドイツじん', kanji: 'ドイツ人', romaji: 'Doitsujin', mean: 'Người Đức',
+      examples: [
+        {
+          jp: '彼はドイツ人です。', romaji: 'Kare wa Doitsujin desu.', vn: 'Anh ấy là người Đức.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'ドイツ人の友達を招待（しょうたい）します。', romaji: 'Doitsujin no tomodachi wo shoutai shimasu.', vn: 'Mời một người bạn người Đức.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '招待', reading: 'しょうたい', meaning: 'CHIÊU ĐÃI' }]
+        },
+        {
+          jp: 'ドイツ人とビールを飲みます。', romaji: 'Doitsujin to biiru wo nomimasu.', vn: 'Uống bia cùng người Đức.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '飲', reading: 'の', meaning: 'ẨM' }]
+        },
+        {
+          jp: '彼女はドイツ人ですか。', romaji: 'Kanojo wa Doitsujin desu ka.', vn: 'Cô ấy là người Đức phải không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのドイツ人は真面目（まじめ）です。', romaji: 'Ano Doitsujin wa majime desu.', vn: 'Người Đức đó rất nghiêm túc.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '真面目', reading: 'まじめ', meaning: 'CHÂN DIỆN MỤC' }]
+        },
+        {
+          jp: 'ドイツ人と英語で話します。', romaji: 'Doitsujin to eigo de hanashimasu.', vn: 'Nói chuyện với người Đức bằng tiếng Anh.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'にほんじん', kanji: '日本人', romaji: 'Nihonjin', mean: 'Người Nhật Bản',
+      examples: [
+        {
+          jp: '私は日本人です。', romaji: 'Watashi wa Nihonjin desu.', vn: 'Tôi là người Nhật.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }]
+        },
+        {
+          jp: '日本人の友達がいます。', romaji: 'Nihonjin no tomodachi ga imasu.', vn: 'Tôi có bạn là người Nhật.',
+          furigana: [{ kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }]
+        },
+        {
+          jp: '彼女は日本人じゃありません。', romaji: 'Kanojo wa Nihonjin ja arimasen.', vn: 'Cô ấy không phải người Nhật.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }]
+        },
+        {
+          jp: 'あの日本人は親切です。', romaji: 'Ano Nihonjin wa shinsetsu desu.', vn: 'Người Nhật đó rất thân thiện.',
+          furigana: [{ kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: '日本人と一緒に働きます。', romaji: 'Nihonjin to issho ni hatarakimasu.', vn: 'Làm việc cùng người Nhật.',
+          furigana: [{ kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }]
+        },
+        {
+          jp: '日本人の文化を学びます。', romaji: 'Nihonjin no bunka wo manabimasu.', vn: 'Học về văn hóa của người Nhật.',
+          furigana: [{ kanji: '日本人', reading: 'にほんじん', meaning: 'NHẬT BẢN NHÂN' }, { kanji: '文化', reading: 'ぶんか', meaning: 'VĂN HÓA' }, { kanji: '学', reading: 'まな', meaning: 'HỌC' }]
+        }
+      ]
+    },
+    {
+      word: 'フランスじん', kanji: 'フランス人', romaji: 'Furansujin', mean: 'Người Pháp',
+      examples: [
+        {
+          jp: '彼はフランス人です。', romaji: 'Kare wa Furansujin desu.', vn: 'Anh ấy là người Pháp.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'フランス人の先生に習いたい。', romaji: 'Furansujin no sensei ni naraitai.', vn: 'Tôi muốn học từ giáo viên người Pháp.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        },
+        {
+          jp: 'フランス人と一緒に旅行します。', romaji: 'Furansujin to issho ni ryokou shimasu.', vn: 'Đi du lịch cùng người Pháp.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '旅行', reading: 'りょこう', meaning: 'LỮ HÀNH' }]
+        },
+        {
+          jp: '彼女はフランス人ですか。', romaji: 'Kanojo wa Furansujin desu ka.', vn: 'Cô ấy có phải người Pháp không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのフランス人はおしゃれです。', romaji: 'Ano Furansujin wa oshare desu.', vn: 'Người Pháp đó ăn mặc rất sành điệu.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'フランス人と料理を作ります。', romaji: 'Furansujin to ryouri wo tsukurimasu.', vn: 'Nấu ăn cùng người Pháp.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '料理', reading: 'りょうり', meaning: 'LIÊU LÝ' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }]
+        }
+      ]
+    },
+    {
+      word: 'フィリピンじん', kanji: 'フィリピン人', romaji: 'Firipinjin', mean: 'Người Philippines',
+      examples: [
+        {
+          jp: '彼はフィリピン人です。', romaji: 'Kare wa Firipinjin desu.', vn: 'Anh ấy là người Philippines.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'フィリピン人の友達がいます。', romaji: 'Firipinjin no tomodachi ga imasu.', vn: 'Tôi có bạn là người Philippines.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }]
+        },
+        {
+          jp: 'フィリピン人と一緒に仕事をします。', romaji: 'Firipinjin to issho ni shigoto wo shimasu.', vn: 'Làm việc cùng với người Philippines.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }]
+        },
+        {
+          jp: '彼女はフィリピン人じゃありません。', romaji: 'Kanojo wa Firipinjin ja arimasen.', vn: 'Cô ấy không phải người Philippines.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのフィリピン人は明るいです。', romaji: 'Ano Firipinjin wa akarui desu.', vn: 'Người Philippines đó rất vui vẻ.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '明', reading: 'あか', meaning: 'MINH' }]
+        },
+        {
+          jp: 'フィリピン人とタガログ語で話します。', romaji: 'Firipinjin to tagarogu go de hanashimasu.', vn: 'Nói chuyện với người Philippines bằng tiếng Tagalog.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'ブラジルじん', kanji: 'ブラジル人', romaji: 'Burajirujin', mean: 'Người Brazil',
+      examples: [
+        {
+          jp: '彼はブラジル人です。', romaji: 'Kare wa Burajirujin desu.', vn: 'Anh ấy là người Brazil.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'ブラジル人の友達を紹介（しょうかい）します。', romaji: 'Burajirujin no tomodachi wo shoukai shimasu.', vn: 'Giới thiệu một người bạn Brazil.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '紹介', reading: 'しょうかい', meaning: 'THIỆU GIỚI' }]
+        },
+        {
+          jp: 'ブラジル人とサッカーを見ます。', romaji: 'Burajirujin to sakkaa wo mimasu.', vn: 'Xem bóng đá cùng với người Brazil.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: '彼女はブラジル人ですか。', romaji: 'Kanojo wa Burajirujin desu ka.', vn: 'Cô ấy có phải người Brazil không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのブラジル人は親切です。', romaji: 'Ano Burajirujin wa shinsetsu desu.', vn: 'Người Brazil đó rất thân thiện.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: 'ブラジル人とポルトガル語で話します。', romaji: 'Burajirujin to porutogaru go de hanashimasu.', vn: 'Nói chuyện với người Brazil bằng tiếng Bồ Đào Nha.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'ベトナムじん', kanji: 'ベトナム人', romaji: 'Betonamujin', mean: 'Người Việt Nam',
+      examples: [
+        {
+          jp: '私はベトナム人です。', romaji: 'Watashi wa Betonamujin desu.', vn: 'Tôi là người Việt Nam.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'ベトナム人の友達を紹介（しょうかい）します。', romaji: 'Betonamujin no tomodachi wo shoukai shimasu.', vn: 'Giới thiệu người bạn Việt Nam.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '紹介', reading: 'しょうかい', meaning: 'THIỆU GIỚI' }]
+        },
+        {
+          jp: 'ベトナム人と一緒に仕事をします。', romaji: 'Betonamujin to issho ni shigoto wo shimasu.', vn: 'Làm việc cùng người Việt Nam.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }]
+        },
+        {
+          jp: '彼女はベトナム人ですか。', romaji: 'Kanojo wa Betonamujin desu ka.', vn: 'Cô ấy là người Việt Nam phải không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのベトナム人は親切です。', romaji: 'Ano Betonamujin wa shinsetsu desu.', vn: 'Người Việt Nam đó rất thân thiện.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: 'ベトナム人と日本語を勉強します。', romaji: 'Betonamujin to nihongo wo benkyou shimasu.', vn: 'Học tiếng Nhật cùng người Việt Nam.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        }
+      ]
+    },
+    {
+      word: 'マレーシアじん', kanji: 'マレーシア人', romaji: 'Mareeshiajin', mean: 'Người Malaysia',
+      examples: [
+        {
+          jp: '彼はマレーシア人です。', romaji: 'Kare wa Mareeshiajin desu.', vn: 'Anh ấy là người Malaysia.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'マレーシア人の友達を訪ねます。', romaji: 'Mareeshiajin no tomodachi wo tazunemasu.', vn: 'Đến thăm người bạn Malaysia.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '訪', reading: 'たず', meaning: 'PHỎNG' }]
+        },
+        {
+          jp: 'マレーシア人と一緒に御飯（ごはん）を食べます。', romaji: 'Mareeshiajin to issho ni gohan wo tabemasu.', vn: 'Ăn cơm cùng người Malaysia.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '御飯', reading: 'ごはん', meaning: 'NGỰ PHẠN' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
+        },
+        {
+          jp: '彼女はマレーシア人ですか。', romaji: 'Kanojo wa Mareeshiajin desu ka.', vn: 'Cô ấy có phải người Malaysia không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのマレーシア人は親切ですね。', romaji: 'Ano Mareeshiajin wa shinsetsu desu ne.', vn: 'Người Malaysia đó rất thân thiện nhỉ.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: 'マレーシア人と英語で話をします。', romaji: 'Mareeshiajin to eigo de hanashi wo shimasu.', vn: 'Nói chuyện với người Malaysia bằng tiếng Anh.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'メキシコじん', kanji: 'メキシコ人', romaji: 'Mekishikojin', mean: 'Người Mexico',
+      examples: [
+        {
+          jp: '彼はメキシコ人です。', romaji: 'Kare wa Mekishikojin desu.', vn: 'Anh ấy là người Mexico.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'メキシコ人の知り合いを紹介（しょうかい）します。', romaji: 'Mekishikojin no shiriai wo shoukai shimasu.', vn: 'Giới thiệu người quen là người Mexico.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '知', reading: 'し', meaning: 'TRI' }, { kanji: '紹介', reading: 'しょうかい', meaning: 'THIỆU GIỚI' }]
+        },
+        {
+          jp: 'メキシコ人と一緒にダンスを踊ります。', romaji: 'Mekishikojin to issho ni dansu wo odorimasu.', vn: 'Nhảy múa cùng người Mexico.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '踊', reading: 'おど', meaning: 'DŨNG' }]
+        },
+        {
+          jp: '彼女はメキシコ人ですか。', romaji: 'Kanojo wa Mekishikojin desu ka.', vn: 'Cô ấy có phải người Mexico không?',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのメキシコ人は情熱的（じょうねつてき）です。', romaji: 'Ano Mekishikojin wa jounetsuteki desu.', vn: 'Người Mexico đó rất nhiệt huyết.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '情熱的', reading: 'じょうねつてき', meaning: 'TÌNH NHIỆT ĐÍCH' }]
+        },
+        {
+          jp: 'メキシコ人とスペイン語で話します。', romaji: 'Mekishikojin to Supeingo de hanashimasu.', vn: 'Nói chuyện với người Mexico bằng tiếng Tây Ban Nha.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'ロシアじん', kanji: 'ロシア人', romaji: 'Roshiagin', mean: 'Người Nga',
+      examples: [
+        {
+          jp: '彼はロシア人です。', romaji: 'Kare wa Roshiajin desu.', vn: 'Anh ấy là người Nga.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'ロシア人の友達を招待（しょうたい）しました。', romaji: 'Roshiajin no tomodachi wo shoutai shimashita.', vn: 'Tôi đã mời người bạn người Nga.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '招待', reading: 'しょうたい', meaning: 'CHIÊU ĐÃI' }]
+        },
+        {
+          jp: 'ロシア人と一緒にボルシチを食べます。', romaji: 'Roshiajin to issho ni borushichi wo tabemasu.', vn: 'Ăn súp củ cải đỏ cùng người Nga.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
+        },
+        {
+          jp: '彼女はロシア人じゃありません。', romaji: 'Kanojo wa Roshiajin ja arimasen.', vn: 'Cô ấy không phải người Nga.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '人', reading: 'じん', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'あのロシア人は真面目（まじめ）ですね。', romaji: 'Ano Roshiajin wa majime desu ne.', vn: 'Người Nga đó rất nghiêm túc nhỉ.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '真面目', reading: 'まじめ', meaning: 'CHÂN DIỆN MỤC' }]
+        },
+        {
+          jp: 'ロシア人とロシア語で話をしました。', romaji: 'Roshiajin to Roshiago de hanashi wo shimashita.', vn: 'Tôi đã nói chuyện với người Nga bằng tiếng Nga.',
+          furigana: [{ kanji: '人', reading: 'じん', meaning: 'NHÂN' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
 
     // Ngôn ngữ
     {
       word: 'えいご', kanji: '英語', romaji: 'Eigo', mean: 'Tiếng Anh',
+      examples: [
+        {
+          jp: '英語が分かりますか。', romaji: 'Eigo ga wakarimasu ka.', vn: 'Bạn có hiểu tiếng Anh không?',
+          furigana: [{ kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '分', reading: 'わ', meaning: 'PHÂN' }]
+        },
+        {
+          jp: '彼は英会話が得意です。', romaji: 'Kare wa eikaiwa ga tokui desu.', vn: 'Anh ấy giỏi đàm thoại tiếng Anh.',
+          furigana: [{ kanji: '英会話', reading: 'えいかいわ', meaning: 'ANH HỘI THOẠI' }, { kanji: '得意', reading: 'とくい', meaning: 'ĐẮC Ý' }]
+        },
+        {
+          jp: '英国の歴史を学びます。', romaji: 'Eikoku no rekishi wo manabimasu.', vn: 'Học lịch sử nước Anh.',
+          furigana: [{ kanji: '英国', reading: 'えいこく', meaning: 'ANH QUỐC' }, { kanji: '歴史', reading: 'れきし', meaning: 'LỊCH SỬ' }, { kanji: '学', reading: 'まな', meaning: 'HỌC' }]
+        },
+        {
+          jp: '彼は英語の先生です。', romaji: 'Kare wa eigo no sensei desu.', vn: 'Anh ấy là giáo viên tiếng Anh.',
+          furigana: [{ kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
+        },
+        {
+          jp: '英語で日記を書きます。', romaji: 'Eigo de nikki wo kakimasu.', vn: 'Tôi viết nhật ký bằng tiếng Anh.',
+          furigana: [{ kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '日記', reading: 'にっき', meaning: 'NHẬT KÝ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }]
+        },
+        {
+          jp: '毎日英語を勉強します。', romaji: 'Mainichi eigo wo benkyou shimasu.', vn: 'Tôi học tiếng Anh mỗi ngày.',
+          furigana: [{ kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        }
+      ],
       kanjiDetails: [
         {
           kanji: '英',
@@ -2510,7 +4078,7 @@ export const lesson1Data: LessonDetail = {
           radicals: '艸 (thảo)',
           components: [{ char: '艹', meaning: 'cỏ' }, { char: '央', meaning: 'chính giữa' }],
           mnemonic: 'Những bông hoa (艹) nở rộ ở chính giữa (央) là những bông hoa anh (英) tú, tài giỏi nhất.',
-          examples: ['英語 (えいご) - tiếng Anh', '英国 (えいこk) - nước Anh'],
+          examples: ['英語 (えいご) - tiếng Anh', '英国 (えいこく) - nước Anh'],
           exampleSentences: [
             {
               jp: '英語が分かりますか。', vn: 'Bạn có hiểu tiếng Anh không?',
@@ -2571,12 +4139,151 @@ export const lesson1Data: LessonDetail = {
         }
       ]
     },
-    { word: 'ITALIAご', kanji: 'イタリア語', romaji: 'Itariago', mean: 'Tiếng Ý' },
-    { word: 'ペルシャご', kanji: 'ペルシャ語', romaji: 'Perushago', mean: 'Tiếng Ba Tư' },
-    { word: 'ヒンディーご', kanji: 'ヒンディー語', romaji: 'Hindiigo', mean: 'Tiếng Hin-di' },
-    { word: 'インドネシアご', kanji: 'インドネシア語', romaji: 'Indoneshiago', mean: 'Tiếng Indonesia' },
-    { word: 'アラビアご', kanji: 'アラビア語', romaji: 'Arabiago', mean: 'Tiếng Ả-rập' },
-    { word: 'フランスご', kanji: 'フランス語', romaji: 'Furansugo', mean: 'Tiếng Pháp' },
+    {
+      word: 'イランご', kanji: 'イラン語', romaji: 'Irango', mean: 'Tiếng Ba Tư',
+      examples: [
+        {
+          jp: 'イラン語を話します。', romaji: 'Irango wo hanashimasu.', vn: 'Tôi nói tiếng Ba Tư.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'イラン語は難しいですか。', romaji: 'Irango wa muzukashii desu ka.', vn: 'Tiếng Ba Tư có khó không?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '難', reading: 'むずか', meaning: 'NAN' }]
+        },
+        {
+          jp: '彼はイラン語を勉強しています。', romaji: 'Kare wa Irango wo benkyou shite imasu.', vn: 'Anh ấy đang học tiếng Ba Tư.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'イラン語の本がありますか。', romaji: 'Irango no hon ga arimasu ka.', vn: 'Có sách tiếng Ba Tư không?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }]
+        },
+        {
+          jp: 'イラン語でさようならは何ですか。', romaji: 'Irango de sayounara wa nan desu ka.', vn: 'Tạm biệt trong tiếng Ba Tư là gì?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: 'イラン語のクラスに行きます。', romaji: 'Irango no kurasu ni ikimasu.', vn: 'Tôi đi đến lớp học tiếng Ba Tư.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        }
+      ]
+    },
+    {
+      word: 'インドご', kanji: 'インド語', romaji: 'Indogo', mean: 'Tiếng Ấn Độ',
+      examples: [
+        {
+          jp: 'インド語を話せますか。', romaji: 'Indogo wo hanasemasu ka.', vn: 'Bạn có thể nói tiếng Ấn Độ không?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'インド語の映画を見ます。', romaji: 'Indogo no eiga wo mimasu.', vn: 'Tôi xem phim tiếng Ấn Độ.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: '彼はインド語を教えています。', romaji: 'Kare wa Indogo wo oshiete imasu.', vn: 'Anh ấy đang dạy tiếng Ấn Độ.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '教', reading: 'おし', meaning: 'GIÁO' }]
+        },
+        {
+          jp: 'インド語は面白いです。', romaji: 'Indogo wa omoshiroi desu.', vn: 'Tiếng Ấn Độ rất thú vị.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '面白', reading: 'おもしろ', meaning: 'DIỆN BẠCH' }]
+        },
+        {
+          jp: 'インド語で歌を歌います。', romaji: 'Indogo de uta wo utaimasu.', vn: 'Hát bài hát bằng tiếng Ấn Độ.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }]
+        },
+        {
+          jp: 'インド語を習いたい。', romaji: 'Indogo wo naraitai.', vn: 'Tôi muốn học tiếng Ấn Độ.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        }
+      ]
+    },
+    {
+      word: 'インドネシアご', kanji: 'インドネシア語', romaji: 'Indoneshiago', mean: 'Tiếng Indonesia',
+      examples: [
+        {
+          jp: 'インドネシア語を話します。', romaji: 'Indoneshiago wo hanashimasu.', vn: 'Tôi nói tiếng Indonesia.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'インドネシア語は易（やさ）しい。', romaji: 'Indoneshiago wa yasashii.', vn: 'Tiếng Indonesia rất dễ.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '易', reading: 'やさ', meaning: 'DỊ' }]
+        },
+        {
+          jp: '彼はインドネシア語の先生です。', romaji: 'Kare wa Indoneshiago no sensei desu.', vn: 'Anh ấy là giáo viên tiếng Indonesia.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
+        },
+        {
+          jp: 'インドネシア語で手紙を書きました。', romaji: 'Indoneshiago de tegami wo kakimashita.', vn: 'Tôi đã viết thư bằng tiếng Indonesia.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }]
+        },
+        {
+          jp: 'インドネシア語の辞書が必要です。', romaji: 'Indoneshiago no jisho ga hitsuyou desu.', vn: 'Tôi cần từ điển tiếng Indonesia.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }, { kanji: '必要', reading: 'ひつよう', meaning: 'TẤT YẾU' }]
+        },
+        {
+          jp: 'インドネシア語を勉強しましょう。', romaji: 'Indoneshiago wo benkyou shimashou.', vn: 'Chúng ta hãy học tiếng Indonesia nào.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        }
+      ]
+    },
+    {
+      word: 'アラビアご', kanji: 'アラビア語', romaji: 'Arabiago', mean: 'Tiếng Ả-rập',
+      examples: [
+        {
+          jp: 'アラビア語を勉強します。', romaji: 'Arabiago wo benkyou shimasu.', vn: 'Tôi học tiếng Ả Rập.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'アラビア語は難しいですか。', romaji: 'Arabiago wa muzukashii desu ka.', vn: 'Tiếng Ả Rập có khó không?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '難', reading: 'むずか', meaning: 'NAN' }]
+        },
+        {
+          jp: '彼はアラビア語を話します。', romaji: 'Kare wa Arabiago wo hanashimasu.', vn: 'Anh ấy nói tiếng Ả Rập.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'アラビア語の辞書を買います。', romaji: 'Arabiago no jisho wo kaimasu.', vn: 'Tôi mua từ điển tiếng Ả Rập.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        },
+        {
+          jp: 'アラビア語で手紙を書きました。', romaji: 'Arabiago de tegami wo kakimashita.', vn: 'Tôi đã viết thư bằng tiếng Ả Rập.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }]
+        },
+        {
+          jp: 'アラビア語の歌が好きです。', romaji: 'Arabiago no uta ga suki desu.', vn: 'Tôi thích bài hát tiếng Ả Rập.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        }
+      ]
+    },
+    {
+      word: 'フランスご', kanji: 'フランス語', romaji: 'Furansugo', mean: 'Tiếng Pháp',
+      examples: [
+        {
+          jp: 'フランス語を勉強します。', romaji: 'Furansugo wo benkyou shimasu.', vn: 'Tôi học tiếng Pháp.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'フランス語はきれいです。', romaji: 'Furansugo wa kirei desu.', vn: 'Tiếng Pháp rất đẹp.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }]
+        },
+        {
+          jp: '彼はフランス語が上手（じょうず）です。', romaji: 'Kare wa Furansugo ga jouzu desu.', vn: 'Anh ấy giỏi tiếng Pháp.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }]
+        },
+        {
+          jp: 'フランス語の映画を見ます。', romaji: 'Furansugo no eiga wo mimasu.', vn: 'Tôi xem phim tiếng Pháp.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: 'フランス語で手紙を書きました。', romaji: 'Furansugo de tegami wo kakimashita.', vn: 'Tôi đã viết thư bằng tiếng Pháp.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }]
+        },
+        {
+          jp: 'フランス語の歌を聞きます。', romaji: 'Furansugo no uta wo kikimasu.', vn: 'Tôi nghe bài hát tiếng Pháp.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }]
+        }
+      ]
+    },
     {
       word: 'かんこくご', kanji: '韓国語', romaji: 'Kankokugo', mean: 'Tiếng Hàn Quốc',
       kanjiDetails: [
@@ -2604,11 +4311,129 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '少し韓国語がわかります。', romaji: 'Sukoshi Kankokugo ga wakarimasu.', vn: 'Tôi hiểu một chút tiếng Hàn.',
           furigana: [{ kanji: '韓国語', reading: 'かんこくご', meaning: 'HÀN QUỐC NGỮ' }]
+        },
+        {
+          jp: '韓国語の歌を歌いましょう。', romaji: 'Kankokugo no uta wo utaimashou.', vn: 'Chúng ta hãy cùng hát bài hát tiếng Hàn nào.',
+          furigana: [{ kanji: '韓国語', reading: 'かんこくご', meaning: 'HÀN QUỐC NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }]
         }
       ]
     },
-    { word: 'スペインご', kanji: 'スペイン語', romaji: 'Supeingo', mean: 'Tiếng Tây Ban Nha' },
-    { word: 'タイご', kanji: 'タイ語', romaji: 'Taigo', mean: 'Tiếng Thái' },
+    {
+      word: 'イギリスご', kanji: 'イギリス語', romaji: 'Igirisugo', mean: 'Tiếng Anh (Anh)',
+      examples: [
+        {
+          jp: 'イギリス語を勉強します。', romaji: 'Igirisugo wo benkyou shimasu.', vn: 'Tôi học tiếng Anh (Anh).',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: '彼はイギリス語を話します。', romaji: 'Kare wa Igirisugo wo hanashimasu.', vn: 'Anh ấy nói tiếng Anh (Anh).',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'イギリス語の本を読みます。', romaji: 'Igirisugo no hon wo yomimasu.', vn: 'Tôi đọc sách tiếng Anh (Anh).',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }]
+        },
+        {
+          jp: 'イギリス語の先生は誰ですか。', romaji: 'Igirisugo no sensei wa dare desu ka.', vn: 'Giáo viên tiếng Anh (Anh) là ai?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '誰', reading: 'だれ', meaning: 'THÙY' }]
+        },
+        {
+          jp: 'イギリス語は難しいですか。', romaji: 'Igirisugo wa muzukashii desu ka.', vn: 'Tiếng Anh (Anh) có khó không?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '難', reading: 'むずか', meaning: 'NAN' }]
+        },
+        {
+          jp: 'イギリス語で手紙を書きます。', romaji: 'Igirisugo de tegami wo kakimasu.', vn: 'Viết thư bằng tiếng Anh (Anh).',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }]
+        }
+      ]
+    },
+    {
+      word: 'イタリアご', kanji: 'イタリア語', romaji: 'Itariago', mean: 'Tiếng Ý',
+      examples: [
+        {
+          jp: 'イタリア語を習います。', romaji: 'Itariago wo naraimasu.', vn: 'Tôi học tiếng Ý.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        },
+        {
+          jp: 'イタリア語はきれいです。', romaji: 'Itariago wa kirei desu.', vn: 'Tiếng Ý rất đẹp.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }]
+        },
+        {
+          jp: '彼はイタリア語が上手（じょうず）です。', romaji: 'Kare wa Itariago ga jouzu desu.', vn: 'Anh ấy giỏi tiếng Ý.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }]
+        },
+        {
+          jp: 'イタリア語の歌を聞きます。', romaji: 'Itariago no uta wo kikimasu.', vn: 'Nghe bài hát tiếng Ý.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }]
+        },
+        {
+          jp: 'イタリア語で挨拶（あいさつ）します。', romaji: 'Itariago de aisatsu shimasu.', vn: 'Chào hỏi bằng tiếng Ý.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '挨拶', reading: 'あいさつ', meaning: 'AI TẠT' }]
+        },
+        {
+          jp: 'イタリア語の辞書を買います。', romaji: 'Itariago no jisho wo kaimasu.', vn: 'Tôi mua từ điển tiếng Ý.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        }
+      ]
+    },
+    {
+      word: 'スペインご', kanji: 'スペイン語', romaji: 'Supeingo', mean: 'Tiếng Tây Ban Nha',
+      examples: [
+        {
+          jp: 'スペイン語を習います。', romaji: 'Supeingo wo naraimasu.', vn: 'Tôi học tiếng Tây Ban Nha.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        },
+        {
+          jp: 'スペイン語はきれいです。', romaji: 'Supeingo wa kirei desu.', vn: 'Tiếng Tây Ban Nha rất đẹp.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }]
+        },
+        {
+          jp: '彼はスペイン語が上手です。', romaji: 'Kare wa Supeingo ga jouzu desu.', vn: 'Anh ấy giỏi tiếng Tây Ban Nha.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }]
+        },
+        {
+          jp: 'スペイン語の映画を見ます。', romaji: 'Supeingo no eiga wo mimasu.', vn: 'Tôi xem phim tiếng Tây Ban Nha.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: 'スペイン語で歌を歌います。', romaji: 'Supeingo de uta wo utaimasu.', vn: 'Tôi hát bài hát bằng tiếng Tây Ban Nha.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }]
+        },
+        {
+          jp: 'スペイン語の先生は誰ですか。', romaji: 'Supeingo no sensei wa dare desu ka.', vn: 'Giáo viên tiếng Tây Ban Nha là ai?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '誰', reading: 'だれ', meaning: 'THÙY' }]
+        }
+      ]
+    },
+    {
+      word: 'タイご', kanji: 'タイ語', romaji: 'Taigo', mean: 'Tiếng Thái',
+      examples: [
+        {
+          jp: 'タイ語を勉強します。', romaji: 'Taigo wo benkyou shimasu.', vn: 'Tôi học tiếng Thái.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'タイ語は難しいです。', romaji: 'Taigo wa muzukashii desu.', vn: 'Tiếng Thái rất khó.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '難', reading: 'むずか', meaning: 'NAN' }]
+        },
+        {
+          jp: '彼はタイ語を話せます。', romaji: 'Kare wa Taigo wo hanasemasu.', vn: 'Anh ấy có thể nói tiếng Thái.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'タイ語の本を読みます。', romaji: 'Taigo no hon wo yomimasu.', vn: 'Tôi đọc sách tiếng Thái.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }]
+        },
+        {
+          jp: 'タイ語で「ありがとう」と言います。', romaji: 'Taigo de "arigatou" to iimasu.', vn: 'Nói "cảm ơn" bằng tiếng Thái.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '言', reading: 'い', meaning: 'NGÔN' }]
+        },
+        {
+          jp: 'タイ語の辞書が必要です。', romaji: 'Taigo no jisho ga hitsuyou desu.', vn: 'Cần từ điển tiếng Thái.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }, { kanji: '必要', reading: 'ひつよう', meaning: 'TẤT YẾU' }]
+        }
+      ]
+    },
     {
       word: 'ちゅうごくご', kanji: '中国語', romaji: 'Chuugokugo', mean: 'Tiếng Trung Quốc',
       kanjiDetails: [
@@ -2636,10 +4461,42 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '中国語ができる人はいますか。', romaji: 'Chuugokugo ga dekiru hito wa imasu ka.', vn: 'Có ai biết tiếng Trung không?',
           furigana: [{ kanji: '中国語', reading: 'ちゅうごくご', meaning: 'TRUNG QUỐC NGỮ' }, { kanji: '人', reading: 'ひと', meaning: 'NHÂN' }]
+        },
+        {
+          jp: '中国語で挨拶（あいさつ）ができますか。', romaji: 'Chuugokugo de aisatsu ga dekimasu ka.', vn: 'Bạn có thể chào hỏi bằng tiếng Trung không?',
+          furigana: [{ kanji: '中国語', reading: 'ちゅうごくご', meaning: 'TRUNG QUỐC NGỮ' }, { kanji: '挨拶', reading: 'あいさつ', meaning: 'AI TẠT' }]
         }
       ]
     },
-    { word: 'ドイツご', kanji: 'ドイツ語', romaji: 'Doitsugo', mean: 'Tiếng Đức' },
+    {
+      word: 'ドイツご', kanji: 'ドイツ語', romaji: 'Doitsugo', mean: 'Tiếng Đức',
+      examples: [
+        {
+          jp: 'ドイツ語を勉強します。', romaji: 'Doitsugo wo benkyou shimasu.', vn: 'Tôi học tiếng Đức.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'ドイツ語は難しいですか。', romaji: 'Doitsugo wa muzukashii desu ka.', vn: 'Tiếng Đức có khó không?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '難', reading: 'むずか', meaning: 'NAN' }]
+        },
+        {
+          jp: '彼はドイツ語を話します。', romaji: 'Kare wa Doitsugo wo hanashimasu.', vn: 'Anh ấy nói tiếng Đức.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'ドイツ語の辞書を買います。', romaji: 'Doitsugo no jisho wo kaimasu.', vn: 'Tôi mua từ điển tiếng Đức.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        },
+        {
+          jp: 'ドイツ語で歌を歌いましょう。', romaji: 'Doitsugo de uta wo utaimashou.', vn: 'Chúng ta hãy cùng hát bài hát bằng tiếng Đức nào.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }]
+        },
+        {
+          jp: 'ドイツ語の授業（じゅぎょう）があります。', romaji: 'Doitsugo no jugyou ga arimasu.', vn: 'Có tiết học tiếng Đức.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '授業', reading: 'じゅぎょう', meaning: 'THỤ NGHIỆP' }]
+        }
+      ]
+    },
     {
       word: 'にほんご', kanji: '日本語', romaji: 'Nihongo', mean: 'Tiếng Nhật',
       kanjiDetails: [
@@ -2667,19 +4524,304 @@ export const lesson1Data: LessonDetail = {
         {
           jp: '日本語の先生は優しいです。', romaji: 'Nihongo no sensei wa yasashii desu.', vn: 'Giáo viên tiếng Nhật của tôi rất hiền.',
           furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '優', reading: 'やさ', meaning: 'ƯU' }]
+        },
+        {
+          jp: '日本語で日記（にっき）を書きます。', romaji: 'Nihongo de nikki wo kakimasu.', vn: 'Tôi viết nhật ký bằng tiếng Nhật.',
+          furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '日記', reading: 'にっき', meaning: 'NHẬT KÝ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }]
         }
       ]
     },
-    { word: 'フィリピンご', kanji: 'フィリピン語', romaji: 'Firipingo', mean: 'Tiếng Philippines' },
-    { word: 'ポルトガルご', kanji: 'ポルトガル語', romaji: 'Porutogarugo', mean: 'Tiếng Bồ Đào Nha' },
-    { word: 'ベトナムご', kanji: 'ベトナム語', romaji: 'Betonamugo', mean: 'Tiếng Việt' },
-    { word: 'マレーシアご', kanji: 'マレーシア語', romaji: 'Mareeshiago', mean: 'Tiếng Mã Lai' },
-    { word: 'ロシアご', kanji: 'ロシア語', romaji: 'Roshiago', mean: 'Tiếng Nga' },
+    {
+      word: 'エジプトご', kanji: 'エジプト語', romaji: 'Ejiputogo', mean: 'Tiếng Ai Cập (Tiếng Ả Rập)',
+      examples: [
+        {
+          jp: 'エジプト語はアラビア語です。', romaji: 'Ejiputogo wa arabiago desu.', vn: 'Tiếng Ai Cập là tiếng Ả Rập.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }]
+        },
+        {
+          jp: 'エジプト語を勉強しています。', romaji: 'Ejiputogo wo benkyou shite imasu.', vn: 'Tôi đang học tiếng Ai Cập.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: '彼はエジプト語を話せます。', romaji: 'Kare wa Ejiputogo wo hanasemasu.', vn: 'Anh ấy có thể nói tiếng Ai Cập.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'エジプト語の本を貸してください。', romaji: 'Ejiputogo no hon wo kashite kudasai.', vn: 'Hãy cho tôi mượn cuốn sách tiếng Ai Cập.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '貸', reading: 'か', meaning: 'THẢI' }]
+        },
+        {
+          jp: 'エジプト語は難しいですか。', romaji: 'Ejiputogo wa muzukashii desu ka.', vn: 'Tiếng Ai Cập có khó không?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '難', reading: 'むずか', meaning: 'NAN' }]
+        },
+        {
+          jp: 'エジプト語で「こんにちは」は何ですか。', romaji: 'Ejiputogo de "konnichiwa" wa nan desu ka.', vn: '"Xin chào" trong tiếng Ai Cập là gì?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        }
+      ]
+    },
+    {
+      word: 'フィリピンご', kanji: 'フィリピン語', romaji: 'Firipingo', mean: 'Tiếng Philippines',
+      examples: [
+        {
+          jp: 'フィリピン語を話します。', romaji: 'Firipingo wo hanashimasu.', vn: 'Tôi nói tiếng Philippines.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'フィリピン語は面白いです。', romaji: 'Firipingo wa omoshiroi desu.', vn: 'Tiếng Philippines rất thú vị.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '面白', reading: 'おもしろ', meaning: 'DIỆN BẠCH' }]
+        },
+        {
+          jp: '彼はフィリピン語を勉強しています。', romaji: 'Kare wa Firipingo wo benkyou shite imasu.', vn: 'Anh ấy đang học tiếng Philippines.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'フィリピン語の本があります。', romaji: 'Firipingo no hon ga arimasu.', vn: 'Có sách tiếng Philippines.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }]
+        },
+        {
+          jp: 'フィリピン語で挨拶をします。', romaji: 'Firipingo de aisatsu wo shimasu.', vn: 'Chào hỏi bằng tiếng Philippines.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '挨拶', reading: 'あいさつ', meaning: 'AI TẠT' }]
+        },
+        {
+          jp: 'フィリピン語のクラスに行きます。', romaji: 'Firipingo no kurasu ni ikimasu.', vn: 'Tôi đi đến lớp học tiếng Philippines.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        }
+      ]
+    },
+    {
+      word: 'ポルトガルご', kanji: 'ポルトガル語', romaji: 'Porutogarugo', mean: 'Tiếng Bồ Đào Nha',
+      examples: [
+        {
+          jp: 'ポルトガル語を習います。', romaji: 'Porutogarugo wo naraimasu.', vn: 'Tôi học tiếng Bồ Đào Nha.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        },
+        {
+          jp: 'ポルトガル語はきれいです。', romaji: 'Porutogarugo wa kirei desu.', vn: 'Tiếng Bồ Đào Nha rất đẹp.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }]
+        },
+        {
+          jp: '彼はポルトガル語を話せます。', romaji: 'Kare wa Porutogarugo wo hanasemasu.', vn: 'Anh ấy có thể nói tiếng Bồ Đào Nha.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'ポルトガル語の映画を見ます。', romaji: 'Porutogarugo no eiga wo mimasu.', vn: 'Tôi xem phim tiếng Bồ Đào Nha.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: 'ポルトガル語で「こんにちは」は何ですか。', romaji: 'Porutogarugo de "konnichiwa" wa nan desu ka.', vn: '"Xin chào" trong tiếng Bồ Đào Nha là gì?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: 'ポルトガル語の辞書を買いました。', romaji: 'Porutogarugo no jisho wo kaimashita.', vn: 'Tôi đã mua từ điển tiếng Bồ Đào Nha.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        }
+      ]
+    },
+    {
+      word: 'ベトナムご', kanji: 'ベトナム語', romaji: 'Betonamugo', mean: 'Tiếng Việt',
+      examples: [
+        {
+          jp: 'ベトナム語を話します。', romaji: 'Betonamugo wo hanashimasu.', vn: 'Tôi nói tiếng Việt.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'ベトナム語は易（やさ）しいです。', romaji: 'Betonamugo wa yasashii desu.', vn: 'Tiếng Việt rất dễ.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '易', reading: 'やさ', meaning: 'DỊ' }]
+        },
+        {
+          jp: '彼はベトナム語の先生です。', romaji: 'Kare wa Betonamugo no sensei desu.', vn: 'Anh ấy là giáo viên tiếng Việt.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
+        },
+        {
+          jp: 'ベトナム語を勉強しましょう。', romaji: 'Betonamugo wo benkyou shimashou.', vn: 'Hãy học tiếng Việt nào.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'ベトナム語で手紙を書きます。', romaji: 'Betonamugo de tegami wo kakimasu.', vn: 'Viết thư bằng tiếng Việt.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }]
+        },
+        {
+          jp: 'ベトナム語の歌を聞きます。', romaji: 'Betonamugo no uta wo kikimasu.', vn: 'Nghe bài hát tiếng Việt.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }]
+        }
+      ]
+    },
+    {
+      word: 'オーストラリアご', kanji: 'オーストラリア語', romaji: 'Oosutorariago', mean: 'Tiếng Anh (Úc)',
+      examples: [
+        {
+          jp: 'オーストラリア語は英語です。', romaji: 'Oosutorariago wa eigo desu.', vn: 'Tiếng Úc là tiếng Anh.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }]
+        },
+        {
+          jp: 'オーストラリア語の発音（はつおん）は面白い。', romaji: 'Oosutorariago no hatsuon wa omoshiroi.', vn: 'Phát âm tiếng Úc rất thú vị.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '発音', reading: 'はつおん', meaning: 'PHÁT ÂM' }, { kanji: '面白', reading: 'おもしろ', meaning: 'DIỆN BẠCH' }]
+        },
+        {
+          jp: '彼はオーストラリア語を話します。', romaji: 'Kare wa Oosutorariago wo hanashimasu.', vn: 'Anh ấy nói tiếng Úc.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'オーストラリア語を習いたいです。', romaji: 'Oosutorariago wo naraitai desu.', vn: 'Tôi muốn học tiếng Úc.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        },
+        {
+          jp: 'オーストラリア語の歌を聞きましょう。', romaji: 'Oosutorariago no uta wo kikimashou.', vn: 'Hãy nghe bài hát tiếng Úc nào.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }]
+        },
+        {
+          jp: 'オーストラリア語で話をします。', romaji: 'Oosutorariago de hanashi wo shimasu.', vn: 'Nói chuyện bằng tiếng Úc.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'カナダご', kanji: 'カナダ語', romaji: 'Kanadago', mean: 'Tiếng Anh (Canada)',
+      examples: [
+        {
+          jp: 'カナダ語は英語とフランス語です。', romaji: 'Kanadago wa eigo to furansugo desu.', vn: 'Tiếng Canada là tiếng Anh và tiếng Pháp.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }]
+        },
+        {
+          jp: 'カナダ語を勉強しています。', romaji: 'Kanadago wo benkyou shite imasu.', vn: 'Tôi đang học tiếng Canada.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: '彼はカナダ語を話せます。', romaji: 'Kare wa Kanadago wo hanasemasu.', vn: 'Anh ấy có thể nói tiếng Canada.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'カナダ語の辞書を持っていますか。', romaji: 'Kanadago no jisho wo motte imasu ka.', vn: 'Bạn có từ điển tiếng Canada không?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }, { kanji: '持', reading: 'も', meaning: 'TRÌ' }]
+        },
+        {
+          jp: 'カナダ語で「ありがとう」と言います。', romaji: 'Kanadago de "arigatou" to iimasu.', vn: 'Nói "cảm ơn" bằng tiếng Canada.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '言', reading: 'い', meaning: 'NGÔN' }]
+        },
+        {
+          jp: 'カナダ語のクラスはどこですか。', romaji: 'Kanadago no kurasu wa doko desu ka.', vn: 'Lớp học tiếng Canada ở đâu?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }]
+        }
+      ]
+    },
+    {
+      word: 'マレーシアご', kanji: 'マレーシア語', romaji: 'Mareeshiago', mean: 'Tiếng Mã Lai',
+      examples: [
+        {
+          jp: 'マレーシア語を勉強します。', romaji: 'Mareeshiago wo benkyou shimasu.', vn: 'Tôi học tiếng Mã Lai.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'マレーシア語は難しいですか。', romaji: 'Mareeshiago wa muzukashii desu ka.', vn: 'Tiếng Mã Lai có khó không?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '難', reading: 'むずか', meaning: 'NAN' }]
+        },
+        {
+          jp: '彼はマレーシア語を話します。', romaji: 'Kare wa Mareeshiago wo hanashimasu.', vn: 'Anh ấy nói tiếng Mã Lai.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'マレーシア語の本を読みます。', romaji: 'Mareeshiago no hon wo yomimasu.', vn: 'Tôi đọc sách tiếng Mã Lai.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }]
+        },
+        {
+          jp: 'マレーシア語で挨拶をします。', romaji: 'Mareeshiago de aisatsu wo shimasu.', vn: 'Chào hỏi bằng tiếng Mã Lai.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }]
+        },
+        {
+          jp: 'マレーシア語の歌を聞きましょう。', romaji: 'Mareeshiago no uta wo kikimashou.', vn: 'Hãy cùng nghe bài hát tiếng Mã Lai nào.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }]
+        }
+      ]
+    },
+    {
+      word: 'ロシアご', kanji: 'ロシア語', romaji: 'Roshiago', mean: 'Tiếng Nga',
+      examples: [
+        {
+          jp: 'ロシア語を話します。', romaji: 'Roshiago wo hanashimasu.', vn: 'Tôi nói tiếng Nga.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'ロシア語は難しいです。', romaji: 'Roshiago wa muzukashii desu.', vn: 'Tiếng Nga rất khó.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '難', reading: 'むずか', meaning: 'NAN' }]
+        },
+        {
+          jp: '彼はロシア語を勉強しています。', romaji: 'Kare wa Roshiago wo benkyou shite imasu.', vn: 'Anh ấy đang học tiếng Nga.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'ロシア語で話をしました。', romaji: 'Roshiago de hanashi wo shimashita.', vn: 'Tôi đã nói chuyện bằng tiếng Nga.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: 'ロシア語の歌が好きです。', romaji: 'Roshiago no uta ga suki desu.', vn: 'Tôi thích bài hát tiếng Nga.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '歌', reading: 'うた', meaning: 'CA' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        },
+        {
+          jp: 'ロシア語の本を買います。', romaji: 'Roshiago no hon wo kaimasu.', vn: 'Tôi mua sách tiếng Nga.',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        }
+      ]
+    },
 
     // Tên riêng (giả tưởng)
-    { word: 'さくらだいがく', kanji: 'さくら大学', romaji: 'Sakura Daigaku', mean: 'Đại học Sakura (tên trường giả tưởng)' },
+    {
+      word: 'さくらだいがく', kanji: 'さくら大学', romaji: 'Sakura Daigaku', mean: 'Đại học Sakura (tên trường giả tưởng)',
+      examples: [
+        {
+          jp: 'さくら大学に行きます。', romaji: 'Sakura Daigaku ni ikimasu.', vn: 'Tôi đi đến đại học Sakura.',
+          furigana: [{ kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'さくら大学は大きいです。', romaji: 'Sakura Daigaku wa ookii desu.', vn: 'Đại học Sakura rất lớn.',
+          furigana: [{ kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }]
+        },
+        {
+          jp: '彼はさくら大学の学生です。', romaji: 'Kare wa Sakura Daigaku no gakusei desu.', vn: 'Anh ấy là sinh viên đại học Sakura.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }]
+        },
+        {
+          jp: 'さくら大学で日本語を勉強します。', romaji: 'Sakura Daigaku de Nihongo wo benkyou shimasu.', vn: 'Tôi học tiếng Nhật ở đại học Sakura.',
+          furigana: [{ kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'さくら大学は有名ですか。', romaji: 'Sakura Daigaku wa yuumei desu ka.', vn: 'Đại học Sakura có nổi tiếng không?',
+          furigana: [{ kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
+        },
+        {
+          jp: 'さくら大学の先生に会います。', romaji: 'Sakura Daigaku no sensei ni aimasu.', vn: 'Tôi gặp giáo viên của đại học Sakura.',
+          furigana: [{ kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '会', reading: 'あ', meaning: 'HỘI' }]
+        }
+      ]
+    },
     {
       word: 'ふじだいがく', kanji: '富士大学', romaji: 'Fuji Daigaku', mean: 'Đại học Fuji (tên trường giả tưởng)',
+      examples: [
+        {
+          jp: '富士大学から来ました。', romaji: 'Fuji Daigaku kara kimashita.', vn: 'Tôi đến từ đại học Fuji.',
+          furigana: [{ kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '来', reading: 'き', meaning: 'LAI' }]
+        },
+        {
+          jp: '富士大学はきれいです。', romaji: 'Fuji Daigaku wa kirei desu.', vn: 'Đại học Fuji rất đẹp.',
+          furigana: [{ kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }]
+        },
+        {
+          jp: '彼女は富士大学の先生です。', romaji: 'Kanojo wa Fuji Daigaku no sensei desu.', vn: 'Cô ấy là giáo viên đại học Fuji.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }, { kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
+        },
+        {
+          jp: '富士大学へ行きたいです。', romaji: 'Fuji Daigaku e ikitai desu.', vn: 'Tôi muốn đi đại học Fuji.',
+          furigana: [{ kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '富士大学の歴史は深いです。', romaji: 'Fuji Daigaku no rekishi wa fukai desu.', vn: 'Lịch sử đại học Fuji rất lâu đời.',
+          furigana: [{ kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '歴史', reading: 'れきし', meaning: 'LỊCH SỬ' }, { kanji: '深', reading: 'ふか', meaning: 'THÂM' }]
+        },
+        {
+          jp: '富士大学で友達を作ります。', romaji: 'Fuji Daigaku de tomodachi wo tsukurimasu.', vn: 'Tôi kết bạn ở đại học Fuji.',
+          furigana: [{ kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }]
+        }
+      ],
       kanjiDetails: [
         {
           kanji: '富',
@@ -2751,24 +4893,152 @@ export const lesson1Data: LessonDetail = {
             }
           ]
         }
-      ],
+      ]
+    },
+    {
+      word: 'IMC', kanji: '', romaji: 'IMC', mean: 'IMC (tên công ty giả tưởng)',
       examples: [
         {
-          jp: '富士大学は日本の大学です。', romaji: 'Fuji Daigaku wa Nihon no daigaku desu.', vn: 'Đại học Fuji là một trường đại học của Nhật Bản.',
-          furigana: [{ kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }]
+          jp: 'IMCの社員です。', romaji: 'IMC no shain desu.', vn: 'Là nhân viên công ty IMC.',
+          furigana: [{ kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }]
         },
         {
-          jp: '富士大学で勉強します。', romaji: 'Fuji Daigaku de benkyou shimasu.', vn: 'Tôi học tại đại học Fuji.',
-          furigana: [{ kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+          jp: 'IMCは大阪にあります。', romaji: 'IMC wa Osaka ni arimasu.', vn: 'IMC nằm ở Osaka.',
+          furigana: [{ kanji: '大阪', reading: 'おおさか', meaning: 'ĐẠI PHẢN' }]
+        },
+        {
+          jp: 'IMCへ行きます。', romaji: 'IMC e ikimasu.', vn: 'Tôi đi đến IMC.',
+          furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'ミラーさんはIMCの社員ですか。', romaji: 'Mira-san wa IMC no shain desu ka.', vn: 'Anh Miller là nhân viên IMC phải không?',
+          furigana: [{ kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }]
+        },
+        {
+          jp: 'IMCで働いています。', romaji: 'IMC de hataraite imasu.', vn: 'Tôi đang làm việc tại IMC.',
+          furigana: [{ kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }]
+        },
+        {
+          jp: 'IMCの仕事は忙しいです。', romaji: 'IMC no shigoto wa isogashii desu.', vn: 'Công việc ở IMC rất bận rộn.',
+          furigana: [{ kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }, { kanji: '忙', reading: 'いそが', meaning: 'MANG' }]
         }
       ]
     },
-    { word: 'IMC', kanji: '', romaji: 'IMC', mean: 'Tên công ty (giả tưởng)' },
-    { word: 'パワーでんき', kanji: 'パワー電気', romaji: 'Pawaa Denki', mean: 'Công ty Power Điện khí (giả tưởng)' },
-    { word: 'ブラジルエアー', kanji: '', romaji: 'Burajiru Eaa', mean: 'Hãng hàng không Brazil (giả tưởng)' },
-    { word: 'AKC', kanji: '', romaji: 'AKC', mean: 'Tên tổ chức (giả tưởng)' },
+    {
+      word: 'パワーでんき', kanji: 'パワー電気', romaji: 'Pawaa Denki', mean: 'Điện lực Power (tên công ty giả tưởng)',
+      examples: [
+        {
+          jp: 'パワー電気の会社員です。', romaji: 'Pawaa Denki no kaishain desu.', vn: 'Là nhân viên công ty Điện lực Power.',
+          furigana: [{ kanji: '会社員', reading: 'かいしゃいん', meaning: 'HỘI XÃ VIÊN' }]
+        },
+        {
+          jp: 'パワー電気は有名です。', romaji: 'Pawaa Denki wa yuumei desu.', vn: 'Điện lực Power rất nổi tiếng.',
+          furigana: [{ kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
+        },
+        {
+          jp: 'パワー電気へ行きます。', romaji: 'Pawaa Denki e ikimasu.', vn: 'Tôi đi đến công ty Điện lực Power.',
+          furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '彼はパワー電気で働いています。', romaji: 'Kare wa Pawaa Denki de hataraite imasu.', vn: 'Anh ấy đang làm việc tại Điện lực Power.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }]
+        },
+        {
+          jp: 'パワー電気の社長に会います。', romaji: 'Pawaa Denki no shachou ni aimasu.', vn: 'Tôi gặp giám đốc công ty Điện lực Power.',
+          furigana: [{ kanji: '社長', reading: 'しゃちょう', meaning: 'XÃ TRƯỞNG' }, { kanji: '会', reading: 'あ', meaning: 'HỘI' }]
+        },
+        {
+          jp: 'パワー電気の製品（せいひん）はいいです。', romaji: 'Pawaa Denki no seihin wa ii desu.', vn: 'Sản phẩm của Điện lực Power rất tốt.',
+          furigana: [{ kanji: '製品', reading: 'せいひん', meaning: 'CHẾ PHẨM' }]
+        }
+      ]
+    },
+    {
+      word: 'ブラジルエアー', kanji: '', romaji: 'Burajiru Eaa', mean: 'Hãng hàng không Brazil (giả tưởng)',
+      examples: [
+        {
+          jp: 'ブラジルエアーで行きます。', romaji: 'Burajiru Eaa de ikimasu.', vn: 'Đi bằng hãng hàng không Brazil.',
+          furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'ブラジルエアーは便利（べんり）です。', romaji: 'Burajiru Eaa wa benri desu.', vn: 'Hãng Brazil Air rất tiện lợi.',
+          furigana: [{ kanji: '便利', reading: 'べんり', meaning: 'TIỆN LỢI' }]
+        },
+        {
+          jp: 'ブラジルエアーのチケットを買います。', romaji: 'Burajiru Eaa no chiketto wo kaimasu.', vn: 'Tôi mua vé của Brazil Air.',
+          furigana: [{ kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        },
+        {
+          jp: 'ブラジルエアーの社員に聞きます。', romaji: 'Burajiru Eaa no shain ni kikimasu.', vn: 'Tôi hỏi nhân viên của Brazil Air.',
+          furigana: [{ kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }]
+        },
+        {
+          jp: 'ブラジルエアーは安（やす）いですか。', romaji: 'Burajiru Eaa wa yasui desu ka.', vn: 'Brazil Air có rẻ không?',
+          furigana: [{ kanji: '安', reading: 'やす', meaning: 'AN' }]
+        },
+        {
+          jp: 'ブラジルエアーの飛行機（ひこうき）は大きいです。', romaji: 'Burajiru Eaa no hikouki wa ookii desu.', vn: 'Máy báy của Brazil Air rất lớn.',
+          furigana: [{ kanji: '飛行機', reading: 'ひこうき', meaning: 'PHI HÀNH CƠ' }, { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'AKC', kanji: '', romaji: 'AKC', mean: 'AKC (tên tổ chức giả tưởng)',
+      examples: [
+        {
+          jp: 'AKCの研修生（けんしゅうせい）です。', romaji: 'AKC no kenshuusei desu.', vn: 'Là tu nghiệp sinh của AKC.',
+          furigana: [{ kanji: '研修生', reading: 'けんしゅうせい', meaning: 'NGHIÊN TU SINH' }]
+        },
+        {
+          jp: 'AKCで勉強しています。', romaji: 'AKC de benkyou shite imasu.', vn: 'Tôi đang học ở AKC.',
+          furigana: [{ kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
+        },
+        {
+          jp: 'AKCへ書類（しょるい）を送（おく）ります。', romaji: 'AKC e shorui wo okurimasu.', vn: 'Gửi hồ sơ đến AKC.',
+          furigana: [{ kanji: '書類', reading: 'しょるい', meaning: 'THƯ LOẠI' }, { kanji: '送', reading: 'おく', meaning: 'TỐNG' }]
+        },
+        {
+          jp: 'AKCの先生は厳しいです。', romaji: 'AKC no sensei wa kibishii desu.', vn: 'Giáo viên ở AKC rất nghiêm khắc.',
+          furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '厳', reading: 'きび', meaning: 'NGHIÊM' }]
+        },
+        {
+          jp: 'AKCの場所（ばしょ）を知っていますか。', romaji: 'AKC no basho wo shitte imasu ka.', vn: 'Bạn có biết địa điểm của AKC không?',
+          furigana: [{ kanji: '場所', reading: 'ばしょ', meaning: 'TRÀNG SỞ' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: 'AKCで日本語を習いました。', romaji: 'AKC de Nihongo wo naraimashita.', vn: 'Tôi đã học tiếng Nhật ở AKC.',
+          furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        }
+      ]
+    },
     {
       word: 'こうべびょういん', kanji: '神戸病院', romaji: 'Koube Byouin', mean: 'Bệnh viện Kobe (giả tưởng)',
+      examples: [
+        {
+          jp: '神戸病院へ行きます。', romaji: 'Koube Byouin e ikimasu.', vn: 'Tôi đi đến bệnh viện Kobe.',
+          furigana: [{ kanji: '神戸病院', reading: 'こうべびょういん', meaning: 'THẦN HỘ BỆNH VIỆN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '彼は神戸病院の医者です。', romaji: 'Kare wa Koube Byouin no isha desu.', vn: 'Anh ấy là bác sĩ ở bệnh viện Kobe.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '神戸病院', reading: 'こうべびょういん', meaning: 'THẦN HỘ BỆNH VIỆN' }, { kanji: '医者', reading: 'いしゃ', meaning: 'Y GIẢ' }]
+        },
+        {
+          jp: '神戸病院はどこですか。', romaji: 'Koube Byouin wa doko desu ka.', vn: 'Bệnh viện Kobe ở đâu vậy?',
+          furigana: [{ kanji: '神戸病院', reading: 'こうべびょういん', meaning: 'THẦN HỘ BỆNH VIỆN' }]
+        },
+        {
+          jp: '神戸病院で働いています。', romaji: 'Koube Byouin de hataraite imasu.', vn: 'Tôi đang làm việc tại bệnh viện Kobe.',
+          furigana: [{ kanji: '神戸病院', reading: 'こうべびょういん', meaning: 'THẦN HỘ BỆNH VIỆN' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }]
+        },
+        {
+          jp: '昨日（きのう）神戸病院へ行きました。', romaji: 'Kinou Koube Byouin e ikimashita.', vn: 'Hôm qua tôi đã đi bệnh viện Kobe.',
+          furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '神戸病院', reading: 'こうべびょういん', meaning: 'THẦN HỘ BỆNH VIỆN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '神戸病院はとても大きいです。', romaji: 'Koube Byouin wa totemo ookii desu.', vn: 'Bệnh viện Kobe rất là lớn.',
+          furigana: [{ kanji: '神戸病院', reading: 'こうべびょういん', meaning: 'THẦN HỘ BỆNH VIỆN' }, { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }]
+        }
+      ],
       kanjiDetails: [
         {
           kanji: '神',
@@ -2839,16 +5109,6 @@ export const lesson1Data: LessonDetail = {
               furigana: [{ kanji: '戸棚', reading: 'とだな', meaning: 'HỘ BẰNG' }, { kanji: '中', reading: 'なか', meaning: 'TRUNG' }]
             }
           ]
-        }
-      ],
-      examples: [
-        {
-          jp: '神戸病院は大きな病院です。', romaji: 'Koube Byouin wa ookina byouin desu.', vn: 'Bệnh viện Kobe là một bệnh viện lớn.',
-          furigana: [{ kanji: '神戸', reading: 'こうべ', meaning: 'THẦN HỘ' }, { kanji: '病院', reading: 'びょういん', meaning: 'BỆNH VIỆN' }, { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }]
-        },
-        {
-          jp: '神戸病院へ行きます。', romaji: 'Koube Byouin e ikimasu.', vn: 'Tôi đi đến bệnh viện Kobe.',
-          furigana: [{ kanji: '神戸', reading: 'こうべ', meaning: 'THẦN HỘ' }, { kanji: '病院', reading: 'びょういん', meaning: 'BỆNH VIỆN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
         }
       ]
     },
