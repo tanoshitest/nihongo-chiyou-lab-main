@@ -865,6 +865,9 @@ const KanjiTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabulary'] }
         <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow border-[#008001]/20">
           <div className="bg-[#008001]/5 p-4 border-b flex items-start justify-between">
             <div className="flex items-center gap-4">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#008001] text-white flex items-center justify-center font-bold shadow-sm">
+                {index + 1}
+              </div>
               <div className="text-4xl font-bold text-[#008001] bg-white w-16 h-16 rounded-xl shadow-sm flex items-center justify-center border border-[#008001]/10">
                 {kanji.kanji}
               </div>
