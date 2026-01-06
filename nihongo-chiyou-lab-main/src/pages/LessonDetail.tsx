@@ -15,27 +15,39 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Badge } from "@/components/ui/badge";
 
+// Helper to look up Kanji details from local lesson data or master dictionary
+const getKanjiDetail = (char: string, localDetails?: KanjiDetail[]): KanjiDetail | undefined => {
+  // 1. Try local lesson details first
+  if (localDetails) {
+    const local = localDetails.find(d => d.kanji === char);
+    if (local) return local;
+  }
+
+  // 2. Fallback to master dictionary
+  const master = masterKanjiData.find(k => k.kanji === char);
+  if (master) {
+    return {
+      kanji: master.kanji,
+      meaning: master.meaning,
+      onyomi: master.onyomi,
+      kunyomi: master.kunyomi,
+      sinoVietnamese: master.sinoVietnamese,
+      imageUrl: master.imageUrl,
+      strokes: 0,
+      jlpt: "N/A",
+      radicals: "",
+      examples: [],
+      exampleSentences: []
+    };
+  }
+
+  return undefined;
+};
+
 // Component Hover Card - hiển thị chi tiết bộ thủ/thành phần
 const ComponentHoverCard = ({ char, meaning, allKanjiDetails }: { char: string; meaning: string; allKanjiDetails: KanjiDetail[] }) => {
-  // Try to find details in current lesson first
-  let detail: any = allKanjiDetails.find(d => d.kanji === char);
-
-  // If not found, look in master dictionary
-  if (!detail) {
-    const masterDetail = masterKanjiData.find(k => k.kanji === char);
-    if (masterDetail) {
-      detail = {
-        kanji: masterDetail.kanji,
-        meaning: masterDetail.meaning,
-        onyomi: masterDetail.onyomi,
-        kunyomi: masterDetail.kunyomi,
-        sinoVietnamese: masterDetail.sinoVietnamese,
-        imageUrl: masterDetail.imageUrl,
-        strokes: 0, // Default properties for master data
-        jlpt: "N/A"
-      };
-    }
-  }
+  // Use helper to find details
+  const detail = getKanjiDetail(char, allKanjiDetails);
 
   // Visual badge for the component
   const componentBadge = (
@@ -168,7 +180,7 @@ const SentenceWithFurigana = ({
       return (
         <span className="inline-flex items-center flex-wrap">
           {jp.split('').map((char, i) => {
-            const detail = kanjiDetails.find(d => d.kanji === char);
+            const detail = getKanjiDetail(char, kanjiDetails);
             if (detail) return <KanjiHoverCard key={i} kanjiChar={char} detail={detail} />;
             return <span key={i}>{char}</span>;
           })}
@@ -203,7 +215,7 @@ const SentenceWithFurigana = ({
             <span className="text-[10px] text-muted-foreground leading-none mb-0.5 min-h-[10px]">{item.reading}</span>
             <span className="text-[#008001] font-medium leading-none">
               {kanjiChars.map((char, idx) => {
-                const detail = kanjiDetails?.find(d => d.kanji === char);
+                const detail = getKanjiDetail(char, kanjiDetails);
                 if (detail) return <KanjiHoverCard key={idx} kanjiChar={char} detail={detail} />;
                 return <span key={idx}>{char}</span>;
               })}
@@ -215,7 +227,7 @@ const SentenceWithFurigana = ({
         result.push(
           <span key={`kanji-${keyIndex++}`} className="text-[#008001] font-medium">
             {kanjiChars.map((char, idx) => {
-              const detail = kanjiDetails?.find(d => d.kanji === char);
+              const detail = getKanjiDetail(char, kanjiDetails);
               if (detail) return <KanjiHoverCard key={idx} kanjiChar={char} detail={detail} />;
               return <span key={idx}>{char}</span>;
             })}
