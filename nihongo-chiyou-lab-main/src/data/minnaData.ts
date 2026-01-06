@@ -6569,6 +6569,15 @@ export const lesson2Data: LessonDetail = {
     },
     {
       word: 'くるま', kanji: '車', romaji: 'kuruma', mean: 'xe ô tô',
+      kanjiDetails: [
+        {
+          kanji: '車', onyomi: 'シャ (sha)', kunyomi: 'くるま (kuruma)', meaning: 'Xe cộ', sinoVietnamese: 'XA', strokes: 7, jlpt: 'N5', radicals: '車 (xa)', components: [{ char: '車', meaning: 'xe' }], mnemonic: 'Hình ảnh chiếc xe nhìn từ trên cao.',
+          examples: ['電車 (でんしゃ) - Xe điện', '自転車 (じてんしゃ) - Xe đạp', '車 (くるま) - Ô tô'],
+          exampleSentences: [
+            { jp: '車で行きます。', vn: 'Tôi đi bằng ô tô.', furigana: [{ kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] }
+          ]
+        }
+      ],
       examples: [
         {
           jp: 'あれは私の車です。', romaji: 'Are wa watashi no kuruma desu.', vn: 'Kia là xe ô tô của tôi.',
@@ -7043,7 +7052,7 @@ export const lesson2Data: LessonDetail = {
       word: 'おみやげ', kanji: 'お土産', romaji: 'omiyage', mean: 'quà tặng (quà đặc sản)',
       kanjiDetails: [
         {
-          kanji: '土', onyomi: 'ド (do), ト (to)', kunyomi: 'つち (tsuchi)', meaning: 'Đất', sinoVietnamese: 'THỔ', strokes: 3, jlpt: 'N5', radicals: '土 (thổ)', mnemonic: 'Hình ảnh mầm cây mọc lên từ mặt đất.',
+          kanji: '土', onyomi: 'ド (do), ト (to)', kunyomi: 'つち (tsuchi)', meaning: 'Đất', sinoVietnamese: 'THỔ', strokes: 3, jlpt: 'N5', radicals: '土 (thổ)', components: [{ char: '土', meaning: 'đất' }], mnemonic: 'Hình ảnh mầm cây mọc lên từ mặt đất.',
           examples: ['土 (つち) - Đất', '土曜日 (どようび) - Thứ bảy'],
           exampleSentences: [
             { jp: '土に種をまきます。', vn: 'Gieo hạt xuống đất.', furigana: [{ kanji: '土', reading: 'つち', meaning: 'THỔ' }, { kanji: '種', reading: 'たね', meaning: 'CHỦNG' }] },
@@ -7149,7 +7158,7 @@ export const lesson2Data: LessonDetail = {
       word: 'にほんご', kanji: '日本語', romaji: 'nihongo', mean: 'tiếng Nhật',
       kanjiDetails: [
         {
-          kanji: '日', onyomi: 'ニチ (nichi), ジツ (jitsu)', kunyomi: 'ひ (hi), か (ka)', meaning: 'Mặt trời, ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日 (nhật)', mnemonic: 'Hình ảnh mặt trời hình tròn với một vạch ở giữa.',
+          kanji: '日', onyomi: 'ニチ (nichi), ジツ (jitsu)', kunyomi: 'ひ (hi), か (ka)', meaning: 'Mặt trời, ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日 (nhật)', components: [{ char: '日', meaning: 'mặt trời' }], mnemonic: 'Hình ảnh mặt trời hình tròn với một vạch ở giữa.',
           examples: ['日本 (にほん) - Nhật Bản', '毎日 (まいにち) - Mỗi ngày'],
           exampleSentences: [
             { jp: '今日はお日柄もよく。', vn: 'Hôm nay ngày lành tháng tốt.', furigana: [{ kanji: '今日', reading: 'きょう', meaning: 'KIM NHẬT' }, { kanji: '日柄', reading: 'ひがら', meaning: 'NHẬT BÍNH' }] },
@@ -7413,7 +7422,8 @@ export const lesson2Data: LessonDetail = {
       word: 'じどうしゃ', kanji: '自動車', romaji: 'jidousha', mean: 'xe hơi, ô tô',
       kanjiDetails: [
         {
-          kanji: '自', onyomi: 'ジ (ji), シ (shi)', kunyomi: 'みずか.ら (mizukara)', meaning: 'Tự mình, tự thân', sinoVietnamese: 'TỰ', strokes: 6, jlpt: 'N4', radicals: '自 (tự)', examples: ['自分 (じぶん) - bản thân', '自由 (じゆう) - tự do'],
+          kanji: '自', onyomi: 'ジ (ji), シ (shi)', kunyomi: 'みずか.ら (mizukara)', meaning: 'Tự mình, tự thân', sinoVietnamese: 'TỰ', strokes: 6, jlpt: 'N4', radicals: '自 (tự)', components: [{ char: '目', meaning: 'mắt' }], mnemonic: 'Chỉ tay vào mũi (gần mắt 目) để nói về chính mình (Tự).',
+          examples: ['自分 (じぶん) - bản thân', '自由 (じゆう) - tự do'],
           exampleSentences: [
             { jp: '自分のことは自分でします。', vn: 'Việc của mình thì tự mình làm.', furigana: [{ kanji: '自分', reading: 'じぶん', meaning: 'TỰ PHÂN' }, { kanji: '自分', reading: 'じぶん', meaning: 'TỰ PHÂN' }] },
             { jp: '自由が好きです。', vn: 'Tôi thích tự do.', furigana: [{ kanji: '自由', reading: 'じゆう', meaning: 'TỰ DO' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }] },
@@ -7423,7 +7433,8 @@ export const lesson2Data: LessonDetail = {
           ]
         },
         {
-          kanji: '動', onyomi: 'ドウ (dou)', kunyomi: 'うご.く (ugoku)', meaning: 'Di chuyển, hoạt động', sinoVietnamese: 'ĐỘNG', strokes: 11, jlpt: 'N4', radicals: '力 (lực)', examples: ['動物 (どうぶつ) - động vật', '運動 (うんどう) - vận động'],
+          kanji: '動', onyomi: 'ドウ (dou)', kunyomi: 'うご.く (ugoku)', meaning: 'Di chuyển, hoạt động', sinoVietnamese: 'ĐỘNG', strokes: 11, jlpt: 'N4', radicals: '力 (lực)', components: [{ char: '重', meaning: 'nặng' }, { char: '力', meaning: 'sức lực' }], mnemonic: 'Dùng sức lực (力) để di chuyển vật nặng (重) là Động (動).',
+          examples: ['動物 (どうぶつ) - động vật', '運動 (うんどう) - vận động'],
           exampleSentences: [
             { jp: '動物園へ行きます。', vn: 'Tôi đi sở thú.', furigana: [{ kanji: '動物園', reading: 'どうぶつえん', meaning: 'ĐỘNG VẬT VIÊN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
             { jp: '運動靴を履きます。', vn: 'Tôi đi giày thể thao.', furigana: [{ kanji: '運動靴', reading: 'うんどうぐつ', meaning: 'VẬN ĐỘNG OA' }, { kanji: '履', reading: 'は', meaning: 'LÍ' }] },
@@ -7433,7 +7444,8 @@ export const lesson2Data: LessonDetail = {
           ]
         },
         {
-          kanji: '車', onyomi: 'シャ (sha)', kunyomi: 'くるま (kuruma)', meaning: 'Xe cộ', sinoVietnamese: 'XA', strokes: 7, jlpt: 'N5', radicals: '車 (xa)', examples: ['電車 (でんしゃ) - xe điện', '自転車 (じてんしゃ) - xe đạp'],
+          kanji: '車', onyomi: 'シャ (sha)', kunyomi: 'くるま (kuruma)', meaning: 'Xe cộ', sinoVietnamese: 'XA', strokes: 7, jlpt: 'N5', radicals: '車 (xa)', components: [{ char: '車', meaning: 'xe' }], mnemonic: 'Hình ảnh chiếc xe nhìn từ trên cao.',
+          examples: ['電車 (でんしゃ) - xe điện', '自転車 (じてんしゃ) - xe đạp'],
           exampleSentences: [
             { jp: '電車に乗ります。', vn: 'Tôi đi tàu điện.', furigana: [{ kanji: '電車', reading: 'でんしゃ', meaning: 'ĐIỆN XA' }, { kanji: '乗', reading: 'の', meaning: 'THỪA' }] },
             { jp: '車を買います。', vn: 'Tôi mua xe ô tô.', furigana: [{ kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }] },
@@ -7585,7 +7597,8 @@ export const lesson2Data: LessonDetail = {
       word: 'さとう', kanji: '佐藤', romaji: 'satou', mean: 'Sato (họ phổ biến)',
       kanjiDetails: [
         {
-          kanji: '佐', onyomi: 'サ (sa)', kunyomi: '', meaning: 'Phò tá, trợ giúp', sinoVietnamese: 'TÁ', strokes: 7, jlpt: 'N1', radicals: '人 (nhân)', examples: ['補佐 (ほさ) - bổ tá/trợ lý'],
+          kanji: '佐', onyomi: 'サ (sa)', kunyomi: '', meaning: 'Phò tá, trợ giúp', sinoVietnamese: 'TÁ', strokes: 7, jlpt: 'N1', radicals: '人 (nhân)', components: [{ char: '亻', meaning: 'người' }, { char: '左', meaning: 'trái' }], mnemonic: 'Người (亻) đứng bên trái (左) để phò tá.',
+          examples: ['補佐 (ほさ) - bổ tá/trợ lý'],
           exampleSentences: [
             { jp: '佐藤さんは親切です。', vn: 'Anh Sato tốt bụng.', furigana: [{ kanji: '佐藤', reading: 'さとう', meaning: 'TÁ ĐẰNG' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }] },
             { jp: '補佐官になります。', vn: 'Tôi trở thành trợ lý.', furigana: [{ kanji: '補佐官', reading: 'ほさかん', meaning: 'BỔ TÁ QUAN' }] },
@@ -7595,7 +7608,8 @@ export const lesson2Data: LessonDetail = {
           ]
         },
         {
-          kanji: '藤', onyomi: 'トウ (tou), ドウ (dou)', kunyomi: 'ふじ (fuji)', meaning: 'Hoa tử đằng', sinoVietnamese: 'ĐẰNG', strokes: 18, jlpt: 'N1', radicals: '艸 (thảo)', examples: ['藤 (ふじ) - hoa tử đằng', '葛藤 (かっとう) - cát đằng/xung đột'],
+          kanji: '藤', onyomi: 'トウ (tou), ドウ (dou)', kunyomi: 'ふじ (fuji)', meaning: 'Hoa tử đằng', sinoVietnamese: 'ĐẰNG', strokes: 18, jlpt: 'N1', radicals: '艸 (thảo)', components: [{ char: '艹', meaning: 'cỏ' }, { char: '月', meaning: 'trăng/thịt' }, { char: '𲃮', meaning: 'nước dâng' }], mnemonic: 'Hoa tử đằng (艹) rủ xuống đẹp như ánh trăng (月) phản chiếu mặt nước.',
+          examples: ['藤 (ふじ) - hoa tử đằng', '葛藤 (かっとう) - cát đằng/xung đột'],
           exampleSentences: [
             { jp: '藤の花がきれいです。', vn: 'Hoa tử đằng đẹp.', furigana: [{ kanji: '藤', reading: 'ふじ', meaning: 'ĐẰNG' }, { kanji: '花', reading: 'はな', meaning: 'HOA' }] },
             { jp: '葛藤があります。', vn: 'Có sự xung đột.', furigana: [{ kanji: '葛藤', reading: 'かっとう', meaning: 'CÁT ĐẰNG' }] },
