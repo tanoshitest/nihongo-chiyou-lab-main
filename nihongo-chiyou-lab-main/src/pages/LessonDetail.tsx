@@ -36,8 +36,12 @@ const getKanjiDetail = (char: string, localDetails?: KanjiDetail[]): KanjiDetail
       strokes: 0,
       jlpt: "N/A",
       radicals: "",
-      examples: [],
-      exampleSentences: []
+      examples: [], // No standalone vocabulary list in master data
+      exampleSentences: master.examples.map(ex => ({
+        jp: ex.japanese,
+        vn: ex.vietnamese,
+        romaji: ex.romaji
+      }))
     };
   }
 

@@ -15482,5 +15482,95 @@ export const kanjiData: KanjiCard[] = [
     meaning: "Riêng tư, Cá nhân",
     sinoVietnamese: "KHƯ/TƯ",
     examples: []
+  },
+  {
+    id: 515,
+    kanji: "亻",
+    lesson: 0,
+    onyomi: "ジン",
+    kunyomi: "ひと",
+    meaning: "Người (Nhân đứng)",
+    sinoVietnamese: "NHÂN",
+    examples: []
+  },
+  {
+    id: 516,
+    kanji: "氵",
+    lesson: 0,
+    onyomi: "スイ",
+    kunyomi: "みず",
+    meaning: "Nước (Thủy ba)",
+    sinoVietnamese: "THỦY",
+    examples: []
+  },
+  {
+    id: 517,
+    kanji: "扌",
+    lesson: 0,
+    onyomi: "シュ",
+    kunyomi: "て",
+    meaning: "Tay (Thủ)",
+    sinoVietnamese: "THỦ",
+    examples: []
+  },
+  {
+    id: 518,
+    kanji: "宀",
+    lesson: 0,
+    onyomi: "メン",
+    kunyomi: "うかんむり",
+    meaning: "Mái nhà (Miên)",
+    sinoVietnamese: "MIÊN",
+    examples: []
+  },
+  {
+    id: 519,
+    kanji: "辶",
+    lesson: 0,
+    onyomi: "チャク",
+    kunyomi: "しんにょう",
+    meaning: "Bước đi, Con đường (Xước)",
+    sinoVietnamese: "XƯỚC",
+    examples: []
+  },
+  {
+    id: 520,
+    kanji: "阝",
+    lesson: 0,
+    onyomi: "フ",
+    kunyomi: "こざと",
+    meaning: "Gò đất / Thôn ấp (Phụ/Ấp)",
+    sinoVietnamese: "PHỤ/ẤP",
+    examples: []
+  },
+  {
+    id: 521,
+    kanji: "艹",
+    lesson: 0,
+    onyomi: "ソウ",
+    kunyomi: "くさ",
+    meaning: "Cỏ (Thảo)",
+    sinoVietnamese: "THẢO",
+    examples: []
+  },
+  {
+    id: 522,
+    kanji: "心",
+    lesson: 0,
+    onyomi: "シン",
+    kunyomi: "こころ",
+    meaning: "Trái tim (Tâm)",
+    sinoVietnamese: "TÂM",
+    examples: []
+  },
+  {
+    id: 523,
+    kanji: "忄",
+    lesson: 0,
+    onyomi: "シン",
+    kunyomi: "りっしんべん",
+    meaning: "Trái tim (Tâm đứng)",
+    sinoVietnamese: "TÂM",
+    examples: []
   }
 ];
