@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import { BookOpen, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { lessonsN5, lessonsN4, LessonSummary } from "@/data/minnaData";
 
@@ -79,34 +80,43 @@ const MinnaNoNihongo = () => {
         </div>
 
         {/* Main Content */}
-        <main className="container mx-auto px-4 py-8 space-y-12">
-          {/* N5 Section */}
-          <LessonSection
-            title="Sơ cấp 1 - Trình độ N5"
-            subtitle="Bài 1 → 25 | Nền tảng tiếng Nhật cơ bản"
-            lessons={lessonsN5}
-            icon={BookOpen}
-          />
-
-          {/* Divider */}
-          <div className="relative">
-            <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t border-[#008001]/20" />
+        <main className="container mx-auto px-4 py-8">
+          <Tabs defaultValue="n5" className="space-y-8">
+            <div className="flex justify-center">
+              <TabsList className="grid w-full max-w-md grid-cols-2 h-12">
+                <TabsTrigger
+                  value="n5"
+                  className="text-base data-[state=active]:bg-[#008001] data-[state=active]:text-white"
+                >
+                  Sơ cấp 1 (N5)
+                </TabsTrigger>
+                <TabsTrigger
+                  value="n4"
+                  className="text-base data-[state=active]:bg-[#008001] data-[state=active]:text-white"
+                >
+                  Sơ cấp 2 (N4)
+                </TabsTrigger>
+              </TabsList>
             </div>
-            <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-background px-4 text-[#008001] font-semibold">
-                Tiếp tục hành trình
-              </span>
-            </div>
-          </div>
 
-          {/* N4 Section */}
-          <LessonSection
-            title="Sơ cấp 2 - Trình độ N4"
-            subtitle="Bài 26 → 50 | Nâng cao ngữ pháp và giao tiếp"
-            lessons={lessonsN4}
-            icon={GraduationCap}
-          />
+            <TabsContent value="n5" className="space-y-8 focus-visible:outline-none">
+              <LessonSection
+                title="Sơ cấp 1 - Trình độ N5"
+                subtitle="Bài 1 → 25 | Nền tảng tiếng Nhật cơ bản"
+                lessons={lessonsN5}
+                icon={BookOpen}
+              />
+            </TabsContent>
+
+            <TabsContent value="n4" className="space-y-8 focus-visible:outline-none">
+              <LessonSection
+                title="Sơ cấp 2 - Trình độ N4"
+                subtitle="Bài 26 → 50 | Nâng cao ngữ pháp và giao tiếp"
+                lessons={lessonsN4}
+                icon={GraduationCap}
+              />
+            </TabsContent>
+          </Tabs>
         </main>
       </div>
     </Layout>
