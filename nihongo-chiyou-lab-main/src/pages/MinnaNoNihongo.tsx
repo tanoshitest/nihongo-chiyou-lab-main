@@ -1,34 +1,56 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import { BookOpen, GraduationCap } from "lucide-react";
+import { BookOpen, GraduationCap, ClipboardCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { cn } from "@/lib/utils";
 
 import { lessonsN5, lessonsN4, LessonSummary } from "@/data/minnaData";
 
 const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
+  const isTest = lesson.id === 9991;
+  const linkUrl = isTest ? "/minna/test-1" : `/minna/${lesson.id}`;
+
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 hover:border-[#008001]/50">
+    <Card className={cn(
+      "group hover:shadow-lg transition-all duration-300 h-full flex flex-col",
+      isTest
+        ? "border-orange-500/50 hover:border-orange-500 bg-orange-50/10"
+        : "hover:border-[#008001]/50"
+    )}>
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between">
-          <span className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
-            Bài {lesson.id}
+          <span className={cn(
+            "text-xs font-medium uppercase tracking-wide",
+            isTest ? "text-orange-600" : "text-muted-foreground"
+          )}>
+            {isTest ? "Kiểm tra" : `Bài ${lesson.id}`}
           </span>
-          <BookOpen className="w-4 h-4 text-[#008001] opacity-60 group-hover:opacity-100 transition-opacity" />
+          {isTest ? (
+            <ClipboardCheck className="w-4 h-4 text-orange-600 opacity-60 group-hover:opacity-100 transition-opacity" />
+          ) : (
+            <BookOpen className="w-4 h-4 text-[#008001] opacity-60 group-hover:opacity-100 transition-opacity" />
+          )}
         </div>
-        <CardTitle className="text-lg text-[#008001]">{lesson.title}</CardTitle>
+        <CardTitle className={cn("text-lg", isTest ? "text-orange-700" : "text-[#008001]")}>
+          {lesson.title}
+        </CardTitle>
       </CardHeader>
-      <CardContent className="pb-3">
+      <CardContent className="pb-3 flex-1">
         <p className="text-sm text-muted-foreground">{lesson.description}</p>
-
       </CardContent>
       <CardFooter>
-        <Link to={`/minna/${lesson.id}`} className="w-full">
+        <Link to={linkUrl} className="w-full">
           <Button
-            className="w-full bg-[#008001] hover:bg-[#006801] text-white"
+            className={cn(
+              "w-full text-white",
+              isTest
+                ? "bg-orange-600 hover:bg-orange-700"
+                : "bg-[#008001] hover:bg-[#006801]"
+            )}
           >
-            Vào học
+            {isTest ? "Làm bài" : "Vào học"}
           </Button>
         </Link>
       </CardFooter>
@@ -68,6 +90,21 @@ const LessonSection = ({
 };
 
 const MinnaNoNihongo = () => {
+  // Insert Test 1 after Lesson 2 (index 2)
+  const lessonsN5WithTest = [...lessonsN5];
+  // Check if test already exists to avoid duplication if re-rendering/hot-reload issues, though simple splice is fine here
+  if (!lessonsN5WithTest.find(l => l.id === 9991)) {
+    // Find index of Lesson 2
+    const lesson2Index = lessonsN5WithTest.findIndex(l => l.id === 2);
+    if (lesson2Index !== -1) {
+      lessonsN5WithTest.splice(lesson2Index + 1, 0, {
+        id: 9991,
+        title: "Kiểm tra 1",
+        description: "Quiz bài 1 2"
+      });
+    }
+  }
+
   return (
     <Layout>
       <div className="bg-background">
@@ -103,7 +140,7 @@ const MinnaNoNihongo = () => {
               <LessonSection
                 title="Sơ cấp 1 - Trình độ N5"
                 subtitle="Bài 1 → 25 | Nền tảng tiếng Nhật cơ bản"
-                lessons={lessonsN5}
+                lessons={lessonsN5WithTest}
                 icon={BookOpen}
               />
             </TabsContent>
