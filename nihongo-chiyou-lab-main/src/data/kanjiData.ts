@@ -6775,6 +6775,7 @@ export const kanjiData: KanjiCard[] = [
     id: 181,
     kanji: "羊",
     lesson: 12,
+    imageUrl: "/images/kanji/181_sheep_3d.png",
     onyomi: "ヨウ",
     kunyomi: "ひつじ",
     meaning: "Cừu",
