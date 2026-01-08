@@ -8633,8 +8633,11 @@ export const kanjiData: KanjiCard[] = [
     id: 241,
     kanji: "開",
     lesson: 16,
+    imageUrl: "/images/kanji/241_open_3d.png",
     onyomi: "カイ",
+    onyomiRomaji: "kai",
     kunyomi: "あ・く、あ・ける、ひら・く",
+    kunyomiRomaji: "a-ku, a-keru, hira-ku",
     meaning: "Khai, Mở",
     sinoVietnamese: "Khai",
     examples: [
