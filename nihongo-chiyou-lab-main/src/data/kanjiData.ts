@@ -4200,6 +4200,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "お・きる、お・こす",
     meaning: "Thức dậy / Khởi",
     sinoVietnamese: "Khởi",
+    radicals: "走 (tẩu) + 己 (kỷ)",
+    mnemonic: "Chạy (走) bộ giúp bản thân (己) thức dậy (起) tỉnh táo.",
     examples: [
       {
         japanese: "起きます",
@@ -4237,6 +4239,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "か・う",
     meaning: "Mua",
     sinoVietnamese: "Mãi",
+    radicals: "罒 (võng) + 貝 (bối/tiền)",
+    mnemonic: "Mắt (罒) nhắm vào tiền (貝) để đi mua (買) sắm.",
     examples: [
       {
         japanese: "買います",
