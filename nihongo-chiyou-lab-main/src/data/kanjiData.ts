@@ -15,6 +15,8 @@ export interface KanjiCard {
   sinoVietnamese: string;
   imageUrl?: string;
   lesson?: number;
+  radicals?: string;
+  mnemonic?: string;
   examples: KanjiExample[];
 }
 
@@ -30,6 +32,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "hi, ka",
     meaning: "Mặt trời, Ngày",
     sinoVietnamese: "NHẬT",
+    radicals: "日 (nhật)",
+    mnemonic: "Hình ảnh mặt trời hình chữ nhật.",
     examples: [
       {
         japanese: "日曜日に行きます",
@@ -68,7 +72,9 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "つき",
     kunyomiRomaji: "tsuki",
     meaning: "Mặt trăng, Tháng",
-    sinoVietnamese: "Nguyệt",
+    sinoVietnamese: "NGUYỆT",
+    radicals: "月 (nguyệt)",
+    mnemonic: "Hình ảnh mặt trăng lưỡi liềm.",
     examples: [
       {
         japanese: "月曜日は忙しいです",
@@ -185,7 +191,9 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "き、こ",
     kunyomiRomaji: "ki, ko",
     meaning: "Cây, Gỗ",
-    sinoVietnamese: "Mộc",
+    sinoVietnamese: "MỘC",
+    radicals: "木 (mộc)",
+    mnemonic: "Hình ảnh cái cây với rễ và cành.",
     examples: [
       {
         japanese: "木曜日に映画を見ます",
@@ -302,7 +310,9 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "やま",
     kunyomiRomaji: "yama",
     meaning: "Núi",
-    sinoVietnamese: "Sơn",
+    sinoVietnamese: "SƠN",
+    radicals: "山 (sơn)",
+    mnemonic: "Hình ảnh ba ngọn núi.",
     examples: [
       {
         japanese: "あの山は高いです",
@@ -341,7 +351,9 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "かわ",
     kunyomiRomaji: "kawa",
     meaning: "Sông",
-    sinoVietnamese: "Xuyên",
+    sinoVietnamese: "XUYÊN",
+    radicals: "川 (xuyên)",
+    mnemonic: "Dòng sông đang chảy.",
     examples: [
       {
         japanese: "川で泳ぎます",

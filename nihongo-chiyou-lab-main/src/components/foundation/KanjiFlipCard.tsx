@@ -82,7 +82,7 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
           transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
         }}
       >
-        {/* Front Side - Mnemonic Image or Big Kanji */}
+        {/* Front Side */}
         <div
           className="absolute inset-0 w-full h-full backface-hidden"
           style={{ backfaceVisibility: "hidden" }}
@@ -157,18 +157,40 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
                   </div>
                 </div>
               </div>
+
+              {/* Radicals & Mnemonic - New Section */}
+              {(kanji.radicals || kanji.mnemonic) && (
+                <div className="space-y-2 mt-4 pt-3 border-t border-border/50 w-full text-left px-4">
+                  {kanji.radicals && (
+                    <div className="flex items-start gap-2 text-sm">
+                      <span className="font-semibold text-muted-foreground w-16 shrink-0">Bộ thủ:</span>
+                      <span className="font-medium text-[#008001] bg-[#008001]/10 px-1.5 py-0.5 rounded text-xs">
+                        {kanji.radicals}
+                      </span>
+                    </div>
+                  )}
+                  {kanji.mnemonic && (
+                    <div className="flex items-start gap-2 text-sm">
+                      <span className="font-semibold text-muted-foreground w-16 shrink-0">Cách nhớ:</span>
+                      <span className="text-foreground text-xs italic leading-snug">
+                        {kanji.mnemonic}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Click hint */}
-            <p className="text-xs text-muted-foreground text-center mt-auto pt-2">
+            <p className="text-xs text-muted-foreground text-center mt-3 pt-2">
               Click để xem cách viết
             </p>
           </div>
         </div>
 
-        {/* Back Side - Animated Stroke Order & Numbers */}
+        {/* Back Side - Stroke Order & Examples */}
         <div
-          className="absolute inset-0 w-full h-full backface-hidden rotate-y-180"
+          className="absolute inset-0 w-full h-full backface-hidden"
           style={{
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
