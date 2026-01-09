@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Foundation from "./pages/Foundation";
 import MinnaNoNihongo from "./pages/MinnaNoNihongo";
 import MinnaTest1 from "./pages/MinnaTest1";
+import MinnaTest2 from "./pages/MinnaTest2";
 import LessonDetail from "./pages/LessonDetail";
 import Irodori from "./pages/Irodori";
 import IrodoriLessonDetail from "./pages/IrodoriLessonDetail";
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/nhap-mon" element={<Foundation />} />
           <Route path="/minna" element={<MinnaNoNihongo />} />
           <Route path="/minna/test-1" element={<MinnaTest1 />} />
+          <Route path="/minna/test-2" element={<MinnaTest2 />} />
           <Route path="/minna/:id" element={<LessonDetail />} />
           <Route path="/irodori" element={<Irodori />} />
           <Route path="/irodori/:level/:id" element={<IrodoriLessonDetail />} />

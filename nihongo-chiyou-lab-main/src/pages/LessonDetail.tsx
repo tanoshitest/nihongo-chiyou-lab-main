@@ -511,6 +511,7 @@ const VocabularyTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabular
             <TableHeader>
               <TableRow>
                 <TableHead className="w-[50px] text-center">STT</TableHead>
+                <TableHead className="w-[100px] text-center">Hình ảnh</TableHead>
                 <TableHead className="w-[150px]">Hiragana</TableHead>
                 <TableHead className="w-[100px]">Kanji</TableHead>
                 <TableHead className="w-[150px]">Romaji</TableHead>
@@ -525,6 +526,17 @@ const VocabularyTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabular
                   <>
                     <TableRow className="hover:bg-muted/50">
                       <TableCell className="text-center font-medium text-muted-foreground">{index + 1}</TableCell>
+                      <TableCell className="text-center p-2">
+                        {item.image ? (
+                          <div className="w-28 h-28 mx-auto rounded-lg bg-[#008001]/10 border border-[#008001]/30 overflow-hidden flex items-center justify-center">
+                            <img src={item.image} alt={item.word} className="w-full h-full object-cover" />
+                          </div>
+                        ) : (
+                          <div className="w-28 h-28 mx-auto rounded-lg bg-muted/50 border border-dashed border-muted-foreground/30 flex items-center justify-center">
+                            <span className="text-[10px] text-muted-foreground">No Img</span>
+                          </div>
+                        )}
+                      </TableCell>
                       <TableCell className="font-medium text-[#008001]">{item.word}</TableCell>
                       <TableCell className="text-foreground">
                         <KanjiWithHover
@@ -567,7 +579,7 @@ const VocabularyTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabular
                     {item.examples && item.examples.length > 0 && (
                       <CollapsibleContent asChild>
                         <TableRow className="bg-[#008001]/5 border-l-4 border-l-[#008001]">
-                          <TableCell colSpan={7} className="p-4">
+                          <TableCell colSpan={8} className="p-4">
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                               {item.examples.slice(0, 6).map((example, exIndex) => (
                                 <div key={exIndex} className="bg-background rounded-lg p-3 border shadow-sm">
@@ -600,6 +612,11 @@ const VocabularyTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabular
                   <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#008001] text-white flex items-center justify-center text-sm font-bold">
                     {index + 1}
                   </span>
+                  {item.image && (
+                    <div className="flex-shrink-0 w-28 h-28 rounded-lg bg-[#008001]/10 border border-[#008001]/30 overflow-hidden">
+                      <img src={item.image} alt={item.word} className="w-full h-full object-cover" />
+                    </div>
+                  )}
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-[#008001] truncate">{item.word}</p>
                     <p className="text-xs text-muted-foreground truncate">{item.romaji}</p>

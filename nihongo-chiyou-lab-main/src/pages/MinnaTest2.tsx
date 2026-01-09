@@ -7,7 +7,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { CheckCircle2, XCircle, AlertCircle, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { ALL_TESTS, ALL_GRAMMAR_TESTS, Question } from "@/data/minnaTest1Data";
+import { ALL_TESTS, ALL_GRAMMAR_TESTS, Question } from "@/data/minnaTest2Data";
 
 // Helper to parse Furigana text: 
 // 1. [先生|せんせい] -> <ruby>先生<rt>せんせい</rt></ruby>
@@ -134,7 +134,7 @@ const QuestionItem = ({
     );
 };
 
-const MinnaTest1 = () => {
+const MinnaTest2 = () => {
     // Kanji Test State
     const [selectedExamId, setSelectedExamId] = useState(1);
     const [answers, setAnswers] = useState<Record<number, string>>({});
@@ -151,7 +151,7 @@ const MinnaTest1 = () => {
 
     // Debug logging
     useEffect(() => {
-        console.log("MinnaTest1 Rendered");
+        console.log("MinnaTest2 Rendered");
         console.log(`Selected Exam: ${selectedExamId}, Data Length: ${currentExamData?.length}`);
     }, [selectedExamId, currentExamData]);
 
@@ -197,7 +197,7 @@ const MinnaTest1 = () => {
         return (
             <Layout>
                 <div className="container mx-auto px-4 py-8 text-center text-red-500">
-                    ERROR: Cannot load exam data. Please check minnaTest1Data.ts
+                    ERROR: Cannot load exam data. Please check minnaTest2Data.ts
                 </div>
             </Layout>
         );
@@ -305,8 +305,8 @@ const MinnaTest1 = () => {
     return (
         <Layout>
             <div className="container mx-auto px-4 py-8">
-                <h1 className="text-3xl font-bold text-[#008001] mb-2">Bài Kiểm Tra 1 - N5</h1>
-                <p className="text-muted-foreground mb-6">Tổng hợp kiến thức Bài 1 & 2</p>
+                <h1 className="text-3xl font-bold text-[#008001] mb-2">Bài Kiểm Tra 2 - N5</h1>
+                <p className="text-muted-foreground mb-6">Tổng hợp kiến thức Bài 3 & 4</p>
 
                 <Tabs defaultValue="kanji-vocab" className="space-y-6">
                     <TabsList className="grid w-full max-w-md grid-cols-2">
@@ -349,4 +349,4 @@ const MinnaTest1 = () => {
     );
 };
 
-export default MinnaTest1;
+export default MinnaTest2;

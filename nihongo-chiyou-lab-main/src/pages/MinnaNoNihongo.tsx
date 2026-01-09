@@ -9,8 +9,10 @@ import { cn } from "@/lib/utils";
 import { lessonsN5, lessonsN4, LessonSummary } from "@/data/minnaData";
 
 const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
-  const isTest = lesson.id === 9991;
-  const linkUrl = isTest ? "/minna/test-1" : `/minna/${lesson.id}`;
+  const isTest = lesson.id >= 9990;
+  let linkUrl = `/minna/${lesson.id}`;
+  if (lesson.id === 9991) linkUrl = "/minna/test-1";
+  if (lesson.id === 9992) linkUrl = "/minna/test-2";
 
   return (
     <Card className={cn(
@@ -80,7 +82,7 @@ const LessonSection = ({
           <p className="text-sm text-muted-foreground">{subtitle}</p>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-4">
         {lessons.map((lesson) => (
           <LessonCard key={lesson.id} lesson={lesson} />
         ))}
@@ -101,6 +103,19 @@ const MinnaNoNihongo = () => {
         id: 9991,
         title: "Kiểm tra 1",
         description: "Quiz bài 1 2"
+      });
+    }
+  }
+
+
+  // Insert Test 2 after Lesson 4 (index 4)
+  if (!lessonsN5WithTest.find(l => l.id === 9992)) {
+    const lesson4Index = lessonsN5WithTest.findIndex(l => l.id === 4);
+    if (lesson4Index !== -1) {
+      lessonsN5WithTest.splice(lesson4Index + 1, 0, {
+        id: 9992,
+        title: "Kiểm tra 2",
+        description: "Quiz bài 3 4"
       });
     }
   }

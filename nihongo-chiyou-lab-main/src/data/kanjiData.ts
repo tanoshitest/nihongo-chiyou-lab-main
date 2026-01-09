@@ -114,6 +114,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "hi",
     meaning: "Lửa",
     sinoVietnamese: "Hỏa",
+    radicals: "火 (hỏa)",
+    mnemonic: "Hình ảnh ngọn lửa đang cháy bùng lên.",
     examples: [
       {
         japanese: "火曜日に会いましょう",
@@ -153,6 +155,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "mizu",
     meaning: "Nước",
     sinoVietnamese: "Thủy",
+    radicals: "水 (thủy)",
+    mnemonic: "Hình ảnh dòng nước chảy bắn ra hai bên.",
     examples: [
       {
         japanese: "水曜日は休みです",
@@ -233,6 +237,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "kane, kana",
     meaning: "Vàng, Tiền",
     sinoVietnamese: "Kim",
+    radicals: "𠆢 (nhân) + 王 (vương) + 丷",
+    mnemonic: "Nhà vua (王) đứng dưới mái nhà (𠆢) đếm vàng (丷).",
     examples: [
       {
         japanese: "金曜日は楽しいです",
@@ -272,6 +278,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "tsuchi",
     meaning: "Đất",
     sinoVietnamese: "Thổ",
+    radicals: "土 (thổ)",
+    mnemonic: "Cây mọc lên từ mặt đất.",
     examples: [
       {
         japanese: "土曜日は休みです",
@@ -393,6 +401,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "ta",
     meaning: "Ruộng lúa",
     sinoVietnamese: "Điền",
+    radicals: "田 (điền)",
+    mnemonic: "Hình ảnh ruộng lúa chia làm 4 ô.",
     examples: [
       {
         japanese: "田んぼがあります",
@@ -432,6 +442,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "hito",
     meaning: "Người",
     sinoVietnamese: "Nhân",
+    radicals: "人 (nhân)",
+    mnemonic: "Hình dáng con người đang đứng nghiêng.",
     examples: [
       {
         japanese: "あの人は誰ですか",
@@ -471,6 +483,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "kuchi",
     meaning: "Miệng",
     sinoVietnamese: "Khẩu",
+    radicals: "口 (khẩu)",
+    mnemonic: "Hình cái miệng đang mở.",
     examples: [
       {
         japanese: "口を開けます",
@@ -510,6 +524,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "kuruma",
     meaning: "Xe",
     sinoVietnamese: "Xa",
+    radicals: "車 (xa)",
+    mnemonic: "Hình chiếc xe kéo nhìn từ trên xuống (có 2 bánh xe).",
     examples: [
       {
         japanese: "電車で行きます",
@@ -549,6 +565,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "kado",
     meaning: "Cổng",
     sinoVietnamese: "Môn",
+    radicals: "門 (môn)",
+    mnemonic: "Hình cái cổng có 2 cánh cửa.",
     examples: [
       {
         japanese: "校門",
@@ -588,6 +606,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "ko",
     meaning: "Con, Trẻ em",
     sinoVietnamese: "Tử",
+    radicals: "子 (tử)",
+    mnemonic: "Hình đứa trẻ đang quấn tã, dang 2 tay.",
     examples: [
       {
         japanese: "子供がいます",
@@ -627,6 +647,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "onna",
     meaning: "Nữ, Phụ nữ",
     sinoVietnamese: "Nữ",
+    radicals: "女 (nữ)",
+    mnemonic: "Hình dáng người phụ nữ đang ngồi.",
     examples: [
       {
         japanese: "彼女",
@@ -666,6 +688,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "mana-bu",
     meaning: "Học",
     sinoVietnamese: "Học",
+    radicals: "⺍ (tiểu) + 冖 (mịch) + 子 (tử)",
+    mnemonic: "Đứa trẻ (子) đội mũ (冖) đi học (⺍).",
     examples: [
       {
         japanese: "学校",
@@ -705,6 +729,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "i-kiru, u-mareru, nama",
     meaning: "Sinh, Sống",
     sinoVietnamese: "Sinh",
+    radicals: "生 (sinh)",
+    mnemonic: "Cây cỏ mọc lên từ mặt đất, biểu tượng sự sống.",
     examples: [
       {
         japanese: "先生",
@@ -744,6 +770,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "saki",
     meaning: "Trước, Tiên",
     sinoVietnamese: "Tiên",
+    radicals: "牛 (ngưu/biến thể) + 儿 (nhân)",
+    mnemonic: "Người (儿) đi trước cầm cây gậy dẫn đường.",
     examples: [
       {
         japanese: "先生",
@@ -783,6 +811,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "watashi, watakushi",
     meaning: "Tôi, Tư",
     sinoVietnamese: "Tư",
+    radicals: "禾 (hòa) + ム (khư)",
+    mnemonic: "Cây lúa (禾) là tài sản riêng (ム) của tôi.",
     examples: [
       {
         japanese: "私は学生です",
@@ -822,6 +852,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "hito-tsu",
     meaning: "Một",
     sinoVietnamese: "Nhất",
+    radicals: "一 (nhất)",
+    mnemonic: "Một nét gạch ngang biểu thị số một.",
     examples: [
       {
         japanese: "一つ",
@@ -861,6 +893,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "futa-tsu",
     meaning: "Hai",
     sinoVietnamese: "Nhị",
+    radicals: "二 (nhị)",
+    mnemonic: "Hai nét gạch ngang biểu thị số hai.",
     examples: [
       {
         japanese: "二つ",
@@ -900,6 +934,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "mitt-tsu",
     meaning: "Ba",
     sinoVietnamese: "Tam",
+    radicals: "三 (tam)",
+    mnemonic: "Ba nét gạch ngang biểu thị số ba.",
     examples: [
       {
         japanese: "三つ",
@@ -939,6 +975,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "yottsu, yon, yo",
     meaning: "Bốn",
     sinoVietnamese: "Tứ",
+    radicals: "囗 (vi) + 儿 (nhân)",
+    mnemonic: "Đứa trẻ (儿) ngồi trong 4 bức tường (囗).",
     examples: [
       {
         japanese: "四つ",
@@ -978,6 +1016,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "itsu-tsu",
     meaning: "Năm",
     sinoVietnamese: "Ngũ",
+    radicals: "二 (nhị) + 𠄡 (liêm)",
+    mnemonic: "Số 5 viết cách điệu (giống số 5 la mã V và I kết hợp?).",
     examples: [
       {
         japanese: "五つ",
@@ -1017,6 +1057,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "muttsu",
     meaning: "Sáu",
     sinoVietnamese: "Lục",
+    radicals: "亠 (đầu) + 八 (bát)",
+    mnemonic: "Dấu chấm (亠) trên số tám (八) thành số sáu.",
     examples: [
       {
         japanese: "六つ",
@@ -1056,6 +1098,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "nana-tsu, nana",
     meaning: "Bảy",
     sinoVietnamese: "Thất",
+    radicals: "一 (nhất) + 乚 (ất)",
+    mnemonic: "Hình dáng giống số 7 bị lật ngược. Số 7 may mắn.",
     examples: [
       {
         japanese: "七つ",
@@ -1095,6 +1139,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "yattsu",
     meaning: "Tám",
     sinoVietnamese: "Bát",
+    radicals: "八 (bát)",
+    mnemonic: "Hai nét tách ra biểu thị số tám.",
     examples: [
       {
         japanese: "八つ",
@@ -1134,6 +1180,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "kokono-tsu",
     meaning: "Chín",
     sinoVietnamese: "Cửu",
+    radicals: "乙 (ất) + 丿 (phiệt)",
+    mnemonic: "Nét cong (乙) và nét phẩy (丿) tạo thành số 9.",
     examples: [
       {
         japanese: "九つ",
@@ -1173,6 +1221,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "too",
     meaning: "Mười",
     sinoVietnamese: "Thập",
+    radicals: "十 (thập)",
+    mnemonic: "Hình dấu cộng biểu thị sự đầy đủ, tròn trịa.",
     examples: [
       {
         japanese: "十",
@@ -1211,6 +1261,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Trăm",
     sinoVietnamese: "Bách",
+    radicals: "一 (nhất) + 白 (bạch)",
+    mnemonic: "Một (一) trăm màu trắng (白).",
     examples: [
       {
         japanese: "百円",
@@ -1250,6 +1302,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "chi",
     meaning: "Nghìn",
     sinoVietnamese: "Thiên",
+    radicals: "十 (thập) + 丿 (phiệt)",
+    mnemonic: "Mười (十) thêm dấu phẩy (丿) thành nghìn.",
     examples: [
       {
         japanese: "千円",
@@ -1289,6 +1343,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "ue, a-geru",
     meaning: "Trên",
     sinoVietnamese: "Thượng",
+    radicals: "卜 (bốc) + 一 (nhất)",
+    mnemonic: "Mốc ở dưới (一), cây gậy chỉ lên trên (卜).",
     examples: [
       {
         japanese: "机の上に本があります",
@@ -1328,6 +1384,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "shita, sa-geru",
     meaning: "Dưới",
     sinoVietnamese: "Hạ",
+    radicals: "一 (nhất) + 卜 (bốc)",
+    mnemonic: "Mốc ở trên (一), cây gậy chỉ xuống dưới (卜).",
     examples: [
       {
         japanese: "椅子の下に猫がいます",
@@ -1367,6 +1425,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "naka",
     meaning: "Trong, Giữa",
     sinoVietnamese: "Trung",
+    radicals: "口 (khẩu) + 丨 (sổ)",
+    mnemonic: "Mũi tên xuyên qua trúng giữa cái bia (口).",
     examples: [
       {
         japanese: "箱の中に何がありますか",
@@ -1406,6 +1466,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "oo-kii",
     meaning: "To, Lớn",
     sinoVietnamese: "Đại",
+    radicals: "一 (nhất) + 人 (nhân)",
+    mnemonic: "Người (人) dang rộng hai tay thật to (一).",
     examples: [
       {
         japanese: "大きい家",
@@ -1445,6 +1507,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "chii-sai",
     meaning: "Nhỏ",
     sinoVietnamese: "Tiểu",
+    radicals: "亅 (quyết) + 八 (bát)",
+    mnemonic: "Cái móc câu và hai hạt bụi nhỏ.",
     examples: [
       {
         japanese: "小さい犬",
@@ -1484,6 +1548,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "moto",
     meaning: "Sách/Gốc",
     sinoVietnamese: "Bản",
+    radicals: "木 (mộc) + 一 (nhất)",
+    mnemonic: "Gạch một nét (一) ở gốc cây (木) để chỉ gốc rễ.",
     examples: [
       {
         japanese: "本を読みます",
@@ -1523,6 +1589,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "naka-ba",
     meaning: "Nửa",
     sinoVietnamese: "Bán",
+    radicals: "丷 (bát) + 二 (nhị) + 丨 (sổ)",
+    mnemonic: "Chia đôi (丷) hai (二) phần bằng nhau.",
     examples: [
       {
         japanese: "三時半",
@@ -1562,6 +1630,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "wa-karu",
     meaning: "Phút/Phần/Hiểu",
     sinoVietnamese: "Phân",
+    radicals: "八 (bát) + 刀 (đao)",
+    mnemonic: "Dùng dao (刀) chia cắt (八) thành từng phần.",
     examples: [
       {
         japanese: "五分",
@@ -1601,6 +1671,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "chikara",
     meaning: "Sức lực",
     sinoVietnamese: "Lực",
+    radicals: "力 (lực)",
+    mnemonic: "Hình bắp tay đang gồng lên biểu thị sức mạnh.",
     examples: [
       {
         japanese: "力があります",
@@ -1640,6 +1712,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "nani, nan",
     meaning: "Cái gì",
     sinoVietnamese: "Hà",
+    radicals: "亻 (nhân) + 可 (khả)",
+    mnemonic: "Người (亻) vác cây khả (可) hỏi 'Cái gì đây?'.",
     examples: [
       {
         japanese: "何ですか",
@@ -1679,6 +1753,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "a-karui",
     meaning: "Sáng",
     sinoVietnamese: "Minh",
+    radicals: "日 (nhật) + 月 (nguyệt)",
+    mnemonic: "Mặt trời (日) và mặt trăng (月) cùng chiếu sáng.",
     examples: [
       {
         japanese: "明るい部屋",
@@ -1718,6 +1794,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "yasu-mu",
     meaning: "Nghỉ",
     sinoVietnamese: "Hưu",
+    radicals: "亻 (nhân) + 木 (mộc)",
+    mnemonic: "Người (亻) dựa vào gốc cây (木) để nghỉ ngơi.",
     examples: [
       {
         japanese: "休みます",
@@ -1757,6 +1835,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "karada",
     meaning: "Cơ thể",
     sinoVietnamese: "Thể",
+    radicals: "亻 (nhân) + 本 (bản)",
+    mnemonic: "Cơ thể (本) của con người (亻).",
     examples: [
       {
         japanese: "体が大きい",
@@ -1796,6 +1876,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "su-ki",
     meaning: "Thích",
     sinoVietnamese: "Hảo",
+    radicals: "女 (nữ) + 子 (tử)",
+    mnemonic: "Phụ nữ (女) yêu thích con cái (子).",
     examples: [
       {
         japanese: "好きです",
@@ -1835,6 +1917,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "otoko",
     meaning: "Nam",
     sinoVietnamese: "Nam",
+    radicals: "田 (điền) + 力 (lực)",
+    mnemonic: "Người dùng sức lực (力) làm việc trên ruộng (田) là đàn ông.",
     examples: [
       {
         japanese: "男の子",
@@ -1874,6 +1958,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "hayashi",
     meaning: "Rừng thưa",
     sinoVietnamese: "Lâm",
+    radicals: "木 (mộc) + 木 (mộc)",
+    mnemonic: "Hai cái cây đứng cạnh nhau tạo thành rừng thưa.",
     examples: [
       {
         japanese: "林の中にいます",
@@ -1913,6 +1999,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "mori",
     meaning: "Rừng rậm",
     sinoVietnamese: "Sâm",
+    radicals: "木 (mộc) + 木 (mộc) + 木 (mộc)",
+    mnemonic: "Ba cái cây tạo thành rừng rậm rạp.",
     examples: [
       {
         japanese: "森へ行きます",
@@ -1952,6 +2040,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "aida, ma",
     meaning: "Giữa, Gian",
     sinoVietnamese: "Gian",
+    radicals: "門 (môn) + 日 (nhật)",
+    mnemonic: "Mặt trời (日) chiếu qua khe cửa (門).",
     examples: [
       {
         japanese: "時間",
@@ -1991,6 +2081,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "hatake",
     meaning: "Ruộng đồng",
     sinoVietnamese: "Điền (Nhật tạo)",
+    radicals: "火 (hỏa) + 田 (điền)",
+    mnemonic: "Đốt lửa (火) trên ruộng (田) để làm rẫy.",
     examples: [
       {
         japanese: "畑を耕します",
@@ -2030,6 +2122,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "iwa",
     meaning: "Đá tảng",
     sinoVietnamese: "Nham",
+    radicals: "山 (sơn) + 石 (thạch)",
+    mnemonic: "Hòn đá (石) dưới chân núi (山) là đá tảng.",
     examples: [
       {
         japanese: "大きい岩",
@@ -2069,6 +2163,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "me",
     meaning: "Mắt",
     sinoVietnamese: "Mục",
+    radicals: "目 (mục)",
+    mnemonic: "Hình con mắt dựng đứng.",
     examples: [
       {
         japanese: "目がいいです",
@@ -2108,6 +2204,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "mimi",
     meaning: "Tai",
     sinoVietnamese: "Nhĩ",
+    radicals: "耳 (nhĩ)",
+    mnemonic: "Hình cái tai người.",
     examples: [
       {
         japanese: "耳が痛いです",
@@ -2147,6 +2245,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "te",
     meaning: "Tay",
     sinoVietnamese: "Thủ",
+    radicals: "手 (thủ)",
+    mnemonic: "Hình bàn tay xòe ra.",
     examples: [
       {
         japanese: "手を洗います",
@@ -2186,6 +2286,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "ashi, ta-riru",
     meaning: "Chân",
     sinoVietnamese: "Túc",
+    radicals: "口 (khẩu) + 止 (chỉ)",
+    mnemonic: "Cái miệng (口) ở trên, chân dừng lại (止).",
     examples: [
       {
         japanese: "足が速いです",
@@ -2225,6 +2327,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomiRomaji: "ame",
     meaning: "Mưa",
     sinoVietnamese: "Vũ",
+    radicals: "雨 (vũ)",
+    mnemonic: "Những giọt mưa rơi xuống từ đám mây trên trời.",
     examples: [
       {
         japanese: "雨が降っています",
@@ -2264,6 +2368,8 @@ export const kanjiData: KanjiCard[] = [
     imageUrl: "/images/kanji/58_bamboo_3d.png",
     meaning: "Tre",
     sinoVietnamese: "Trúc",
+    radicals: "竹 (trúc)",
+    mnemonic: "Hình lá trúc rủ xuống.",
     examples: [
       {
         japanese: "竹の子",
@@ -2303,6 +2409,8 @@ export const kanjiData: KanjiCard[] = [
     imageUrl: "/images/kanji/59_rice_3d.png",
     meaning: "Gạo",
     sinoVietnamese: "Mễ",
+    radicals: "米 (mễ)",
+    mnemonic: "Hình bông lúa trĩu hạt.",
     examples: [
       {
         japanese: "お米を研ぎます",
@@ -2342,6 +2450,8 @@ export const kanjiData: KanjiCard[] = [
     imageUrl: "/images/kanji/60_shellfish_3d.png",
     meaning: "Sò, Hến",
     sinoVietnamese: "Bối",
+    radicals: "貝 (bối)",
+    mnemonic: "Hình con sò đang mở miệng. Biểu tượng của tiền bạc.",
     examples: [
       {
         japanese: "貝殻",
@@ -2381,6 +2491,8 @@ export const kanjiData: KanjiCard[] = [
     imageUrl: "/images/kanji/61_stone_3d.png",
     meaning: "Đá",
     sinoVietnamese: "Thạch",
+    radicals: "石 (thạch)",
+    mnemonic: "Hòn đá (口) nằm dưới vách núi (厂).",
     examples: [
       {
         japanese: "石の上にも三年",
@@ -2420,6 +2532,8 @@ export const kanjiData: KanjiCard[] = [
     imageUrl: "/images/kanji/62_thread_3d.png",
     meaning: "Sợi chỉ",
     sinoVietnamese: "Mịch",
+    radicals: "糸 (mịch)",
+    mnemonic: "Hình cuộn tơ nhỏ.",
     examples: [
       {
         japanese: "糸を通します",
@@ -2459,6 +2573,8 @@ export const kanjiData: KanjiCard[] = [
     imageUrl: "/images/kanji/63_flower_3d.png",
     meaning: "Hoa",
     sinoVietnamese: "Hoa",
+    radicals: "艹 (thảo) + 化 (hóa)",
+    mnemonic: "Cỏ (艹) biến hóa (化) thành hoa đẹp.",
     examples: [
       {
         japanese: "花見",
@@ -2498,6 +2614,8 @@ export const kanjiData: KanjiCard[] = [
     imageUrl: "/images/kanji/64_tea_3d.png",
     meaning: "Trà",
     sinoVietnamese: "Trà",
+    radicals: "艹 (thảo) + 人 (nhân) + 木 (mộc)",
+    mnemonic: "Người (人) hái lá cỏ (艹) trên cây (木) làm trà.",
     examples: [
       {
         japanese: "お茶を飲みます",
@@ -2535,6 +2653,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "い・く、おこな・う",
     meaning: "Đi",
     sinoVietnamese: "Hành",
+    radicals: "行 (hành)",
+    mnemonic: "Dáng người đang bước đi (ngã tư đường).",
     examples: [
       {
         japanese: "学校へ行きます",
@@ -2572,6 +2692,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "く・る",
     meaning: "Đến",
     sinoVietnamese: "Lai",
+    radicals: "木 (mộc) + 一 (nhất)",
+    mnemonic: "Cây lúa (木) chín vàng chờ người đến gặt.",
     examples: [
       {
         japanese: "日本へ来ました",
@@ -2609,6 +2731,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "た・べる",
     meaning: "Ăn",
     sinoVietnamese: "Thực",
+    radicals: "人 (nhân) + 良 (lương)",
+    mnemonic: "Con người (人) cần lương thực tốt (良) để ăn.",
     examples: [
       {
         japanese: "ご飯を食べます",
@@ -2646,6 +2770,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "の・む",
     meaning: "Uống",
     sinoVietnamese: "Ẩm",
+    radicals: "食 (thực) + 欠 (khiếm)",
+    mnemonic: "Ăn (食) mà thiếu (欠) chất lỏng thì phải uống.",
     examples: [
       {
         japanese: "水を飲みます",
@@ -2683,6 +2809,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "み・る",
     meaning: "Nhìn/Xem",
     sinoVietnamese: "Kiến",
+    radicals: "目 (mục) + 儿 (nhân)",
+    mnemonic: "Mắt (目) của người (儿) đang nhìn.",
     examples: [
       {
         japanese: "映画を見ます",
@@ -2720,6 +2848,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "き・く",
     meaning: "Nghe",
     sinoVietnamese: "Văn",
+    radicals: "門 (môn) + 耳 (nhĩ)",
+    mnemonic: "Ghé tai (耳) vào cửa (門) để nghe ngóng.",
     examples: [
       {
         japanese: "音楽を聞きます",
@@ -2757,6 +2887,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "い・う",
     meaning: "Nói",
     sinoVietnamese: "Ngôn",
+    radicals: "言 (ngôn)",
+    mnemonic: "Miệng (口) nói ra những lời từ suy nghĩ (亠).",
     examples: [
       {
         japanese: "言います",
@@ -2794,6 +2926,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "はな・す、はなし",
     meaning: "Nói chuyện",
     sinoVietnamese: "Thoại",
+    radicals: "言 (ngôn) + 舌 (thiệt)",
+    mnemonic: "Dùng ngôn ngữ (言) và lưỡi (舌) để nói chuyện.",
     examples: [
       {
         japanese: "日本語を話します",
@@ -2831,6 +2965,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "た・つ",
     meaning: "Đứng",
     sinoVietnamese: "Lập",
+    radicals: "立 (lập)",
+    mnemonic: "Hình người đang đứng dang chân trên mặt đất.",
     examples: [
       {
         japanese: "立ちます",
@@ -2868,6 +3004,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ま・つ",
     meaning: "Đợi",
     sinoVietnamese: "Đãi",
+    radicals: "彳 (xích) + 寺 (tự)",
+    mnemonic: "Đứng ở đường (彳) trước chùa (寺) để đợi ai đó.",
     examples: [
       {
         japanese: "待ちます",
@@ -2905,6 +3043,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "あ・う",
     meaning: "Gặp",
     sinoVietnamese: "Hội",
+    radicals: "人 (nhân) + 云 (vân)",
+    mnemonic: "Người (人) nói chuyện (云) khi gặp nhau.",
     examples: [
       {
         japanese: "友達に会います",
@@ -2942,6 +3082,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "で・る、だ・す",
     meaning: "Ra/Xuất",
     sinoVietnamese: "Xuất",
+    radicals: "山 (sơn) + 山 (sơn)",
+    mnemonic: "Hai ngọn núi chồng lên nhau đi ra ngoài.",
     examples: [
       {
         japanese: "出ます",
@@ -2979,6 +3121,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "はい・る、い・れる",
     meaning: "Vào/Nhập",
     sinoVietnamese: "Nhập",
+    radicals: "入 (nhập)",
+    mnemonic: "Hình dòng sông chảy vào biển, hoặc người bước vào.",
     examples: [
       {
         japanese: "部屋に入ります",
@@ -3016,6 +3160,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Tuần",
     sinoVietnamese: "Chu",
+    radicals: "辶 (xước) + 周 (chu)",
+    mnemonic: "Đi (辶) một vòng (周) hết một tuần.",
     examples: [
       {
         japanese: "今週",
@@ -3053,6 +3199,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "よ・い",
     meaning: "Tốt",
     sinoVietnamese: "Lương",
+    radicals: "艮 (cấn) + 丶 (chủ)",
+    mnemonic: "Người phụ nữ tốt lành.",
     examples: [
       {
         japanese: "良い天気",
@@ -3090,6 +3238,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "かえ・る",
     meaning: "Về",
     sinoVietnamese: "Quy",
+    radicals: "刂 (đao) + 帚 (trử)",
+    mnemonic: "Cầm chổi (帚) quét nhà chờ người đi về.",
     examples: [
       {
         japanese: "家へ帰ります",
@@ -3127,6 +3277,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "たか・い",
     meaning: "Cao / Đắt",
     sinoVietnamese: "Cao",
+    radicals: "高 (cao)",
+    mnemonic: "Hình tòa tháp cao tầng.",
     examples: [
       {
         japanese: "高い山",
@@ -3164,6 +3316,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "やす・い",
     meaning: "Rẻ / An tâm",
     sinoVietnamese: "An",
+    radicals: "宀 (miên) + 女 (nữ)",
+    mnemonic: "Phụ nữ (女) ở trong nhà (宀) thì an tâm.",
     examples: [
       {
         japanese: "安い店",
@@ -3201,6 +3355,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "あたら・しい",
     meaning: "Mới",
     sinoVietnamese: "Tân",
+    radicals: "立 (lập) + 木 (mộc) + 斤 (cân)",
+    mnemonic: "Đứng (立) trên cây (木) dùng rìu (斤) đốn gỗ mới.",
     examples: [
       {
         japanese: "新しい車",
@@ -3238,6 +3394,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ふる・い",
     meaning: "Cũ",
     sinoVietnamese: "Cổ",
+    radicals: "十 (thập) + 口 (khẩu)",
+    mnemonic: "Chuyện mười (十) cái miệng (口) kể lại là chuyện cổ.",
     examples: [
       {
         japanese: "古い家",
@@ -3275,6 +3433,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "おお・い",
     meaning: "Nhiều",
     sinoVietnamese: "Đa",
+    radicals: "夕 (tich) + 夕 (tich)",
+    mnemonic: "Hai buổi chiều tối (夕) lặp lại là nhiều.",
     examples: [
       {
         japanese: "人が多い",
@@ -3312,6 +3472,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "すく・ない、すこ・し",
     meaning: "Ít / Một chút",
     sinoVietnamese: "Thiểu",
+    radicals: "小 (tiểu) + 丿 (phiệt)",
+    mnemonic: "Nhỏ (小) mà bị bớt đi một nét (丿) thì càng ít.",
     examples: [
       {
         japanese: "少し食べます",
@@ -3349,6 +3511,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ひろ・い",
     meaning: "Rộng",
     sinoVietnamese: "Quảng",
+    radicals: "广 (nghiễm) + ム (khư)",
+    mnemonic: "Ngôi nhà (广) rộng rãi cho riêng tư (ム).",
     examples: [
       {
         japanese: "広い部屋",
@@ -3386,6 +3550,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "はや・い",
     meaning: "Sớm",
     sinoVietnamese: "Tảo",
+    radicals: "日 (nhật) + 十 (thập)",
+    mnemonic: "Mặt trời (日) mọc trên ngọn cây (十) là sáng sớm.",
     examples: [
       {
         japanese: "早く起きます",
@@ -3423,6 +3589,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "なが・い",
     meaning: "Dài / Trưởng",
     sinoVietnamese: "Trường",
+    radicals: "長 (trường)",
+    mnemonic: "Hình người có mái tóc dài bay trong gió.",
     examples: [
       {
         japanese: "長い髪",
@@ -3460,6 +3628,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "とも",
     meaning: "Bạn bè",
     sinoVietnamese: "Hữu",
+    radicals: "又 (hựu) + 丿 (phiệt)",
+    mnemonic: "Hai bàn tay nắm lấy nhau.",
     examples: [
       {
         japanese: "友達",
@@ -3497,6 +3667,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ちち",
     meaning: "Bố (của mình)",
     sinoVietnamese: "Phụ",
+    radicals: "父 (phụ)",
+    mnemonic: "Hình ông bố cầm roi dạy con.",
     examples: [
       {
         japanese: "父は会社員です",
@@ -3534,6 +3706,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "はは",
     meaning: "Mẹ (của mình)",
     sinoVietnamese: "Mẫu",
+    radicals: "母 (mẫu)",
+    mnemonic: "Chữ nữ (女) thêm hai chấm bầu sữa mẹ.",
     examples: [
       {
         japanese: "母は料理が上手です",
@@ -3571,6 +3745,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "もと",
     meaning: "Gốc / Khỏe",
     sinoVietnamese: "Nguyên",
+    radicals: "二 (nhị) + 儿 (nhân)",
+    mnemonic: "Hai (二) người (儿) là nguồn gốc nhân loại.",
     examples: [
       {
         japanese: "元気な",
@@ -3608,6 +3784,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Khí / Tinh thần",
     sinoVietnamese: "Khí",
+    radicals: "气 (khí) + メ (mễ)",
+    mnemonic: "Khí (气) bốc lên từ gạo (メ) nấu chín.",
     examples: [
       {
         japanese: "天気",
@@ -3645,6 +3823,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "きた",
     meaning: "Phía Bắc",
     sinoVietnamese: "Bắc",
+    radicals: "匕 (chủy) + 匕 (chủy)",
+    mnemonic: "Hai người ngồi quay lưng vào nhau (vì lạnh).",
     examples: [
       {
         japanese: "北口",
@@ -3682,6 +3862,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "みなみ",
     meaning: "Phía Nam",
     sinoVietnamese: "Nam",
+    radicals: "十 (thập) + 冂 (khuynh) + 羊 (dương)",
+    mnemonic: "Thập phương quây quần quanh con dê phương Nam.",
     examples: [
       {
         japanese: "南口",
@@ -3719,6 +3901,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "いち",
     meaning: "Thành phố / Chợ",
     sinoVietnamese: "Thị",
+    radicals: "亠 (đầu) + 巾 (cân)",
+    mnemonic: "Cái khăn (巾) đội trên đầu (亠) đi chợ.",
     examples: [
       {
         japanese: "市役所",
@@ -3756,6 +3940,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "まち",
     meaning: "Thị trấn / Khu phố",
     sinoVietnamese: "Đinh",
+    radicals: "田 (điền) + 丁 (đinh)",
+    mnemonic: "Ruộng (田) có đinh (丁) đóng mốc giới là thị trấn.",
     examples: [
       {
         japanese: "町へ行きます",
@@ -3793,6 +3979,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "むら",
     meaning: "Thôn làng",
     sinoVietnamese: "Thôn",
+    radicals: "木 (mộc) + 寸 (thốn)",
+    mnemonic: "Cây (木) có thước đo (寸) trồng ở thôn làng.",
     examples: [
       {
         japanese: "村長",
@@ -3830,6 +4018,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Điện",
     sinoVietnamese: "Điện",
+    radicals: "雨 (vũ) + 电 (điện)",
+    mnemonic: "Mưa (雨) có sét giật đuôi rồng (电) sinh ra điện.",
     examples: [
       {
         japanese: "電車",
@@ -3867,6 +4057,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "うま",
     meaning: "Ngựa",
     sinoVietnamese: "Mã",
+    radicals: "馬 (mã)",
+    mnemonic: "Hình con ngựa đang chạy.",
     examples: [
       {
         japanese: "馬に乗ります",
@@ -3904,6 +4096,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Nhà ga",
     sinoVietnamese: "Dịch",
+    radicals: "馬 (mã) + 尺 (xích)",
+    mnemonic: "Con ngựa (馬) là thước đo (尺) khoảng cách trạm dịch.",
     examples: [
       {
         japanese: "駅前",
@@ -3941,6 +4135,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "やしろ",
     meaning: "Công ty / Đền thần",
     sinoVietnamese: "Xã",
+    radicals: "礻 (kỳ) + 土 (thổ)",
+    mnemonic: "Thần đất (土) phù hộ cho xã hội (礻).",
     examples: [
       {
         japanese: "会社",
@@ -3978,6 +4174,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Trường học",
     sinoVietnamese: "Hiệu",
+    radicals: "木 (mộc) + 交 (giao)",
+    mnemonic: "Trường học xây bằng gỗ (木), nơi mọi người giao lưu (交).",
     examples: [
       {
         japanese: "学校",
@@ -4015,6 +4213,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "みせ",
     meaning: "Cửa hàng",
     sinoVietnamese: "Điếm",
+    radicals: "广 (nghiễm) + 占 (chiêm)",
+    mnemonic: "Cửa hàng (广) là nơi chiếm (占) chỗ bán hàng.",
     examples: [
       {
         japanese: "店員",
@@ -4052,6 +4252,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Bạc",
     sinoVietnamese: "Ngân",
+    radicals: "金 (kim) + 艮 (cấn)",
+    mnemonic: "Kim loại (金) bền cứng (艮) là bạc.",
     examples: [
       {
         japanese: "銀行",
@@ -4089,6 +4291,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "や・む",
     meaning: "Bệnh",
     sinoVietnamese: "Bệnh",
+    radicals: "疒 (nha) + 丙 (bính)",
+    mnemonic: "Người nằm trên giường bệnh (疒) vào năm Bính (丙) thì là bệnh.",
     examples: [
       {
         japanese: "病気",
@@ -4319,6 +4523,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "よ・む",
     meaning: "Đọc",
     sinoVietnamese: "Độc",
+    radicals: "言 (ngôn) + 売 (mại)",
+    mnemonic: "Nói (言) về việc buôn bán (売) là đọc kinh doanh.",
     examples: [
       {
         japanese: "読みます",
@@ -4361,6 +4567,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "か・く",
     meaning: "Viết",
     sinoVietnamese: "Thư",
+    radicals: "聿 (duật/bút) + 日 (nhật)",
+    mnemonic: "Tay cầm bút (聿) viết cả ngày (日).",
     examples: [
       {
         japanese: "書きます",
@@ -4398,6 +4606,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "つと・める",
     meaning: "Cố gắng / Miễn",
     sinoVietnamese: "Miễn",
+    radicals: "免 (miễn) + 力 (lực)",
+    mnemonic: "Dùng sức lực (力) để tránh (免) tai họa (hoặc cố gắng).",
     examples: [
       {
         japanese: "勉強します",
@@ -4430,6 +4640,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "つよ・い",
     meaning: "Mạnh",
     sinoVietnamese: "Cường",
+    radicals: "弓 (cung) + 厶 (khư) + 虫 (trùng)",
+    mnemonic: "Cây cung (弓) bắn con trùng (虫) riêng tư (厶) rất mạnh.",
     examples: [
       {
         japanese: "強い",
@@ -4467,6 +4679,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ゆみ",
     meaning: "Cung (tên)",
     sinoVietnamese: "Cung",
+    radicals: "弓 (cung)",
+    mnemonic: "Hình cây cung.",
     examples: [
       {
         japanese: "弓道",
@@ -4494,6 +4708,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "むし",
     meaning: "Côn trùng",
     sinoVietnamese: "Trùng",
+    radicals: "虫 (trùng)",
+    mnemonic: "Hình con sâu.",
     examples: [
       {
         japanese: "虫歯",
@@ -4531,6 +4747,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "も・つ",
     meaning: "Cầm / Mang",
     sinoVietnamese: "Trì",
+    radicals: "扌 (thủ) + 寺 (tự)",
+    mnemonic: "Tay (扌) cầm đồ đi lên chùa (寺).",
     examples: [
       {
         japanese: "持ちます",
@@ -4568,6 +4786,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "な",
     meaning: "Tên / Danh",
     sinoVietnamese: "Danh",
+    radicals: "夕 (tịch) + 口 (khẩu)",
+    mnemonic: "Buổi tối (夕) tối tăm phải dùng miệng (口) xưng tên.",
     examples: [
       {
         japanese: "名前",
@@ -4605,6 +4825,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "かた・る",
     meaning: "Ngôn ngữ / Kể",
     sinoVietnamese: "Ngữ",
+    radicals: "言 (ngôn) + 吾 (ngô)",
+    mnemonic: "Lời nói (言) của bản thân (吾) là ngôn ngữ.",
     examples: [
       {
         japanese: "日本語",
@@ -4642,6 +4864,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "はる",
     meaning: "Mùa xuân",
     sinoVietnamese: "Xuân",
+    radicals: "三 (tam) + 人 (nhân) + 日 (nhật)",
+    mnemonic: "Ba (三) người (人) đi chơi ngày (日) xuân.",
     examples: [
       {
         japanese: "春休み",
@@ -4679,6 +4903,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "なつ",
     meaning: "Mùa hạ",
     sinoVietnamese: "Hạ",
+    radicals: "一 (nhất) + 自 (tự) + 夂 (truy)",
+    mnemonic: "Một (一) mình (自) đuổi theo (夂) mùa hạ.",
     examples: [
       {
         japanese: "夏休み",
@@ -4753,6 +4979,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ふゆ",
     meaning: "Mùa đông",
     sinoVietnamese: "Đông",
+    radicals: "夂 (truy) + 冫(băng)",
+    mnemonic: "Đuổi theo (夂) băng tuyết (冫) là mùa đông.",
     examples: [
       {
         japanese: "冬休み",
@@ -4790,6 +5018,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "あさ",
     meaning: "Buổi sáng",
     sinoVietnamese: "Triều",
+    radicals: "十 (thập) + 早 (tảo) + 月 (nguyệt)",
+    mnemonic: "Mười (十) ngày sáng sớm (早) trăng (月) chưa lặn là buổi sáng.",
     examples: [
       {
         japanese: "朝ご飯",
@@ -4827,6 +5057,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ひる",
     meaning: "Buổi trưa",
     sinoVietnamese: "Trú",
+    radicals: "尺 (xích) + 旦 (đán)",
+    mnemonic: "Thước đo (尺) thời gian buổi sớm (旦) đến trưa.",
     examples: [
       {
         japanese: "昼ご飯",
@@ -4901,6 +5133,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "かた",
     meaning: "Phương, hướng, vị",
     sinoVietnamese: "Phương",
+    radicals: "方 (phương)",
+    mnemonic: "Hình người đang múa quay về các hướng.",
     examples: [
       {
         japanese: "夕方",
@@ -4938,6 +5172,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Buổi tối",
     sinoVietnamese: "Vãn",
+    radicals: "日 (nhật) + 免 (miễn)",
+    mnemonic: "Mặt trời (日) lặn, miễn (免) làm việc là buổi tối.",
     examples: [
       {
         japanese: "今晩",
@@ -4975,6 +5211,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "よる、よ",
     meaning: "Đêm, Buổi tối",
     sinoVietnamese: "Dạ",
+    radicals: "亠 (đầu) + 亻 (nhân) + 夕 (tịch) + 夂 (truy)",
+    mnemonic: "Người (亻) đội mũ (亠) đi trong đêm (夕) đuổi theo (夂).",
     examples: [
       {
         japanese: "夜",
@@ -5012,6 +5250,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "こころ",
     meaning: "Tim, Tấm lòng",
     sinoVietnamese: "Tâm",
+    radicals: "心 (tâm)",
+    mnemonic: "Hình trái tim.",
     examples: [
       {
         japanese: "心",
@@ -5086,6 +5326,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "あし、た・りる",
     meaning: "Chân, Đủ",
     sinoVietnamese: "Túc",
+    radicals: "口 (khẩu) + 止 (chỉ)",
+    mnemonic: "Miệng (口) nói chân dừng (止) lại.",
     examples: [
       {
         japanese: "足",
@@ -5160,6 +5402,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "くび",
     meaning: "Cổ",
     sinoVietnamese: "Thủ",
+    radicals: "首 (thủ)",
+    mnemonic: "Đầu con thú có sừng, mắt, mũi.",
     examples: [
       {
         japanese: "首",
@@ -5271,6 +5515,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "そら、あ・く、から",
     meaning: "Bầu trời, Trống rỗng",
     sinoVietnamese: "Không",
+    radicals: "穴 (huyệt) + 工 (công)",
+    mnemonic: "Cái hang (穴) do thợ (工) đào thì rỗng không.",
     examples: [
       {
         japanese: "空",
@@ -5308,6 +5554,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "あま",
     meaning: "Trời, Thiên",
     sinoVietnamese: "Thiên",
+    radicals: "一 (nhất) + 大 (đại)",
+    mnemonic: "Trên (一) to (大) nhất là trời.",
     examples: [
       {
         japanese: "天気",
@@ -5345,6 +5593,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Khí, Tinh thần",
     sinoVietnamese: "Khí",
+    radicals: "气 (khí) + メ (mễ)",
+    mnemonic: "Hơi nước (气) bốc lên từ gạo (メ).",
     examples: [
       {
         japanese: "元気な",
@@ -5382,6 +5632,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "あめ",
     meaning: "Mưa",
     sinoVietnamese: "Vũ",
+    radicals: "雨 (vũ)",
+    mnemonic: "Mây che trời, hạt mưa rơi.",
     examples: [
       {
         japanese: "雨",
@@ -5419,6 +5671,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ゆき",
     meaning: "Tuyết",
     sinoVietnamese: "Tuyết",
+    radicals: "雨 (vũ) + ヨ (kệ/chổi)",
+    mnemonic: "Mưa (雨) rơi xuống đọng trên kệ (ヨ) là tuyết.",
     examples: [
       {
         japanese: "雪",
@@ -5456,6 +5710,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "かぜ",
     meaning: "Gió, Phong cách",
     sinoVietnamese: "Phong",
+    radicals: "几 (kỷ) + 虫 (trùng)",
+    mnemonic: "Cơn gió thổi bay côn trùng (虫) vào trong ghế (几).",
     examples: [
       {
         japanese: "風",
@@ -5493,6 +5749,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "はな",
     meaning: "Hoa",
     sinoVietnamese: "Hoa",
+    radicals: "艹 (thảo) + 化 (hóa)",
+    mnemonic: "Cỏ (艹) biến hóa (化) thành hoa.",
     examples: [
       {
         japanese: "花",
@@ -5530,6 +5788,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "いし",
     meaning: "Đá",
     sinoVietnamese: "Thạch",
+    radicals: "石 (thạch)",
+    mnemonic: "Hòn đá rơi từ vách núi.",
     examples: [
       {
         japanese: "石",
@@ -5567,6 +5827,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "たけ",
     meaning: "Tre, Trúc",
     sinoVietnamese: "Trúc",
+    radicals: "竹 (trúc)",
+    mnemonic: "Cây trúc.",
     examples: [
       {
         japanese: "竹",
@@ -5604,6 +5866,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "いぬ",
     meaning: "Chó",
     sinoVietnamese: "Khuyển",
+    radicals: "犬 (khuyển)",
+    mnemonic: "Đại (大) thêm một nét phẩy (,) giống cái tai cụp của chó.",
     examples: [
       {
         japanese: "犬",
@@ -5641,6 +5905,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "みみ",
     meaning: "Tai",
     sinoVietnamese: "Nhĩ",
+    radicals: "耳 (nhĩ)",
+    mnemonic: "Hình cái tai.",
     examples: [
       {
         japanese: "耳",
@@ -5678,6 +5944,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "め",
     meaning: "Mắt, Mục",
     sinoVietnamese: "Mục",
+    radicals: "目 (mục)",
+    mnemonic: "Hình con mắt.",
     examples: [
       {
         japanese: "目",
@@ -5715,6 +5983,9 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "かお",
     meaning: "Khuôn mặt",
     sinoVietnamese: "Nhan",
+    radicals: "彦 (ngạn) + 頁 (hiệt)",
+    mnemonic: "Diện mạo (彦) cái đầu (頁) là khuôn mặt.",
+
     examples: [
       {
         japanese: "顔",
@@ -5789,6 +6060,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "うし",
     meaning: "Bò",
     sinoVietnamese: "Ngưu",
+    radicals: "牛 (ngưu)",
+    mnemonic: "Hình đầu con bò.",
     examples: [
       {
         japanese: "牛",
@@ -5826,6 +6099,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "とり",
     meaning: "Chim",
     sinoVietnamese: "Điểu",
+    radicals: "鳥 (điểu)",
+    mnemonic: "Hình con chim.",
     examples: [
       {
         japanese: "鳥",
@@ -5863,6 +6138,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "さかな、うお",
     meaning: "Cá",
     sinoVietnamese: "Ngư",
+    radicals: "魚 (ngư)",
+    mnemonic: "Hình con cá.",
     examples: [
       {
         japanese: "魚",
@@ -5900,6 +6177,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Thịt",
     sinoVietnamese: "Nhục",
+    radicals: "内 (nội) + 人 (nhân)",
+    mnemonic: "Bên trong (内) cơ thể người (人) là thịt.",
     examples: [
       {
         japanese: "肉",
@@ -5937,6 +6216,9 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "めし",
     meaning: "Cơm, Bữa ăn",
     sinoVietnamese: "Phạn",
+    radicals: "飠(thực) + 反 (phản)",
+    mnemonic: "Ăn (飠) cơm xong thì phản (反) đối làm việc.",
+
     examples: [
       {
         japanese: "ご飯",
@@ -6011,6 +6293,9 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "さけ、さか",
     meaning: "Rượu",
     sinoVietnamese: "Tửu",
+    radicals: "氵(thủy) + 酉 (dậu)",
+    mnemonic: "Nước (氵) ủ trong bình (酉) thành rượu.",
+
     examples: [
       {
         japanese: "お酒",
@@ -6085,6 +6370,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Lý, Lý do",
     sinoVietnamese: "Lý",
+    radicals: "王 (vương/ngọc) + 里 (lý)",
+    mnemonic: "Ông vua (王) quản lý (理) ngôi làng (里).",
     examples: [
       {
         japanese: "料理",
@@ -6122,6 +6409,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "そ・る",
     meaning: "Phản, Cong",
     sinoVietnamese: "Phản",
+    radicals: "厂 (hán) + 又 (hựu)",
+    mnemonic: "Sườn núi (厂) lại (又) phản chiếu ánh sáng.",
     examples: [
       {
         japanese: "反対",
@@ -6159,6 +6448,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "もの",
     meaning: "Vật, Đồ vật",
     sinoVietnamese: "Vật",
+    radicals: "牛 (ngưu) + 勿 (vật)",
+    mnemonic: "Con bò (牛) không được (勿) coi là đồ vật.",
     examples: [
       {
         japanese: "買い物",
@@ -6196,6 +6487,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "の",
     meaning: "Cánh đồng, Dã",
     sinoVietnamese: "Dã",
+    radicals: "里 (lý) + 予 (dư)",
+    mnemonic: "Ở làng (里) dự (予) tính làm cánh đồng hoang.",
     examples: [
       {
         japanese: "野菜",
@@ -6233,6 +6526,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "な",
     meaning: "Rau",
     sinoVietnamese: "Thái",
+    radicals: "艹 (thảo) + 采 (hái)",
+    mnemonic: "Hái (采) cỏ (艹) về làm rau ăn.",
     examples: [
       {
         japanese: "野菜",
@@ -6270,6 +6565,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "あじ、あじ・わう",
     meaning: "Vị, Mùi vị",
     sinoVietnamese: "Vị",
+    radicals: "口 (khẩu) + 未 (vị)",
+    mnemonic: "Miệng (口) chưa (未) nếm thì chưa biết vị.",
     examples: [
       {
         japanese: "味",
@@ -6307,6 +6604,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "わる・い",
     meaning: "Xấu, Ác",
     sinoVietnamese: "Ác",
+    radicals: "亜 (á) + 心 (tâm)",
+    mnemonic: "Tâm (心) địa xấu xa (亜) là độc ác.",
     examples: [
       {
         japanese: "悪い",
@@ -6344,6 +6643,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "つく・る",
     meaning: "Làm, Chế tạo",
     sinoVietnamese: "Tác",
+    radicals: "亻 (nhân) + 乍 (tạc)",
+    mnemonic: "Người (亻) bỗng nhiên (乍) chế tác ra tác phẩm.",
     examples: [
       {
         japanese: "作ります",
@@ -6381,6 +6682,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "おと、ね",
     meaning: "Âm thanh",
     sinoVietnamese: "Âm",
+    radicals: "立 (lập) + 日 (nhật)",
+    mnemonic: "Đứng (立) trên mặt trời (日) hét ra âm thanh.",
     examples: [
       {
         japanese: "音",
@@ -6418,6 +6721,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "たの・しい",
     meaning: "Vui, Nhạc",
     sinoVietnamese: "Lạc, Nhạc",
+    radicals: "白 (bạch) + 木 (mộc) + 幺 (yêu)",
+    mnemonic: "Cây (木) đàn màu trắng (白) phát ra nhạc vui vẻ.",
     examples: [
       {
         japanese: "楽しい",
@@ -6455,6 +6760,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "うた、うた・う",
     meaning: "Hát, Bài hát",
     sinoVietnamese: "Ca",
+    radicals: "可 (khả) + 欠 (khuyết)",
+    mnemonic: "Có thể (可) ca hát khi thiếu (欠) tiền.",
     examples: [
       {
         japanese: "歌",
@@ -6492,6 +6799,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "みずか・ら",
     meaning: "Tự, Bản thân",
     sinoVietnamese: "Tự",
+    radicals: "目 (mục)",
+    mnemonic: "Hình cái mũi (tự chỉ vào mình).",
     examples: [
       {
         japanese: "自分",
@@ -6529,6 +6838,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ころ・ぶ",
     meaning: "Chuyển, Lăn",
     sinoVietnamese: "Chuyển",
+    radicals: "車 (xa) + 云 (vân)",
+    mnemonic: "Xe (車) chuyển động như mây (云) bay.",
     examples: [
       {
         japanese: "自転車",
@@ -6566,6 +6877,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "の・る、の・せる",
     meaning: "Lên xe, Thừa",
     sinoVietnamese: "Thừa",
+    radicals: "禾 (hòa) + 北 (bắc)",
+    mnemonic: "Cây lúa (禾) ở phương Bắc (北) dùng để lên xe.",
     examples: [
       {
         japanese: "乗ります",
@@ -6603,6 +6916,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "うつ・す、うつ・る",
     meaning: "Tả, Sao chép, Chụp",
     sinoVietnamese: "Tả",
+    radicals: "冖 (mịch) + 与 (dữ)",
+    mnemonic: "Đội mũ (冖) cùng (与) nhau miêu tả bức tranh.",
     examples: [
       {
         japanese: "写真",
@@ -6640,6 +6955,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ま",
     meaning: "Chân, Thật",
     sinoVietnamese: "Chân",
+    radicals: "十 (thập) + 目 (mục) + Ｌ (ẩn)",
+    mnemonic: "Mười (十) con mắt (目) nhìn sự thật.",
     examples: [
       {
         japanese: "写真",
@@ -6677,6 +6994,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Đài, Bệ",
     sinoVietnamese: "Đài",
+    radicals: "ム (khư) + 口 (khẩu)",
+    mnemonic: "Miệng (口) nói chuyện riêng (ム) trên bệ đài.",
     examples: [
       {
         japanese: "二台",
@@ -6714,6 +7033,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Ương, Trung ương",
     sinoVietnamese: "Ương",
+    radicals: "大 (đại)",
+    mnemonic: "Người to lớn (大) đứng ở trung ương.",
     examples: [
       {
         japanese: "中央",
@@ -6731,6 +7052,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "うつ・る、うつ・す",
     meaning: "Ánh, Chiếu",
     sinoVietnamese: "Ánh",
+    radicals: "日 (nhật) + 央 (ương)",
+    mnemonic: "Mặt trời (日) chiếu sáng trung ương (央).",
     examples: [
       {
         japanese: "映画",
@@ -6763,6 +7086,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Họa, Hoạch",
     sinoVietnamese: "Họa, Hoạch",
+    radicals: "一 (nhất) + 田 (điền)",
+    mnemonic: "Vẽ (画) một (一) cánh đồng (田).",
     examples: [
       {
         japanese: "映画",
@@ -6800,6 +7125,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "ひつじ",
     meaning: "Cừu",
     sinoVietnamese: "Dương",
+    radicals: "羊 (dương)",
+    mnemonic: "Hình con cừu có sừng.",
     examples: [
       {
         japanese: "羊",
@@ -6827,6 +7154,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Dương, Đại dương",
     sinoVietnamese: "Dương",
+    radicals: "氵(thủy) + 羊 (dương)",
+    mnemonic: "Con cừu (羊) bơi qua biển (氵) lớn (đại dương).",
     examples: [
       {
         japanese: "洋服",
@@ -6864,6 +7193,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Phục, Quần áo",
     sinoVietnamese: "Phục",
+    radicals: "月 (nguyệt/nhục) + 卩 (tiết/người quỳ) + 又 (hựu)",
+    mnemonic: "Người quỳ (卩) dùng tay (又) chỉnh quần áo (月).",
     examples: [
       {
         japanese: "服",
@@ -6901,6 +7232,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "き・る、つ・く",
     meaning: "Trước, Mặc, Đến",
     sinoVietnamese: "Trước",
+    radicals: "羊 (dương) + 目 (mục)",
+    mnemonic: "Con cừu (羊) nhìn (目) thấy quần áo đẹp liền mặc vào.",
     examples: [
       {
         japanese: "着ます",
@@ -6938,6 +7271,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "いえ、うち",
     meaning: "Nhà",
     sinoVietnamese: "Gia",
+    radicals: "宀 (miên) + 豕 (thỉ/lợn)",
+    mnemonic: "Con lợn (豕) ở trong nhà (宀).",
     examples: [
       {
         japanese: "家",
@@ -6975,6 +7310,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "や",
     meaning: "Mũi tên",
     sinoVietnamese: "Thỉ",
+    radicals: "矢 (thỉ)",
+    mnemonic: "Hình mũi tên.",
     examples: [
       {
         japanese: "矢",
@@ -7002,6 +7339,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Gia đình, Tộc",
     sinoVietnamese: "Tộc",
+    radicals: "方 (phương) + 矢 (thỉ)",
+    mnemonic: "Cả gia tộc cầm mũi tên (矢) đi về một phương (方).",
     examples: [
       {
         japanese: "家族",
@@ -7029,6 +7368,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "おや、した・しい",
     meaning: "Bố mẹ, Thân thiết",
     sinoVietnamese: "Thân",
+    radicals: "立 (lập) + 木 (mộc) + 見 (kiến)",
+    mnemonic: "Bố mẹ đứng (立) trên cây (木) nhìn (見) con cái.",
     examples: [
       {
         japanese: "親",
@@ -7066,6 +7407,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "あに",
     meaning: "Anh trai",
     sinoVietnamese: "Huynh",
+    radicals: "口 (khẩu) + 儿 (nhân)",
+    mnemonic: "Người (儿) miệng (口) to là anh trai.",
     examples: [
       {
         japanese: "兄",
@@ -7098,6 +7441,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "あね",
     meaning: "Chị gái",
     sinoVietnamese: "Tỷ",
+    radicals: "女 (nữ) + 市 (thị)",
+    mnemonic: "Chị gái (女) đi chợ (市).",
     examples: [
       {
         japanese: "姉",
@@ -7125,6 +7470,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "おとうと",
     meaning: "Em trai",
     sinoVietnamese: "Đệ",
+    radicals: "弓 (cung) + 丨 + 丿",
+    mnemonic: "Em trai cầm cung (弓) tên đứng bắn.",
     examples: [
       {
         japanese: "弟",
@@ -7152,6 +7499,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "いもうと",
     meaning: "Em gái",
     sinoVietnamese: "Muội",
+    radicals: "女 (nữ) + 未 (vị)",
+    mnemonic: "Em gái (女) chưa (未) lớn.",
     examples: [
       {
         japanese: "妹",
@@ -7174,6 +7523,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Tôi (nam)",
     sinoVietnamese: "Bộc",
+    radicals: "亻 (nhân) + 菐 (bộc - nghiệp)",
+    mnemonic: "Người (亻) phục vụ (bộc) cho chủ.",
     examples: [
       {
         japanese: "僕",
@@ -7191,6 +7542,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "つま",
     meaning: "Vợ",
     sinoVietnamese: "Thê",
+    radicals: "女 (nữ) + ⺕ (kệ)",
+    mnemonic: "Vợ (女) là người quán xuyến mọi việc trong nhà.",
     examples: [
       {
         japanese: "妻",
@@ -7218,6 +7571,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "おっと",
     meaning: "Chồng",
     sinoVietnamese: "Phu",
+    radicals: "大 (đại) + 一 (nhất)",
+    mnemonic: "Chồng là người to lớn (大) duy nhất (一) trong nhà.",
     examples: [
       {
         japanese: "夫",
@@ -7250,6 +7605,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "おも、ぬし",
     meaning: "Chủ, Chính",
     sinoVietnamese: "Chủ",
+    radicals: "丶 (chấm) + 王 (vương)",
+    mnemonic: "Dấu chấm (丶) trên vua (王) là chúa tể.",
     examples: [
       {
         japanese: "主人",
@@ -7282,6 +7639,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "す・む",
     meaning: "Sống, Trú",
     sinoVietnamese: "Trú",
+    radicals: "亻 (nhân) + 主 (chủ)",
+    mnemonic: "Người (亻) làm chủ (主) ngôi nhà mình ở (trú).",
     examples: [
       {
         japanese: "住みます",
@@ -7314,6 +7673,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "いと",
     meaning: "Sợi chỉ",
     sinoVietnamese: "Mịch",
+    radicals: "糸 (mịch)",
+    mnemonic: "Hình cuộn chỉ.",
     examples: [
       {
         japanese: "糸",
@@ -7336,6 +7697,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "うじ",
     meaning: "Thị, Họ",
     sinoVietnamese: "Thị",
+    radicals: "氏 (thị)",
+    mnemonic: "Người cầm dao giấy (hình giống chữ).",
     examples: [
       {
         japanese: "彼氏",
@@ -7358,6 +7721,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "かみ",
     meaning: "Giấy",
     sinoVietnamese: "Chỉ",
+    radicals: "糸 (mịch) + 氏 (thị)",
+    mnemonic: "Sợi chỉ (糸) dẹt mỏng như tờ giấy của họ Thị (氏).",
     examples: [
       {
         japanese: "紙",
@@ -9273,6 +9638,7 @@ export const kanjiData: KanjiCard[] = [
     id: 261,
     kanji: "士",
     lesson: 32,
+    imageUrl: "/images/kanji/261_samurai_3d.png",
     onyomi: "シ",
     kunyomi: "",
     meaning: "Sĩ, Chiến sĩ",
@@ -9299,6 +9665,8 @@ export const kanjiData: KanjiCard[] = [
     id: 262,
     kanji: "仕",
     lesson: 8,
+
+    imageUrl: "/images/kanji/262_serve_3d.png",
     onyomi: "シ、ジ",
     kunyomi: "つか・える",
     meaning: "Sĩ, Phục vụ",
@@ -9325,6 +9693,8 @@ export const kanjiData: KanjiCard[] = [
     id: 263,
     kanji: "事",
     lesson: 8,
+
+    imageUrl: "/images/kanji/263_matter_3d.png",
     onyomi: "ジ、ズ",
     kunyomi: "こと",
     meaning: "Sự, Việc",
@@ -9361,6 +9731,8 @@ export const kanjiData: KanjiCard[] = [
     id: 264,
     kanji: "図",
     lesson: 8,
+
+    imageUrl: "/images/kanji/264_map_3d.png",
     onyomi: "ズ、ト",
     kunyomi: "はか・る",
     meaning: "Đồ, Bản đồ",
@@ -9392,6 +9764,8 @@ export const kanjiData: KanjiCard[] = [
     id: 265,
     kanji: "合",
     lesson: 13,
+
+    imageUrl: "/images/kanji/265_fit_3d.png",
     onyomi: "ゴウ、ガッ",
     kunyomi: "あ・う、あ・わせる",
     meaning: "Hợp, Vừa",
@@ -9423,6 +9797,8 @@ export const kanjiData: KanjiCard[] = [
     id: 266,
     kanji: "格",
     lesson: 19,
+
+    imageUrl: "/images/kanji/266_status_3d.png",
     onyomi: "カク、コウ",
     kunyomi: "",
     meaning: "Cách, Tính cách",
@@ -9449,6 +9825,8 @@ export const kanjiData: KanjiCard[] = [
     id: 267,
     kanji: "祝",
     lesson: 20,
+
+    imageUrl: "/images/kanji/267_celebrate_3d.png",
     onyomi: "シュク、シュウ",
     kunyomi: "いわ・う",
     meaning: "Chúc, Chúc mừng",
@@ -9475,6 +9853,7 @@ export const kanjiData: KanjiCard[] = [
     id: 268,
     kanji: "選",
     lesson: 29,
+    imageUrl: "/images/kanji/268_select_3d.png",
     onyomi: "セン",
     kunyomi: "えら・ぶ",
     meaning: "Tuyển, Chọn",
@@ -9501,6 +9880,7 @@ export const kanjiData: KanjiCard[] = [
     id: 269,
     kanji: "誕",
     lesson: 17,
+    imageUrl: "/images/kanji/269_birth_3d.png",
     onyomi: "タン",
     kunyomi: "",
     meaning: "Đản, Sinh ra",
@@ -9522,6 +9902,7 @@ export const kanjiData: KanjiCard[] = [
     id: 270,
     kanji: "結",
     lesson: 17,
+    imageUrl: "/images/kanji/270_tie_3d.png",
     onyomi: "ケツ",
     kunyomi: "むす・ぶ、ゆ・う",
     meaning: "Kết, Kết hôn",
@@ -9553,6 +9934,7 @@ export const kanjiData: KanjiCard[] = [
     id: 271,
     kanji: "婚",
     lesson: 17,
+    imageUrl: "/images/kanji/271_marriage_3d.png",
     onyomi: "コン",
     kunyomi: "",
     meaning: "Hôn, Kết hôn",
@@ -9579,6 +9961,7 @@ export const kanjiData: KanjiCard[] = [
     id: 272,
     kanji: "計",
     lesson: 17,
+    imageUrl: "/images/kanji/272_measure_3d.png",
     onyomi: "ケイ",
     kunyomi: "はか・る",
     meaning: "Kế, Kế hoạch",
@@ -9610,6 +9993,7 @@ export const kanjiData: KanjiCard[] = [
     id: 273,
     kanji: "幸",
     lesson: 18,
+    imageUrl: "/images/kanji/273_happy_3d.png",
     onyomi: "コウ",
     kunyomi: "さいわ・い、さち、しあわ・せ",
     meaning: "Hạnh, Hạnh phúc",
@@ -9641,6 +10025,7 @@ export const kanjiData: KanjiCard[] = [
     id: 274,
     kanji: "困",
     lesson: 18,
+    imageUrl: "/images/kanji/274_trouble_3d.png",
     onyomi: "コン",
     kunyomi: "こま・る",
     meaning: "Khốn, Khó khăn",
@@ -9667,6 +10052,7 @@ export const kanjiData: KanjiCard[] = [
     id: 275,
     kanji: "消",
     lesson: 20,
+    imageUrl: "/images/kanji/275_extinguish_3d.png",
     onyomi: "ショウ",
     kunyomi: "き・える、け・す",
     meaning: "Tiêu, Tắt/Xóa",
@@ -9698,6 +10084,7 @@ export const kanjiData: KanjiCard[] = [
     id: 276,
     kanji: "防",
     lesson: 20,
+    imageUrl: "/images/kanji/276_prevent_3d.png",
     onyomi: "ボウ",
     kunyomi: "ふせ・ぐ",
     meaning: "Phòng, Phòng chống",
@@ -9724,6 +10111,7 @@ export const kanjiData: KanjiCard[] = [
     id: 277,
     kanji: "救",
     lesson: 18,
+    imageUrl: "/images/kanji/277_save_3d.png",
     onyomi: "キュウ",
     kunyomi: "すく・う",
     meaning: "Cứu, Cứu giúp",
@@ -9750,6 +10138,7 @@ export const kanjiData: KanjiCard[] = [
     id: 278,
     kanji: "警",
     lesson: 20,
+    imageUrl: "/images/kanji/278_police_3d.png",
     onyomi: "ケイ",
     kunyomi: "",
     meaning: "Cảnh, Cảnh sát",
@@ -9776,6 +10165,7 @@ export const kanjiData: KanjiCard[] = [
     id: 279,
     kanji: "察",
     lesson: 20,
+    imageUrl: "/images/kanji/279_inspect_3d.png",
     onyomi: "サツ",
     kunyomi: "",
     meaning: "Sát, Cảnh sát",
@@ -9802,6 +10192,7 @@ export const kanjiData: KanjiCard[] = [
     id: 280,
     kanji: "故",
     lesson: 20,
+    imageUrl: "/images/kanji/280_incident_3d.png",
     onyomi: "コ",
     kunyomi: "ゆえ",
     meaning: "Cố, Sự cố",
@@ -9828,6 +10219,7 @@ export const kanjiData: KanjiCard[] = [
     id: 281,
     kanji: "別",
     lesson: 18,
+    imageUrl: "/images/kanji/281_separate_3d.png",
     onyomi: "ベツ",
     kunyomi: "わか・れる",
     meaning: "Biệt, Đặc biệt",
@@ -9859,6 +10251,7 @@ export const kanjiData: KanjiCard[] = [
     id: 282,
     kanji: "答",
     lesson: 13,
+    imageUrl: "/images/kanji/282_answer_3d.png",
     onyomi: "トウ",
     kunyomi: "こた・える、こた・え",
     meaning: "Đáp, Trả lời",
@@ -9885,6 +10278,7 @@ export const kanjiData: KanjiCard[] = [
     id: 283,
     kanji: "正",
     lesson: 18,
+    imageUrl: "/images/kanji/283_correct_3d.png",
     onyomi: "セイ、ショウ",
     kunyomi: "ただ・しい",
     meaning: "Chính, Đúng",
@@ -9916,6 +10310,7 @@ export const kanjiData: KanjiCard[] = [
     id: 284,
     kanji: "同",
     lesson: 9,
+    imageUrl: "/images/kanji/284_same_3d.png",
     onyomi: "ドウ",
     kunyomi: "おな・じ",
     meaning: "Đồng, Giống",
@@ -9947,6 +10342,7 @@ export const kanjiData: KanjiCard[] = [
     id: 285,
     kanji: "集",
     lesson: 18,
+    imageUrl: "/images/kanji/285_gather_3d.png",
     onyomi: "シュウ",
     kunyomi: "あつ・まる、あつ・める",
     meaning: "Tập, Tập hợp",
@@ -9978,6 +10374,7 @@ export const kanjiData: KanjiCard[] = [
     id: 286,
     kanji: "特",
     lesson: 15,
+    imageUrl: "/images/kanji/286_special_3d.png",
     onyomi: "トク",
     kunyomi: "",
     meaning: "Đặc, Đặc biệt",
@@ -10009,6 +10406,7 @@ export const kanjiData: KanjiCard[] = [
     id: 287,
     kanji: "不",
     lesson: 18,
+    imageUrl: "/images/kanji/287_not_3d.png",
     onyomi: "フ、ブ",
     kunyomi: "",
     meaning: "Bất, Không",
@@ -10040,6 +10438,7 @@ export const kanjiData: KanjiCard[] = [
     id: 288,
     kanji: "便",
     lesson: 23,
+    imageUrl: "/images/kanji/288_convenience_3d.png",
     onyomi: "ベン、ビン",
     kunyomi: "たよ・り",
     meaning: "Tiện, Tiện lợi",
