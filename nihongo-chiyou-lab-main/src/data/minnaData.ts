@@ -7909,14 +7909,996 @@ export const lesson2Data: LessonDetail = {
   quiz: []
 };
 
+// =================================================================================================
+// BÀI 3 (LESSON 3)
+// =================================================================================================
+
+export const lesson3Data: LessonDetail = {
+  id: 3,
+  title: "Bài 3: Chỗ này, chỗ đó, chỗ kia",
+  vocabulary: [
+
+    // === ĐẠI TỪ CHỈ ĐỊA ĐIỂM ===
+    {
+      word: 'ここ', kanji: '', romaji: 'koko', mean: 'chỗ này, đây',
+      examples: [{ jp: 'ここはお手洗いです。', romaji: 'Koko wa otearai desu.', vn: 'Đây là nhà vệ sinh.', furigana: [{ kanji: '手洗', reading: 'てあら', meaning: 'THỦ TẨY' }] }]
+    },
+    {
+      word: 'そこ', kanji: '', romaji: 'soko', mean: 'chỗ đó, đó',
+      examples: [{ jp: '電話はそこです。', romaji: 'Denwa wa soko desu.', vn: 'Điện thoại ở đó.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] }]
+    },
+    {
+      word: 'あそこ', kanji: '', romaji: 'asoko', mean: 'chỗ kia, kia',
+      examples: [{ jp: '事務所はあそこです。', romaji: 'Jimusho wa asoko desu.', vn: 'Văn phòng ở đằng kia.', furigana: [{ kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }] }]
+    },
+    {
+      word: 'どこ', kanji: '', romaji: 'doko', mean: 'chỗ nào, đâu',
+      examples: [{ jp: 'お手洗いはどこですか。', romaji: 'Otearai wa doko desu ka.', vn: 'Nhà vệ sinh ở đâu?', furigana: [{ kanji: '手洗', reading: 'てあら', meaning: 'THỦ TẨY' }] }]
+    },
+    {
+      word: 'こちら', kanji: '', romaji: 'kochira', mean: 'phía này, đằng này (lịch sự của ここ)',
+      examples: [{ jp: 'こちらは田中さんです。', romaji: 'Kochira wa Tanaka-san desu.', vn: 'Đây là anh Tanaka.', furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }] }]
+    },
+    {
+      word: 'そちら', kanji: '', romaji: 'sochira', mean: 'phía đó, đằng đó (lịch sự của そこ)',
+      examples: [{ jp: 'そちらはエレベーターです。', romaji: 'Sochira wa erebe-ta- desu.', vn: 'Đằng đó là thang máy.', furigana: [] }]
+    },
+    {
+      word: 'あちら', kanji: '', romaji: 'achira', mean: 'phía kia, đằng kia (lịch sự của あそこ)',
+      examples: [{ jp: 'あちらは会議室です。', romaji: 'Achira wa kaigishitsu desu.', vn: 'Đằng kia là phòng họp.', furigana: [{ kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }] }]
+    },
+    {
+      word: 'どちら', kanji: '', romaji: 'dochira', mean: 'phía nào, đằng nào (lịch sự của どこ)',
+      examples: [{ jp: 'エレベーターはどちらですか。', romaji: 'Erebe-ta- wa dochira desu ka.', vn: 'Thang máy ở phía nào ạ?', furigana: [] }]
+    },
+
+    // === ĐỊA ĐIỂM (PLACES) ===
+    {
+      word: 'きょうしつ', kanji: '教室', romaji: 'kyoushitsu', mean: 'lớp học, phòng học',
+      examples: [{ jp: '教室は広いです。', romaji: 'Kyoushitsu wa hiroi desu.', vn: 'Lớp học rộng.', furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }, { kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }] }],
+      kanjiDetails: [
+        {
+          kanji: '教', onyomi: 'キョウ (kyou)', kunyomi: 'おし.える (oshieru)', meaning: 'Dạy, giáo dục', sinoVietnamese: 'GIÁO', strokes: 11, jlpt: 'N4', radicals: '攴 (phộc)', mnemonic: 'Người già (老) cầm roi (攴) dạy trẻ.', exampleSentences: []
+        },
+        {
+          kanji: '室', onyomi: 'シツ (shitsu)', kunyomi: 'むろ (muro)', meaning: 'Phòng, buồng', sinoVietnamese: 'THẤT', strokes: 9, jlpt: 'N4', radicals: '宀 (miên)', mnemonic: 'Dưới mái nhà (宀) đến (至) một căn phòng.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'しょくどう', kanji: '食堂', romaji: 'shokudou', mean: 'nhà ăn',
+      examples: [{ jp: '食堂でご飯を食べます。', romaji: 'Shokudou de gohan wo tabemasu.', vn: 'Tôi ăn cơm ở nhà ăn.', furigana: [{ kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }, { kanji: '飯', reading: 'はん', meaning: 'PHẠN' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }] }],
+      kanjiDetails: [
+        {
+          kanji: '食', onyomi: 'ショク (shoku)', kunyomi: 'た.べる (taberu)', meaning: 'Ăn, thực phẩm', sinoVietnamese: 'THỰC', strokes: 9, jlpt: 'N5', radicals: '食 (thực)', mnemonic: 'Người (人) tốt (良) thì được ăn ngon.', exampleSentences: []
+        },
+        {
+          kanji: '堂', onyomi: 'ドウ (dou)', kunyomi: '', meaning: 'Hội trường, đền', sinoVietnamese: 'ĐƯỜNG', strokes: 11, jlpt: 'N4', radicals: '土 (thổ)', mnemonic: 'Ngôi nhà vinh quang (尚) xây trên đất (土).', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'じむしょ', kanji: '事務所', romaji: 'jimusho', mean: 'văn phòng',
+      examples: [{ jp: '事務所は3階です。', romaji: 'Jimusho wa sangai desu.', vn: 'Văn phòng ở tầng 3.', furigana: [{ kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }, { kanji: '階', reading: 'かい', meaning: 'GIAI' }] }],
+      kanjiDetails: [
+        {
+          kanji: '事', onyomi: 'ジ (ji)', kunyomi: 'こと (koto)', meaning: 'Việc, sự việc', sinoVietnamese: 'SỰ', strokes: 8, jlpt: 'N4', radicals: '亅 (quyết)', mnemonic: 'Một cái miệng (口) và tay cầm bút viết sử (history/sự việc).', exampleSentences: []
+        },
+        {
+          kanji: '務', onyomi: 'ム (mu)', kunyomi: 'つと.める (tsutomeru)', meaning: 'Nhiệm vụ', sinoVietnamese: 'VỤ', strokes: 11, jlpt: 'N4', radicals: '力 (lực)', mnemonic: 'Cầm giáo (矛) dùng sức (力) làm nhiệm vụ.', exampleSentences: []
+        },
+        {
+          kanji: '所', onyomi: 'ショ (sho)', kunyomi: 'ところ (tokoro)', meaning: 'Nơi chốn', sinoVietnamese: 'SỞ', strokes: 8, jlpt: 'N4', radicals: '戸 (hộ)', mnemonic: 'Cầm rìu (斤) đến cửa (戸) đục đẽo làm nơi ở.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'かいぎしつ', kanji: '会議室', romaji: 'kaigishitsu', mean: 'phòng họp',
+      examples: [{ jp: '会議室で会議をします。', romaji: 'Kaigishitsu de kaigi wo shimasu.', vn: 'Họp ở phòng họp.', furigana: [{ kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }, { kanji: '会議', reading: 'かいぎ', meaning: 'HỘI NGHỊ' }] }],
+      kanjiDetails: [
+        {
+          kanji: '会', onyomi: 'カイ (kai)', kunyomi: 'あ.う (au)', meaning: 'Gặp gỡ, hội họp', sinoVietnamese: 'HỘI', strokes: 6, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Hai người (二) ngồi dưới mái nhà (ane) họp.', exampleSentences: []
+        },
+        {
+          kanji: '議', onyomi: 'ギ (gi)', kunyomi: '', meaning: 'Thảo luận, nghị sự', sinoVietnamese: 'NGHỊ', strokes: 20, jlpt: 'N4', radicals: '言 (ngôn)', mnemonic: 'Nói (言) về nghĩa (義) khí trong cuộc họp.', exampleSentences: []
+        },
+        {
+          kanji: '室', onyomi: 'シツ (shitsu)', kunyomi: 'むろ (muro)', meaning: 'Phòng, buồng', sinoVietnamese: 'THẤT', strokes: 9, jlpt: 'N4', radicals: '宀 (miên)', mnemonic: 'Dưới mái nhà (宀) đến (至) một căn phòng.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'うけつけ', kanji: '受付', romaji: 'uketsuke', mean: 'bộ phận tiếp tân, phòng thường trực',
+      examples: [{ jp: '受付は1階です。', romaji: 'Uketsuke wa ikkai desu.', vn: 'Quầy lễ tân ở tầng 1.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }, { kanji: '階', reading: 'かい', meaning: 'GIAI' }] }],
+      kanjiDetails: [
+        {
+          kanji: '受', onyomi: 'ジュ (ju)', kunyomi: 'う.ける (ukeru)', meaning: 'Nhận, chịu', sinoVietnamese: 'THỤ', strokes: 8, jlpt: 'N3', radicals: '又 (hựu)', mnemonic: 'Dùng tay (爪) nhận cái gì đó từ tay khác (又) dưới mái nhà (冖).', exampleSentences: []
+        },
+        {
+          kanji: '付', onyomi: 'フ (fu)', kunyomi: 'つ.く (tsuku)', meaning: 'Gắn, giao phó', sinoVietnamese: 'PHÓ', strokes: 5, jlpt: 'N3', radicals: '人 (nhân)', mnemonic: 'Người (人) trao tấc (寸) lòng giao phó.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ロビー', kanji: '', romaji: 'robii', mean: 'hành lang, đại sảnh',
+      examples: [{ jp: 'ロビーで待ちます。', romaji: 'Robii de machimasu.', vn: 'Tôi đợi ở sảnh.', furigana: [{ kanji: '待', reading: 'ま', meaning: 'ĐÃI' }] }]
+    },
+    {
+      word: 'へや', kanji: '部屋', romaji: 'heya', mean: 'căn phòng',
+      examples: [{ jp: 'これは誰の部屋ですか。', romaji: 'Kore wa dare no heya desu ka.', vn: 'Đây là phòng của ai?', furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }, { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }] }],
+      kanjiDetails: [
+        {
+          kanji: '部', onyomi: 'ブ (bu)', kunyomi: '', meaning: 'Bộ phận, phòng', sinoVietnamese: 'BỘ', strokes: 11, jlpt: 'N4', radicals: '邑 (áp)', mnemonic: 'Đứng (立) mở miệng (口) chia vùng (邑) thành các bộ phận.', exampleSentences: []
+        },
+        {
+          kanji: '屋', onyomi: 'オク (oku)', kunyomi: 'や (ya)', meaning: 'Mái nhà, cửa hàng', sinoVietnamese: 'ỐC', strokes: 9, jlpt: 'N4', radicals: '尸 (thi)', mnemonic: 'Xác (尸) chết tới (至) nhà (oc). Hoặc: Người nằm (尸) đợi đến (至) nhà.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'トイレ', kanji: 'お手洗い', romaji: 'otearai', mean: 'nhà vệ sinh',
+      examples: [{ jp: 'お手洗いはあそこです。', romaji: 'Otearai wa asoko desu.', vn: 'Nhà vệ sinh ở đằng kia.', furigana: [{ kanji: '手洗', reading: 'てあら', meaning: 'THỦ TẨY' }] }],
+      kanjiDetails: [
+        {
+          kanji: '手', onyomi: 'シュ (shu)', kunyomi: 'て (te)', meaning: 'Tay', sinoVietnamese: 'THỦ', strokes: 4, jlpt: 'N5', radicals: '手 (thủ)', mnemonic: 'Hình bàn tay xòe 5 ngón.', exampleSentences: []
+        },
+        {
+          kanji: '洗', onyomi: 'セン (sen)', kunyomi: 'あら.う (arau)', meaning: 'Rửa', sinoVietnamese: 'TẨY', strokes: 9, jlpt: 'N4', radicals: '水 (thủy)', mnemonic: 'Dùng nước (氵) rửa sạch trước (先) tiên.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'かいだん', kanji: '階段', romaji: 'kaidan', mean: 'cầu thang',
+      examples: [{ jp: '階段を使います。', romaji: 'Kaidan wo tsukaimasu.', vn: 'Tôi dùng cầu thang bộ.', furigana: [{ kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }, { kanji: '使', reading: 'つか', meaning: 'SỬ' }] }],
+      kanjiDetails: [
+        {
+          kanji: '階', onyomi: 'カイ (kai)', kunyomi: '', meaning: 'Giai cấp, tầng', sinoVietnamese: 'GIAI', strokes: 12, jlpt: 'N3', radicals: '阜 (phụ)', mnemonic: 'Mọi người (皆) đều phải leo lên gò đất (阜) từng giai đoạn.', exampleSentences: []
+        },
+        {
+          kanji: '段', onyomi: 'ダン (dan)', kunyomi: '', meaning: 'Giai đoạn, bậc thang', sinoVietnamese: 'ĐOẠN', strokes: 9, jlpt: 'N3', radicals: '殳 (thù)', mnemonic: 'Đoạn đường có cây (chu? no) cầm chùy (殳) đứng gác.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'エレベーター', kanji: '', romaji: 'erebe-ta-', mean: 'thang máy',
+      examples: [{ jp: 'エレベーターに乗ります。', romaji: 'Erebe-ta- ni norimasu.', vn: 'Tôi đi thang máy.', furigana: [{ kanji: '乗', reading: 'の', meaning: 'THỪA' }] }]
+    },
+    {
+      word: 'エスカレーター', kanji: '', romaji: 'esukare-ta-', mean: 'thang cuốn',
+      examples: [{ jp: 'エスカレーターはあちらです。', romaji: 'Esukare-ta- wa achira desu.', vn: 'Thang cuốn ở phía kia.', furigana: [] }]
+    },
+    {
+      word: 'おくに', kanji: 'お国', romaji: 'okuni', mean: 'đất nước',
+      examples: [{ jp: 'お国はどちらですか。', romaji: 'Okuni wa dochira desu ka.', vn: 'Nước của bạn là nước nào?', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }] }],
+      kanjiDetails: [
+        {
+          kanji: '国', onyomi: 'コク (koku)', kunyomi: 'くに (kuni)', meaning: 'Đất nước', sinoVietnamese: 'QUỐC', strokes: 8, jlpt: 'N5', radicals: '囗 (vi)', mnemonic: 'Viên ngọc (玉) quý được bao quanh bởi biên giới (囗) là quốc gia.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'かいしゃ', kanji: '会社', romaji: 'kaisha', mean: 'công ty',
+      examples: [{ jp: '会社はどちらですか。', romaji: 'Kaisha wa dochira desu ka.', vn: 'Công ty của anh ở đâu?', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }] }],
+      kanjiDetails: [
+        {
+          kanji: '会', onyomi: 'カイ (kai)', kunyomi: 'あ.う (au)', meaning: 'Gặp gỡ', sinoVietnamese: 'HỘI', strokes: 6, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Hai người (二) gặp nhau dưới mái nhà.', exampleSentences: []
+        },
+        {
+          kanji: '社', onyomi: 'シャ (sha)', kunyomi: 'やしろ (yashiro)', meaning: 'Xã hội, đền', sinoVietnamese: 'XÃ', strokes: 7, jlpt: 'N4', radicals: '示 (thị)', mnemonic: 'Thần đất (土) phù hộ (示) cho xã hội.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'うち', kanji: '家', romaji: 'uchi', mean: 'nhà',
+      examples: [{ jp: 'うちは大阪です。', romaji: 'Uchi wa Oosaka desu.', vn: 'Nhà tôi ở Osaka.', furigana: [{ kanji: '大阪', reading: 'おおさか', meaning: 'ĐẠI PHẢN' }] }],
+      kanjiDetails: [
+        {
+          kanji: '家', onyomi: 'カ (ka)', kunyomi: 'いえ (ie), うち (uchi)', meaning: 'Nhà', sinoVietnamese: 'GIA', strokes: 10, jlpt: 'N4', radicals: '宀 (miên)', mnemonic: 'Dưới mái nhà (宀) có con lợn (豕) là nhà (ngày xưa).', exampleSentences: []
+        }
+      ]
+    },
+
+    // === ĐỒ VẬT (OBJECTS) ===
+    {
+      word: 'でんわ', kanji: '電話', romaji: 'denwa', mean: 'điện thoại',
+      examples: [{ jp: '電話をかけます。', romaji: 'Denwa wo kakemasu.', vn: 'Tôi gọi điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] }],
+      kanjiDetails: [
+        {
+          kanji: '電', onyomi: 'デン (den)', kunyomi: '', meaning: 'Điện', sinoVietnamese: 'ĐIỆN', strokes: 13, jlpt: 'N5', radicals: '雨 (vũ)', mnemonic: 'Mưa (雨) có sét giật đuôi rồng (竜) tạo ra điện.', exampleSentences: []
+        },
+        {
+          kanji: '話', onyomi: 'ワ (wa)', kunyomi: 'はな.す (hanasu)', meaning: 'Nói chuyện', sinoVietnamese: 'THOẠI', strokes: 13, jlpt: 'N5', radicals: '言 (ngôn)', mnemonic: 'Lời nói (言) dùng cái lưỡi (舌) để đối thoại.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'くつ', kanji: '靴', romaji: 'kutsu', mean: 'giày',
+      examples: [{ jp: 'この靴はいくらですか。', romaji: 'Kono kutsu wa ikura desu ka.', vn: 'Đôi giày này bao nhiêu tiền?', furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'NGOA' }] }],
+      kanjiDetails: [
+        {
+          kanji: '靴', onyomi: 'カ (ka)', kunyomi: 'くつ (kutsu)', meaning: 'Giày', sinoVietnamese: 'NGOA', strokes: 13, jlpt: 'N3', radicals: '革 (cách)', mnemonic: 'Da (革) biến hóa (化) thành chiếc giày.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ネクタイ', kanji: '', romaji: 'nekutai', mean: 'cà vạt',
+      examples: [{ jp: 'ネクタイを買います。', romaji: 'Nekutai wo kaimasu.', vn: 'Tôi mua cà vạt.', furigana: [{ kanji: '買', reading: 'か', meaning: 'MÃI' }] }]
+    },
+    {
+      word: 'ワイン', kanji: '', romaji: 'wain', mean: 'rượu vang',
+      examples: [{ jp: 'ワインを飲みます。', romaji: 'Wain wo nomimasu.', vn: 'Tôi uống rượu vang.', furigana: [{ kanji: '飲', reading: 'の', meaning: 'ẨM' }] }]
+    },
+    {
+      word: 'たばこ', kanji: '', romaji: 'tabako', mean: 'thuốc lá',
+      examples: [{ jp: 'たばこを吸いますか。', romaji: 'Tabako wo suimasu ka.', vn: 'Bạn có hút thuốc không?', furigana: [{ kanji: '吸', reading: 'す', meaning: 'HẤP' }] }]
+    },
+    {
+      word: 'うりば', kanji: '売り場', romaji: 'uriba', mean: 'quầy bán hàng',
+      examples: [{ jp: 'ワイン売り場は地下1階です。', romaji: 'Wain uriba wa chika ikkai desu.', vn: 'Quầy bán rượu vang ở tầng hầm 1.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }, { kanji: '地下', reading: 'ちか', meaning: 'ĐỊA HẠ' }, { kanji: '階', reading: 'かい', meaning: 'GIAI' }] }],
+      kanjiDetails: [
+        {
+          kanji: '売', onyomi: 'バイ (bai)', kunyomi: 'う.る (uru)', meaning: 'Bán', sinoVietnamese: 'MẠI', strokes: 7, jlpt: 'N4', radicals: '士 (sĩ)', mnemonic: 'Kẻ sĩ (士) đội mũ trùm (冖) đi bán chân (儿) tình.', exampleSentences: []
+        },
+        {
+          kanji: '場', onyomi: 'ジョウ (jou)', kunyomi: 'ば (ba)', meaning: 'Nơi, chỗ', sinoVietnamese: 'TRƯỜNG', strokes: 12, jlpt: 'N4', radicals: '土 (thổ)', mnemonic: 'Vùng đất (土) dưới ánh dương (昜) là quảng trường.', exampleSentences: []
+        }
+      ]
+    },
+
+    // === TẦNG & GIÁ CẢ ===
+    {
+      word: 'ちか', kanji: '地下', romaji: 'chika', mean: 'tầng hầm',
+      examples: [{ jp: '地下に駐車場があります。', romaji: 'Chika ni chuushajou ga arimasu.', vn: 'Dưới tầng hầm có bãi đỗ xe.', furigana: [{ kanji: '地下', reading: 'ちか', meaning: 'ĐỊA HẠ' }, { kanji: '駐車場', reading: 'ちゅうしゃじょう', meaning: 'TRÚ XA TRƯỜNG' }] }],
+      kanjiDetails: [
+        {
+          kanji: '地', onyomi: 'チ (chi), ジ (ji)', kunyomi: '', meaning: 'Đất, địa', sinoVietnamese: 'ĐỊA', strokes: 6, jlpt: 'N4', radicals: '土 (thổ)', mnemonic: 'Vùng đất (土) này cũng (也) là địa bàn của tôi.', exampleSentences: []
+        },
+        {
+          kanji: '下', onyomi: 'カ (ka), ゲ (ge)', kunyomi: 'した (shita)', meaning: 'Dưới', sinoVietnamese: 'HẠ', strokes: 3, jlpt: 'N5', radicals: '一 (nhất)', mnemonic: 'Cái gì đó nằm dưới đường chân trời (一).', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: '～かい', kanji: '～階', romaji: 'kai', mean: 'tầng ~',
+      examples: [{ jp: '食堂は8階です。', romaji: 'Shokudou wa hakkai desu.', vn: 'Nhà ăn ở tầng 8.', furigana: [{ kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }, { kanji: '階', reading: 'かい', meaning: 'GIAI' }] }],
+      kanjiDetails: [
+        {
+          kanji: '階', onyomi: 'カイ (kai)', kunyomi: '', meaning: 'Giai cấp, tầng', sinoVietnamese: 'GIAI', strokes: 12, jlpt: 'N3', radicals: '阜 (phụ)', mnemonic: 'Mọi người (皆) đều phải leo lên gò đất (阜) từng giai đoạn.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'なんがい', kanji: '何階', romaji: 'nangai', mean: 'tầng mấy',
+      examples: [{ jp: '会社は何階ですか。', romaji: 'Kaisha wa nangai desu ka.', vn: 'Công ty ở tầng mấy?', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }] }],
+      kanjiDetails: [
+        {
+          kanji: '何', onyomi: 'カ (ka)', kunyomi: 'なに (nani), なん (nan)', meaning: 'Cái gì', sinoVietnamese: 'HÀ', strokes: 7, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Người (イ) có khả năng (可) làm cái gì?', exampleSentences: []
+        },
+        {
+          kanji: '階', onyomi: 'カイ (kai)', kunyomi: '', meaning: 'Giai cấp, tầng', sinoVietnamese: 'GIAI', strokes: 12, jlpt: 'N3', radicals: '阜 (phụ)', mnemonic: 'Mọi người (皆) đều phải leo lên gò đất (阜) từng giai đoạn.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: '～えん', kanji: '～円', romaji: 'en', mean: 'yên (tiền Nhật)',
+      examples: [{ jp: 'これは百円です。', romaji: 'Kore wa hyaku en desu.', vn: 'Cái này 100 yên.', furigana: [{ kanji: '百', reading: 'ひゃく', meaning: 'BÁCH' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] }],
+      kanjiDetails: [
+        {
+          kanji: '円', onyomi: 'エン (en)', kunyomi: 'まる.い (marui)', meaning: 'Tròn, yên', sinoVietnamese: 'VIÊN', strokes: 4, jlpt: 'N5', radicals: '冂 (quynh)', mnemonic: 'Viên tiền (円) chu vi (冂) hình tròn.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'いくら', kanji: '', romaji: 'ikura', mean: 'bao nhiêu tiền',
+      examples: [{ jp: 'これはいくらですか。', romaji: 'Kore wa ikura desu ka.', vn: 'Cái này bao nhiêu tiền?', furigana: [] }]
+    },
+    {
+      word: 'ひゃく', kanji: '百', romaji: 'hyaku', mean: 'trăm',
+      examples: [{ jp: '三百円です。', romaji: 'Sanbyaku en desu.', vn: '300 yên.', furigana: [{ kanji: '三百', reading: 'さんびゃく', meaning: 'TAM BÁCH' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] }],
+      kanjiDetails: [
+        {
+          kanji: '百', onyomi: 'ヒャク (hyaku)', kunyomi: '', meaning: 'Trăm', sinoVietnamese: 'BÁCH', strokes: 6, jlpt: 'N5', radicals: '白 (bạch)', mnemonic: 'Một (一) tờ giấy trắng (白) trị giá một trăm.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'せん', kanji: '千', romaji: 'sen', mean: 'nghìn',
+      examples: [{ jp: '八千円です。', romaji: 'Hassen en desu.', vn: '8000 yên.', furigana: [{ kanji: '八千', reading: 'はっせん', meaning: 'BÁT THIÊN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] }],
+      kanjiDetails: [
+        {
+          kanji: '千', onyomi: 'セン (sen)', kunyomi: 'ち (chi)', meaning: 'Nghìn', sinoVietnamese: 'THIÊN', strokes: 3, jlpt: 'N5', radicals: '十 (thập)', mnemonic: 'Mười (十) người (人 -> ノ) là một nghìn năm lịch sử.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'まん', kanji: '万', romaji: 'man', mean: 'mười nghìn, vạn',
+      examples: [{ jp: '一万円です。', romaji: 'Ichiman en desu.', vn: '1 vạn yên (10.000 yên).', furigana: [{ kanji: '一万', reading: 'いちまん', meaning: 'NHẤT VẠN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] }],
+      kanjiDetails: [
+        {
+          kanji: '万', onyomi: 'マン (man)', kunyomi: '', meaning: 'Vạn', sinoVietnamese: 'VẠN', strokes: 3, jlpt: 'N5', radicals: '一 (nhất)', mnemonic: 'Một (一) đao (刀) chém vạn quân.', exampleSentences: []
+        }
+      ]
+    },
+
+    // === GIAO TIẾP ===
+    {
+      word: 'すみません', kanji: '', romaji: 'sumimasen', mean: 'Xin lỗi (để hỏi thăm)',
+      examples: [{ jp: 'すみません、トイレはどこですか。', romaji: 'Sumimasen, toire wa doko desu ka.', vn: 'Xin lỗi, nhà vệ sinh ở đâu ạ?', furigana: [] }]
+    },
+    {
+      word: '〜でございます', kanji: '', romaji: 'de gozaimasu', mean: 'thì, là (lịch sự của です)',
+      examples: [{ jp: 'エレベーターはこちらでございます。', romaji: 'Erebe-ta- wa kochira de gozaimasu.', vn: 'Thang máy ở phía này ạ.', furigana: [] }]
+    },
+    {
+      word: 'みせてください', kanji: '見せてください', romaji: 'misete kudasai', mean: 'Cho tôi xem',
+      examples: [{ jp: 'そのかばんを見せてください。', romaji: 'Sono kaban wo misete kudasai.', vn: 'Cho tôi xem cái túi đó.', furigana: [{ kanji: '見', reading: 'み', meaning: 'KIẾN' }] }],
+      kanjiDetails: [
+        {
+          kanji: '見', onyomi: 'ケン (ken)', kunyomi: 'み.る (miru)', meaning: 'Nhìn, xem', sinoVietnamese: 'KIẾN', strokes: 7, jlpt: 'N5', radicals: '見 (kiến)', mnemonic: 'Mắt (目) mọc trên chân (儿) đi khắp nơi để nhìn.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'じゃ', kanji: '', romaji: 'ja', mean: 'Thế thì, vậy thì',
+      examples: [{ jp: 'じゃ、これをください。', romaji: 'Ja, kore wo kudasai.', vn: 'Vậy thì, cho tôi cái này.', furigana: [] }]
+    },
+    {
+      word: 'ください', kanji: '', romaji: 'kudasai', mean: 'Cho tôi',
+      examples: [{ jp: 'ワインをください。', romaji: 'Wain wo kudasai.', vn: 'Cho tôi chai rượu vang.', furigana: [] }]
+    }
+  ],
+  grammar: [
+    {
+      pattern: 'ここ / そこ / あそこ / こちら / そちら / あちら',
+      explanation: '「ここ」「そこ」「あそこ」 là các đại từ chỉ địa điểm. \n- 「ここ」: Chỉ vị trí người nói đang ở. \n- 「そこ」: Chỉ vị trí người nghe đang ở. \n- 「あそこ」: Chỉ vị trí ở xa cả người nói và người nghe. \n\n「こちら」「そちら」「あちら」 là đại từ chỉ phương hướng, nhưng cũng có thể dùng thay thế cho 「ここ」「そこ」「あそこ」 với sắc thái lịch sự hơn.',
+      example: 'ここは教室です。 (Đây là lớp học.)',
+      examples: [
+        { jp: 'ここは教室です。', vn: 'Đây là lớp học.', furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }] },
+        { jp: 'そこは受付ですか。', vn: 'Ở đó có phải là quầy tiếp tân không?', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }] },
+        { jp: 'あそこは食堂です。', vn: 'Kia là nhà ăn.', furigana: [{ kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }] },
+        { jp: '電話はそちらです。', vn: 'Điện thoại ở phía đó.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] }
+      ]
+    },
+    {
+      pattern: 'N1 (danh từ) は N2 (địa điểm) です',
+      explanation: 'Mẫu câu này dùng để diễn đạt một vật, một người hay một địa điểm nào đó ở đâu.',
+      example: 'お手洗いはあそこです。 (Nhà vệ sinh ở đằng kia.)',
+      examples: [
+        { jp: 'お手洗いはあそこです。', vn: 'Nhà vệ sinh ở đằng kia.', furigana: [{ kanji: '手洗', reading: 'てあら', meaning: 'THỦ TẨY' }] },
+        { jp: '電話は2階です。', vn: 'Điện thoại ở tầng 2.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }, { kanji: '階', reading: 'かい', meaning: 'GIAI' }] },
+        { jp: '山田さんは事務所です。', vn: 'Anh Yamada ở văn phòng.', furigana: [{ kanji: '山田', reading: 'やまだ', meaning: 'SƠN ĐIỀN' }, { kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }] }
+      ]
+    },
+    {
+      pattern: 'どこ / どちら',
+      explanation: '「どこ」 là nghi vấn từ hỏi về địa điểm. \n「どちら」 là nghi vấn từ hỏi về phương hướng. \nTuy nhiên 「どちら」 cũng có thể được dùng để hỏi về địa điểm với sắc thái lịch sự hơn 「どこ」. \nNgoài ra, khi hỏi về tên quốc gia, công ty, trường học... thì cũng dùng 「どこ」 hoặc 「どちら」.',
+      example: 'お手洗いはどこですか。 (Nhà vệ sinh ở đâu?)',
+      examples: [
+        { jp: 'お手洗いはどこですか。', vn: 'Nhà vệ sinh ở đâu?', furigana: [{ kanji: '手洗', reading: 'てあら', meaning: 'THỦ TẨY' }] },
+        { jp: 'エレベーターはどちらですか。', vn: 'Thang máy ở chỗ nào ạ?', furigana: [] },
+        { jp: '学校はどこですか。', vn: 'Trường học ở đâu?', furigana: [{ kanji: '学校', reading: 'がっこう', meaning: 'HỌC HIỆU' }] },
+        { jp: '会社はどちらですか。', vn: 'Công ty làm việc ở đâu (công ty nào) ạ?', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }] },
+        { jp: 'お国はどちらですか。', vn: 'Anh/Chị là người nước nào?', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }] }
+      ]
+    },
+    {
+      pattern: 'N1 の N2',
+      explanation: 'Trong mẫu này N1 là tên quốc gia hoặc tên công ty, còn N2 là tên sản phẩm. Mẫu này dùng để diễn đạt N2 là sản phẩm của nước nào hoặc của công ty nào.',
+      example: 'これは日本のコンピューターです。 (Đây là máy vi tính của Nhật Bản.)',
+      examples: [
+        { jp: 'これは日本のコンピューターです。', vn: 'Đây là máy tính của Nhật Bản.', furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }] },
+        { jp: 'それはIMCのコンピューターです。', vn: 'Đó là máy tính của công ty IMC.', furigana: [] },
+        { jp: 'これはどこのネクタイですか。', vn: 'Đây là cà vạt của (nước/hãng) nào?', furigana: [] }
+      ]
+    },
+    {
+      pattern: 'お〜 (Tiền tố)',
+      explanation: 'Tiền tố 「お」 được thêm vào trước một từ ngữ có liên quan đến người nghe hoặc người thứ ba để bày tỏ sự kính trọng của người nói. \nVí dụ: 「お国」(okuni) - Đất nước (của bạn).',
+      example: 'お国はどちらですか。 (Đất nước của bạn ở đâu / Bạn là người nước nào?)',
+      examples: [
+        { jp: 'お国はどちらですか。', vn: 'Anh/chị là người nước nào?', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }] }
+      ]
+    }
+  ],
+  kaiwa: [
+    { char: 'A', jp: 'すみません。ワイン売り場はどこですか。', vn: 'Xin lỗi, quầy bán rượu vang ở đâu ạ?' },
+    { char: 'B', jp: '地下1階でございます。', vn: 'Ở tầng hầm 1 ạ.' },
+    { char: 'A', jp: 'どーも。', vn: 'Cảm ơn.' }
+  ],
+  quiz: []
+};
+
+export const lesson4Data: LessonDetail = {
+  id: 4,
+  title: "Thời gian & Lịch trình",
+  vocabulary: [
+    {
+      word: 'おきます', kanji: '起きます', romaji: 'okimasu', mean: 'Dậy, thức dậy',
+      examples: [
+        { jp: '毎朝6時に起きます。', vn: 'Mỗi sáng tôi dậy lúc 6 giờ.', furigana: [{ kanji: '毎朝', reading: 'まいあさ', meaning: 'MỖI TRIỀU' }, { kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '起', reading: 'お', meaning: 'KHỞI' }] },
+        { jp: '昨日は何時に起きましたか。', vn: 'Hôm qua bạn dậy lúc mấy giờ?', furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '何時', reading: 'なんじ', meaning: 'HÀ THỜI' }, { kanji: '起', reading: 'お', meaning: 'KHỞI' }] }
+      ],
+      kanjiDetails: [
+        {
+          kanji: '起', onyomi: 'キ (ki)', kunyomi: 'お.きる (okiru)', meaning: 'Dậy, khởi đầu', sinoVietnamese: 'KHỞI', strokes: 10, jlpt: 'N4', radicals: '走 (tẩu)', mnemonic: 'Con rắn (己) chạy (走) đi khởi nghĩa.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ねます', kanji: '寝ます', romaji: 'nemasu', mean: 'Ngủ, đi ngủ',
+      examples: [
+        { jp: '毎晩11時に寝ます。', vn: 'Mỗi tối tôi ngủ lúc 11 giờ.', furigana: [{ kanji: '毎晩', reading: 'まいばん', meaning: 'MỖI VÃN' }, { kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '寝', reading: 'ね', meaning: 'TẨM' }] },
+        { jp: '昨日は寝ませんでした。', vn: 'Hôm qua tôi đã không ngủ.', furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '寝', reading: 'ね', meaning: 'TẨM' }] }
+      ],
+      kanjiDetails: [
+        {
+          kanji: '寝', onyomi: 'シン (shin)', kunyomi: 'ね.る (neru)', meaning: 'Ngủ', sinoVietnamese: 'TẨM', strokes: 13, jlpt: 'N4', radicals: '宀 (miên)', mnemonic: 'Trong nhà (宀) cầm tấm phản (爿) đi ngủ.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'はたらきます', kanji: '働きます', romaji: 'hatarakimasu', mean: 'Làm việc',
+      examples: [
+        { jp: '会社で働きます。', vn: 'Tôi làm việc ở công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }] },
+        { jp: '父は銀行で働いています。', vn: 'Bố tôi đang làm việc ở ngân hàng.', furigana: [{ kanji: '父', reading: 'ちち', meaning: 'PHỤ' }, { kanji: '銀行', reading: 'ぎんこう', meaning: 'NGÂN HÀNH' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }] }
+      ],
+      kanjiDetails: [
+        {
+          kanji: '働', onyomi: 'ドウ (dou)', kunyomi: 'はたら.く (hataraku)', meaning: 'Làm việc', sinoVietnamese: 'ĐỘNG', strokes: 13, jlpt: 'N4', radicals: '人 (nhân)', mnemonic: 'Người (人) cần mẫn cử động (動) tức là đang làm việc.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'やすみます', kanji: '休みます', romaji: 'yasumimasu', mean: 'Nghỉ, nghỉ ngơi',
+      examples: [
+        { jp: '少し休みましょう。', vn: 'Chúng ta nghỉ ngơi một chút nhé.', furigana: [{ kanji: '少', reading: 'すこ', meaning: 'THIỂU' }, { kanji: '休', reading: 'やす', meaning: 'HƯU' }] },
+        { jp: '昨日は会社を休みました。', vn: 'Hôm qua tôi đã nghỉ làm.', furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '休', reading: 'やす', meaning: 'HƯU' }] }
+      ],
+      kanjiDetails: [
+        {
+          kanji: '休', onyomi: 'キュウ (kyuu)', kunyomi: 'やす.む (yasumu)', meaning: 'Nghỉ ngơi', sinoVietnamese: 'HƯU', strokes: 6, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Người (人) dựa vào cây (木) để nghỉ ngơi.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'べんきょうします', kanji: '勉強します', romaji: 'benkyoushimasu', mean: 'Học',
+      examples: [
+        { jp: '毎日日本語を勉強します。', vn: 'Tôi học tiếng Nhật mỗi ngày.', furigana: [{ kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }] },
+        { jp: '昨日の晩、勉強しましたか。', vn: 'Tối hôm qua bạn có học bài không?', furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '晩', reading: 'ばん', meaning: 'VÃN' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }] }
+      ],
+      kanjiDetails: [
+        {
+          kanji: '勉', onyomi: 'ベン (ben)', kunyomi: 'つと.める (tsutomeru)', meaning: 'Cố gắng', sinoVietnamese: 'MIỄN', strokes: 10, jlpt: 'N4', radicals: '力 (lực)', mnemonic: 'Dùng sức (力) cố gắng để miễn (免) trừ phiền phức.', exampleSentences: []
+        },
+        {
+          kanji: '強', onyomi: 'キョウ (kyou)', kunyomi: 'つよ.い (tsuyoi)', meaning: 'Mạnh, cưỡng', sinoVietnamese: 'CƯỜNG', strokes: 11, jlpt: 'N4', radicals: '弓 (cung)', mnemonic: 'Tuy mồm (口) nói côn trùng (虫) nhưng cái cung (弓) rất mạnh (cường).', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'おわります', kanji: '終わります', romaji: 'owarimasu', mean: 'Hết, kết thúc, xong',
+      examples: [
+        { jp: '仕事は5時に終わります。', vn: 'Công việc kết thúc lúc 5 giờ.', furigana: [{ kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }, { kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '終', reading: 'お', meaning: 'CHUNG' }] }
+      ],
+      kanjiDetails: [
+        {
+          kanji: '終', onyomi: 'シュウ (shuu)', kunyomi: 'お.わる (owaru)', meaning: 'Kết thúc', sinoVietnamese: 'CHUNG', strokes: 11, jlpt: 'N4', radicals: '糸 (mịch)', mnemonic: 'Sợi dây (糸) nối mùa đông (冬) là kết thúc một năm.', exampleSentences: []
+        }
+      ]
+    },
+    { word: 'デパート', kanji: '', romaji: 'depaato', mean: 'Bách hóa' },
+    {
+      word: 'ぎんこう', kanji: '銀行', romaji: 'ginkou', mean: 'Ngân hàng',
+      kanjiDetails: [
+        {
+          kanji: '銀', onyomi: 'ギン (gin)', kunyomi: '', meaning: 'Bạc', sinoVietnamese: 'NGÂN', strokes: 14, jlpt: 'N4', radicals: '金 (kim)', mnemonic: 'Vàng (金) tốt (艮) thì gọi là bạc.', exampleSentences: []
+        },
+        {
+          kanji: '行', onyomi: 'コウ (kou), ギョウ (gyou)', kunyomi: 'い.く (iku)', meaning: 'Đi, hành', sinoVietnamese: 'HÀNH', strokes: 6, jlpt: 'N5', radicals: '行 (hành)', mnemonic: 'Bước chân trái (彳) bước chân phải (亍) là đi.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ゆうびんきょく', kanji: '郵便局', romaji: 'yuubinkyoku', mean: 'Bưu điện',
+      kanjiDetails: [
+        {
+          kanji: '郵', onyomi: 'ユウ (yuu)', kunyomi: '', meaning: 'Bưu chính', sinoVietnamese: 'BƯU', strokes: 11, jlpt: 'N3', radicals: '邑 (áp)', mnemonic: 'Treo cái biển (垂) ở thôn ấp (邑) báo hiệu trạm bưu điện.', exampleSentences: []
+        },
+        {
+          kanji: '便', onyomi: 'ベン (ben), ビン (bin)', kunyomi: 'たよ.り (tayori)', meaning: 'Tiện lợi, tin tức', sinoVietnamese: 'TIỆN', strokes: 9, jlpt: 'N4', radicals: '人 (nhân)', mnemonic: 'Người (人) canh tác (更) để cuộc sống tiện lợi hơn.', exampleSentences: []
+        },
+        {
+          kanji: '局', onyomi: 'キョク (kyoku)', kunyomi: '', meaning: 'Cục, bộ phận', sinoVietnamese: 'CỤC', strokes: 7, jlpt: 'N4', radicals: '尸 (thi)', mnemonic: 'Dưới xác chết (尸) có một cái thước (尺).', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'としょかん', kanji: '図書館', romaji: 'toshokan', mean: 'Thư viện',
+      kanjiDetails: [
+        {
+          kanji: '図', onyomi: 'ズ (zu), ト (to)', kunyomi: 'はか.る (hakaru)', meaning: 'Bản đồ, vẽ', sinoVietnamese: 'ĐỒ', strokes: 7, jlpt: 'N4', radicals: '囗 (vi)', mnemonic: 'Vẽ bản đồ hình chữ X trong cái hộp (囗).', exampleSentences: []
+        },
+        {
+          kanji: '書', onyomi: 'ショ (sho)', kunyomi: 'か.く (kaku)', meaning: 'Viết', sinoVietnamese: 'THƯ', strokes: 10, jlpt: 'N5', radicals: '曰 (viết)', mnemonic: 'Tay cầm bút (聿) viết lên nhật ký (日).', exampleSentences: []
+        },
+        {
+          kanji: '館', onyomi: 'カン (kan)', kunyomi: 'やかた (yakata)', meaning: 'Tòa quán, hội quán', sinoVietnamese: 'QUÁN', strokes: 16, jlpt: 'N4', radicals: '食 (thực)', mnemonic: 'Nơi quan (官) lại ăn uống (食) là hội quán.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'びじゅつかん', kanji: '美術館', romaji: 'bijutsukan', mean: 'Bảo tàng mỹ thuật',
+      kanjiDetails: [
+        {
+          kanji: '美', onyomi: 'ビ (bi)', kunyomi: 'うつく.しい (utsukushii)', meaning: 'Đẹp', sinoVietnamese: 'MỸ', strokes: 9, jlpt: 'N3', radicals: '羊 (dương)', mnemonic: 'Con dê (羊) to (大) thì đẹp.', exampleSentences: []
+        },
+        {
+          kanji: '術', onyomi: 'ジュツ (jutsu)', kunyomi: '', meaning: 'Kỹ thuật, nghệ thuật', sinoVietnamese: 'THUẬT', strokes: 11, jlpt: 'N3', radicals: '行 (hành)', mnemonic: 'Hành động (行) cầm cây thương (朮) đòi hỏi kỹ thuật.', exampleSentences: []
+        },
+        {
+          kanji: '館', onyomi: 'カン (kan)', kunyomi: 'やかた (yakata)', meaning: 'Tòa quán, hội quán', sinoVietnamese: 'QUÁN', strokes: 16, jlpt: 'N4', radicals: '食 (thực)', mnemonic: 'Nơi quan (官) lại ăn uống (食) là hội quán.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'いま', kanji: '今', romaji: 'ima', mean: 'Bây giờ',
+      kanjiDetails: [
+        {
+          kanji: '今', onyomi: 'コン (kon)', kunyomi: 'いま (ima)', meaning: 'Bây giờ, hiện tại', sinoVietnamese: 'KIM', strokes: 4, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Bây giờ hãy vào dưới mái nhà (ane) đi.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ーじ', kanji: 'ー時', romaji: '-ji', mean: '- giờ',
+      kanjiDetails: [
+        {
+          kanji: '時', onyomi: 'ジ (ji)', kunyomi: 'とき (toki)', meaning: 'Thời gian', sinoVietnamese: 'THỜI', strokes: 10, jlpt: 'N5', radicals: '日 (nhật)', mnemonic: 'Mặt trời (日) chiếu xuống chùa (寺) để báo thời gian.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ーふん（－ぷん）', kanji: 'ー分', romaji: '-fun (-pun)', mean: '- phút',
+      kanjiDetails: [
+        {
+          kanji: '分', onyomi: 'フン (fun), ブン (bun)', kunyomi: 'わ.ける (wakeru)', meaning: 'Phân chia, phút', sinoVietnamese: 'PHÂN', strokes: 4, jlpt: 'N5', radicals: '刀 (đao)', mnemonic: 'Cầm kiếm (刀) chém đôi thành tám (八) mảnh.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'はん', kanji: '半', romaji: 'han', mean: 'Rưỡi, nửa',
+      kanjiDetails: [
+        {
+          kanji: '半', onyomi: 'ハン (han)', kunyomi: 'なか.ば (nakaba)', meaning: 'Một nửa', sinoVietnamese: 'BÁN', strokes: 5, jlpt: 'N5', radicals: '十 (thập)', mnemonic: 'Hai (二) cái que cắm vào cái lỗ ở giữa (丨), chia làm đôi.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'なんじ', kanji: '何時', romaji: 'nanji', mean: 'Mấy giờ',
+      kanjiDetails: [
+        {
+          kanji: '何', onyomi: 'カ (ka)', kunyomi: 'なに (nani), なん (nan)', meaning: 'Cái gì', sinoVietnamese: 'HÀ', strokes: 7, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Người (イ) khả (可) ái đang hỏi cái gì.', exampleSentences: []
+        },
+        {
+          kanji: '時', onyomi: 'ジ (ji)', kunyomi: 'とき (toki)', meaning: 'Thời gian', sinoVietnamese: 'THỜI', strokes: 10, jlpt: 'N5', radicals: '日 (nhật)', mnemonic: 'Mặt trời (日) chiếu xuống chùa (寺).', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'なんぷん', kanji: '何分', romaji: 'nanpun', mean: 'Mấy phút',
+      kanjiDetails: [
+        {
+          kanji: '何', onyomi: 'カ (ka)', kunyomi: 'なに (nani)', meaning: 'Cái gì', sinoVietnamese: 'HÀ', strokes: 7, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Người (イ) khả (可) ái.', exampleSentences: []
+        },
+        {
+          kanji: '分', onyomi: 'フン (fun)', kunyomi: 'わ.ける (wakeru)', meaning: 'Phân chia', sinoVietnamese: 'PHÂN', strokes: 4, jlpt: 'N5', radicals: '刀 (đao)', mnemonic: 'Đao (刀) chém tám (八) mảnh.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ごぜん', kanji: '午前', romaji: 'gozen', mean: 'Trước 12 giờ trưa, sáng',
+      kanjiDetails: [
+        {
+          kanji: '午', onyomi: 'ゴ (go)', kunyomi: '', meaning: 'Ngọ (12h trưa)', sinoVietnamese: 'NGỌ', strokes: 4, jlpt: 'N5', radicals: '十 (thập)', mnemonic: 'Thập (十) nhân với hai (ngả mũ) là ngọ.', exampleSentences: []
+        },
+        {
+          kanji: '前', onyomi: 'ゼン (zen)', kunyomi: 'まえ (mae)', meaning: 'Trước', sinoVietnamese: 'TIỀN', strokes: 9, jlpt: 'N5', radicals: '刀 (đao)', mnemonic: 'Cầm gươm (刂) đứng trước mặt trăng (月) nói lời (ngang) dối trá.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ごご', kanji: '午後', romaji: 'gogo', mean: 'Sau 12 giờ trưa, chiều',
+      kanjiDetails: [
+        {
+          kanji: '午', onyomi: 'ゴ (go)', kunyomi: '', meaning: 'Ngọ', sinoVietnamese: 'NGỌ', strokes: 4, jlpt: 'N5', radicals: '十 (thập)', mnemonic: 'Thập (十) nhân với hai (ngả mũ) là ngọ.', exampleSentences: []
+        },
+        {
+          kanji: '後', onyomi: 'ゴ (go), コウ (kou)', kunyomi: 'うし.ろ (ushiro), あと (ato)', meaning: 'Sau', sinoVietnamese: 'HẬU', strokes: 9, jlpt: 'N5', radicals: '彳 (xích)', mnemonic: 'Đi (彳) dây (幺) phía sau thấy đau chân (夂).', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'あさ', kanji: '朝', romaji: 'asa', mean: 'Buổi sáng, sáng',
+      kanjiDetails: [
+        {
+          kanji: '朝', onyomi: 'チョウ (chou)', kunyomi: 'あさ (asa)', meaning: 'Buổi sáng', sinoVietnamese: 'TRIỀU', strokes: 12, jlpt: 'N4', radicals: '月 (nguyệt)', mnemonic: 'Mười (十) ngày (日) mười (十) tháng (月) là một triều đại.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ひる', kanji: '昼', romaji: 'hiru', mean: 'Buổi trưa, trưa',
+      kanjiDetails: [
+        {
+          kanji: '昼', onyomi: 'チュウ (chuu)', kunyomi: 'ひる (hiru)', meaning: 'Buổi trưa', sinoVietnamese: 'TRÚ', strokes: 9, jlpt: 'N4', radicals: '日 (nhật)', mnemonic: 'Cây thước (尺) đo bóng mặt trời (日) buổi trưa.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ばん（よる）', kanji: '晩（夜）', romaji: 'ban (yoru)', mean: 'Buổi tối, tối',
+      kanjiDetails: [
+        {
+          kanji: '晩', onyomi: 'バン (ban)', kunyomi: '', meaning: 'Buổi tối', sinoVietnamese: 'VÃN', strokes: 12, jlpt: 'N4', radicals: '日 (nhật)', mnemonic: 'Mặt trời (日) lặn, miễn (免) làm việc là buổi tối.', exampleSentences: []
+        },
+        {
+          kanji: '夜', onyomi: 'ヤ (ya)', kunyomi: 'よる (yoru)', meaning: 'Ban đêm', sinoVietnamese: 'DẠ', strokes: 8, jlpt: 'N4', radicals: '夕 (tịch)', mnemonic: 'Người (イ) đội mũ đứng ngắm trăng chiều (夕).', exampleSentences: []
+        }
+      ]
+    },
+    { word: 'おととい', kanji: '', romaji: 'ototoi', mean: 'Hôm kia' },
+    { word: 'きのう', kanji: '', romaji: 'kinou', mean: 'Hôm qua' },
+    { word: 'きょう', kanji: '', romaji: 'kyou', mean: 'Hôm nay' },
+    { word: 'あした', kanji: '', romaji: 'ashita', mean: 'Ngày mai' },
+    { word: 'あさって', kanji: '', romaji: 'asatte', mean: 'Ngày kia' },
+    { word: 'けさ', kanji: '', romaji: 'kesa', mean: 'Sáng nay' },
+    {
+      word: 'こんばん', kanji: '今晩', romaji: 'konban', mean: 'Tối nay',
+      kanjiDetails: [
+        {
+          kanji: '今', onyomi: 'コン (kon)', kunyomi: 'いま (ima)', meaning: 'Bây giờ', sinoVietnamese: 'KIM', strokes: 4, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Giờ (今) đã đến.', exampleSentences: []
+        },
+        {
+          kanji: '晩', onyomi: 'バン (ban)', kunyomi: '', meaning: 'Tối', sinoVietnamese: 'VÃN', strokes: 12, jlpt: 'N4', radicals: '日 (nhật)', mnemonic: 'Mặt trời (日) lặn là tối.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'やすみ', kanji: '休み', romaji: 'yasumi', mean: 'Nghỉ, nghỉ phép, ngày nghỉ',
+      kanjiDetails: [
+        {
+          kanji: '休', onyomi: 'キュウ (kyuu)', kunyomi: 'やす.み (yasumi)', meaning: 'Nghỉ', sinoVietnamese: 'HƯU', strokes: 6, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Người (人) tựa vào cây (木).', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'ひるやすみ', kanji: '昼休み', romaji: 'hiruyasumi', mean: 'Nghỉ trưa',
+      kanjiDetails: [
+        {
+          kanji: '昼', onyomi: 'チュウ (chuu)', kunyomi: 'ひる (hiru)', meaning: 'Trưa', sinoVietnamese: 'TRÚ', strokes: 9, jlpt: 'N4', radicals: '日 (nhật)', mnemonic: 'Mặt trời (日) giữa trưa.', exampleSentences: []
+        },
+        {
+          kanji: '休', onyomi: 'キュウ (kyuu)', kunyomi: 'やす.み (yasumi)', meaning: 'Nghỉ', sinoVietnamese: 'HƯU', strokes: 6, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Người tựa cây.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'まいあさ', kanji: '毎朝', romaji: 'maiasa', mean: 'Hàng sáng, mỗi sáng',
+      kanjiDetails: [
+        {
+          kanji: '毎', onyomi: 'マイ (mai)', kunyomi: '', meaning: 'Mỗi', sinoVietnamese: 'MỖI', strokes: 6, jlpt: 'N5', radicals: '毋 (vô)', mnemonic: 'Mỗi người (人) đều có mẹ (母).', exampleSentences: []
+        },
+        {
+          kanji: '朝', onyomi: 'チョウ (chou)', kunyomi: 'あさ (asa)', meaning: 'Sáng', sinoVietnamese: 'TRIỀU', strokes: 12, jlpt: 'N4', radicals: '月 (nguyệt)', mnemonic: 'Mặt trăng (月) buổi sáng.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'まいばん', kanji: '毎晩', romaji: 'maiban', mean: 'Hàng tối, mỗi tối',
+      kanjiDetails: [
+        {
+          kanji: '毎', onyomi: 'マイ (mai)', kunyomi: '', meaning: 'Mỗi', sinoVietnamese: 'MỖI', strokes: 6, jlpt: 'N5', radicals: '毋 (vô)', mnemonic: 'Mỗi người có mẹ.', exampleSentences: []
+        },
+        {
+          kanji: '晩', onyomi: 'バン (ban)', kunyomi: '', meaning: 'Tối', sinoVietnamese: 'VÃN', strokes: 12, jlpt: 'N4', radicals: '日 (nhật)', mnemonic: 'Mặt trời lặn.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'まいにち', kanji: '毎日', romaji: 'mainichi', mean: 'Hàng ngày, mỗi ngày',
+      kanjiDetails: [
+        {
+          kanji: '毎', onyomi: 'マイ (mai)', kunyomi: '', meaning: 'Mỗi', sinoVietnamese: 'MỖI', strokes: 6, jlpt: 'N5', radicals: '毋 (vô)', mnemonic: 'Mỗi người có mẹ.', exampleSentences: []
+        },
+        {
+          kanji: '日', onyomi: 'ニチ (nichi)', kunyomi: 'ひ (hi)', meaning: 'Ngày, mặt trời', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日 (nhật)', mnemonic: 'Hình mặt trời.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'げつようび', kanji: '月曜日', romaji: 'getsuyoubi', mean: 'Thứ hai',
+      kanjiDetails: [
+        {
+          kanji: '月', onyomi: 'ゲツ (getsu), ガツ (gatsu)', kunyomi: 'つき (tsuki)', meaning: 'Mặt trăng, tháng', sinoVietnamese: 'NGUYỆT', strokes: 4, jlpt: 'N5', radicals: '月 (nguyệt)', mnemonic: 'Hình mặt trăng khuyết.', exampleSentences: []
+        },
+        {
+          kanji: '曜', onyomi: 'ヨウ (you)', kunyomi: '', meaning: 'Ngày trong tuần', sinoVietnamese: 'DIỆU', strokes: 18, jlpt: 'N4', radicals: '日 (nhật)', mnemonic: 'Ngày (日) của loài chim (翟) - ngày rực rỡ.', exampleSentences: []
+        },
+        {
+          kanji: '日', onyomi: 'ビ (bi)', kunyomi: 'ひ (hi)', meaning: 'Ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日 (nhật)', mnemonic: 'Mặt trời.', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'かようび', kanji: '火曜日', romaji: 'kayoubi', mean: 'Thứ ba',
+      kanjiDetails: [
+        {
+          kanji: '火', onyomi: 'カ (ka)', kunyomi: 'ひ (hi)', meaning: 'Lửa', sinoVietnamese: 'HỎA', strokes: 4, jlpt: 'N5', radicals: '火 (hỏa)', mnemonic: 'Hình ngọn lửa đang cháy.', exampleSentences: []
+        },
+        { kanji: '曜', onyomi: 'ヨウ (you)', kunyomi: '', meaning: 'Ngày', sinoVietnamese: 'DIỆU', strokes: 18, jlpt: 'N4', radicals: '日', mnemonic: 'Ngày rực rỡ.', exampleSentences: [] },
+        { kanji: '日', onyomi: 'ビ (bi)', kunyomi: 'ひ (hi)', meaning: 'Ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日', mnemonic: 'Mặt trời.', exampleSentences: [] }
+      ]
+    },
+    {
+      word: 'すいようび', kanji: '水曜日', romaji: 'suiyoubi', mean: 'Thứ tư',
+      kanjiDetails: [
+        {
+          kanji: '水', onyomi: 'スイ (sui)', kunyomi: 'みず (mizu)', meaning: 'Nước', sinoVietnamese: 'THỦY', strokes: 4, jlpt: 'N5', radicals: '水 (thủy)', mnemonic: 'Hình dòng nước chảy.', exampleSentences: []
+        },
+        { kanji: '曜', onyomi: 'ヨウ (you)', kunyomi: '', meaning: 'Ngày', sinoVietnamese: 'DIỆU', strokes: 18, jlpt: 'N4', radicals: '日', mnemonic: 'Ngày rực rỡ.', exampleSentences: [] },
+        { kanji: '日', onyomi: 'ビ (bi)', kunyomi: 'ひ (hi)', meaning: 'Ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日', mnemonic: 'Mặt trời.', exampleSentences: [] }
+      ]
+    },
+    {
+      word: 'もくようび', kanji: '木曜日', romaji: 'mokuyoubi', mean: 'Thứ năm',
+      kanjiDetails: [
+        {
+          kanji: '木', onyomi: 'モク (moku)', kunyomi: 'き (ki)', meaning: 'Cây', sinoVietnamese: 'MỘC', strokes: 4, jlpt: 'N5', radicals: '木 (mộc)', mnemonic: 'Hình cái cây.', exampleSentences: []
+        },
+        { kanji: '曜', onyomi: 'ヨウ (you)', kunyomi: '', meaning: 'Ngày', sinoVietnamese: 'DIỆU', strokes: 18, jlpt: 'N4', radicals: '日', mnemonic: 'Ngày rực rỡ.', exampleSentences: [] },
+        { kanji: '日', onyomi: 'ビ (bi)', kunyomi: 'ひ (hi)', meaning: 'Ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日', mnemonic: 'Mặt trời.', exampleSentences: [] }
+      ]
+    },
+    {
+      word: 'きんようび', kanji: '金曜日', romaji: 'kinyoubi', mean: 'Thứ sáu',
+      kanjiDetails: [
+        {
+          kanji: '金', onyomi: 'キン (kin)', kunyomi: 'かね (kane)', meaning: 'Vàng, tiền', sinoVietnamese: 'KIM', strokes: 8, jlpt: 'N5', radicals: '金 (kim)', mnemonic: 'Người (人) đứng trên đống vàng (王) lấp lánh (丷).', exampleSentences: []
+        },
+        { kanji: '曜', onyomi: 'ヨウ (you)', kunyomi: '', meaning: 'Ngày', sinoVietnamese: 'DIỆU', strokes: 18, jlpt: 'N4', radicals: '日', mnemonic: 'Ngày rực rỡ.', exampleSentences: [] },
+        { kanji: '日', onyomi: 'ビ (bi)', kunyomi: 'ひ (hi)', meaning: 'Ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日', mnemonic: 'Mặt trời.', exampleSentences: [] }
+      ]
+    },
+    {
+      word: 'どようび', kanji: '土曜日', romaji: 'doyoubi', mean: 'Thứ bảy',
+      kanjiDetails: [
+        {
+          kanji: '土', onyomi: 'ド (do)', kunyomi: 'つち (tsuchi)', meaning: 'Đất', sinoVietnamese: 'THỔ', strokes: 3, jlpt: 'N5', radicals: '土 (thổ)', mnemonic: 'Cây mọc trên đất.', exampleSentences: []
+        },
+        { kanji: '曜', onyomi: 'ヨウ (you)', kunyomi: '', meaning: 'Ngày', sinoVietnamese: 'DIỆU', strokes: 18, jlpt: 'N4', radicals: '日', mnemonic: 'Ngày rực rỡ.', exampleSentences: [] },
+        { kanji: '日', onyomi: 'ビ (bi)', kunyomi: 'ひ (hi)', meaning: 'Ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日', mnemonic: 'Mặt trời.', exampleSentences: [] }
+      ]
+    },
+    {
+      word: 'にちようび', kanji: '日曜日', romaji: 'nichyoubi', mean: 'Chủ nhật',
+      kanjiDetails: [
+        {
+          kanji: '日', onyomi: 'ニチ (nichi)', kunyomi: 'ひ (hi)', meaning: 'Ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日 (nhật)', mnemonic: 'Mặt trời.', exampleSentences: []
+        },
+        { kanji: '曜', onyomi: 'ヨウ (you)', kunyomi: '', meaning: 'Ngày', sinoVietnamese: 'DIỆU', strokes: 18, jlpt: 'N4', radicals: '日', mnemonic: 'Ngày rực rỡ.', exampleSentences: [] },
+        { kanji: '日', onyomi: 'ビ (bi)', kunyomi: 'ひ (hi)', meaning: 'Ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日', mnemonic: 'Mặt trời.', exampleSentences: [] }
+      ]
+    },
+    {
+      word: 'なんようび', kanji: '何曜日', romaji: 'nanyoubi', mean: 'Thứ mấy',
+      kanjiDetails: [
+        {
+          kanji: '何', onyomi: 'ナン (nan)', kunyomi: 'なに (nani)', meaning: 'Cái gì', sinoVietnamese: 'HÀ', strokes: 7, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Người khả ái.', exampleSentences: []
+        },
+        { kanji: '曜', onyomi: 'ヨウ (you)', kunyomi: '', meaning: 'Ngày', sinoVietnamese: 'DIỆU', strokes: 18, jlpt: 'N4', radicals: '日', mnemonic: 'Ngày rực rỡ.', exampleSentences: [] },
+        { kanji: '日', onyomi: 'ビ (bi)', kunyomi: 'ひ (hi)', meaning: 'Ngày', sinoVietnamese: 'NHẬT', strokes: 4, jlpt: 'N5', radicals: '日', mnemonic: 'Mặt trời.', exampleSentences: [] }
+      ]
+    },
+    {
+      word: 'ばんごう', kanji: '番号', romaji: 'bangou', mean: 'Số (số điện thoại, số phòng)',
+      kanjiDetails: [
+        {
+          kanji: '番', onyomi: 'バン (ban)', kunyomi: 'つが.い (tsugai)', meaning: 'Lượt, canh gác', sinoVietnamese: 'PHIÊN', strokes: 12, jlpt: 'N4', radicals: '田 (điền)', mnemonic: 'Trồng cây trên ruộng (田) theo phiên (番).', exampleSentences: []
+        },
+        {
+          kanji: '号', onyomi: 'ゴウ (gou)', kunyomi: '', meaning: 'Số, dấu hiệu', sinoVietnamese: 'HIỆU', strokes: 5, jlpt: 'N3', radicals: '口 (khẩu)', mnemonic: 'Mồm (口) hét lên tín hiệu (号).', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'なんばん', kanji: '何番', romaji: 'nanban', mean: 'Số bao nhiêu, số mấy',
+      kanjiDetails: [
+        {
+          kanji: '何', onyomi: 'ナン (nan)', kunyomi: 'なに (nani)', meaning: 'Cái gì', sinoVietnamese: 'HÀ', strokes: 7, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Người khả ái.', exampleSentences: []
+        },
+        {
+          kanji: '番', onyomi: 'バン (ban)', kunyomi: '', meaning: 'Số, phiên', sinoVietnamese: 'PHIÊN', strokes: 12, jlpt: 'N4', radicals: '田 (điền)', mnemonic: 'Phiên trực đồng ruộng.', exampleSentences: []
+        }
+      ]
+    },
+    { word: '～から', kanji: '', romaji: '~kara', mean: '~ từ' },
+    { word: '～まで', kanji: '', romaji: '~made', mean: '~ đến' },
+    { word: '～と～', kanji: '', romaji: '~to~', mean: '~ và (dùng để nối hai danh từ)' },
+    { word: 'そちら', kanji: '', romaji: 'sochira', mean: 'Ông/bà, phía ông/phía bà' },
+    {
+      word: 'たいへんですね', kanji: '大変ですね', romaji: 'taihen desu ne', mean: 'Anh/Chị vất vả quá. (dùng để bày tỏ sự thông cảm)',
+      kanjiDetails: [
+        {
+          kanji: '大', onyomi: 'タイ (tai)', kunyomi: 'おお.きい (ookii)', meaning: 'To, lớn', sinoVietnamese: 'ĐẠI', strokes: 3, jlpt: 'N5', radicals: '大 (đại)', mnemonic: 'Người dang tay chân ra thì to.', exampleSentences: []
+        },
+        {
+          kanji: '変', onyomi: 'ヘン (hen)', kunyomi: 'か.わる (kawaru)', meaning: 'Biến đổi, lạ', sinoVietnamese: 'BIẾN', strokes: 9, jlpt: 'N4', radicals: '夂 (truy)', mnemonic: 'Màu đỏ (亦) vừa đi vừa biến đổi.', exampleSentences: []
+        }
+      ]
+    },
+    { word: 'えーと', kanji: '', romaji: 'eeto', mean: 'Ừ, à (từ đệm trong hội thoại khi đang nghĩ điều muốn nói)' },
+    {
+      word: 'おねがいします', kanji: 'お願いします', romaji: 'onegaishimasu', mean: 'Nhờ anh/chị. Phiền anh/chị. Xin vui lòng giúp đỡ.',
+      kanjiDetails: [
+        {
+          kanji: '願', onyomi: 'ガン (gan)', kunyomi: 'ねが.う (negau)', meaning: 'Ước, cầu nguyện', sinoVietnamese: 'NGUYỆN', strokes: 19, jlpt: 'N4', radicals: '頁 (hiệt)', mnemonic: 'Nguyên (原) cái đầu (頁) đang cầu nguyện.', exampleSentences: []
+        }
+      ]
+    },
+    { word: 'かしこまりました', kanji: '', romaji: 'kashikomarimashita', mean: 'Tôi hiểu rồi ạ./ Vâng, được rồi ạ.' },
+    {
+      word: 'おといあわせのばんごう', kanji: 'お問い合わせの番号', romaji: 'otoiawase no bangou', mean: 'Số điện thoại mà ông/bà muốn hỏi',
+      kanjiDetails: [
+        {
+          kanji: '問', onyomi: 'モン (mon)', kunyomi: 'と.う (tou)', meaning: 'Hỏi, vấn đề', sinoVietnamese: 'VẤN', strokes: 11, jlpt: 'N4', radicals: '口 (khẩu)', mnemonic: 'Đứng ở cửa (門) mở mồm (口) hỏi.', exampleSentences: []
+        },
+        {
+          kanji: '合', onyomi: 'ゴウ (gou)', kunyomi: 'あ.わせる (awaseru)', meaning: 'Hợp, vừa', sinoVietnamese: 'HỢP', strokes: 6, jlpt: 'N3', radicals: '口 (khẩu)', mnemonic: 'Một (一) người (人) một miệng (口) thì hòa hợp.', exampleSentences: []
+        },
+        {
+          kanji: '番', onyomi: 'バン (ban)', kunyomi: '', meaning: 'Số, phiên', sinoVietnamese: 'PHIÊN', strokes: 12, jlpt: 'N4', radicals: '田', mnemonic: 'Phiên trực.', exampleSentences: []
+        },
+        {
+          kanji: '号', onyomi: 'ゴウ (gou)', kunyomi: '', meaning: 'Số', sinoVietnamese: 'HIỆU', strokes: 5, jlpt: 'N3', radicals: '口', mnemonic: 'Hét tín hiệu.', exampleSentences: []
+        }
+      ]
+    },
+    { word: '〔どうも〕ありがとうございました', kanji: '', romaji: '〔doumo〕arigatou gozaimashita', mean: 'Xin cám ơn ông/bà.' },
+    { word: 'ニューヨーク', kanji: '', romaji: 'Nyuuyooku', mean: 'New York' },
+    {
+      word: 'ペキン', kanji: '北京', romaji: 'Pekin', mean: 'Bắc Kinh',
+      kanjiDetails: [
+        {
+          kanji: '北', onyomi: 'ホク (hoku)', kunyomi: 'きた (kita)', meaning: 'Phía bắc', sinoVietnamese: 'BẮC', strokes: 5, jlpt: 'N5', radicals: '匕 (chủy)', mnemonic: 'Hai người ngồi quay lưng vào nhau.', exampleSentences: []
+        },
+        {
+          kanji: '京', onyomi: 'キョウ (kyou)', kunyomi: 'みやこ (miyako)', meaning: 'Kinh đô', sinoVietnamese: 'KINH', strokes: 8, jlpt: 'N4', radicals: '亠 (đầu)', mnemonic: 'Kinh đô có cái tháp (亠) nhỏ (小) trên miệng (口) nói.', exampleSentences: []
+        }
+      ]
+    },
+    { word: 'ロンドン', kanji: '', romaji: 'Rondon', mean: 'Luân Đôn' },
+    { word: 'バンコク', kanji: '', romaji: 'Bankoku', mean: 'Băng Cốc' },
+    { word: 'ロサンゼルス', kanji: '', romaji: 'Rosanzerusu', mean: 'Los Angeles' },
+    {
+      word: 'やまとびじゅつかん', kanji: 'やまと美術館', romaji: 'Yamato bijutsukan', mean: 'Tên một bảo tàng mỹ thuật (giả tưởng)',
+      kanjiDetails: [
+        { kanji: '美', onyomi: 'ビ (bi)', kunyomi: 'うつく.しい (utsukushii)', meaning: 'Đẹp', sinoVietnamese: 'MỸ', strokes: 9, jlpt: 'N3', radicals: '羊', mnemonic: 'Dê to thì đẹp.', exampleSentences: [] },
+        { kanji: '術', onyomi: 'ジュツ (jutsu)', kunyomi: '', meaning: 'Kỹ thuật', sinoVietnamese: 'THUẬT', strokes: 11, jlpt: 'N3', radicals: '行', mnemonic: 'Kỹ thuật đi đường.', exampleSentences: [] },
+        { kanji: '館', onyomi: 'カン (kan)', kunyomi: '', meaning: 'Quán', sinoVietnamese: 'QUÁN', strokes: 16, jlpt: 'N4', radicals: '食', mnemonic: 'Hội quán ăn uống.', exampleSentences: [] }
+      ]
+    },
+    {
+      word: 'おおさかデパート', kanji: '大阪デパート', romaji: 'Osaka depaato', mean: 'Tên một bách hóa (giả tưởng)',
+      kanjiDetails: [
+        {
+          kanji: '大', onyomi: 'ダイ (dai)', kunyomi: 'おお.きい (ookii)', meaning: 'To, lớn', sinoVietnamese: 'ĐẠI', strokes: 3, jlpt: 'N5', radicals: '大', mnemonic: 'To lớn.', exampleSentences: []
+        },
+        {
+          kanji: '阪', onyomi: 'ハン (han)', kunyomi: 'さか (saka)', meaning: 'Dốc', sinoVietnamese: 'PHẢN', strokes: 7, jlpt: 'N4', radicals: '阜 (phụ)', mnemonic: 'Phản đối (反) leo dốc (阜).', exampleSentences: []
+        }
+      ]
+    },
+    {
+      word: 'みどりとしょかん', kanji: 'みどり図書館', romaji: 'Midori toshokan', mean: 'Tên một thư viện (giả tưởng)',
+      kanjiDetails: [
+        { kanji: '図', onyomi: 'ズ (zu)', kunyomi: '', meaning: 'Đồ', sinoVietnamese: 'ĐỒ', strokes: 7, jlpt: 'N4', radicals: '囗', mnemonic: 'Bản đồ.', exampleSentences: [] },
+        { kanji: '書', onyomi: 'ショ (sho)', kunyomi: 'か.く (kaku)', meaning: 'Viết', sinoVietnamese: 'THƯ', strokes: 10, jlpt: 'N5', radicals: '曰', mnemonic: 'viết.', exampleSentences: [] },
+        { kanji: '館', onyomi: 'カン (kan)', kunyomi: '', meaning: 'Quán', sinoVietnamese: 'QUÁN', strokes: 16, jlpt: 'N4', radicals: '食', mnemonic: 'hội quán.', exampleSentences: [] }
+      ]
+    },
+    {
+      word: 'アップルぎんこう', kanji: 'アップル銀行', romaji: 'Appuru ginkou', mean: 'Tên một ngân hàng (giả tưởng)',
+      kanjiDetails: [
+        { kanji: '銀', onyomi: 'ギン (gin)', kunyomi: '', meaning: 'Bạc', sinoVietnamese: 'NGÂN', strokes: 14, jlpt: 'N4', radicals: '金', mnemonic: 'Bạc.', exampleSentences: [] },
+        { kanji: '行', onyomi: 'コウ (kou)', kunyomi: 'い.く (iku)', meaning: 'Đi', sinoVietnamese: 'HÀNH', strokes: 6, jlpt: 'N5', radicals: '行', mnemonic: 'Đi lại.', exampleSentences: [] }
+      ]
+    }
+  ],
+  grammar: [
+    {
+      pattern: '今 ～時 ～分です',
+      explanation: 'Để biểu thị thời gian, chúng ta thêm số đếm vào trước danh từ chỉ thời gian 「時」(giờ) và 「分」(phút). \nĐể hỏi về thời gian, dùng nghi vấn từ 「何」(nan) đặt trước danh từ chỉ thời gian: 「何時」(nanji - mấy giờ), 「何分」(nanpun - mấy phút).',
+      example: '今何時ですか。 (Bây giờ là mấy giờ?)',
+      examples: [
+        { jp: '今何時ですか。', vn: 'Bây giờ là mấy giờ?', furigana: [{ kanji: '今', reading: 'いま', meaning: 'KIM' }, { kanji: '何時', reading: 'なんじ', meaning: 'HÀ THỜI' }] },
+        { jp: '7時10分です。', vn: '7 giờ 10 phút.', furigana: [{ kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '分', reading: 'ぷん', meaning: 'PHÂN' }] },
+        { jp: 'ニューヨークは今何時ですか。', vn: 'Ở New York bây giờ là mấy giờ?', furigana: [{ kanji: '今', reading: 'いま', meaning: 'KIM' }, { kanji: '何時', reading: 'なんじ', meaning: 'HÀ THỜI' }] },
+        { jp: '午前4時です。', vn: '4 giờ sáng.', furigana: [{ kanji: '午前', reading: 'ごぜん', meaning: 'NGỌ TIỀN' }, { kanji: '時', reading: 'じ', meaning: 'THỜI' }] }
+      ]
+    },
+    {
+      pattern: 'Động từ ます',
+      explanation: '1) Động từ thể ます cấu thành vị ngữ của câu. \n2) Thể hiện thái độ lịch sự của người nói đối với người nghe. \n3) Biểu thị một thói quen trong hiện tại hoặc một sự thật hiển nhiên, hoặc một hành động sẽ xảy ra trong tương lai.',
+      example: '私は毎日勉強します。 (Tôi học hàng ngày.)',
+      examples: [
+        { jp: '私は毎日勉強します。', vn: 'Tôi học hàng ngày.', furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }] }
+      ]
+    },
+    {
+      pattern: 'Động từ ます / ません / ました / ませんでした',
+      explanation: 'Các dạng biến đổi của động từ thể ます:\n- Khẳng định (Hiện tại/Tương lai): ～ます (Ví dụ: 起きます)\n- Phủ định (Hiện tại/Tương lai): ～ません (Ví dụ: 起きません)\n- Khẳng định (Quá khứ): ～ました (Ví dụ: 起きました)\n- Phủ định (Quá khứ): ～ませんでした (Ví dụ: 起きませんでした)\n\nTrong câu hỏi, thêm k trợ từ 「か」 vào cuối câu. Câu trả lời nhắc lại động từ trong câu hỏi.',
+      example: '毎朝6時に起きます。 (Hàng sáng tôi dậy lúc 6 giờ.)',
+      examples: [
+        { jp: '毎朝6時に起きます。', vn: 'Hàng sáng tôi dậy lúc 6 giờ.', furigana: [{ kanji: '毎朝', reading: 'まいあさ', meaning: 'MỖI TRIỀU' }, { kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '起', reading: 'お', meaning: 'KHỞI' }] },
+        { jp: 'あした6時に起きます。', vn: 'Ngày mai tôi (sẽ) dậy lúc 6 giờ.', furigana: [{ kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '起', reading: 'お', meaning: 'KHỞI' }] },
+        { jp: 'けさ6時に起きました。', vn: 'Sáng nay tôi (đã) dậy lúc 6 giờ.', furigana: [{ kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '起', reading: 'お', meaning: 'KHỞI' }] },
+        { jp: 'きのう勉強しましたか。', vn: 'Hôm qua bạn có học không?', furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }] },
+        { jp: 'はい、勉強しました。', vn: 'Có, hôm qua tôi có học.', furigana: [{ kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }] },
+        { jp: 'いいえ、勉強しませんでした。', vn: 'Không, hôm qua tôi không học.', furigana: [{ kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }] }
+      ]
+    },
+    {
+      pattern: 'Danh từ (thời gian) に Động từ',
+      explanation: 'Dùng trợ từ 「に」 để biểu thị thời điểm một hành động xảy ra. \n「に」 chỉ dùng với những danh từ chỉ thời gian có con số đi kèm (ví dụ: 6 giờ, ngày 2 tháng 7). \nĐối với các danh từ chỉ thời gian không có con số (ví dụ: hôm nay, ngày mai, hàng sáng), không dùng 「に」. \nThứ trong tuần có thể dùng hoặc không dùng 「に」.',
+      example: '6時半に起きます。 (Tôi dậy lúc 6 giờ rưỡi.)',
+      examples: [
+        { jp: '6時半に起きます。', vn: 'Tôi dậy lúc 6 giờ rưỡi.', furigana: [{ kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '半', reading: 'はん', meaning: 'BÁN' }, { kanji: '起', reading: 'お', meaning: 'KHỞI' }] },
+        { jp: '7月2日に日本へ来ました。', vn: 'Tôi đến Nhật vào ngày 2 tháng 7.', furigana: [{ kanji: '月', reading: 'がつ', meaning: 'NGUYỆT' }, { kanji: '日', reading: 'にち', meaning: 'NHẬT' }, { kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '来', reading: 'き', meaning: 'LAI' }] },
+        { jp: '日曜日[に]奈良へ行きます。', vn: 'Chủ nhật tôi sẽ đi Nara.', furigana: [{ kanji: '日曜日', reading: 'にちようび', meaning: 'NHẬT DIỆU NHẬT' }, { kanji: '奈良', reading: 'なら', meaning: 'NẠI LƯƠNG' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
+        { jp: 'きのう勉強しました。', vn: 'Hôm qua tôi đã học.', furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }] }
+      ]
+    },
+    {
+      pattern: 'Danh từ 1 から Danh từ 2 まで',
+      explanation: '「から」 biểu thị điểm bắt đầu (thời gian hoặc địa điểm), 「まで」 biểu thị điểm kết thúc.\nCó thể dùng riêng 「から」 hoặc 「まで」. \nCũng có thể dùng trực tiếp với 「です」.',
+      example: '9時から5時まで働きます。 (Tôi làm việc từ 9 giờ đến 5 giờ.)',
+      examples: [
+        { jp: '9時から5時まで働きます。', vn: 'Tôi làm việc từ 9 giờ đến 5 giờ.', furigana: [{ kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }] },
+        { jp: '大阪から東京まで3時間かかります。', vn: 'Từ Osaka đến Tokyo mất 3 tiếng.', furigana: [{ kanji: '大阪', reading: 'おおさか', meaning: 'ĐẠI PHẢN' }, { kanji: '東京', reading: 'とうきょう', meaning: 'ĐÔNG KINH' }, { kanji: '時間', reading: 'じかん', meaning: 'THỜI GIAN' }] },
+        { jp: '9時から働きます。', vn: 'Tôi làm việc từ 9 giờ.', furigana: [{ kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }] },
+        { jp: '銀行は9時から3時までです。', vn: 'Ngân hàng mở cửa từ 9 giờ đến 3 giờ.', furigana: [{ kanji: '銀行', reading: 'ぎんこう', meaning: 'NGÂN HÀNH' }, { kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '時', reading: 'じ', meaning: 'THỜI' }] },
+        { jp: '昼休みは12時からです。', vn: 'Giờ nghỉ trưa bắt đầu từ 12 giờ.', furigana: [{ kanji: '昼休み', reading: 'ひるやすみ', meaning: 'TRÚ HƯU' }, { kanji: '時', reading: 'じ', meaning: 'THỜI' }] }
+      ]
+    },
+    {
+      pattern: 'Danh từ 1 と Danh từ 2',
+      explanation: 'Dùng trợ từ 「と」 để nối hai danh từ với nhau (có ý nghĩa là "và", "với").',
+      example: '銀行の休みは土曜日と日曜日です。 (Ngày nghỉ của ngân hàng là thứ 7 và chủ nhật.)',
+      examples: [
+        { jp: '銀行の休みは土曜日と日曜日です。', vn: 'Ngày nghỉ của ngân hàng là thứ 7 và chủ nhật.', furigana: [{ kanji: '銀行', reading: 'ぎんこう', meaning: 'NGÂN HÀNH' }, { kanji: '休', reading: 'やす', meaning: 'HƯU' }, { kanji: '土曜日', reading: 'どようび', meaning: 'THỔ DIỆU NHẬT' }, { kanji: '日曜日', reading: 'にちようび', meaning: 'NHẬT DIỆU NHẬT' }] }
+      ]
+    },
+    {
+      pattern: 'Câu + ね',
+      explanation: 'Trợ từ 「ね」 được đặt ở cuối câu để biểu thị sự thông cảm, đồng tình, hoặc xác nhận (kỳ vọng người nghe đồng ý).',
+      example: '毎日10時ごろまで勉強します。…大変ですね。 (Tôi học đến khoảng 10 giờ hàng ngày. ...Vất vả quá nhỉ.)',
+      examples: [
+        { jp: '毎日10時ごろまで勉強します。', vn: 'Hàng ngày tôi học đến khoảng 10 giờ.', furigana: [{ kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' }, { kanji: '時', reading: 'じ', meaning: 'THỜI' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }] },
+        { jp: '大変ですね。', vn: 'Vất vả quá nhỉ.', furigana: [{ kanji: '大変', reading: 'たいへん', meaning: 'ĐẠI BIẾN' }] },
+        { jp: '山田さんの電話番号は871の6813です。', vn: 'Số điện thoại của ông Yamada là 871-6813.', furigana: [{ kanji: '山田', reading: 'やまだ', meaning: 'SƠN ĐIỀN' }, { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' }] },
+        { jp: '871の6813ですね。', vn: 'Là 871-6813 nhỉ.', furigana: [] }
+      ]
+    }
+  ],
+  kaiwa: [],
+  quiz: []
+};
+
+
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
-  if (id === 1) {
-    return lesson1Data;
-  }
-  if (id === 2) {
-    return lesson2Data;
-  }
+  if (id === 1) return lesson1Data;
+  if (id === 2) return lesson2Data;
+  if (id === 3) return lesson3Data;
+  if (id === 4) return lesson4Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);

@@ -9,7 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
-import { getLessonData, LessonDetail as LessonDetailType, KanjiDetail, VocabExampleFurigana, VocabularyExample, FuriganaWord, KaiwaFurigana, QuizQuestion, VocabularyItem, GrammarPoint } from "@/data/minnaData";
+import { getLessonData, LessonDetail as LessonDetailType, KanjiDetail, VocabExampleFurigana, VocabularyExample, FuriganaWord, QuizQuestion, VocabularyItem, GrammarPoint } from "@/data/minnaData";
 import { kanjiData as masterKanjiData } from "@/data/kanjiData";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
@@ -819,98 +819,7 @@ const GrammarExampleItem = ({
   );
 };
 
-// Kaiwa Tab Component
-const KaiwaTab = ({ kaiwa, kaiwaImage, vocabulary }: { kaiwa: LessonDetailType['kaiwa']; kaiwaImage?: string, vocabulary: LessonDetailType['vocabulary'] }) => {
-  const [showKaiwaFurigana, setShowKaiwaFurigana] = useState(false);
 
-  // Collect all unique Kanji from vocabulary kanjiDetails for the whole tab
-  const allLessonKanjiDetails = vocabulary.reduce((acc: KanjiDetail[], item) => {
-    if (item.kanjiDetails) {
-      item.kanjiDetails.forEach(detail => {
-        if (!acc.some(d => d.kanji === detail.kanji)) {
-          acc.push(detail);
-        }
-      });
-    }
-    return acc;
-  }, []);
-
-  // Render text with furigana and hover support for Kaiwa
-  const renderKaiwaWithFurigana = (text: string, furiganaList?: KaiwaFurigana[]) => {
-    return (
-      <SentenceWithFurigana
-        sentence={{ jp: text, vn: "", furigana: furiganaList as VocabExampleFurigana[] }}
-        showFurigana={showKaiwaFurigana}
-        kanjiDetails={allLessonKanjiDetails}
-      />
-    );
-  };
-
-  return (
-    <Card>
-      <CardHeader>
-        <div className="flex items-center justify-between">
-          <CardTitle className="text-lg text-[#008001]">Hội thoại mẫu</CardTitle>
-          <Button
-            variant={showKaiwaFurigana ? "default" : "outline"}
-            size="sm"
-            onClick={() => setShowKaiwaFurigana(!showKaiwaFurigana)}
-            className={cn(
-              "text-xs",
-              showKaiwaFurigana && "bg-[#008001] hover:bg-[#006801]"
-            )}
-          >
-            <BookOpen className="w-3 h-3 mr-1" />
-            Furigana {showKaiwaFurigana ? "ON" : "OFF"}
-          </Button>
-        </div>
-      </CardHeader>
-      <CardContent>
-        {/* Ảnh minh hoạ cho hội thoại */}
-        {kaiwaImage && (
-          <div className="mb-6 rounded-lg overflow-hidden border">
-            <img
-              src={kaiwaImage}
-              alt="Minh hoạ hội thoại"
-              className="w-full h-64 object-cover"
-            />
-          </div>
-        )}
-
-        <div className="space-y-4">
-          {kaiwa.map((line, index) => (
-            <div
-              key={index}
-              className={cn(
-                "flex gap-3 p-3 rounded-lg",
-                index % 2 === 0 ? "bg-[#008001]/5" : "bg-muted/50"
-              )}
-            >
-              <div className="flex-shrink-0">
-                <div className={cn(
-                  "w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm",
-                  index % 2 === 0 ? "bg-[#008001]" : "bg-primary"
-                )}>
-                  {line.char.charAt(0)}
-                </div>
-              </div>
-              <div className="flex-1 space-y-1">
-                <p className="font-medium text-foreground text-sm">{line.char}</p>
-                <p className="text-[#008001] font-medium">
-                  {renderKaiwaWithFurigana(line.jp, line.furigana)}
-                </p>
-                <p className="text-muted-foreground text-sm">{line.vn}</p>
-              </div>
-              <Button variant="ghost" size="icon" className="flex-shrink-0 hover:bg-[#008001]/10">
-                <Volume2 className="w-4 h-4 text-[#008001]" />
-              </Button>
-            </div>
-          ))}
-        </div>
-      </CardContent>
-    </Card>
-  );
-};
 
 // Kanji Tab Component
 const KanjiTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabulary'] }) => {
@@ -1637,7 +1546,7 @@ const LessonDetail = () => {
         {/* Main Content with Tabs */}
         <main className="container mx-auto px-4 py-6">
           <Tabs defaultValue="vocabulary" className="space-y-6">
-            <TabsList className="grid w-full grid-cols-5 h-auto p-1">
+            <TabsList className="grid w-full grid-cols-4 h-auto p-1">
               <TabsTrigger value="vocabulary" className="flex flex-col sm:flex-row items-center gap-1 py-2 data-[state=active]:bg-[#008001] data-[state=active]:text-white">
                 <BookOpen className="w-4 h-4" />
                 <span className="text-xs sm:text-sm">Từ vựng</span>
@@ -1650,10 +1559,7 @@ const LessonDetail = () => {
                 <BookMarked className="w-4 h-4" />
                 <span className="text-xs sm:text-sm">Ngữ pháp</span>
               </TabsTrigger>
-              <TabsTrigger value="kaiwa" className="flex flex-col sm:flex-row items-center gap-1 py-2 data-[state=active]:bg-[#008001] data-[state=active]:text-white">
-                <MessageSquare className="w-4 h-4" />
-                <span className="text-xs sm:text-sm">Hội thoại</span>
-              </TabsTrigger>
+
               <TabsTrigger value="quiz" className="flex flex-col sm:flex-row items-center gap-1 py-2 data-[state=active]:bg-[#008001] data-[state=active]:text-white">
                 <CheckCircle2 className="w-4 h-4" />
                 <span className="text-xs sm:text-sm">Luyện tập</span>
@@ -1672,9 +1578,7 @@ const LessonDetail = () => {
               <GrammarTab grammar={lesson.grammar} vocabulary={lesson.vocabulary} />
             </TabsContent>
 
-            <TabsContent value="kaiwa">
-              <KaiwaTab kaiwa={lesson.kaiwa} kaiwaImage={lesson.kaiwaImage} vocabulary={lesson.vocabulary} />
-            </TabsContent>
+
 
             <TabsContent value="quiz">
               <QuizTab vocabulary={lesson.vocabulary} grammar={lesson.grammar} quiz={lesson.quiz} />
