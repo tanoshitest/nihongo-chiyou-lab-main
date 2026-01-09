@@ -4163,6 +4163,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "はし・る",
     meaning: "Chạy",
     sinoVietnamese: "Tẩu",
+    radicals: "土 (thổ) + 疋 (thất/chân)",
+    mnemonic: "Người chạy (chân 疋) trên mặt đất (土).",
     examples: [
       {
         japanese: "走ります",
@@ -4278,6 +4280,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "う・る",
     meaning: "Bán",
     sinoVietnamese: "Mại",
+    radicals: "士 (sĩ) + 冖 (mịch) + 儿 (nhân/đi)",
+    mnemonic: "Sĩ tử (士) đội mũ (冖) đi (儿) bán hàng.",
     examples: [
       {
         japanese: "売ります",
