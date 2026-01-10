@@ -11985,6 +11985,89 @@ export const lesson12Data: LessonDetail = {
   quiz: []
 };
 
+export const lesson13Data: LessonDetail = {
+  id: 13,
+  title: 'Bài 13',
+  vocabulary: [
+    { word: 'あそびます', kanji: '遊びます', romaji: 'asobimasu', mean: 'Chơi' },
+    { word: 'およぎます', kanji: '泳ぎます', romaji: 'oyogimasu', mean: 'Bơi' },
+    { word: 'むかえます', kanji: '迎えます', romaji: 'mukaemasu', mean: 'Đón' },
+    { word: 'つかれます', kanji: '疲れます', romaji: 'tsukaremasu', mean: 'Mệt' },
+    { word: 'だします', kanji: '出します', romaji: 'dashimasu', mean: 'Gửi [thư]' },
+    { word: 'はいります', kanji: '入ります', romaji: 'hairimasu', mean: 'Vào [quán giải khát]' },
+    { word: 'でます', kanji: '出ます', romaji: 'demasu', mean: 'Ra, ra khỏi [quán giải khát]' },
+    { word: 'けっこんします', kanji: '結婚します', romaji: 'kekkonshimasu', mean: 'Kết hôn, lập gia đình' },
+    { word: 'かいものします', kanji: '買い物します', romaji: 'kaimonoshimasu', mean: 'Mua hàng' },
+    { word: 'しょくじします', kanji: '食事します', romaji: 'shokujishimasu', mean: 'Ăn cơm' },
+    { word: 'さんぽします', kanji: '散歩します', romaji: 'sanposhimasu', mean: 'Đi dạo [ở công viên]' },
+    { word: 'たいへん「な」', kanji: '大変「な」', romaji: 'taihen', mean: 'Vất vả, khó khăn, khổ' },
+    { word: 'ほしい', kanji: '欲しい', romaji: 'hoshii', mean: 'Muốn có' },
+    { word: 'さびしい', kanji: '寂しい', romaji: 'sabishii', mean: 'Buồn, cô đơn' },
+    { word: 'ひろい', kanji: '広い', romaji: 'hiroi', mean: 'Rộng' },
+    { word: 'せまい', kanji: '狭い', romaji: 'semai', mean: 'Chật, hẹp' },
+    { word: 'しやくしょ', kanji: '市役所', romaji: 'shiyakusho', mean: 'Văn phòng hành chính quận, thành phố' },
+    { word: 'プール', kanji: 'プール', romaji: 'puuru', mean: 'Bể bơi' },
+    { word: 'かわ', kanji: '川', romaji: 'kawa', mean: 'Sông' },
+    { word: 'けいざい', kanji: '経済', romaji: 'keizai', mean: 'Kinh tế' },
+    { word: 'びじゅつ', kanji: '美術', romaji: 'bijutsu', mean: 'Mỹ thuật' },
+    { word: 'つり', kanji: '釣り', romaji: 'tsuri', mean: 'Việc câu cá' },
+    { word: 'スキー', kanji: 'スキー', romaji: 'sukii', mean: 'Việc trượt tuyết' },
+    { word: 'かいぎ', kanji: '会議', romaji: 'kaigi', mean: 'Họp, cuộc họp' },
+    { word: 'とうろく', kanji: '登録', romaji: 'touroku', mean: 'Việc đăng ký' },
+    { word: 'しゅうまつ', kanji: '週末', romaji: 'shuumatsu', mean: 'Cuối tuần' },
+    { word: '～ごろ', kanji: '～ごろ', romaji: 'goro', mean: 'Khoảng ~ (dùng cho thời gian)' },
+    { word: 'なにか', kanji: '何か', romaji: 'nanika', mean: 'Cái gì đó' },
+    { word: 'どこか', kanji: 'どこか', romaji: 'dokoka', mean: 'Đâu đó, chỗ nào đó' },
+    { word: 'おなかが すきました', kanji: 'お腹が 空きました', romaji: 'onakagasukimashita', mean: '(Tôi) đói rồi.' },
+    { word: 'おなかが いっぱいです', kanji: 'お腹が 一杯です', romaji: 'onakagaippaidesu', mean: '(Tôi) no rồi.' },
+    { word: 'のどが かわきました', kanji: '喉が 乾きました', romaji: 'nodogakawakimashita', mean: '(Tôi) khát.' },
+    { word: 'そうですね', kanji: 'そうですね', romaji: 'soudesune', mean: 'Đúng thế. (tán thành)' },
+    { word: 'そうしましょう', kanji: 'そうしましょう', romaji: 'soushimashou', mean: 'Nhất trí./ Chúng ta thống nhất như thế.' },
+    { word: 'ご注文は？', kanji: 'ご注文は？', romaji: 'gochuumonwa', mean: 'Anh/Chị dùng món gì ạ?' },
+    { word: 'ていしょく', kanji: '定食', romaji: 'teishoku', mean: 'Cơm suất, cơm phần' },
+    { word: 'ぎゅうどん', kanji: '牛どん', romaji: 'gyuudon', mean: 'Món cơm thịt bò' },
+    { word: '「しょうしょう」おまちください', kanji: '「少々」お待ちください', romaji: 'shoushouomachikudasai', mean: 'Xin anh/chị vui lòng đợi [một chút].' },
+    { word: 'べつべつに', kanji: '別々に', romaji: 'betsubetsuni', mean: 'Riêng ra/để riêng' },
+    // Reference Words: Places
+    { word: 'はくぶつかん', kanji: '博物館', romaji: 'hakubutsukan', mean: 'Bảo tàng' },
+    { word: 'びじゅつかん', kanji: '美術館', romaji: 'bijutsukan', mean: 'Bảo tàng mỹ thuật' },
+    { word: 'としょかん', kanji: '図書館', romaji: 'toshokan', mean: 'Thư viện' },
+    { word: 'えいがかん', kanji: '映画館', romaji: 'eigakan', mean: 'Rạp chiếu phim' },
+    { word: 'どうぶつえん', kanji: '動物園', romaji: 'doubutsuen', mean: 'Vườn bách thú' },
+    { word: 'しょくぶつえん', kanji: '植物園', romaji: 'shokubutsuen', mean: 'Vườn bách thảo' },
+    { word: 'ゆうえんち', kanji: '遊園地', romaji: 'yuuenchi', mean: 'Công viên giải trí' },
+    { word: 'おてら', kanji: 'お寺', romaji: 'otera', mean: 'Chùa' },
+    { word: 'じんじゃ', kanji: '神社', romaji: 'jinja', mean: 'Đền thờ đạo Thần' },
+    { word: 'きょうかい', kanji: '教会', romaji: 'kyoukai', mean: 'Nhà thờ' },
+    { word: 'モスク', kanji: 'モスク', romaji: 'mosuku', mean: 'Đền thờ đạo Hồi' },
+    { word: 'たいいくかん', kanji: '体育館', romaji: 'taiikukan', mean: 'Nhà tập thể dục thể thao' },
+    { word: 'たいしかん', kanji: '大使館', romaji: 'taishikan', mean: 'Đại sứ quán' },
+    { word: 'にゅうこくかんりきょく', kanji: '入国管理局', romaji: 'nyuukokukanrikyoku', mean: 'Cục xuất nhập cảnh' },
+    { word: 'しあくしょ', kanji: '市役所', romaji: 'shiyakusho', mean: 'Văn phòng hành chính quận, thành phố' },
+    { word: 'けいさつしょ', kanji: '警察署', romaji: 'keisatsusho', mean: 'Đồn cảnh sát' },
+    { word: 'こうばん', kanji: '交番', romaji: 'kouban', mean: 'Bốt cảnh sát' },
+    { word: 'しょうぼうしょ', kanji: '消防署', romaji: 'shoubousho', mean: 'Trạm cứu hỏa' },
+    { word: 'ちゅうしゃじょう', kanji: '駐車場', romaji: 'chuushajou', mean: 'Bãi đỗ xe' },
+    { word: 'だいがく', kanji: '大学', romaji: 'daigaku', mean: 'Trường đại học' },
+    { word: 'こうこう', kanji: '高校', romaji: 'koukou', mean: 'Trường phổ thông trung học' },
+    { word: 'ちゅうがっこう', kanji: '中学校', romaji: 'chuugakkou', mean: 'Trường phổ thông cơ sở' },
+    { word: 'しょうがっこう', kanji: '小学校', romaji: 'shougakkou', mean: 'Trường tiểu học' },
+    { word: 'ようちえん', kanji: '幼稚園', romaji: 'youchien', mean: 'Trường mẫu giáo' },
+    { word: 'にくや', kanji: '肉屋', romaji: 'nikuya', mean: 'Cửa hàng thịt' },
+    { word: 'パンや', kanji: 'パン屋', romaji: 'panya', mean: 'Cửa hàng bánh mì' },
+    { word: 'さかなや', kanji: '魚屋', romaji: 'sakanaya', mean: 'Cửa hàng cá' },
+    { word: 'さかや', kanji: '酒屋', romaji: 'sakaya', mean: 'Cửa hàng rượu' },
+    { word: 'やおや', kanji: '八百屋', romaji: 'yaoya', mean: 'Cửa hàng rau' },
+    { word: 'きっさてん', kanji: '喫茶店', romaji: 'kissaten', mean: 'Quán giải khát' },
+    { word: 'コンビニ', kanji: 'コンビニ', romaji: 'konbini', mean: 'Cửa hàng tiện lợi' },
+    { word: 'スーパー', kanji: 'スーパー', romaji: 'suupaa', mean: 'Siêu thị' },
+    { word: 'デパート', kanji: 'デパート', romaji: 'depaato', mean: 'Cửa hàng bách hóa' }
+  ],
+  grammar: [],
+  kaiwa: [],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
@@ -11999,6 +12082,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 10) return lesson10Data;
   if (id === 11) return lesson11Data;
   if (id === 12) return lesson12Data;
+  if (id === 13) return lesson13Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
