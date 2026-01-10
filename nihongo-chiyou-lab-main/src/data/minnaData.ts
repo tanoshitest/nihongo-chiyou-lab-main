@@ -12065,32 +12065,27 @@ export const lesson13Data: LessonDetail = {
   ],
   grammar: [
     {
-      id: 1,
-      structure: 'Danh từ が 欲しいです',
+      pattern: 'Danh từ が 欲しいです',
       explanation: 'Biểu thị ham muốn sở hữu một vật hoặc một người nào đó của người nói. Đối tượng của ham muốn được biểu thị bằng trợ từ 「が」. 「ほしい」 là tính từ đuôi い.',
       example: 'わたしは 友達が 欲しいです。 (Tôi muốn có bạn.)\n今 何が いちばん 欲しいですか。 (Bây giờ bạn muốn cái gì nhất?)\n...車が 欲しいです。 (...Tôi muốn một cái ô-tô.)'
     },
     {
-      id: 2,
-      structure: 'Động từ thể ます (bỏ ます) + たいです',
+      pattern: 'Động từ thể ます (bỏ ます) + たいです',
       explanation: 'Biểu thị sự "muốn làm" một cái gì đó. Cách nói này được dùng để biểu thị ý muốn của bản thân người nói. Trợ từ 「を」 có thể thay bằng 「が」. Động từ dạng này chia tương tự tính từ đuôi い.',
       example: 'わたしは 沖縄へ 行きたいです。 (Tôi muốn đi Okinawa.)\nわたしは てんぷらを 食べたいです。 (Tôi muốn ăn món Tempura.)\n神戸で 何を 買いたいですか。 (Bạn muốn mua gì ở Kobe?)'
     },
     {
-      id: 3,
-      structure: 'N (Place) へ V (bỏ ます) / N (Action) に 行きます/来ます/帰ります',
+      pattern: 'N (Place) へ V (bỏ ます) / N (Action) に 行きます/来ます/帰ります',
       explanation: 'Biểu thị mục đích của việc đi, đến, về. Động từ bỏ ます hoặc Danh từ chỉ hành động (việc mua sắm, việc học...) đặt trước trợ từ 「に」.',
       example: '神戸へ インド料理を 食べに 行きます。 (Tôi đi Kobe để ăn món ăn Ấn Độ.)\n神戸へ 買い物に 行きます。 (Tôi đi Kobe để mua hàng.)\n日本へ 美術の 勉強に 来ました。 (Tôi đến Nhật Bản để học mỹ thuật.)'
     },
     {
-      id: 4,
-      structure: 'N に V / N を V (Trợ từ đi với động từ di chuyển)',
+      pattern: 'N に V / N を V (Trợ từ đi với động từ di chuyển)',
       explanation: 'Trợ từ 「に」 dùng với các động từ như 「はいります」(vào), 「のります」(lên) để chỉ điểm đến. Trợ từ 「を」 dùng với các động từ như 「でます」(ra), 「おります」(xuống) để chỉ điểm xuất phát.',
       example: 'あの 喫茶店に 入りましょう。 (Chúng ta vào quán giải khát kia đi.)\n７時に うちを 出ます。 (Tôi ra khỏi nhà lúc 7 giờ.)'
     },
     {
-      id: 5,
-      structure: 'どこか / 何か (Từ nghi vấn không xác định)',
+      pattern: 'どこか / 何か (Từ nghi vấn không xác định)',
       explanation: '「どこか」 (đâu đó, nơi nào đó), 「なにか」 (cái gì đó). Có thể lược bỏ các trợ từ 「へ」, 「を」 ở sau chúng. Dùng trong câu nghi vấn để hỏi về sự tồn tại không xác định.',
       example: '冬休みは どこか[へ] 行きましたか。 (Nghỉ đông bạn có đi đâu đó không?)\n...はい、行きました。 (...Có, tôi có đi.)\nのどが かわきましたから、何か[を] 飲みたいです。 (Tôi khát nên muốn uống cái gì đó.)'
     }
@@ -12177,44 +12172,37 @@ export const lesson14Data: LessonDetail = {
   ],
   grammar: [
     {
-      id: 1,
-      structure: 'Chia cách động từ (Verb Groups)',
+      pattern: 'Chia cách động từ (Verb Groups)',
       explanation: 'Động từ tiếng Nhật được chia làm 3 nhóm.\nNhóm I: Âm cuối của thể ます thuộc cột い (kikimasu, nomimasu).\nNhóm II: Âm cuối của thể ます thuộc cột え (tabemasu) hoặc một số ngoại lệ cột い (mimasu, okimasu).\nNhóm III: shimasu, kimasu và Danh từ hành động + shimasu.',
       example: 'Nhóm I: かきます (viết), のみます (uống)\nNhóm II: たべます (ăn), みせます (cho xem), みます (xem)\nNhóm III: します (làm), きます (đến), べんきょうします (học)'
     },
     {
-      id: 2,
-      structure: 'Thể て của động từ (Te-form)',
+      pattern: 'Thể て của động từ (Te-form)',
       explanation: 'Cách chia thể て:\nNhóm I:\n- ki -> ite, gi -> ide\n- ni, bi, mi -> nde\n- i, chi, ri -> tte\n- shi -> shite\n*Ngoại lệ: ikimasu -> itte\nNhóm II: Bỏ ます thêm て\nNhóm III: Bỏ ます thêm て',
       example: 'かきます -> かいて (kaite)\nのみます -> のんで (nonde)\nかいます -> かって (katte)\nたべます -> たべて (tabete)\nします -> して (shite)'
     },
     {
-      id: 3,
-      structure: 'Động từ thể て + ください',
+      pattern: 'Động từ thể て + ください',
       explanation: 'Mẫu câu dùng khi muốn nhờ vả, sai khiến hoặc khuyên nhủ người nghe làm gì một cách lịch sự.',
       example: 'すみませんが、この 漢字の 読み方を 教えて ください。 (Xin lỗi, hãy chỉ cho tôi cách đọc chữ Hán này.)\nここに 住所と 名前を 書いて ください。 (Anh/Chị hãy viết địa chỉ và tên vào đây.)\nぜひ 遊びに 来て ください。 (Anh/Chị nhất định đến chơi nhé.)'
     },
     {
-      id: 4,
-      structure: 'Động từ thể て + います',
+      pattern: 'Động từ thể て + います',
       explanation: 'Biểu thị một hành động đang diễn ra tại thời điểm nói.',
       example: 'ミラーさんは 今 電話を かけて います。 (Bây giờ anh Miller đang gọi điện thoại.)\n今 雨が 降って いますか。 (Bây giờ trời có mưa không?)\n...はい、降って います。 (...Có, trời đang mưa.)'
     },
     {
-      id: 5,
-      structure: 'Động từ thể ます + ましょうか',
+      pattern: 'Động từ thể ます + ましょうか',
       explanation: 'Dùng khi người nói muốn nêu ra đề nghị làm một việc gì đó giúp cho người nghe.',
       example: 'あしたも 来ましょうか。 (Ngày mai tôi cũng đến nhé?)\n...ええ、10時に 来て ください。 (...Vâng, anh hãy đến lúc 10 giờ.)\n傘を 貸しましょうか。 (Tôi cho anh mượn ô nhé?)\n...すみません。おねがいします。 (...Cám ơn. Nhờ anh.)\n荷物を 持ちましょうか。 (Tôi mang hành lý giúp anh nhé?)'
     },
     {
-      id: 6,
-      structure: 'Câu 1 が、 Câu 2',
+      pattern: 'Câu 1 が、 Câu 2',
       explanation: '「が」 là trợ từ nối tiếp, dùng để mở đầu câu nói một cách nhẹ nhàng, tự nhiên. Có nghĩa là "xin lỗi", "nhưng mà"...',
       example: '失礼ですが、お名前は？ (Xin lỗi, tên anh là gì ạ?)\nすみませんが、塩を 取って ください。 (Xin lỗi, làm ơn lấy giúp tôi muối.)'
     },
     {
-      id: 7,
-      structure: 'Danh từ が Động từ',
+      pattern: 'Danh từ が Động từ',
       explanation: 'Khi muốn miêu tả một hiện tượng tự nhiên thì dùng 「が」 trước chủ thể đó.',
       example: '雨が 降って います。 (Trời đang mưa.)'
     }
@@ -12286,32 +12274,27 @@ export const lesson15Data: LessonDetail = {
   ],
   grammar: [
     {
-      id: 1,
-      structure: 'Động từ thể て + も いいです',
+      pattern: 'Động từ thể て + も いいです',
       explanation: 'Mẫu câu này dùng để biểu thị sự được phép làm một điều gì. (Làm ~ được). Nếu chuyển thành câu nghi vấn thì sẽ được một câu xin phép.',
       example: '写真を 撮っても いいです。 (Có thể chụp ảnh được.)\nたばこを 吸っても いいですか。 (Tôi hút thuốc được không?)\n...ええ、いいですよ。どうぞ。 (...Vâng, được. Xin mời.)\n...すみません。ちょっと。 (...Xin lỗi. Không được.)'
     },
     {
-      id: 2,
-      structure: 'Động từ thể て + は いけません',
+      pattern: 'Động từ thể て + は いけません',
       explanation: 'Mẫu câu này biểu thị ý nghĩa "cấm", hay "không được" làm một việc gì. (Không được làm ~).',
       example: 'ここで たばこを 吸っては いけません。禁煙ですから。 (Không được hút thuốc ở đây, vì là nơi "cấm hút thuốc".)\n先生、ここで 遊んでも いいですか。 (Thưa thầy/cô, em chơi ở đây có được không ạ?)\n...いいえ、いけません。 (...Không, không được.)'
     },
     {
-      id: 3,
-      structure: 'Động từ thể て + います (Trạng thái)',
+      pattern: 'Động từ thể て + います (Trạng thái)',
       explanation: 'Dùng để nói về một trạng thái (là kết quả của một hành động) vẫn còn lại, vẫn tiếp diễn ở hiện tại. Các động từ thường dùng: Kekkonshimasu, Shirimasu, Sumimasu, Mochimasu.',
       example: 'わたしは 結婚して います。 (Tôi đã lập gia đình.)\nわたしは 田中さんを 知って います。 (Tôi biết anh Tanaka.)\nわたしは 大阪に 住んで います。 (Tôi sống ở Osaka.)\nわたしは カメラを 持って います。 (Tôi có máy ảnh.)'
     },
     {
-      id: 4,
-      structure: 'Động từ thể て + います (Thói quen/Nghề nghiệp)',
+      pattern: 'Động từ thể て + います (Thói quen/Nghề nghiệp)',
       explanation: 'Dùng để nói về các tập quán, thói quen (hành vi được lặp đi lặp lại trong thời gian dài). Cũng dùng để nói về nghề nghiệp hoặc tình cảnh của ai đó.',
       example: 'IMCは コンピューターソフトを 作って います。 (Công ty IMC chế tạo phần mềm máy vi tính.)\nスーパーで フィルムを 売って います。 (Siêu thị có bán phim.)\nミラーさんは IMCで 働いて います。 (Anh Miller làm việc ở Công ty IMC.)\n妹は 大学で 勉強して います。 (Em gái tôi (đang) học đại học.)'
     },
     {
-      id: 5,
-      structure: '知りません (Không biết)',
+      pattern: '知りません (Không biết)',
       explanation: 'Thể phủ định của 「知って います」 là 「知りません」, không phải là 「知って いません」.',
       example: '市役所の 電話番号を 知って いますか。 (Anh/Chị có biết số điện thoại của Văn phòng hành chính quận không?)\n...はい、知って います。 (...Có, tôi biết.)\n...いいえ、知りません。 (...Không, tôi không biết.)'
     }
@@ -12373,38 +12356,32 @@ export const lesson16Data: LessonDetail = {
   ],
   grammar: [
     {
-      id: 1,
-      structure: 'Động từ thể て, [động từ thể て,] ~',
+      pattern: 'Động từ thể て, [động từ thể て,] ~',
       explanation: 'Dùng để nối các động từ với nhau khi liệt kê các hành động xảy ra theo trình tự thời gian. Thì của câu do động từ cuối cùng quyết định.',
       example: '朝 ジョギングをして、シャワーを 浴びて、会社へ 行きます。 (Buổi sáng tôi chạy bộ, tắm, rồi đến công ty.)\n神戸へ 行って、映画を 見て、お茶を 飲みました。 (Tôi (đã) đi đến Kobe, xem phim, rồi uống trà.)'
     },
     {
-      id: 2,
-      structure: 'Tính từ đuôi い (~くて) / Tính từ đuôi な (~で) / Danh từ (~で)',
+      pattern: 'Tính từ đuôi い (~くて) / Tính từ đuôi な (~で) / Danh từ (~で)',
       explanation: 'Cách nối tính từ và danh từ trong câu. Tính từ đuôi い bỏ い thêm くて. Tính từ đuôi な và Danh từ thêm で.',
       example: '大きい -> 大きくて (to và...)\n小さい -> 小さくて (nhỏ và...)\nいい -> よくて (tốt và...) (ngoại lệ)\nミラーさんは 若くて、元気です。 (Anh Miller trẻ và khỏe mạnh.)\nカリナさんは インドネシア人で、京都大学の 留学生です。 (Chị Karina là người Indonesia và là lưu học sinh ở Đại học Kyoto.)\nミラーさんは ハンサムで、親切です。 (Anh Miller đẹp trai và tốt bụng.)'
     },
     {
-      id: 3,
-      structure: 'Động từ thể て + から、~',
+      pattern: 'Động từ thể て + から、~',
       explanation: 'Biểu thị hành động ở vế sau được thực hiện sau khi hành động ở vế trước đã kết thúc.',
       example: '国へ 帰ってから、父の 会社で 働きます。 (Sau khi về nước tôi làm việc ở công ty của bố tôi.)\nコンサートが 終わってから、レストランで 食事しました。 (Sau khi buổi hòa nhạc kết thúc tôi đi ăn cơm ở nhà hàng.)'
     },
     {
-      id: 4,
-      structure: 'Danh từ 1 は Danh từ 2 が Tính từ',
+      pattern: 'Danh từ 1 は Danh từ 2 が Tính từ',
       explanation: 'Dùng để miêu tả một thuộc tính cụ thể (N2) của chủ đề (N1).',
       example: '大阪は 食べ物が おいしいです。 (Thức ăn ở Osaka ngon.)\nドイツの フランケンは ワインが 有名です。 (Rượu vang ở vùng Franken của Đức nổi tiếng.)\nマリアさんは 髪が 長いです。 (Chị Maria tóc dài.)'
     },
     {
-      id: 5,
-      structure: 'どうやって',
+      pattern: 'どうやって',
       explanation: 'Dùng để hỏi về trình tự hoặc cách làm một việc gì đó (làm thế nào, bằng cách nào).',
       example: '大学まで どうやって 行きますか。 (Đến trường đại học bằng cách nào?)\n...京都駅から 16番の バスに 乗って、大学前で 降ります。 (...Lên xe buýt số 16 từ ga Kyoto, rồi xuống ở điểm đỗ Daigaku-mae.)'
     },
     {
-      id: 6,
-      structure: 'どの Danh từ',
+      pattern: 'どの Danh từ',
       explanation: 'Dùng để hỏi xác định một đối tượng trong một nhóm gồm 3 đối tượng trở lên (Cái nào, Người nào...).',
       example: 'サントスさんは どの 人ですか。 (Anh Santos là người nào?)\n...あの 背が 高くて、 髪が 黒い 人です。 (...Là người cao, tóc đen đó.)'
     }
@@ -12458,42 +12435,94 @@ export const lesson17Data: LessonDetail = {
   ],
   grammar: [
     {
-      id: 1,
-      structure: 'Động từ thể ない',
+      pattern: 'Động từ thể ない',
       explanation: 'Cách chia động từ thể Nai (Phủ định ngắn):\n1. Nhóm I: Chuyển âm cuối hàng [i] sang hàng [a] rồi thêm [nai]. (Ngoại lệ: âm cuối [i] -> [wanai]).\nVí dụ: kakimasu -> kakanai, yomimasu -> yomanai, aimasu -> awanai.\n2. Nhóm II: Bỏ [masu] thêm [nai].\nVí dụ: tabemasu -> tabenai, mimasu -> minai.\n3. Nhóm III: shimasu -> shinai, kimasu -> konai.',
       example: '書きます -> 書かない (Không viết)\n食べます -> 食べない (Không ăn)\n勉強します -> 勉強しない (Không học)\n来ます -> 来ない (Không đến)'
     },
     {
-      id: 2,
-      structure: 'Động từ thể ない + で ください',
+      pattern: 'Động từ thể ない + で ください',
       explanation: 'Mẫu câu dùng khi muốn yêu cầu, nhờ vả ai đó đừng làm một việc gì đó. (Xin đừng/Không được...).',
       example: 'わたしは 元気ですから、心配しないで ください。 (Tôi khỏe nên anh/chị đừng lo lắng.)\nここで 写真を 撮らないで ください。 (Xin đừng chụp ảnh ở đây.)'
     },
     {
-      id: 3,
-      structure: 'Động từ thể ない (bỏ い) + ければ なりません',
+      pattern: 'Động từ thể ない (bỏ い) + ければ なりません',
       explanation: 'Mẫu câu biểu thị sự bắt buộc phải làm gì đó (nếu không làm thì không được). Chú ý: Mẫu câu này không mang ý nghĩa phủ định.',
       example: '薬を 飲まなければ なりません。 (Tôi phải uống thuốc.)\n明日は 早く 起きなければ なりません。 (Ngày mai tôi phải dậy sớm.)'
     },
     {
-      id: 4,
-      structure: 'Động từ thể ない (bỏ い) + くても いいです',
+      pattern: 'Động từ thể ない (bỏ い) + くても いいです',
       explanation: 'Mẫu câu biểu thị sự không cần thiết phải làm gì đó (không làm cũng được).',
       example: 'あした 来なくても いいです。 (Ngày mai anh/chị không đến cũng được.)\n靴を 脱がなくても いいです。 (Anh/Chị không cần cởi giày cũng được.)'
     },
     {
-      id: 5,
-      structure: 'Danh từ (tân ngữ) は',
+      pattern: 'Danh từ (tân ngữ) は',
       explanation: 'Khi muốn nhấn mạnh vào tân ngữ của hành động, ta đưa tân ngữ lên làm chủ đề của câu (thay trợ từ [o] bằng [wa]).',
       example: 'ここに 荷物を 置かないで ください。 (Đừng để hành lý ở đây.)\n-> 荷物は ここに 置かないで ください。 (Hành lý thì xin đừng để ở đây.)\n会社の 食堂で 昼ごはんを 食べます。\n-> 昼ごはんは 会社の 食堂で 食べます。 (Cơm trưa thì tôi ăn ở nhà ăn của công ty.)'
     },
     {
-      id: 6,
-      structure: 'Danh từ (thời gian) までに + Động từ',
+      pattern: 'Danh từ (thời gian) までに + Động từ',
       explanation: 'Biểu thị thời hạn mà hành động phải được thực hiện (trước thời điểm đó). Khác với [made] (cho đến khi).',
       example: '会議は 5時までに 終わります。 (Cuộc họp sẽ kết thúc trước 5 giờ.)\n土曜日までに 本を 返さなければ なりません。 (Phải trả sách trước thứ Bảy.)'
     }
   ],
+  kaiwa: [],
+  quiz: []
+};
+
+export const lesson18Data: LessonDetail = {
+  id: 18,
+  title: 'Bài 18',
+  vocabulary: [
+    { word: 'できます', kanji: 'できます', romaji: 'dekimasu', mean: 'Có thể' },
+    { word: 'あらいます', kanji: '洗います', romaji: 'araimasu', mean: 'Rửa' },
+    { word: 'ひきます', kanji: '弾きます', romaji: 'hikimasu', mean: 'Chơi (nhạc cụ)' },
+    { word: 'うたいます', kanji: '歌います', romaji: 'utaimasu', mean: 'Hát' },
+    { word: 'あつめます', kanji: '集めます', romaji: 'atsumemasu', mean: 'Sưu tầm, thu thập' },
+    { word: 'すてます', kanji: '捨てます', romaji: 'sutemasu', mean: 'Vứt, bỏ đi' },
+    { word: 'かえます', kanji: '換えます', romaji: 'kaemasu', mean: 'Đổi' },
+    { word: 'うんてんします', kanji: '運転します', romaji: 'untenshimasu', mean: 'Lái' },
+    { word: 'よやくします', kanji: '予約します', romaji: 'yoyakushimasu', mean: 'Đặt chỗ, đặt trước' },
+    { word: 'けんがくします', kanji: '見学します', romaji: 'kengakushimasu', mean: 'Thăm quan với mục đích học tập' },
+    { word: 'ピアノ', kanji: 'ピアノ', romaji: 'piano', mean: 'Đàn piano' },
+    { word: 'ーメートル', kanji: 'ーメートル', romaji: 'meetoru', mean: 'ー mét' },
+    { word: 'こくさい～', kanji: '国際～', romaji: 'kokusai', mean: '～ quốc tế' },
+    { word: 'げんきん', kanji: '現金', romaji: 'genkin', mean: 'Tiền mặt' },
+    { word: 'しゅみ', kanji: '趣味', romaji: 'shumi', mean: 'Sở thích, thú vui' },
+    { word: 'にっき', kanji: '日記', romaji: 'nikki', mean: 'Nhật ký' },
+    { word: 'おいのり', kanji: '[お]祈り', romaji: 'oinori', mean: 'Việc cầu nguyện (~を します：cầu nguyện)' },
+    { word: 'かちょう', kanji: '課長', romaji: 'kachou', mean: 'Tổ trưởng' },
+    { word: 'ぶちょう', kanji: '部長', romaji: 'buchou', mean: 'Trưởng phòng' },
+    { word: 'しゃちょう', kanji: '社長', romaji: 'shachou', mean: 'Giám đốc' },
+    { word: 'どうぶつ', kanji: '動物', romaji: 'doubutsu', mean: 'Động vật' },
+    { word: 'うま', kanji: '馬', romaji: 'uma', mean: 'Ngựa' },
+    { word: 'へえ', kanji: 'へえ', romaji: 'hee', mean: 'Thế à! (dùng để biểu thị sự ngạc nhiên hoặc quan tâm)' },
+    { word: 'それは　おもしろいですね。', kanji: 'それは　おもしろいですね。', romaji: 'sorewaomoshiroidesune', mean: 'Hay thật nhỉ.' },
+    { word: 'なかなか', kanji: 'なかなか', romaji: 'nakanaka', mean: 'Khó mà ~, không dễ, mãi mà (dùng với thể phủ định)' },
+    { word: 'ぼくじょう', kanji: '牧場', romaji: 'bokujou', mean: 'Trang trại chăn nuôi' },
+    { word: 'ほんとうですか。', kanji: 'ほんとうですか。', romaji: 'hontoudesuka', mean: 'Thật không ạ?' },
+    { word: 'ぜひ', kanji: 'ぜひ', romaji: 'zehi', mean: 'Nhất định, rất' },
+    { word: 'とぶ', kanji: '飛ぶ', romaji: 'tobu', mean: 'Bay' },
+    { word: 'はねる', kanji: '跳ねる', romaji: 'haneru', mean: 'Nhảy' },
+    { word: 'のぼる', kanji: '登る', romaji: 'noboru', mean: 'Leo' },
+    { word: 'はしる', kanji: '走る', romaji: 'hashiru', mean: 'Chạy' },
+    { word: 'およぐ', kanji: '泳ぐ', romaji: 'oyogu', mean: 'Bơi' },
+    { word: 'もぐる', kanji: '潜る', romaji: 'moguru', mean: 'Lặn' },
+    { word: 'とびこむ', kanji: '飛び込む', romaji: 'tobikomu', mean: 'Nhảy xuống' },
+    { word: 'さかだちする', kanji: '逆立ちする', romaji: 'sakadachisuru', mean: 'Lộn ngược, trồng cây chuối' },
+    { word: 'はう', kanji: '這う', romaji: 'hau', mean: 'Bò' },
+    { word: 'ける', kanji: '蹴る', romaji: 'keru', mean: 'Đá' },
+    { word: 'ふる', kanji: '振る', romaji: 'furu', mean: 'Vẫy' },
+    { word: 'もちあげる', kanji: '持ち上げる', romaji: 'mochiageru', mean: 'Nâng, nhấc' },
+    { word: 'なげる', kanji: '投げる', romaji: 'nageru', mean: 'Ném' },
+    { word: 'たたく', kanji: '叩く', romaji: 'tataku', mean: 'Đấm, đập, vỗ' },
+    { word: 'ひく', kanji: '引く', romaji: 'hiku', mean: 'Kéo' },
+    { word: 'おす', kanji: '押す', romaji: 'osu', mean: 'Đẩy' },
+    { word: 'まげる', kanji: '曲げる', romaji: 'mageru', mean: 'Uốn, gập, bẻ cong' },
+    { word: 'のばす', kanji: '伸ばす', romaji: 'nobasu', mean: 'Duỗi thẳng, kéo dài ra' },
+    { word: 'ころぶ', kanji: '転ぶ', romaji: 'korobu', mean: 'Ngã' },
+    { word: 'ふりむく', kanji: '振り向く', romaji: 'furimuku', mean: 'Ngoảnh lại' }
+  ],
+  grammar: [],
   kaiwa: [],
   quiz: []
 };
@@ -12517,6 +12546,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 15) return lesson15Data;
   if (id === 16) return lesson16Data;
   if (id === 17) return lesson17Data;
+  if (id === 18) return lesson18Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
