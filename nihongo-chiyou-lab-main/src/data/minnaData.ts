@@ -12614,7 +12614,33 @@ export const lesson19Data: LessonDetail = {
     { word: 'カラオケ', kanji: 'カラオケ', romaji: 'karaoke', mean: 'Karaoke' },
     { word: 'ぼんおどり', kanji: '盆踊り', romaji: 'bonodori', mean: 'Múa Bon' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      pattern: 'Động từ thể た (Ta-form)',
+      explanation: 'Thể た (Ta-kei) được tạo thành giống cách chia Thể て (Te-kei). Đổi đuôi [te/de] thành [ta/da].\nCách chia:\n1. Nhóm I: (i, chi, ri -> tta), (mi, bi, ni -> nda), (ki -> ita), (gi -> ida), (shi -> shita). *Ngoại lệ: ikimasu -> itta.\n2. Nhóm II: Bỏ [masu] thêm [ta].\n3. Nhóm III: shimasu -> shita, kimasu -> kita.',
+      example: '書いて (kaite) -> 書いた (kaita)\n飲んで (nonde) -> 飲んだ (nonda)\n食べて (tabete) -> 食べた (tabeta)\n来て (kite) -> 来た (kita)\nして (shite) -> した (shita)'
+    },
+    {
+      pattern: 'Động từ thể た + ことが あります',
+      explanation: 'Mẫu câu biểu thị ai đó đã từng làm một việc nào đó trong quá khứ (kinh nghiệm). Khác với thì quá khứ đơn thuần (đã làm tại một thời điểm cụ thể).',
+      example: '馬に 乗った ことが あります。 (Tôi đã từng cưỡi ngựa.)\n昨年 北海道で 馬に 乗りました。 (Năm ngoái tôi đã cưỡi ngựa ở Hokkaido - Quá khứ đơn thuần)'
+    },
+    {
+      pattern: 'Động từ thể た + り、 Động từ thể た + り します',
+      explanation: 'Dùng để nêu ra một số hành động đại diện trong một nhóm nhiều hành động (Làm A, làm B, v.v...). Thì của câu được biểu thị ở cuối câu (shimasu/shimashita).',
+      example: '日曜日は テニスを したり、映画を 見たり します。 (Chủ nhật tôi chơi quần vợt, xem phim v.v...)\n日曜日は テニスを したり、映画を 見たり しました。 (Chủ nhật tôi đã chơi quần vợt, xem phim v.v...)'
+    },
+    {
+      pattern: 'Tính từ đuôi い (~く) / Tính từ đuôi な (~に) / Danh từ (~に) + なります',
+      explanation: 'Biểu thị sự thay đổi về trạng thái (Trở nên, trở thành).',
+      example: '寒く なります。 (Trở nên lạnh/Lạnh đi.)\n元気に なります。 (Trở nên khỏe.)\n25歳に なります。 (Sang tuổi 25.)'
+    },
+    {
+      pattern: 'そうですね',
+      explanation: 'Dùng để biểu thị sự đồng ý hoặc thông cảm với điều mà đối tác hội thoại nói. Khác với [Sou desu ka] (tiếp nhận thông tin mới), [Sou desu ne] biểu thị người nghe đã biết hoặc cùng cảm nhận.',
+      example: '寒く なりましたね。 (Trời lạnh đi nhỉ.)\n...そうですね。 (...Vâng, đúng thế nhỉ.)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
