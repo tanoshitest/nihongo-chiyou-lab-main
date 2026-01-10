@@ -12223,6 +12223,72 @@ export const lesson14Data: LessonDetail = {
   quiz: []
 };
 
+export const lesson15Data: LessonDetail = {
+  id: 15,
+  title: 'Bài 15',
+  vocabulary: [
+    { word: 'たちます', kanji: '立ちます', romaji: 'tachimasu', mean: 'Đứng' },
+    { word: 'すわります', kanji: '座ります', romaji: 'suwarimasu', mean: 'Ngồi' },
+    { word: 'つかいます', kanji: '使います', romaji: 'tsukaimasu', mean: 'Dùng, sử dụng' },
+    { word: 'おきます', kanji: '置きます', romaji: 'okimasu', mean: 'Đặt, để' },
+    { word: 'つくります', kanji: '作ります', romaji: 'tsukurimasu', mean: 'Làm, chế tạo, sản xuất' },
+    { word: 'うります', kanji: '売ります', romaji: 'urimasu', mean: 'Bán' },
+    { word: 'しります', kanji: '知ります', romaji: 'shirimasu', mean: 'Biết' },
+    { word: 'すみます', kanji: '住みます', romaji: 'sumimasu', mean: 'Sống, ở' },
+    { word: 'けんきゅうします', kanji: '研究します', romaji: 'kenkyuushimasu', mean: 'Nghiên cứu' },
+    { word: 'しっています', kanji: '知っています', romaji: 'shitteimasu', mean: 'Biết (trạng thái)' },
+    { word: 'すんでいます', kanji: '住んでいます', romaji: 'sundeimasu', mean: 'Sống (trạng thái) [ở Osaka]' },
+    { word: 'しりょう', kanji: '資料', romaji: 'shiryou', mean: 'Tài liệu, tư liệu' },
+    { word: 'カタログ', kanji: 'カタログ', romaji: 'katarogu', mean: 'Ca-ta-lô' },
+    { word: 'じこくひょう', kanji: '時刻表', romaji: 'jikokuhyou', mean: 'Bảng giờ chạy tàu' },
+    { word: 'ふく', kanji: '服', romaji: 'fuku', mean: 'Quần áo' },
+    { word: 'せいひん', kanji: '製品', romaji: 'seihin', mean: 'Sản phẩm' },
+    { word: 'ソフト', kanji: 'ソフト', romaji: 'sofuto', mean: 'Phần mềm' },
+    { word: 'せんもん', kanji: '専門', romaji: 'senmon', mean: 'Chuyên môn' },
+    { word: 'はいしゃ', kanji: '歯医者', romaji: 'haisha', mean: 'Nha sĩ' },
+    { word: 'とこや', kanji: '床屋', romaji: 'tokoya', mean: 'Hiệu cắt tóc' },
+    { word: 'プレイガイド', kanji: 'プレイガイド', romaji: 'pureigaido', mean: 'Quầy bán vé (trong nhà hát)' },
+    { word: 'どくしん', kanji: '独身', romaji: 'dokushin', mean: 'Độc thân' },
+    { word: 'とくに', kanji: '特に', romaji: 'tokuni', mean: 'Đặc biệt' },
+    { word: 'おもいだします', kanji: '思い出します', romaji: 'omoidashimasu', mean: 'Nhớ lại, hồi tưởng lại' },
+    { word: 'ごかぞく', kanji: 'ご家族', romaji: 'gokazoku', mean: 'Gia đình (dùng cho người khác)' },
+    { word: 'いらっしゃいます', kanji: 'いらっしゃいます', romaji: 'irasshaimasu', mean: 'Thể kính trọng của 「います」' },
+    { word: 'こうこう', kanji: '高校', romaji: 'koukou', mean: 'Trường trung học phổ thông' },
+    // Reference Words: Professions
+    { word: 'かいしゃいん', kanji: '会社員', romaji: 'kaishain', mean: 'Nhân viên công ty' },
+    { word: 'こうむいん', kanji: '公務員', romaji: 'koumuin', mean: 'Công chức' },
+    { word: 'えきいん', kanji: '駅員', romaji: 'ekiin', mean: 'Nhân viên nhà ga' },
+    { word: 'ぎんこういん', kanji: '銀行員', romaji: 'ginkouin', mean: 'Nhân viên ngân hàng' },
+    { word: 'ゆうびんきょくいん', kanji: '郵便局員', romaji: 'yuubinkyokuin', mean: 'Nhân viên bưu điện' },
+    { word: 'てんいん', kanji: '店員', romaji: 'tenin', mean: 'Nhân viên cửa hàng' },
+    { word: 'ちょうりし', kanji: '調理師', romaji: 'chourishi', mean: 'Đầu bếp' },
+    { word: 'りようし', kanji: '理容師', romaji: 'riyoushi', mean: 'Thợ cắt tóc' },
+    { word: 'びようし', kanji: '美容師', romaji: 'biyoushi', mean: 'Mỹ viện gia' },
+    { word: 'きょうし', kanji: '教師', romaji: 'kyoushi', mean: 'Giáo viên' },
+    { word: 'べんごし', kanji: '弁護士', romaji: 'bengoshi', mean: 'Luật sư' },
+    { word: 'けんきゅうしゃ', kanji: '研究者', romaji: 'kenkyuusha', mean: 'Nhà nghiên cứu' },
+    { word: 'いしゃ', kanji: '医者', romaji: 'isha', mean: 'Bác sĩ' },
+    { word: 'かんごし', kanji: '看護師', romaji: 'kangoshi', mean: 'Y tá' },
+    { word: 'うんてんしゅ', kanji: '運転手', romaji: 'untenshu', mean: 'Tài xế' },
+    { word: 'けいさつかん', kanji: '警察官', romaji: 'keisatsukan', mean: 'Cảnh sát' },
+    { word: 'がいこうかん', kanji: '外交官', romaji: 'gaikoukan', mean: 'Nhà ngoại giao' },
+    { word: 'せいじか', kanji: '政治家', romaji: 'seijika', mean: 'Chính khách, nhà chính trị' },
+    { word: 'がか', kanji: '画家', romaji: 'gaka', mean: 'Họa sĩ' },
+    { word: 'さっか', kanji: '作家', romaji: 'sakka', mean: 'Nhà văn' },
+    { word: 'おんがくか', kanji: '音楽家', romaji: 'ongakuka', mean: 'Nhạc sĩ' },
+    { word: 'けんちくか', kanji: '建築家', romaji: 'kenchikuka', mean: 'Kiến trúc sư' },
+    { word: 'エンジニア', kanji: 'エンジニア', romaji: 'enjinia', mean: 'Kỹ sư' },
+    { word: 'デザイナー', kanji: 'デザイナー', romaji: 'dezainaa', mean: 'Nhà thiết kế' },
+    { word: 'ジャーナリスト', kanji: 'ジャーナリスト', romaji: 'jaanarisuto', mean: 'Nhà báo' },
+    { word: 'かしゅ', kanji: '歌手', romaji: 'kashu', mean: 'Ca sĩ' },
+    { word: 'はいゆう', kanji: '俳優', romaji: 'haiyuu', mean: 'Diễn viên' },
+    { word: 'スポーツせんしゅ', kanji: 'スポーツ選手', romaji: 'supootsusenshu', mean: 'Vận động viên' }
+  ],
+  grammar: [],
+  kaiwa: [],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
@@ -12239,6 +12305,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 12) return lesson12Data;
   if (id === 13) return lesson13Data;
   if (id === 14) return lesson14Data;
+  if (id === 15) return lesson15Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
