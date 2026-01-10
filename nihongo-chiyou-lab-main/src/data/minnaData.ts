@@ -11567,6 +11567,68 @@ const lesson8Data: LessonDetail = {
   quiz: []
 };
 
+// Detailed data for Lesson 9
+export const lesson9Data: LessonDetail = {
+  id: 9,
+  title: "Sở thích",
+  vocabulary: [
+    { word: 'わかります', kanji: '分かります', romaji: 'wakarimasu', mean: 'Hiểu' },
+    { word: 'あります', kanji: 'あります', romaji: 'arimasu', mean: 'Có (sở hữu)' },
+    { word: 'すき', kanji: '好き[な]', romaji: 'suki', mean: 'Thích' },
+    { word: 'きらい', kanji: '嫌い[な]', romaji: 'kirai', mean: 'Ghét, không thích' },
+    { word: 'じょうず', kanji: '上手[な]', romaji: 'jouzu', mean: 'Giỏi', kanjiDetails: [] },
+    { word: 'へた', kanji: '下手[な]', romaji: 'heta', mean: 'Kém' },
+    { word: 'りょうり', kanji: '料理', romaji: 'ryouri', mean: 'Món ăn, việc nấu ăn' },
+    { word: 'のみもの', kanji: '飲み物', romaji: 'nomimono', mean: 'Đồ uống' },
+    { word: 'スポーツ', kanji: 'スポーツ', romaji: 'supootsu', mean: 'Thể thao (~を します: chơi thể thao)' },
+    { word: 'やきゅう', kanji: '野球', romaji: 'yakyuu', mean: 'Bóng chày (~を します: chơi bóng chày)' },
+    { word: 'ダンス', kanji: 'ダンス', romaji: 'dansu', mean: 'Nhảy, khiêu vũ (~を します: nhảy, khiêu vũ)' },
+    { word: 'おんがく', kanji: '音楽', romaji: 'ongaku', mean: 'Âm nhạc' },
+    { word: 'うた', kanji: '歌', romaji: 'uta', mean: 'Bài hát' },
+    { word: 'クラシック', kanji: 'クラシック', romaji: 'kurashikku', mean: 'Nhạc cổ điển' },
+    { word: 'ジャズ', kanji: 'ジャズ', romaji: 'jazu', mean: 'Nhạc jazz' },
+    { word: 'コンサート', kanji: 'コンサート', romaji: 'konsaato', mean: 'Buổi hòa nhạc' },
+    { word: 'カラオケ', kanji: 'カラオケ', romaji: 'karaoke', mean: 'Karaoke' },
+    { word: 'かぶき', kanji: '歌舞伎', romaji: 'kabuki', mean: 'Kabuki (một thể loại ca kịch truyền thống của Nhật)' },
+    { word: 'え', kanji: '絵', romaji: 'e', mean: 'Tranh, hội họa' },
+    { word: 'じ', kanji: '字', romaji: 'ji', mean: 'Chữ' },
+    { word: 'かんじ', kanji: '漢字', romaji: 'kanji', mean: 'Chữ Hán' },
+    { word: 'ひらがな', kanji: 'ひらがな', romaji: 'hiragana', mean: 'Chữ Hiragana' },
+    { word: 'かたかな', kanji: 'かたかな', romaji: 'katakana', mean: 'Chữ Katakana' },
+    { word: 'ローマじ', kanji: 'ローマ字', romaji: 'roomaji', mean: 'Chữ La Mã' },
+    { word: 'こまかい おかね', kanji: '細かい お金', romaji: 'komakai okane', mean: 'Tiền lẻ' },
+    { word: 'チケット', kanji: 'チケット', romaji: 'chiketto', mean: 'Vé (xem hòa nhạc, xem phim)' },
+    { word: 'じかん', kanji: '時間', romaji: 'jikan', mean: 'Thời gian' },
+    { word: 'ようじ', kanji: '用事', romaji: 'youji', mean: 'Việc bận, công chuyện' },
+    { word: 'やくそく', kanji: '約束', romaji: 'yakusoku', mean: 'Cuộc hẹn, lời hứa' },
+    { word: 'ごしゅじん', kanji: 'ご主人', romaji: 'goshujin', mean: 'Chồng (dùng khi nói về chồng người khác)' },
+    { word: 'おっと / しゅじん', kanji: '夫 / 主人', romaji: 'otto / shujin', mean: 'Chồng (dùng khi nói về chồng mình)' },
+    { word: 'おくさん', kanji: '奥さん', romaji: 'okusan', mean: 'Vợ (dùng khi nói về vợ người khác)' },
+    { word: 'つま / かない', kanji: '妻 / 家内', romaji: 'tsuma / kanai', mean: 'Vợ (dùng khi nói về vợ mình)' },
+    { word: 'こども', kanji: '子ども', romaji: 'kodomo', mean: 'Con cái' },
+    { word: 'よく', kanji: 'よく', romaji: 'yoku', mean: 'Tốt, rõ (chỉ mức độ)' },
+    { word: 'だいたい', kanji: 'だいたい', romaji: 'daitai', mean: 'Đại khái, đại thể' },
+    { word: 'たくさん', kanji: 'たくさん', romaji: 'takusan', mean: 'Nhiều' },
+    { word: 'すこし', kanji: '少し', romaji: 'sukoshi', mean: 'Ít, một ít' },
+    { word: 'ぜんぜん', kanji: '全然', romaji: 'zenzen', mean: 'Hoàn toàn ~ không' },
+    { word: 'はやく', kanji: '早く、速く', romaji: 'hayaku', mean: 'Sớm, nhanh' },
+    { word: '～から', kanji: '～から', romaji: 'kara', mean: 'Vì ~' },
+    { word: 'どうして', kanji: 'どうして', romaji: 'doushite', mean: 'Tại sao' },
+    { word: 'ざんねんですね', kanji: '残念ですね', romaji: 'zannen desu ne', mean: 'Thật đáng tiếc nhỉ./ Buồn nhỉ.' },
+    { word: 'すみません', kanji: 'すみません', romaji: 'sumimasen', mean: 'Xin lỗi.' },
+    { word: 'もしもし', kanji: 'もしもし', romaji: 'moshimoshi', mean: 'A-lô' },
+    { word: 'ああ', kanji: 'ああ', romaji: 'aa', mean: 'A (cách nói khi đã gặp được đúng người trên điện thoại)' },
+    { word: 'いっしょに いかがですか', kanji: '一緒に いかがですか', romaji: 'isshoni ikaga desu ka', mean: 'Anh/Chị cùng ~ (làm cái gì đó) với chúng tôi có được không?' },
+    { word: '～はちょっと', kanji: '[～は] ちょっと……', romaji: '[~wa] chotto...', mean: '[~ thì] có lẽ không được rồi. (cách từ chối khéo)' },
+    { word: 'だめですか', kanji: 'だめですか', romaji: 'dame desu ka', mean: 'Không được à?' },
+    { word: 'また こんど おねがいします', kanji: 'また 今度 お願いします', romaji: 'mata kondo onegaishimasu', mean: 'Hẹn anh/chị lần sau vậy. (cách từ chối khéo)' },
+    { word: 'おざわ せいじ', kanji: '小沢 征爾', romaji: 'Ozawa Seiji', mean: 'Ozawa Seiji (1935~), một nhạc trưởng nổi tiếng của Nhật' }
+  ],
+  grammar: [],
+  kaiwa: [],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
@@ -11577,6 +11639,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 6) return lesson6Data;
   if (id === 7) return lesson7Data;
   if (id === 8) return lesson8Data;
+  if (id === 9) return lesson9Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
