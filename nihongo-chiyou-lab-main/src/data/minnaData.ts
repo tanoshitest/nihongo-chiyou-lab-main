@@ -12320,6 +12320,62 @@ export const lesson15Data: LessonDetail = {
   quiz: []
 };
 
+export const lesson16Data: LessonDetail = {
+  id: 16,
+  title: 'Bài 16',
+  vocabulary: [
+    { word: 'のります', kanji: '乗ります', romaji: 'norimasu', mean: 'Đi, lên [tàu]' },
+    { word: 'おります', kanji: '降ります', romaji: 'orimasu', mean: 'Xuống [tàu]' },
+    { word: 'のりかえます', kanji: '乗り換えます', romaji: 'norikaemasu', mean: 'Chuyển, đổi (tàu)' },
+    { word: 'あびます', kanji: '浴びます', romaji: 'abimasu', mean: 'Tắm [vòi hoa sen]' },
+    { word: 'いれます', kanji: '入れます', romaji: 'iremasu', mean: 'Cho vào, bỏ vào' },
+    { word: 'だします', kanji: '出します', romaji: 'dashimasu', mean: 'Lấy ra, rút (tiền)' },
+    { word: 'はいります', kanji: '入ります', romaji: 'hairimasu', mean: 'Vào, nhập học [đại học]' },
+    { word: 'でます', kanji: '出ます', romaji: 'demasu', mean: 'Ra, tốt nghiệp [đại học]' },
+    { word: 'やめます', kanji: '辞めます', romaji: 'yamemasu', mean: 'Bỏ, thôi [việc công ty]' },
+    { word: 'おします', kanji: '押します', romaji: 'oshimasu', mean: 'Bấm, ấn (nút)' },
+    { word: 'わかい', kanji: '若い', romaji: 'wakai', mean: 'Trẻ' },
+    { word: 'ながい', kanji: '長い', romaji: 'nagai', mean: 'Dài' },
+    { word: 'みじかい', kanji: '短い', romaji: 'mijikai', mean: 'Ngắn' },
+    { word: 'あかるい', kanji: '明るい', romaji: 'akarui', mean: 'Sáng' },
+    { word: 'くらい', kanji: '暗い', romaji: 'kurai', mean: 'Tối' },
+    { word: 'せがたかい', kanji: '背が高い', romaji: 'segatakai', mean: 'Cao (dùng cho người)' },
+    { word: 'あたまがいい', kanji: '頭がいい', romaji: 'atamagaii', mean: 'Thông minh' },
+    { word: 'からだ', kanji: '体', romaji: 'karada', mean: 'Người, cơ thể' },
+    { word: 'あたま', kanji: '頭', romaji: 'atama', mean: 'Đầu' },
+    { word: 'かみ', kanji: '髪', romaji: 'kami', mean: 'Tóc' },
+    { word: 'かお', kanji: '顔', romaji: 'kao', mean: 'Mặt' },
+    { word: 'め', kanji: '目', romaji: 'me', mean: 'Mắt' },
+    { word: 'みみ', kanji: '耳', romaji: 'mimi', mean: 'Tai' },
+    { word: 'くち', kanji: '口', romaji: 'kuchi', mean: 'Miệng' },
+    { word: 'は', kanji: '歯', romaji: 'ha', mean: 'Răng' },
+    { word: 'おなか', kanji: 'お腹', romaji: 'onaka', mean: 'Bụng' },
+    { word: 'あし', kanji: '足', romaji: 'ashi', mean: 'Chân' },
+    { word: 'サービス', kanji: 'サービス', romaji: 'saabisu', mean: 'Dịch vụ' },
+    { word: 'ジョギング', kanji: 'ジョギング', romaji: 'jogingu', mean: 'Việc chạy bộ (~wo shimasu: chạy bộ)' },
+    { word: 'シャワー', kanji: 'シャワー', romaji: 'shawaa', mean: 'Vòi hoa sen' },
+    { word: 'みどり', kanji: '緑', romaji: 'midori', mean: 'Màu xanh lá cây' },
+    { word: 'おてら', kanji: '[お]寺', romaji: 'tera', mean: 'Chùa' },
+    { word: 'じんじゃ', kanji: '神社', romaji: 'jinja', mean: 'Đền thờ đạo Thần' },
+    { word: 'りゅうがくせい', kanji: '留学生', romaji: 'ryuugakusei', mean: 'Lưu học sinh, du học sinh' },
+    { word: 'ばん', kanji: '番', romaji: 'ban', mean: 'Số ~' },
+    { word: 'どうやって', kanji: 'どうやって', romaji: 'douyatte', mean: 'Làm thế nào ~' },
+    { word: 'どの', kanji: 'どの', romaji: 'dono', mean: 'Cái nào ~ (dùng đối với trường hợp từ ba thứ trở lên)' },
+    { word: 'いいえ、まだまだです', kanji: 'いいえ、まだまだです', romaji: 'iiemadamadadesu', mean: '[Không,] tôi còn kém lắm. (cách nói khiêm nhường khi được ai đó khen)' },
+    { word: 'おひきだしですか', kanji: 'お引き出しですか', romaji: 'ohikidashidesuka', mean: 'Anh/Chị rút tiền ạ?' },
+    { word: 'まず', kanji: 'まず', romaji: 'mazu', mean: 'Trước hết, đầu tiên' },
+    { word: 'キャッシュカード', kanji: 'キャッシュカード', romaji: 'kyasshukaado', mean: 'Thẻ ngân hàng, thẻ ATM' },
+    { word: 'あんしょうばんごう', kanji: '暗証番号', romaji: 'anshoubangou', mean: 'Mã số bí mật (mật khẩu)' },
+    { word: 'つぎに', kanji: '次に', romaji: 'tsugini', mean: 'Tiếp theo' },
+    { word: 'きんがく', kanji: '金額', romaji: 'kingaku', mean: 'Số tiền, khoản tiền' },
+    { word: 'かくにん', kanji: '確認', romaji: 'kakunin', mean: 'Sự xác nhận, sự kiểm tra (~shimasu: xác nhận)' },
+    { word: 'ボタン', kanji: 'ボタン', romaji: 'botan', mean: 'Nút' }
+  ],
+  grammar: [],
+  kaiwa: [],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
@@ -12337,6 +12393,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 13) return lesson13Data;
   if (id === 14) return lesson14Data;
   if (id === 15) return lesson15Data;
+  if (id === 16) return lesson16Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
