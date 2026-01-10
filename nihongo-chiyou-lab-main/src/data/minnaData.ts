@@ -12456,7 +12456,44 @@ export const lesson17Data: LessonDetail = {
     { word: 'のど', kanji: 'のど', romaji: 'nodo', mean: 'Họng' },
     { word: 'おだいじに。', kanji: 'お大事に。', romaji: 'odaijini', mean: 'Anh/Chị nhớ giữ gìn sức khỏe. (câu nói với người bị ốm hoặc bị bệnh)' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      id: 1,
+      structure: 'Động từ thể ない',
+      explanation: 'Cách chia động từ thể Nai (Phủ định ngắn):\n1. Nhóm I: Chuyển âm cuối hàng [i] sang hàng [a] rồi thêm [nai]. (Ngoại lệ: âm cuối [i] -> [wanai]).\nVí dụ: kakimasu -> kakanai, yomimasu -> yomanai, aimasu -> awanai.\n2. Nhóm II: Bỏ [masu] thêm [nai].\nVí dụ: tabemasu -> tabenai, mimasu -> minai.\n3. Nhóm III: shimasu -> shinai, kimasu -> konai.',
+      example: '書きます -> 書かない (Không viết)\n食べます -> 食べない (Không ăn)\n勉強します -> 勉強しない (Không học)\n来ます -> 来ない (Không đến)'
+    },
+    {
+      id: 2,
+      structure: 'Động từ thể ない + で ください',
+      explanation: 'Mẫu câu dùng khi muốn yêu cầu, nhờ vả ai đó đừng làm một việc gì đó. (Xin đừng/Không được...).',
+      example: 'わたしは 元気ですから、心配しないで ください。 (Tôi khỏe nên anh/chị đừng lo lắng.)\nここで 写真を 撮らないで ください。 (Xin đừng chụp ảnh ở đây.)'
+    },
+    {
+      id: 3,
+      structure: 'Động từ thể ない (bỏ い) + ければ なりません',
+      explanation: 'Mẫu câu biểu thị sự bắt buộc phải làm gì đó (nếu không làm thì không được). Chú ý: Mẫu câu này không mang ý nghĩa phủ định.',
+      example: '薬を 飲まなければ なりません。 (Tôi phải uống thuốc.)\n明日は 早く 起きなければ なりません。 (Ngày mai tôi phải dậy sớm.)'
+    },
+    {
+      id: 4,
+      structure: 'Động từ thể ない (bỏ い) + くても いいです',
+      explanation: 'Mẫu câu biểu thị sự không cần thiết phải làm gì đó (không làm cũng được).',
+      example: 'あした 来なくても いいです。 (Ngày mai anh/chị không đến cũng được.)\n靴を 脱がなくても いいです。 (Anh/Chị không cần cởi giày cũng được.)'
+    },
+    {
+      id: 5,
+      structure: 'Danh từ (tân ngữ) は',
+      explanation: 'Khi muốn nhấn mạnh vào tân ngữ của hành động, ta đưa tân ngữ lên làm chủ đề của câu (thay trợ từ [o] bằng [wa]).',
+      example: 'ここに 荷物を 置かないで ください。 (Đừng để hành lý ở đây.)\n-> 荷物は ここに 置かないで ください。 (Hành lý thì xin đừng để ở đây.)\n会社の 食堂で 昼ごはんを 食べます。\n-> 昼ごはんは 会社の 食堂で 食べます。 (Cơm trưa thì tôi ăn ở nhà ăn của công ty.)'
+    },
+    {
+      id: 6,
+      structure: 'Danh từ (thời gian) までに + Động từ',
+      explanation: 'Biểu thị thời hạn mà hành động phải được thực hiện (trước thời điểm đó). Khác với [made] (cho đến khi).',
+      example: '会議は 5時までに 終わります。 (Cuộc họp sẽ kết thúc trước 5 giờ.)\n土曜日までに 本を 返さなければ なりません。 (Phải trả sách trước thứ Bảy.)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
