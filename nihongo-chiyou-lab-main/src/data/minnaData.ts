@@ -11898,6 +11898,93 @@ export const lesson11Data: LessonDetail = {
   quiz: []
 };
 
+export const lesson12Data: LessonDetail = {
+  id: 12,
+  title: 'Bài 12',
+  vocabulary: [
+    { word: 'かんたん「な」', kanji: '簡単「な」', romaji: 'kantan', mean: 'Đơn giản, dễ' },
+    { word: 'ちかい', kanji: '近い', romaji: 'chikai', mean: 'Gần' },
+    { word: 'とおい', kanji: '遠い', romaji: 'tooi', mean: 'Xa' },
+    { word: 'はやい', kanji: '速い、早い', romaji: 'hayai', mean: 'Nhanh, sớm' },
+    { word: 'おそい', kanji: '遅い', romaji: 'osoi', mean: 'Chậm, muộn' },
+    { word: 'おおい', kanji: '多い', romaji: 'ooi', mean: 'Nhiều [người]' },
+    { word: 'すくない', kanji: '少ない', romaji: 'sukunai', mean: 'Ít [người]' },
+    { word: 'あたたかい', kanji: '暖かい、温かい', romaji: 'atatakai', mean: 'Ấm' },
+    { word: 'すずしい', kanji: '涼しい', romaji: 'suzushii', mean: 'Mát' },
+    { word: 'あまい', kanji: '甘い', romaji: 'amai', mean: 'Ngọt' },
+    { word: 'からい', kanji: '辛い', romaji: 'karai', mean: 'Cay' },
+    { word: 'おもい', kanji: '重い', romaji: 'omoi', mean: 'Nặng' },
+    { word: 'かるい', kanji: '軽い', romaji: 'karui', mean: 'Nhẹ' },
+    { word: 'いい', kanji: 'いい', romaji: 'ii', mean: 'Thích, chọn, dùng [cà-phê]' },
+    { word: 'きせつ', kanji: '季節', romaji: 'kisetsu', mean: 'Mùa' },
+    { word: 'はる', kanji: '春', romaji: 'haru', mean: 'Mùa xuân' },
+    { word: 'なつ', kanji: '夏', romaji: 'natsu', mean: 'Mùa hè' },
+    { word: 'あき', kanji: '秋', romaji: 'aki', mean: 'Mùa thu' },
+    { word: 'ふゆ', kanji: '冬', romaji: 'fuyu', mean: 'Mùa đông' },
+    { word: 'てんき', kanji: '天気', romaji: 'tenki', mean: 'Thời tiết' },
+    { word: 'あめ', kanji: '雨', romaji: 'ame', mean: 'Mưa' },
+    { word: 'ゆき', kanji: '雪', romaji: 'yuki', mean: 'Tuyệt' },
+    { word: 'くもり', kanji: '曇り', romaji: 'kumori', mean: 'Có mây' },
+    { word: 'ホテル', kanji: 'ホテル', romaji: 'hoteru', mean: 'Khách sạn' },
+    { word: 'くうこう', kanji: '空港', romaji: 'kuukou', mean: 'Sân bay' },
+    { word: 'うみ', kanji: '海', romaji: 'umi', mean: 'Biển, đại dương' },
+    { word: 'せかい', kanji: '世界', romaji: 'sekai', mean: 'Thế giới' },
+    { word: 'パーティー', kanji: 'パーティー', romaji: 'paatii', mean: 'Tiệc' },
+    { word: '「お」まつり', kanji: '「お」祭り', romaji: '[o]bento', mean: 'Lễ hội' },
+    { word: 'しけん', kanji: '試験', romaji: 'shiken', mean: 'Kỳ thi, bài thi' },
+    { word: 'すきやき', kanji: 'すき焼き', romaji: 'sukiyaki', mean: 'Sukiyaki (món thịt bò nấu rau)' },
+    { word: 'さしみ', kanji: '刺身', romaji: 'sashimi', mean: 'Sashimi (món gỏi cá sống)' },
+    { word: '「お」すし', kanji: '「お」すし', romaji: '[o]sushi', mean: 'Sushi' },
+    { word: 'てんぷら', kanji: 'てんぷら', romaji: 'tempura', mean: 'Tempura (món hải sản và rau chiên tẩm bột)' },
+    { word: 'いけばな', kanji: '生け花', romaji: 'ikebana', mean: 'Nghệ thuật cắm hoa' },
+    { word: 'もみじ', kanji: '紅葉', romaji: 'momiji', mean: 'Lá đỏ' },
+    { word: 'どちら', kanji: 'どちら', romaji: 'dochira', mean: 'Cái nào' },
+    { word: 'どちらも', kanji: 'どちらも', romaji: 'dochiramo', mean: 'Cả hai' },
+    { word: 'ずっと', kanji: 'ずっと', romaji: 'zutto', mean: '(Hơn) hẳn' },
+    { word: 'はじめて', kanji: '初めて', romaji: 'hajimete', mean: 'Lần đầu tiên' },
+    { word: 'ただいま', kanji: 'ただいま', romaji: 'tadaima', mean: 'Tôi đã về đây.' },
+    { word: 'おかえりなさい', kanji: 'お帰りなさい', romaji: 'okaerinasai', mean: 'Anh/Chị đã về đấy à.' },
+    { word: 'すごいですね', kanji: 'すごいですね', romaji: 'sugoidesune', mean: 'Ghê quá nhỉ, hay quá nhỉ.' },
+    { word: 'でも', kanji: 'でも', romaji: 'demo', mean: 'Nhưng' },
+    { word: 'つかれました', kanji: '疲れました', romaji: 'tsukaremashita', mean: 'Tôi mệt rồi.' },
+    // Reference Words: Festivals and Places
+    { word: 'ぎおんまつり', kanji: '祇園祭', romaji: 'gionmatsuri', mean: 'Lễ hội Gion (Kyoto)' },
+    { word: 'ホンコン', kanji: 'ホンコン', romaji: 'honkon', mean: 'Hồng Kông' },
+    { word: 'シンガポール', kanji: 'シンガポール', romaji: 'shingapooru', mean: 'Singapore' },
+    { word: 'きんかくじ', kanji: '金閣寺', romaji: 'kinkakuji', mean: 'Chùa Vàng (Kinkakuji)' },
+    { word: 'とうしょうぐう', kanji: '東照宮', romaji: 'toushouguu', mean: 'Đền Nikko Toshogu' }
+  ],
+  grammar: [
+    {
+      pattern: 'Thời quá khứ của câu danh từ và tính từ đuôi ' + 'な',
+      explanation: 'Khẳng định quá khứ: Danh từ/Tính từ đuôi Na + でした (đã là/đã từng).\nPhủ định quá khứ: Danh từ/Tính từ đuôi Na + じゃ ありませんでした (đã không phải là).',
+      example: 'きょうは 雨でした。 (Hôm qua trời mưa.)\nきのうの 試験は 簡単じゃ ありませんでした。 (Bài thi hôm qua không dễ.)'
+    },
+    {
+      pattern: 'Thời quá khứ của tính từ đuôi ' + 'い',
+      explanation: 'Khẳng định quá khứ: Bỏ い thêm かったです (đã...).\nPhủ định quá khứ: Bỏ い thêm くなかったです (đã không...).',
+      example: 'きのうは 暑かったです。 (Hôm qua trời nóng.)\nきのうの パーティーは あまり たのしくなかったです。 (Bữa tiệc hôm qua không vui lắm.)'
+    },
+    {
+      pattern: 'N1 は N2 より Adj です',
+      explanation: 'So sánh hơn: N1 có tính chất (Adj) hơn N2.',
+      example: 'この 車は あの 車より 大きいです。 (Xe ô-tô này lớn hơn xe ô-tô kia.)'
+    },
+    {
+      pattern: 'N1 と N2 と どちらが Adj ですか',
+      explanation: 'Câu hỏi lựa chọn giữa 2 đối tượng: N1 và N2 thì cái nào (Adj) hơn? Trả lời: N1/N2 の ほうが Adj です (N1/N2 thì ... hơn).',
+      example: 'サッカーと 野球と どちらが おもしろいですか。 (Bóng đá và bóng chày, môn nào thú vị hơn?)\n...サッカーの ほうが おもしろいです。 (...Bóng đá thú vị hơn.)'
+    },
+    {
+      pattern: 'N1 [の 中]で [Interrogative] が いちばん Adj ですか',
+      explanation: 'So sánh nhất trong một phạm vi/nhóm (N1). Từ để hỏi (nani, doko, dare, itsu) thay đổi tùy theo đối tượng. Trả lời: [Object] が いちばん Adj です (Cái ... là nhất).',
+      example: '日本料理 [の 中]で 何が いちばん おいしいですか。 (Trong các món ăn Nhật Bản, món nào ngon nhất?)\n...てんぷらが いちばん おいしいです。 (...Món Tempura ngon nhất.)'
+    }
+  ],
+  kaiwa: [],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
