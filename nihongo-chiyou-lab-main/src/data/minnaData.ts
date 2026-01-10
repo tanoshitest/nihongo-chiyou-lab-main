@@ -12175,7 +12175,50 @@ export const lesson14Data: LessonDetail = {
     { word: 'かたみち', kanji: '片道', romaji: 'katamichi', mean: 'Một chiều' },
     { word: 'おうふく', kanji: '往復', romaji: 'oufuku', mean: 'Hai chiều, đi và về' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      id: 1,
+      structure: 'Chia cách động từ (Verb Groups)',
+      explanation: 'Động từ tiếng Nhật được chia làm 3 nhóm.\nNhóm I: Âm cuối của thể ます thuộc cột い (kikimasu, nomimasu).\nNhóm II: Âm cuối của thể ます thuộc cột え (tabemasu) hoặc một số ngoại lệ cột い (mimasu, okimasu).\nNhóm III: shimasu, kimasu và Danh từ hành động + shimasu.',
+      example: 'Nhóm I: かきます (viết), のみます (uống)\nNhóm II: たべます (ăn), みせます (cho xem), みます (xem)\nNhóm III: します (làm), きます (đến), べんきょうします (học)'
+    },
+    {
+      id: 2,
+      structure: 'Thể て của động từ (Te-form)',
+      explanation: 'Cách chia thể て:\nNhóm I:\n- ki -> ite, gi -> ide\n- ni, bi, mi -> nde\n- i, chi, ri -> tte\n- shi -> shite\n*Ngoại lệ: ikimasu -> itte\nNhóm II: Bỏ ます thêm て\nNhóm III: Bỏ ます thêm て',
+      example: 'かきます -> かいて (kaite)\nのみます -> のんで (nonde)\nかいます -> かって (katte)\nたべます -> たべて (tabete)\nします -> して (shite)'
+    },
+    {
+      id: 3,
+      structure: 'Động từ thể て + ください',
+      explanation: 'Mẫu câu dùng khi muốn nhờ vả, sai khiến hoặc khuyên nhủ người nghe làm gì một cách lịch sự.',
+      example: 'すみませんが、この 漢字の 読み方を 教えて ください。 (Xin lỗi, hãy chỉ cho tôi cách đọc chữ Hán này.)\nここに 住所と 名前を 書いて ください。 (Anh/Chị hãy viết địa chỉ và tên vào đây.)\nぜひ 遊びに 来て ください。 (Anh/Chị nhất định đến chơi nhé.)'
+    },
+    {
+      id: 4,
+      structure: 'Động từ thể て + います',
+      explanation: 'Biểu thị một hành động đang diễn ra tại thời điểm nói.',
+      example: 'ミラーさんは 今 電話を かけて います。 (Bây giờ anh Miller đang gọi điện thoại.)\n今 雨が 降って いますか。 (Bây giờ trời có mưa không?)\n...はい、降って います。 (...Có, trời đang mưa.)'
+    },
+    {
+      id: 5,
+      structure: 'Động từ thể ます + ましょうか',
+      explanation: 'Dùng khi người nói muốn nêu ra đề nghị làm một việc gì đó giúp cho người nghe.',
+      example: 'あしたも 来ましょうか。 (Ngày mai tôi cũng đến nhé?)\n...ええ、10時に 来て ください。 (...Vâng, anh hãy đến lúc 10 giờ.)\n傘を 貸しましょうか。 (Tôi cho anh mượn ô nhé?)\n...すみません。おねがいします。 (...Cám ơn. Nhờ anh.)\n荷物を 持ちましょうか。 (Tôi mang hành lý giúp anh nhé?)'
+    },
+    {
+      id: 6,
+      structure: 'Câu 1 が、 Câu 2',
+      explanation: '「が」 là trợ từ nối tiếp, dùng để mở đầu câu nói một cách nhẹ nhàng, tự nhiên. Có nghĩa là "xin lỗi", "nhưng mà"...',
+      example: '失礼ですが、お名前は？ (Xin lỗi, tên anh là gì ạ?)\nすみませんが、塩を 取って ください。 (Xin lỗi, làm ơn lấy giúp tôi muối.)'
+    },
+    {
+      id: 7,
+      structure: 'Danh từ が Động từ',
+      explanation: 'Khi muốn miêu tả một hiện tượng tự nhiên thì dùng 「が」 trước chủ thể đó.',
+      example: '雨が 降って います。 (Trời đang mưa.)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
