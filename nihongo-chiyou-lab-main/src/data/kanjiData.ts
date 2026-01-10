@@ -11068,6 +11068,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "みやこ",
     meaning: "Đô, Kinh đô",
     sinoVietnamese: "Đô",
+    radicals: "者 (giả) + 阝 (ấp)",
+    mnemonic: "Người (者) tập trung ở thành phố (阝) là kinh đô.",
     examples: [
       {
         japanese: "東京都",
@@ -11100,6 +11102,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Huyện, Tỉnh",
     sinoVietnamese: "Huyện",
+    radicals: "目 (mục) + 乚 (ẩn)",
+    mnemonic: "Dùng mắt (目) nhìn bản đồ treo (乚) của huyện.",
     examples: [
       {
         japanese: "県",
@@ -11127,6 +11131,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Khu, Quận",
     sinoVietnamese: "Khu",
+    radicals: "匚 (phương) + メ (nhân)",
+    mnemonic: "Cất đồ quý (X) vào trong hộp (匚) riêng biệt.",
     examples: [
       {
         japanese: "区",
@@ -11159,6 +11165,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "いち",
     meaning: "Thị, Thành phố, Chợ",
     sinoVietnamese: "Thị",
+    radicals: "亠 (đầu) + 巾 (cân)",
+    mnemonic: "Người đội khăn (巾) đi lại tấp nập trong thành phố (亠).",
     examples: [
       {
         japanese: "市",
@@ -11191,6 +11199,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "まち",
     meaning: "Đinh, Thị trấn",
     sinoVietnamese: "Đinh",
+    radicals: "田 (điền) + 丁 (đinh)",
+    mnemonic: "Ruộng (田) ở thị trấn được canh tác bởi tráng đinh (丁).",
     examples: [
       {
         japanese: "町",
@@ -11218,6 +11228,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "むら",
     meaning: "Thôn, Làng",
     sinoVietnamese: "Thôn",
+    radicals: "木 (mộc) + 寸 (thốn)",
+    mnemonic: "Ngôi làng trồng cây (木) theo quy chuẩn (寸).",
     examples: [
       {
         japanese: "村",
@@ -11245,6 +11257,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "あか・るい、あ・ける",
     meaning: "Minh, Sáng",
     sinoVietnamese: "Minh",
+    radicals: "日 (nhật) + 月 (nguyệt)",
+    mnemonic: "Mặt trời (日) và mặt trăng (月) cùng chiếu sáng.",
     examples: [
       {
         japanese: "明るい",
@@ -11277,6 +11291,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "くろ、くろ・い",
     meaning: "Hắc, Đen",
     sinoVietnamese: "Hắc",
+    radicals: "里 (lý) + 灬 (hỏa)",
+    mnemonic: "Lửa (灬) thiêu rụi ngôi làng (里) thành màu đen.",
     examples: [
       {
         japanese: "黒い",
@@ -11304,6 +11320,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Kinh, Kinh đô",
     sinoVietnamese: "Kinh",
+    radicals: "亠 (đầu) + 口 (khẩu) + 小 (tiểu)",
+    mnemonic: "Kinh đô có lầu cao (亠), cổng lớn (口) và dân chúng (小).",
     examples: [
       {
         japanese: "東京",
@@ -11326,10 +11344,13 @@ export const kanjiData: KanjiCard[] = [
     id: 311,
     kanji: "森",
     lesson: 4,
+    imageUrl: "/images/kanji/311_forest_3d.png",
     onyomi: "シン",
     kunyomi: "もり",
     meaning: "Sâm, Rừng rậm",
     sinoVietnamese: "Sâm",
+    radicals: "木 (mộc) + 木 + 木",
+    mnemonic: "Ba cây (木) mọc chụm lại thành rừng rậm.",
     examples: [
       {
         japanese: "森",
@@ -11352,10 +11373,13 @@ export const kanjiData: KanjiCard[] = [
     id: 312,
     kanji: "白",
     lesson: 20,
+    imageUrl: "/images/kanji/312_white_3d.png",
     onyomi: "ハク、ビャク",
     kunyomi: "しろ、しろ・い",
     meaning: "Bạch, Trắng",
     sinoVietnamese: "Bạch",
+    radicals: "丿 (phiệt) + 日 (nhật)",
+    mnemonic: "Ánh mặt trời (日) chiếu xuống (丿) sáng trắng.",
     examples: [
       {
         japanese: "白い",
@@ -11383,10 +11407,13 @@ export const kanjiData: KanjiCard[] = [
     id: 313,
     kanji: "波",
     lesson: 20,
+    imageUrl: "/images/kanji/313_wave_3d.png",
     onyomi: "ハ",
     kunyomi: "なみ",
     meaning: "Ba, Sóng",
     sinoVietnamese: "Ba",
+    radicals: "氵 (thủy) + 皮 (bì)",
+    mnemonic: "Sóng nước (氵) vỗ vào da (皮).",
     examples: [
       {
         japanese: "波",
@@ -11409,10 +11436,13 @@ export const kanjiData: KanjiCard[] = [
     id: 314,
     kanji: "場",
     lesson: 23,
+    imageUrl: "/images/kanji/314_place_3d.png",
     onyomi: "ジョウ",
     kunyomi: "ば",
     meaning: "Trường, Nơi chốn",
     sinoVietnamese: "Trường",
+    radicals: "土 (thổ) + 昜 (dương)",
+    mnemonic: "Nơi đất (土) có ánh dương (昜) chiếu sáng.",
     examples: [
       {
         japanese: "場所",
