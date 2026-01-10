@@ -12645,8 +12645,6 @@ export const lesson19Data: LessonDetail = {
   quiz: []
 };
 
-};
-
 export const lesson20Data: LessonDetail = {
   id: 20,
   title: 'Bài 20',
