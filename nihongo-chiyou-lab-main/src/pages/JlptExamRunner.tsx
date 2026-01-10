@@ -8,7 +8,10 @@ const JlptExamRunner = () => {
   const { level, year, session } = useParams();
   const navigate = useNavigate();
 
-  const sessionLabel = session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12";
+  const isPractice = year === "practice";
+  const sessionLabel = isPractice
+    ? "Luyện tập"
+    : (session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12");
 
   return (
     <Layout>
@@ -18,7 +21,7 @@ const JlptExamRunner = () => {
           <Button
             variant="ghost"
             size="sm"
-            onClick={() => navigate("/jlpt-n5")}
+            onClick={() => navigate(isPractice ? "/jlpt-practice" : "/jlpt-n5")}
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Quay lại danh sách đề
@@ -26,17 +29,19 @@ const JlptExamRunner = () => {
           <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
             <span className="font-medium text-foreground">{level}</span>
             <span>•</span>
-            <span>Năm {year}</span>
+            <span>{isPractice ? "Đề Luyện Tập" : `Năm ${year}`}</span>
             <span>•</span>
             <span>{sessionLabel}</span>
           </div>
         </div>
       </div>
-      
-      <ExamRunner 
-        level={level || "N5"} 
-        year={parseInt(year || "2024")} 
-        session={session as "july" | "december" || "july"} 
+
+      <ExamRunner
+        level={level || "N5"}
+        year={isPractice ? 0 : parseInt(year || "2024")}
+        session={session as any}
+        isPractice={isPractice}
+        practiceId={isPractice ? session : undefined}
       />
     </Layout>
   );

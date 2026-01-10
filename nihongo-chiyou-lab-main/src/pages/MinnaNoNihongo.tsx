@@ -13,6 +13,8 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
   let linkUrl = `/minna/${lesson.id}`;
   if (lesson.id === 9991) linkUrl = "/minna/test-1";
   if (lesson.id === 9992) linkUrl = "/minna/test-2";
+  if (lesson.id === 9993) linkUrl = "/minna/test-3";
+  if (lesson.id === 9994) linkUrl = "/minna/test-4";
 
   return (
     <Card className={cn(
@@ -108,6 +110,8 @@ const MinnaNoNihongo = () => {
   }
 
 
+
+
   // Insert Test 2 after Lesson 4 (index 4)
   if (!lessonsN5WithTest.find(l => l.id === 9992)) {
     const lesson4Index = lessonsN5WithTest.findIndex(l => l.id === 4);
@@ -116,6 +120,32 @@ const MinnaNoNihongo = () => {
         id: 9992,
         title: "Kiểm tra 2",
         description: "Quiz bài 3 4"
+      });
+    }
+  }
+
+
+
+  // Insert Test 3 after Lesson 6 (index 6)
+  if (!lessonsN5WithTest.find(l => l.id === 9993)) {
+    const lesson6Index = lessonsN5WithTest.findIndex(l => l.id === 6);
+    if (lesson6Index !== -1) {
+      lessonsN5WithTest.splice(lesson6Index + 1, 0, {
+        id: 9993,
+        title: "Kiểm tra 3",
+        description: "Quiz bài 5 6"
+      });
+    }
+  }
+
+  // Insert Test 4 after Lesson 8 (index 8)
+  if (!lessonsN5WithTest.find(l => l.id === 9994)) {
+    const lesson8Index = lessonsN5WithTest.findIndex(l => l.id === 8);
+    if (lesson8Index !== -1) {
+      lessonsN5WithTest.splice(lesson8Index + 1, 0, {
+        id: 9994,
+        title: "Kiểm tra 4",
+        description: "Quiz bài 7 8"
       });
     }
   }

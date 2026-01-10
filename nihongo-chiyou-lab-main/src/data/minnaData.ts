@@ -11208,6 +11208,365 @@ export const lesson5Data: LessonDetail = {
 };
 
 
+
+const lesson6Data: LessonDetail = {
+  id: 6,
+  title: 'Bài 6',
+  vocabulary: [
+    { word: 'たべます', kanji: '食べます', romaji: 'tabemasu', mean: 'Ăn' },
+    { word: 'のみます', kanji: '飲みます', romaji: 'nomimasu', mean: 'Uống' },
+    { word: 'すいます', kanji: '吸います', romaji: 'suimasu', mean: 'Hút [thuốc lá]' },
+    { word: 'みます', kanji: '見ます', romaji: 'mimasu', mean: 'Xem, nhìn, trông' },
+    { word: 'ききます', kanji: '聞きます', romaji: 'kikimasu', mean: 'Nghe' },
+    { word: 'よみます', kanji: '読みます', romaji: 'yomimasu', mean: 'Đọc' },
+    { word: 'かきます', kanji: '書きます', romaji: 'kakimasu', mean: 'Viết, vẽ' },
+    { word: 'かいます', kanji: '買います', romaji: 'kaimasu', mean: 'Mua' },
+    { word: 'とります', kanji: '撮ります', romaji: 'torimasu', mean: 'Chụp [ảnh]' },
+    { word: 'します', kanji: 'します', romaji: 'shimasu', mean: 'Làm' },
+    { word: 'あいます', kanji: '会います', romaji: 'aimasu', mean: 'Gặp [bạn]' },
+    { word: 'ごはん', kanji: 'ごはん', romaji: 'gohan', mean: 'Cơm, bữa ăn' },
+    { word: 'あさごはん', kanji: '朝ごはん', romaji: 'asagohan', mean: 'Cơm sáng' },
+    { word: 'ひるごはん', kanji: '昼ごはん', romaji: 'hirugohan', mean: 'Cơm trưa' },
+    { word: 'ばんごはん', kanji: '晩ごはん', romaji: 'bangohan', mean: 'Cơm tối' },
+    { word: 'パン', kanji: 'パン', romaji: 'pan', mean: 'Bánh mì' },
+    { word: 'たまご', kanji: '卵', romaji: 'tamago', mean: 'Trứng' },
+    { word: 'にく', kanji: '肉', romaji: 'niku', mean: 'Thịt' },
+    { word: 'さかな', kanji: '魚', romaji: 'sakana', mean: 'Cá' },
+    { word: 'やさい', kanji: '野菜', romaji: 'yasai', mean: 'Rau' },
+    { word: 'くだもの', kanji: '果物', romaji: 'kudamono', mean: 'Hoa quả, trái cây' },
+    { word: 'みず', kanji: '水', romaji: 'mizu', mean: 'Nước' },
+    { word: 'おちゃ', kanji: 'お茶', romaji: 'ocha', mean: 'Trà' },
+    { word: 'こうちゃ', kanji: '紅茶', romaji: 'koucha', mean: 'Trà đen' },
+    { word: 'ぎゅうにゅう', kanji: '牛乳', romaji: 'gyuunyuu', mean: 'Sữa bò' },
+    { word: 'ミルク', kanji: 'ミルク', romaji: 'miruku', mean: 'Sữa (milk)' },
+    { word: 'ジュース', kanji: 'ジュース', romaji: 'juusu', mean: 'Nước hoa quả' },
+    { word: 'ビール', kanji: 'ビール', romaji: 'biiru', mean: 'Bia' },
+    { word: 'おさけ', kanji: 'お酒', romaji: 'osake', mean: 'Rượu, rượu sake' },
+    { word: 'ビデオ', kanji: 'ビデオ', romaji: 'bideo', mean: 'Video, băng video, đầu video' },
+    { word: 'えいが', kanji: '映画', romaji: 'eiga', mean: 'Phim, điện ảnh' },
+    { word: 'CD', kanji: 'CD', romaji: 'CD', mean: 'Đĩa CD' },
+    { word: 'てがみ', kanji: '手紙', romaji: 'tegami', mean: 'Thư' },
+    { word: 'レポート', kanji: 'レポート', romaji: 'repooto', mean: 'Báo cáo' },
+    { word: 'しゃしん', kanji: '写真', romaji: 'shashin', mean: 'Ảnh' },
+    { word: 'みせ', kanji: '店', romaji: 'mise', mean: 'Cửa hàng, tiệm' },
+    { word: 'レストラン', kanji: 'レストラン', romaji: 'resutoran', mean: 'Nhà hàng' },
+    { word: 'にわ', kanji: '庭', romaji: 'niwa', mean: 'Vườn' },
+    { word: 'しゅくだい', kanji: '宿題', romaji: 'shukudai', mean: 'Bài tập về nhà' },
+    { word: 'テニス', kanji: 'テニス', romaji: 'tenisu', mean: 'Quần vợt' },
+    { word: 'サッカー', kanji: 'サッカー', romaji: 'sakkaa', mean: 'Bóng đá' },
+    { word: 'おはなみ', kanji: 'お花見', romaji: 'ohanami', mean: 'Ngắm hoa anh đào' },
+    { word: 'なに', kanji: '何', romaji: 'nani', mean: 'Cái gì, gì' },
+    { word: 'いっしょに', kanji: 'いっしょに', romaji: 'isshoni', mean: 'Cùng, cùng nhau' },
+    { word: 'ちょっと', kanji: 'ちょっと', romaji: 'chotto', mean: 'Một chút' },
+    { word: 'いつも', kanji: 'いつも', romaji: 'itsumo', mean: 'Luôn luôn, lúc nào cũng' },
+    { word: 'ときどき', kanji: '時々', romaji: 'tokidoki', mean: 'Thỉnh thoảng' },
+    { word: 'それから', kanji: 'それから', romaji: 'sorekara', mean: 'Sau đó, tiếp theo' },
+    { word: 'ええ', kanji: 'ええ', romaji: 'ee', mean: 'Vâng, được' },
+    { word: 'いいですね', kanji: 'いいですね', romaji: 'ii desu ne', mean: 'Được đấy nhỉ. / Hay quá.' },
+    { word: 'わかりました', kanji: 'わかりました', romaji: 'wakarimashita', mean: 'Tôi hiểu rồi. / Vâng ạ.' },
+    { word: 'なんですか', kanji: '何ですか', romaji: 'nan desu ka', mean: 'Có gì đấy ạ? / Cái gì vậy?' },
+    { word: 'じゃ、また', kanji: 'じゃ、また', romaji: 'ja, mata', mean: 'Hẹn gặp lại [ngày mai]' },
+    { word: 'メキシコ', kanji: 'メキシコ', romaji: 'mekishiko', mean: 'Mexico' },
+    { word: 'おおさかじょうこうえん', kanji: '大阪城公園', romaji: 'oosaka-jou kouen', mean: 'Công viên lâu đài Osaka' }
+  ],
+  grammar: [
+    {
+      pattern: 'Danh từ を Động từ (ngoại động từ)',
+      explanation: 'Trợ từ 「を」 được dùng để biểu thị bổ ngữ trực tiếp của ngoại động từ. Phát âm của 「を」 giống 「お」. Chữ 「を」 chỉ được dùng duy nhất làm trợ từ.',
+      example: 'ジュースを 飲みます。 (Tôi uống nước hoa quả.)'
+    },
+    {
+      pattern: 'Danh từ を します',
+      explanation: 'Trong tiếng Nhật một phạm vi rất lớn các danh từ được dùng làm bổ ngữ của động từ 「します」. Mẫu câu này biểu thị hành động thực hiện nội dung được diễn đạt ở danh từ.',
+      example: 'サッカーを します (Chơi bóng đá)\nパーティーを します (Mở tiệc/Tổ chức tiệc)\n宿題を します (Làm bài tập về nhà)'
+    },
+    {
+      pattern: '何を しますか',
+      explanation: 'Mẫu câu này dùng để hỏi làm cái gì. Có thể thêm từ 「は」 vào sau danh từ chỉ thời điểm để làm rõ chủ đề của câu.',
+      example: '月曜日 何を しますか。 (Thứ hai anh/chị làm gì?)\n京都へ 行きます。 (Tôi đi Kyoto.)'
+    },
+    {
+      pattern: 'なん và なに',
+      explanation: '「なん」 và 「なに」 đều có cùng nghĩa là gì, cái gì.\n1) 「なん」 được dùng trong những trường hợp sau:\n- Từ liền sau có âm đầu ở hàng 「た」, hàng 「だ」, và hàng 「な」.\n- Khi nó đứng trước hậu tố chỉ cách đếm.\n2) Ngoài những trường hợp đã nêu ở 1) thì dùng 「なに」.',
+      example: 'それは 何ですか。 (Đó là cái gì?)\n何の本ですか。 (Đây/Đó là quyển sách gì?)\n寝る まえに、何と 言いますか。 (Anh/Chị nói gì trước khi ngủ?)\nテレサちゃんは 何歳ですか。 (Em Teresa mấy tuổi?)\n何を 買いますか。 (Anh/Chị mua gì?)'
+    },
+    {
+      pattern: 'Danh từ (địa điểm) で Động từ',
+      explanation: 'Trong mẫu câu này thì 「で」 được dùng sau danh từ chỉ địa điểm để biểu thị địa điểm mà hành động xảy ra.',
+      example: '駅で 新聞を 買います。 (Tôi mua báo ở ga.)'
+    },
+    {
+      pattern: 'Động từ ませんか',
+      explanation: 'Mẫu câu này dùng để mời hoặc đề nghị người nghe làm một việc gì đó.',
+      example: 'いっしょに 京都へ 行きませんか。 (Anh/Chị có cùng đi Kyoto với tôi không?)\n･･･ええ、いいですね。 (Vâng, hay quá.)'
+    },
+    {
+      pattern: 'Động từ ましょう',
+      explanation: 'Mẫu câu này dùng để mời hay đề nghị người nghe cùng làm một việc gì đó với người nói. Nó thể hiện thái độ chủ động của người nói.',
+      example: 'ちょっと 休みましょう。 (Chúng ta cùng nghỉ một lát đi.)\nいっしょに 昼ごはんを 食べませんか。 (Anh/Chị có cùng ăn cơm trưa với tôi không?)\n･･･ええ、食べましょう。 (Được, chúng ta cùng ăn nhé.)'
+    },
+    {
+      pattern: 'お～',
+      explanation: 'Dùng tiền tố 「お」 để biểu thị sự kính trọng của người nói đối với người nghe (ví dụ: 「[お]くに」 nước của anh/chị) hoặc thể hiện thái độ lịch sự (ví dụ: 「[お]さけ」 rượu). Có một số trường hợp 「お」 đã thành cố định, không mang sắc thái kính trọng hay lịch sự đặc biệt (ví dụ: 「おちゃ」 trà, 「おかね」 tiền).',
+      example: 'お酒 (Rượu)\nお花見 (Việc ngắm hoa anh đào)'
+    }
+  ],
+  kaiwa: [],
+  quiz: [
+    {
+      id: 1,
+      question: "Kanji nào có nghĩa là 'Ăn'?",
+      options: ["食", "飲", "見", "聞"],
+      correctAnswer: "食",
+      explanation: "食 (Thực) - Ăn. (飲: Ẩm - Uống, 見: Kiến - Nhìn, 聞: Văn - Nghe)"
+    },
+    {
+      id: 2,
+      question: "Kanji nào có nghĩa là 'Uống'?",
+      options: ["飲", "吸", "食", "買"],
+      correctAnswer: "飲",
+      explanation: "飲 (Ẩm) - Uống. (吸: Hấp - Hút, 食: Thực - Ăn, 買: Mãi - Mua)"
+    },
+    {
+      id: 3,
+      question: "Chữ Hán [読] có cách đọc là gì?",
+      options: ["よみます", "かきます", "ききます", "みます"],
+      correctAnswer: "よみます",
+      explanation: "読 (Độc) -> 読みます (yomimasu) - Đọc."
+    },
+    {
+      id: 4,
+      question: "Chữ Hán [見] có cách đọc là gì?",
+      options: ["みます", "ききます", "あいます", "います"],
+      correctAnswer: "みます",
+      explanation: "見 (Kiến) -> 見ます (mimasu) - Xem/Nhìn."
+    },
+    {
+      id: 5,
+      question: "Từ [手紙] có nghĩa là gì?",
+      options: ["Bức thư", "Báo cáo", "Ảnh", "Bài tập"],
+      correctAnswer: "Bức thư",
+      explanation: "手紙 (Thủ chỉ) -> tegami -> Bức thư."
+    },
+    {
+      id: 6,
+      question: "Từ [牛乳] đọc là gì?",
+      options: ["ぎゅうにゅう", "ぎょうにゅう", "ぎゅうにゅ", "ぎゅにゅう"],
+      correctAnswer: "ぎゅうにゅう",
+      explanation: "牛乳 (Ngưu nhũ) -> gyuunyuu -> Sữa bò."
+    },
+    {
+      id: 7,
+      question: "Kanji của 'Rượu' là gì?",
+      options: ["酒", "茶", "水", "卵"],
+      correctAnswer: "酒",
+      explanation: "酒 (Tửu) -> Sake/Osake. (茶: Trà, 水: Thủy, 卵: Noãn/Trứng)"
+    },
+    {
+      id: 8,
+      question: "Kanji của 'Cá' là gì?",
+      options: ["魚", "肉", "卵", "菜"],
+      correctAnswer: "魚",
+      explanation: "魚 (Ngư) -> Sakana. (肉: Nhục/Thịt, 卵: Noãn/Trứng, 菜: Thái/Rau)"
+    },
+    {
+      id: 9,
+      question: "Từ [写真] có nghĩa là gì?",
+      options: ["Ảnh", "Phim", "Video", "CD"],
+      correctAnswer: "Ảnh",
+      explanation: "写真 (Tả chân) -> Shashin -> Bức ảnh."
+    },
+    {
+      id: 10,
+      question: "Kanji của 'Bài tập về nhà' là gì?",
+      options: ["宿題", "問題", "質問", "試験"],
+      correctAnswer: "宿題",
+      explanation: "宿題 (Túc đề) -> Shukudai -> Bài tập về nhà."
+    }
+  ]
+};
+
+
+const lesson7Data: LessonDetail = {
+  id: 7,
+  title: 'Bài 7',
+  vocabulary: [
+    { word: 'きります', kanji: '切ります', romaji: 'kirimasu', mean: 'Cắt' },
+    { word: 'おくります', kanji: '送ります', romaji: 'okurimasu', mean: 'Gửi' },
+    { word: 'あげます', kanji: 'あげます', romaji: 'agemasu', mean: 'Cho, tặng' },
+    { word: 'もらいます', kanji: 'もらいます', romaji: 'moraimasu', mean: 'Nhận' },
+    { word: 'かします', kanji: '貸します', romaji: 'kashimasu', mean: 'Cho mượn, cho vay' },
+    { word: 'かります', kanji: '借ります', romaji: 'karimasu', mean: 'Mượn, vay' },
+    { word: 'おしえます', kanji: '教えます', romaji: 'oshiemasu', mean: 'Dạy' },
+    { word: 'ならいます', kanji: '習います', romaji: 'naraimasu', mean: 'Học, tập' },
+    { word: 'かけます', kanji: 'かけます', romaji: 'kakemasu', mean: 'Gọi [điện thoại]' },
+    { word: 'て', kanji: '手', romaji: 'te', mean: 'Tay' },
+    { word: 'はし', kanji: '箸', romaji: 'hashi', mean: 'Đũa' },
+    { word: 'スプーン', kanji: 'スプーン', romaji: 'supuun', mean: 'Thìa' },
+    { word: 'ナイフ', kanji: 'ナイフ', romaji: 'naifu', mean: 'Dao' },
+    { word: 'フォーク', kanji: 'フォーク', romaji: 'fooku', mean: 'Dĩa' },
+    { word: 'はさみ', kanji: 'はさみ', romaji: 'hasami', mean: 'Kéo' },
+    { word: 'ファクス', kanji: 'ファクス', romaji: 'fakusu', mean: 'Fax' },
+    { word: 'ワープロ', kanji: 'ワープロ', romaji: 'waapuro', mean: 'Máy đánh chữ' },
+    { word: 'パソコン', kanji: 'パソコン', romaji: 'pasokon', mean: 'Máy vi tính cá nhân' },
+    { word: 'パンチ', kanji: 'パンチ', romaji: 'panchi', mean: 'Cái đục lỗ' },
+    { word: 'ホッチキス', kanji: 'ホッチキス', romaji: 'hotchikisu', mean: 'Cái dập ghim' },
+    { word: 'セロテープ', kanji: 'セロテープ', romaji: 'seroteepu', mean: 'Băng dính' },
+    { word: 'けしゴム', kanji: '消しゴム', romaji: 'keshigomu', mean: 'Cái tẩy' },
+    { word: 'かみ', kanji: '紙', romaji: 'kami', mean: 'Giấy' },
+    { word: 'はな', kanji: '花', romaji: 'hana', mean: 'Hoa' },
+    { word: 'シャツ', kanji: 'シャツ', romaji: 'shatsu', mean: 'Áo sơ mi' },
+    { word: 'プレゼント', kanji: 'プレゼント', romaji: 'purezento', mean: 'Quà tặng' },
+    { word: 'にもつ', kanji: '荷物', romaji: 'nimotsu', mean: 'Đồ đạc, hành lý' },
+    { word: 'おかね', kanji: 'お金', romaji: 'okane', mean: 'Tiền' },
+    { word: 'きっぷ', kanji: '切符', romaji: 'kippu', mean: 'Vé' },
+    { word: 'クリスマス', kanji: 'クリスマス', romaji: 'kurisumasu', mean: 'Giáng sinh' },
+    { word: 'ちち', kanji: '父', romaji: 'chichi', mean: 'Bố (dùng khi nói về bố mình)' },
+    { word: 'はは', kanji: '母', romaji: 'haha', mean: 'Mẹ (dùng khi nói về mẹ mình)' },
+    { word: 'おとうさん', kanji: 'お父さん', romaji: 'otousan', mean: 'Bố (dùng khi nói về bố người khác)' },
+    { word: 'おかあさん', kanji: 'お母さん', romaji: 'okaasan', mean: 'Mẹ (dùng khi nói về mẹ người khác)' },
+    { word: 'もう', kanji: 'もう', romaji: 'mou', mean: 'Đã, rồi' },
+    { word: 'まだ', kanji: 'まだ', romaji: 'mada', mean: 'Chưa' },
+    { word: 'これから', kanji: 'これから', romaji: 'korekara', mean: 'Từ bây giờ' },
+    { word: 'すてきですね', kanji: 'すてきですね', romaji: 'suteki desu ne', mean: 'Hay nhỉ. / Đẹp nhỉ.' },
+    { word: 'ごめんください', kanji: 'ごめんください', romaji: 'gomen kudasai', mean: 'Xin lỗi, có ai ở nhà không? / Tôi có thể vào được chứ?' },
+    { word: 'いらっしゃい', kanji: 'いらっしゃい', romaji: 'irasshai', mean: 'Rất hoan nghênh anh/chị đã đến chơi.' },
+    { word: 'どうぞ おあがり ください', kanji: 'どうぞ お上がり ください', romaji: 'douzo oagari kudasai', mean: 'Mời anh/chị vào.' },
+    { word: 'しつれいします', kanji: '失礼します', romaji: 'shitsurei shimasu', mean: 'Xin phép tôi vào. / Xin phép ~.' },
+    { word: 'いただきます', kanji: 'いただきます', romaji: 'itadakimasu', mean: 'Mời anh/chị dùng ~. (cách nói dùng trước khi ăn uống)' },
+    { word: 'りょこう', kanji: '旅行', romaji: 'ryokou', mean: 'Du lịch' },
+    { word: 'おみやげ', kanji: 'お土産', romaji: 'omiyage', mean: 'Quà (mua khi đi xa về)' }
+  ],
+  grammar: [
+    {
+      pattern: 'Danh từ (công cụ/phương tiện) で Động từ',
+      explanation: 'Trợ từ 「で」 biểu thị phương tiện hay cách thức tiến hành một việc gì đó. (Tôi làm việc gì đó ĐẰNG/BẰNG cái gì đó)',
+      example: 'はしで 食べます。 (Tôi ăn cơm bằng đũa.)\n日本語で レポートを 書きます。 (Tôi viết báo cáo bằng tiếng Nhật.)'
+    },
+    {
+      pattern: '\"Từ/Câu\" は ～語で 何ですか',
+      explanation: 'Mẫu câu này dùng để hỏi một từ, một ngữ hoặc một câu được nói như thế nào bằng một ngôn ngữ khác.',
+      example: '「ありがとう」は 英語で 何ですか。 ("Arigatou" tiếng Anh nói thế nào?)\n･･･「Thank you」です。 (Tiếng Anh nói là "Thank you".)\n「Thank you」は 日本語で 何ですか。 ("Thank you" tiếng Nhật nói thế nào?)\n･･･「ありがとう」です。 (Tiếng Nhật nói là "Arigatou".)'
+    },
+    {
+      pattern: 'Danh từ (người) に あげます/かします/おしえます',
+      explanation: 'Những động từ như 「あげます」 (tặng), 「かします」 (cho mượn), 「おしえます」 (dạy) cần người làm đối tượng (để cho, cho mượn, dạy). Chúng ta đặt trợ từ 「に」 sau danh từ chỉ đối tượng này.\n*Chú ý: Đối với những động từ như 「おくります」 (gửi), 「でんわを かけます」 (gọi điện thoại) thì đối tượng không chỉ là người mà còn có thể là địa điểm (danh từ). Trong trường hợp đó, ngoài trợ từ 「に」, chúng ta còn có thể dùng trợ từ 「へ」.',
+      example: '山田さんは 木村さんに 花を あげました。 (Ông Yamada tặng hoa cho chị Kimura.)\nイーさんに 本を 貸しました。 (Tôi cho chị Lee mượn sách.)\n太郎君に 英語を 教えます。 (Tôi dạy tiếng Anh cho cậu Tarou.)\n会社に 電話を かけます。 (Tôi gọi điện thoại đến công ty.)'
+    },
+    {
+      pattern: 'Danh từ (người) に もらいます/かります/ならいます',
+      explanation: 'Các động từ như 「もらいます」 (nhận), 「かります」 (vay, mượn), 「ならいます」 (học) biểu thị hành động từ phía người tiếp nhận. Khi dùng những động từ này trong câu mà chủ ngữ là người tiếp nhận thì chúng ta thêm 「に」 vào sau danh từ chỉ đối tác.\n*Trong mẫu câu này, chúng ta có thể dùng trợ từ 「から」 thay cho 「に」. Đặc biệt là khi đối tác không phải là người mà là một tổ chức nào đó (ví dụ: công ty hoặc trường học) thì không dùng 「に」 mà dùng 「から」.',
+      example: '木村さんは 山田さんに 花を もらいました。 (Chị Kimura đã nhận hoa từ ông Yamada.)\nカリナさんに CDを 借りました。 (Tôi đã mượn đĩa CD từ chị Karina.)\nワンさんに 中国語を 習います。 (Tôi học tiếng Trung từ ông Wang.)\n銀行から お金を 借りました。 (Tôi đã vay tiền từ ngân hàng.)'
+    },
+    {
+      pattern: 'もう Động từ ました',
+      explanation: '「もう」 có nghĩa là "đã/rồi" và được dùng với động từ ở thời quá khứ 「Động từ ました」. Trong trường hợp này thì động từ ở thời quá khứ 「Động từ ました」 biểu thị một hành động nào đó đã kết thúc ở thời điểm hiện tại.\nĐối với câu hỏi 「もう Động từ ました」, thì câu trả lời là 「はい、もう Động từ ました」(trong trường hợp khẳng định), và 「いいえ、まだです」(trong trường hợp phủ định).',
+      example: 'もう 荷物を 送りましたか。 (Anh/Chị đã gửi đồ chưa?)\n･･･はい、[もう] 送りました。 (Rồi, tôi đã gửi rồi.)\n･･･いいえ、まだです。 (Chưa, tôi chưa gửi.)'
+    }
+  ],
+  kaiwa: [
+    { char: 'A', jp: 'ごめんください。', vn: 'Xin lỗi, có ai ở nhà không?' },
+    { char: 'B', jp: 'いらっしゃい。', vn: 'Chào mừng anh/chị đến chơi.' },
+  ],
+  quiz: []
+};
+
+const lesson8Data: LessonDetail = {
+  id: 8,
+  title: 'Bài 8',
+  vocabulary: [
+    { word: 'ハンサム [な]', kanji: 'ハンサム [な]', romaji: 'hansamu', mean: 'Đẹp trai' },
+    { word: 'きれい [な]', kanji: 'きれい [な]', romaji: 'kirei', mean: 'Đẹp, sạch' },
+    { word: 'しずか [な]', kanji: '静か [な]', romaji: 'shizuka', mean: 'Yên tĩnh' },
+    { word: 'にぎやか [な]', kanji: 'にぎやか [な]', romaji: 'nigiyaka', mean: 'Náo nhiệt' },
+    { word: 'ゆうめい [な]', kanji: '有名 [な]', romaji: 'yuumei', mean: 'Nổi tiếng' },
+    { word: 'しんせつ [な]', kanji: '親切 [な]', romaji: 'shinsetsu', mean: 'Tốt bụng, thân thiện' },
+    { word: 'げんき [な]', kanji: '元気 [な]', romaji: 'genki', mean: 'Khỏe' },
+    { word: 'ひま [な]', kanji: '暇 [な]', romaji: 'hima', mean: 'Rảnh rỗi' },
+    { word: 'べんり [な]', kanji: '便利 [な]', romaji: 'benri', mean: 'Tiện lợi' },
+    { word: 'すてき [な]', kanji: 'すてき [な]', romaji: 'suteki', mean: 'Đẹp, hay' },
+    { word: 'おおきい', kanji: '大きい', romaji: 'ookii', mean: 'Lớn, to' },
+    { word: 'ちいさい', kanji: '小さい', romaji: 'chiisai', mean: 'Bé, nhỏ' },
+    { word: 'あたらしい', kanji: '新しい', romaji: 'atarashii', mean: 'Mới' },
+    { word: 'ふるい', kanji: '古い', romaji: 'furui', mean: 'Cũ' },
+    { word: 'いい (よい)', kanji: 'いい (よい)', romaji: 'ii (yoi)', mean: 'Tốt' },
+    { word: 'わるい', kanji: '悪い', romaji: 'warui', mean: 'Xấu' },
+    { word: 'あつい', kanji: '暑い, 熱い', romaji: 'atsui', mean: 'Nóng' },
+    { word: 'さむい', kanji: '寒い', romaji: 'samui', mean: 'Lạnh, rét (dùng cho thời tiết)' },
+    { word: 'つめたい', kanji: '冷たい', romaji: 'tsumetai', mean: 'Lạnh, buốt (dùng cho cảm giác)' },
+    { word: 'むずかしい', kanji: '難しい', romaji: 'muzukashii', mean: 'Khó' },
+    { word: 'やさしい', kanji: '易しい', romaji: 'yasashii', mean: 'Dễ' },
+    { word: 'たかい', kanji: '高い', romaji: 'takai', mean: 'Đắt, cao' },
+    { word: 'やすい', kanji: '安い', romaji: 'yasui', mean: 'Rẻ' },
+    { word: 'ひくい', kanji: '低い', romaji: 'hikui', mean: 'Thấp' },
+    { word: 'おもしろい', kanji: 'おもしろい', romaji: 'omoshiroi', mean: 'Thú vị, hay' },
+    { word: 'おいしい', kanji: 'おいしい', romaji: 'oishii', mean: 'Ngon' },
+    { word: 'いそがしい', kanji: '忙しい', romaji: 'isogashii', mean: 'Bận' },
+    { word: 'たのしい', kanji: '楽しい', romaji: 'tanoshii', mean: 'Vui' },
+    { word: 'しろい', kanji: '白い', romaji: 'shiroi', mean: 'Trắng' },
+    { word: 'くろい', kanji: '黒い', romaji: 'kuroi', mean: 'Đen' },
+    { word: 'あかい', kanji: '赤い', romaji: 'akai', mean: 'Đỏ' },
+    { word: 'あおい', kanji: '青い', romaji: 'aoi', mean: 'Xanh da trời' },
+    { word: 'さくら', kanji: '桜', romaji: 'sakura', mean: 'Anh đào (hoa, cây)' },
+    { word: 'やま', kanji: '山', romaji: 'yama', mean: 'Núi' },
+    { word: 'まち', kanji: '町', romaji: 'machi', mean: 'Thị trấn, thị xã, thành phố' },
+    { word: 'たべもの', kanji: '食べ物', romaji: 'tabemono', mean: 'Đồ ăn' },
+    { word: 'くるま', kanji: '車', romaji: 'kuruma', mean: 'Xe ô-tô' },
+    { word: 'ところ', kanji: '所', romaji: 'tokoro', mean: 'Nơi, chỗ' },
+    { word: 'りょう', kanji: '寮', romaji: 'ryou', mean: 'Kí túc xá' },
+    { word: 'べんきょう', kanji: '勉強', romaji: 'benkyou', mean: 'Học' },
+    { word: 'せいかつ', kanji: '生活', romaji: 'seikatsu', mean: 'Cuộc sống, sinh hoạt' },
+    { word: 'おしごと', kanji: '[お]仕事', romaji: 'shigoto', mean: 'Công việc (~を します: làm việc)' },
+    { word: 'どう', kanji: 'どう', romaji: 'dou', mean: 'Thế nào' },
+    { word: 'どんな', kanji: 'どんな', romaji: 'donna', mean: 'Như thế nào' },
+    { word: 'どれ', kanji: 'どれ', romaji: 'dore', mean: 'Cái nào' },
+    { word: 'とても', kanji: 'とても', romaji: 'totemo', mean: 'Rất, lắm' },
+    { word: 'あまり', kanji: 'あまり', romaji: 'amari', mean: 'Không ~ lắm' },
+    { word: 'そして', kanji: 'そして', romaji: 'soshite', mean: 'Và, thêm nữa (dùng để nối hai câu)' },
+    { word: 'が', kanji: '～が、～', romaji: 'ga', mean: '～, nhưng ～' },
+    { word: 'おげんきですか', kanji: 'お元気ですか', romaji: 'ogenki desu ka', mean: 'Anh/Chị có khỏe không?' },
+    { word: 'そうですね', kanji: 'そうですね', romaji: 'sou desu ne', mean: 'Thế à./ Để tôi xem.' },
+    { word: 'なれましたか', kanji: '日本の生活に慣れましたか', romaji: 'Nihon no seikatsu ni naremashita ka', mean: 'Anh/Chị đã quen với cuộc sống ở Nhật chưa?' },
+    { word: 'いかがですか', kanji: '[～,] もう一杯いかがですか', romaji: 'mou ippai ikaga desu ka', mean: 'Anh/Chị dùng thêm một chén [~] nữa được không ạ?' },
+    { word: 'けっこうです', kanji: 'いいえ、けっこうです', romaji: 'iie, kekkou desu', mean: 'Không, đủ rồi ạ.' },
+    { word: 'もう～ですね', kanji: 'もう ～です[ね]', romaji: 'mou ~ desu ne', mean: 'Đã ~ rồi nhỉ./ Đã ~ rồi, đúng không ạ?' },
+    { word: 'しつれいします', kanji: 'そろそろ失礼します', romaji: 'sorosoro shitsurei shimasu', mean: 'Sắp đến lúc tôi phải xin phép rồi./ Đã đến lúc tôi phải về.' },
+    { word: 'いらっしゃってください', kanji: 'また いらっしゃって ください', romaji: 'mata irasshatte kudasai', mean: 'Lần sau anh/chị lại đến chơi nhé.' },
+    { word: 'ふじさん', kanji: '富士山', romaji: 'Fujisan', mean: 'Núi Phú Sĩ' },
+    { word: 'びわこ', kanji: '琵琶湖', romaji: 'Biwako', mean: 'Hồ Biwa' },
+    { word: 'シャンハイ', kanji: 'シャンハイ', romaji: 'Shanhai', mean: 'Thượng Hải' },
+    { word: 'しちにんのさむらい', kanji: '七人の侍', romaji: 'Shichinin no Samurai', mean: 'Bảy chàng võ sĩ Samurai (tên phim)' },
+    { word: 'きんかくじ', kanji: '金閣寺', romaji: 'Kinkakuji', mean: 'Chùa Kinkaku-ji (Chùa Vàng)' }
+  ],
+  grammar: [
+    {
+      pattern: 'Tính từ',
+      explanation: 'Tính từ được chia làm 2 loại: Tính từ đuôi な và Tính từ đuôi い.',
+      example: 'ハンサム[な] (đẹp trai), 親切[な] (tốt bụng)\n大きい (to), 小さい (nhỏ)'
+    },
+    {
+      pattern: 'Danh từ は Tính từ です',
+      explanation: 'Mẫu câu dùng để miêu tả trạng thái, tính chất của sự vật, sự việc.',
+      example: 'ワット先生は 親切です。 (Thầy Watt tốt bụng.)\n富士山は 高いです。 (Núi Phú Sĩ cao.)'
+    },
+    {
+      pattern: 'Tính từ な (bỏ な) ではありません',
+      explanation: 'Phủ định của tính từ đuôi な.',
+      example: 'あそこは 静かじゃ ありません。 (Chỗ kia không yên tĩnh.)'
+    },
+    {
+      pattern: 'Tính từ い (bỏ い) くないです',
+      explanation: 'Phủ định của tính từ đuôi い.',
+      example: 'この本は 面白くないです。 (Quyển sách này không hay.)'
+    }
+  ],
+  kaiwa: [
+    { char: 'A', jp: 'そろそろ失礼します。', vn: 'Sắp đến lúc tôi phải về rồi.' },
+    { char: 'B', jp: 'また いらっしゃって ください。', vn: 'Lần sau anh/chị lại đến chơi nhé.' },
+  ],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
@@ -11215,6 +11574,9 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 3) return lesson3Data;
   if (id === 4) return lesson4Data;
   if (id === 5) return lesson5Data;
+  if (id === 6) return lesson6Data;
+  if (id === 7) return lesson7Data;
+  if (id === 8) return lesson8Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);

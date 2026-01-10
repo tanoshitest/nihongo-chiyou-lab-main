@@ -5,12 +5,12 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { 
-  Clock, 
-  BookOpen, 
-  Volume2, 
-  CheckCircle2, 
-  XCircle, 
+import {
+  Clock,
+  BookOpen,
+  Volume2,
+  CheckCircle2,
+  XCircle,
   ChevronRight,
   Trophy,
   AlertTriangle,
@@ -28,15 +28,15 @@ import {
 } from "@/data/jlptN5ExamData";
 import { cn } from "@/lib/utils";
 
-type ExamState = 
-  | "intro" 
-  | "section1" 
-  | "section2" 
-  | "section3" 
+type ExamState =
+  | "intro"
+  | "section1"
+  | "section2"
+  | "section3"
   | "result1"
   | "result2"
   | "result3"
-  | "final_result" 
+  | "final_result"
   | "review";
 
 interface SectionAnswers {
@@ -49,12 +49,16 @@ interface ExamRunnerProps {
   level?: string;
   year?: number;
   session?: "july" | "december";
+  isPractice?: boolean;
+  practiceId?: string;
 }
 
-export function ExamRunner({ level = "N5", year = 2024, session = "july" }: ExamRunnerProps) {
-  const sessionLabel = session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12";
+export function ExamRunner({ level = "N5", year = 2024, session = "july", isPractice = false, practiceId }: ExamRunnerProps) {
+  const sessionLabel = isPractice ? "Luyện tập" : (session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12");
   const [examState, setExamState] = useState<ExamState>("intro");
   const [examData, setExamData] = useState<ExamData | null>(null);
+
+  // ... (rest of state items are same)
   const [timeLeft, setTimeLeft] = useState(0);
   const [answers, setAnswers] = useState<SectionAnswers>({
     section1: {},
@@ -67,8 +71,11 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july" }: Exam
 
   // Initialize exam data
   useEffect(() => {
+    // If practice mode, we might want to load different structure or generic mock for now
+    // For this demo, we will use the standard generateMockExamData but we should ideally custom-tailor it
+    // In a real app, fetch(practiceId)
     setExamData(generateMockExamData());
-  }, []);
+  }, [practiceId]); // Add practiceId dependency
 
   // Calculate total time for all sections
   const getTotalTime = () => {
@@ -152,6 +159,13 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july" }: Exam
     }
   }, [examData, answers, examState]);
 
+  // Auto-start for practice exams
+  useEffect(() => {
+    if (isPractice && examData && examState === "intro") {
+      handleStartExam();
+    }
+  }, [isPractice, examData, examState]);
+
   // Timer logic - auto submit section when time is up
   useEffect(() => {
     if (!["section1", "section2", "section3"].includes(examState)) return;
@@ -199,12 +213,12 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july" }: Exam
         <div className="max-w-3xl mx-auto">
           <Card className="border-2 border-primary/20">
             <CardHeader className="text-center bg-primary/5">
-            <CardTitle className="text-3xl text-primary flex items-center justify-center gap-3">
+              <CardTitle className="text-3xl text-primary flex items-center justify-center gap-3">
                 <BookOpen className="h-8 w-8" />
-                JLPT {level} - Năm {year} ({sessionLabel})
+                {isPractice ? `Luyện thi ${level} - ${practiceId || "Bài tập"}` : `JLPT ${level} - Năm ${year} (${sessionLabel})`}
               </CardTitle>
               <p className="text-muted-foreground mt-2">
-                Đề thi thử theo chuẩn JLPT
+                {isPractice ? "Bài luyện tập kỹ năng theo chuyên đề" : "Đề thi thử theo chuẩn JLPT"}
               </p>
             </CardHeader>
             <CardContent className="p-6 space-y-6">
@@ -287,9 +301,9 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july" }: Exam
                 {formatTime(timeLeft)}
               </div>
             </div>
-            <Progress 
-              value={(Object.keys(currentAnswers).length / questions.length) * 100} 
-              className="mt-2 h-2" 
+            <Progress
+              value={(Object.keys(currentAnswers).length / questions.length) * 100}
+              className="mt-2 h-2"
             />
           </div>
         </div>
@@ -410,8 +424,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july" }: Exam
 
             <CardContent className="p-6">
               <div className="mb-6">
-                <Progress 
-                  value={(score / section.maxScore) * 100} 
+                <Progress
+                  value={(score / section.maxScore) * 100}
                   className={cn(
                     "h-4",
                     isPassing ? "[&>div]:bg-success" : "[&>div]:bg-destructive"
@@ -488,8 +502,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july" }: Exam
                           {score}/{section.maxScore}
                         </span>
                       </div>
-                      <Progress 
-                        value={(score / section.maxScore) * 100} 
+                      <Progress
+                        value={(score / section.maxScore) * 100}
                         className={cn(
                           "h-3",
                           isPassing ? "[&>div]:bg-success" : "[&>div]:bg-destructive"
@@ -576,8 +590,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july" }: Exam
                                 option === question.correctAnswer
                                   ? "border-success bg-success/10"
                                   : option === userAnswer && !isCorrect
-                                  ? "border-destructive bg-destructive/10"
-                                  : "border-border"
+                                    ? "border-destructive bg-destructive/10"
+                                    : "border-border"
                               )}
                             >
                               <span className="font-medium mr-2">

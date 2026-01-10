@@ -10651,6 +10651,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "こえ",
     meaning: "Thanh, Tiếng",
     sinoVietnamese: "Thanh",
+    radicals: "士 (sĩ) + 尸 (thi)",
+    mnemonic: "Kẻ sĩ (士) đứng trên lá cờ (尸) hô lớn tiếng (声).",
     examples: [
       {
         japanese: "声",
@@ -10678,6 +10680,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "",
     meaning: "Diệu, Ngày trong tuần",
     sinoVietnamese: "Diệu",
+    radicals: "日 (nhật) + 翟 (địch)",
+    mnemonic: "Ngày (日) con chim (翟) hót vang lừng là ngày trong tuần (曜).",
     examples: [
       {
         japanese: "日曜日",
@@ -10700,6 +10704,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "き・く",
     meaning: "Lợi, Tiện lợi",
     sinoVietnamese: "Lợi",
+    radicals: "禾 (hòa) + 刂 (đao)",
+    mnemonic: "Dùng dao (刂) gặt lúa (禾) mang lại lợi ích (利).",
     examples: [
       {
         japanese: "便利な",
@@ -10732,6 +10738,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "もと",
     meaning: "Nguyên, Gốc",
     sinoVietnamese: "Nguyên",
+    radicals: "二 (nhị) + 儿 (nhân)",
+    mnemonic: "Hai (二) người (儿) cùng đi về nguồn gốc (元).",
     examples: [
       {
         japanese: "元気な",
@@ -10764,6 +10772,8 @@ export const kanjiData: KanjiCard[] = [
     kunyomi: "くば・る",
     meaning: "Phối, Phân phối",
     sinoVietnamese: "Phối",
+    radicals: "酉 (dậu) + 己 (kỷ)",
+    mnemonic: "Người (己) đang phân phát rượu (酉) cho mọi người.",
     examples: [
       {
         japanese: "心配な",
@@ -10791,10 +10801,13 @@ export const kanjiData: KanjiCard[] = [
     id: 294,
     kanji: "痛",
     lesson: 19,
+    imageUrl: "/images/kanji/294_pain_3d.png",
     onyomi: "ツウ",
     kunyomi: "いた・い、いた・む",
     meaning: "Thống, Đau",
     sinoVietnamese: "Thống",
+    radicals: "疒 (bệnh) + 甬 (dũng)",
+    mnemonic: "Bệnh (疒) lan tràn (甬) gây đau đớn.",
     examples: [
       {
         japanese: "痛い",
@@ -10822,10 +10835,13 @@ export const kanjiData: KanjiCard[] = [
     id: 295,
     kanji: "赤",
     lesson: 19,
+    imageUrl: "/images/kanji/295_red_3d.png",
     onyomi: "セキ",
     kunyomi: "あか、あか・い",
     meaning: "Xích, Đỏ",
     sinoVietnamese: "Xích",
+    radicals: "土 (thổ) + 火 (hỏa)",
+    mnemonic: "Lửa (火) đốt cháy đất (土) thành màu đỏ.",
     examples: [
       {
         japanese: "赤い",
@@ -10853,10 +10869,13 @@ export const kanjiData: KanjiCard[] = [
     id: 296,
     kanji: "青",
     lesson: 19,
+    imageUrl: "/images/kanji/296_blue_3d.png",
     onyomi: "セイ",
     kunyomi: "あお、あお・い",
     meaning: "Thanh, Xanh dương",
     sinoVietnamese: "Thanh",
+    radicals: "生 (sinh) + 月 (nguyệt)",
+    mnemonic: "Sinh (生) ra dưới ánh trăng (月) nên có màu xanh.",
     examples: [
       {
         japanese: "青い",
@@ -10884,10 +10903,13 @@ export const kanjiData: KanjiCard[] = [
     id: 297,
     kanji: "場",
     lesson: 23,
+    imageUrl: "/images/kanji/297_place_3d.png",
     onyomi: "ジョウ",
     kunyomi: "ば",
     meaning: "Trường, Nơi chốn",
     sinoVietnamese: "Trường",
+    radicals: "土 (thổ) + 昜 (dương)",
+    mnemonic: "Nơi đất (土) có ánh dương (昜) chiếu vào.",
     examples: [
       {
         japanese: "場所",
@@ -10915,10 +10937,13 @@ export const kanjiData: KanjiCard[] = [
     id: 298,
     kanji: "戸",
     lesson: 19,
+    imageUrl: "/images/kanji/298_door_3d.png",
     onyomi: "コ",
     kunyomi: "と",
     meaning: "Hộ, Cửa",
     sinoVietnamese: "Hộ",
+    radicals: "戸 (hộ)",
+    mnemonic: "Hình cánh cửa một cánh.",
     examples: [
       {
         japanese: "戸",
@@ -10941,10 +10966,13 @@ export const kanjiData: KanjiCard[] = [
     id: 299,
     kanji: "所",
     lesson: 19,
+    imageUrl: "/images/kanji/299_institute_3d.png",
     onyomi: "ショ",
     kunyomi: "ところ",
     meaning: "Sở, Nơi chốn",
     sinoVietnamese: "Sở",
+    radicals: "戸 (hộ) + 斤 (cân)",
+    mnemonic: "Nơi (所) để cái rìu (斤) cạnh cửa (戸).",
     examples: [
       {
         japanese: "所",
@@ -10972,10 +11000,13 @@ export const kanjiData: KanjiCard[] = [
     id: 300,
     kanji: "屋",
     lesson: 9,
+    imageUrl: "/images/kanji/300_roof_shop_3d.png",
     onyomi: "オク",
     kunyomi: "や",
     meaning: "Ốc, Mái nhà, Cửa hàng",
     sinoVietnamese: "Ốc",
+    radicals: "尸 (thi) + 至 (chí)",
+    mnemonic: "Đến (至) dưới mái nhà (尸) để ở.",
     examples: [
       {
         japanese: "部屋",
@@ -11003,10 +11034,13 @@ export const kanjiData: KanjiCard[] = [
     id: 301,
     kanji: "堂",
     lesson: 9,
+    imageUrl: "/images/kanji/301_public_hall_3d.png",
     onyomi: "ドウ",
     kunyomi: "",
     meaning: "Đường, Nhà lớn",
     sinoVietnamese: "Đường",
+    radicals: "尚 (thượng) + 土 (thổ)",
+    mnemonic: "Trên mảnh đất (土) tôn quý (尚) có tòa nhà lớn (堂).",
     examples: [
       {
         japanese: "食堂",
