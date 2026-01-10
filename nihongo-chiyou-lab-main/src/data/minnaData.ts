@@ -11624,7 +11624,38 @@ export const lesson9Data: LessonDetail = {
     { word: 'また こんど おねがいします', kanji: 'また 今度 お願いします', romaji: 'mata kondo onegaishimasu', mean: 'Hẹn anh/chị lần sau vậy. (cách từ chối khéo)' },
     { word: 'おざわ せいじ', kanji: '小沢 征爾', romaji: 'Ozawa Seiji', mean: 'Ozawa Seiji (1935~), một nhạc trưởng nổi tiếng của Nhật' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      pattern: 'N が あります / わかります',
+      explanation: 'Đối với các động từ「あります」(có) và「わかります」(hiếu), đối tượng được biểu thị bằng trợ từ「が」thay vì「を」.',
+      example: 'わたしは イタリア料理が 好きです。 (Tôi thích món ăn Ý.)\nわたしは 日本語が わかります。 (Tôi hiểu tiếng Nhật.)\nわたしは 車が あります。 (Tôi có một cái xe ô-tô.)'
+    },
+    {
+      pattern: 'N が 好きです / 嫌いです / 上手です / 下手です',
+      explanation: 'Các tính từ thị hiếu, năng lực như「すき」「きらい」「じょうず」「へた」cũng sử dụng trợ từ「が」để chỉ đối tượng.',
+      example: '私は スポーツが 好きです。 (Tôi thích thể thao.)\nあの方は 歌が 上手です。 (Vị kia hát hay.)'
+    },
+    {
+      pattern: 'どんな N',
+      explanation: 'Dùng để hỏi về tính chất, trạng thái của người hay vật, hoặc để yêu cầu giải thích chi tiết hơn về một danh từ.',
+      example: 'どんな スポーツが 好きですか。 (Anh/Chị thích môn thể thao nào?)\n…サッカーが 好きです。 (...Tôi thích bóng đá.)'
+    },
+    {
+      pattern: 'よく / だいたい / たくさん / 少し / あまり / 全然',
+      explanation: 'Các phó từ chỉ mức độ và số lượng, đặt trước động từ để bổ nghĩa.\n- Mức độ (dùng với わかります...): よく (rõ) > だいたい (đại khái) > すこし (một chút) > あまり (không ~ lắm) > ぜんぜん (hoàn toàn không)\n- Số lượng (dùng với あります...): たくさん (nhiều) > すこし (ít) > あまり (không ~ lắm) > ぜんぜん (hoàn toàn không)\n*Lưu ý: あまり và ぜんぜん luôn đi với thể phủ định.',
+      example: '英語が よく わかります。 (Tôi hiểu tiếng Anh tốt.)\n英語が すこし わかります。 (Tôi hiểu tiếng Anh một chút.)\nお金が たくさん あります。 (Tôi có nhiều tiền.)\nお金が 全然 ありません。 (Tôi hoàn toàn không có tiền.)'
+    },
+    {
+      pattern: 'S1 から、S2',
+      explanation: '「から」được dùng để nối hai câu thành một câu. Cấu 1 biểu thị lý do, nguyên nhân cho Câu 2.',
+      example: '時間が ありませんから、新聞を 読みません。 (Vì không có thời gian nên tôi không đọc báo.)\n毎朝 新聞を 読みますか。 (Hằng sáng anh có đọc báo không?)\n…いいえ、読みません。時間が ありませんから。 (...Không, tôi không đọc. Vì tôi không có thời gian.)'
+    },
+    {
+      pattern: 'どうして',
+      explanation: 'Dùng để hỏi lý do ("Tại sao"). Câu trả lời thường thêm「から」vào cuối.',
+      example: 'どうして 朝 新聞を 読みませんか。 (Tại sao sáng anh không đọc báo?)\n…時間が ありませんから。 (...Vì tôi không có thời gian.)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
