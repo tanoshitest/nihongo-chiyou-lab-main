@@ -11,6 +11,7 @@ import MinnaTest2 from "./pages/MinnaTest2";
 import MinnaTest3 from "./pages/MinnaTest3";
 import MinnaTest4 from "./pages/MinnaTest4";
 import MinnaTest5 from "./pages/MinnaTest5";
+import MinnaTest6 from "./pages/MinnaTest6";
 import LessonDetail from "./pages/LessonDetail";
 import Irodori from "./pages/Irodori";
 import IrodoriLessonDetail from "./pages/IrodoriLessonDetail";
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/minna/test-3" element={<MinnaTest3 />} />
           <Route path="/minna/test-4" element={<MinnaTest4 />} />
           <Route path="/minna/test-5" element={<MinnaTest5 />} />
+          <Route path="/minna/test-6" element={<MinnaTest6 />} />
           <Route path="/minna/:id" element={<LessonDetail />} />
           <Route path="/irodori" element={<Irodori />} />
           <Route path="/irodori/:level/:id" element={<IrodoriLessonDetail />} />
