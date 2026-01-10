@@ -12645,6 +12645,47 @@ export const lesson19Data: LessonDetail = {
   quiz: []
 };
 
+};
+
+export const lesson20Data: LessonDetail = {
+  id: 20,
+  title: 'Bài 20',
+  vocabulary: [
+    { word: 'いります', kanji: '要ります', romaji: 'irimasu', mean: 'Cần [thị thực (visa)]' },
+    { word: 'しらべます', kanji: '調べます', romaji: 'shirabemasu', mean: 'Tìm hiểu, điều tra, xem' },
+    { word: 'なおします', kanji: '直します', romaji: 'naoshimasu', mean: 'Sửa, chữa' },
+    { word: 'しゅうりします', kanji: '修理します', romaji: 'shuurishimasu', mean: 'Sửa chữa, tu sửa' },
+    { word: 'でんわします', kanji: '電話します', romaji: 'denwashimasu', mean: 'Gọi điện thoại' },
+    { word: 'ぼく', kanji: '僕', romaji: 'boku', mean: 'Tớ (xưng hô thân mật của nam giới, = watashi)' },
+    { word: 'きみ', kanji: '君', romaji: 'kimi', mean: 'Cậu, bạn (gọi thân mật dùng cho nam giới, = anata)' },
+    { word: '～くん', kanji: '～君', romaji: 'kun', mean: 'Anh ~, cậu ~ (gọi thân mật dùng cho nam giới, = san)' },
+    { word: 'うん', kanji: 'うん', romaji: 'un', mean: 'Ừ (cách nói thân mật của [hai])' },
+    { word: 'ううん', kanji: 'ううん', romaji: 'uun', mean: 'Không (cách nói thân mật của [iie])' },
+    { word: 'サラリーマン', kanji: 'サラリーマン', romaji: 'sarariiman', mean: 'Người làm việc cho các công ty' },
+    { word: 'ことば', kanji: '言葉', romaji: 'kotoba', mean: 'Từ, tiếng' },
+    { word: 'ぶっか', kanji: '物価', romaji: 'bukka', mean: 'Giá cả, mức giá, vật giá' },
+    { word: 'きもの', kanji: '着物', romaji: 'kimono', mean: 'Kimono (trang phục truyền thống của Nhật Bản)' },
+    { word: 'ビザ', kanji: 'ビザ', romaji: 'biza', mean: 'Thị thực, visa' },
+    { word: 'はじめ', kanji: '始め', romaji: 'hajime', mean: 'Ban đầu, đầu tiên' },
+    { word: 'おわり', kanji: '終わり', romaji: 'owari', mean: 'Kết thúc' },
+    { word: 'こっち', kanji: 'こっち', romaji: 'kocchi', mean: 'Phía này, chỗ này (thân mật của [kochira])' },
+    { word: 'そっち', kanji: 'そっち', romaji: 'socchi', mean: 'Phía đó, chỗ đó (thân mật của [sochira])' },
+    { word: 'あっち', kanji: 'あっち', romaji: 'acchi', mean: 'Phía kia, chỗ kia (thân mật của [achira])' },
+    { word: 'どっち', kanji: 'どっち', romaji: 'docchi', mean: 'Cái nào, phía nào, đâu (thân mật của [dochira])' },
+    { word: 'このあいだ', kanji: 'この間', romaji: 'konoaida', mean: 'Vừa rồi, hôm nọ' },
+    { word: 'みんなで', kanji: 'みんなで', romaji: 'minnade', mean: 'Mọi người cùng' },
+    { word: '～けど', kanji: '～けど', romaji: 'kedo', mean: '～, nhưng (cách nói thân mật của [ga])' },
+    { word: 'くにへかえるの？', kanji: '国へ帰るの？', romaji: 'kunihekaeruno', mean: 'Anh/Chị có về nước không?' },
+    { word: 'どうするの？', kanji: 'どうするの？', romaji: 'dousuruno', mean: 'Anh/Chị tính sao? / Anh/Chị (sẽ) làm gì?' },
+    { word: 'どうしようかな。', kanji: 'どうしようかな。', romaji: 'doushiyoukana', mean: 'Tính sao đây nhỉ? / Để tôi xem.' },
+    { word: 'よかったら', kanji: 'よかったら', romaji: 'yokattara', mean: 'Nếu anh/chị thích thì' },
+    { word: 'いろいろ', kanji: 'いろいろ', romaji: 'iroiro', mean: 'Nhiều thứ' }
+  ],
+  grammar: [],
+  kaiwa: [],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
@@ -12666,6 +12707,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 17) return lesson17Data;
   if (id === 18) return lesson18Data;
   if (id === 19) return lesson19Data;
+  if (id === 20) return lesson20Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
