@@ -12063,7 +12063,38 @@ export const lesson13Data: LessonDetail = {
     { word: 'スーパー', kanji: 'スーパー', romaji: 'suupaa', mean: 'Siêu thị' },
     { word: 'デパート', kanji: 'デパート', romaji: 'depaato', mean: 'Cửa hàng bách hóa' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      id: 1,
+      structure: 'Danh từ が 欲しいです',
+      explanation: 'Biểu thị ham muốn sở hữu một vật hoặc một người nào đó của người nói. Đối tượng của ham muốn được biểu thị bằng trợ từ 「が」. 「ほしい」 là tính từ đuôi い.',
+      example: 'わたしは 友達が 欲しいです。 (Tôi muốn có bạn.)\n今 何が いちばん 欲しいですか。 (Bây giờ bạn muốn cái gì nhất?)\n...車が 欲しいです。 (...Tôi muốn một cái ô-tô.)'
+    },
+    {
+      id: 2,
+      structure: 'Động từ thể ます (bỏ ます) + たいです',
+      explanation: 'Biểu thị sự "muốn làm" một cái gì đó. Cách nói này được dùng để biểu thị ý muốn của bản thân người nói. Trợ từ 「を」 có thể thay bằng 「が」. Động từ dạng này chia tương tự tính từ đuôi い.',
+      example: 'わたしは 沖縄へ 行きたいです。 (Tôi muốn đi Okinawa.)\nわたしは てんぷらを 食べたいです。 (Tôi muốn ăn món Tempura.)\n神戸で 何を 買いたいですか。 (Bạn muốn mua gì ở Kobe?)'
+    },
+    {
+      id: 3,
+      structure: 'N (Place) へ V (bỏ ます) / N (Action) に 行きます/来ます/帰ります',
+      explanation: 'Biểu thị mục đích của việc đi, đến, về. Động từ bỏ ます hoặc Danh từ chỉ hành động (việc mua sắm, việc học...) đặt trước trợ từ 「に」.',
+      example: '神戸へ インド料理を 食べに 行きます。 (Tôi đi Kobe để ăn món ăn Ấn Độ.)\n神戸へ 買い物に 行きます。 (Tôi đi Kobe để mua hàng.)\n日本へ 美術の 勉強に 来ました。 (Tôi đến Nhật Bản để học mỹ thuật.)'
+    },
+    {
+      id: 4,
+      structure: 'N に V / N を V (Trợ từ đi với động từ di chuyển)',
+      explanation: 'Trợ từ 「に」 dùng với các động từ như 「はいります」(vào), 「のります」(lên) để chỉ điểm đến. Trợ từ 「を」 dùng với các động từ như 「でます」(ra), 「おります」(xuống) để chỉ điểm xuất phát.',
+      example: 'あの 喫茶店に 入りましょう。 (Chúng ta vào quán giải khát kia đi.)\n７時に うちを 出ます。 (Tôi ra khỏi nhà lúc 7 giờ.)'
+    },
+    {
+      id: 5,
+      structure: 'どこか / 何か (Từ nghi vấn không xác định)',
+      explanation: '「どこか」 (đâu đó, nơi nào đó), 「なにか」 (cái gì đó). Có thể lược bỏ các trợ từ 「へ」, 「を」 ở sau chúng. Dùng trong câu nghi vấn để hỏi về sự tồn tại không xác định.',
+      example: '冬休みは どこか[へ] 行きましたか。 (Nghỉ đông bạn có đi đâu đó không?)\n...はい、行きました。 (...Có, tôi có đi.)\nのどが かわきましたから、何か[を] 飲みたいです。 (Tôi khát nên muốn uống cái gì đó.)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
