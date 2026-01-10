@@ -177,6 +177,31 @@ const MinnaNoNihongo = () => {
     }
   }
 
+  // Insert Test 7 after Lesson 14 (index 14)
+  if (!lessonsN5WithTest.find(l => l.id === 9997)) {
+    const lesson14Index = lessonsN5WithTest.findIndex(l => l.id === 14);
+    if (lesson14Index !== -1) {
+      lessonsN5WithTest.splice(lesson14Index + 1, 0, {
+        id: 9997,
+        title: "Kiểm tra 7",
+        description: "Quiz bài 13 14"
+      });
+    }
+  }
+
+
+  // Insert Test 8 after Lesson 16 (index 16)
+  if (!lessonsN5WithTest.find(l => l.id === 9998)) {
+    const lesson16Index = lessonsN5WithTest.findIndex(l => l.id === 16);
+    if (lesson16Index !== -1) {
+      lessonsN5WithTest.splice(lesson16Index + 1, 0, {
+        id: 9998,
+        title: "Kiểm tra 8",
+        description: "Quiz bài 15 16"
+      });
+    }
+  }
+
   return (
     <Layout>
       <div className="bg-background">
