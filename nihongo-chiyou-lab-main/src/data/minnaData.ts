@@ -12284,7 +12284,38 @@ export const lesson15Data: LessonDetail = {
     { word: 'はいゆう', kanji: '俳優', romaji: 'haiyuu', mean: 'Diễn viên' },
     { word: 'スポーツせんしゅ', kanji: 'スポーツ選手', romaji: 'supootsusenshu', mean: 'Vận động viên' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      id: 1,
+      structure: 'Động từ thể て + も いいです',
+      explanation: 'Mẫu câu này dùng để biểu thị sự được phép làm một điều gì. (Làm ~ được). Nếu chuyển thành câu nghi vấn thì sẽ được một câu xin phép.',
+      example: '写真を 撮っても いいです。 (Có thể chụp ảnh được.)\nたばこを 吸っても いいですか。 (Tôi hút thuốc được không?)\n...ええ、いいですよ。どうぞ。 (...Vâng, được. Xin mời.)\n...すみません。ちょっと。 (...Xin lỗi. Không được.)'
+    },
+    {
+      id: 2,
+      structure: 'Động từ thể て + は いけません',
+      explanation: 'Mẫu câu này biểu thị ý nghĩa "cấm", hay "không được" làm một việc gì. (Không được làm ~).',
+      example: 'ここで たばこを 吸っては いけません。禁煙ですから。 (Không được hút thuốc ở đây, vì là nơi "cấm hút thuốc".)\n先生、ここで 遊んでも いいですか。 (Thưa thầy/cô, em chơi ở đây có được không ạ?)\n...いいえ、いけません。 (...Không, không được.)'
+    },
+    {
+      id: 3,
+      structure: 'Động từ thể て + います (Trạng thái)',
+      explanation: 'Dùng để nói về một trạng thái (là kết quả của một hành động) vẫn còn lại, vẫn tiếp diễn ở hiện tại. Các động từ thường dùng: Kekkonshimasu, Shirimasu, Sumimasu, Mochimasu.',
+      example: 'わたしは 結婚して います。 (Tôi đã lập gia đình.)\nわたしは 田中さんを 知って います。 (Tôi biết anh Tanaka.)\nわたしは 大阪に 住んで います。 (Tôi sống ở Osaka.)\nわたしは カメラを 持って います。 (Tôi có máy ảnh.)'
+    },
+    {
+      id: 4,
+      structure: 'Động từ thể て + います (Thói quen/Nghề nghiệp)',
+      explanation: 'Dùng để nói về các tập quán, thói quen (hành vi được lặp đi lặp lại trong thời gian dài). Cũng dùng để nói về nghề nghiệp hoặc tình cảnh của ai đó.',
+      example: 'IMCは コンピューターソフトを 作って います。 (Công ty IMC chế tạo phần mềm máy vi tính.)\nスーパーで フィルムを 売って います。 (Siêu thị có bán phim.)\nミラーさんは IMCで 働いて います。 (Anh Miller làm việc ở Công ty IMC.)\n妹は 大学で 勉強して います。 (Em gái tôi (đang) học đại học.)'
+    },
+    {
+      id: 5,
+      structure: '知りません (Không biết)',
+      explanation: 'Thể phủ định của 「知って います」 là 「知りません」, không phải là 「知って いません」.',
+      example: '市役所の 電話番号を 知って いますか。 (Anh/Chị có biết số điện thoại của Văn phòng hành chính quận không?)\n...はい、知って います。 (...Có, tôi biết.)\n...いいえ、知りません。 (...Không, tôi không biết.)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
