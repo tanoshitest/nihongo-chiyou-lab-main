@@ -11911,6 +11911,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 9) return lesson9Data;
   if (id === 10) return lesson10Data;
   if (id === 11) return lesson11Data;
+  if (id === 12) return lesson12Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
