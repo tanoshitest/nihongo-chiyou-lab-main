@@ -12099,6 +12099,87 @@ export const lesson13Data: LessonDetail = {
   quiz: []
 };
 
+export const lesson14Data: LessonDetail = {
+  id: 14,
+  title: 'Bài 14',
+  vocabulary: [
+    { word: 'つけます', kanji: 'つけます', romaji: 'tsukemasu', mean: 'Bật (điện, máy điều hòa)' },
+    { word: 'けします', kanji: '消します', romaji: 'keshimasu', mean: 'Tắt (điện, máy điều hòa)' },
+    { word: 'あけます', kanji: '開けます', romaji: 'akemasu', mean: 'Mở (cửa, cửa và)' },
+    { word: 'しめます', kanji: '閉めます', romaji: 'shimemasu', mean: 'Đóng (cửa, cửa sổ)' },
+    { word: 'いそぎます', kanji: '急ぎます', romaji: 'isogimasu', mean: 'Vội, gấp' },
+    { word: 'まちます', kanji: '待ちます', romaji: 'machimasu', mean: 'Đợi, chờ' },
+    { word: 'とめます', kanji: '止めます', romaji: 'tomemasu', mean: 'Dừng (băng, ô-tô), đỗ (ô-tô)' },
+    { word: 'まがります', kanji: '曲がります', romaji: 'magarimasu', mean: 'Rẽ, quẹo [phải]' },
+    { word: 'もちます', kanji: '持ちます', romaji: 'mochimasu', mean: 'Mang, cầm' },
+    { word: 'とります', kanji: '取ります', romaji: 'torimasu', mean: 'Lấy (muối)' },
+    { word: 'てつだいます', kanji: '手伝います', romaji: 'tetsudaimasu', mean: 'Giúp (làm việc)' },
+    { word: 'よびます', kanji: '呼びます', romaji: 'yobimasu', mean: 'Gọi (tắc-xi, tên)' },
+    { word: 'はなします', kanji: '話します', romaji: 'hanashimasu', mean: 'Nói, nói chuyện' },
+    { word: 'みせます', kanji: '見せます', romaji: 'misemasu', mean: 'Cho xem, trình' },
+    { word: 'おしえます', kanji: '教えます', romaji: 'oshiemasu', mean: 'Nói, cho biết [địa chỉ]' },
+    { word: 'はじめます', kanji: '始めます', romaji: 'hajimemasu', mean: 'Bắt đầu' },
+    { word: 'ふります', kanji: '降ります', romaji: 'furimasu', mean: 'Rơi [mưa, tuyết]' },
+    { word: 'コピーします', kanji: 'コピーします', romaji: 'kopiishimasu', mean: 'Copy' },
+    { word: 'エアコン', kanji: 'エアコン', romaji: 'eakon', mean: 'Máy điều hòa' },
+    { word: 'パスポート', kanji: 'パスポート', romaji: 'pasupooto', mean: 'Hộ chiếu' },
+    { word: 'なまえ', kanji: '名前', romaji: 'namae', mean: 'Tên' },
+    { word: 'じゅうしょ', kanji: '住所', romaji: 'juusho', mean: 'Địa chỉ' },
+    { word: 'ちず', kanji: '地図', romaji: 'chizu', mean: 'Bản đồ' },
+    { word: 'しお', kanji: '塩', romaji: 'shio', mean: 'Muối' },
+    { word: 'さとう', kanji: '砂糖', romaji: 'satou', mean: 'Đường' },
+    { word: 'よみかた', kanji: '読み方', romaji: 'yomikata', mean: 'Cách đọc' },
+    { word: '～かた', kanji: '～方', romaji: 'kata', mean: 'Cách ~' },
+    { word: 'ゆっくり', kanji: 'ゆっくり', romaji: 'yukkuri', mean: 'Chậm, thong thả, thoải mái' },
+    { word: 'すぐ', kanji: '直ぐ', romaji: 'sugu', mean: 'Ngay, lập tức' },
+    { word: 'また', kanji: 'また', romaji: 'mata', mean: 'Lại (~đến)' },
+    { word: 'あとで', kanji: '後で', romaji: 'atode', mean: 'Sau' },
+    { word: 'もう すこし', kanji: 'もう 少し', romaji: 'mousukoshi', mean: 'Thêm một chút nữa thôi' },
+    { word: 'もう～', kanji: 'もう～', romaji: 'mou', mean: 'Thêm ~' },
+    { word: 'いいですよ', kanji: 'いいですよ', romaji: 'iidesuyo', mean: 'Được chứ./Được ạ.' },
+    { word: 'さあ', kanji: 'さあ', romaji: 'saa', mean: 'Thôi,/nào, (dùng để thúc giục hoặc khuyến khích ai đó làm gì)' },
+    { word: 'あれ？', kanji: 'あれ？', romaji: 'are', mean: 'Ô! (câu cảm thán khi phát hiện hoặc thấy cái gì đó lạ hoặc bất ngờ)' },
+    { word: 'しんごうを みぎへ まがってください', kanji: '信号を 右へ 曲がって ください', romaji: 'shingouwomigiemagattekudasai', mean: 'Anh/Chị rẽ phải ở chỗ đèn tín hiệu.' },
+    { word: 'まっすぐ', kanji: '真っ直ぐ', romaji: 'massugu', mean: 'Thẳng' },
+    { word: 'これで おねがいします', kanji: 'これで お願いします', romaji: 'koredeonegaishimasu', mean: 'Gửi anh tiền này.' },
+    { word: 'おつり', kanji: 'お釣り', romaji: 'otsuri', mean: 'Tiền lẻ' },
+    // Reference Words: Station
+    { word: 'きっぷうりば', kanji: '切符売り場', romaji: 'kippuuriba', mean: 'Chỗ bán vé' },
+    { word: 'じどうけんばいき', kanji: '自動券売機', romaji: 'jidoukenbaiki', mean: 'Máy bán vé tự động' },
+    { word: 'せいさんき', kanji: '精算機', romaji: 'seisanki', mean: 'Máy thanh toán tiền thiếu' },
+    { word: 'かいさつぐち', kanji: '改札口', romaji: 'kaisatsuguchi', mean: 'Cửa soát vé' },
+    { word: 'でぐち', kanji: '出口', romaji: 'deguchi', mean: 'Cửa ra' },
+    { word: 'いりぐち', kanji: '入口', romaji: 'iriguchi', mean: 'Cửa vào' },
+    { word: 'ひがしぐち', kanji: '東口', romaji: 'higashiguchi', mean: 'Cửa Đông' },
+    { word: 'にしぐち', kanji: '西口', romaji: 'nishiguchi', mean: 'Cửa Tây' },
+    { word: 'みなみぐち', kanji: '南口', romaji: 'minamiguchi', mean: 'Cửa Nam' },
+    { word: 'きたぐち', kanji: '北口', romaji: 'kitaguchi', mean: 'Cửa Bắc' },
+    { word: 'ちゅうおうぐち', kanji: '中央口', romaji: 'chuuouguchi', mean: 'Cửa Trung tâm' },
+    { word: 'プラットホーム', kanji: 'プラットホーム', romaji: 'purattohoomu', mean: 'Sân ga' },
+    { word: 'ばいてん', kanji: '売店', romaji: 'baiten', mean: 'Quầy bán hàng, ki-ốt' },
+    { word: 'コインロッカー', kanji: 'コインロッカー', romaji: 'koinrokkaa', mean: 'Hòm khóa cho thuê dùng tiền xu' },
+    { word: 'タクシーのりば', kanji: 'タクシー乗り場', romaji: 'takushiinoriba', mean: 'Điểm lên xe tắc-xi' },
+    { word: 'バスターミナル', kanji: 'バスターミナル', romaji: 'basutaaminaru', mean: 'Bến xe buýt' },
+    { word: 'バスてい', kanji: 'バス停', romaji: 'basutei', mean: 'Điểm lên xuống xe buýt' },
+    { word: 'とっきゅう', kanji: '特急', romaji: 'tokkyuu', mean: 'Tốc hành đặc biệt' },
+    { word: 'きゅうこう', kanji: '急行', romaji: 'kyuukou', mean: 'Tốc hành' },
+    { word: 'かいそく', kanji: '快速', romaji: 'kaisoku', mean: 'Nhanh' },
+    { word: 'じゅんきゅう', kanji: '準急', romaji: 'junkyuu', mean: 'Bán tốc hành' },
+    { word: 'ふつう', kanji: '普通', romaji: 'futsuu', mean: '(Tàu) thường, địa phương' },
+    { word: 'じこくひょう', kanji: '時刻表', romaji: 'jikokuhyou', mean: 'Bảng giờ chạy tàu' },
+    { word: '～はつ', kanji: '～発', romaji: 'hatsu', mean: 'Xuất phát từ ~' },
+    { word: '～ちゃく', kanji: '～着', romaji: 'chaku', mean: 'Đến ~' },
+    { word: 'とうきょういき', kanji: '東京行き', romaji: 'toukyouiki', mean: 'Đi [Tokyo]' },
+    { word: 'ていきけん', kanji: '定期券', romaji: 'teikiken', mean: 'Vé tháng' },
+    { word: 'かいすうけん', kanji: '回数券', romaji: 'kaisuuken', mean: 'Vé giảm giá khi đi nhiều' },
+    { word: 'かたみち', kanji: '片道', romaji: 'katamichi', mean: 'Một chiều' },
+    { word: 'おうふく', kanji: '往復', romaji: 'oufuku', mean: 'Hai chiều, đi và về' }
+  ],
+  grammar: [],
+  kaiwa: [],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
@@ -12114,6 +12195,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 11) return lesson11Data;
   if (id === 12) return lesson12Data;
   if (id === 13) return lesson13Data;
+  if (id === 14) return lesson14Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
