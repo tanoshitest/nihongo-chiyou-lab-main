@@ -11724,7 +11724,43 @@ export const lesson10Data: LessonDetail = {
     { word: 'ろうか', kanji: '廊下', romaji: 'rouka', mean: 'Hành lang' },
     { word: 'ベランダ', kanji: 'ベランダ', romaji: 'beranda', mean: 'Ban-công' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      pattern: 'N が あります / います',
+      explanation: 'Dùng để nói về nơi ở, sự hiện hữu của đồ vật hoặc người.「あります」dùng cho đồ vật, cây cối (không chuyển động).「います」dùng cho người, động vật (có thể chuyển động).',
+      example: 'コンピューターが あります。 (Có máy tính.)\n男の人が います。 (Có người đàn ông.)'
+    },
+    {
+      pattern: 'Place に N が あります / います',
+      explanation: 'Dùng để diễn tả ở một địa điểm nào đó có cái gì hoặc ai.',
+      example: '私の部屋に 机が あります。 (Ở phòng của tôi có cái bàn.)\n事務所に ミラーさんが います。 (Ở văn phòng có anh Miller.)'
+    },
+    {
+      pattern: 'N は Place に あります / います',
+      explanation: 'Dùng để diễn tả một người hoặc vật (chủ đề đã biết) đang ở đâu.',
+      example: '東京ディズニーランドは 千葉県に あります。 (Công viên Tokyo Disneyland ở tỉnh Chiba.)\nミラーさんは 事務所に います。 (Anh Miller ở văn phòng.)'
+    },
+    {
+      pattern: 'N1 (vật/người/địa điểm) の N2 (vị trí)',
+      explanation: 'Dùng để chỉ vị trí tương đối. Các danh từ chỉ vị trí: 上 (trên), 下 (dưới), 前 (trước), 後ろ (sau), 右 (phải), 左 (trái), 中 (trong), 外 (ngoài), 隣 (bên cạnh), 近く (gần), 間 (giữa).',
+      example: '机の 上に 写真が あります。 (Ở trên bàn có bức ảnh.)\n駅の 近くで 友達に 会いました。 (Tôi gặp bạn ở gần ga.)'
+    },
+    {
+      pattern: 'N1 や N2',
+      explanation: 'Dùng để liệt kê các danh từ tiêu biểu (không phải tất cả). Thường dùng với「など」ở cuối.',
+      example: '箱の 中に 手紙や 写真が あります。 (Trong hộp có những thứ như thư và ảnh.)\n箱の 中に 手紙や 写真などが あります。 (Trong hộp có những thứ như thư, ảnh, v.v.)'
+    },
+    {
+      pattern: 'Word/Phrase ですか',
+      explanation: 'Dùng để xác nhận thông tin lại một lần nữa.',
+      example: 'すみません。ユニューヤ・ストアは どこですか。 (Xin lỗi, siêu thị Yunyu-ya ở đâu?)\n…ユニューヤ・ストアですか。あの ビルの 中です。 (...Siêu thị Yunyu-ya ấy à? Ở trong tòa nhà kia.)'
+    },
+    {
+      pattern: '... ありませんか',
+      explanation: 'Cách hỏi tế nhị, lịch sự hơn là「ありますか」.',
+      example: 'チリソースは ありませんか。 (Có tương ớt không ạ?)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
