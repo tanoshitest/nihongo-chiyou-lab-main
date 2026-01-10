@@ -16,6 +16,7 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
   if (lesson.id === 9993) linkUrl = "/minna/test-3";
   if (lesson.id === 9994) linkUrl = "/minna/test-4";
   if (lesson.id === 9995) linkUrl = "/minna/test-5";
+  if (lesson.id === 9996) linkUrl = "/minna/test-6";
 
   return (
     <Card className={cn(
@@ -159,6 +160,18 @@ const MinnaNoNihongo = () => {
         id: 9995,
         title: "Kiểm tra 5",
         description: "Quiz bài 9 10"
+      });
+    }
+  }
+
+  // Insert Test 6 after Lesson 12 (index 12)
+  if (!lessonsN5WithTest.find(l => l.id === 9996)) {
+    const lesson12Index = lessonsN5WithTest.findIndex(l => l.id === 12);
+    if (lesson12Index !== -1) {
+      lessonsN5WithTest.splice(lesson12Index + 1, 0, {
+        id: 9996,
+        title: "Kiểm tra 6",
+        description: "Quiz bài 11 12"
       });
     }
   }
