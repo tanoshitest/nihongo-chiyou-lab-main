@@ -170,6 +170,7 @@ export const lesson1Data: LessonDetail = {
           onyomi: 'シ (shi)',
           kunyomi: 'わたくし (watakushi), わたし (watashi)',
           meaning: 'Tôi, riêng tư',
+          imageUrl: '/images/kanji/20_me_3d.png',
           sinoVietnamese: 'TƯ',
           strokes: 7,
           jlpt: 'N4',
@@ -299,6 +300,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '人 (người)',
           components: [{ char: '人', meaning: 'người' }],
+          imageUrl: '/images/kanji/11_person_3d.png',
           mnemonic: 'Hình ảnh một người đang đứng nghiêng, chống hai chân xuống đất.',
           examples: ['日本人 (にほんじん) - người Nhật', '一人 (ひとり) - một người'],
           exampleSentences: [
@@ -360,6 +362,7 @@ export const lesson1Data: LessonDetail = {
           onyomi: 'ホウ (hou)',
           kunyomi: 'かた (kata)',
           meaning: 'Hướng, vị, người (lịch sự)',
+          imageUrl: '/images/kanji/129_direction_3d.png',
           sinoVietnamese: 'PHƯƠNG',
           strokes: 4,
           jlpt: 'N5',
@@ -431,6 +434,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N3',
           radicals: '白 (trắng)',
           components: [{ char: '比', meaning: 'so sánh' }, { char: '白', meaning: 'trắng' }],
+          imageUrl: '/images/kanji/minasan_3d.png',
           mnemonic: 'Tất cả mọi người (皆) cùng so sánh (比) xem ai có tâm hồn trong trắng (白) nhất.',
           examples: ['皆さん (みなさん) - mọi người', '皆無 (かいむ) - không có gì'],
           exampleSentences: [
@@ -557,6 +561,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N4',
           radicals: '口 (miệng)',
           components: [{ char: '尹', meaning: 'người quản lý' }, { char: '口', meaning: 'miệng' }],
+          imageUrl: '/images/kanji/kun_suffix_3d.png',
           mnemonic: 'Vị quân chủ (君) là người dùng miệng (口) để ra lệnh cho cấp dưới (尹). Trong đời thường dùng để gọi "bạn/cậu" một cách thân mật.',
           examples: ['～君 (くん) - cậu/em', '君 (きみ) - bạn'],
           exampleSentences: [
@@ -680,6 +685,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '儿 (chân người)',
           components: [{ char: '土', meaning: 'đất' }, { char: '儿', meaning: 'chân người' }],
+          imageUrl: '/images/kanji/19_before_3d.png',
           mnemonic: 'Người đi trước (先) là người có đôi chân (儿) bước đi trên đất (土) nhanh nhất.',
           examples: ['先週 (せんしゅう) - tuần trước', '先月 (せんげつ) - tháng trước', '先に (さきに) - trước đó'],
           exampleSentences: [
@@ -715,6 +721,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '生 (sống)',
           components: [{ char: '生', meaning: 'sống' }],
+          imageUrl: '/images/kanji/18_life_3d.png',
           mnemonic: 'Hình ảnh mầm cây đang vươn lên từ mặt đất, tượng trưng cho sự sống.',
           examples: ['学生 (がくせい) - sinh viên', '生活 (せいかつ) - cuộc sống', '生まれる (うまれる) - được sinh ra'],
           exampleSentences: [
@@ -755,6 +762,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '攴 (phộc/đánh khẽ)',
           components: [{ char: '孝', meaning: 'hiếu thảo' }, { char: '攵', meaning: 'đánh khẽ' }],
+          imageUrl: '/images/kanji/201_teach_3d.png',
           mnemonic: 'Con cái phải có hiếu thảo (孝), nếu không cha mẹ sẽ đánh khẽ (攵) để dạy bảo (教).',
           examples: ['教える (おしえる) - dạy', '教室 (きょうしつ) - lớp học'],
           exampleSentences: [
@@ -791,6 +799,7 @@ export const lesson1Data: LessonDetail = {
           radicals: '巾 (khăn)',
           components: [{ char: '阜', meaning: 'gò đất' }, { char: '帀', meaning: 'bao quanh' }],
           mnemonic: 'Vị thầy (師) là người đứng trên cao (gò đất) để dẫn dắt mọi người xung quanh.',
+          imageUrl: '/images/kanji/shi_master_3d.png',
           examples: ['教師 (きょうし) - giáo viên', '医師 (いし) - bác sĩ'],
           exampleSentences: [
             {
@@ -886,6 +895,7 @@ export const lesson1Data: LessonDetail = {
           radicals: '人 (người)',
           components: [{ char: '人', meaning: 'người' }, { char: '云', meaning: 'nói' }],
           mnemonic: 'Mọi người (人) tụ họp lại để cùng thảo luận/nói (云) chuyện.',
+          imageUrl: '/images/kanji/75_meet_3d.png',
           examples: ['会社 (かいしゃ) - công ty', '会議 (かいぎ) - cuộc họp'],
           exampleSentences: [
             {
@@ -920,6 +930,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '示 (thị/chỉ dẫn)',
           components: [{ char: '礻', meaning: 'thần linh' }, { char: '土', meaning: 'đất' }],
+          imageUrl: '/images/kanji/sha_company_3d.png',
           mnemonic: 'Những người cùng làm việc trên mảnh đất (土) và thờ chung một vị thần (礻).',
           examples: ['会社 (かいしゃ) - công ty', '社会 (しゃかい) - xã hội'],
           exampleSentences: [
@@ -955,6 +966,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N4',
           radicals: '口 (miệng)',
           components: [{ char: '口', meaning: 'miệng' }, { char: '貝', meaning: 'vỏ sò/tiền' }],
+          imageUrl: '/images/kanji/in_member_3d.png',
           mnemonic: 'Người nhận tiền (貝) để làm việc bằng miệng (口) (giao lưu/phát ngôn).',
           examples: ['銀行員 (ぎんこういん) - nhân viên ngân hàng', '店員 (てんいん) - nhân viên cửa hàng'],
           exampleSentences: [
@@ -1120,6 +1132,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N4',
           radicals: '口 (miệng)',
           components: [{ char: '口', meaning: 'miệng' }, { char: '貝', meaning: 'vỏ sò/tiền' }],
+          imageUrl: '/images/kanji/in_member_3d.png',
           mnemonic: 'Người nhận tiền (貝) để làm việc bằng miệng (口) (giao lưu/phát ngôn).',
           examples: ['銀行員 (ぎんこういん) - nhân viên ngân hàng', '店員 (てんいん) - nhân viên cửa hàng']
         }
@@ -1164,6 +1177,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '匸 (hệ/che đậy)',
           components: [{ char: '匚', meaning: 'cái hộp' }, { char: '矢', meaning: 'mũi tên' }],
+          imageUrl: '/images/kanji/i_medicine_3d.png',
           mnemonic: 'Mũi tên (矢) được cất trong hộp (匚) để làm dụng cụ châm cứu chữa bệnh của bác sĩ (医).',
           examples: ['医者 (いしゃ) - bác sĩ', '医学 (いがく) - y học'],
           exampleSentences: [
@@ -1198,7 +1212,8 @@ export const lesson1Data: LessonDetail = {
           strokes: 8,
           jlpt: 'N4',
           radicals: '耂 (lão)',
-          components: [{ char: '耂', meaning: 'người giả' }, { char: '日', meaning: 'mặt trời/ngày' }],
+          components: [{ char: '耂', meaning: 'người già' }, { char: '日', meaning: 'mặt trời/ngày' }],
+          imageUrl: '/images/kanji/sha_person_3d.png',
           mnemonic: 'Người (者) từng trải qua nhiều ngày (日) sương gió đến mức già (耂) đi chính là người có kinh nghiệm.',
           examples: ['医者 (いしゃ) - bác sĩ', '読者 (どくしゃ) - độc giả'],
           exampleSentences: [
@@ -1250,6 +1265,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N4',
           radicals: '石 (đá)',
           components: [{ char: '石', meaning: 'đá' }, { char: '开', meaning: 'mở ra' }],
+          imageUrl: '/images/kanji/ken_research_3d.png',
           mnemonic: 'Dùng đá (石) để mài giũa và mở (开) mang kiến thức mới thông qua nghiên cứu (研).',
           examples: ['研究 (けんきゅう) - nghiên cứu', '研修 (けんしゅう) - thực tập'],
           exampleSentences: [
@@ -1285,6 +1301,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N4',
           radicals: '穴 (hang/lỗ)',
           components: [{ char: '穴', meaning: 'cái hang' }, { char: '九', meaning: 'số 9' }],
+          imageUrl: '/images/kanji/kyu_research_3d.png',
           mnemonic: 'Phải đào sâu vào hang (穴) 9 (九) lần mới có thể tìm tòi, nghiên cứu (究) ra tận cùng sự việc.',
           examples: ['研究 (けんきゅう) - nghiên cứu', '究極 (きゅうきょく) - cuối cùng'],
           exampleSentences: [
@@ -1320,6 +1337,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N4',
           radicals: '耂 (lão)',
           components: [{ char: '耂', meaning: 'người già' }, { char: '日', meaning: 'mặt trời/ngày' }],
+          imageUrl: '/images/kanji/sha_person_3d.png',
           mnemonic: 'Người (者) từng trải qua nhiều ngày (日) sương gió đến mức già (耂) đi chính là người có kinh nghiệm.',
           examples: ['研究者 (けんきゅうしゃ) - nhà nghiên cứu', '若者 (わかもの) - người trẻ'],
           exampleSentences: [
@@ -1402,6 +1420,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '大 (đại)',
           components: [{ char: '大', meaning: 'lớn' }],
+          imageUrl: '/images/kanji/dai_big_3d.png',
           mnemonic: 'Hình ảnh một người đang dang rộng hai tay và hai chân để thể hiện cái "Lớn".',
           examples: ['大きい (おおきい) - lớn', '大学 (だいがく) - đại học'],
           exampleSentences: [
@@ -1437,6 +1456,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '子 (con)',
           components: [{ char: '宀', meaning: 'mái nhà' }, { char: '子', meaning: 'đứa trẻ' }],
+          imageUrl: '/images/kanji/gaku_study_3d.png',
           mnemonic: 'Đứa trẻ (子) ở dưới mái nhà (宀) đang học tập.',
           examples: ['学校 (がっこう) - trường học', '大学 (だいがく) - đại học'],
           exampleSentences: [
@@ -1503,6 +1523,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '疒 (nạch/bệnh tật)',
           components: [{ char: '疒', meaning: 'bệnh tật' }, { char: '丙', meaning: 'vị trí thứ 3/lửa' }],
+          imageUrl: '/images/kanji/byou_illness_3d.png',
           mnemonic: 'Người nằm trong giường bệnh (疒) cảm thấy nóng như lửa (丙) đốt.',
           examples: ['病気 (びょうき) - bệnh tật', '病院 (びょういん) - bệnh viện'],
           exampleSentences: [
@@ -1538,6 +1559,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '阜 (phụ/gò đất)',
           components: [{ char: '阝', meaning: 'gò đất/tường' }, { char: '完', meaning: 'hoàn thành' }],
+          imageUrl: '/images/kanji/in_institution_3d.png',
           mnemonic: 'Tòa nhà kiên cố (完) có tường bao quanh (阝) chính là Viện.',
           examples: ['病院 (びょういん) - bệnh viện', '大学院 (だいがくいん) - cao học'],
           exampleSentences: [
@@ -1604,6 +1626,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '雨 (vũ/mưa)',
           components: [{ char: '雨', meaning: 'mưa' }, { char: '申', meaning: 'nói/kéo dài' }],
+          imageUrl: '/images/kanji/den_electricity_3d.png',
           mnemonic: 'Trong cơn mưa (雨), tia chớp xẹt qua kéo dài (申) chính là điện (電).',
           examples: ['電気 (でんき) - điện', '電車 (でんしゃ) - tàu điện'],
           exampleSentences: [
@@ -1639,6 +1662,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '气 (khí)',
           components: [{ char: '气', meaning: 'hơi nước' }, { char: 'メ', meaning: 'số 5' }],
+          imageUrl: '/images/kanji/ki_spirit_3d.png',
           mnemonic: 'Hơi nước (气) bốc lên từ nồi cơm đang nấu tạo thành khí (気).',
           examples: ['元気 (げんき) - khỏe mạnh', '天気 (てんき) - thời tiết'],
           exampleSentences: [
@@ -1767,6 +1791,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N3',
           radicals: '止 (dừng)',
           components: [{ char: '止', meaning: 'dừng lại' }, { char: '歩', meaning: 'đi bộ' }, { char: '戌', meaning: 'tuất/vũ khí' }],
+          imageUrl: '/images/kanji/sai_age_3d.png',
           mnemonic: 'Con người sau khi trải qua nhiều bước đi (歩) và những lúc dừng lại (止) trong cuộc đời thì sẽ thêm một tuổi (歳).',
           examples: ['20歳 (はたち) - 20 tuổi', '歳月 (さいげつ) - năm tháng']
         }
@@ -11089,12 +11114,107 @@ export const lesson4Data: LessonDetail = {
 
 
 
+// Detailed data for Lesson 5
+export const lesson5Data: LessonDetail = {
+  id: 5,
+  title: "Di chuyển",
+  vocabulary: [
+    { word: 'いきます', kanji: '行きます', romaji: 'ikimasu', mean: 'đi' },
+    { word: 'きます', kanji: '来ます', romaji: 'kimasu', mean: 'đến' },
+    { word: 'かえります', kanji: '帰ります', romaji: 'kaerimasu', mean: 'về' },
+    { word: 'がっこう', kanji: '学校', romaji: 'gakkou', mean: 'trường học' },
+    { word: 'スーパー', kanji: '', romaji: 'su-pa-', mean: 'siêu thị' },
+    { word: 'えき', kanji: '駅', romaji: 'eki', mean: 'nhà ga' },
+    { word: 'ひこうき', kanji: '飛行機', romaji: 'hikouki', mean: 'máy bay' },
+    { word: 'ふね', kanji: '船', romaji: 'fune', mean: 'tàu, thuyền' },
+    { word: 'でんしゃ', kanji: '電車', romaji: 'densha', mean: 'tàu điện' },
+    { word: 'ちかてつ', kanji: '地下鉄', romaji: 'chikatetsu', mean: 'tàu điện ngầm' },
+    { word: 'しんかんせん', kanji: '新幹線', romaji: 'shinkansen', mean: 'tàu Shinkansen (tàu siêu tốc)' },
+    { word: 'バス', kanji: '', romaji: 'basu', mean: 'xe buýt' },
+    { word: 'タクシー', kanji: '', romaji: 'takushi-', mean: 'taxi' },
+    { word: 'じてんしゃ', kanji: '自転車', romaji: 'jitensha', mean: 'xe đạp' },
+    { word: 'あるいて', kanji: '歩いて', romaji: 'aruite', mean: 'đi bộ' },
+    { word: 'ひと', kanji: '人', romaji: 'hito', mean: 'người' },
+    { word: 'ともだち', kanji: '友達', romaji: 'tomodachi', mean: 'bạn bè' },
+    { word: 'かれ', kanji: '彼', romaji: 'kare', mean: 'anh ấy, bạn trai' },
+    { word: 'かのじょ', kanji: '彼女', romaji: 'kanojo', mean: 'cô ấy, bạn gái' },
+    { word: 'かぞく', kanji: '家族', romaji: 'kazoku', mean: 'gia đình' },
+    { word: 'ひとりで', kanji: '一人で', romaji: 'hitoride', mean: 'một mình' },
+    { word: 'せんしゅう', kanji: '先週', romaji: 'senshuu', mean: 'tuần trước' },
+    { word: 'こんしゅう', kanji: '今週', romaji: 'konshuu', mean: 'tuần này' },
+    { word: 'らいしゅう', kanji: '来週', romaji: 'raishuu', mean: 'tuần sau' },
+    { word: 'せんげつ', kanji: '先月', romaji: 'sengetsu', mean: 'tháng trước' },
+    { word: 'こんげつ', kanji: '今月', romaji: 'kongetsu', mean: 'tháng này' },
+    { word: 'らいげつ', kanji: '来月', romaji: 'raigetsu', mean: 'tháng sau' },
+    { word: 'きょねん', kanji: '去年', romaji: 'kyonen', mean: 'năm ngoái' },
+    { word: 'ことし', kanji: '今年', romaji: 'kotoshi', mean: 'năm nay' },
+    { word: 'らいねん', kanji: '来年', romaji: 'rainen', mean: 'năm sau' },
+    { word: 'なん', kanji: '何', romaji: 'nan', mean: 'cái gì, mấy' },
+    { word: 'どこ', kanji: '', romaji: 'doko', mean: 'đâu, chỗ nào' },
+    { word: 'いつ', kanji: '', romaji: 'itsu', mean: 'khi nào, bao giờ' },
+    { word: 'たんじょうび', kanji: '誕生日', romaji: 'tanjoubi', mean: 'sinh nhật' }
+  ],
+  grammar: [
+    {
+      pattern: 'Danh từ (địa điểm) へ 行きます/来ます/帰ります',
+      explanation: 'Sử dụng trợ từ 「へ」 (đọc là "e") để chỉ phương hướng di chuyển đến địa điểm nào đó.',
+      example: '京都へ行きます。 (Tôi đi Kyoto.)',
+      examples: [
+        { jp: '京都へ行きます。', vn: 'Tôi đi Kyoto.', furigana: [{ kanji: '京都', reading: 'きょうと', meaning: 'KINH ĐÔ' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
+        { jp: '日本へ来ました。', vn: 'Tôi đã đến Nhật Bản.', furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '来', reading: 'き', meaning: 'LAI' }] },
+        { jp: 'うちへ帰ります。', vn: 'Tôi về nhà.', furigana: [{ kanji: '帰', reading: 'かえ', meaning: 'QUY' }] }
+      ]
+    },
+    {
+      pattern: 'どこ[へ]も 行きません',
+      explanation: 'Khi muốn phủ định hoàn toàn hướng di chuyển (không đi đâu cả), dùng nghi vấn từ 「どこ」 kèm trợ từ 「も」 và động từ ở thể phủ định.',
+      example: 'どこ[へ]も行きません。 (Tôi không đi đâu cả.)',
+      examples: [
+        { jp: 'きのうどこ[へ]行きましたか。', vn: 'Hôm qua bạn đi đâu?', furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
+        { jp: 'どこ[へ]も行きませんでした。', vn: 'Tôi không đi đâu cả.', furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }] }
+      ]
+    },
+    {
+      pattern: 'Danh từ (phương tiện) で 行きます',
+      explanation: 'Trợ từ 「で」 biểu thị phương tiện, cách thức thực hiện hành động.',
+      example: '電車で行きます。 (Tôi đi bằng tàu điện.)',
+      examples: [
+        { jp: '電車で行きます。', vn: 'Tôi đi bằng tàu điện.', furigana: [{ kanji: '電車', reading: 'でんしゃ', meaning: 'ĐIỆN XA' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
+        { jp: 'タクシーで来ました。', vn: 'Tôi đến bằng taxi.', furigana: [{ kanji: '来', reading: 'き', meaning: 'LAI' }] },
+        { jp: '歩いて帰ります。', vn: 'Tôi đi bộ về (trường hợp đặc biệt không dùng で).', furigana: [{ kanji: '歩', reading: 'ある', meaning: 'BỘ' }, { kanji: '帰', reading: 'かえ', meaning: 'QUY' }] }
+      ]
+    },
+    {
+      pattern: 'Danh từ (người/động vật) と Động từ',
+      explanation: 'Trợ từ 「と」 dùng để chỉ đối tượng cùng thực hiện hành động.',
+      example: '家族と日本へ来ました。 (Tôi đến Nhật cùng gia đình.)',
+      examples: [
+        { jp: '家族と日本へ来ました。', vn: 'Tôi đến Nhật cùng gia đình.', furigana: [{ kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '来', reading: 'き', meaning: 'LAI' }] },
+        { jp: '一人で東京へ行きます。', vn: 'Tôi đi Tokyo một mình (trường hợp đặc biệt dùng で).', furigana: [{ kanji: '一人', reading: 'ひとり', meaning: 'NHẤT NHÂN' }, { kanji: '東京', reading: 'とうきょう', meaning: 'ĐÔNG KINH' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] }
+      ]
+    },
+    {
+      pattern: 'いつ',
+      explanation: 'Dùng để hỏi về thời gian chung chung. Khác với 「なんじ」 (mấy giờ), 「いつ」 không thêm trợ từ 「に」.',
+      example: 'いつ日本へ来ましたか。 (Bạn đến Nhật bao giờ?)',
+      examples: [
+        { jp: 'いつ日本へ来ましたか。', vn: 'Bạn đến Nhật bao giờ?', furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '来', reading: 'き', meaning: 'LAI' }] },
+        { jp: '3月25日に来ました。', vn: 'Tôi đến vào ngày 25 tháng 3.', furigana: [{ kanji: '月', reading: 'がつ', meaning: 'NGUYỆT' }, { kanji: '日', reading: 'にち', meaning: 'NHẬT' }, { kanji: '来', reading: 'き', meaning: 'LAI' }] }
+      ]
+    }
+  ],
+  kaiwa: [],
+  quiz: []
+};
+
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
   if (id === 2) return lesson2Data;
   if (id === 3) return lesson3Data;
   if (id === 4) return lesson4Data;
+  if (id === 5) return lesson5Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);

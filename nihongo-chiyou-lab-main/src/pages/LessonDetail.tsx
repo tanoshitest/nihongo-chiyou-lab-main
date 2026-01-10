@@ -839,9 +839,9 @@ const GrammarExampleItem = ({
 
 
 // Kanji Tab Component
-const KanjiTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabulary'] }) => {
-  // Collect all unique Kanji from vocabulary kanjiDetails
-  const allKanjiDetails = vocabulary.reduce((acc: KanjiDetail[], item) => {
+const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['vocabulary']; lessonId: number }) => {
+  // 1. Collect unique Kanji from vocabulary kanjiDetails (Lesson specific overrides)
+  const vocabKanjiDetails = vocabulary.reduce((acc: KanjiDetail[], item) => {
     if (item.kanjiDetails) {
       item.kanjiDetails.forEach(detail => {
         if (!acc.some(d => d.kanji === detail.kanji)) {
@@ -851,6 +851,52 @@ const KanjiTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabulary'] }
     }
     return acc;
   }, []);
+
+  // 2. Fetch Kanji from master dictionary for this lesson
+  const masterLessonKanji = masterKanjiData.filter(k => k.lesson === lessonId).map(master => ({
+    kanji: master.kanji,
+    meaning: master.meaning,
+    onyomi: master.onyomi,
+    kunyomi: master.kunyomi,
+    sinoVietnamese: master.sinoVietnamese,
+    imageUrl: master.imageUrl,
+    strokes: 0,
+    jlpt: "N5", // Default or you could map this if available
+    radicals: master.radicals,
+    mnemonic: master.mnemonic, // Add mnemonic
+    examples: master.examples.map(ex => ex.japanese), // Map examples for list
+    exampleSentences: master.examples.map(ex => ({ // Map examples for sentences
+      jp: ex.japanese,
+      vn: ex.vietnamese,
+      romaji: ex.romaji
+    }))
+  } as KanjiDetail));
+
+  // 3. Merge lists (Master data takes precedence for this lesson if not overridden by specific vocab detail, 
+  // or actually vocab detail should probably override if specific? 
+  // Let's combine: Master first, then if Vocab has detail for same kanji, use that (or vice versa).
+  // Usually Master data is the "Definition" source. Vocab might just link to it.
+  // We'll use a map to deduplicate.
+
+  const mergedKanjiMap = new Map<string, KanjiDetail>();
+
+  // Add master kanji first
+  masterLessonKanji.forEach(k => mergedKanjiMap.set(k.kanji, k));
+
+  // Add/Override with vocab specific kanji (if they exist and we want them to take precedence, or just add if missing)
+  // Since we want to show ALL kanji for the lesson, Master is the best source. 
+  // Vocab details might be for kanji NOT in this lesson but used in vocab.
+  // But the "Kanji Tab" should primarily show the Kanji *taught* in this lesson.
+  // So we definitely want masterLessonKanji. 
+  // If we also want to show "Kanji used in vocab but not from this lesson", we could add them too.
+  // Let's add them if they're not already there.
+  vocabKanjiDetails.forEach(k => {
+    if (!mergedKanjiMap.has(k.kanji)) {
+      mergedKanjiMap.set(k.kanji, k);
+    }
+  });
+
+  const allKanjiDetails = Array.from(mergedKanjiMap.values());
 
   if (allKanjiDetails.length === 0) {
     return (
@@ -986,6 +1032,7 @@ const KanjiTab = ({ vocabulary }: { vocabulary: LessonDetailType['vocabulary'] }
     </div>
   );
 };
+
 
 // Quiz Tab Component
 // Reusable Quiz Engine Component
@@ -1588,7 +1635,7 @@ const LessonDetail = () => {
             </TabsContent>
 
             <TabsContent value="kanji">
-              <KanjiTab vocabulary={lesson.vocabulary} />
+              <KanjiTab vocabulary={lesson.vocabulary} lessonId={lesson.id} />
             </TabsContent>
 
             <TabsContent value="grammar">
