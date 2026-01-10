@@ -12371,7 +12371,44 @@ export const lesson16Data: LessonDetail = {
     { word: 'かくにん', kanji: '確認', romaji: 'kakunin', mean: 'Sự xác nhận, sự kiểm tra (~shimasu: xác nhận)' },
     { word: 'ボタン', kanji: 'ボタン', romaji: 'botan', mean: 'Nút' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      id: 1,
+      structure: 'Động từ thể て, [động từ thể て,] ~',
+      explanation: 'Dùng để nối các động từ với nhau khi liệt kê các hành động xảy ra theo trình tự thời gian. Thì của câu do động từ cuối cùng quyết định.',
+      example: '朝 ジョギングをして、シャワーを 浴びて、会社へ 行きます。 (Buổi sáng tôi chạy bộ, tắm, rồi đến công ty.)\n神戸へ 行って、映画を 見て、お茶を 飲みました。 (Tôi (đã) đi đến Kobe, xem phim, rồi uống trà.)'
+    },
+    {
+      id: 2,
+      structure: 'Tính từ đuôi い (~くて) / Tính từ đuôi な (~で) / Danh từ (~で)',
+      explanation: 'Cách nối tính từ và danh từ trong câu. Tính từ đuôi い bỏ い thêm くて. Tính từ đuôi な và Danh từ thêm で.',
+      example: '大きい -> 大きくて (to và...)\n小さい -> 小さくて (nhỏ và...)\nいい -> よくて (tốt và...) (ngoại lệ)\nミラーさんは 若くて、元気です。 (Anh Miller trẻ và khỏe mạnh.)\nカリナさんは インドネシア人で、京都大学の 留学生です。 (Chị Karina là người Indonesia và là lưu học sinh ở Đại học Kyoto.)\nミラーさんは ハンサムで、親切です。 (Anh Miller đẹp trai và tốt bụng.)'
+    },
+    {
+      id: 3,
+      structure: 'Động từ thể て + から、~',
+      explanation: 'Biểu thị hành động ở vế sau được thực hiện sau khi hành động ở vế trước đã kết thúc.',
+      example: '国へ 帰ってから、父の 会社で 働きます。 (Sau khi về nước tôi làm việc ở công ty của bố tôi.)\nコンサートが 終わってから、レストランで 食事しました。 (Sau khi buổi hòa nhạc kết thúc tôi đi ăn cơm ở nhà hàng.)'
+    },
+    {
+      id: 4,
+      structure: 'Danh từ 1 は Danh từ 2 が Tính từ',
+      explanation: 'Dùng để miêu tả một thuộc tính cụ thể (N2) của chủ đề (N1).',
+      example: '大阪は 食べ物が おいしいです。 (Thức ăn ở Osaka ngon.)\nドイツの フランケンは ワインが 有名です。 (Rượu vang ở vùng Franken của Đức nổi tiếng.)\nマリアさんは 髪が 長いです。 (Chị Maria tóc dài.)'
+    },
+    {
+      id: 5,
+      structure: 'どうやって',
+      explanation: 'Dùng để hỏi về trình tự hoặc cách làm một việc gì đó (làm thế nào, bằng cách nào).',
+      example: '大学まで どうやって 行きますか。 (Đến trường đại học bằng cách nào?)\n...京都駅から 16番の バスに 乗って、大学前で 降ります。 (...Lên xe buýt số 16 từ ga Kyoto, rồi xuống ở điểm đỗ Daigaku-mae.)'
+    },
+    {
+      id: 6,
+      structure: 'どの Danh từ',
+      explanation: 'Dùng để hỏi xác định một đối tượng trong một nhóm gồm 3 đối tượng trở lên (Cái nào, Người nào...).',
+      example: 'サントスさんは どの 人ですか。 (Anh Santos là người nào?)\n...あの 背が 高くて、 髪が 黒い 人です。 (...Là người cao, tóc đen đó.)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
