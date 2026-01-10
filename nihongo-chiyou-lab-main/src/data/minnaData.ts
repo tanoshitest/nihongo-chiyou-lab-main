@@ -11660,6 +11660,75 @@ export const lesson9Data: LessonDetail = {
   quiz: []
 };
 
+// Detailed data for Lesson 10
+export const lesson10Data: LessonDetail = {
+  id: 10,
+  title: "Có và không có",
+  vocabulary: [
+    { word: 'います', kanji: 'います', romaji: 'imasu', mean: 'Có, ở (tồn tại, dùng cho người và động vật)' },
+    { word: 'あります', kanji: 'あります', romaji: 'arimasu', mean: 'Có (tồn tại, dùng cho đồ vật)' },
+    { word: 'いろいろ', kanji: 'いろいろ[な]', romaji: 'iroiro', mean: 'Nhiều, đa dạng' },
+    { word: 'おとこの ひと', kanji: '男の 人', romaji: 'otoko no hito', mean: 'Người đàn ông' },
+    { word: 'おんなの ひと', kanji: '女の 人', romaji: 'onna no hito', mean: 'Người đàn bà' },
+    { word: 'おとこの こ', kanji: '男の 子', romaji: 'otoko no ko', mean: 'Cậu con trai' },
+    { word: 'おんなの こ', kanji: '女の 子', romaji: 'onna no ko', mean: 'Cô con gái' },
+    { word: 'いぬ', kanji: '犬', romaji: 'inu', mean: 'Chó' },
+    { word: 'ねこ', kanji: '猫', romaji: 'neko', mean: 'Mèo' },
+    { word: 'き', kanji: '木', romaji: 'ki', mean: 'Cây, gỗ' },
+    { word: 'もの', kanji: '物', romaji: 'mono', mean: 'Vật, đồ vật' },
+    { word: 'フィルム', kanji: 'フィルム', romaji: 'firumu', mean: 'Phim' },
+    { word: 'でんち', kanji: '電池', romaji: 'denchi', mean: 'Pin' },
+    { word: 'はこ', kanji: '箱', romaji: 'hako', mean: 'Hộp' },
+    { word: 'スイッチ', kanji: 'スイッチ', romaji: 'suitchi', mean: 'Công tắc' },
+    { word: 'れいぞうこ', kanji: '冷蔵庫', romaji: 'reizouko', mean: 'Tủ lạnh' },
+    { word: 'テーブル', kanji: 'テーブル', romaji: 'teeburu', mean: 'Bàn' },
+    { word: 'ベッド', kanji: 'ベッド', romaji: 'beddo', mean: 'Giường' },
+    { word: 'たな', kanji: '棚', romaji: 'tana', mean: 'Giá sách' },
+    { word: 'ドア', kanji: 'ドア', romaji: 'doa', mean: 'Cửa' },
+    { word: 'まど', kanji: '窓', romaji: 'mado', mean: 'Cửa sổ' },
+    { word: 'ポスト', kanji: 'ポスト', romaji: 'posuto', mean: 'Hộp thư, hòm thư' },
+    { word: 'ビル', kanji: 'ビル', romaji: 'biru', mean: 'Tòa nhà' },
+    { word: 'こうえん', kanji: '公園', romaji: 'kouen', mean: 'Công viên' },
+    { word: 'きっさてん', kanji: '喫茶店', romaji: 'kissaten', mean: 'Quán giải khát, quán cà-phê' },
+    { word: 'ほんや', kanji: '本屋', romaji: 'honya', mean: 'Hiệu sách' },
+    { word: '～や', kanji: '～屋', romaji: '~ya', mean: 'Hiệu ~, cửa hàng ~' },
+    { word: 'のりば', kanji: '乗り場', romaji: 'noriba', mean: 'Bến xe, điểm lên xuống xe' },
+    { word: 'けん', kanji: '県', romaji: 'ken', mean: 'Tỉnh' },
+    { word: 'うえ', kanji: '上', romaji: 'ue', mean: 'Trên' },
+    { word: 'した', kanji: '下', romaji: 'shita', mean: 'Dưới' },
+    { word: 'まえ', kanji: '前', romaji: 'mae', mean: 'Trước' },
+    { word: 'うしろ', kanji: '後ろ', romaji: 'ushiro', mean: 'Sau' },
+    { word: 'みぎ', kanji: '右', romaji: 'migi', mean: 'Phải' },
+    { word: 'ひだり', kanji: '左', romaji: 'hidari', mean: 'Trái' },
+    { word: 'なか', kanji: '中', romaji: 'naka', mean: 'Trong, giữa' },
+    { word: 'そと', kanji: '外', romaji: 'soto', mean: 'Ngoài' },
+    { word: 'となり', kanji: '隣', romaji: 'tonari', mean: 'Bên cạnh' },
+    { word: 'ちかく', kanji: '近く', romaji: 'chikaku', mean: 'Gần' },
+    { word: 'あいだ', kanji: '間', romaji: 'aida', mean: 'Giữa' },
+    { word: '～や～[など]', kanji: '～や～[など]', romaji: '~ya ~[nado]', mean: '~ và ~, [v.v.]' },
+    { word: 'いちばん～', kanji: 'いちばん～', romaji: 'ichiban ~', mean: '~ nhất (いちばん うえ: vị trí cao nhất)' },
+    { word: '～だんめ', kanji: '～段目', romaji: '~danme', mean: 'Giá thứ ~, tầng thứ ~ ([だん] được dùng cho giá sách v.v.)' },
+    { word: 'どうも すみません', kanji: '[どうも] すみません', romaji: '[doumo] sumimasen', mean: 'Cám ơn.' },
+    { word: 'チリソース', kanji: 'チリソース', romaji: 'chirisoosu', mean: 'Tương ớt (chili sauce)' },
+    { word: 'おく', kanji: '奥', romaji: 'oku', mean: 'Bên trong cùng, phía sâu bên trong' },
+    { word: 'スパイス・コーナー', kanji: 'スパイス・コーナー', romaji: 'supaisu koonaa', mean: 'Góc gia vị (spice corner)' },
+    // Reference Words: Inside House
+    { word: 'げんかん', kanji: '玄関', romaji: 'genkan', mean: 'Cửa ra vào' },
+    { word: 'トイレ', kanji: 'トイレ', romaji: 'toire', mean: 'Toa-lét, phòng vệ sinh' },
+    { word: 'ふろば', kanji: '風呂場', romaji: 'furoba', mean: 'Phòng tắm' },
+    { word: 'せんめんじょ', kanji: '洗面所', romaji: 'senmenjo', mean: 'Bồn rửa' },
+    { word: 'だいどころ', kanji: '台所', romaji: 'daidokoro', mean: 'Bếp' },
+    { word: 'しょくどう', kanji: '食堂', romaji: 'shokudou', mean: 'Nhà ăn, phòng ăn' },
+    { word: 'いま', kanji: '居間', romaji: 'ima', mean: 'Phòng khách, phòng sinh hoạt chung' },
+    { word: 'しんしつ', kanji: '寝室', romaji: 'shinshitsu', mean: 'Phòng ngủ' },
+    { word: 'ろうか', kanji: '廊下', romaji: 'rouka', mean: 'Hành lang' },
+    { word: 'ベランダ', kanji: 'ベランダ', romaji: 'beranda', mean: 'Ban-công' }
+  ],
+  grammar: [],
+  kaiwa: [],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
@@ -11671,6 +11740,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 7) return lesson7Data;
   if (id === 8) return lesson8Data;
   if (id === 9) return lesson9Data;
+  if (id === 10) return lesson10Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
