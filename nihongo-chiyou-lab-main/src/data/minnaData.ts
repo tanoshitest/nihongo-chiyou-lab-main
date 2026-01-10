@@ -101,12 +101,12 @@ export interface LessonSummary {
 
 // Lesson summaries for listing page
 export const lessonsN5: LessonSummary[] = [
-  { id: 1, title: "Làm quen & Giới thiệu", description: "Học cách giới thiệu bản thân" },
+  { id: 1, title: "Giới thiệu", description: "Học cách giới thiệu bản thân" },
   { id: 2, title: "Đồ vật xung quanh", description: "Học về các đồ vật gần xa" },
   { id: 3, title: "Mua sắm", description: "Hỏi giá, mua bán" },
-  { id: 4, title: "Thời gian & Lịch trình", description: "Giờ giấc, ngày tháng" },
+  { id: 4, title: "Thời gian", description: "Giờ giấc, ngày tháng" },
   { id: 5, title: "Di chuyển", description: "Đi lại bằng phương tiện" },
-  { id: 6, title: "Hành động hàng ngày", description: "Các hoạt động thường ngày" },
+  { id: 6, title: "Hành động", description: "Các hoạt động thường ngày" },
   { id: 7, title: "Cho và nhận", description: "Trao đổi quà tặng" },
   { id: 8, title: "Tính từ", description: "Mô tả người và vật" },
   { id: 9, title: "Sở thích", description: "Nói về sở thích cá nhân" },
@@ -159,7 +159,7 @@ export const lessonsN4: LessonSummary[] = [
 // Detailed data for Lesson 1
 export const lesson1Data: LessonDetail = {
   id: 1,
-  title: "Làm quen & Giới thiệu",
+  title: "Giới thiệu",
   vocabulary: [
     // Đại từ nhân xưng
     {
@@ -8361,7 +8361,7 @@ export const lesson3Data: LessonDetail = {
 
 export const lesson4Data: LessonDetail = {
   id: 4,
-  title: "Thời gian & Lịch trình",
+  title: "Thời gian",
   vocabulary: [
     {
       "word": "おきます",
