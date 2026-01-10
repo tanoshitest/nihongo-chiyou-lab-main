@@ -12681,7 +12681,23 @@ export const lesson20Data: LessonDetail = {
     { word: 'よかったら', kanji: 'よかったら', romaji: 'yokattara', mean: 'Nếu anh/chị thích thì' },
     { word: 'いろいろ', kanji: 'いろいろ', romaji: 'iroiro', mean: 'Nhiều thứ' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      pattern: 'Kiểu lịch sự (Teinei-tai) và Kiểu thông thường (Futsuu-tai)',
+      explanation: 'Trong tiếng Nhật có 2 kiểu văn phong: Kiểu lịch sự (dùng trong hội thoại với người lạ, người lớn tuổi, câp trên, hoặc trong các hoàn cảnh trang trọng) và Kiểu thông thường (dùng với gia đình, bạn bè thân thiết, người kém tuổi, hoặc trong nhật ký, báo chí).\n\nSo sánh:\n1. Động từ:\n   - Khẳng định: Ikimasu -> Iku\n   - Phủ định: Ikimasen -> Ikanai\n   - Quá khứ: Ikimashita -> Itta\n   - QK Phủ định: Ikimasendeshita -> Ikanakatta\n2. Tính từ đuôi i:\n   - Khẳng định: Isogashii desu -> Isogashii\n   - Phủ định: Isogashikunai desu -> Isogashikunai\n3. Tính từ đuôi na / Danh từ:\n   - Khẳng định: Kirei desu -> Kirei da\n   - Phủ định: Kirei ja arimasen -> Kirei ja nai',
+      example: 'あした 東京へ 行きます。 (Lịch sự) -> あした 東京へ 行く。 (Thông thường)\n毎日 忙しいです。 -> 毎日 忙しい。\n相撲が 好きです。 -> 相撲が 好き(だ)。\n富士山に 登りたいです。 -> 富士山に 登りたい。'
+    },
+    {
+      pattern: 'Hội thoại dùng kiểu thông thường',
+      explanation: 'Trong hội thoại kiểu thông thường, các trợ từ, từ ngữ thường được lược bỏ hoặc thay đổi để ngắn gọn hơn.\n1. Câu nghi vấn: Bỏ [ka], lên giọng ở cuối câu.\n   - コーヒーを 飲む？ (Uống cà phê không?)\n2. Câu nghi vấn danh từ/tính từ: Bỏ [desu/da].\n   - 今晩 暇？ (Tối nay rảnh không?) -> Ừ, rảnh / Không, không rảnh.\n3. Lược bỏ trợ từ: (wa, ga, o, e...)\n   - ごはん[を] 食べる？ (Ăn cơm không?)\n4. Chữ [i] trong [V-te íru] bị lược bỏ.\n   - 辞書、持って [い]る？ (Có từ điển không?)',
+      example: '勝手なこと 言わないで。 (Đừng có nói tùy tiện thế.)\n僕も 調査に 行く。 (Tớ cũng đi điều tra.)\n...うん、頼む。 (...Ừ, nhờ cậu nhé.)'
+    },
+    {
+      pattern: 'けど (Nhưng)',
+      explanation: 'Trong hội thoại thông thường, [ga] (nhưng) thường được thay bằng [kedo].',
+      example: 'その カレーライス、辛い？ (Món cà-ri đó cay không?)\n...うん、辛いけど、おいしい。 (...Ừ, cay nhưng mà ngon.)\n相撲の チケット あるけど、一緒に行かない？ (Tớ có vé xem Sumo đấy, đi cùng không?)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
