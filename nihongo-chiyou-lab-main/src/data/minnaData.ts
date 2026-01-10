@@ -12413,6 +12413,54 @@ export const lesson16Data: LessonDetail = {
   quiz: []
 };
 
+export const lesson17Data: LessonDetail = {
+  id: 17,
+  title: 'Bài 17',
+  vocabulary: [
+    { word: 'おぼえます', kanji: '覚えます', romaji: 'oboemasu', mean: 'Nhớ' },
+    { word: 'わすれます', kanji: '忘れます', romaji: 'wasuremasu', mean: 'Quên' },
+    { word: 'なくします', kanji: '無くします', romaji: 'nakushimasu', mean: 'Mất, đánh mất' },
+    { word: 'だします', kanji: '出します', romaji: 'dashimasu', mean: 'Nộp [bản/bài báo cáo]' },
+    { word: 'はらいます', kanji: '払います', romaji: 'haraimasu', mean: 'Trả tiền' },
+    { word: 'かえします', kanji: '返します', romaji: 'kaeshimasu', mean: 'Trả lại' },
+    { word: 'でかけます', kanji: '出かけます', romaji: 'dekakemasu', mean: 'Ra ngoài' },
+    { word: 'ぬぎます', kanji: '脱ぎます', romaji: 'nugimasu', mean: 'Cởi (quần áo, giày)' },
+    { word: 'もっていきます', kanji: '持って行きます', romaji: 'motteikimasu', mean: 'Mang đi, mang theo' },
+    { word: 'もってきます', kanji: '持って来ます', romaji: 'mottekimasu', mean: 'Mang đến' },
+    { word: 'しんぱいします', kanji: '心配します', romaji: 'shinpaishimasu', mean: 'Lo lắng' },
+    { word: 'ざんぎょうします', kanji: '残業します', romaji: 'zangyoushimasu', mean: 'Làm thêm, làm quá giờ' },
+    { word: 'しゅっちょうします', kanji: '出張します', romaji: 'shucchoushimasu', mean: 'Đi công tác' },
+    { word: 'のみます', kanji: '飲みます', romaji: 'nomimasu', mean: 'Uống [thuốc]' },
+    { word: 'はいります', kanji: '入ります', romaji: 'hairimasu', mean: 'Tắm bồn [vào bồn tắm]' },
+    { word: 'たいせつ', kanji: '大切', romaji: 'taisetsu', mean: 'Quan trọng, quý giá' },
+    { word: 'だいじょうぶ', kanji: '大丈夫', romaji: 'daijoubu', mean: 'Không sao, không có vấn đề gì' },
+    { word: 'あぶない', kanji: '危ない', romaji: 'abunai', mean: 'Nguy hiểm' },
+    { word: 'もんだい', kanji: '問題', romaji: 'mondai', mean: 'Vấn đề' },
+    { word: 'こたえ', kanji: '答え', romaji: 'kotae', mean: 'Câu trả lời' },
+    { word: 'きんえん', kanji: '禁煙', romaji: 'kinen', mean: 'Cấm hút thuốc' },
+    { word: 'けんこうほけんしょう', kanji: '[健康]保険証', romaji: 'kenkouhokenshou', mean: 'Thẻ bảo hiểm [y tế]' },
+    { word: 'かぜ', kanji: 'かぜ', romaji: 'kaze', mean: 'Cảm, cúm' },
+    { word: 'ねつ', kanji: '熱', romaji: 'netsu', mean: 'Sốt' },
+    { word: 'びょうき', kanji: '病気', romaji: 'byouki', mean: 'Ốm, bệnh' },
+    { word: 'くすり', kanji: '薬', romaji: 'kusuri', mean: 'Thuốc' },
+    { word: 'おふろ', kanji: '[お]ふろ', romaji: 'ofuro', mean: 'Bồn tắm' },
+    { word: 'うわぎ', kanji: '上着', romaji: 'uwagi', mean: 'Áo khoác' },
+    { word: 'したぎ', kanji: '下着', romaji: 'shitagi', mean: 'Quần áo lót' },
+    { word: 'せんせい', kanji: '先生', romaji: 'sensei', mean: 'Bác sĩ (cách gọi bác sĩ)' },
+    { word: '2、3にち', kanji: '2、3日', romaji: 'nisannichi', mean: 'Vài ngày' },
+    { word: '2、3～', kanji: '2、3～', romaji: 'nisan', mean: 'Vài ~ ("~" là hậu tố chỉ cách đếm)' },
+    { word: '～までに', kanji: '～までに', romaji: 'madeni', mean: 'Trước ~ (chỉ thời hạn)' },
+    { word: 'ですから', kanji: 'ですから', romaji: 'desukara', mean: 'Vì thế, vì vậy, do đó' },
+    { word: 'どうしましたか。', kanji: 'どうしましたか。', romaji: 'doushimashitaka', mean: 'Có vấn đề gì?/Anh/Chị bị làm sao? (cách bác sĩ hỏi bệnh nhân)' },
+    { word: '～がいたいです。', kanji: '～が痛いです。', romaji: 'gaitaidesu', mean: 'Tôi bị đau [~].' },
+    { word: 'のど', kanji: 'のど', romaji: 'nodo', mean: 'Họng' },
+    { word: 'おだいじに。', kanji: 'お大事に。', romaji: 'odaijini', mean: 'Anh/Chị nhớ giữ gìn sức khỏe. (câu nói với người bị ốm hoặc bị bệnh)' }
+  ],
+  grammar: [],
+  kaiwa: [],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
@@ -12431,6 +12479,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 14) return lesson14Data;
   if (id === 15) return lesson15Data;
   if (id === 16) return lesson16Data;
+  if (id === 17) return lesson17Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
