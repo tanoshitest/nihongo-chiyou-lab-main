@@ -12563,6 +12563,62 @@ export const lesson18Data: LessonDetail = {
   quiz: []
 };
 
+export const lesson19Data: LessonDetail = {
+  id: 19,
+  title: 'Bài 19',
+  vocabulary: [
+    { word: 'のぼります', kanji: '登ります', romaji: 'noborimasu', mean: 'Leo [núi]' },
+    { word: 'とまります', kanji: '泊まります', romaji: 'tomarimasu', mean: 'Trọ [ở khách sạn]' },
+    { word: 'そうじします', kanji: '掃除します', romaji: 'soujishimasu', mean: 'Dọn vệ sinh' },
+    { word: 'せんたくします', kanji: '洗濯します', romaji: 'sentakushimasu', mean: 'Giặt' },
+    { word: 'れんしゅうします', kanji: '練習します', romaji: 'renshuushimasu', mean: 'Luyện tập, thực hành' },
+    { word: 'なります', kanji: 'なります', romaji: 'narimasu', mean: 'Trở thành, trở nên' },
+    { word: 'ねむい', kanji: '眠い', romaji: 'nemui', mean: 'Buồn ngủ' },
+    { word: 'つよい', kanji: '強い', romaji: 'tsuyoi', mean: 'Mạnh' },
+    { word: 'よわい', kanji: '弱い', romaji: 'yowai', mean: 'Yếu' },
+    { word: 'ちょうし', kanji: '調子', romaji: 'choushi', mean: 'Tình trạng, trạng thái' },
+    { word: 'ちょうしがいい', kanji: '調子がいい', romaji: 'choushigaii', mean: 'Trong tình trạng tốt' },
+    { word: 'ちょうしがわるい', kanji: '調子が悪い', romaji: 'choushigawarui', mean: 'Trong tình trạng xấu' },
+    { word: 'ゴルフ', kanji: 'ゴルフ', romaji: 'gorufu', mean: 'Gôn (~wo shimasu: chơi gôn)' },
+    { word: 'すもう', kanji: '相撲', romaji: 'sumou', mean: 'Vật Sumo' },
+    { word: 'パチンコ', kanji: 'パチンコ', romaji: 'pachinko', mean: 'Trò chơi Pachinko (~wo shimasu: chơi Pachinko)' },
+    { word: 'おちゃ', kanji: 'お茶', romaji: 'ocha', mean: 'Trà đạo' },
+    { word: 'ひ', kanji: '日', romaji: 'hi', mean: 'Ngày' },
+    { word: 'いちど', kanji: '一度', romaji: 'ichido', mean: 'Một lần' },
+    { word: 'いちども', kanji: '一度も', romaji: 'ichidomo', mean: 'Chưa lần nào' },
+    { word: 'だんだん', kanji: 'だんだん', romaji: 'dandan', mean: 'Dần dần' },
+    { word: 'もうすぐ', kanji: 'もうすぐ', romaji: 'mousugu', mean: 'Sắp' },
+    { word: 'おかげさまで', kanji: 'おかげさまで', romaji: 'okagesamade', mean: 'Cám ơn anh/chị (dùng để bày tỏ sự cám ơn khi nhận được sự giúp đỡ)' },
+    { word: 'かんぱい', kanji: '乾杯', romaji: 'kanpai', mean: 'Nâng cốc!/Cạn chén!' },
+    { word: 'じつは', kanji: '実は', romaji: 'jitsuwa', mean: 'Thật ra là/Sự tình là' },
+    { word: 'ダイエット', kanji: 'ダイエット', romaji: 'daietto', mean: 'Việc ăn kiêng, chế độ giảm cân' },
+    { word: 'なんかいも', kanji: '何回も', romaji: 'nankaimo', mean: 'Nhiều lần' },
+    { word: 'しかし', kanji: 'しかし', romaji: 'shikashi', mean: 'Nhưng, tuy nhiên' },
+    { word: 'むり', kanji: '無理', romaji: 'muri', mean: 'Không thể, quá sức' },
+    { word: 'からだにいい', kanji: '体にいい', romaji: 'karadaniii', mean: 'Tốt cho sức khỏe' },
+    { word: 'ケーキ', kanji: 'ケーキ', romaji: 'keeki', mean: 'Bánh ga-tô, bánh ngọt' },
+    // Reference Words: Traditional Culture & Entertainment
+    { word: 'さどう', kanji: '茶道', romaji: 'sadou', mean: 'Trà đạo' },
+    { word: 'かどう', kanji: '華道', romaji: 'kadou', mean: 'Nghệ thuật cắm hoa' },
+    { word: 'しょどう', kanji: '書道', romaji: 'shodou', mean: 'Thư pháp' },
+    { word: 'かぶき', kanji: '歌舞伎', romaji: 'kabuki', mean: 'Kịch Kabuki' },
+    { word: 'のう', kanji: '能', romaji: 'nou', mean: 'Kịch Nou' },
+    { word: 'ぶんらく', kanji: '文楽', romaji: 'bunraku', mean: 'Nghệ thuật Bunraku (kịch rối)' },
+    { word: 'じゅうどう', kanji: '柔道', romaji: 'juudou', mean: 'Judo' },
+    { word: 'けんどう', kanji: '剣道', romaji: 'kendou', mean: 'Kiếm đạo' },
+    { word: 'からて', kanji: '空手', romaji: 'karate', mean: 'Karate' },
+    { word: 'まんざい', kanji: '漫才', romaji: 'manzai', mean: 'Manzai (Hài tấu nói)' },
+    { word: 'らくご', kanji: '落語', romaji: 'rakugo', mean: 'Rakugo (Hài kịch kể chuyện)' },
+    { word: 'いご', kanji: '囲碁', romaji: 'igo', mean: 'Cờ vây' },
+    { word: 'しょうぎ', kanji: '将棋', romaji: 'shougi', mean: 'Cờ tướng Nhật Bản' },
+    { word: 'カラオケ', kanji: 'カラオケ', romaji: 'karaoke', mean: 'Karaoke' },
+    { word: 'ぼんおどり', kanji: '盆踊り', romaji: 'bonodori', mean: 'Múa Bon' }
+  ],
+  grammar: [],
+  kaiwa: [],
+  quiz: []
+};
+
 // Function to get lesson data by ID
 export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 1) return lesson1Data;
@@ -12583,6 +12639,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 16) return lesson16Data;
   if (id === 17) return lesson17Data;
   if (id === 18) return lesson18Data;
+  if (id === 19) return lesson19Data;
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
