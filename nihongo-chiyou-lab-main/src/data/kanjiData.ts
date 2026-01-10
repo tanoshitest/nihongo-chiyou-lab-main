@@ -11464,6 +11464,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 315,
     kanji: "戸",
+    imageUrl: "/images/kanji/315_door_3d.png",
     lesson: 20,
     onyomi: "コ",
     kunyomi: "と",
@@ -11490,6 +11491,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 316,
     kanji: "所",
+    imageUrl: "/images/kanji/316_institute_3d.png",
     lesson: 20,
     onyomi: "ショ",
     kunyomi: "ところ",
@@ -11521,6 +11523,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 317,
     kanji: "屋",
+    imageUrl: "/images/kanji/317_shop_roof_3d.png",
     lesson: 9,
     onyomi: "オク",
     kunyomi: "や",
@@ -11552,6 +11555,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 318,
     kanji: "堂",
+    imageUrl: "/images/kanji/318_public_hall_3d.png",
     lesson: 9,
     onyomi: "ドウ",
     kunyomi: "",
@@ -11578,6 +11582,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 319,
     kanji: "都",
+    imageUrl: "/images/kanji/319_metropolis_3d.png",
     lesson: 20,
     onyomi: "ト、ツ",
     kunyomi: "みやこ",
@@ -11609,6 +11614,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 320,
     kanji: "県",
+    imageUrl: "/images/kanji/320_prefecture_3d.png",
     lesson: 20,
     onyomi: "ケン",
     kunyomi: "",
@@ -11635,6 +11641,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 321,
     kanji: "区",
+    imageUrl: "/images/kanji/321_district_3d.png",
     lesson: 21,
     onyomi: "ク",
     kunyomi: "",
@@ -11666,6 +11673,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 322,
     kanji: "信",
+    imageUrl: "/images/kanji/322_signal_trust_3d.png",
     lesson: 22,
     onyomi: "シン",
     kunyomi: "",
@@ -11697,6 +11705,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 323,
     kanji: "映",
+    imageUrl: "/images/kanji/323_reflect_film_3d.png",
     lesson: 11,
     onyomi: "エイ",
     kunyomi: "うつ・る、うつ・す",
@@ -11723,6 +11732,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 324,
     kanji: "画",
+    imageUrl: "/images/kanji/324_drawing_picture_3d.png",
     lesson: 28,
     onyomi: "ガ、カク",
     kunyomi: "",
@@ -11754,6 +11764,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 325,
     kanji: "写",
+    imageUrl: "/images/kanji/325_photo_copy_3d.png",
     lesson: 11,
     onyomi: "シャ",
     kunyomi: "うつ・す、うつ・る",
@@ -11780,6 +11791,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 326,
     kanji: "真",
+    imageUrl: "/images/kanji/326_truth_real_3d.png",
     lesson: 11,
     onyomi: "シン",
     kunyomi: "ま",
@@ -11811,6 +11823,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 327,
     kanji: "音",
+    imageUrl: "/images/kanji/327_sound_3d.png",
     lesson: 7,
     onyomi: "オン",
     kunyomi: "おと、ね",
@@ -11837,6 +11850,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 328,
     kanji: "楽",
+    imageUrl: "/images/kanji/328_music_fun_3d.png",
     lesson: 7,
     onyomi: "ガク、ラク",
     kunyomi: "たの・しい",
@@ -11868,6 +11882,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 329,
     kanji: "料",
+    imageUrl: "/images/kanji/329_material_fee_3d.png",
     lesson: 16,
     onyomi: "リョウ",
     kunyomi: "",
@@ -11899,6 +11914,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 330,
     kanji: "組",
+    imageUrl: "/images/kanji/330_group_3d.png",
     lesson: 31,
     onyomi: "ソ",
     kunyomi: "く・む、くみ",
@@ -11925,6 +11941,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 331,
     kanji: "思",
+    imageUrl: "/images/kanji/331_think_3d.png",
     lesson: 7,
     onyomi: "シ",
     kunyomi: "おも・う",
@@ -11951,6 +11968,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 332,
     kanji: "色",
+    imageUrl: "/images/kanji/332_color_3d.png",
     lesson: 21,
     onyomi: "ショク、シキ",
     kunyomi: "いろ",
@@ -11977,6 +11995,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 333,
     kanji: "白",
+    imageUrl: "/images/kanji/333_white_pure_3d.png",
     lesson: 21,
     onyomi: "ハク",
     kunyomi: "しろ、しろ・い",
@@ -12003,6 +12022,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 334,
     kanji: "黒",
+    imageUrl: "/images/kanji/334_black_board_3d.png",
     lesson: 21,
     onyomi: "コク",
     kunyomi: "くろ、くろ・い",
@@ -12029,6 +12049,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 335,
     kanji: "赤",
+    imageUrl: "/images/kanji/335_red_hot_3d.png",
     lesson: 21,
     onyomi: "セキ",
     kunyomi: "あか、あか・い",
