@@ -12522,7 +12522,43 @@ export const lesson18Data: LessonDetail = {
     { word: 'ころぶ', kanji: '転ぶ', romaji: 'korobu', mean: 'Ngã' },
     { word: 'ふりむく', kanji: '振り向く', romaji: 'furimuku', mean: 'Ngoảnh lại' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      pattern: 'Động từ thể nguyên dạng (Dictionary Form)',
+      explanation: 'Thể nguyên dạng (hay còn gọi là Thể Từ điển - Jisho-kei) là thể cơ bản của động từ, được tìm thấy trong từ điển.\nCách chia:\n1. Nhóm I: Chuyển âm cuối hàng [i] sang hàng [u]. (kakimasu -> kaku, yomimasu -> yomu).\n2. Nhóm II: Bỏ [masu] thêm [ru]. (tabemasu -> taberu).\n3. Nhóm III: shimasu -> suru, kimasu -> kuru.',
+      example: '書きます (kakimasu) -> 書く (kaku)\n食べます (tabemasu) -> 食べる (taberu)\nします (shimasu) -> する (suru)\n来ます (kimasu) -> 来る (kuru)'
+    },
+    {
+      pattern: 'Danh từ + が できます',
+      explanation: 'Biểu thị năng lực hoặc khả năng. Danh từ đứng trước [ga] là danh từ chỉ động tác hoặc hành vi (như lái xe, trượt tuyết, piano...).',
+      example: 'ミラーさんは 日本語が できます。 (Anh Miller có thể nói tiếng Nhật.)\n雪が たくさん 降りましたから、今年は スキーが できます。 (Vì tuyết rơi nhiều nên năm nay có thể trượt tuyết.)'
+    },
+    {
+      pattern: 'Động từ thể nguyên dạng + こと + が できます',
+      explanation: 'Khi muốn nói ai đó có thể làm được một động tác nào đó thì thêm [koto] vào sau động từ thể nguyên dạng để biến nó thành danh từ, rồi thêm [ga dekimasu].',
+      example: 'ミラーさんは 漢字を 読む ことが できます。 (Anh Miller có thể đọc chữ Hán.)\nカードで 払う ことが できます。 (Có thể trả tiền bằng thẻ.)'
+    },
+    {
+      pattern: 'わたしの 趣味は Danh từ / Động từ thể nguyên dạng + こと です',
+      explanation: 'Cách nói về sở thích. Nếu sở thích là hành động thì dùng mẫu [V-ru + koto].',
+      example: 'わたしの 趣味は 音楽です。 (Sở thích của tôi là âm nhạc.)\nわたしの 趣味は 音楽を 聞く ことです。 (Sở thích của tôi là nghe nhạc.)'
+    },
+    {
+      pattern: 'V1 (nguyên dạng) / Nounの / Lượng từ (thời gian) + まえに、 V2',
+      explanation: 'Biểu thị hành động V2 xảy ra trước hành động V1/Danh từ/Mốc thời gian.',
+      example: '日本へ 来る まえに、日本語を 勉強しました。 (Trước khi đến Nhật tôi đã học tiếng Nhật.)\n寝る まえに、本を 読みます。 (Trước khi đi ngủ, tôi đọc sách.)\n食事の まえに、手を 洗います。 (Trước bữa ăn, tôi rửa tay.)\n田中さんは 1時間 まえに、出かけました。 (Anh Tanaka đã đi ra ngoài cách đây 1 tiếng.)'
+    },
+    {
+      pattern: 'なかなか',
+      explanation: '「なかなか」 đi kèm với thể phủ định để biểu thị ý nghĩa "không dễ gì" hoặc "không đúng như điều kỳ vọng". (Mãi mà không..., khó mà...).',
+      example: '日本では なかなか 馬を 見る ことが できません。 (Ở Nhật khó mà có cơ hội để xem ngựa.)'
+    },
+    {
+      pattern: 'ぜひ',
+      explanation: 'Dùng kèm với câu chỉ nguyện vọng (tai), yêu cầu (te kudasai) để nhấn mạnh ý nghĩa đó. (Nhất định).',
+      example: 'ぜひ 北海道へ 行きたいです。 (Tôi rất muốn đi Hokkaido.)\nぜひ 遊びに 来て ください。 (Nhất định anh/chị phải đến chơi nhé.)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };

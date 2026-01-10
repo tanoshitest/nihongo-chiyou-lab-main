@@ -18,6 +18,7 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
   if (lesson.id === 9995) linkUrl = "/minna/test-5";
   if (lesson.id === 9996) linkUrl = "/minna/test-6";
   if (lesson.id === 9997) linkUrl = "/minna/test-7";
+  if (lesson.id === 9998) linkUrl = "/minna/test-8";
 
   return (
     <Card className={cn(
