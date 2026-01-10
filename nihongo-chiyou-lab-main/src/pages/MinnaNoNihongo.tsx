@@ -205,6 +205,30 @@ const MinnaNoNihongo = () => {
     }
   }
 
+  // Insert Test 9 after Lesson 18 (index 18)
+  if (!lessonsN5WithTest.find(l => l.id === 9999)) {
+    const lesson18Index = lessonsN5WithTest.findIndex(l => l.id === 18);
+    if (lesson18Index !== -1) {
+      lessonsN5WithTest.splice(lesson18Index + 1, 0, {
+        id: 9999,
+        title: "Kiểm tra 9",
+        description: "Quiz bài 17 18"
+      });
+    }
+  }
+
+  // Insert Test 10 after Lesson 20 (index 20)
+  if (!lessonsN5WithTest.find(l => l.id === 10000)) {
+    const lesson20Index = lessonsN5WithTest.findIndex(l => l.id === 20);
+    if (lesson20Index !== -1) {
+      lessonsN5WithTest.splice(lesson20Index + 1, 0, {
+        id: 10000,
+        title: "Kiểm tra 10",
+        description: "Quiz bài 19 20"
+      });
+    }
+  }
+
   return (
     <Layout>
       <div className="bg-background">
