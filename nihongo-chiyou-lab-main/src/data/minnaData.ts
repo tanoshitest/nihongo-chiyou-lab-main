@@ -11867,7 +11867,33 @@ export const lesson11Data: LessonDetail = {
     { word: 'ジュース', kanji: 'ジュース', romaji: 'juusu', mean: 'Nước hoa quả' },
     { word: 'コーラ', kanji: 'コーラ', romaji: 'koora', mean: 'Cô-ca cô-la' }
   ],
-  grammar: [],
+  grammar: [
+    {
+      pattern: 'ひとつ, ふたつ ... とお',
+      explanation: 'Cách đếm đồ vật nói chung (không có hậu tố đơn vị cụ thể) từ 1 đến 10. Từ 11 trở lên dùng số đếm thường (juu-ichi...).',
+      example: 'りんごを ４つ 買いました。 (Tôi đã mua 4 quả táo.)'
+    },
+    {
+      pattern: 'Số từ + (Suffix/Counter)',
+      explanation: 'Khi đếm người hay vật cụ thể, dùng số từ + hậu tố chỉ đơn vị (lượng từ). Lượng từ thường đặt TRƯỚC động từ mà nó bổ nghĩa (trừ lượng từ chỉ thời gian).',
+      example: '外国人の 学生が ２人 います。 (Có 2 sinh viên người nước ngoài.)\n切手を ５枚 買いました。 (Tôi đã mua 5 cái tem.)'
+    },
+    {
+      pattern: 'Danh từ (only time) + どのくらい + かかりますか',
+      explanation: 'Dùng để hỏi về khoảng thời gian (mất bao lâu). Thường dùng với động từ かかります.',
+      example: '大阪から 東京まで どのくらい かかりますか。 (Từ Osaka đến Tokyo mất bao lâu?)\n...新幹線で ２時間半 かかります。 (...Đi bằng Shinkansen mất 2 tiếng rưỡi.)'
+    },
+    {
+      pattern: 'Lượng từ (khoảng thời gian) + に + ～回 + Động từ',
+      explanation: 'Biểu thị tần suất làm việc gì đó trong một khoảng thời gian.',
+      example: '１か月に ２回 映画を 見ます。 (Tôi xem phim 2 lần trong 1 tháng.)'
+    },
+    {
+      pattern: 'Lượng từ / Danh từ + だけ',
+      explanation: 'Biểu thị ý nghĩa "chỉ", "không nhiều hơn thế" hoặc "ngoài ra không có cái khác".',
+      example: '休みは 日曜日だけです。 (Ngày nghỉ chỉ có chủ nhật.)'
+    }
+  ],
   kaiwa: [],
   quiz: []
 };
