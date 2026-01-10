@@ -189,6 +189,24 @@ const MinnaTest5 = () => {
                         <h2 className="text-xl font-bold">Đề thi {data[0]?.section?.includes("Mondai") ? "Trắc nhiệm" : "Tổng hợp"}</h2>
                         <p className="text-sm text-muted-foreground">Số câu: {total}</p>
                     </div>
+
+                    {/* Exam Selector */}
+                    <div className="flex gap-2">
+                        {[1, 2, 3].map(id => (
+                            <Button
+                                key={id}
+                                variant={examId === id ? "default" : "outline"}
+                                className={cn(
+                                    "gap-2",
+                                    examId === id ? "bg-[#008001] hover:bg-[#006801]" : "hover:text-[#008001] hover:border-[#008001]"
+                                )}
+                                onClick={() => setExamId(id)}
+                            >
+                                <span className="text-lg">📄</span>
+                                Đề {id}
+                            </Button>
+                        ))}
+                    </div>
                 </div>
 
                 {showResult && (
