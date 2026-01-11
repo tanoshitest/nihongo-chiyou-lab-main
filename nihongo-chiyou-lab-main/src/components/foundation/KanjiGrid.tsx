@@ -1,6 +1,8 @@
 import { useState, useMemo } from "react";
 import { kanjiData } from "@/data/kanjiData";
 import KanjiFlipCard from "./KanjiFlipCard";
+import { Input } from "@/components/ui/input";
+import { Search } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -12,42 +14,73 @@ import {
 const KanjiGrid = () => {
   const [activeCardId, setActiveCardId] = useState<number | null>(null);
   const [selectedLesson, setSelectedLesson] = useState<string>("all");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleCardFlip = (id: number) => {
     setActiveCardId(activeCardId === id ? null : id);
   };
 
   const filteredKanji = useMemo(() => {
-    if (selectedLesson === "all") return kanjiData;
-    return kanjiData.filter((kanji) => kanji.lesson === parseInt(selectedLesson));
-  }, [selectedLesson]);
+    let filtered = kanjiData;
+
+    // Filter by Lesson
+    if (selectedLesson !== "all") {
+      filtered = filtered.filter((kanji) => kanji.lesson === parseInt(selectedLesson));
+    }
+
+    // Filter by Search Query
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim();
+      filtered = filtered.filter((kanji) =>
+        kanji.kanji.includes(query) ||
+        kanji.meaning.toLowerCase().includes(query) ||
+        kanji.sinoVietnamese.toLowerCase().includes(query) ||
+        kanji.onyomi.toLowerCase().includes(query) ||
+        kanji.kunyomi.toLowerCase().includes(query)
+      );
+    }
+
+    return filtered;
+  }, [selectedLesson, searchQuery]);
 
   const lessons = Array.from({ length: 32 }, (_, i) => i + 1);
 
   return (
     <div className="space-y-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground shrink-0">
           512 Kanji - Look and Learn
         </h2>
 
-        <div className="w-full md:w-[200px]">
-          <Select
-            value={selectedLesson}
-            onValueChange={setSelectedLesson}
-          >
-            <SelectTrigger>
-              <SelectValue placeholder="Chọn bài học" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">Tất cả bài học</SelectItem>
-              {lessons.map((lesson) => (
-                <SelectItem key={lesson} value={lesson.toString()}>
-                  Bài {lesson}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+        <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+          <div className="relative w-full md:w-[300px]">
+            <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+            <Input
+              placeholder="Tìm kiếm (Kanji, Hán Việt, Nghĩa...)"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-8"
+            />
+          </div>
+
+          <div className="w-full md:w-[180px]">
+            <Select
+              value={selectedLesson}
+              onValueChange={setSelectedLesson}
+            >
+              <SelectTrigger>
+                <SelectValue placeholder="Chọn bài học" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Tất cả bài học</SelectItem>
+                {lessons.map((lesson) => (
+                  <SelectItem key={lesson} value={lesson.toString()}>
+                    Bài {lesson}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
         </div>
       </div>
 
@@ -69,7 +102,7 @@ const KanjiGrid = () => {
 
       {filteredKanji.length === 0 && (
         <div className="text-center py-12 text-muted-foreground">
-          Không tìm thấy Kanji nào trong bài học này.
+          Không tìm thấy Kanji nào phù hợp với tìm kiếm của bạn.
         </div>
       )}
     </div>

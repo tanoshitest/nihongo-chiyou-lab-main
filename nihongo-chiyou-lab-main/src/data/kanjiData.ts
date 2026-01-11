@@ -24,7 +24,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 1,
     kanji: "日",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/1_sun_3d_iso.png",
     onyomi: "ニチ、ジツ",
     onyomiRomaji: "nichi, jitsu",
@@ -65,7 +65,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 2,
     kanji: "月",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/2_moon_3d.png",
     onyomi: "ゲツ、ガツ",
     onyomiRomaji: "getsu, gatsu",
@@ -106,7 +106,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 3,
     kanji: "火",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/3_fire_3d.png",
     onyomi: "カ",
     onyomiRomaji: "ka",
@@ -147,7 +147,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 4,
     kanji: "水",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/4_water_3d.png",
     onyomi: "スイ",
     onyomiRomaji: "sui",
@@ -188,7 +188,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 5,
     kanji: "木",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/5_tree_3d.png",
     onyomi: "モク、ボク",
     onyomiRomaji: "moku, boku",
@@ -229,7 +229,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 6,
     kanji: "金",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/6_gold_3d.png",
     onyomi: "キン、コン",
     onyomiRomaji: "kin, kon",
@@ -270,7 +270,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 7,
     kanji: "土",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/7_earth_3d.png",
     onyomi: "ド、ト",
     onyomiRomaji: "do, to",
@@ -311,7 +311,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 8,
     kanji: "山",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/8_mountain_3d.png",
     onyomi: "サン",
     onyomiRomaji: "san",
@@ -352,7 +352,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 9,
     kanji: "川",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/9_river_3d.png",
     onyomi: "セン",
     onyomiRomaji: "sen",
@@ -393,7 +393,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 10,
     kanji: "田",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/10_ricefield_3d.png",
     onyomi: "デン",
     onyomiRomaji: "den",
@@ -475,7 +475,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 12,
     kanji: "口",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/12_mouth_3d.png",
     onyomi: "コウ、ク",
     onyomiRomaji: "kou, ku",
@@ -516,7 +516,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 13,
     kanji: "車",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/13_car_3d.png",
     onyomi: "シャ",
     onyomiRomaji: "sha",
@@ -557,7 +557,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 14,
     kanji: "門",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/14_gate_3d.png",
     onyomi: "モン",
     onyomiRomaji: "mon",
@@ -598,7 +598,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 15,
     kanji: "子",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/15_child_3d.png",
     onyomi: "シ、ス",
     onyomiRomaji: "shi, su",
@@ -639,7 +639,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 16,
     kanji: "女",
-    lesson: 1,
+    lesson: 0,
     imageUrl: "/images/kanji/16_woman_3d.png",
     onyomi: "ジョ",
     onyomiRomaji: "jo",
@@ -680,7 +680,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 17,
     kanji: "学",
-    lesson: 2,
+    lesson: 1,
     imageUrl: "/images/kanji/17_study_3d.png",
     onyomi: "ガク",
     onyomiRomaji: "gaku",
@@ -721,7 +721,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 18,
     kanji: "生",
-    lesson: 2,
+    lesson: 1,
     imageUrl: "/images/kanji/18_life_3d.png",
     onyomi: "セイ、ショウ",
     onyomiRomaji: "sei, shou",
@@ -762,7 +762,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 19,
     kanji: "先",
-    lesson: 2,
+    lesson: 1,
     imageUrl: "/images/kanji/19_before_3d.png",
     onyomi: "セン",
     onyomiRomaji: "sen",
@@ -803,7 +803,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 20,
     kanji: "私",
-    lesson: 2,
+    lesson: 1,
     imageUrl: "/images/kanji/20_me_3d.png",
     onyomi: "シ",
     onyomiRomaji: "shi",
@@ -1458,7 +1458,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 36,
     kanji: "大",
-    lesson: 3,
+    lesson: 1,
     imageUrl: "/images/kanji/36_big_3d.png",
     onyomi: "ダイ、タイ",
     onyomiRomaji: "dai, tai",
@@ -1704,7 +1704,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 42,
     kanji: "何",
-    lesson: 3,
+    lesson: 1,
     imageUrl: "/images/kanji/42_what_3d.png",
     onyomi: "カ",
     onyomiRomaji: "ka",
@@ -2647,7 +2647,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 65,
     kanji: "行",
-    lesson: 5,
+    lesson: 1,
     imageUrl: "/images/kanji/65_go_3d.png",
     onyomi: "コウ、ギョウ",
     kunyomi: "い・く、おこな・う",
@@ -2686,7 +2686,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 66,
     kanji: "来",
-    lesson: 5,
+    lesson: 1,
     imageUrl: "/images/kanji/66_come_3d.png",
     onyomi: "ライ",
     kunyomi: "く・る",
@@ -3037,7 +3037,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 75,
     kanji: "会",
-    lesson: 5,
+    lesson: 1,
     imageUrl: "/images/kanji/75_meet_3d.png",
     onyomi: "カイ、エ",
     kunyomi: "あ・う",
@@ -3778,7 +3778,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 94,
     kanji: "気",
-    lesson: 9,
+    lesson: 1,
     imageUrl: "/images/kanji/94_spirit_3d.png",
     onyomi: "キ",
     kunyomi: "",
@@ -4012,7 +4012,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 100,
     kanji: "電",
-    lesson: 7,
+    lesson: 1,
     imageUrl: "/images/kanji/100_electricity_3d.png",
     onyomi: "デン",
     kunyomi: "",
@@ -4129,7 +4129,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 103,
     kanji: "社",
-    lesson: 8,
+    lesson: 1,
     imageUrl: "/images/kanji/103_company_shrine_3d.png",
     onyomi: "シャ",
     kunyomi: "やしろ",
@@ -4246,7 +4246,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 106,
     kanji: "銀",
-    lesson: 7,
+    lesson: 1,
     imageUrl: "/images/kanji/106_silver_3d.png",
     onyomi: "ギン",
     kunyomi: "",
@@ -4285,7 +4285,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 107,
     kanji: "病",
-    lesson: 10,
+    lesson: 1,
     imageUrl: "/images/kanji/107_illness_3d.png",
     onyomi: "ビョウ",
     kunyomi: "や・む",
@@ -4324,7 +4324,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 108,
     kanji: "院",
-    lesson: 10,
+    lesson: 1,
     imageUrl: "/images/kanji/108_institute_3d.png",
     onyomi: "イン",
     kunyomi: "",
@@ -4780,7 +4780,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 120,
     kanji: "名",
-    lesson: 8,
+    lesson: 1,
     imageUrl: "/images/kanji/120_name_3d.png",
     onyomi: "メイ、ミョウ",
     kunyomi: "な",
@@ -5127,7 +5127,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 129,
     kanji: "方",
-    lesson: 9,
+    lesson: 1,
     imageUrl: "/images/kanji/129_direction_3d.png",
     onyomi: "ホウ",
     kunyomi: "かた",
@@ -6962,7 +6962,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 180,
     kanji: "教",
-    lesson: 6,
+    lesson: 1,
     imageUrl: "/images/kanji/201_teach_3d.png",
     onyomi: "キョウ",
     kunyomi: "おし・える、おそ・わる",
@@ -7593,7 +7593,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 198,
     kanji: "者",
-    lesson: 10,
+    lesson: 1,
     imageUrl: "/images/kanji/219_person_3d.png",
     onyomi: "シャ",
     onyomiRomaji: "sha",
@@ -8501,7 +8501,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 226,
     kanji: "医",
-    lesson: 10,
+    lesson: 1,
     imageUrl: "/images/kanji/249_doctor_medicine_3d.png",
     onyomi: "イ",
     onyomiRomaji: "i",
@@ -8609,7 +8609,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 229,
     kanji: "研",
-    lesson: 12,
+    lesson: 1,
     imageUrl: "/images/kanji/252_sharpen_study_3d.png",
     onyomi: "ケン",
     onyomiRomaji: "ken",
@@ -8640,7 +8640,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 230,
     kanji: "究",
-    lesson: 12,
+    lesson: 1,
     imageUrl: "/images/kanji/253_research_3d.png",
     onyomi: "キュウ",
     onyomiRomaji: "kyuu",
@@ -8872,7 +8872,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 237,
     kanji: "員",
-    lesson: 8,
+    lesson: 1,
     imageUrl: "/images/kanji/260_member_3d.png",
     onyomi: "イン",
     onyomiRomaji: "in",
@@ -10704,6 +10704,7 @@ export const kanjiData: KanjiCard[] = [
     id: 295,
     kanji: "青",
     lesson: 21,
+    imageUrl: "/images/kanji/295_blue_3d.png",
     onyomi: "セイ",
     kunyomi: "あお、あお・い",
     meaning: "Thanh, Xanh dương",
@@ -10730,6 +10731,7 @@ export const kanjiData: KanjiCard[] = [
     id: 296,
     kanji: "政",
     lesson: 21,
+    imageUrl: "/images/kanji/296_politics_3d.png",
     onyomi: "セイ",
     kunyomi: "まつりごと",
     meaning: "Chính, Chính trị",
@@ -10756,6 +10758,7 @@ export const kanjiData: KanjiCard[] = [
     id: 297,
     kanji: "治",
     lesson: 21,
+    imageUrl: "/images/kanji/297_govern_cure_3d.png",
     onyomi: "ジ、チ",
     kunyomi: "おさ・める、なお・る",
     meaning: "Trị, Cai trị, Chữa trị",
@@ -10782,6 +10785,7 @@ export const kanjiData: KanjiCard[] = [
     id: 298,
     kanji: "経",
     lesson: 21,
+    imageUrl: "/images/kanji/298_economics_3d.png",
     onyomi: "ケイ",
     kunyomi: "へ・る",
     meaning: "Kinh, Kinh tế",
@@ -10808,6 +10812,7 @@ export const kanjiData: KanjiCard[] = [
     id: 299,
     kanji: "済",
     lesson: 21,
+    imageUrl: "/images/kanji/299_finish_economy_3d.png",
     onyomi: "サイ",
     kunyomi: "す・む",
     meaning: "Tế, Hoàn thành",
@@ -10834,6 +10839,7 @@ export const kanjiData: KanjiCard[] = [
     id: 300,
     kanji: "歴",
     lesson: 21,
+    imageUrl: "/images/kanji/300_history_resume_3d.png",
     onyomi: "レキ",
     kunyomi: "",
     meaning: "Lịch, Lý lịch",
@@ -10860,6 +10866,7 @@ export const kanjiData: KanjiCard[] = [
     id: 301,
     kanji: "史",
     lesson: 21,
+    imageUrl: "/images/kanji/301_history_3d.png",
     onyomi: "シ",
     kunyomi: "",
     meaning: "Sử, Lịch sử",
@@ -10881,6 +10888,7 @@ export const kanjiData: KanjiCard[] = [
     id: 302,
     kanji: "育",
     lesson: 21,
+    imageUrl: "/images/kanji/302_education_raise_3d.png",
     onyomi: "イク",
     kunyomi: "そだ・つ、そだ・てる",
     meaning: "Dục, Giáo dục",
@@ -10907,6 +10915,7 @@ export const kanjiData: KanjiCard[] = [
     id: 303,
     kanji: "化",
     lesson: 22,
+    imageUrl: "/images/kanji/303_change_culture_3d.png",
     onyomi: "カ、ケ",
     kunyomi: "ば・ける",
     meaning: "Hóa, Biến hóa",
@@ -10938,6 +10947,7 @@ export const kanjiData: KanjiCard[] = [
     id: 304,
     kanji: "科",
     lesson: 22,
+    imageUrl: "/images/kanji/304_science_course_3d.png",
     onyomi: "カ",
     kunyomi: "",
     meaning: "Khoa, Khoa học",
@@ -10964,6 +10974,7 @@ export const kanjiData: KanjiCard[] = [
     id: 305,
     kanji: "数",
     lesson: 18,
+    imageUrl: "/images/kanji/305_number_count_3d.png",
     onyomi: "スウ",
     kunyomi: "かず、かぞ・える",
     meaning: "Số, Số học",
@@ -10995,6 +11006,7 @@ export const kanjiData: KanjiCard[] = [
     id: 306,
     kanji: "法",
     lesson: 29,
+    imageUrl: "/images/kanji/306_law_method_3d.png",
     onyomi: "ホウ",
     kunyomi: "",
     meaning: "Pháp, Pháp luật",
@@ -11021,6 +11033,7 @@ export const kanjiData: KanjiCard[] = [
     id: 307,
     kanji: "律",
     lesson: 29,
+    imageUrl: "/images/kanji/307_regulation_law_3d.png",
     onyomi: "リツ",
     kunyomi: "",
     meaning: "Luật, Luật pháp",
@@ -11042,6 +11055,7 @@ export const kanjiData: KanjiCard[] = [
     id: 308,
     kanji: "際",
     lesson: 30,
+    imageUrl: "/images/kanji/308_occasion_edge_3d.png",
     onyomi: "サイ",
     kunyomi: "きわ",
     meaning: "Tế, Quốc tế",
@@ -11068,6 +11082,7 @@ export const kanjiData: KanjiCard[] = [
     id: 309,
     kanji: "覚",
     lesson: 23,
+    imageUrl: "/images/kanji/309_remember_sense_3d.png",
     onyomi: "カク",
     kunyomi: "おぼ・える、さ・める",
     meaning: "Giác, Nhớ, Cảm giác",
@@ -11094,6 +11109,7 @@ export const kanjiData: KanjiCard[] = [
     id: 310,
     kanji: "忘",
     lesson: 23,
+    imageUrl: "/images/kanji/310_forget_3d.png",
     onyomi: "ボウ",
     kunyomi: "わす・れる",
     meaning: "Vong, Quên",
@@ -11120,6 +11136,7 @@ export const kanjiData: KanjiCard[] = [
     id: 311,
     kanji: "決",
     lesson: 32,
+    imageUrl: "/images/kanji/311_decide_3d.png",
     onyomi: "ケツ",
     kunyomi: "き・める、き・まる",
     meaning: "Quyết, Quyết định",
@@ -11146,6 +11163,7 @@ export const kanjiData: KanjiCard[] = [
     id: 312,
     kanji: "定",
     lesson: 23,
+    imageUrl: "/images/kanji/312_fix_stable_3d.png",
     onyomi: "テイ、ジョウ",
     kunyomi: "さだ・める",
     meaning: "Định, Ổn định",
@@ -11172,6 +11190,7 @@ export const kanjiData: KanjiCard[] = [
     id: 313,
     kanji: "比",
     lesson: 23,
+    imageUrl: "/images/kanji/313_compare_ratio_3d.png",
     onyomi: "ヒ",
     kunyomi: "くら・べる",
     meaning: "Tỷ, So sánh",
@@ -11198,6 +11217,7 @@ export const kanjiData: KanjiCard[] = [
     id: 314,
     kanji: "受",
     lesson: 23,
+    imageUrl: "/images/kanji/314_receive_exam_3d.png",
     onyomi: "ジュ",
     kunyomi: "う・ける、う・かる",
     meaning: "Thụ, Nhận",
@@ -11224,6 +11244,7 @@ export const kanjiData: KanjiCard[] = [
     id: 315,
     kanji: "授",
     lesson: 19,
+    imageUrl: "/images/kanji/315_instruct_professor_3d.png",
     onyomi: "ジュ",
     kunyomi: "さず・ける",
     meaning: "Thụ, Trao tặng",
@@ -11421,11 +11442,12 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 323,
     kanji: "皆",
-    lesson: 23,
+    lesson: 1,
     onyomi: "カイ",
     kunyomi: "みな",
     meaning: "Giai, Mọi người",
     sinoVietnamese: "Giai",
+    mnemonic: "Tất cả mọi người (皆) đứng dưới mặt trời (白) so sánh (比) bóng với nhau.",
     examples: [
       {
         japanese: "皆さん",
@@ -13047,11 +13069,12 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 389,
     kanji: "初",
-    lesson: 28,
+    lesson: 1,
     onyomi: "ショ",
     kunyomi: "はじ・め、はつ",
     meaning: "Sơ, Đầu tiên",
     sinoVietnamese: "Sơ",
+    mnemonic: "Lần đầu tiên (初) dùng dao (刀) cắt vải may áo (衤).",
     examples: [
       {
         japanese: "初めて",
@@ -13814,11 +13837,12 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 421,
     kanji: "失",
-    lesson: 30,
+    lesson: 1,
     onyomi: "シツ",
     kunyomi: "うしな・う",
     meaning: "Thất, Mất",
     sinoVietnamese: "Thất",
+    mnemonic: "Nhìn giống chữ Phu (夫) nhưng đầu bị lệch một nét, ám chỉ sai lầm, mất mát (失).",
     examples: [
       {
         japanese: "失敗",
@@ -14106,11 +14130,12 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 433,
     kanji: "礼",
-    lesson: 31,
+    lesson: 1,
     onyomi: "レイ",
     kunyomi: "",
     meaning: "Lễ, Lễ nghi, Cảm ơn",
     sinoVietnamese: "Lễ",
+    mnemonic: "Thể hiện lễ (礼) nghi bằng cách dâng quần áo (礻) và quỳ gối (乚).",
     examples: [
       {
         japanese: "お礼",
@@ -14299,11 +14324,12 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 441,
     kanji: "願",
-    lesson: 31,
+    lesson: 1,
     onyomi: "ガン",
     kunyomi: "ねが・う",
     meaning: "Nguyện, Mong ước",
     sinoVietnamese: "Nguyện",
+    mnemonic: "Nguồn gốc (原) của mọi điều ước nằm trong đầu (頁).",
     examples: [
       {
         japanese: "お願いします",
@@ -14630,11 +14656,12 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 457,
     kanji: "君",
-    lesson: 32,
+    lesson: 1,
     onyomi: "クン",
     kunyomi: "きみ",
     meaning: "Quân, Bạn, Em, Vua",
     sinoVietnamese: "Quân",
+    mnemonic: "Người tay (尹) cầm quyền trượng, ra lệnh bằng miệng (口) chính là vua (君).",
     examples: [
       {
         japanese: "君",

@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import { ArrowLeft, Volume2, BookOpen, MessageSquare, PenTool, CheckCircle2, XCircle, RotateCcw, ChevronDown, ChevronUp, BookMarked } from "lucide-react";
+import { ArrowLeft, Volume2, BookOpen, MessageSquare, PenTool, CheckCircle2, XCircle, RotateCcw, ChevronDown, ChevronUp, BookMarked, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -14,6 +14,7 @@ import { kanjiData as masterKanjiData } from "@/data/kanjiData";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
 
 // Helper to look up Kanji details from local lesson data or master dictionary
 const getKanjiDetail = (char: string, localDetails?: KanjiDetail[]): KanjiDetail | undefined => {
@@ -878,157 +879,196 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
   // Usually Master data is the "Definition" source. Vocab might just link to it.
   // We'll use a map to deduplicate.
 
-  const mergedKanjiMap = new Map<string, KanjiDetail>();
+  // 3. Merge lists - PRIORITIZING VOCABULARY ORDER
+  // We want to show Kanji in the order they appear in the vocabulary list.
+  // Then append any remaining Kanji from the master list (that are in the lesson but not in vocab).
 
-  // Add master kanji first
-  masterLessonKanji.forEach(k => mergedKanjiMap.set(k.kanji, k));
+  const allKanjiDetails: KanjiDetail[] = [];
+  const addedKanji = new Set<string>();
 
-  // Add/Override with vocab specific kanji (if they exist and we want them to take precedence, or just add if missing)
-  // Since we want to show ALL kanji for the lesson, Master is the best source. 
-  // Vocab details might be for kanji NOT in this lesson but used in vocab.
-  // But the "Kanji Tab" should primarily show the Kanji *taught* in this lesson.
-  // So we definitely want masterLessonKanji. 
-  // If we also want to show "Kanji used in vocab but not from this lesson", we could add them too.
-  // Let's add them if they're not already there.
-  vocabKanjiDetails.forEach(k => {
-    if (!mergedKanjiMap.has(k.kanji)) {
-      mergedKanjiMap.set(k.kanji, k);
+  // A. Add Kanji from Vocabulary (in order of appearance)
+  vocabKanjiDetails.forEach(vk => {
+    if (!addedKanji.has(vk.kanji)) {
+      // Prefer Master data (richer with images/mnemonics) if available for this lesson
+      // If not in this lesson's master list (e.g. from another lesson), use vocab detail
+      const masterData = masterLessonKanji.find(m => m.kanji === vk.kanji);
+      allKanjiDetails.push(masterData || vk);
+      addedKanji.add(vk.kanji);
     }
   });
 
-  const allKanjiDetails = Array.from(mergedKanjiMap.values());
+  // B. Add remaining Master Kanji (not in vocab)
+  masterLessonKanji.forEach(mk => {
+    if (!addedKanji.has(mk.kanji)) {
+      allKanjiDetails.push(mk);
+      addedKanji.add(mk.kanji);
+    }
+  });
 
-  if (allKanjiDetails.length === 0) {
-    return (
-      <Card>
-        <CardContent className="py-10 text-center">
-          <p className="text-muted-foreground">Không có dữ liệu Kanji cho bài học này.</p>
-        </CardContent>
-      </Card>
-    );
-  }
+  // Filter with Search query
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredKanji = useMemo(() => {
+    if (!searchQuery) return allKanjiDetails;
+    const query = searchQuery.toLowerCase();
+
+    return allKanjiDetails.filter(kanji => {
+      const matchKanji = kanji.kanji.toLowerCase().includes(query);
+      const matchMeaning = kanji.meaning.toLowerCase().includes(query);
+      const matchSino = kanji.sinoVietnamese?.toLowerCase().includes(query);
+      const matchOnyomi = kanji.onyomi?.toLowerCase().includes(query);
+      const matchKunyomi = kanji.kunyomi?.toLowerCase().includes(query);
+
+      return matchKanji || matchMeaning || matchSino || matchOnyomi || matchKunyomi;
+    });
+  }, [allKanjiDetails, searchQuery]);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {allKanjiDetails.map((kanji, index) => (
-        <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow border-[#008001]/20">
-          <div className="bg-[#008001]/5 p-4 border-b flex items-start justify-between">
-            <div className="flex items-center gap-4">
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#008001] text-white flex items-center justify-center font-bold shadow-sm">
-                {index + 1}
-              </div>
-              <div className="text-4xl font-bold text-[#008001] bg-white w-16 h-16 rounded-xl shadow-sm flex items-center justify-center border border-[#008001]/10">
-                {kanji.kanji}
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-[#008001] uppercase">
-                  {kanji.sinoVietnamese || kanji.meaning}
-                </h3>
-                <p className="text-sm text-muted-foreground italic">
-                  Hiragana: {kanji.kunyomi || '—'}
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col items-end gap-2">
-              <Badge variant="outline" className="text-[#008001] border-[#008001]/30">
-                {kanji.jlpt || 'N5'}
-              </Badge>
-            </div>
-          </div>
+    <div className="space-y-6">
+      {/* Search Input */}
+      <div className="flex items-center gap-2 max-w-md mx-auto mb-6">
+        <div className="relative flex-1">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+          <Input
+            placeholder="Tìm kiếm Kanji, nghĩa, Hán Việt..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="pl-9 border-[#008001]/20 focus-visible:ring-[#008001]"
+          />
+        </div>
+      </div>
 
-          <CardContent className="p-5 space-y-4">
-            {/* Image Placeholder or Actual Image */}
-            <div className="w-full aspect-video rounded-lg border-2 border-dashed border-[#008001]/20 bg-[#008001]/5 flex items-center justify-center overflow-hidden">
-              {kanji.imageUrl ? (
-                <img
-                  src={kanji.imageUrl}
-                  alt={`Minh họa cho ${kanji.kanji}`}
-                  className="w-full h-full object-contain"
-                />
-              ) : (
-                <div className="flex flex-col items-center gap-2 text-[#008001]/40">
-                  <div className="w-10 h-10 rounded-full bg-[#008001]/10 flex items-center justify-center">
-                    <span className="text-xl">🖼️</span>
-                  </div>
-                  <span className="text-xs font-medium uppercase tracking-wider">Hình minh họa</span>
-                </div>
-              )}
-            </div>
-
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <div className="space-y-1">
-                <p className="text-xs text-muted-foreground uppercase font-semibold">Âm ON</p>
-                <p className="font-medium">{kanji.onyomi || '—'}</p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-xs text-muted-foreground uppercase font-semibold">Âm KUN</p>
-                <p className="font-medium">{kanji.kunyomi || '—'}</p>
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <p className="text-xs text-muted-foreground uppercase font-semibold">Nghĩa gốc</p>
-              <p className="text-sm border-l-2 border-[#008001]/30 pl-3 py-1 bg-[#008001]/5 rounded-r-md">
-                {kanji.meaning}
-              </p>
-            </div>
-
-            {kanji.components && kanji.components.length > 0 && (
-              <div className="space-y-2">
-                <p className="text-xs text-muted-foreground uppercase font-semibold">Cấu tạo (Bộ thủ)</p>
-                <div className="flex flex-wrap gap-2">
-                  {kanji.components.map((comp, i) => (
-                    <ComponentHoverCard
-                      key={i}
-                      char={comp.char}
-                      meaning={comp.meaning}
-                      allKanjiDetails={allKanjiDetails}
-                    />
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {kanji.mnemonic && (
-              <div className="space-y-2">
-                <p className="text-xs text-muted-foreground uppercase font-semibold">Gợi nhớ (Mnemonic)</p>
-                <div className="p-3 bg-amber-50 dark:bg-amber-950/20 rounded-lg text-sm border border-amber-200 dark:border-amber-900 leading-relaxed text-amber-900 dark:text-amber-200">
-                  <span className="mr-2">💡</span>
-                  {kanji.mnemonic}
-                </div>
-              </div>
-            )}
-
-            {kanji.examples && kanji.examples.length > 0 && (
-              <div className="space-y-2">
-                <p className="text-xs text-muted-foreground uppercase font-semibold">Từ vựng đi kèm</p>
-                <div className="flex flex-wrap gap-2 text-sm">
-                  {kanji.examples.map((ex, i) => (
-                    <span key={i} className="px-2 py-0.5 bg-[#008001]/10 text-[#008001] rounded-md border border-[#008001]/20">
-                      {ex}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Câu ví dụ */}
-            {kanji.exampleSentences && kanji.exampleSentences.length > 0 && (
-              <div className="space-y-3 pt-1">
-                <p className="text-xs text-muted-foreground uppercase font-semibold">5 câu ví dụ</p>
-                <div className="space-y-2.5">
-                  {kanji.exampleSentences.map((sent, i) => (
-                    <div key={i} className="text-sm p-2.5 bg-muted/40 rounded-lg border-l-4 border-[#008001]/40">
-                      <SentenceWithFurigana sentence={sent} showFurigana={true} />
-                      <p className="text-xs text-muted-foreground mt-1">{sent.vn}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+      {filteredKanji.length === 0 ? (
+        <Card>
+          <CardContent className="py-10 text-center">
+            <p className="text-muted-foreground">
+              {searchQuery ? "Không tìm thấy Kanji nào phù hợp." : "Không có dữ liệu Kanji cho bài học này."}
+            </p>
           </CardContent>
         </Card>
-      ))}
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredKanji.map((kanji, index) => (
+            <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow border-[#008001]/20">
+              <div className="bg-[#008001]/5 p-4 border-b flex items-start justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#008001] text-white flex items-center justify-center font-bold shadow-sm">
+                    {index + 1}
+                  </div>
+                  <div className="text-4xl font-bold text-[#008001] bg-white w-16 h-16 rounded-xl shadow-sm flex items-center justify-center border border-[#008001]/10">
+                    {kanji.kanji}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#008001] uppercase">
+                      {kanji.sinoVietnamese || kanji.meaning}
+                    </h3>
+                    <p className="text-sm text-muted-foreground italic">
+                      Hiragana: {kanji.kunyomi || '—'}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col items-end gap-2">
+                  <Badge variant="outline" className="text-[#008001] border-[#008001]/30">
+                    {kanji.jlpt || 'N5'}
+                  </Badge>
+                </div>
+              </div>
+
+              <CardContent className="p-5 space-y-4">
+                {/* Image Placeholder or Actual Image */}
+                <div className="w-full aspect-video rounded-lg border-2 border-dashed border-[#008001]/20 bg-[#008001]/5 flex items-center justify-center overflow-hidden">
+                  {kanji.imageUrl ? (
+                    <img
+                      src={kanji.imageUrl}
+                      alt={`Minh họa cho ${kanji.kanji}`}
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center gap-2 text-[#008001]/40">
+                      <div className="w-10 h-10 rounded-full bg-[#008001]/10 flex items-center justify-center">
+                        <span className="text-xl">🖼️</span>
+                      </div>
+                      <span className="text-xs font-medium uppercase tracking-wider">Hình minh họa</span>
+                    </div>
+                  )}
+                </div>
+
+                <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div className="space-y-1">
+                    <p className="text-xs text-muted-foreground uppercase font-semibold">Âm ON</p>
+                    <p className="font-medium">{kanji.onyomi || '—'}</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-xs text-muted-foreground uppercase font-semibold">Âm KUN</p>
+                    <p className="font-medium">{kanji.kunyomi || '—'}</p>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <p className="text-xs text-muted-foreground uppercase font-semibold">Nghĩa gốc</p>
+                  <p className="text-sm border-l-2 border-[#008001]/30 pl-3 py-1 bg-[#008001]/5 rounded-r-md">
+                    {kanji.meaning}
+                  </p>
+                </div>
+
+                {kanji.components && kanji.components.length > 0 && (
+                  <div className="space-y-2">
+                    <p className="text-xs text-muted-foreground uppercase font-semibold">Cấu tạo (Bộ thủ)</p>
+                    <div className="flex flex-wrap gap-2">
+                      {kanji.components.map((comp, i) => (
+                        <ComponentHoverCard
+                          key={i}
+                          char={comp.char}
+                          meaning={comp.meaning}
+                          allKanjiDetails={allKanjiDetails}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {kanji.mnemonic && (
+                  <div className="space-y-2">
+                    <p className="text-xs text-muted-foreground uppercase font-semibold">Gợi nhớ (Mnemonic)</p>
+                    <div className="p-3 bg-amber-50 dark:bg-amber-950/20 rounded-lg text-sm border border-amber-200 dark:border-amber-900 leading-relaxed text-amber-900 dark:text-amber-200">
+                      <span className="mr-2">💡</span>
+                      {kanji.mnemonic}
+                    </div>
+                  </div>
+                )}
+
+                {kanji.examples && kanji.examples.length > 0 && (
+                  <div className="space-y-2">
+                    <p className="text-xs text-muted-foreground uppercase font-semibold">Từ vựng đi kèm</p>
+                    <div className="flex flex-wrap gap-2 text-sm">
+                      {kanji.examples.map((ex, i) => (
+                        <span key={i} className="px-2 py-0.5 bg-[#008001]/10 text-[#008001] rounded-md border border-[#008001]/20">
+                          {ex}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Câu ví dụ */}
+                {kanji.exampleSentences && kanji.exampleSentences.length > 0 && (
+                  <div className="space-y-3 pt-1">
+                    <p className="text-xs text-muted-foreground uppercase font-semibold">5 câu ví dụ</p>
+                    <div className="space-y-2.5">
+                      {kanji.exampleSentences.map((sent, i) => (
+                        <div key={i} className="text-sm p-2.5 bg-muted/40 rounded-lg border-l-4 border-[#008001]/40">
+                          <SentenceWithFurigana sentence={sent} showFurigana={true} />
+                          <p className="text-xs text-muted-foreground mt-1">{sent.vn}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
