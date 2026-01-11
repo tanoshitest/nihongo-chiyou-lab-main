@@ -947,9 +947,9 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
           </CardContent>
         </Card>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
           {filteredKanji.map((kanji, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow border-[#008001]/20">
+            <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow border-[#008001]/20 h-full flex flex-col">
               <div className="bg-[#008001]/5 p-4 border-b flex items-start justify-between">
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#008001] text-white flex items-center justify-center font-bold shadow-sm">
@@ -974,7 +974,7 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
                 </div>
               </div>
 
-              <CardContent className="p-5 space-y-4">
+              <CardContent className="p-5 space-y-4 flex-1 flex flex-col">
                 {/* Image Placeholder or Actual Image */}
                 <div className="w-full aspect-video rounded-lg border-2 border-dashed border-[#008001]/20 bg-[#008001]/5 flex items-center justify-center overflow-hidden">
                   {kanji.imageUrl ? (
@@ -993,7 +993,7 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
                   )}
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 text-sm">
+                <div className="grid grid-cols-2 gap-4 text-sm min-h-[3.5rem]">
                   <div className="space-y-1">
                     <p className="text-xs text-muted-foreground uppercase font-semibold">Âm ON</p>
                     <p className="font-medium">{kanji.onyomi || '—'}</p>
@@ -1004,16 +1004,16 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
                   </div>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-2 min-h-[4rem]">
                   <p className="text-xs text-muted-foreground uppercase font-semibold">Nghĩa gốc</p>
                   <p className="text-sm border-l-2 border-[#008001]/30 pl-3 py-1 bg-[#008001]/5 rounded-r-md">
                     {kanji.meaning}
                   </p>
                 </div>
 
-                {kanji.components && kanji.components.length > 0 && (
-                  <div className="space-y-2">
-                    <p className="text-xs text-muted-foreground uppercase font-semibold">Cấu tạo (Bộ thủ)</p>
+                <div className="space-y-2 min-h-[5.5rem]">
+                  <p className="text-xs text-muted-foreground uppercase font-semibold">Cấu tạo (Bộ thủ)</p>
+                  {kanji.components && kanji.components.length > 0 ? (
                     <div className="flex flex-wrap gap-2">
                       {kanji.components.map((comp, i) => (
                         <ComponentHoverCard
@@ -1024,18 +1024,22 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
                         />
                       ))}
                     </div>
-                  </div>
-                )}
+                  ) : (
+                    <p className="text-sm text-muted-foreground italic pl-3">—</p>
+                  )}
+                </div>
 
-                {kanji.mnemonic && (
-                  <div className="space-y-2">
-                    <p className="text-xs text-muted-foreground uppercase font-semibold">Gợi nhớ (Mnemonic)</p>
+                <div className="space-y-2 flex-grow">
+                  <p className="text-xs text-muted-foreground uppercase font-semibold">Gợi nhớ (Mnemonic)</p>
+                  {kanji.mnemonic ? (
                     <div className="p-3 bg-amber-50 dark:bg-amber-950/20 rounded-lg text-sm border border-amber-200 dark:border-amber-900 leading-relaxed text-amber-900 dark:text-amber-200">
                       <span className="mr-2">💡</span>
                       {kanji.mnemonic}
                     </div>
-                  </div>
-                )}
+                  ) : (
+                    <p className="text-sm text-muted-foreground italic pl-3">—</p>
+                  )}
+                </div>
 
                 {kanji.examples && kanji.examples.length > 0 && (
                   <div className="space-y-2">

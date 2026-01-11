@@ -1,0 +1,2078 @@
+[
+  {
+    "id": 13,
+    "kanji": "万",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 14,
+    "kanji": "円",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 24,
+    "kanji": "曜",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 27,
+    "kanji": "今",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 28,
+    "kanji": "寺",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 29,
+    "kanji": "時",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 31,
+    "kanji": "刀",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 36,
+    "kanji": "外",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 37,
+    "kanji": "右",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 38,
+    "kanji": "工",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 39,
+    "kanji": "左",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 40,
+    "kanji": "前",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 41,
+    "kanji": "後",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 42,
+    "kanji": "午",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 45,
+    "kanji": "東",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 46,
+    "kanji": "西",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 60,
+    "kanji": "年",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 61,
+    "kanji": "去",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 62,
+    "kanji": "毎",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 63,
+    "kanji": "王",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 64,
+    "kanji": "国",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 79,
+    "kanji": "周",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 122,
+    "kanji": "勉",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 123,
+    "kanji": "弓",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 144,
+    "kanji": "道",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 150,
+    "kanji": "海",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 151,
+    "kanji": "化",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 154,
+    "kanji": "赤",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 155,
+    "kanji": "青",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 156,
+    "kanji": "白",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 157,
+    "kanji": "黒",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 158,
+    "kanji": "色",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 161,
+    "kanji": "料",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 166,
+    "kanji": "豚",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 170,
+    "kanji": "予",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 173,
+    "kanji": "切",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 175,
+    "kanji": "未",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 177,
+    "kanji": "音",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 178,
+    "kanji": "楽",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 183,
+    "kanji": "写",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 184,
+    "kanji": "真",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 186,
+    "kanji": "央",
+    "currentCount": 1,
+    "needed": 4
+  },
+  {
+    "id": 187,
+    "kanji": "映",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 188,
+    "kanji": "画",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 189,
+    "kanji": "羊",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 194,
+    "kanji": "矢",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 195,
+    "kanji": "族",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 197,
+    "kanji": "兄",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 198,
+    "kanji": "姉",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 199,
+    "kanji": "弟",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 200,
+    "kanji": "妹",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 202,
+    "kanji": "夫",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 203,
+    "kanji": "妻",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 204,
+    "kanji": "主",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 205,
+    "kanji": "住",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 207,
+    "kanji": "氏",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 208,
+    "kanji": "紙",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 210,
+    "kanji": "室",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 211,
+    "kanji": "羽",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 213,
+    "kanji": "漢",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 215,
+    "kanji": "式",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 216,
+    "kanji": "試",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 217,
+    "kanji": "験",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 218,
+    "kanji": "宿",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 219,
+    "kanji": "題",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 221,
+    "kanji": "英",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 222,
+    "kanji": "質",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 223,
+    "kanji": "問",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 224,
+    "kanji": "説",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 225,
+    "kanji": "通",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 226,
+    "kanji": "近",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 227,
+    "kanji": "者",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 228,
+    "kanji": "暑",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 229,
+    "kanji": "寒",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 230,
+    "kanji": "重",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 231,
+    "kanji": "軽",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 232,
+    "kanji": "低",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 233,
+    "kanji": "弱",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 235,
+    "kanji": "暗",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 236,
+    "kanji": "太",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 237,
+    "kanji": "豆",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 238,
+    "kanji": "短",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 239,
+    "kanji": "光",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 241,
+    "kanji": "運",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 242,
+    "kanji": "動",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 243,
+    "kanji": "止",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 244,
+    "kanji": "歩",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 245,
+    "kanji": "使",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 246,
+    "kanji": "送",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 247,
+    "kanji": "洗",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 248,
+    "kanji": "急",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 249,
+    "kanji": "開",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 250,
+    "kanji": "閉",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 251,
+    "kanji": "押",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 252,
+    "kanji": "引",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 253,
+    "kanji": "思",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 254,
+    "kanji": "知",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 255,
+    "kanji": "考",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 256,
+    "kanji": "死",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 257,
+    "kanji": "医",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 258,
+    "kanji": "始",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 259,
+    "kanji": "終",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 261,
+    "kanji": "研",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 262,
+    "kanji": "究",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 263,
+    "kanji": "留",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 264,
+    "kanji": "有",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 265,
+    "kanji": "産",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 266,
+    "kanji": "業",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 267,
+    "kanji": "薬",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 268,
+    "kanji": "働",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 269,
+    "kanji": "員",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 270,
+    "kanji": "資",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 271,
+    "kanji": "仕",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 273,
+    "kanji": "図",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 274,
+    "kanji": "官",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 275,
+    "kanji": "館",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 276,
+    "kanji": "昔",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 277,
+    "kanji": "借",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 278,
+    "kanji": "代",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 279,
+    "kanji": "貸",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 280,
+    "kanji": "地",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 281,
+    "kanji": "世",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 282,
+    "kanji": "界",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 283,
+    "kanji": "度",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 284,
+    "kanji": "回",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 285,
+    "kanji": "用",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 286,
+    "kanji": "民",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 287,
+    "kanji": "注",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 288,
+    "kanji": "意",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 291,
+    "kanji": "声",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 292,
+    "kanji": "特",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 293,
+    "kanji": "別",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 296,
+    "kanji": "答",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 297,
+    "kanji": "正",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 298,
+    "kanji": "同",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 299,
+    "kanji": "計",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 300,
+    "kanji": "京",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 301,
+    "kanji": "集",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 302,
+    "kanji": "不",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 303,
+    "kanji": "便",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 304,
+    "kanji": "以",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 305,
+    "kanji": "場",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 306,
+    "kanji": "戸",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 307,
+    "kanji": "所",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 308,
+    "kanji": "屋",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 309,
+    "kanji": "堂",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 310,
+    "kanji": "都",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 311,
+    "kanji": "県",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 312,
+    "kanji": "区",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 313,
+    "kanji": "池",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 314,
+    "kanji": "発",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 315,
+    "kanji": "建",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 317,
+    "kanji": "品",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 318,
+    "kanji": "旅",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 319,
+    "kanji": "通",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 320,
+    "kanji": "進",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 321,
+    "kanji": "丸",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 322,
+    "kanji": "熱",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 323,
+    "kanji": "冷",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 324,
+    "kanji": "甘",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 325,
+    "kanji": "汚",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 326,
+    "kanji": "果",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 327,
+    "kanji": "卵",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 328,
+    "kanji": "皿",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 330,
+    "kanji": "塩",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 331,
+    "kanji": "付",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 332,
+    "kanji": "片",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 333,
+    "kanji": "焼",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 334,
+    "kanji": "消",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 335,
+    "kanji": "固",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 336,
+    "kanji": "個",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 337,
+    "kanji": "笑",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 338,
+    "kanji": "泣",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 339,
+    "kanji": "怒",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 340,
+    "kanji": "幸",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 341,
+    "kanji": "悲",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 342,
+    "kanji": "苦",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 343,
+    "kanji": "痛",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 344,
+    "kanji": "恥",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 345,
+    "kanji": "配",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 346,
+    "kanji": "困",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 347,
+    "kanji": "辛",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 348,
+    "kanji": "眠",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 349,
+    "kanji": "残",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 350,
+    "kanji": "念",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 351,
+    "kanji": "感",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 352,
+    "kanji": "情",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 353,
+    "kanji": "覚",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 354,
+    "kanji": "忘",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 355,
+    "kanji": "決",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 356,
+    "kanji": "定",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 357,
+    "kanji": "比",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 358,
+    "kanji": "受",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 359,
+    "kanji": "技",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 360,
+    "kanji": "徒",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 361,
+    "kanji": "練",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 362,
+    "kanji": "復",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 363,
+    "kanji": "表",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 364,
+    "kanji": "卒",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 365,
+    "kanji": "違",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 366,
+    "kanji": "役",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 367,
+    "kanji": "皆",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 368,
+    "kanji": "彼",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 369,
+    "kanji": "全",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 370,
+    "kanji": "部",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 371,
+    "kanji": "必",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 372,
+    "kanji": "要",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 373,
+    "kanji": "荷",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 374,
+    "kanji": "由",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 375,
+    "kanji": "届",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 376,
+    "kanji": "利",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 377,
+    "kanji": "払",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 378,
+    "kanji": "濯",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 379,
+    "kanji": "寝",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 380,
+    "kanji": "踊",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 381,
+    "kanji": "活",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 382,
+    "kanji": "末",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 383,
+    "kanji": "宅",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 384,
+    "kanji": "祭",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 385,
+    "kanji": "平",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 386,
+    "kanji": "和",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 387,
+    "kanji": "戦",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 388,
+    "kanji": "争",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 389,
+    "kanji": "政",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 390,
+    "kanji": "治",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 391,
+    "kanji": "経",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 392,
+    "kanji": "済",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 393,
+    "kanji": "法",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 394,
+    "kanji": "律",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 395,
+    "kanji": "際",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 396,
+    "kanji": "関",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 397,
+    "kanji": "係",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 398,
+    "kanji": "義",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 399,
+    "kanji": "議",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 400,
+    "kanji": "党",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 401,
+    "kanji": "遊",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 402,
+    "kanji": "泳",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 403,
+    "kanji": "疲",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 404,
+    "kanji": "暖",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 405,
+    "kanji": "涼",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 406,
+    "kanji": "静",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 407,
+    "kanji": "公",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 408,
+    "kanji": "園",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 409,
+    "kanji": "込",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 410,
+    "kanji": "連",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 411,
+    "kanji": "窓",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 412,
+    "kanji": "側",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 413,
+    "kanji": "葉",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 414,
+    "kanji": "景",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 415,
+    "kanji": "記",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 416,
+    "kanji": "形",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 417,
+    "kanji": "吉",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 418,
+    "kanji": "結",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 419,
+    "kanji": "婚",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 420,
+    "kanji": "共",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 421,
+    "kanji": "供",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 422,
+    "kanji": "両",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 423,
+    "kanji": "若",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 424,
+    "kanji": "老",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 425,
+    "kanji": "息",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 426,
+    "kanji": "娘",
+    "currentCount": 1,
+    "needed": 4
+  },
+  {
+    "id": 427,
+    "kanji": "奥",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 428,
+    "kanji": "将",
+    "currentCount": 1,
+    "needed": 4
+  },
+  {
+    "id": 429,
+    "kanji": "祖",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 430,
+    "kanji": "育",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 431,
+    "kanji": "性",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 432,
+    "kanji": "招",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 433,
+    "kanji": "取",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 434,
+    "kanji": "最",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 435,
+    "kanji": "初",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 436,
+    "kanji": "番",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 437,
+    "kanji": "歳",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 438,
+    "kanji": "枚",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 439,
+    "kanji": "冊",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 440,
+    "kanji": "億",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 441,
+    "kanji": "点",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 442,
+    "kanji": "階",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 443,
+    "kanji": "段",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 444,
+    "kanji": "号",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 445,
+    "kanji": "倍",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 446,
+    "kanji": "次",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 447,
+    "kanji": "々",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 448,
+    "kanji": "他",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 449,
+    "kanji": "勝",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 450,
+    "kanji": "負",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 451,
+    "kanji": "賛",
+    "currentCount": 1,
+    "needed": 4
+  },
+  {
+    "id": 452,
+    "kanji": "成",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 453,
+    "kanji": "絶",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 454,
+    "kanji": "対",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 455,
+    "kanji": "続",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 456,
+    "kanji": "辞",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 457,
+    "kanji": "投",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 458,
+    "kanji": "選",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 459,
+    "kanji": "約",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 460,
+    "kanji": "束",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 461,
+    "kanji": "守",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 462,
+    "kanji": "過",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 463,
+    "kanji": "夢",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 464,
+    "kanji": "的",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 465,
+    "kanji": "飛",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 466,
+    "kanji": "機",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 467,
+    "kanji": "失",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 468,
+    "kanji": "鉄",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 469,
+    "kanji": "速",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 470,
+    "kanji": "運",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 471,
+    "kanji": "駐",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 472,
+    "kanji": "治",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 473,
+    "kanji": "船",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 474,
+    "kanji": "座",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 475,
+    "kanji": "席",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 476,
+    "kanji": "島",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 477,
+    "kanji": "陸",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 478,
+    "kanji": "港",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 479,
+    "kanji": "橋",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 480,
+    "kanji": "交",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 481,
+    "kanji": "申",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 482,
+    "kanji": "神",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 483,
+    "kanji": "様",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 484,
+    "kanji": "信",
+    "currentCount": 4,
+    "needed": 1
+  },
+  {
+    "id": 485,
+    "kanji": "調",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 486,
+    "kanji": "査",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 487,
+    "kanji": "相",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 488,
+    "kanji": "談",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 489,
+    "kanji": "案",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 490,
+    "kanji": "内",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 491,
+    "kanji": "君",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 492,
+    "kanji": "達",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 493,
+    "kanji": "星",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 495,
+    "kanji": "降",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 496,
+    "kanji": "直",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 497,
+    "kanji": "危",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 498,
+    "kanji": "険",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 499,
+    "kanji": "拾",
+    "currentCount": 1,
+    "needed": 4
+  },
+  {
+    "id": 500,
+    "kanji": "捨",
+    "currentCount": 1,
+    "needed": 4
+  },
+  {
+    "id": 501,
+    "kanji": "戻",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 502,
+    "kanji": "吸",
+    "currentCount": 2,
+    "needed": 3
+  },
+  {
+    "id": 503,
+    "kanji": "放",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 504,
+    "kanji": "変",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 505,
+    "kanji": "街",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 506,
+    "kanji": "髪",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 507,
+    "kanji": "絵",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 508,
+    "kanji": "横",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 509,
+    "kanji": "当",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 510,
+    "kanji": "伝",
+    "currentCount": 3,
+    "needed": 2
+  },
+  {
+    "id": 511,
+    "kanji": "細",
+    "currentCount": 0,
+    "needed": 5
+  },
+  {
+    "id": 512,
+    "kanji": "無",
+    "currentCount": 0,
+    "needed": 5
+  }
+]

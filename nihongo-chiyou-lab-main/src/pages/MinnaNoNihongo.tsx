@@ -9,7 +9,9 @@ import { cn } from "@/lib/utils";
 import { lessonsN5, lessonsN4, LessonSummary } from "@/data/minnaData";
 
 const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
-  const isTest = lesson.id >= 9990;
+  const isTest = lesson.id >= 9990 && lesson.id < 10010;
+  const isReference = lesson.id >= 10010;
+
   let linkUrl = `/minna/${lesson.id}`;
   if (lesson.id === 9991) linkUrl = "/minna/test-1";
   if (lesson.id === 9992) linkUrl = "/minna/test-2";
@@ -21,6 +23,15 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
   if (lesson.id === 9998) linkUrl = "/minna/test-8";
   if (lesson.id === 9999) linkUrl = "/minna/test-9";
   if (lesson.id === 10000) linkUrl = "/minna/test-10";
+  if (lesson.id === 10001) linkUrl = "/minna/test-11";
+  if (lesson.id === 10002) linkUrl = "/minna/test-12";
+  if (lesson.id === 10010) linkUrl = "/minna/particles";
+  if (lesson.id === 10011) linkUrl = "/minna/forms";
+  if (lesson.id === 10012) linkUrl = "/minna/adverbs";
+  if (lesson.id === 10013) linkUrl = "/minna/conjunctions";
+  if (lesson.id === 10014) linkUrl = "/minna/numbers";
+  if (lesson.id === 10015) linkUrl = "/minna/time-expressions";
+  if (lesson.id === 10016) linkUrl = "/minna/counters";
 
   return (
     <Card className={cn(
@@ -35,7 +46,7 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
             "text-xs font-medium uppercase tracking-wide",
             isTest ? "text-orange-600" : "text-muted-foreground"
           )}>
-            {isTest ? "Kiểm tra" : `Bài ${lesson.id}`}
+            {isTest ? "Kiểm tra" : isReference ? "Tổng hợp" : `Bài ${lesson.id}`}
           </span>
           {isTest ? (
             <ClipboardCheck className="w-4 h-4 text-orange-600 opacity-60 group-hover:opacity-100 transition-opacity" />
@@ -227,6 +238,102 @@ const MinnaNoNihongo = () => {
         description: "Quiz bài 19 20"
       });
     }
+  }
+
+  // Insert Test 11 after Lesson 22 (index 22 + generated index shift)
+  // To avoid index calculation complexity, we just find index of Lesson 22
+  if (!lessonsN5WithTest.find(l => l.id === 10001)) {
+    const lesson22Index = lessonsN5WithTest.findIndex(l => l.id === 22);
+    if (lesson22Index !== -1) {
+      lessonsN5WithTest.splice(lesson22Index + 1, 0, {
+        id: 10001,
+        title: "Kiểm tra 11",
+        description: "Quiz bài 21 22"
+      });
+    }
+  }
+
+  // Insert Test 12 after Lesson 25 (index 25 + generated index shift)
+  if (!lessonsN5WithTest.find(l => l.id === 10002)) {
+    const lesson25Index = lessonsN5WithTest.findIndex(l => l.id === 25);
+    if (lesson25Index !== -1) {
+      lessonsN5WithTest.splice(lesson25Index + 1, 0, {
+        id: 10002,
+        title: "Kiểm tra 12",
+        description: "Quiz bài 23 24 25"
+      });
+    }
+  }
+
+  // Insert Particles (Trợ từ) after Test 12
+  // We can find Test 12 index
+  const test12Index = lessonsN5WithTest.findIndex(l => l.id === 10002);
+  if (test12Index !== -1 && !lessonsN5WithTest.find(l => l.id === 10010)) {
+    lessonsN5WithTest.splice(test12Index + 1, 0, {
+      id: 10010,
+      title: "Trợ từ",
+      description: "Tổng hợp 17 trợ từ cơ bản"
+    });
+  }
+
+  // Insert Forms (Cách dùng các thể) after Particles
+  const particlesIndex = lessonsN5WithTest.findIndex(l => l.id === 10010);
+  if (particlesIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10011)) {
+    lessonsN5WithTest.splice(particlesIndex + 1, 0, {
+      id: 10011,
+      title: "Cách dùng các thể",
+      description: "Tổng hợp 9 thể động từ"
+    });
+  }
+
+  // Insert Adverbs (Phó từ) after Forms
+  const formsIndex = lessonsN5WithTest.findIndex(l => l.id === 10011);
+  if (formsIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10012)) {
+    lessonsN5WithTest.splice(formsIndex + 1, 0, {
+      id: 10012,
+      title: "Cách dùng phó từ",
+      description: "Tổng hợp phó từ quan trọng"
+    });
+  }
+
+  // Insert Conjunctions (Liên từ) after Adverbs
+  const adverbsIndex = lessonsN5WithTest.findIndex(l => l.id === 10012);
+  if (adverbsIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10013)) {
+    lessonsN5WithTest.splice(adverbsIndex + 1, 0, {
+      id: 10013,
+      title: "Cách dùng liên từ",
+      description: "Tổng hợp liên từ quan trọng"
+    });
+  }
+
+  // Insert Numbers (Số đếm) after Conjunctions
+  const conjunctionsIndex = lessonsN5WithTest.findIndex(l => l.id === 10013);
+  if (conjunctionsIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10014)) {
+    lessonsN5WithTest.splice(conjunctionsIndex + 1, 0, {
+      id: 10014,
+      title: "Số đếm",
+      description: "Cách đếm số trong tiếng Nhật"
+    });
+  }
+
+  // Insert Time Expressions (Cách nói thời gian) after Numbers
+  const numbersIndex = lessonsN5WithTest.findIndex(l => l.id === 10014);
+  if (numbersIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10015)) {
+    lessonsN5WithTest.splice(numbersIndex + 1, 0, {
+      id: 10015,
+      title: "Cách nói thời gian",
+      description: "Ngày, giờ, tháng, năm..."
+    });
+  }
+
+  // Insert Counters (Đếm đồ vật) after Time Expressions
+  const timeIndex = lessonsN5WithTest.findIndex(l => l.id === 10015);
+  if (timeIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10016)) {
+    lessonsN5WithTest.splice(timeIndex + 1, 0, {
+      id: 10016,
+      title: "Đếm đồ vật",
+      description: "Các đơn vị đếm thông dụng"
+    });
   }
 
   return (

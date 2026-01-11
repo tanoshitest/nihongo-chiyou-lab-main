@@ -16,6 +16,15 @@ import MinnaTest7 from "./pages/MinnaTest7";
 import MinnaTest8 from "./pages/MinnaTest8";
 import MinnaTest9 from "./pages/MinnaTest9";
 import MinnaTest10 from "./pages/MinnaTest10";
+import MinnaTest11 from "./pages/MinnaTest11";
+import MinnaTest12 from "./pages/MinnaTest12";
+import Particles from "./pages/Particles";
+import Forms from "./pages/Forms";
+import Adverbs from "./pages/Adverbs";
+import Conjunctions from "./pages/Conjunctions";
+import Numbers from "./pages/Numbers";
+import TimeExpressions from "./pages/TimeExpressions";
+import Counters from "./pages/Counters";
 import LessonDetail from "./pages/LessonDetail";
 import Irodori from "./pages/Irodori";
 import IrodoriLessonDetail from "./pages/IrodoriLessonDetail";
@@ -51,6 +60,15 @@ const App = () => (
           <Route path="/minna/test-8" element={<MinnaTest8 />} />
           <Route path="/minna/test-9" element={<MinnaTest9 />} />
           <Route path="/minna/test-10" element={<MinnaTest10 />} />
+          <Route path="/minna/test-11" element={<MinnaTest11 />} />
+          <Route path="/minna/test-12" element={<MinnaTest12 />} />
+          <Route path="/minna/particles" element={<Particles />} />
+          <Route path="/minna/forms" element={<Forms />} />
+          <Route path="/minna/adverbs" element={<Adverbs />} />
+          <Route path="/minna/conjunctions" element={<Conjunctions />} />
+          <Route path="/minna/numbers" element={<Numbers />} />
+          <Route path="/minna/time-expressions" element={<TimeExpressions />} />
+          <Route path="/minna/counters" element={<Counters />} />
           <Route path="/minna/:id" element={<LessonDetail />} />
           <Route path="/irodori" element={<Irodori />} />
           <Route path="/irodori/:level/:id" element={<IrodoriLessonDetail />} />
