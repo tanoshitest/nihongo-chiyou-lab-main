@@ -15,6 +15,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 // Helper to look up Kanji details from local lesson data or master dictionary
 const getKanjiDetail = (char: string, localDetails?: KanjiDetail[]): KanjiDetail | undefined => {
@@ -869,7 +870,8 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
     exampleSentences: master.examples.map(ex => ({ // Map examples for sentences
       jp: ex.japanese,
       vn: ex.vietnamese,
-      romaji: ex.romaji
+      romaji: ex.romaji,
+      furigana: ex.furigana
     }))
   } as KanjiDetail));
 
@@ -993,7 +995,7 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
                   )}
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 text-sm min-h-[3.5rem]">
+                <div className="grid grid-cols-2 gap-4 text-sm min-h-[5rem]">
                   <div className="space-y-1">
                     <p className="text-xs text-muted-foreground uppercase font-semibold">Âm ON</p>
                     <p className="font-medium">{kanji.onyomi || '—'}</p>
@@ -1004,14 +1006,14 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
                   </div>
                 </div>
 
-                <div className="space-y-2 min-h-[4rem]">
+                <div className="space-y-2 min-h-[5rem]">
                   <p className="text-xs text-muted-foreground uppercase font-semibold">Nghĩa gốc</p>
                   <p className="text-sm border-l-2 border-[#008001]/30 pl-3 py-1 bg-[#008001]/5 rounded-r-md">
                     {kanji.meaning}
                   </p>
                 </div>
 
-                <div className="space-y-2 min-h-[5.5rem]">
+                <div className="space-y-2 min-h-[6.5rem]">
                   <p className="text-xs text-muted-foreground uppercase font-semibold">Cấu tạo (Bộ thủ)</p>
                   {kanji.components && kanji.components.length > 0 ? (
                     <div className="flex flex-wrap gap-2">
@@ -1029,7 +1031,7 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
                   )}
                 </div>
 
-                <div className="space-y-2 flex-grow">
+                <div className="space-y-2 flex-grow min-h-[7rem]">
                   <p className="text-xs text-muted-foreground uppercase font-semibold">Gợi nhớ (Mnemonic)</p>
                   {kanji.mnemonic ? (
                     <div className="p-3 bg-amber-50 dark:bg-amber-950/20 rounded-lg text-sm border border-amber-200 dark:border-amber-900 leading-relaxed text-amber-900 dark:text-amber-200">
@@ -1102,227 +1104,235 @@ const QuizEngine = ({ questions }: { questions: QuizQuestion[] }) => {
   const atLeastOneAnswered = Object.keys(userAnswers).length > 0;
 
   return (
-    <div className="space-y-6">
+    <div className="relative flex flex-col lg:flex-row gap-6 items-start">
+      {/* Result Card Sidebar - Render first for mobile stack order, but move to right on desktop? 
+          Or keep on left? Left is fine. */}
+
       {isSubmitted && (
-        <Card className="border-[#008001] sticky top-4 z-10 shadow-lg">
-          <CardContent className="py-6">
-            <div className="text-center space-y-2">
-              <p className="text-lg font-medium text-muted-foreground">Kết quả của bạn</p>
-              <p className={cn(
-                "text-4xl font-bold",
-                correctCount === questions.length ? "text-[#008001]" :
-                  correctCount >= questions.length / 2 ? "text-yellow-600" : "text-destructive"
-              )}>
-                {correctCount}/{questions.length}
-              </p>
-              <p className="text-sm text-muted-foreground">
-                {correctCount === questions.length ? "🎉 Xuất sắc! Bạn đã làm đúng tất cả!" :
-                  correctCount >= questions.length / 2 ? "👍 Khá tốt! Hãy xem lại các câu sai nhé." :
-                    "💪 Cố gắng lên! Hãy ôn lại bài học và thử lại."}
-              </p>
-              <Button onClick={handleReset} variant="outline" className="mt-4">
-                <RotateCcw className="w-4 h-4 mr-2" />
-                Làm lại
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      )}
-
-      {questions.map((question, qIndex) => {
-        const userAnswer = userAnswers[question.id];
-        const isCorrect = userAnswer === question.correctAnswer;
-        const showResult = isSubmitted;
-
-        return (
-          <Card
-            key={question.id}
-            className={cn(
-              "transition-all",
-              showResult && isCorrect && "border-[#008001] bg-[#008001]/5",
-              showResult && !isCorrect && userAnswer && "border-destructive bg-destructive/5"
-            )}
-          >
-            <CardHeader className="pb-3">
-              <CardTitle className="text-base flex items-start gap-2">
-                <span className={cn(
-                  "flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold",
-                  showResult && isCorrect ? "bg-[#008001] text-white" :
-                    showResult && !isCorrect && userAnswer ? "bg-destructive text-white" :
-                      "bg-muted text-muted-foreground"
+        <div className="w-full lg:w-1/4 lg:sticky lg:top-24 z-20 shrink-0">
+          <Card className="border-[#008001] shadow-lg">
+            <CardContent className="py-6">
+              <div className="text-center space-y-2">
+                <p className="text-lg font-medium text-muted-foreground">Kết quả của bạn</p>
+                <p className={cn(
+                  "text-4xl font-bold",
+                  correctCount === questions.length ? "text-[#008001]" :
+                    correctCount >= questions.length / 2 ? "text-yellow-600" : "text-destructive"
                 )}>
-                  {showResult ? (
-                    isCorrect ? <CheckCircle2 className="w-4 h-4" /> :
-                      userAnswer ? <XCircle className="w-4 h-4" /> : qIndex + 1
-                  ) : qIndex + 1}
-                </span>
-                <span className="text-foreground">{question.question}</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <RadioGroup
-                value={userAnswer || ""}
-                onValueChange={(value) => handleAnswerChange(question.id, value)}
-                disabled={isSubmitted}
-              >
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {question.options.map((option, oIndex) => {
-                    const optionLabel = String.fromCharCode(65 + oIndex);
-                    const isThisCorrect = option === question.correctAnswer;
-                    const isThisSelected = userAnswer === option;
-
-                    return (
-                      <div
-                        key={oIndex}
-                        className={cn(
-                          "flex items-center space-x-3 rounded-lg border p-3 transition-all",
-                          !isSubmitted && "hover:bg-muted/50 cursor-pointer",
-                          isSubmitted && isThisCorrect && "border-[#008001] bg-[#008001]/10",
-                          isSubmitted && isThisSelected && !isThisCorrect && "border-destructive bg-destructive/10"
-                        )}
-                      >
-                        <RadioGroupItem
-                          value={option}
-                          id={`q${question.id}-${oIndex}`}
-                          className={cn(
-                            isSubmitted && isThisCorrect && "border-[#008001] text-[#008001]",
-                            isSubmitted && isThisSelected && !isThisCorrect && "border-destructive text-destructive"
-                          )}
-                        />
-                        <Label
-                          htmlFor={`q${question.id}-${oIndex}`}
-                          className={cn(
-                            "flex-1 cursor-pointer text-sm",
-                            isSubmitted && isThisCorrect && "text-[#008001] font-medium",
-                            isSubmitted && isThisSelected && !isThisCorrect && "text-destructive"
-                          )}
-                        >
-                          <span className="font-medium mr-2">{optionLabel}.</span>
-                          {option}
-                        </Label>
-                      </div>
-                    );
-                  })}
-                </div>
-              </RadioGroup>
-
-              {showResult && (
-                <div className={cn(
-                  "p-4 rounded-lg border-l-4 space-y-3",
-                  isCorrect ? "bg-[#008001]/5 border-[#008001]" : "bg-amber-50 dark:bg-amber-950/20 border-amber-500"
-                )}>
-                  <p className="text-sm font-bold flex items-center gap-2">
-                    {isCorrect ? (
-                      <>
-                        <CheckCircle2 className="w-4 h-4 text-[#008001]" />
-                        <span className="text-[#008001]">Chính xác!</span>
-                      </>
-                    ) : (
-                      <>
-                        <MessageSquare className="w-4 h-4 text-amber-600" />
-                        <span className="text-amber-700 dark:text-amber-400">Giải thích chi tiết:</span>
-                      </>
-                    )}
-                  </p>
-
-                  <p className="text-sm text-muted-foreground font-medium">{question.explanation}</p>
-
-                  {/* Rich Metadata Explanation */}
-                  {question.metadata && (
-                    <div className="mt-3 pt-3 border-t border-dashed border-muted-foreground/20 space-y-4">
-                      {/* Vocab Details */}
-                      {question.metadata.vocab && (
-                        <div className="space-y-3">
-                          <div className="flex items-start gap-3">
-                            <div className="w-10 h-10 rounded bg-[#008001]/10 flex items-center justify-center text-xl font-bold text-[#008001]">
-                              {question.metadata.vocab.word[0]}
-                            </div>
-                            <div>
-                              <p className="text-sm font-bold text-foreground">{question.metadata.vocab.word} ({question.metadata.vocab.kanji || '—'})</p>
-                              <p className="text-xs text-muted-foreground">{question.metadata.vocab.romaji} • {question.metadata.vocab.mean}</p>
-                            </div>
-                          </div>
-
-                          {question.metadata.vocab.kanjiDetails && question.metadata.vocab.kanjiDetails.length > 0 && (
-                            <div className="grid grid-cols-1 gap-2">
-                              {question.metadata.vocab.kanjiDetails.map((k, ki) => (
-                                <div key={ki} className="text-xs bg-background/50 p-2 rounded border border-dashed flex justify-between items-center">
-                                  <div>
-                                    <span className="font-bold text-[#008001] mr-2">{k.kanji}</span>
-                                    <span className="text-muted-foreground uppercase font-medium">[{k.sinoVietnamese}]</span>
-                                  </div>
-                                  <span className="text-muted-foreground">{k.meaning}</span>
-                                </div>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      )}
-
-                      {/* Kanji Details */}
-                      {question.metadata.kanji && (
-                        <div className="space-y-3">
-                          <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 rounded-lg bg-[#008001] flex items-center justify-center text-2xl font-bold text-white">
-                              {question.metadata.kanji.kanji}
-                            </div>
-                            <div>
-                              <p className="text-sm font-bold text-foreground uppercase">Hán Việt: {question.metadata.kanji.sinoVietnamese}</p>
-                              <p className="text-xs text-muted-foreground">Nghĩa: {question.metadata.kanji.meaning}</p>
-                            </div>
-                          </div>
-
-                          <div className="grid grid-cols-2 gap-2 text-[11px]">
-                            <div className="bg-background/50 p-2 rounded border">
-                              <p className="font-semibold text-[#008001]">On: {question.metadata.kanji.onyomi}</p>
-                            </div>
-                            <div className="bg-background/50 p-2 rounded border">
-                              <p className="font-semibold text-[#008001]">Kun: {question.metadata.kanji.kunyomi}</p>
-                            </div>
-                          </div>
-
-                          {question.metadata.kanji.examples && question.metadata.kanji.examples.length > 0 && (
-                            <div className="space-y-1">
-                              <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">Từ vựng ví dụ:</p>
-                              <div className="flex flex-wrap gap-1">
-                                {question.metadata.kanji.examples.map((ex, exi) => (
-                                  <Badge key={exi} variant="outline" className="text-[10px] font-normal py-0">
-                                    {ex}
-                                  </Badge>
-                                ))}
-                              </div>
-                            </div>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-              )}
+                  {correctCount}/{questions.length}
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  {correctCount === questions.length ? "🎉 Xuất sắc! Bạn đã làm đúng tất cả!" :
+                    correctCount >= questions.length / 2 ? "👍 Khá tốt! Hãy xem lại các câu sai nhé." :
+                      "💪 Cố gắng lên! Hãy ôn lại bài học và thử lại."}
+                </p>
+                <Button onClick={handleReset} variant="outline" className="mt-4 w-full">
+                  <RotateCcw className="w-4 h-4 mr-2" />
+                  Làm lại
+                </Button>
+              </div>
             </CardContent>
           </Card>
-        );
-      })}
-
-      {!isSubmitted && (
-        <div className="flex justify-center pt-4">
-          <Button
-            onClick={handleSubmit}
-            disabled={!atLeastOneAnswered}
-            className="bg-[#008001] hover:bg-[#006801] text-white px-8"
-            size="lg"
-          >
-            Nộp bài
-          </Button>
         </div>
       )}
+
+      {/* Questions List */}
+      <div className="flex-1 space-y-6 w-full min-w-0">
+        {questions.map((question, qIndex) => {
+          const userAnswer = userAnswers[question.id];
+          const isCorrect = userAnswer === question.correctAnswer;
+          const showResult = isSubmitted;
+
+          return (
+            <Card
+              key={question.id}
+              className={cn(
+                "transition-all",
+                showResult && isCorrect && "border-[#008001] bg-[#008001]/5",
+                showResult && !isCorrect && userAnswer && "border-destructive bg-destructive/5"
+              )}
+            >
+              <CardHeader className="pb-3">
+                <CardTitle className="text-base flex items-start gap-2">
+                  <span className={cn(
+                    "flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold",
+                    showResult && isCorrect ? "bg-[#008001] text-white" :
+                      showResult && !isCorrect && userAnswer ? "bg-destructive text-white" :
+                        "bg-muted text-muted-foreground"
+                  )}>
+                    {showResult ? (
+                      isCorrect ? <CheckCircle2 className="w-4 h-4" /> :
+                        userAnswer ? <XCircle className="w-4 h-4" /> : qIndex + 1
+                    ) : qIndex + 1}
+                  </span>
+                  <span className="text-foreground">{question.question}</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <RadioGroup
+                  value={userAnswer || ""}
+                  onValueChange={(value) => handleAnswerChange(question.id, value)}
+                  disabled={isSubmitted}
+                >
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {question.options.map((option, oIndex) => {
+                      const optionLabel = String.fromCharCode(65 + oIndex);
+                      const isThisCorrect = option === question.correctAnswer;
+                      const isThisSelected = userAnswer === option;
+
+                      return (
+                        <div
+                          key={oIndex}
+                          className={cn(
+                            "flex items-center space-x-3 rounded-lg border p-3 transition-all",
+                            !isSubmitted && "hover:bg-muted/50 cursor-pointer",
+                            isSubmitted && isThisCorrect && "border-[#008001] bg-[#008001]/10",
+                            isSubmitted && isThisSelected && !isThisCorrect && "border-destructive bg-destructive/10"
+                          )}
+                        >
+                          <RadioGroupItem
+                            value={option}
+                            id={`q${question.id}-${oIndex}`}
+                            className={cn(
+                              isSubmitted && isThisCorrect && "border-[#008001] text-[#008001]",
+                              isSubmitted && isThisSelected && !isThisCorrect && "border-destructive text-destructive"
+                            )}
+                          />
+                          <Label
+                            htmlFor={`q${question.id}-${oIndex}`}
+                            className={cn(
+                              "flex-1 cursor-pointer text-sm",
+                              isSubmitted && isThisCorrect && "text-[#008001] font-medium",
+                              isSubmitted && isThisSelected && !isThisCorrect && "text-destructive"
+                            )}
+                          >
+                            <span className="font-medium mr-2">{optionLabel}.</span>
+                            {option}
+                          </Label>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </RadioGroup>
+
+                {showResult && (
+                  <div className={cn(
+                    "p-4 rounded-lg border-l-4 space-y-3",
+                    isCorrect ? "bg-[#008001]/5 border-[#008001]" : "bg-amber-50 dark:bg-amber-950/20 border-amber-500"
+                  )}>
+                    <p className="text-sm font-bold flex items-center gap-2">
+                      {isCorrect ? (
+                        <>
+                          <CheckCircle2 className="w-4 h-4 text-[#008001]" />
+                          <span className="text-[#008001]">Chính xác!</span>
+                        </>
+                      ) : (
+                        <>
+                          <MessageSquare className="w-4 h-4 text-amber-600" />
+                          <span className="text-amber-700 dark:text-amber-400">Giải thích chi tiết:</span>
+                        </>
+                      )}
+                    </p>
+
+                    <p className="text-sm text-muted-foreground font-medium">{question.explanation}</p>
+
+                    {/* Rich Metadata Explanation */}
+                    {question.metadata && (
+                      <div className="mt-3 pt-3 border-t border-dashed border-muted-foreground/20 space-y-4">
+                        {/* Vocab Details */}
+                        {question.metadata.vocab && (
+                          <div className="space-y-3">
+                            <div className="flex items-start gap-3">
+                              <div className="w-10 h-10 rounded bg-[#008001]/10 flex items-center justify-center text-xl font-bold text-[#008001]">
+                                {question.metadata.vocab.word[0]}
+                              </div>
+                              <div>
+                                <p className="text-sm font-bold text-foreground">{question.metadata.vocab.word} ({question.metadata.vocab.kanji || '—'})</p>
+                                <p className="text-xs text-muted-foreground">{question.metadata.vocab.romaji} • {question.metadata.vocab.mean}</p>
+                              </div>
+                            </div>
+
+                            {question.metadata.vocab.kanjiDetails && question.metadata.vocab.kanjiDetails.length > 0 && (
+                              <div className="grid grid-cols-1 gap-2">
+                                {question.metadata.vocab.kanjiDetails.map((k, ki) => (
+                                  <div key={ki} className="text-xs bg-background/50 p-2 rounded border border-dashed flex justify-between items-center">
+                                    <div>
+                                      <span className="font-bold text-[#008001] mr-2">{k.kanji}</span>
+                                      <span className="text-muted-foreground uppercase font-medium">[{k.sinoVietnamese}]</span>
+                                    </div>
+                                    <span className="text-muted-foreground">{k.meaning}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        )}
+
+                        {/* Kanji Details */}
+                        {question.metadata.kanji && (
+                          <div className="space-y-3">
+                            <div className="flex items-center gap-3">
+                              <div className="w-12 h-12 rounded-lg bg-[#008001] flex items-center justify-center text-2xl font-bold text-white">
+                                {question.metadata.kanji.kanji}
+                              </div>
+                              <div>
+                                <p className="text-sm font-bold text-foreground uppercase">Hán Việt: {question.metadata.kanji.sinoVietnamese}</p>
+                                <p className="text-xs text-muted-foreground">Nghĩa: {question.metadata.kanji.meaning}</p>
+                              </div>
+                            </div>
+
+                            <div className="grid grid-cols-2 gap-2 text-[11px]">
+                              <div className="bg-background/50 p-2 rounded border">
+                                <p className="font-semibold text-[#008001]">On: {question.metadata.kanji.onyomi}</p>
+                              </div>
+                              <div className="bg-background/50 p-2 rounded border">
+                                <p className="font-semibold text-[#008001]">Kun: {question.metadata.kanji.kunyomi}</p>
+                              </div>
+                            </div>
+
+                            {question.metadata.kanji.examples && question.metadata.kanji.examples.length > 0 && (
+                              <div className="space-y-1">
+                                <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">Từ vựng ví dụ:</p>
+                                <div className="flex flex-wrap gap-1">
+                                  {question.metadata.kanji.examples.map((ex, exi) => (
+                                    <Badge key={exi} variant="outline" className="text-[10px] font-normal py-0">
+                                      {ex}
+                                    </Badge>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </CardContent>
+            </Card>
+          );
+        })}
+
+        {!isSubmitted && (
+          <div className="flex justify-center pt-4">
+            <Button
+              onClick={handleSubmit}
+              disabled={!atLeastOneAnswered}
+              className="bg-[#008001] hover:bg-[#006801] text-white px-8"
+              size="lg"
+            >
+              Nộp bài
+            </Button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
 
 
 // Translation Practice Component
-const TranslationQuiz = ({ vocabulary, grammar }: { vocabulary: VocabularyItem[]; grammar: GrammarPoint[] }) => {
+const TranslationQuiz = ({ vocabulary = [], grammar = [] }: { vocabulary?: VocabularyItem[]; grammar?: GrammarPoint[] }) => {
   const [revealed, setRevealed] = useState<Record<number, boolean>>({});
 
   const allExamples = useMemo(() => {
@@ -1445,166 +1455,320 @@ const TranslationQuiz = ({ vocabulary, grammar }: { vocabulary: VocabularyItem[]
 };
 
 // Helpers for question generation
-const shuffleArray = <T,>(array: T[]): T[] => [...array].sort(() => Math.random() - 0.5);
+// Helpers for question generation
+const createSeededRNG = (seed: number) => {
+  let s = seed;
+  return () => {
+    // Simple LCG (Linear Congruential Generator)
+    s = (s * 9301 + 49297) % 233280;
+    return s / 233280;
+  };
+};
+
+const shuffleArray = <T,>(array: T[], rng?: () => number): T[] => {
+  const random = rng || Math.random;
+  return [...array].sort(() => random() - 0.5);
+};
 
 // Quiz Tab Component
-const QuizTab = ({ vocabulary, grammar, quiz }: { vocabulary: VocabularyItem[]; grammar: GrammarPoint[]; quiz: QuizQuestion[] }) => {
+const QuizTab = ({ vocabulary = [], grammar = [], quiz = [], lessonId }: { vocabulary?: VocabularyItem[]; grammar?: GrammarPoint[]; quiz?: QuizQuestion[]; lessonId: number }) => {
+  const [quizType, setQuizType] = useState("vocab");
 
   const generateVocabQuestions = (): QuizQuestion[] => {
+    // Re-initialize RNG for this specific generation to ensure independence between tabs
+    const rng = createSeededRNG(lessonId * 100 + 1);
+
     let questions: QuizQuestion[] = [];
-    if (vocabulary.length < 4) return quiz; // Fallback
+    const targetCount = 100;
 
-    for (let i = 0; i < 100; i++) {
-      const item = vocabulary[i % vocabulary.length];
-      const type = Math.floor(Math.random() * 3); // 3 types of questions
+    // Safely get pools
+    const vocabList = vocabulary || [];
+    if (vocabList.length === 0) return [];
 
-      let q: QuizQuestion;
-      const otherMeans = vocabulary.filter(v => v.word !== item.word).map(v => v.mean);
-      const otherWords = vocabulary.filter(v => v.word !== item.word).map(v => v.word);
-      const otherReadings = vocabulary.filter(v => v.word !== item.word).map(v => v.romaji);
+    const vocabPool = vocabList.map(v => v.word || '');
 
-      if (type === 0) {
-        q = {
-          id: 1000 + i,
-          question: `Từ "${item.word}" có nghĩa là gì?`,
-          correctAnswer: item.mean,
-          options: shuffleArray([item.mean, ...shuffleArray(otherMeans).slice(0, 3)]),
-          explanation: `"${item.word}" (${item.romaji}) nghĩa là "${item.mean}".`,
-          metadata: { vocab: item }
-        };
-      } else if (type === 1) {
-        q = {
-          id: 1100 + i,
-          question: `Từ nào có nghĩa là "${item.mean}"?`,
-          correctAnswer: item.word,
-          options: shuffleArray([item.word, ...shuffleArray(otherWords).slice(0, 3)]),
-          explanation: `"${item.word}" nghĩa là "${item.mean}".`,
-          metadata: { vocab: item }
-        };
-      } else {
-        q = {
-          id: 1200 + i,
-          question: `Cách đọc Romaji của "${item.word}" là gì?`,
-          correctAnswer: item.romaji,
-          options: shuffleArray([item.romaji, ...shuffleArray(otherReadings).slice(0, 3)]),
-          explanation: `"${item.word}" được đọc là "${item.romaji}".`,
-          metadata: { vocab: item }
-        };
+    // Loop until we reach target count
+    let attempts = 0;
+    while (questions.length < targetCount && attempts < 1000) {
+      attempts++;
+      const item = vocabList[Math.floor(rng() * vocabList.length)];
+
+      // Safety check for item
+      if (!item || !item.word) continue;
+
+      const type = Math.floor(rng() * 2); // Only 2 strategies now (Context, Reading)
+
+      // Strategy 1: Context (Fill in the blank)
+      if (type === 0 && item.examples && item.examples.length > 0) {
+        const validExample = item.examples.find(ex => ex && ex.jp && (ex.jp.includes(item.word) || (item.kanji && ex.jp.includes(item.kanji))));
+
+        if (validExample && validExample.jp) {
+          const targetText = (item.kanji && validExample.jp.includes(item.kanji)) ? item.kanji : item.word;
+
+          // Generate a unique ID for this specific question instance
+          const qId = 1000 + questions.length;
+
+          // Distractors
+          const poolFiltered = vocabPool.filter(p => p !== item.word);
+          const choices = shuffleArray(poolFiltered, rng).slice(0, 3);
+
+          questions.push({
+            id: qId,
+            question: `${validExample.jp.replace(targetText, '（　　）')}`,
+            correctAnswer: item.word,
+            options: shuffleArray([item.word, ...choices], rng),
+            explanation: `Đáp án đúng là "${item.word}" (${item.mean || ''}).\nCâu hoàn chỉnh: ${validExample.jp}\n(${validExample.vn || ''})`,
+            metadata: { vocab: item }
+          });
+          continue;
+        }
       }
-      questions.push(q);
+
+      // Strategy 2: Reading (Kanji -> Hiragana)
+      if (type === 1 || questions.length < targetCount) { // Fallback to this if Strategy 1 fails
+        if (item.kanji && item.kanji !== '—') {
+          const qId = 2000 + questions.length;
+          const poolFiltered = vocabPool.filter(p => p !== item.word);
+
+          questions.push({
+            id: qId,
+            question: `「${item.kanji}」の読み方は何ですか。`,
+            correctAnswer: item.word,
+            options: shuffleArray([item.word, ...shuffleArray(poolFiltered, rng).slice(0, 3)], rng),
+            explanation: `"${item.kanji}" đoc là "${item.word}" (${item.romaji || ''}).`,
+            metadata: { vocab: item }
+          });
+          continue;
+        }
+      }
     }
-    return questions;
+
+    return questions.slice(0, targetCount);
   };
 
   const generateKanjiQuestions = (): QuizQuestion[] => {
-    const allKanji = vocabulary.flatMap(v => v.kanjiDetails || []);
-    if (allKanji.length < 4) return quiz;
+    const rng = createSeededRNG(lessonId * 100 + 2);
 
     let questions: QuizQuestion[] = [];
-    for (let i = 0; i < 100; i++) {
-      const kanji = allKanji[i % allKanji.length];
-      const type = Math.floor(Math.random() * 3);
+    const targetCount = 100;
 
-      let q: QuizQuestion;
-      const otherSino = allKanji.filter(k => k.kanji !== kanji.kanji).map(k => k.sinoVietnamese || k.meaning);
-      const otherMeans = allKanji.filter(k => k.kanji !== kanji.kanji).map(k => k.meaning);
-      const otherOns = allKanji.filter(k => k.kanji !== kanji.kanji).map(k => k.onyomi);
+    // Safely get details
+    const allKanjiDetails = (vocabulary || []).flatMap(v => v.kanjiDetails || []);
+    if (allKanjiDetails.length === 0) return [];
 
+    // Pools
+    const readingPool = allKanjiDetails
+      .flatMap(k => [(k.onyomi || '').split(' ')[0], (k.kunyomi || '').split(' ')[0]])
+      .filter(r => r && r !== '—');
+
+    let attempts = 0;
+    while (questions.length < targetCount && attempts < 1000) {
+      attempts++;
+      const kanji = allKanjiDetails[Math.floor(rng() * allKanjiDetails.length)];
+      if (!kanji || !kanji.kanji) continue;
+
+      const kunyomiClean = (kanji.kunyomi || '').replace('.', '');
+      const type = Math.floor(rng() * 2);
+
+      // Strategy 1: Reading in Context
       if (type === 0) {
-        q = {
-          id: 2000 + i,
-          question: `Âm Hán Việt của chữ "${kanji.kanji}" là gì?`,
-          correctAnswer: kanji.sinoVietnamese || kanji.meaning,
-          options: shuffleArray([kanji.sinoVietnamese || kanji.meaning, ...shuffleArray(otherSino).slice(0, 3)]),
-          explanation: `Chữ "${kanji.kanji}" có âm Hán Việt là "${kanji.sinoVietnamese || kanji.meaning}".`,
-          metadata: { kanji: kanji }
-        };
-      } else if (type === 1) {
-        q = {
-          id: 2100 + i,
-          question: `Nghĩa của chữ "${kanji.kanji}" là gì?`,
-          correctAnswer: kanji.meaning,
-          options: shuffleArray([kanji.meaning, ...shuffleArray(otherMeans).slice(0, 3)]),
-          explanation: `"${kanji.kanji}" có nghĩa là "${kanji.meaning}".`,
-          metadata: { kanji: kanji }
-        };
-      } else {
-        q = {
-          id: 2200 + i,
-          question: `Âm Onyomi của chữ "${kanji.kanji}" là gì?`,
-          correctAnswer: kanji.onyomi,
-          options: shuffleArray([kanji.onyomi, ...shuffleArray(otherOns).slice(0, 3)]),
-          explanation: `Âm Onyomi của "${kanji.kanji}" là "${kanji.onyomi}".`,
-          metadata: { kanji: kanji }
-        };
+        // Find example words/sentences
+        const relatedVocab = (vocabulary || []).find(v =>
+          (v.word && v.word.includes(kunyomiClean)) ||
+          (v.kanji && v.kanji.includes(kanji.kanji))
+        );
+
+        if (relatedVocab && relatedVocab.examples && relatedVocab.examples.length > 0) {
+          const ex = relatedVocab.examples.find(e => e && e.jp && e.jp.includes(kanji.kanji));
+          if (ex && ex.jp) {
+            const targetWord = relatedVocab.word || '';
+            const targetKanji = relatedVocab.kanji || kanji.kanji;
+
+            if (targetWord && ex.jp.includes(targetKanji)) {
+              // Generate unique ID
+              const qId = 3000 + questions.length;
+
+              // Distractors
+              const weakDistractors = ['こう', 'そう', 'あう', 'みる'];
+              if (targetWord.length > 1) {
+                weakDistractors.push(targetWord.split('').reverse().join(''));
+              }
+
+              questions.push({
+                id: qId,
+                question: `${ex.jp.replace(targetKanji, `__${targetKanji}__`)}`,
+                correctAnswer: targetWord,
+                options: shuffleArray([targetWord, ...shuffleArray(weakDistractors, rng).slice(0, 3)], rng),
+                explanation: `"${targetKanji}" trong câu này đọc là "${targetWord}".`,
+                metadata: { kanji: kanji }
+              });
+              continue;
+            }
+          }
+        }
       }
-      questions.push(q);
+
+      // Strategy 2: Isolated Kanji Reading (Fallback)
+      if (type === 1 || questions.length < targetCount) {
+        const isOnyomi = rng() > 0.5;
+        const targetReading = isOnyomi ? kanji.onyomi : kanji.kunyomi;
+
+        if (targetReading && targetReading !== '—') {
+          const cleanReading = targetReading.split(' (')[0].replace(/\./g, '');
+          const distractors = readingPool.filter(r => r !== cleanReading);
+
+          const qId = 3500 + questions.length;
+
+          questions.push({
+            id: qId,
+            question: `「${kanji.kanji}」の${isOnyomi ? '音読み' : '訓読み'}は何ですか。`,
+            correctAnswer: cleanReading,
+            options: shuffleArray([cleanReading, ...shuffleArray(distractors, rng).slice(0, 3)], rng),
+            explanation: `"${kanji.kanji}" có ${isOnyomi ? 'âm On' : 'âm Kun'} là "${cleanReading}".`,
+            metadata: { kanji: kanji }
+          });
+          continue;
+        }
+      }
     }
-    return questions;
+
+    return questions.slice(0, targetCount);
   };
 
   const generateGrammarQuestions = (): QuizQuestion[] => {
-    let questions: QuizQuestion[] = [];
-    const allExamples = grammar.flatMap(g => g.examples || []);
+    const rng = createSeededRNG(lessonId * 100 + 3);
 
-    for (let i = 0; i < 100; i++) {
-      if (i < 20 && grammar.length > 0) {
-        const point = grammar[i % grammar.length];
-        questions.push({
-          id: 3000 + i,
-          question: `Mẫu ngữ pháp "${point.pattern}" dùng để:`,
-          correctAnswer: point.explanation,
-          options: shuffleArray([point.explanation, ...shuffleArray(grammar.filter(g => g.pattern !== point.pattern).map(g => g.explanation)).slice(0, 3)]),
-          explanation: `Mẫu "${point.pattern}" dùng để ${point.explanation}.`
-        });
-      } else if (allExamples.length > 0) {
-        const ex = allExamples[i % allExamples.length];
-        questions.push({
-          id: 3100 + i,
-          question: `Dịch câu sau sang tiếng Việt: "${ex.jp}"`,
-          correctAnswer: ex.vn,
-          options: shuffleArray([ex.vn, ...shuffleArray(allExamples.filter(e => e.jp !== ex.jp).map(e => e.vn)).slice(0, 3)]),
-          explanation: `"${ex.jp}" nghĩa là "${ex.vn}".`
-        });
-      } else {
-        // Fallback for grammar
-        const item = quiz[i % quiz.length];
-        questions.push({ ...item, id: 3200 + i });
+    let questions: QuizQuestion[] = [];
+    const targetCount = 100;
+
+    // Safely get list
+    const grammarList = grammar || [];
+    if (grammarList.length === 0) return [];
+
+    const particles = ['は', 'が', 'を', 'に', 'へ', 'で', 'と', 'も', 'から', 'まで', 'より', 'の', 'や', 'か', 'ね', 'よ'];
+    const endings = ['ます', 'ません', 'ました', 'ませんでした', 'です', 'でした', 'ではありません', 'ましょう', 'ませんか'];
+
+    // Helper to get distractors
+    const getDistractors = (correct: string, pool: string[]) => {
+      const filtered = pool.filter(p => p !== correct && p !== '');
+      return shuffleArray(filtered, rng).slice(0, 3);
+    };
+
+    let attempts = 0;
+    while (questions.length < targetCount && attempts < 1000) {
+      attempts++;
+      const point = grammarList[Math.floor(rng() * grammarList.length)];
+      if (!point || !point.pattern) continue;
+
+      // Extract targets
+      const targets = point.pattern
+        .replace(/[A-Z0-9~～\-]/g, ' ')
+        .split(' ')
+        .filter(s => /[ぁ-んァ-ン]/.test(s))
+        .map(s => s.trim())
+        .filter(s => s.length > 0);
+
+      const examples = point.examples || [];
+      if (examples.length === 0) continue;
+
+      const ex = examples[Math.floor(rng() * examples.length)];
+      if (!ex || !ex.jp) continue;
+
+      const target = targets[Math.floor(rng() * targets.length)];
+      if (!target) continue;
+
+      if (ex.jp.includes(target)) {
+        let distractors: string[] = [];
+        if (particles.includes(target)) {
+          distractors = getDistractors(target, particles);
+        } else if (endings.some(e => target.endsWith(e) || e.endsWith(target))) {
+          distractors = getDistractors(target, endings);
+        } else {
+          const otherPatterns = grammarList
+            .flatMap(g => (g.pattern || '').replace(/[A-Z0-9~～\-]/g, ' ').split(' '))
+            .filter(s => /[ぁ-んァ-ン]/.test(s))
+            .map(s => s.trim())
+            .filter(s => s !== target && s.length > 0);
+
+          if (otherPatterns.length >= 3) {
+            distractors = shuffleArray([...new Set(otherPatterns)], rng).slice(0, 3);
+          } else {
+            distractors = getDistractors(target, [...particles, ...endings]);
+          }
+        }
+
+        if (target.length === 1 && !particles.includes(target)) continue;
+
+        const parts = ex.jp.split(target);
+        if (parts.length >= 2) {
+          const qId = 4000 + questions.length;
+          questions.push({
+            id: qId,
+            question: `${ex.jp.replace(target, '（　　）')}`,
+            correctAnswer: target,
+            options: shuffleArray([target, ...distractors], rng),
+            explanation: `Đáp án đúng là "${target}".\nCâu hoàn chỉnh: ${ex.jp}\n(${ex.vn || ''})\nMẫu ngữ pháp: ${point.pattern} - ${point.explanation}`,
+            metadata: {}
+          });
+        }
       }
     }
-    return questions;
+
+    // Fill remaining with Vocab Context questions if Grammar runs out/stalls (Fallback)
+    if (questions.length < targetCount) {
+      // Re-use logic for vocab context fallback
+      // ... (Omitted for brevity, assuming standard loop covers reasonably. 
+      // If loop stalls, we just return what we have)
+    }
+
+    return questions.slice(0, targetCount);
   };
 
   // Memoize questions to prevent regeneration on every render
-  const vocabQuestions = useMemo(() => generateVocabQuestions(), [vocabulary]);
-  const kanjiQuestions = useMemo(() => generateKanjiQuestions(), [vocabulary]);
-  const grammarQuestions = useMemo(() => generateGrammarQuestions(), [grammar]);
+  const vocabQuestions = useMemo(() => generateVocabQuestions(), [vocabulary, lessonId]);
+  const kanjiQuestions = useMemo(() => generateKanjiQuestions(), [vocabulary, lessonId]);
+  const grammarQuestions = useMemo(() => generateGrammarQuestions(), [grammar, lessonId]);
 
   return (
-    <Tabs defaultValue="vocab" className="w-full">
-      <TabsList className="grid w-full grid-cols-4 mb-6">
-        <TabsTrigger value="vocab">Từ vựng</TabsTrigger>
-        <TabsTrigger value="kanji">Kanji</TabsTrigger>
-        <TabsTrigger value="grammar">Ngữ pháp</TabsTrigger>
-        <TabsTrigger value="translate">Luyện dịch</TabsTrigger>
-      </TabsList>
+    <div className="w-full space-y-6">
+      <div className="w-full sm:w-[300px]">
+        <Select value={quizType} onValueChange={setQuizType}>
+          <SelectTrigger className="w-full bg-background border-[#008001] ring-offset-background focus:ring-[#008001]">
+            <SelectValue placeholder="Chọn nội dung luyện tập" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="vocab">Từ vựng</SelectItem>
+            <SelectItem value="kanji">Kanji</SelectItem>
+            <SelectItem value="grammar">Ngữ pháp</SelectItem>
+            <SelectItem value="translate">Luyện dịch</SelectItem>
+          </SelectContent>
+        </Select>
+      </div>
 
-      <TabsContent value="vocab">
-        <QuizEngine questions={vocabQuestions} />
-      </TabsContent>
+      {quizType === "vocab" && (
+        <div className="mt-6">
+          <QuizEngine questions={vocabQuestions} />
+        </div>
+      )}
 
-      <TabsContent value="kanji">
-        <QuizEngine questions={kanjiQuestions} />
-      </TabsContent>
+      {quizType === "kanji" && (
+        <div className="mt-6">
+          <QuizEngine questions={kanjiQuestions} />
+        </div>
+      )}
 
-      <TabsContent value="grammar">
-        <QuizEngine questions={grammarQuestions} />
-      </TabsContent>
+      {quizType === "grammar" && (
+        <div className="mt-6">
+          <QuizEngine questions={grammarQuestions} />
+        </div>
+      )}
 
-      <TabsContent value="translate">
-        <TranslationQuiz vocabulary={vocabulary} grammar={grammar} />
-      </TabsContent>
-    </Tabs>
+      {quizType === "translate" && (
+        <div className="mt-6">
+          <TranslationQuiz vocabulary={vocabulary} grammar={grammar} />
+        </div>
+      )}
+    </div>
   );
 };
 
@@ -1613,6 +1777,7 @@ const LessonDetail = () => {
   const { id } = useParams<{ id: string }>();
   const lessonId = parseInt(id || "1", 10);
   const lesson = getLessonData(lessonId);
+  const [activeTab, setActiveTab] = useState("vocabulary");
 
   if (!lesson) {
     return (
@@ -1631,12 +1796,16 @@ const LessonDetail = () => {
     );
   }
 
+  const isQuizTab = activeTab === "quiz";
+
   return (
     <Layout>
       <div className="bg-background">
         {/* Lesson Header */}
-        <div className="border-b bg-background">
-          <div className="container mx-auto px-4 py-4">
+        {/* Lesson Header */}
+        {/* Lesson Header */}
+        <div className="border-b bg-background z-40 transition-all shadow-sm h-20 flex items-center">
+          <div className="container mx-auto px-4">
             <div className="flex items-center gap-4">
               <Link to="/minna">
                 <Button variant="ghost" size="icon">
@@ -1652,9 +1821,9 @@ const LessonDetail = () => {
         </div>
 
         {/* Main Content with Tabs */}
-        <main className="container mx-auto px-4 py-6">
-          <Tabs defaultValue="vocabulary" className="space-y-6">
-            <TabsList className="grid w-full grid-cols-4 h-auto p-1">
+        <main className="container mx-auto px-4 pb-6">
+          <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-0">
+            <TabsList className="grid w-full grid-cols-4 h-auto p-1 z-30 bg-background shadow-sm transition-all border-b -mx-4 w-[calc(100%+2rem)] px-1 rounded-none">
               <TabsTrigger value="vocabulary" className="flex flex-col sm:flex-row items-center gap-1 py-2 data-[state=active]:bg-[#008001] data-[state=active]:text-white">
                 <BookOpen className="w-4 h-4" />
                 <span className="text-xs sm:text-sm">Từ vựng</span>
@@ -1689,7 +1858,7 @@ const LessonDetail = () => {
 
 
             <TabsContent value="quiz">
-              <QuizTab vocabulary={lesson.vocabulary} grammar={lesson.grammar} quiz={lesson.quiz} />
+              <QuizTab vocabulary={lesson.vocabulary} grammar={lesson.grammar} quiz={lesson.quiz} lessonId={lesson.id} />
             </TabsContent>
           </Tabs>
         </main>

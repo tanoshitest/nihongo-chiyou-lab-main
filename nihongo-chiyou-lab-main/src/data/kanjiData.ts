@@ -1,6 +1,7 @@
 export interface KanjiExampleFurigana {
   kanji: string;
   reading: string;
+  meaning?: string;
 }
 
 export interface KanjiExample {
@@ -45,26 +46,47 @@ export const kanjiData: KanjiCard[] = [
         japanese: "一つ",
         romaji: "Hitotsu",
         vietnamese: "Một cái",
+        furigana: [
+          { kanji: "一", reading: "ひと", meaning: "một" },
+          { kanji: "つ", reading: "つ", meaning: "cái" },
+        ],
       },
       {
         japanese: "一人",
         romaji: "Hitori",
         vietnamese: "Một người",
+        furigana: [
+          { kanji: "一", reading: "ひと", meaning: "một" },
+          { kanji: "人", reading: "り", meaning: "người" },
+        ],
       },
       {
         japanese: "一月",
         romaji: "Ichigatsu",
         vietnamese: "Tháng một",
+        furigana: [
+          { kanji: "一", reading: "いち", meaning: "một" },
+          { kanji: "月", reading: "がつ", meaning: "tháng" },
+        ],
       },
       {
         japanese: "一年生",
         romaji: "Ichinensei",
         vietnamese: "Học sinh năm nhất",
+        furigana: [
+          { kanji: "一", reading: "いち", meaning: "một" },
+          { kanji: "年", reading: "ねん", meaning: "năm" },
+          { kanji: "生", reading: "せい", meaning: "học sinh" },
+        ],
       },
       {
         japanese: "一日",
         romaji: "Tsuitachi",
         vietnamese: "Ngày mồng một",
+        furigana: [
+          { kanji: "一", reading: "つい", meaning: "một" },
+          { kanji: "日", reading: "たち", meaning: "ngày" },
+        ],
       },
     ],
   },
@@ -86,26 +108,46 @@ export const kanjiData: KanjiCard[] = [
         japanese: "二つ",
         romaji: "Futatsu",
         vietnamese: "Hai cái",
+        furigana: [
+          { kanji: "二", reading: "ふた", meaning: "hai" },
+          { kanji: "つ", reading: "つ", meaning: "cái" },
+        ],
       },
       {
         japanese: "二人",
         romaji: "Futari",
         vietnamese: "Hai người",
+        furigana: [
+          { kanji: "二", reading: "ふた", meaning: "hai" },
+          { kanji: "人", reading: "り", meaning: "người" },
+        ],
       },
       {
         japanese: "二月",
         romaji: "Nigatsu",
         vietnamese: "Tháng hai",
+        furigana: [
+          { kanji: "二", reading: "に", meaning: "hai" },
+          { kanji: "月", reading: "がつ", meaning: "tháng" },
+        ],
       },
       {
         japanese: "二日",
         romaji: "Futsuka",
         vietnamese: "Ngày mồng hai",
+        furigana: [
+          { kanji: "二", reading: "ふつ", meaning: "hai" },
+          { kanji: "日", reading: "か", meaning: "ngày" },
+        ],
       },
       {
         japanese: "二階",
         romaji: "Nikai",
         vietnamese: "Tầng 2",
+        furigana: [
+          { kanji: "二", reading: "に", meaning: "hai" },
+          { kanji: "階", reading: "かい", meaning: "tầng" },
+        ],
       },
     ],
   },
@@ -127,26 +169,46 @@ export const kanjiData: KanjiCard[] = [
         japanese: "三つ",
         romaji: "Mittsu",
         vietnamese: "Ba cái",
+        furigana: [
+          { kanji: "三", reading: "みっ", meaning: "ba" },
+          { kanji: "つ", reading: "つ", meaning: "cái" },
+        ],
       },
       {
         japanese: "三月",
         romaji: "Sangatsu",
         vietnamese: "Tháng ba",
+        furigana: [
+          { kanji: "三", reading: "さん", meaning: "ba" },
+          { kanji: "月", reading: "がつ", meaning: "tháng" },
+        ],
       },
       {
         japanese: "三日",
         romaji: "Mikka",
         vietnamese: "Ngày mồng ba",
+        furigana: [
+          { kanji: "三", reading: "みっ", meaning: "ba" },
+          { kanji: "日", reading: "か", meaning: "ngày" },
+        ],
       },
       {
         japanese: "三人",
         romaji: "Sannin",
         vietnamese: "Ba người",
+        furigana: [
+          { kanji: "三", reading: "さん", meaning: "ba" },
+          { kanji: "人", reading: "にん", meaning: "người" },
+        ],
       },
       {
         japanese: "三角",
         romaji: "Sankaku",
         vietnamese: "Hình tam giác",
+        furigana: [
+          { kanji: "三", reading: "さん", meaning: "tam" },
+          { kanji: "角", reading: "かく", meaning: "giác" },
+        ],
       },
     ],
   },
@@ -154,7 +216,7 @@ export const kanjiData: KanjiCard[] = [
     id: 4,
     kanji: "四",
     lesson: 1,
-    imageUrl: "/images/kanji/4_four_3d.png",
+    imageUrl: "/images/kanji/24_four_3d.png",
     onyomi: "シ",
     onyomiRomaji: "shi",
     kunyomi: "よっ・つ、よん、よ",
@@ -168,26 +230,46 @@ export const kanjiData: KanjiCard[] = [
         japanese: "四つ",
         romaji: "Yottsu",
         vietnamese: "Bốn cái",
+        furigana: [
+          { kanji: "四", reading: "よっ", meaning: "bốn" },
+          { kanji: "つ", reading: "つ", meaning: "cái" },
+        ],
       },
       {
         japanese: "四月",
         romaji: "Shigatsu",
         vietnamese: "Tháng tư",
+        furigana: [
+          { kanji: "四", reading: "し", meaning: "bốn" },
+          { kanji: "月", reading: "がつ", meaning: "tháng" },
+        ],
       },
       {
         japanese: "四日",
         romaji: "Yokka",
         vietnamese: "Ngày mồng bốn",
+        furigana: [
+          { kanji: "四", reading: "よっ", meaning: "bốn" },
+          { kanji: "日", reading: "か", meaning: "ngày" },
+        ],
       },
       {
         japanese: "四人",
         romaji: "Yonin",
         vietnamese: "Bốn người",
+        furigana: [
+          { kanji: "四", reading: "よ", meaning: "bốn" },
+          { kanji: "人", reading: "にん", meaning: "người" },
+        ],
       },
       {
         japanese: "四季",
         romaji: "Shiki",
         vietnamese: "Bốn mùa",
+        furigana: [
+          { kanji: "四", reading: "し", meaning: "bốn" },
+          { kanji: "季", reading: "き", meaning: "mùa" },
+        ],
       },
     ],
   },
@@ -195,7 +277,7 @@ export const kanjiData: KanjiCard[] = [
     id: 5,
     kanji: "五",
     lesson: 1,
-    imageUrl: "/images/kanji/5_five_3d.png",
+    imageUrl: "/images/kanji/25_five_3d.png",
     onyomi: "ゴ",
     onyomiRomaji: "go",
     kunyomi: "いつ・つ",
@@ -209,26 +291,46 @@ export const kanjiData: KanjiCard[] = [
         japanese: "五つ",
         romaji: "Itsutsu",
         vietnamese: "Năm cái",
+        furigana: [
+          { kanji: "五", reading: "いつ", meaning: "năm" },
+          { kanji: "つ", reading: "つ", meaning: "cái" },
+        ],
       },
       {
         japanese: "五月",
         romaji: "Gogatsu",
         vietnamese: "Tháng năm",
+        furigana: [
+          { kanji: "五", reading: "ご", meaning: "năm" },
+          { kanji: "月", reading: "がつ", meaning: "tháng" },
+        ],
       },
       {
         japanese: "五日",
         romaji: "Itsuka",
         vietnamese: "Ngày mồng năm",
+        furigana: [
+          { kanji: "五", reading: "いつ", meaning: "năm" },
+          { kanji: "日", reading: "か", meaning: "ngày" },
+        ],
       },
       {
         japanese: "五円",
         romaji: "Goen",
         vietnamese: "5 yên",
+        furigana: [
+          { kanji: "五", reading: "ご", meaning: "năm" },
+          { kanji: "円", reading: "えん", meaning: "yên" },
+        ],
       },
       {
         japanese: "五感",
         romaji: "Gokan",
         vietnamese: "Ngũ giác",
+        furigana: [
+          { kanji: "五", reading: "ご", meaning: "năm" },
+          { kanji: "感", reading: "かん", meaning: "cảm giác" },
+        ],
       },
     ],
   },
@@ -250,26 +352,46 @@ export const kanjiData: KanjiCard[] = [
         japanese: "六つ",
         romaji: "Muttsu",
         vietnamese: "Sáu cái",
+        furigana: [
+          { kanji: "六", reading: "むっ", meaning: "sáu" },
+          { kanji: "つ", reading: "つ", meaning: "cái" },
+        ],
       },
       {
         japanese: "六月",
         romaji: "Rokugatsu",
         vietnamese: "Tháng sáu",
+        furigana: [
+          { kanji: "六", reading: "ろく", meaning: "sáu" },
+          { kanji: "月", reading: "がつ", meaning: "tháng" },
+        ],
       },
       {
         japanese: "六日",
         romaji: "Muika",
         vietnamese: "Ngày mồng sáu",
+        furigana: [
+          { kanji: "六", reading: "むい", meaning: "sáu" },
+          { kanji: "日", reading: "か", meaning: "ngày" },
+        ],
       },
       {
         japanese: "六百",
         romaji: "Roppyaku",
         vietnamese: "600",
+        furigana: [
+          { kanji: "六", reading: "ろっ", meaning: "sáu" },
+          { kanji: "百", reading: "ぴゃく", meaning: "trăm" },
+        ],
       },
       {
         japanese: "六法",
         romaji: "Roppou",
         vietnamese: "Sáu bộ luật",
+        furigana: [
+          { kanji: "六", reading: "ろっ", meaning: "lục" },
+          { kanji: "法", reading: "ぽう", meaning: "pháp" },
+        ],
       },
     ],
   },
@@ -291,26 +413,49 @@ export const kanjiData: KanjiCard[] = [
         japanese: "七つ",
         romaji: "Nanatsu",
         vietnamese: "Bảy cái",
+        furigana: [
+          { kanji: "七", reading: "なな", meaning: "bảy" },
+          { kanji: "つ", reading: "つ", meaning: "cái" },
+        ],
       },
       {
         japanese: "七月",
         romaji: "Shichigatsu",
         vietnamese: "Tháng bảy",
+        furigana: [
+          { kanji: "七", reading: "しち", meaning: "bảy" },
+          { kanji: "月", reading: "がつ", meaning: "tháng" },
+        ],
       },
       {
         japanese: "七日",
         romaji: "Nanoka",
         vietnamese: "Ngày mồng bảy",
+        furigana: [
+          { kanji: "七", reading: "なの", meaning: "bảy" },
+          { kanji: "日", reading: "か", meaning: "ngày" },
+        ],
       },
       {
         japanese: "七五三",
         romaji: "Shichigosan",
         vietnamese: "Lễ 7-5-3",
+        furigana: [
+          { kanji: "七", reading: "しち", meaning: "" },
+          { kanji: "五", reading: "ご", meaning: "" },
+          { kanji: "三", reading: "さん", meaning: "" },
+        ],
       },
       {
         japanese: "七不思議",
         romaji: "Nanafushigi",
         vietnamese: "Bảy điều kỳ lạ",
+        furigana: [
+          { kanji: "七", reading: "なな", meaning: "thất" },
+          { kanji: "不", reading: "ふ", meaning: "bất" },
+          { kanji: "思", reading: "し", meaning: "tư" },
+          { kanji: "議", reading: "ぎ", meaning: "nghị" },
+        ],
       },
     ],
   },
@@ -332,26 +477,47 @@ export const kanjiData: KanjiCard[] = [
         japanese: "八つ",
         romaji: "Yattsu",
         vietnamese: "Tám cái",
+        furigana: [
+          { kanji: "八", reading: "やっ", meaning: "tám" },
+          { kanji: "つ", reading: "つ", meaning: "cái" },
+        ],
       },
       {
         japanese: "八月",
         romaji: "Hachigatsu",
         vietnamese: "Tháng tám",
+        furigana: [
+          { kanji: "八", reading: "はち", meaning: "tám" },
+          { kanji: "月", reading: "がつ", meaning: "tháng" },
+        ],
       },
       {
         japanese: "八日",
         romaji: "Youka",
         vietnamese: "Ngày mồng tám",
+        furigana: [
+          { kanji: "八", reading: "よう", meaning: "tám" },
+          { kanji: "日", reading: "か", meaning: "ngày" },
+        ],
       },
       {
         japanese: "八百屋",
         romaji: "Yaoya",
         vietnamese: "Cửa hàng rau",
+        furigana: [
+          { kanji: "八", reading: "や", meaning: "bát" },
+          { kanji: "百", reading: "お", meaning: "bách" },
+          { kanji: "屋", reading: "や", meaning: "ốc" },
+        ],
       },
       {
         japanese: "八方",
         romaji: "Happou",
-        vietnamese: "Mọi phía / Bát phương",
+        vietnamese: "Mọi phía",
+        furigana: [
+          { kanji: "八", reading: "はっ", meaning: "bát" },
+          { kanji: "方", reading: "ぽう", meaning: "phương" },
+        ],
       },
     ],
   },
@@ -359,7 +525,7 @@ export const kanjiData: KanjiCard[] = [
     id: 9,
     kanji: "九",
     lesson: 1,
-    imageUrl: "/images/kanji/9_nine_3d.png",
+    imageUrl: "/images/kanji/29_nine_3d.png",
     onyomi: "キュウ、ク",
     onyomiRomaji: "kyuu, ku",
     kunyomi: "ここの・つ",
@@ -373,26 +539,46 @@ export const kanjiData: KanjiCard[] = [
         japanese: "九つ",
         romaji: "Kokonotsu",
         vietnamese: "Chín cái",
+        furigana: [
+          { kanji: "九", reading: "ここの", meaning: "chín" },
+          { kanji: "つ", reading: "つ", meaning: "cái" },
+        ],
       },
       {
         japanese: "九月",
         romaji: "Kugatsu",
         vietnamese: "Tháng chín",
+        furigana: [
+          { kanji: "九", reading: "く", meaning: "chín" },
+          { kanji: "月", reading: "がつ", meaning: "tháng" },
+        ],
       },
       {
         japanese: "九日",
         romaji: "Kokonoka",
         vietnamese: "Ngày mồng chín",
+        furigana: [
+          { kanji: "九", reading: "ここの", meaning: "chín" },
+          { kanji: "日", reading: "か", meaning: "ngày" },
+        ],
       },
       {
         japanese: "九人",
         romaji: "Kyunin",
         vietnamese: "Chín người",
+        furigana: [
+          { kanji: "九", reading: "きゅう", meaning: "chín" },
+          { kanji: "人", reading: "にん", meaning: "người" },
+        ],
       },
       {
         japanese: "九州",
         romaji: "Kyuushuu",
         vietnamese: "Đảo Kyushu",
+        furigana: [
+          { kanji: "九", reading: "きゅう", meaning: "cửu" },
+          { kanji: "州", reading: "しゅう", meaning: "châu" },
+        ],
       },
     ],
   },
@@ -412,28 +598,48 @@ export const kanjiData: KanjiCard[] = [
     examples: [
       {
         japanese: "十",
-        romaji: "Too",
+        romaji: "Tou",
         vietnamese: "Mười cái (đếm đồ vật)",
+        furigana: [
+          { kanji: "十", reading: "とお", meaning: "mười" },
+        ],
       },
       {
         japanese: "十月",
         romaji: "Juugatsu",
         vietnamese: "Tháng mười",
+        furigana: [
+          { kanji: "十", reading: "じゅう", meaning: "mười" },
+          { kanji: "月", reading: "がつ", meaning: "tháng" },
+        ],
       },
       {
         japanese: "十日",
         romaji: "Tooka",
         vietnamese: "Ngày mồng mười",
+        furigana: [
+          { kanji: "十", reading: "とお", meaning: "mười" },
+          { kanji: "日", reading: "か", meaning: "ngày" },
+        ],
       },
       {
         japanese: "十分",
         romaji: "Juppun",
         vietnamese: "10 phút",
+        furigana: [
+          { kanji: "十", reading: "じゅっ", meaning: "thập" },
+          { kanji: "分", reading: "ぷん", meaning: "phút" },
+        ],
       },
       {
         japanese: "十字路",
         romaji: "Juujiro",
         vietnamese: "Ngã tư",
+        furigana: [
+          { kanji: "十", reading: "じゅう", meaning: "thập" },
+          { kanji: "字", reading: "じ", meaning: "tự" },
+          { kanji: "路", reading: "ろ", meaning: "lộ" },
+        ],
       },
     ],
   },
@@ -441,7 +647,7 @@ export const kanjiData: KanjiCard[] = [
     id: 11,
     kanji: "百",
     lesson: 1,
-    imageUrl: "/images/kanji/11_hundred_3d.png",
+    imageUrl: "/images/kanji/31_hundred_3d.png",
     onyomi: "ヒャク",
     onyomiRomaji: "hyaku",
     kunyomi: "",
@@ -454,26 +660,47 @@ export const kanjiData: KanjiCard[] = [
         japanese: "百円",
         romaji: "Hyakuen",
         vietnamese: "100 yên",
+        furigana: [
+          { kanji: "百", reading: "ひゃく", meaning: "bách" },
+          { kanji: "円", reading: "えん", meaning: "yên" },
+        ],
       },
       {
         japanese: "三百",
         romaji: "Sanbyaku",
         vietnamese: "300",
+        furigana: [
+          { kanji: "三", reading: "さん", meaning: "tam" },
+          { kanji: "百", reading: "びゃく", meaning: "bách" },
+        ],
       },
       {
         japanese: "六百",
         romaji: "Roppyaku",
         vietnamese: "600",
+        furigana: [
+          { kanji: "六", reading: "ろっ", meaning: "lục" },
+          { kanji: "百", reading: "ぴゃく", meaning: "bách" },
+        ],
       },
       {
         japanese: "八百",
         romaji: "Happyaku",
         vietnamese: "800",
+        furigana: [
+          { kanji: "八", reading: "はっ", meaning: "bát" },
+          { kanji: "百", reading: "ぴゃく", meaning: "bách" },
+        ],
       },
       {
         japanese: "百貨店",
         romaji: "Hyakkaten",
         vietnamese: "Cửa hàng bách hóa",
+        furigana: [
+          { kanji: "百", reading: "ひゃっ", meaning: "bách" },
+          { kanji: "貨", reading: "か", meaning: "hóa" },
+          { kanji: "店", reading: "てん", meaning: "điếm" },
+        ],
       },
     ],
   },
@@ -481,7 +708,7 @@ export const kanjiData: KanjiCard[] = [
     id: 12,
     kanji: "千",
     lesson: 1,
-    imageUrl: "/images/kanji/12_thousand_3d.png",
+    imageUrl: "/images/kanji/32_thousand_3d.png",
     onyomi: "セン",
     onyomiRomaji: "sen",
     kunyomi: "ち",
@@ -495,26 +722,48 @@ export const kanjiData: KanjiCard[] = [
         japanese: "千円",
         romaji: "Senen",
         vietnamese: "1000 yên",
+        furigana: [
+          { kanji: "千", reading: "せん", meaning: "thiên" },
+          { kanji: "円", reading: "えん", meaning: "yên" },
+        ],
       },
       {
         japanese: "三千",
         romaji: "Sanzen",
         vietnamese: "3000",
+        furigana: [
+          { kanji: "三", reading: "さん", meaning: "tam" },
+          { kanji: "千", reading: "ぜん", meaning: "thiên" },
+        ],
       },
       {
         japanese: "八千",
         romaji: "Hassen",
         vietnamese: "8000",
+        furigana: [
+          { kanji: "八", reading: "はっ", meaning: "bát" },
+          { kanji: "千", reading: "せん", meaning: "thiên" },
+        ],
       },
       {
         japanese: "千葉県",
         romaji: "Chibaken",
         vietnamese: "Tỉnh Chiba",
+        furigana: [
+          { kanji: "千", reading: "ち", meaning: "" },
+          { kanji: "葉", reading: "ば", meaning: "" },
+          { kanji: "県", reading: "けん", meaning: "tỉnh" },
+        ],
       },
       {
         japanese: "千切り",
         romaji: "Sengiri",
         vietnamese: "Thái sợi",
+        furigana: [
+          { kanji: "千", reading: "せん", meaning: "thiên" },
+          { kanji: "切", reading: "ぎ", meaning: "thiết" },
+          { kanji: "り", reading: "り", meaning: "" },
+        ],
       },
     ],
   },
@@ -535,28 +784,49 @@ export const kanjiData: KanjiCard[] = [
       {
         japanese: "一万円",
         romaji: "Ichimanen",
-        vietnamese: "10,000 yên"
+        vietnamese: "10,000 yên",
+        furigana: [
+          { kanji: "一", reading: "いち", meaning: "một" },
+          { kanji: "万", reading: "まん", meaning: "vạn" },
+          { kanji: "円", reading: "えん", meaning: "yên" },
+        ],
       },
       {
         japanese: "万国",
         romaji: "Bankoku",
-        vietnamese: "Vạn quốc"
+        vietnamese: "Vạn quốc",
+        furigana: [
+          { kanji: "万", reading: "ばん", meaning: "vạn" },
+          { kanji: "国", reading: "こく", meaning: "quốc" },
+        ],
       },
       {
         japanese: "万一",
         romaji: "Man'ichi",
-        vietnamese: "Vạn nhất/Nhỡ đâu"
+        vietnamese: "Vạn nhất/Nhỡ đâu",
+        furigana: [
+          { kanji: "万", reading: "まん", meaning: "vạn" },
+          { kanji: "一", reading: "いち", meaning: "nhất" },
+        ],
       },
       {
         japanese: "万歳",
         romaji: "Banzai",
-        vietnamese: "Vạn tuế"
+        vietnamese: "Vạn tuế",
+        furigana: [
+          { kanji: "万", reading: "ばん", meaning: "vạn" },
+          { kanji: "歳", reading: "ざい", meaning: "tuế" },
+        ],
       },
       {
         japanese: "万能",
         romaji: "Bannou",
-        vietnamese: "Vạn năng"
-      }
+        vietnamese: "Vạn năng",
+        furigana: [
+          { kanji: "万", reading: "ばん", meaning: "vạn" },
+          { kanji: "能", reading: "のう", meaning: "năng" },
+        ],
+      },
     ],
   },
   {
@@ -576,28 +846,48 @@ export const kanjiData: KanjiCard[] = [
       {
         japanese: "百円",
         romaji: "Hyakuen",
-        vietnamese: "100 yên"
+        vietnamese: "100 yên",
+        furigana: [
+          { kanji: "百", reading: "ひゃく", meaning: "bách" },
+          { kanji: "円", reading: "えん", meaning: "yên" },
+        ],
       },
       {
         japanese: "円高",
         romaji: "Endaka",
-        vietnamese: "Yên tăng giá"
+        vietnamese: "Yên tăng giá",
+        furigana: [
+          { kanji: "円", reading: "えん", meaning: "yên" },
+          { kanji: "高", reading: "だか", meaning: "cao" },
+        ],
       },
       {
         japanese: "円安",
         romaji: "Enyasu",
-        vietnamese: "Yên giảm giá"
+        vietnamese: "Yên giảm giá",
+        furigana: [
+          { kanji: "円", reading: "えん", meaning: "yên" },
+          { kanji: "安", reading: "やす", meaning: "an" },
+        ],
       },
       {
         japanese: "円形",
         romaji: "Enkei",
-        vietnamese: "Hình tròn"
+        vietnamese: "Hình tròn",
+        furigana: [
+          { kanji: "円", reading: "えん", meaning: "viên" },
+          { kanji: "形", reading: "けい", meaning: "hình" },
+        ],
       },
       {
         japanese: "円満",
         romaji: "Enman",
-        vietnamese: "Viên mãn"
-      }
+        vietnamese: "Viên mãn",
+        furigana: [
+          { kanji: "円", reading: "えん", meaning: "viên" },
+          { kanji: "満", reading: "まん", meaning: "mãn" },
+        ],
+      },
     ],
   },
   {
@@ -618,26 +908,49 @@ export const kanjiData: KanjiCard[] = [
         japanese: "口を開けます",
         romaji: "Kuchi o akemasu",
         vietnamese: "Mở miệng",
+        furigana: [
+          { kanji: "口", reading: "くち", meaning: "miệng" },
+          { kanji: "を", reading: "を", meaning: "" },
+          { kanji: "開", reading: "あ", meaning: "khai" },
+          { kanji: "けます", reading: "けます", meaning: "" },
+        ],
       },
       {
         japanese: "入口",
         romaji: "Iriguchi",
         vietnamese: "Cửa vào",
+        furigana: [
+          { kanji: "入", reading: "い", meaning: "nhập" },
+          { kanji: "り", reading: "り", meaning: "" },
+          { kanji: "口", reading: "ぐち", meaning: "khẩu" },
+        ],
       },
       {
         japanese: "出口",
         romaji: "Deguchi",
         vietnamese: "Cửa ra",
+        furigana: [
+          { kanji: "出", reading: "で", meaning: "xuất" },
+          { kanji: "口", reading: "ぐち", meaning: "khẩu" },
+        ],
       },
       {
         japanese: "人口",
         romaji: "Jinkou",
         vietnamese: "Dân số",
+        furigana: [
+          { kanji: "人", reading: "じん", meaning: "nhân" },
+          { kanji: "口", reading: "こう", meaning: "khẩu" },
+        ],
       },
       {
         japanese: "北口",
         romaji: "Kitaguchi",
         vietnamese: "Cửa bắc",
+        furigana: [
+          { kanji: "北", reading: "きた", meaning: "bắc" },
+          { kanji: "口", reading: "ぐち", meaning: "khẩu" },
+        ],
       },
     ],
   },
@@ -658,28 +971,51 @@ export const kanjiData: KanjiCard[] = [
       {
         japanese: "目がいいです",
         romaji: "Me ga ii desu",
-        vietnamese: "Mắt tốt"
+        vietnamese: "Mắt tốt",
+        furigana: [
+          { kanji: "目", reading: "め", meaning: "mắt" },
+          { kanji: "が", reading: "が", meaning: "thì" },
+          { kanji: "いい", reading: "いい", meaning: "tốt" },
+          { kanji: "です", reading: "です", meaning: "là" },
+        ],
       },
       {
         japanese: "目薬",
         romaji: "Megusuri",
-        vietnamese: "Thuốc nhỏ mắt"
+        vietnamese: "Thuốc nhỏ mắt",
+        furigana: [
+          { kanji: "目", reading: "め", meaning: "mục" },
+          { kanji: "薬", reading: "ぐすり", meaning: "dược" },
+        ],
       },
       {
         japanese: "二番目",
         romaji: "Nibanme",
-        vietnamese: "Thứ hai (vị trí)"
+        vietnamese: "Thứ hai (vị trí)",
+        furigana: [
+          { kanji: "二", reading: "に", meaning: "nhị" },
+          { kanji: "番", reading: "ばん", meaning: "phiên" },
+          { kanji: "目", reading: "め", meaning: "mục" },
+        ],
       },
       {
         japanese: "目的",
         romaji: "Mokuteki",
-        vietnamese: "Mục đích"
+        vietnamese: "Mục đích",
+        furigana: [
+          { kanji: "目", reading: "もく", meaning: "mục" },
+          { kanji: "的", reading: "てき", meaning: "đích" },
+        ],
       },
       {
         japanese: "目次",
         romaji: "Mokuji",
-        vietnamese: "Mục lục"
-      }
+        vietnamese: "Mục lục",
+        furigana: [
+          { kanji: "目", reading: "もく", meaning: "mục" },
+          { kanji: "次", reading: "じ", meaning: "thứ" },
+        ],
+      },
     ]
   },
   {
@@ -1161,7 +1497,7 @@ export const kanjiData: KanjiCard[] = [
     id: 29,
     kanji: "時",
     lesson: 2,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/29_time_3d.png",
     onyomi: "ジ",
     onyomiRomaji: "",
     kunyomi: "とき",
@@ -1243,7 +1579,7 @@ export const kanjiData: KanjiCard[] = [
     id: 31,
     kanji: "刀",
     lesson: 2,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/31_sword_3d.png",
     onyomi: "トウ",
     onyomiRomaji: "",
     kunyomi: "かたな",
@@ -1448,7 +1784,7 @@ export const kanjiData: KanjiCard[] = [
     id: 36,
     kanji: "外",
     lesson: 3,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/36_outside_3d.png",
     onyomi: "ガイ, ゲ",
     onyomiRomaji: "",
     kunyomi: "そと, ほか",
@@ -1489,7 +1825,7 @@ export const kanjiData: KanjiCard[] = [
     id: 37,
     kanji: "右",
     lesson: 3,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/37_right_3d.png",
     onyomi: "ウ, ユウ",
     onyomiRomaji: "",
     kunyomi: "みぎ",
@@ -1530,7 +1866,7 @@ export const kanjiData: KanjiCard[] = [
     id: 38,
     kanji: "工",
     lesson: 3,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/38_craft_3d.png",
     onyomi: "コウ, ク",
     onyomiRomaji: "",
     kunyomi: "-",
@@ -1571,7 +1907,7 @@ export const kanjiData: KanjiCard[] = [
     id: 39,
     kanji: "左",
     lesson: 3,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/39_left_3d.png",
     onyomi: "サ",
     onyomiRomaji: "",
     kunyomi: "ひだり",
@@ -1612,7 +1948,7 @@ export const kanjiData: KanjiCard[] = [
     id: 40,
     kanji: "前",
     lesson: 3,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/40_before_3d.png",
     onyomi: "ゼン",
     onyomiRomaji: "",
     kunyomi: "まえ",
@@ -1653,7 +1989,7 @@ export const kanjiData: KanjiCard[] = [
     id: 41,
     kanji: "後",
     lesson: 3,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/41_after_3d.png",
     onyomi: "ゴ, コウ",
     onyomiRomaji: "",
     kunyomi: "うし.ろ, あと",
@@ -1694,7 +2030,7 @@ export const kanjiData: KanjiCard[] = [
     id: 42,
     kanji: "午",
     lesson: 3,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/42_noon_3d.png",
     onyomi: "ゴ",
     onyomiRomaji: "",
     kunyomi: "-",
@@ -1817,7 +2153,7 @@ export const kanjiData: KanjiCard[] = [
     id: 45,
     kanji: "東",
     lesson: 3,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/45_east_3d.png",
     onyomi: "トウ",
     onyomiRomaji: "",
     kunyomi: "ひがし",
@@ -1858,7 +2194,7 @@ export const kanjiData: KanjiCard[] = [
     id: 46,
     kanji: "西",
     lesson: 3,
-    imageUrl: "/images/kanji/placeholder.png",
+    imageUrl: "/images/kanji/46_west_3d.png",
     onyomi: "セイ, サイ",
     onyomiRomaji: "",
     kunyomi: "にし",
@@ -2305,7 +2641,7 @@ export const kanjiData: KanjiCard[] = [
     id: 57,
     kanji: "何",
     lesson: 4,
-    imageUrl: "/images/kanji/42_what_3d.png",
+    imageUrl: "/images/kanji/57_what_3d.png",
     onyomi: "カ",
     onyomiRomaji: "ka",
     kunyomi: "なに、なん",
@@ -2346,7 +2682,7 @@ export const kanjiData: KanjiCard[] = [
     id: 58,
     kanji: "父",
     lesson: 4,
-    imageUrl: "/images/kanji/91_father_3d.png",
+    imageUrl: "/images/kanji/58_father_3d.png",
     onyomi: "フ",
     kunyomi: "ちち",
     meaning: "Bố (của mình)",
@@ -15362,5 +15698,66 @@ export const kanjiData: KanjiCard[] = [
     radicals: "",
     mnemonic: "",
     examples: [],
+  },
+  {
+    id: 513,
+    kanji: "歳",
+    lesson: 1,
+    imageUrl: "/images/kanji/sai_age_3d.png",
+    onyomi: "サイ, セイ",
+    onyomiRomaji: "sai, sei",
+    kunyomi: "とし",
+    kunyomiRomaji: "toshi",
+    meaning: "Tuổi, năm",
+    sinoVietnamese: "TUẾ",
+    radicals: "止 (dừng)",
+    mnemonic: "Con người sau khi trải qua nhiều bước đi (歩) và những lúc dừng lại (止) trong cuộc đời thì sẽ thêm một tuổi (歳).",
+    examples: [
+      {
+        japanese: "おいくつ（何歳）ですか。",
+        romaji: "Oikutsu (nansai) desu ka.",
+        vietnamese: "Bạn bao nhiêu tuổi?",
+        furigana: [
+          { kanji: "何歳", reading: "なんさい", meaning: "HÀ TUẾ" }
+        ]
+      },
+      {
+        japanese: "二十歳（はたち）になりました。",
+        romaji: "Hatachi ni narimashita.",
+        vietnamese: "Tôi đã tròn 20 tuổi.",
+        furigana: [
+          { kanji: "二十歳", reading: "はたち", meaning: "NHỊ THẬP TUẾ" }
+        ]
+      },
+      {
+        japanese: "歳月は人を待ちません。",
+        romaji: "Saigetsu wa hito wo machimasen.",
+        vietnamese: "Thời gian không đợi chờ ai.",
+        furigana: [
+          { kanji: "歳月", reading: "さいげつ", meaning: "TUẾ NGUYỆT" },
+          { kanji: "人", reading: "ひと", meaning: "NHÂN" },
+          { kanji: "待", reading: "ま", meaning: "ĐÃI" }
+        ]
+      },
+      {
+        japanese: "五歳の男の子です。",
+        romaji: "Gosai no otokonoko desu.",
+        vietnamese: "Đó là một bé trai 5 tuổi.",
+        furigana: [
+          { kanji: "五歳", reading: "ごさい", meaning: "NGŨ TUẾ" },
+          { kanji: "男", reading: "おとこ", meaning: "NAM" },
+          { kanji: "子", reading: "こ", meaning: "TỬ" }
+        ]
+      },
+      {
+        japanese: "お歳暮を贈ります。",
+        romaji: "Oseibo wo okurimasu.",
+        vietnamese: "Gửi quà tặng cuối năm (Oseibo).",
+        furigana: [
+          { kanji: "歳暮", reading: "せいぼ", meaning: "TUẾ MỘ" },
+          { kanji: "贈", reading: "おく", meaning: "TẶNG" }
+        ]
+      }
+    ]
   }
 ];

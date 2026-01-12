@@ -1248,6 +1248,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N4',
           radicals: '金 (kim)',
           components: [{ char: '金', meaning: 'vàng/kim loại' }, { char: '艮', meaning: 'bền vững' }],
+          imageUrl: '/images/kanji/gin_silver_3d.png',
           mnemonic: 'Bạc (銀) là kim loại (金) có giá trị bền vững (艮), thường dùng làm tiền tệ.',
           examples: ['銀行 (ぎんこう) - ngân hàng', '銀色 (ぎんいろ) - màu bạc'],
           exampleSentences: [
@@ -1283,6 +1284,7 @@ export const lesson1Data: LessonDetail = {
           jlpt: 'N5',
           radicals: '行 (hành)',
           components: [{ char: '彳', meaning: 'bước chân trái' }, { char: '亍', meaning: 'bước chân phải' }],
+          imageUrl: '/images/kanji/kou_go_3d.png',
           mnemonic: 'Hình ảnh ngã tư đường nơi mọi người đi lại (Hành).',
           examples: ['行く (いく) - đi', '旅行 (りょこう) - du lịch'],
           exampleSentences: [
@@ -7105,7 +7107,7 @@ export const lesson2Data: LessonDetail = {
       word: 'てちょう', kanji: '手帳', romaji: 'techo', mean: 'sổ tay',
       kanjiDetails: [
         {
-          kanji: '手', onyomi: 'シュ (shu)', kunyomi: 'て (te)', meaning: 'Tay', sinoVietnamese: 'THỦ', strokes: 4, jlpt: 'N5', radicals: '手 (thủ)', mnemonic: 'Hình ảnh bàn tay với các ngón tay.',
+          kanji: '手', onyomi: 'シュ (shu)', kunyomi: 'て (te)', meaning: 'Tay', sinoVietnamese: 'THỦ', strokes: 4, jlpt: 'N5', radicals: '手 (thủ)', imageUrl: '/images/kanji/te_hand_3d.png', mnemonic: 'Hình ảnh bàn tay với các ngón tay.',
           examples: ['手 (て) - Tay', '切手 (きって) - Tem', '手紙 (てがみ) - Thư'],
           exampleSentences: [
             { jp: '手を洗います。', vn: 'Tôi rửa tay.', furigana: [{ kanji: '手', reading: 'て', meaning: 'THỦ' }, { kanji: '洗', reading: 'あら', meaning: 'TẨY' }] },
@@ -7424,7 +7426,7 @@ export const lesson2Data: LessonDetail = {
       word: 'かさ', kanji: '傘', romaji: 'kasa', mean: 'ô, dù',
       kanjiDetails: [
         {
-          kanji: '傘', onyomi: 'サン (san)', kunyomi: 'かさ (kasa)', meaning: 'Ô, dù', sinoVietnamese: 'TẢN', strokes: 12, jlpt: 'N3', radicals: '人 (nhân)', mnemonic: 'Hình ảnh 4 người (人) đứng dưới một cái mái lớn che ô (傘).',
+          kanji: '傘', onyomi: 'サン (san)', kunyomi: 'かさ (kasa)', meaning: 'Ô, dù', sinoVietnamese: 'TẢN', strokes: 12, jlpt: 'N3', radicals: '人 (nhân)', imageUrl: '/images/kanji/kasa_umbrella_3d.png', mnemonic: 'Hình ảnh 4 người (人) đứng dưới một cái mái lớn che ô (傘).',
           examples: ['傘 (かさ) - Ô, dù', '雨傘 (あまがさ) - Ô đi mưa'],
           exampleSentences: [
             { jp: '傘を差します。', vn: 'Tôi che ô.', furigana: [{ kanji: '傘', reading: 'かさ', meaning: 'TẢN' }, { kanji: '差', reading: 'さ', meaning: 'THÍCH' }] },
