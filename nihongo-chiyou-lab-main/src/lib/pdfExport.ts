@@ -43,6 +43,10 @@ export const generateTestPDF = (
           line-height: 1.6;
           color: #000;
           position: relative;
+          padding-left: 30mm; /* 3cm left margin */
+          padding-right: 15mm;
+          padding-top: 15mm;
+          padding-bottom: 15mm;
         }
         .page-header {
           position: fixed;
