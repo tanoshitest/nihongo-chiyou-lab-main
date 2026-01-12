@@ -49,32 +49,19 @@ export const generateTestPDF = (
           margin-left: 30mm; /* 3cm left margin */
           margin-right: 15mm;
           margin-top: 15mm;
-          margin-bottom: 20mm; /* Space for footer */
+          margin-bottom: 15mm;
         }
-        .page-footer {
-          position: running(footer);
-          width: 100%;
+        body::after {
+          content: "Đề thi được tạo bởi tiengnhatvuive.com";
+          position: fixed;
+          bottom: 10mm;
+          left: 0;
+          right: 0;
           text-align: center;
           font-size: 9pt;
           color: #666;
-        }
-        @page {
-          @bottom-center {
-            content: element(footer);
-          }
-        }
-        /* Fallback if running() not supported */
-        @media print {
-          .page-footer {
-            position: fixed;
-            bottom: 10mm;
-            left: 0;
-            right: 0;
-            text-align: center;
-            font-size: 9pt;
-            color: #666;
-            background: white;
-          }
+          background: white;
+          padding: 5px 0;
         }
         .header {
           text-align: left;
@@ -139,8 +126,6 @@ export const generateTestPDF = (
       </style>
     </head>
     <body>
-      <div class="page-footer">Đề thi được tạo bởi tiengnhatvuive.com</div>
-      
       <div class="page-container">
         <div class="header">
           <h1>${testName.toUpperCase()} - (${lessonRange.toUpperCase()}) - ĐỀ ${testNumber}</h1>
