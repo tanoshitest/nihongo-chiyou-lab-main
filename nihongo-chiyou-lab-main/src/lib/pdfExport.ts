@@ -48,8 +48,20 @@ export const generateTestPDF = (
         .page-container {
           margin-left: 30mm; /* 3cm left margin */
           margin-right: 15mm;
-          margin-top: 15mm;
+          margin-top: 30mm; /* Extra space for fixed header */
           margin-bottom: 15mm; /* Same as top */
+        }
+        body::before {
+          content: "${testName.toUpperCase()} - (${lessonRange.toUpperCase()}) - ĐỀ ${testNumber}";
+          position: fixed;
+          top: 10mm;
+          left: 30mm;
+          right: 15mm;
+          font-size: 14pt;
+          font-weight: bold;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #000;
+          background: white;
         }
         body::after {
           content: "Đề thi được tạo bởi tiengnhatvuive.com";
@@ -64,10 +76,7 @@ export const generateTestPDF = (
           padding: 5px 0;
         }
         .header {
-          text-align: left;
-          margin-bottom: 20px;
-          padding-bottom: 10px;
-          border-bottom: 2px solid #000;
+          display: none; /* Hide original header since we have fixed one */
         }
         .question {
           margin-bottom: 15px;
