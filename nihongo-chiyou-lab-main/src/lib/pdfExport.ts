@@ -151,7 +151,7 @@ export const generateTestPDF = (
   element.innerHTML = html;
 
   const opt = {
-    margin: [25, 10, 20, 30], // Top, Right, Bottom, Left (30mm = 3cm)
+    margin: [25, 10, 20, 30], // Keep standard margins for content
     filename: `${testName.replace(/\s+/g, '_')}_${lessonRange.replace(/\s+/g, '_')}_De_${testNumber}.pdf`,
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2, useCORS: true },
@@ -164,23 +164,6 @@ export const generateTestPDF = (
     const pageHeight = pdf.internal.pageSize.getHeight();
 
     for (let i = 1; i <= totalPages; i++) {
-      pdf.setPage(i);
-
-      // Header
-      pdf.setFontSize(11);
-      pdf.setFont("helvetica", "bold"); // Using standard font for simplicity in header/footer/page num
-      // Note: Standard fonts don't support unicode like Vietnamese. 
-      // Ideally we should use the custom font if added to jsPDF, but html2pdf handles body fonts.
-      // For simple ascii headers it's fine. For vietnamese headers we might have issues if not using custom font.
-      // Since html2canvas renders the body, that's fine. 
-      // For header/footer added via jsPDF, we can try to use a default font that supports some chars or limitations.
-      // Actually, jsPDF standard fonts don't support VN. We'll use the hack of adding text via html2canvas is better IF possible,
-      // BUT user wants it on EVERY page.
-      // Let's stick to simple text or if we want VN, we need custom font loaded.
-      // OR: We can rely on html2pdf's pagebreak repeated elements if we structure HTML right? No, html2pdf is basic.
-
-      // Let's assume standard font for now. If VN text breaks, we might need a different approach 
-      // (like hidden div rendered to canvas then added).
       // However, let's try to pass the text. If it garbles, we know why.
       // To support VN in jsPDF direct text, we need a font. 
       // Let's see if we can use the text as is.
