@@ -2525,6 +2525,764 @@ export const GRAMMAR_TEST_1: Question[] = [
     "options": ["ここ", "そこ", "あそこ", "どこ"],
     "answer": "そこ",
     "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 9,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 10,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 11,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 12,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 13,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 14,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 15,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 16,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 17,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 18,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 19,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 20,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 21,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 22,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 23,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 24,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 25,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 26,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 27,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 28,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 29,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 30,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 31,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 32,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 33,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 34,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 35,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 36,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 37,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 38,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 39,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 40,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 41,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 42,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 43,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 44,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 45,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 46,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 47,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 48,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 49,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 50,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 51,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 52,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 53,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 54,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 55,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 56,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 57,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 58,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 59,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 60,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 61,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 62,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 63,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 64,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 65,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 66,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 67,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 68,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 69,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 70,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 71,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 72,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 73,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 74,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 75,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 76,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 77,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 78,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 79,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 80,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 81,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 82,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 83,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 84,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 85,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 86,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 87,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 88,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 89,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 90,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 91,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 92,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
+  },
+  {
+    "id": 93,
+    "section": "Mondai 2",
+    "question": "わたしは　＿　＿　★　＿　へ　行きます。",
+    "options": ["と", "スーパー", "母", "いっしょに"],
+    "answer": "スーパー",
+    "explain": "✅ [母|はは|Mẹ] [と||Với] [いっしょに||Cùng] [スーパー||Siêu thị] [へ||Đến] (Đi siêu thị cùng mẹ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> スーパー."
+  },
+  {
+    "id": 94,
+    "section": "Mondai 2",
+    "question": "あの　店は　＿　＿　★　＿　です。",
+    "options": ["有名", "で", "きれい", "な"],
+    "answer": "きれい",
+    "explain": "✅ [有名|ゆうめい|Nổi tiếng] [で||Và] [きれい||Đẹp] [な||Tính từ đuôi na] [店|みせ|Cửa hàng] (Cửa hàng nổi tiếng và đẹp).\nThứ tự: 1-2-3-4. Ngôi sao ở vị trí 3 -> きれい."
+  },
+  {
+    "id": 95,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "けさ　わたしは　6時に　おきました。それから、公園（ 7 ）さんぽしました。",
+    "options": ["へ", "を", "に", "が"],
+    "answer": "を",
+    "explain": "✅ [を||Trợ từ] - Dùng với động từ di chuyển [さんぽします||Đi dạo] để chỉ địa điểm đi dạo qua.\n❌ [へ||Hướng đến], [に||Đích đến], [が||Chủ ngữ]."
+  },
+  {
+    "id": 96,
+    "section": "Mondai 3",
+    "text_context": "Dưới đây là một đoạn nhật ký.",
+    "question": "さんぽの　あとで、レストランへ　いきました。（ 8 ）で　朝ごはんを　食べました。",
+    "options": ["ここ", "そこ", "あそこ", "どこ"],
+    "answer": "そこ",
+    "explain": "✅ [そこ||Đó/Ở đó] - Nhắc lại địa điểm vừa nói ở câu trước (nhà hàng).\n❌ [ここ||Đây], [あそこ||Kia], [どこ||Đâu]."
+  },
+  {
+    "id": 97,
+    "section": "Mondai 1",
+    "question": "わたしは　毎日　7時（　　）おきます。",
+    "options": ["に", "を", "へ", "で"],
+    "answer": "に",
+    "explain": "✅ [に||vào lúc] - Trợ từ chỉ thời điểm cụ thể.\n❌ [を||đối tượng], [へ||hướng di chuyển], [で||tại - địa điểm hành động]."
+  },
+  {
+    "id": 98,
+    "section": "Mondai 1",
+    "question": "きのうは　（　　）。",
+    "options": ["あついでした", "あつかったです", "あついかったです", "あつかったでした"],
+    "answer": "あつかったです",
+    "explain": "✅ [暑|あつ|Nóng]かったです (Đã nóng) - Quá khứ của tính từ đuôi i [暑|あつ]い.\n❌ [あついでした||Sai - Adj-i không cộng deshita], [あついかったです||Thừa i trước katta], [あつかったでした||Dư deshita]."
+  },
+  {
+    "id": 99,
+    "section": "Mondai 1",
+    "question": "図書館で　本を　（　　）ながら、CDを　ききます。",
+    "options": ["よみ", "よむ", "よんで", "よみます"],
+    "answer": "よみ",
+    "explain": "✅ [読|よ|Đọc]み - Cấu trúc V-masu (bỏ masu) + nagara (vừa làm A vừa làm B).\n❌ [よむ||V-ru], [よんで||V-te], [よみます||V-masu]."
+  },
+  {
+    "id": 100,
+    "section": "Mondai 1",
+    "question": "この　料理は　あまり　（　　）。",
+    "options": ["おいしいです", "おいしくないです", "おいしいくありません", "おいしかったです"],
+    "answer": "おいしくないです",
+    "explain": "✅ [おいしくないです||Không ngon] - [あまり] đi với phủ định.\n❌ [おいしいです||Khẳng định], [おいしいくありません||Thừa i], [おいしかったです||Quá khứ khẳng định]."
   }
 ];
 
@@ -2594,6 +3352,764 @@ export const GRAMMAR_TEST_2: Question[] = [
     "options": ["きません", "こないです", "いきません", "いかないです"],
     "answer": "いきません",
     "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 9,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 10,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 11,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 12,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 13,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 14,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 15,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 16,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 17,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 18,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 19,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 20,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 21,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 22,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 23,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 24,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 25,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 26,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 27,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 28,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 29,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 30,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 31,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 32,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 33,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 34,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 35,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 36,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 37,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 38,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 39,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 40,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 41,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 42,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 43,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 44,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 45,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 46,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 47,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 48,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 49,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 50,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 51,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 52,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 53,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 54,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 55,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 56,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 57,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 58,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 59,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 60,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 61,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 62,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 63,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 64,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 65,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 66,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 67,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 68,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 69,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 70,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 71,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 72,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 73,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 74,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 75,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 76,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 77,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 78,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 79,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 80,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 81,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 82,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 83,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 84,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 85,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 86,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 87,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 88,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 89,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 90,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 91,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 92,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
+  },
+  {
+    "id": 93,
+    "section": "Mondai 2",
+    "question": "きのう　＿　＿　★　＿　を　買いました。",
+    "options": ["花", "３本", "赤い", "の"],
+    "answer": "花",
+    "explain": "✅ [赤|あか|Đỏ]い [花|はな|Hoa] [を||Trợ từ] [３本|さんぼん|3 bông] (Mua 3 bông hoa đỏ).\nThứ tự: 3-1-4-2. Ngôi sao ở vị trí 3 -> 花."
+  },
+  {
+    "id": 94,
+    "section": "Mondai 2",
+    "question": "誕生日に　父は　＿　＿　★　＿　れました。",
+    "options": ["時計", "く", "私", "に"],
+    "answer": "時計",
+    "explain": "✅ [私|わたし|Tôi] [に||Cho] [時計|とけい|Đồng hồ] [を||Trợ từ] [く||Tặng] - Bố tặng đồng hồ cho tôi.\nThứ tự: 3-4-1-2. Wtashi ni Tokei o Kuremashita. Ngôi sao ở vị trí 3 -> 時計."
+  },
+  {
+    "id": 95,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "田中さんへ。\nさっき　林さん（ 7 ）電話が　ありました。",
+    "options": ["を", "が", "から", "で"],
+    "answer": "から",
+    "explain": "✅ [から||Từ] - Có điện thoại TỪ ai đó (Hayashi-san).\n❌ [を||Đối tượng], [が||Chủ ngữ], [で||Tại/Bằng]."
+  },
+  {
+    "id": 96,
+    "section": "Mondai 3",
+    "text_context": "Tin nhắn để lại trên bàn.",
+    "question": "林さんは　「あしたの　パーティーに　（ 8 ）」と　言いました。",
+    "options": ["きません", "こないです", "いきません", "いかないです"],
+    "answer": "いきません",
+    "explain": "✅ [行|い|Đi]きません (Không đi - Ikimasen).\nLưu ý: Tiếng Việt nói 'không đến', nhưng tiếng Nhật khi rời xa vị trí hiện tại dùng 'Iku'. Hoặc nếu nói theo góc nhìn của người nói, họ đi đến bữa tiệc thì dùng Iku."
+  },
+  {
+    "id": 97,
+    "section": "Mondai 1",
+    "question": "ここに　住所と　名前を　（　　）ください。",
+    "options": ["かき", "かいて", "かく", "かいた"],
+    "answer": "かいて",
+    "explain": "✅ [書|か|Viết]いて (Hãy viết) - Cấu trúc V-te + kudasai.\n❌ [かき||Masu stem], [かく||Dictionary form], [かいた||Ta-form]."
+  },
+  {
+    "id": 98,
+    "section": "Mondai 1",
+    "question": "おなかが　すきましたから、何か　（　　）たいです。",
+    "options": ["たべる", "たべ", "たべて", "たべます"],
+    "answer": "たべ",
+    "explain": "✅ [食|た|Ăn]べ (Muốn ăn) - Cấu trúc V-masu (bỏ masu) + tai.\n❌ [たべる||V-ru], [たべて||V-te], [たべます||V-masu]."
+  },
+  {
+    "id": 99,
+    "section": "Mondai 1",
+    "question": "ミラーさんは　今　電話を　（　　）います。",
+    "options": ["かけ", "かけて", "かける", "かけた"],
+    "answer": "かけて",
+    "explain": "✅ [掛|か|Gọi]けて (Đang gọi) - Cấu trúc V-te + imasu (đang diễn ra).\n❌ [かけ||Masu stem], [かける||V-ru], [かけた||V-ta]."
+  },
+  {
+    "id": 100,
+    "section": "Mondai 1",
+    "question": "日本は　ベトナムより　（　　）です。",
+    "options": ["さむい", "さむくない", "さむくて", "さむかった"],
+    "answer": "さむい",
+    "explain": "✅ [寒|さむ|Lạnh]い - So sánh hơn: N1 wa N2 yori Adj.\n❌ [さむくない||Không lạnh], [さむくて||Lạnh và...], [さむかった||Đã lạnh]."
   }
 ];
 
@@ -2663,6 +4179,764 @@ export const GRAMMAR_TEST_3: Question[] = [
     "options": ["いい", "よく", "よかった", "よくて"],
     "answer": "よかった",
     "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 9,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 10,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 11,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 12,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 13,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 14,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 15,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 16,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 17,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 18,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 19,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 20,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 21,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 22,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 23,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 24,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 25,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 26,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 27,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 28,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 29,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 30,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 31,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 32,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 33,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 34,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 35,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 36,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 37,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 38,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 39,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 40,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 41,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 42,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 43,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 44,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 45,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 46,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 47,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 48,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 49,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 50,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 51,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 52,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 53,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 54,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 55,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 56,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 57,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 58,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 59,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 60,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 61,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 62,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 63,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 64,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 65,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 66,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 67,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 68,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 69,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 70,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 71,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 72,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 73,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 74,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 75,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 76,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 77,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 78,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 79,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 80,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 81,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 82,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 83,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 84,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 85,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 86,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 87,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 88,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 89,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 90,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 91,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 92,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
+  },
+  {
+    "id": 93,
+    "section": "Mondai 2",
+    "question": "Ａ：「いっしょに　帰りませんか。」\nＢ：「すみません。これから　＿　＿　★　＿　なりません。」",
+    "options": ["と", "会わ", "友達", "に"],
+    "answer": "会わ",
+    "explain": "✅ [友達|ともだち|Bạn bè] [に||Với] [会|あ|Gặp]わ [なければ||Phải] - Phải đi gặp bạn.\nThứ tự: 3-4-2. Cấu trúc đầy đủ: Tomodachi ni awanakereba narimasen. (Awana - V-nai bỏ i + nakereba). Ngôi sao ở vị trí 3 -> 会わ."
+  },
+  {
+    "id": 94,
+    "section": "Mondai 2",
+    "question": "この　料理は　＿　＿　★　＿　おいしいです。",
+    "options": ["安く", "て", "とても", "て"],
+    "answer": "て",
+    "explain": "✅ [とても||Rất] [安|やす|Rẻ]く [て||Và] [おいしい||Ngon].\nThứ tự: 3-1-2-4. Yasukute (Rẻ và...). Ngôi sao ở vị trí 3 -> て."
+  },
+  {
+    "id": 95,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "わたしの　しゅみは　絵を　（ 7 ）ことです。",
+    "options": ["みる", "みった", "みて", "みます"],
+    "answer": "みる",
+    "explain": "✅ [見|み|Xem]る - Sở thích là việc gì đó: V-ru + koto desu.\n❌ [みった||Sai], [みて||V-te], [みます||V-masu]."
+  },
+  {
+    "id": 96,
+    "section": "Mondai 3",
+    "text_context": "Đoạn văn về sở thích.",
+    "question": "先週の　日曜日は　天気が　（ 8 ）から、山へ　行きました。",
+    "options": ["いい", "よく", "よかった", "よくて"],
+    "answer": "よかった",
+    "explain": "✅ [よかった||Đã tốt/đẹp] - Vì thời tiết đẹp (Quá khứ của Ii là Yokatta) + Kara.\n❌ [いい||Hiện tại], [よく||Phó từ], [よくて||V-te]."
+  },
+  {
+    "id": 97,
+    "section": "Mondai 1",
+    "question": "ここで　たばこを　（　　）ください。",
+    "options": ["すわなくて", "すわないで", "すうないで", "すいません"],
+    "answer": "すわないで",
+    "explain": "✅ [吸|す|Hút]わないで (Xin đừng hút) - Cấu trúc V-nai + de kudasai.\n❌ [すわなくて||Không hút và...], [すうないで||Chia sai form], [すいません||Xin lỗi]."
+  },
+  {
+    "id": 98,
+    "section": "Mondai 1",
+    "question": "日曜日　どこも　（　　）。",
+    "options": ["いきませんでした", "いきないでした", "いかないでした", "いきくなかったです"],
+    "answer": "いきませんでした",
+    "explain": "✅ [行|い|Đi]きませんでした (Đã không đi đâu cả) - Wh-word + mo + Negative Past.\n❌ [いきないでした||Chia sai form], [いかないでした||Chia sai form], [いきくなかったです||Chia sai form]."
+  },
+  {
+    "id": 99,
+    "section": "Mondai 1",
+    "question": "わたしは　ピアノを　ひく　こと（　　）できます。",
+    "options": ["を", "が", "に", "も"],
+    "answer": "が",
+    "explain": "✅ [が||Trợ từ] - Cấu trúc Koto ga dekimasu (Có thể làm gì).\n❌ [を||Trợ từ], [に||Trợ từ], [も||Không dùng trong cấu trúc này]."
+  },
+  {
+    "id": 100,
+    "section": "Mondai 1",
+    "question": "寝る　（　　）、お祈りを　します。",
+    "options": ["まえに", "あとで", "まえ", "とき"],
+    "answer": "まえに",
+    "explain": "✅ [前|まえ||Trước]に (Trước khi) - V-ru + mae ni.\n❌ [あとで||Sau khi - phải là V-ta], [まえ||Thiếu ni], [とき||Khi]."
   }
 ];
 
