@@ -42,14 +42,13 @@ export const generateTestPDF = (
           font-size: 11pt;
           line-height: 1.6;
           color: #000;
-          margin: 0;
-          padding: 0;
+          margin: 0 !important;
+          padding: 0 !important;
         }
         .page-container {
-          /* Margins handled by jsPDF opt, so we can reduce these or keep them for spacing inside the logic */
-          /* Actually, if we set jsPDF margin, the content will be inside that. */
-          /* Let's set minimal internal padding/margin */
-          margin: 0; 
+          margin: 0 !important;
+          padding: 0 !important;
+          width: 100%;
         }
         /* No fixed header/footer in CSS */
         .question {
@@ -152,7 +151,7 @@ export const generateTestPDF = (
   element.innerHTML = html;
 
   const opt = {
-    margin: [25, 10, 20, 10], // Top, Right, Bottom, Left (Try setting both horizontal margins to 10 to capture Left)
+    margin: [25, 10, 20, 30], // Top, Right, Bottom, Left (30mm = 3cm)
     filename: `${testName.replace(/\s+/g, '_')}_${lessonRange.replace(/\s+/g, '_')}_De_${testNumber}.pdf`,
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2, useCORS: true },
