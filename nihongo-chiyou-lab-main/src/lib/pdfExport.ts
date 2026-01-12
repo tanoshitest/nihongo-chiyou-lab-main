@@ -48,7 +48,7 @@ export const generateTestPDF = (
         .page-container {
           margin-left: 30mm; /* 3cm left margin */
           margin-right: 15mm;
-          margin-top: 30mm; /* Extra space for fixed header */
+          margin-top: 15mm;
           margin-bottom: 15mm; /* Same as top */
         }
         body::before {
@@ -76,7 +76,16 @@ export const generateTestPDF = (
           padding: 5px 0;
         }
         .header {
-          display: none; /* Hide original header since we have fixed one */
+          text-align: left;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #000;
+        }
+        .header h1 {
+          font-size: 14pt;
+          font-weight: bold;
+          margin: 0;
+          letter-spacing: 1px;
         }
         .question {
           margin-bottom: 15px;
