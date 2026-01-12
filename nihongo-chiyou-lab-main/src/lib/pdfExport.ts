@@ -35,13 +35,45 @@ export const generateTestPDF = (
       <meta charset="UTF-8">
       <style>
         @page {
-          margin: 15mm;
+          margin: 15mm 15mm 15mm 30mm; /* top right bottom left (3cm = 30mm) */
         }
         body {
           font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
           font-size: 11pt;
           line-height: 1.6;
           color: #000;
+          position: relative;
+        }
+        .page-header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 40px;
+          background: #f8f8f8;
+          border-bottom: 2px solid #000;
+          padding: 10px 30mm 5px 30mm;
+          font-weight: bold;
+          font-size: 12pt;
+          z-index: 1000;
+        }
+        .page-footer {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 30px;
+          background: #f8f8f8;
+          border-top: 1px solid #ccc;
+          padding: 8px 30mm;
+          font-size: 9pt;
+          text-align: center;
+          color: #666;
+          z-index: 1000;
+        }
+        .content {
+          margin-top: 60px;
+          margin-bottom: 50px;
         }
         .header {
           text-align: left;
@@ -106,9 +138,13 @@ export const generateTestPDF = (
       </style>
     </head>
     <body>
-      <div class="header">
-        <h1>${testName.toUpperCase()} - (${lessonRange.toUpperCase()}) - ĐỀ ${testNumber}</h1>
-      </div>
+      <div class="page-header">${testName.toUpperCase()} - (${lessonRange.toUpperCase()}) - ĐỀ ${testNumber}</div>
+      <div class="page-footer">Đề thi được tạo bởi tiengnhatvuive.com</div>
+      
+      <div class="content">
+        <div class="header">
+          <h1>${testName.toUpperCase()} - (${lessonRange.toUpperCase()}) - ĐỀ ${testNumber}</h1>
+        </div>
   `;
 
   // Group questions by section
