@@ -1960,43 +1960,7 @@ export const lesson1Data: LessonDetail = {
     // Từ nghi vấn
     {
       word: 'だれ', kanji: '', romaji: 'dare', mean: 'Ai',
-      kanjiDetails: [
-        {
-          kanji: '誰',
-          onyomi: 'スイ (sui)',
-          kunyomi: 'だれ (dare)',
-          meaning: 'Ai',
-          sinoVietnamese: 'THÙY',
-          strokes: 15,
-          jlpt: 'N5',
-          radicals: '言 (ngôn)',
-          components: [{ char: '言', meaning: 'lời nói' }, { char: '隹', meaning: 'chim đuôi ngắn' }],
-          mnemonic: 'Dùng lời nói (言) để hỏi xem chú chim (隹) kia thuộc về ai (誰).',
-          examples: ['誰 (だれ) - ai'],
-          exampleSentences: [
-            {
-              jp: 'あの人は誰ですか。', vn: 'Người kia là ai?',
-              furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '誰', reading: 'だれ', meaning: 'THÙY' }]
-            },
-            {
-              jp: '誰かいますか。', vn: 'Có ai ở đó không?',
-              furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }]
-            },
-            {
-              jp: '誰でもいいです。', vn: 'Ai cũng được.',
-              furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }]
-            },
-            {
-              jp: '誰もいません。', vn: 'Không có ai cả.',
-              furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }]
-            },
-            {
-              jp: '誰に会いたいですか。', vn: 'Bạn muốn gặp ai?',
-              furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }, { kanji: '会', reading: 'あ', meaning: 'HỘI' }]
-            }
-          ]
-        }
-      ],
+
       examples: [
         {
           jp: 'あの人は誰ですか。', romaji: 'Ano hito wa dare desu ka.', vn: 'Người kia là ai?',
@@ -2026,44 +1990,7 @@ export const lesson1Data: LessonDetail = {
     },
     {
       word: 'どなた', kanji: '', romaji: 'donata', mean: 'Ai (lịch sự)',
-      kanjiDetails: [
-        {
-          kanji: '方',
-          onyomi: 'ホウ (hou)',
-          kunyomi: 'かた (kata)',
-          meaning: 'Phương hướng, vị người',
-          sinoVietnamese: 'PHƯƠNG',
-          strokes: 4,
-          jlpt: 'N5',
-          radicals: '方 (phương)',
-          components: [{ char: '方', meaning: 'phương hướng' }],
-          imageUrl: '/images/kanji/kata_direction_3d.png',
-          mnemonic: 'Hình ảnh lá cờ bay theo một phương (方) hướng.',
-          examples: ['あの方 (あのかた) - vị kia', '夕方 (ゆうがた) - chiều tối'],
-          exampleSentences: [
-            {
-              jp: 'あの方はどなたですか。', vn: 'Vị kia là ai?',
-              furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }]
-            },
-            {
-              jp: '書き方が分かりません。', vn: 'Tôi không biết cách viết.',
-              furigana: [{ kanji: '書', reading: 'か', meaning: 'THƯ' }, { kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '分', reading: 'わ', meaning: 'PHÂN' }]
-            },
-            {
-              jp: 'あの先生の教え方は上手です。', vn: 'Cách dạy của thầy giáo đó rất giỏi.',
-              furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '教', reading: 'おし', meaning: 'GIÁO' }, { kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }]
-            },
-            {
-              jp: '夕方に雨が降りました。', vn: 'Trời đã mưa vào buổi chiều tối.',
-              furigana: [{ kanji: '夕方', reading: 'ゆうがた', meaning: 'TỊCH PHƯƠNG' }, { kanji: '雨', reading: 'あめ', meaning: 'VŨ' }, { kanji: '降', reading: 'ふ', meaning: 'GIÁNG' }]
-            },
-            {
-              jp: '使い方を説明します。', vn: 'Tôi sẽ giải thích cách sử dụng.',
-              furigana: [{ kanji: '使', reading: 'つか', meaning: 'SỬ' }, { kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '説明', reading: 'せつめい', meaning: 'THUYẾT MINH' }]
-            }
-          ]
-        }
-      ],
+
       examples: [
         {
           jp: 'あの方はどなたですか。', romaji: 'Ano kata wa donata desu ka.', vn: 'Vị kia là ai ạ?',
