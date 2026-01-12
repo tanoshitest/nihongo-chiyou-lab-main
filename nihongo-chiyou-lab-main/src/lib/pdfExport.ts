@@ -1,34 +1,34 @@
 import html2pdf from 'html2pdf.js';
 
 export interface Question {
-    id: number;
-    section?: string;
-    text_context?: string;
-    question: string;
-    options: string[];
-    answer: string;
-    explain: string;
+  id: number;
+  section?: string;
+  text_context?: string;
+  question: string;
+  options: string[];
+  answer: string;
+  explain: string;
 }
 
 // Helper to clean text but keep Japanese characters
 const cleanText = (text: string): string => {
-    return text
-        .replace(/<u>/g, '<span style="text-decoration: underline;">')
-        .replace(/<\/u>/g, '</span>')
-        .replace(/（\s*）/g, '(     )')
-        .replace(/\[([^\|]+)\|([^\|]+)\|([^\]]+)\]/g, '$1') // Extract kanji from [kanji|reading|meaning]
-        .replace(/\[([^\|]+)\|([^\]]+)\]/g, '$1') // Extract kanji from [kanji|reading]
-        .replace(/\[([^\|]+)\|\|([^\]]+)\]/g, '$1'); // Extract text from [text||meaning]
+  return text
+    .replace(/<u>/g, '<span style="text-decoration: underline;">')
+    .replace(/<\/u>/g, '</span>')
+    .replace(/（\s*）/g, '(     )')
+    .replace(/\[([^\|]+)\|([^\|]+)\|([^\]]+)\]/g, '$1') // Extract kanji from [kanji|reading|meaning]
+    .replace(/\[([^\|]+)\|([^\]]+)\]/g, '$1') // Extract kanji from [kanji|reading]
+    .replace(/\[([^\|]+)\|\|([^\]]+)\]/g, '$1'); // Extract text from [text||meaning]
 };
 
 export const generateTestPDF = (
-    questions: Question[],
-    testName: string,    // "Kiểm tra từ vựng" or "Kiểm tra ngữ pháp"
-    lessonRange: string, // "Bài 1 - 2"
-    testNumber: number   // 1, 2, 3
+  questions: Question[],
+  testName: string,    // "Kiểm tra từ vựng" or "Kiểm tra ngữ pháp"
+  lessonRange: string, // "Bài 1 - 2"
+  testNumber: number   // 1, 2, 3
 ) => {
-    // Create HTML content
-    let html = `
+  // Create HTML content
+  let html = `
     <!DOCTYPE html>
     <html>
     <head>
@@ -44,21 +44,16 @@ export const generateTestPDF = (
           color: #000;
         }
         .header {
-          text-align: center;
+          text-align: left;
           margin-bottom: 20px;
           padding-bottom: 10px;
           border-bottom: 2px solid #000;
         }
         .header h1 {
-          font-size: 18pt;
-          font-weight: bold;
-          margin: 0 0 10px 0;
-          letter-spacing: 2px;
-        }
-        .header h2 {
-          font-size: 16pt;
+          font-size: 14pt;
           font-weight: bold;
           margin: 0;
+          letter-spacing: 1px;
         }
         .section-title {
           font-size: 12pt;
@@ -112,23 +107,22 @@ export const generateTestPDF = (
     </head>
     <body>
       <div class="header">
-        <h1>${testName.toUpperCase()} - (${lessonRange.toUpperCase()})</h1>
-        <h2>ĐỀ ${testNumber}</h2>
+        <h1>${testName.toUpperCase()} - (${lessonRange.toUpperCase()}) - ĐỀ ${testNumber}</h1>
       </div>
   `;
 
-    // Group questions by section
-    let currentSection = '';
-    questions.forEach((q, idx) => {
-        // Section header
-        if (q.section && q.section !== currentSection) {
-            currentSection = q.section;
-            html += `<div class="section-title">${q.section}</div>`;
-        }
+  // Group questions by section
+  let currentSection = '';
+  questions.forEach((q, idx) => {
+    // Section header
+    if (q.section && q.section !== currentSection) {
+      currentSection = q.section;
+      html += `<div class="section-title">${q.section}</div>`;
+    }
 
-        // Question
-        const questionText = cleanText(q.question);
-        html += `
+    // Question
+    const questionText = cleanText(q.question);
+    html += `
       <div class="question">
         <div class="question-text">
           <span class="question-number">Câu ${idx + 1}:</span>
@@ -137,50 +131,50 @@ export const generateTestPDF = (
         <div class="options">
     `;
 
-        // Options
-        const optionLabels = ['A', 'B', 'C', 'D'];
-        q.options.forEach((opt, i) => {
-            html += `<div class="option">${optionLabels[i]}. ${cleanText(opt)}</div>`;
-        });
+    // Options
+    const optionLabels = ['A', 'B', 'C', 'D'];
+    q.options.forEach((opt, i) => {
+      html += `<div class="option">${optionLabels[i]}. ${cleanText(opt)}</div>`;
+    });
 
-        html += `
+    html += `
         </div>
       </div>
     `;
-    });
+  });
 
-    // Answer Key
-    html += `
+  // Answer Key
+  html += `
     <div class="answer-key">
       <h2>ĐÁP ÁN</h2>
       <div class="answer-grid">
   `;
 
-    const optionLabels = ['A', 'B', 'C', 'D'];
-    questions.forEach((q, idx) => {
-        const answerIndex = q.options.findIndex(opt => opt === q.answer);
-        const answerLabel = optionLabels[answerIndex] || '?';
-        html += `<div class="answer-item">${idx + 1}. ${answerLabel}</div>`;
-    });
+  const optionLabels = ['A', 'B', 'C', 'D'];
+  questions.forEach((q, idx) => {
+    const answerIndex = q.options.findIndex(opt => opt === q.answer);
+    const answerLabel = optionLabels[answerIndex] || '?';
+    html += `<div class="answer-item">${idx + 1}. ${answerLabel}</div>`;
+  });
 
-    html += `
+  html += `
       </div>
     </div>
     </body>
     </html>
   `;
 
-    // Generate PDF
-    const element = document.createElement('div');
-    element.innerHTML = html;
+  // Generate PDF
+  const element = document.createElement('div');
+  element.innerHTML = html;
 
-    const opt = {
-        margin: 0,
-        filename: `${testName.replace(/\s+/g, '_')}_${lessonRange.replace(/\s+/g, '_')}_De_${testNumber}.pdf`,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
+  const opt = {
+    margin: 0,
+    filename: `${testName.replace(/\s+/g, '_')}_${lessonRange.replace(/\s+/g, '_')}_De_${testNumber}.pdf`,
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2, useCORS: true },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+  };
 
-    html2pdf().set(opt).from(element).save();
+  html2pdf().set(opt).from(element).save();
 };
