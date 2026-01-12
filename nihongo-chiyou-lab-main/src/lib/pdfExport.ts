@@ -1,4 +1,4 @@
-import jsPDF from 'jspdf';
+import html2pdf from 'html2pdf.js';
 
 export interface Question {
     id: number;
@@ -10,14 +10,12 @@ export interface Question {
     explain: string;
 }
 
-// Helper to strip HTML tags and convert special formatting
+// Helper to clean text but keep Japanese characters
 const cleanText = (text: string): string => {
     return text
-        .replace(/<u>/g, '')
-        .replace(/<\/u>/g, '')
-        .replace(/<br>/g, '\n')
-        .replace(/&nbsp;/g, ' ')
-        .replace(/（\s*）/g, '(   )')
+        .replace(/<u>/g, '<span style="text-decoration: underline;">')
+        .replace(/<\/u>/g, '</span>')
+        .replace(/（\s*）/g, '(     )')
         .replace(/\[([^\|]+)\|([^\|]+)\|([^\]]+)\]/g, '$1') // Extract kanji from [kanji|reading|meaning]
         .replace(/\[([^\|]+)\|([^\]]+)\]/g, '$1') // Extract kanji from [kanji|reading]
         .replace(/\[([^\|]+)\|\|([^\]]+)\]/g, '$1'); // Extract text from [text||meaning]
@@ -29,129 +27,160 @@ export const generateTestPDF = (
     lessonRange: string, // "Bài 1 - 2"
     testNumber: number   // 1, 2, 3
 ) => {
-    const doc = new jsPDF({
-        orientation: 'portrait',
-        unit: 'mm',
-        format: 'a4'
-    });
+    // Create HTML content
+    let html = `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8">
+      <style>
+        @page {
+          margin: 15mm;
+        }
+        body {
+          font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+          font-size: 11pt;
+          line-height: 1.6;
+          color: #000;
+        }
+        .header {
+          text-align: center;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #000;
+        }
+        .header h1 {
+          font-size: 18pt;
+          font-weight: bold;
+          margin: 0 0 10px 0;
+          letter-spacing: 2px;
+        }
+        .header h2 {
+          font-size: 16pt;
+          font-weight: bold;
+          margin: 0;
+        }
+        .section-title {
+          font-size: 12pt;
+          font-weight: bold;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          color: #008001;
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 5px;
+        }
+        .question {
+          margin-bottom: 15px;
+          page-break-inside: avoid;
+        }
+        .question-number {
+          font-weight: bold;
+          display: inline-block;
+          min-width: 60px;
+        }
+        .question-text {
+          margin-bottom: 8px;
+        }
+        .options {
+          margin-left: 70px;
+        }
+        .option {
+          margin-bottom: 5px;
+        }
+        .answer-key {
+          page-break-before: always;
+          margin-top: 30px;
+        }
+        .answer-key h2 {
+          text-align: center;
+          font-size: 16pt;
+          font-weight: bold;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #000;
+        }
+        .answer-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 10px;
+          font-size: 10pt;
+        }
+        .answer-item {
+          padding: 3px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="header">
+        <h1>${testName.toUpperCase()} - (${lessonRange.toUpperCase()})</h1>
+        <h2>ĐỀ ${testNumber}</h2>
+      </div>
+  `;
 
-    const pageWidth = doc.internal.pageSize.getWidth();
-    const pageHeight = doc.internal.pageSize.getHeight();
-    const margin = 15;
-    const lineHeight = 6;
-    let y = margin;
-
-    // Title
-    doc.setFontSize(18);
-    doc.setFont('helvetica', 'bold');
-    const title = `${testName.toUpperCase()} - (${lessonRange.toUpperCase()})`;
-    const titleWidth = doc.getTextWidth(title);
-    doc.text(title, (pageWidth - titleWidth) / 2, y);
-
-    y += 10;
-    doc.setFontSize(16);
-    const subtitle = `DE ${testNumber}`;
-    const subtitleWidth = doc.getTextWidth(subtitle);
-    doc.text(subtitle, (pageWidth - subtitleWidth) / 2, y);
-
-    y += 12;
-    doc.setLineWidth(0.5);
-    doc.line(margin, y, pageWidth - margin, y);
-    y += 8;
-
-    // Questions
-    doc.setFontSize(11);
-    doc.setFont('helvetica', 'normal');
-
+    // Group questions by section
+    let currentSection = '';
     questions.forEach((q, idx) => {
-        // Check if we need a new page
-        if (y > pageHeight - 40) {
-            doc.addPage();
-            y = margin;
+        // Section header
+        if (q.section && q.section !== currentSection) {
+            currentSection = q.section;
+            html += `<div class="section-title">${q.section}</div>`;
         }
 
-        // Section header (if it changes)
-        if (idx === 0 || (idx > 0 && questions[idx - 1].section !== q.section)) {
-            if (q.section) {
-                doc.setFont('helvetica', 'bold');
-                doc.setFontSize(12);
-                doc.text(q.section, margin, y);
-                y += lineHeight + 2;
-                doc.setFont('helvetica', 'normal');
-                doc.setFontSize(11);
-            }
-        }
-
-        // Question number and text
-        doc.setFont('helvetica', 'bold');
-        const questionNum = `Cau ${idx + 1}: `;
-        doc.text(questionNum, margin, y);
-
-        doc.setFont('helvetica', 'normal');
+        // Question
         const questionText = cleanText(q.question);
-        const questionLines = doc.splitTextToSize(questionText, pageWidth - margin * 2 - 15);
-        doc.text(questionLines, margin + 15, y);
-        y += questionLines.length * lineHeight;
+        html += `
+      <div class="question">
+        <div class="question-text">
+          <span class="question-number">Câu ${idx + 1}:</span>
+          ${questionText}
+        </div>
+        <div class="options">
+    `;
 
         // Options
         const optionLabels = ['A', 'B', 'C', 'D'];
         q.options.forEach((opt, i) => {
-            if (y > pageHeight - 20) {
-                doc.addPage();
-                y = margin;
-            }
-            const optionText = `  ${optionLabels[i]}. ${cleanText(opt)}`;
-            const optionLines = doc.splitTextToSize(optionText, pageWidth - margin * 2 - 5);
-            doc.text(optionLines, margin + 5, y);
-            y += optionLines.length * lineHeight;
+            html += `<div class="option">${optionLabels[i]}. ${cleanText(opt)}</div>`;
         });
 
-        y += 3; // Space between questions
+        html += `
+        </div>
+      </div>
+    `;
     });
 
-    // Answer Key on new page
-    doc.addPage();
-    y = margin;
+    // Answer Key
+    html += `
+    <div class="answer-key">
+      <h2>ĐÁP ÁN</h2>
+      <div class="answer-grid">
+  `;
 
-    doc.setFontSize(16);
-    doc.setFont('helvetica', 'bold');
-    const answerTitle = 'DAP AN';
-    const answerTitleWidth = doc.getTextWidth(answerTitle);
-    doc.text(answerTitle, (pageWidth - answerTitleWidth) / 2, y);
-
-    y += 10;
-    doc.setLineWidth(0.5);
-    doc.line(margin, y, pageWidth - margin, y);
-    y += 8;
-
-    doc.setFontSize(10);
-    doc.setFont('helvetica', 'normal');
-
-    // Print answers in 4 columns
     const optionLabels = ['A', 'B', 'C', 'D'];
-    const columnWidth = (pageWidth - margin * 2) / 4;
-
     questions.forEach((q, idx) => {
-        if (y > pageHeight - margin) {
-            doc.addPage();
-            y = margin;
-        }
-
-        const column = idx % 4;
-        const x = margin + (column * columnWidth);
-
         const answerIndex = q.options.findIndex(opt => opt === q.answer);
         const answerLabel = optionLabels[answerIndex] || '?';
-        const answerText = `${idx + 1}. ${answerLabel}`;
-
-        doc.text(answerText, x, y);
-
-        if (column === 3) {
-            y += lineHeight;
-        }
+        html += `<div class="answer-item">${idx + 1}. ${answerLabel}</div>`;
     });
 
-    // Save PDF
-    const fileName = `${testName.replace(/\s+/g, '_')}_${lessonRange.replace(/\s+/g, '_')}_De_${testNumber}.pdf`;
-    doc.save(fileName);
+    html += `
+      </div>
+    </div>
+    </body>
+    </html>
+  `;
+
+    // Generate PDF
+    const element = document.createElement('div');
+    element.innerHTML = html;
+
+    const opt = {
+        margin: 0,
+        filename: `${testName.replace(/\s+/g, '_')}_${lessonRange.replace(/\s+/g, '_')}_De_${testNumber}.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opt).from(element).save();
 };
