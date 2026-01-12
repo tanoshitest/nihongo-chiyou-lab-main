@@ -99,9 +99,6 @@ export const generateTestPDF = (
     </head>
     <body>
       <div class="page-container">
-        <div class="header">
-          <h1>${testName.toUpperCase()} - (${lessonRange.toUpperCase()}) - ĐỀ ${testNumber}</h1>
-        </div>
   `;
 
   // Group questions by section
