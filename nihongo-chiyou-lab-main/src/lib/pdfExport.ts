@@ -252,7 +252,7 @@ export const generateTestPDF = (
 
       // Let's use unsigned for the "system level" strings to be safe.
       const headerTextSafe = removeVietnameseTones(`${testName.toUpperCase()} - (${lessonRange.toUpperCase()}) - DE ${testNumber}`);
-      pdf.text(headerTextSafe, 30, 15);
+      pdf.text(headerTextSafe, 25, 15);
     }
   }).save();
 };
