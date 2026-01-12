@@ -232,9 +232,10 @@ export const generateTestPDF = (
       // Let's try to put the header in the manual drawing but remove accents to be safe 
       // OR trust that we can't do better without font.
 
-      // Let's use unsigned for the "system level" strings to be safe.
+      // Let's use unsigned for the       // Header Text - CENTER ALIGNED using jsPDF native align
       const headerTextSafe = removeVietnameseTones(`${testName.toUpperCase()} - (${lessonRange.toUpperCase()}) - DE ${testNumber}`);
-      pdf.text(headerTextSafe, 25, 15);
+      pdf.setTextColor(0, 0, 0); // Force Black
+      pdf.text(headerTextSafe, pageWidth / 2, 15, { align: 'center' });
     }
   }).save();
 };
