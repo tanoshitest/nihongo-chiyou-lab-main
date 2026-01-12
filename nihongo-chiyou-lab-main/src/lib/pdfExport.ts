@@ -184,20 +184,17 @@ export const generateTestPDF = (
       // If this fails for VN, I will need to use a different strategy.
       // For now, let's add Page Numbers which is numbers (safe).
 
-      // Footer Line
-      pdf.line(15, pageHeight - 15, pageWidth - 15, pageHeight - 15);
+
 
       // Footer Text
-      pdf.setFontSize(9);
-      pdf.setTextColor(100);
-      const footerText = "De thi duoc tao boi tiengnhatvuive.com"; // Unsigned for safety
-      const footerX = (pageWidth - pdf.getStringUnitWidth(footerText) * 9 / 2.83465) / 2; // Approximate center
-      pdf.text(footerText, footerX, pageHeight - 10);
+
 
       // Page Number
-      pdf.setFontSize(10);
-      const pageStr = `Trang ${i} / ${totalPages}`;
-      pdf.text(pageStr, pageWidth - 30, pageHeight - 10);
+      if (i < totalPages) {
+        pdf.setFontSize(10);
+        const pageStr = `Trang ${i} / ${totalPages}`;
+        pdf.text(pageStr, pageWidth - 30, pageHeight - 10);
+      }
 
       // Header Text (UpperCase En/VN?)
       // Let's try to render the VN header. If it fails, we might see garbage.
