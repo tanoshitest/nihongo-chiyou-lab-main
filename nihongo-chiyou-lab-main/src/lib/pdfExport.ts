@@ -152,7 +152,7 @@ export const generateTestPDF = (
   element.innerHTML = html;
 
   const opt = {
-    margin: [25, 15, 20, 30], // Top, Right, Bottom, Left (mm)
+    margin: [25, 15, 20, 20], // Top, Right, Bottom, Left (mm) - Sync Left with Header X
     filename: `${testName.replace(/\s+/g, '_')}_${lessonRange.replace(/\s+/g, '_')}_De_${testNumber}.pdf`,
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2, useCORS: true },
