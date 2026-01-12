@@ -6099,7 +6099,7 @@ export const lesson1Data: LessonDetail = {
     {
       pattern: 'N1 は N2 です',
       explanation: 'Dùng để khẳng định N1 là N2. Trợ từ "は" (wa) đánh dấu chủ đề của câu, "です" là động từ "là" ở thể lịch sự.',
-      example: '私は学生です。(Watashi wa gakusei desu.) - Tôi là sinh viên.',
+      example: '私はマイク・ミラーです。(Watashi wa Maiku Mira- desu.) - Tôi là Mike Miller.',
       examples: [
         { jp: '私は学生です。', vn: 'Tôi là sinh viên.', furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }] },
         { jp: '田中さんは先生です。', vn: 'Anh Tanaka là giáo viên.', furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }] },
@@ -6116,7 +6116,7 @@ export const lesson1Data: LessonDetail = {
     {
       pattern: 'N1 は N2 じゃありません / ではありません',
       explanation: 'Dùng để phủ định: N1 không phải là N2. "じゃありません" là dạng nói thường, "ではありません" là dạng trang trọng hơn.',
-      example: '私は医者じゃありません。(Watashi wa isha ja arimasen.) - Tôi không phải bác sĩ.',
+      example: 'サントスさんは学生じゃありません。(Santosu-san wa gakusei ja arimasen.) - Anh Santos không phải là sinh viên.',
       examples: [
         { jp: '私は医者じゃありません。', vn: 'Tôi không phải là bác sĩ.', furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '医者', reading: 'いしゃ', meaning: 'Y GIẢ' }] },
         { jp: '田中さんは学生じゃありません。', vn: 'Anh Tanaka không phải là sinh viên.', furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }] },
@@ -6133,7 +6133,7 @@ export const lesson1Data: LessonDetail = {
     {
       pattern: 'N1 は N2 ですか',
       explanation: 'Dùng để hỏi: N1 có phải là N2 không? Thêm "か" vào cuối câu để tạo câu hỏi.',
-      example: 'あなたは学生ですか。(Anata wa gakusei desu ka?) - Bạn có phải sinh viên không?',
+      example: 'ミラーさんは会社員ですか。(Miraa-san wa kaishain desu ka?) - Anh Miller có phải là nhân viên công ty không?',
       examples: [
         { jp: 'あなたは学生ですか。', vn: 'Bạn có phải là sinh viên không?', furigana: [{ kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }] },
         { jp: '田中さんは先生ですか。', vn: 'Anh Tanaka có phải là giáo viên không?', furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }] },
@@ -6150,7 +6150,7 @@ export const lesson1Data: LessonDetail = {
     {
       pattern: 'N も',
       explanation: 'Trợ từ "も" có nghĩa là "cũng". Thay thế "は" khi muốn nói ai/cái gì đó cũng tương tự.',
-      example: 'ミラーさんも会社員です。(Miraa-san mo kaishain desu.) - Anh Miller cũng là nhân viên công ty.',
+      example: 'サントスさんも会社員です。(Santosu-san mo kaishain desu.) - Anh Santos cũng là nhân viên công ty.',
       examples: [
         { jp: 'ミラーさんも会社員です。', vn: 'Anh Miller cũng là nhân viên công ty.', furigana: [{ kanji: '会社員', reading: 'かいしゃいん', meaning: 'HỘI XÃ VIÊN' }] },
         { jp: '私も学生です。', vn: 'Tôi cũng là sinh viên.', furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }] },
@@ -6202,9 +6202,24 @@ export const lesson1Data: LessonDetail = {
   kaiwaImage: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
   kaiwa: [
     {
+      char: '佐藤',
+      jp: 'おはようございます。',
+      vn: 'Chào anh!',
+      furigana: []
+    },
+    {
+      char: '山田',
+      jp: 'おはようございます。佐藤さん、こちらはマイク・ミラーさんです。',
+      vn: 'Chào chị! Chị Sato, đây là anh Mike Miller.',
+      furigana: [
+        { kanji: '佐藤', reading: 'さとう', meaning: 'TÁ ĐẰNG' },
+        { kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }
+      ]
+    },
+    {
       char: 'ミラー',
-      jp: 'はじめまして。ミラーです。',
-      vn: 'Xin chào. Tôi là Miller.',
+      jp: 'はじめまして。マイク・ミラーです。',
+      vn: 'Rất vui được làm quen với chị. Tôi là Mike Miller.',
       furigana: [
         { kanji: '初', reading: 'はじ', meaning: 'SƠ' }
       ]
@@ -6220,49 +6235,19 @@ export const lesson1Data: LessonDetail = {
     {
       char: 'ミラー',
       jp: 'どうぞよろしくお願いします。',
-      vn: 'Rất mong được giúp đỡ.',
+      vn: 'Rất mong sẽ nhận được sự giúp đỡ của chị.',
       furigana: [
         { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }
       ]
     },
     {
       char: '佐藤',
-      jp: '佐藤です。こちらこそ、よろしく。',
-      vn: 'Tôi là Satou. Tôi cũng rất mong được giúp đỡ.',
-      furigana: [
-        { kanji: '佐藤', reading: 'さとう', meaning: 'TÁ ĐẰNG' }
-      ]
-    },
-    {
-      char: 'ミラー',
-      jp: '佐藤さんは会社員ですか。',
-      vn: 'Anh Satou là nhân viên công ty phải không?',
+      jp: '佐藤けい子です。どうぞよろしくお願いします。',
+      vn: 'Tôi là Sato Keiko. Rất vui được làm quen với anh.',
       furigana: [
         { kanji: '佐藤', reading: 'さとう', meaning: 'TÁ ĐẰNG' },
-        { kanji: '会社員', reading: 'かいしゃいん', meaning: 'HỘI XÃ VIÊN' }
+        { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }
       ]
-    },
-    {
-      char: '佐藤',
-      jp: 'はい、そうです。IMCの社員です。',
-      vn: 'Vâng, đúng vậy. Tôi là nhân viên công ty IMC.',
-      furigana: [
-        { kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }
-      ]
-    },
-    {
-      char: 'ミラー',
-      jp: 'そうですか。私もIMCの社員です。',
-      vn: 'Vậy à. Tôi cũng là nhân viên công ty IMC.',
-      furigana: [
-        { kanji: '私', reading: 'わたし', meaning: 'TỰ' },
-        { kanji: '社員', reading: 'しゃいん', meaning: 'XÃ VIÊN' }
-      ]
-    },
-    {
-      char: '佐藤',
-      jp: 'え、そうですか。',
-      vn: 'Ồ, vậy sao.'
     },
   ],
   quiz: [
@@ -6829,7 +6814,9 @@ export const lesson2Data: LessonDetail = {
           exampleSentences: [
             { jp: 'これは本です。', vn: 'Đây là cuốn sách.', furigana: [{ kanji: '本', reading: 'ほん', meaning: 'BẢN' }] },
             { jp: '日本から来ました。', vn: 'Tôi đến từ Nhật Bản.', furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '来', reading: 'き', meaning: 'LAI' }] },
-            { jp: 'ペンを一本ください。', vn: 'Cho tôi một cây bút.', furigana: [{ kanji: '一', reading: 'いっ', meaning: 'NHẤT' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }] }
+            { jp: 'ペンを一本ください。', vn: 'Cho tôi một cây bút.', furigana: [{ kanji: '一', reading: 'いっ', meaning: 'NHẤT' }, { kanji: '本', reading: 'ぽん', meaning: 'BẢN' }] },
+            { jp: '本人が来ました。', vn: 'Chính người đó đã đến.', furigana: [{ kanji: '本人', reading: 'ほんにん', meaning: 'BẢN NHÂN' }, { kanji: '来', reading: 'き', meaning: 'LAI' }] },
+            { jp: '本当ですか。', vn: 'Thật không?', furigana: [{ kanji: '本当', reading: 'ほんとう', meaning: 'BẢN ĐƯƠNG' }] }
           ]
         }
       ],
@@ -6868,7 +6855,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['辞書 (じしょ) - từ điển', '祝辞 (しゅくじ) - lời chúc'],
           exampleSentences: [
             { jp: '辞書で調べます。', vn: 'Tôi tra cứu bằng từ điển.', furigana: [{ kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }, { kanji: '調', reading: 'しら', meaning: 'ĐIỀU' }] },
-            { jp: '会社を辞めます。', vn: 'Tôi nghỉ việc ở công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '辞', reading: 'や', meaning: 'TỪ' }] }
+            { jp: '会社を辞めます。', vn: 'Tôi nghỉ việc ở công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '辞', reading: 'や', meaning: 'TỪ' }] },
+            { jp: 'お世辞を言います。', vn: 'Nói lời nịnh nọt.', furigana: [{ kanji: '世辞', reading: 'せじ', meaning: 'THẾ TỪ' }, { kanji: '言', reading: 'い', meaning: 'NGÔN' }] },
+            { jp: '社長が辞職しました。', vn: 'Giám đốc đã từ chức.', furigana: [{ kanji: '社長', reading: 'しゃちょう', meaning: 'XÃ TRƯỞNG' }, { kanji: '辞職', reading: 'じしょく', meaning: 'TỪ CHỨC' }] },
+            { jp: '招待を辞退します。', vn: 'Tôi từ chối lời mời.', furigana: [{ kanji: '招待', reading: 'しょうたい', meaning: 'CHIÊU ĐÃI' }, { kanji: '辞退', reading: 'じたい', meaning: 'TỪ THỐI' }] }
           ]
         },
         {
@@ -6876,7 +6866,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['図書 (としょ) - sách/đồ thư', '辞書 (じしょ) - từ điển', '書き方 (かきかた) - cách viết'],
           exampleSentences: [
             { jp: '名前を書きます。', vn: 'Tôi viết tên.', furigana: [{ kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }] },
-            { jp: '図書館へ行きます。', vn: 'Tôi đi đến thư viện.', furigana: [{ kanji: '図書館', reading: 'としょかん', meaning: 'ĐỒ THƯ QUÁN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] }
+            { jp: '図書館へ行きます。', vn: 'Tôi đi đến thư viện.', furigana: [{ kanji: '図書館', reading: 'としょかん', meaning: 'ĐỒ THƯ QUÁN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
+            { jp: '教科書を読んでください。', vn: 'Hãy đọc sách giáo khoa.', furigana: [{ kanji: '教科書', reading: 'きょうかしょ', meaning: 'GIÁO KHOA THƯ' }, { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }] },
+            { jp: '趣味は読書です。', vn: 'Sở thích là đọc sách.', furigana: [{ kanji: '趣味', reading: 'しゅみ', meaning: 'THÚ VỊ' }, { kanji: '読書', reading: 'どくしょ', meaning: 'ĐỘC THƯ' }] },
+            { jp: '書類を整理します。', vn: 'Tôi sắp xếp tài liệu.', furigana: [{ kanji: '書類', reading: 'しょるい', meaning: 'THƯ LOẠI' }, { kanji: '整理', reading: 'せいり', meaning: 'CHỈNH LÝ' }] }
           ]
         }
       ],
@@ -6915,7 +6908,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['雑誌 (ざっし) - tạp chí', '複雑 (ふくざつ) - phức tạp'],
           exampleSentences: [
             { jp: '雑誌を読みます。', vn: 'Tôi đọc tạp chí.', furigana: [{ kanji: '雑誌', reading: 'ざっし', meaning: 'TẠP CHÍ' }, { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }] },
-            { jp: '日本語は複雑です。', vn: 'Tiếng Nhật rất phức tạp.', furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '複雑', reading: 'ふくざつ', meaning: 'PHỨC TẠP' }] }
+            { jp: '日本語は複雑です。', vn: 'Tiếng Nhật rất phức tạp.', furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '複雑', reading: 'ふくざつ', meaning: 'PHỨC TẠP' }] },
+            { jp: '雑音がうるさいです。', vn: 'Tiếng ồn thật ồn ào.', furigana: [{ kanji: '雑音', reading: 'ざつおん', meaning: 'TẠP ÂM' }] },
+            { jp: '庭の雑草を取ります。', vn: 'Tôi nhổ cỏ trong vườn.', furigana: [{ kanji: '庭', reading: 'にわ', meaning: 'ĐÌNH' }, { kanji: '雑草', reading: 'ざっそう', meaning: 'TẠP THẢO' }, { kanji: '取', reading: 'と', meaning: 'THỦ' }] },
+            { jp: '友達と雑談しました。', vn: 'Tôi đã tán gẫu với bạn bè.', furigana: [{ kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '雑談', reading: 'ざつだん', meaning: 'TẠP ĐÀM' }] }
           ]
         },
         {
@@ -6923,7 +6919,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['雑誌 (ざっし) - tạp chí', '日誌 (にっし) - Nhật ký công việc'],
           exampleSentences: [
             { jp: 'これは新しい雑誌です。', vn: 'Đây là cuốn tạp chí mới.', furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '雑誌', reading: 'ざっし', meaning: 'TẠP CHÍ' }] },
-            { jp: '日誌を書きます。', vn: 'Tôi viết nhật ký công việc.', furigana: [{ kanji: '日誌', reading: 'にっし', meaning: 'NHẬT CHÍ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }] }
+            { jp: '日誌を書きます。', vn: 'Tôi viết nhật ký công việc.', furigana: [{ kanji: '日誌', reading: 'にっし', meaning: 'NHẬT CHÍ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }] },
+            { jp: '週刊誌を買いました。', vn: 'Tôi đã mua tạp chí tuần.', furigana: [{ kanji: '週刊誌', reading: 'しゅうかんし', meaning: 'CHU KHAN CHÍ' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }] },
+            { jp: 'カメラの専門誌です。', vn: 'Đây là tạp chí chuyên về máy ảnh.', furigana: [{ kanji: '専門誌', reading: 'せんもんし', meaning: 'CHUYÊN MÔN CHÍ' }] },
+            { jp: '求人情報誌を見ます。', vn: 'Tôi xem tạp chí tuyển dụng.', furigana: [{ kanji: '求人', reading: 'きゅうじん', meaning: 'CẦU NHÂN' }, { kanji: '情報誌', reading: 'じょうほうし', meaning: 'TÌNH BÁO CHÍ' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }] }
           ]
         }
       ],
@@ -6962,7 +6961,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['新聞 (しんぶん) - báo', '新年 (しんねん) - năm mới', '新しい (あたらしい) - mới'],
           exampleSentences: [
             { jp: '新聞を読みます。', vn: 'Tôi đọc báo.', furigana: [{ kanji: '新聞', reading: 'しんぶん', meaning: 'TÂN VĂN' }, { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }] },
-            { jp: '新しい車です。', vn: 'Đây là cái xe mới.', furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '車', reading: 'くるま', meaning: 'XA' }] }
+            { jp: '新しい車です。', vn: 'Đây là cái xe mới.', furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '車', reading: 'くるま', meaning: 'XA' }] },
+            { jp: '新幹線で東京へ行きます。', vn: 'Tôi đi Tokyo bằng Shinkansen.', furigana: [{ kanji: '新幹線', reading: 'しんかんせん', meaning: 'TÂN CÁN TUYẾN' }, { kanji: '東京', reading: 'とうきょう', meaning: 'ĐÔNG KINH' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
+            { jp: '彼は新人です。', vn: 'Anh ấy là người mới.', furigana: [{ kanji: '新人', reading: 'しんじん', meaning: 'TÂN NHÂN' }] },
+            { jp: 'この魚は新鮮です。', vn: 'Con cá này rất tươi.', furigana: [{ kanji: '魚', reading: 'さかな', meaning: 'NGƯ' }, { kanji: '新鮮', reading: 'しんせん', meaning: 'TÂN TIÊN' }] }
           ]
         },
         {
@@ -6970,7 +6972,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['新聞 (しんぶん) - báo', '聞き手 (ききて) - người nghe'],
           exampleSentences: [
             { jp: 'ニュースを聞きます。', vn: 'Tôi nghe tin tức.', furigana: [{ kanji: '聞', reading: 'き', meaning: 'VĂN' }] },
-            { jp: '先生に聞きます。', vn: 'Tôi hỏi giáo viên.', furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }] }
+            { jp: '先生に聞きます。', vn: 'Tôi hỏi giáo viên.', furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }] },
+            { jp: '音が聞こえます。', vn: 'Có thể nghe thấy âm thanh.', furigana: [{ kanji: '音', reading: 'おと', meaning: 'ÂM' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }] },
+            { jp: '彼はいい聞き手です。', vn: 'Anh ấy là người biết lắng nghe.', furigana: [{ kanji: '聞', reading: 'き', meaning: 'VĂN' }, { kanji: '手', reading: 'て', meaning: 'THỦ' }] },
+            { jp: '見聞を広めます。', vn: 'Mở rộng kiến thức.', furigana: [{ kanji: '見聞', reading: 'けんぶん', meaning: 'KIẾN VĂN' }, { kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }] }
           ]
         }
       ],
@@ -7039,7 +7044,9 @@ export const lesson2Data: LessonDetail = {
           exampleSentences: [
             { jp: '手を洗います。', vn: 'Tôi rửa tay.', furigana: [{ kanji: '手', reading: 'て', meaning: 'THỦ' }, { kanji: '洗', reading: 'あら', meaning: 'TẨY' }] },
             { jp: '切手を買います。', vn: 'Tôi mua tem.', furigana: [{ kanji: '切手', reading: 'きって', meaning: 'THIẾT THỦ' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }] },
-            { jp: '手紙を書きます。', vn: 'Tôi viết thư.', furigana: [{ kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }] }
+            { jp: '手紙を書きます。', vn: 'Tôi viết thư.', furigana: [{ kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }] },
+            { jp: '日本語が上手です。', vn: 'Tiếng Nhật giỏi.', furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }] },
+            { jp: '母を手伝います。', vn: 'Tôi giúp mẹ.', furigana: [{ kanji: '母', reading: 'はは', meaning: 'MẪU' }, { kanji: '手伝', reading: 'てつだ', meaning: 'THỦ TRUYỀN' }] }
           ]
         },
         {
@@ -7047,7 +7054,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['手帳 (てちょう) - Sổ tay', '通帳 (つうちょう) - Sổ ngân hàng'],
           exampleSentences: [
             { jp: '手帳にメモします。', vn: 'Ghi chú vào sổ tay.', furigana: [{ kanji: '手帳', reading: 'てちょう', meaning: 'THỦ TRƯƠNG' }] },
-            { jp: '通帳を作ります。', vn: 'Làm sổ ngân hàng.', furigana: [{ kanji: '通帳', reading: 'つうちょう', meaning: 'THÔNG TRƯƠNG' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }] }
+            { jp: '通帳を作ります。', vn: 'Làm sổ ngân hàng.', furigana: [{ kanji: '通帳', reading: 'つうちょう', meaning: 'THÔNG TRƯƠNG' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }] },
+            { jp: '電話帳で調べます。', vn: 'Tra trong danh bạ điện thoại.', furigana: [{ kanji: '電話帳', reading: 'でんわちょう', meaning: 'ĐIỆN THOẠI TRƯƠNG' }, { kanji: '調', reading: 'しら', meaning: 'ĐIỀU' }] },
+            { jp: '彼は几帳面です。', vn: 'Anh ấy rất cẩn thận.', furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '几帳面', reading: 'きちょうめん', meaning: 'KỈ TRƯƠNG DIỆN' }] },
+            { jp: '記帳をお願いします。', vn: 'Xin vui lòng ghi sổ.', furigana: [{ kanji: '記帳', reading: 'きちょう', meaning: 'KÍ TRƯƠNG' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }] }
           ]
         }
       ],
@@ -7086,7 +7096,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['名前 (なまえ) - tên', '有名 (ゆうめい) - nổi tiếng', '名刺 (めいし) - danh thiếp'],
           exampleSentences: [
             { jp: 'お名前は何ですか。', vn: 'Tên bạn là gì?', furigana: [{ kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }] },
-            { jp: 'あの方は有名です。', vn: 'Vị kia nổi tiếng.', furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }] }
+            { jp: 'あの方は有名です。', vn: 'Vị kia nổi tiếng.', furigana: [{ kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }] },
+            { jp: 'これは京都の名物です。', vn: 'Đây là đặc sản Kyoto.', furigana: [{ kanji: '京都', reading: 'きょうと', meaning: 'KINH ĐÔ' }, { kanji: '名物', reading: 'めいぶつ', meaning: 'DANH VẬT' }] },
+            { jp: '名字が変わりました。', vn: 'Họ đã thay đổi.', furigana: [{ kanji: '名字', reading: 'みょうじ', meaning: 'DANH TỰ' }, { kanji: '変', reading: 'か', meaning: 'BIẾN' }] },
+            { jp: '観光名所へ行きます。', vn: 'Đi đến điểm tham quan nổi tiếng.', furigana: [{ kanji: '観光', reading: 'かんこう', meaning: 'QUAN QUANG' }, { kanji: '名所', reading: 'めいしょ', meaning: 'DANH SỞ' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] }
           ]
         },
         {
@@ -7094,7 +7107,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['名刺 (めいし) - danh thiếp', '刺身 (さしみ) - món cá sống Sashimi'],
           exampleSentences: [
             { jp: '名刺を交換します。', vn: 'Tôi trao đổi danh thiếp.', furigana: [{ kanji: '名刺', reading: 'めいし', meaning: 'DANH THỨ' }, { kanji: '交換', reading: 'こうかん', meaning: 'GIAO HOÁN' }] },
-            { jp: '刺身を食べます。', vn: 'Tôi ăn Sashimi.', furigana: [{ kanji: '刺身', reading: 'さしみ', meaning: 'THỨ THÂN' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }] }
+            { jp: '刺身を食べます。', vn: 'Tôi ăn Sashimi.', furigana: [{ kanji: '刺身', reading: 'さしみ', meaning: 'THỨ THÂN' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }] },
+            { jp: '都会は刺激が多いです。', vn: 'Thành phố có nhiều kích thích.', furigana: [{ kanji: '都会', reading: 'とかい', meaning: 'ĐÔ HỘI' }, { kanji: '刺激', reading: 'しげき', meaning: 'THỨ KÍCH' }, { kanji: '多', reading: 'おお', meaning: 'ĐA' }] },
+            { jp: '刺繍を習っています。', vn: 'Tôi đang học thêu.', furigana: [{ kanji: '刺繍', reading: 'ししゅう', meaning: 'THỨ TÚ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }] },
+            { jp: '風刺画を描きます。', vn: 'Vẽ tranh biếm họa.', furigana: [{ kanji: '風刺画', reading: 'ふうしが', meaning: 'PHONG THỨ HỌA' }, { kanji: '描', reading: 'か', meaning: 'MIÊU' }] }
           ]
         }
       ],
@@ -7162,7 +7178,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['鉛筆 (えんぴつ) - Bút chì', '亜鉛 (あえん) - Kẽm'],
           exampleSentences: [
             { jp: '鉛筆で書きます。', vn: 'Viết bằng bút chì.', furigana: [{ kanji: '鉛筆', reading: 'えんぴつ', meaning: 'DUYÊN BÚT' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }] },
-            { jp: '鉛筆を削ります。', vn: 'Gọt bút chì.', furigana: [{ kanji: '鉛筆', reading: 'えんぴつ', meaning: 'DUYÊN BÚT' }, { kanji: '削', reading: 'けず', meaning: 'TƯỚC' }] }
+            { jp: '鉛筆を削ります。', vn: 'Gọt bút chì.', furigana: [{ kanji: '鉛筆', reading: 'えんぴつ', meaning: 'DUYÊN BÚT' }, { kanji: '削', reading: 'けず', meaning: 'TƯỚC' }] },
+            { jp: '亜鉛は体に必要です。', vn: 'Kẽm cần thiết cho cơ thể.', furigana: [{ kanji: '亜鉛', reading: 'あえん', meaning: 'Á DUYÊN' }, { kanji: '体', reading: 'からだ', meaning: 'THỂ' }, { kanji: '必要', reading: 'ひつよう', meaning: 'TẤT YẾU' }] },
+            { jp: '鉛筆の芯は黒鉛です。', vn: 'Ruột bút chì là than chì.', furigana: [{ kanji: '鉛筆', reading: 'えんぴつ', meaning: 'DUYÊN BÚT' }, { kanji: '芯', reading: 'しん', meaning: 'TÂM' }, { kanji: '黒鉛', reading: 'こくえん', meaning: 'HẮC DUYÊN' }] },
+            { jp: '空が鉛色です。', vn: 'Bầu trời màu xám chì.', furigana: [{ kanji: '空', reading: 'そら', meaning: 'KHÔNG' }, { kanji: '鉛色', reading: 'なまりいろ', meaning: 'DUYÊN SẮC' }] }
           ]
         },
         {
@@ -7170,7 +7189,10 @@ export const lesson2Data: LessonDetail = {
           examples: ['筆 (ふで) - Bút lông', '鉛筆 (えんぴつ) - Bút chì', '筆記 (ひっき) - Ghi chép'],
           exampleSentences: [
             { jp: '筆で字を書きます。', vn: 'Viết chữ bằng bút lông.', furigana: [{ kanji: '筆', reading: 'ふで', meaning: 'BÚT' }, { kanji: '字', reading: 'じ', meaning: 'TỰ' }, { kanji: '書', reading: 'か', meaning: 'THƯ' }] },
-            { jp: '筆記試験があります。', vn: 'Có thi viết.', furigana: [{ kanji: '筆記試験', reading: 'ひっきしけん', meaning: 'BÚT KÝ THÍ NGHIỆM' }] }
+            { jp: '筆記試験があります。', vn: 'Có thi viết.', furigana: [{ kanji: '筆記試験', reading: 'ひっきしけん', meaning: 'BÚT KÝ THÍ NGHIỆM' }] },
+            { jp: 'この記事の筆者は誰ですか。', vn: 'Tác giả bài viết này là ai?', furigana: [{ kanji: '記事', reading: 'きじ', meaning: 'KÍ SỰ' }, { kanji: '筆者', reading: 'ひっしゃ', meaning: 'BÚT GIẢ' }, { kanji: '誰', reading: 'だれ', meaning: 'THÙY' }] },
+            { jp: '父に万年筆をもらいました。', vn: 'Tôi được bố tặng bút máy.', furigana: [{ kanji: '父', reading: 'ちち', meaning: 'PHỤ' }, { kanji: '万年筆', reading: 'まんねんひつ', meaning: 'VẠN NIÊN BÚT' }] },
+            { jp: '新しい筆箱を買います。', vn: 'Tôi mua hộp bút mới.', furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '筆箱', reading: 'ふでばこ', meaning: 'BÚT TƯƠNG' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }] }
           ]
         }
       ],
@@ -7269,7 +7291,8 @@ export const lesson2Data: LessonDetail = {
             { jp: '鍵をかけます。', vn: 'Khóa cửa.', furigana: [{ kanji: '鍵', reading: 'かぎ', meaning: 'KIỆN' }] },
             { jp: '鍵を開けます。', vn: 'Mở khóa.', furigana: [{ kanji: '鍵', reading: 'かぎ', meaning: 'KIỆN' }, { kanji: '開', reading: 'あ', meaning: 'KHAI' }] },
             { jp: 'ピアノの鍵盤を叩きます。', vn: 'Gõ bàn phím piano.', furigana: [{ kanji: '鍵盤', reading: 'けんばん', meaning: 'KIỆN BÀN' }, { kanji: '叩', reading: 'たた', meaning: 'KHẤU' }] },
-            { jp: '合鍵を作ります。', vn: 'Làm chìa khóa dự phòng.', furigana: [{ kanji: '合鍵', reading: 'あいかぎ', meaning: 'HỢP KIỆN' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }] }
+            { jp: '合鍵を作ります。', vn: 'Làm chìa khóa dự phòng.', furigana: [{ kanji: '合鍵', reading: 'あいかぎ', meaning: 'HỢP KIỆN' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }] },
+            { jp: '鍵を返します。', vn: 'Tôi trả lại chìa khóa.', furigana: [{ kanji: '鍵', reading: 'かぎ', meaning: 'KIỆN' }, { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }] }
           ]
         }
       ],
@@ -7309,7 +7332,9 @@ export const lesson2Data: LessonDetail = {
           exampleSentences: [
             { jp: '時間がありません。', vn: 'Không có thời gian.', furigana: [{ kanji: '時間', reading: 'じかん', meaning: 'THỜI GIAN' }] },
             { jp: '今、何時ですか。', vn: 'Bây giờ là mấy giờ?', furigana: [{ kanji: '今', reading: 'いま', meaning: 'KIM' }, { kanji: '何時', reading: 'なんじ', meaning: 'HÀ THỜI' }] },
-            { jp: '時には休みも必要です。', vn: 'Đôi khi nghỉ ngơi cũng cần thiết.', furigana: [{ kanji: '時', reading: 'とき', meaning: 'THỜI' }, { kanji: '休', reading: 'やす', meaning: 'HƯU' }, { kanji: '必要', reading: 'ひつよう', meaning: 'TẤT YẾU' }] }
+            { jp: '時には休みも必要です。', vn: 'Đôi khi nghỉ ngơi cũng cần thiết.', furigana: [{ kanji: '時', reading: 'とき', meaning: 'THỜI' }, { kanji: '休', reading: 'やす', meaning: 'HƯU' }, { kanji: '必要', reading: 'ひつよう', meaning: 'TẤT YẾU' }] },
+            { jp: '日時を決めます。', vn: 'Quyết định ngày giờ.', furigana: [{ kanji: '日時', reading: 'にちじ', meaning: 'NHẬT THỜI' }, { kanji: '決', reading: 'き', meaning: 'QUYẾT' }] },
+            { jp: '江戸時代が好きです。', vn: 'Tôi thích thời đại Edo.', furigana: [{ kanji: '江戸時代', reading: 'えどじだい', meaning: 'GIANG HỘ THỜI ĐẠI' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }] }
           ]
         },
         {
@@ -7318,7 +7343,9 @@ export const lesson2Data: LessonDetail = {
           exampleSentences: [
             { jp: '旅行の計画を立てます。', vn: 'Lập kế hoạch du lịch.', furigana: [{ kanji: '旅行', reading: 'りょこう', meaning: 'LỮ HÀNH' }, { kanji: '計画', reading: 'けいかく', meaning: 'KẾ HOẠCH' }, { kanji: '立', reading: 'た', meaning: 'LẬP' }] },
             { jp: '計算が速いです。', vn: 'Tính toán nhanh.', furigana: [{ kanji: '計算', reading: 'けいさん', meaning: 'KẾ TOÁN' }, { kanji: '速', reading: 'はや', meaning: 'TỐC' }] },
-            { jp: '体温を計ります。', vn: 'Đo nhiệt độ cơ thể.', furigana: [{ kanji: '体温', reading: 'たいおん', meaning: 'THỂ ÔN' }, { kanji: '計', reading: 'はか', meaning: 'KẾ' }] }
+            { jp: '体温を計ります。', vn: 'Đo nhiệt độ cơ thể.', furigana: [{ kanji: '体温', reading: 'たいおん', meaning: 'THỂ ÔN' }, { kanji: '計', reading: 'はか', meaning: 'KẾ' }] },
+            { jp: 'お会計をお願いします。', vn: 'Làm ơn tính tiền.', furigana: [{ kanji: '会計', reading: 'かいけい', meaning: 'HỘI KẾ' }, { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }] },
+            { jp: '合計はいくらですか。', vn: 'Tổng cộng là bao nhiêu?', furigana: [{ kanji: '合計', reading: 'ごうけい', meaning: 'HỢP KẾ' }] }
           ]
         }
       ],
@@ -7556,7 +7583,11 @@ export const lesson2Data: LessonDetail = {
           kanji: '車', onyomi: 'シャ (sha)', kunyomi: 'くるま (kuruma)', meaning: 'Xe cộ', sinoVietnamese: 'XA', strokes: 7, jlpt: 'N5', radicals: '車 (xa)', components: [{ char: '車', meaning: 'xe' }], mnemonic: 'Hình ảnh chiếc xe nhìn từ trên cao.',
           examples: ['電車 (でんしゃ) - Xe điện', '自転車 (じてんしゃ) - Xe đạp', '車 (くるま) - Ô tô'],
           exampleSentences: [
-            { jp: '車で行きます。', vn: 'Tôi đi bằng ô tô.', furigana: [{ kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] }
+            { jp: '車で行きます。', vn: 'Tôi đi bằng ô tô.', furigana: [{ kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
+            { jp: '電車に乗ります。', vn: 'Tôi lên tàu điện.', furigana: [{ kanji: '電車', reading: 'でんしゃ', meaning: 'ĐIỆN XA' }, { kanji: '乗', reading: 'の', meaning: 'THỪA' }] },
+            { jp: '自転車で学校へ行きます。', vn: 'Tôi đi học bằng xe đạp.', furigana: [{ kanji: '自転車', reading: 'じてんしゃ', meaning: 'TỰ CHUYỂN XA' }, { kanji: '学校', reading: 'がっこう', meaning: 'HỌC HIỆU' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
+            { jp: '新車を買いました。', vn: 'Tôi đã mua xe mới.', furigana: [{ kanji: '新車', reading: 'しんしゃ', meaning: 'TÂN XA' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }] },
+            { jp: '車道を歩かないでください。', vn: 'Đừng đi bộ dưới lòng đường.', furigana: [{ kanji: '車道', reading: 'しゃどう', meaning: 'XA ĐẠO' }, { kanji: '歩', reading: 'ある', meaning: 'BỘ' }] }
           ]
         }
       ],
@@ -7902,7 +7933,9 @@ export const lesson2Data: LessonDetail = {
           exampleSentences: [
             { jp: '世界中を旅行したいです。', vn: 'Tôi muốn du lịch vòng quanh thế giới.', furigana: [{ kanji: '世界中', reading: 'せかいじゅう', meaning: 'THẾ GIỚI TRUNG' }, { kanji: '旅行', reading: 'りょこう', meaning: 'LỮ HÀNH' }] },
             { jp: 'お世話になりました。', vn: 'Cảm ơn đã giúp đỡ.', furigana: [{ kanji: '世話', reading: 'せわ', meaning: 'THẾ THOẠI' }] },
-            { jp: '世の中は広いです。', vn: 'Thế gian rộng lớn.', furigana: [{ kanji: '世', reading: 'よ', meaning: 'THẾ' }, { kanji: '中', reading: 'なか', meaning: 'TRUNG' }, { kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }] }
+            { jp: '世の中は広いです。', vn: 'Thế gian rộng lớn.', furigana: [{ kanji: '世', reading: 'よ', meaning: 'THẾ' }, { kanji: '中', reading: 'なか', meaning: 'TRUNG' }, { kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }] },
+            { jp: '若い世代が大切です。', vn: 'Thế hệ trẻ rất quan trọng.', furigana: [{ kanji: '若', reading: 'わか', meaning: 'NHƯỢC' }, { kanji: '世代', reading: 'せだい', meaning: 'THẾ ĐẠI' }, { kanji: '大切', reading: 'たいせつ', meaning: 'ĐẠI THIẾT' }] },
+            { jp: '今は二十一世紀です。', vn: 'Bây giờ là thế kỷ 21.', furigana: [{ kanji: '今', reading: 'いま', meaning: 'KIM' }, { kanji: '二十一世紀', reading: 'にじゅういっせいき', meaning: 'NHỊ THẬP NHẤT THẾ KỈ' }] }
           ]
         },
         {
@@ -7911,7 +7944,9 @@ export const lesson2Data: LessonDetail = {
           exampleSentences: [
             { jp: '先生と話します。', vn: 'Nói chuyện với giáo viên.', furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }] },
             { jp: '面白い話を聞きました。', vn: 'Đã nghe một câu chuyện thú vị.', furigana: [{ kanji: '面白', reading: 'おもしろ', meaning: 'DIỆN BẠCH' }, { kanji: '話', reading: 'はなし', meaning: 'THOẠI' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }] },
-            { jp: '電話をかけてください。', vn: 'Hãy gọi điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] }
+            { jp: '電話をかけてください。', vn: 'Hãy gọi điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] },
+            { jp: '日本語の会話を練習します。', vn: 'Tôi luyện tập hội thoại tiếng Nhật.', furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '会話', reading: 'かいわ', meaning: 'HỘI THOẠI' }, { kanji: '練習', reading: 'れんしゅう', meaning: 'LUYỆN TẬP' }] },
+            { jp: '昔話を読みます。', vn: 'Tôi đọc truyện cổ tích.', furigana: [{ kanji: '昔話', reading: 'むかしばなし', meaning: 'TÍCH THOẠI' }, { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }] }
           ]
         }
       ],
