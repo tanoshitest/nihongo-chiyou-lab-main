@@ -237,7 +237,9 @@ export const generateTestPDF = (
       pdf.setTextColor(0, 0, 0); // Force Black
       pdf.text(headerTextSafe, pageWidth / 2, 15, { align: 'center' });
     }
-  }).save();
+    // Save manually here to ensure changes are applied
+    pdf.save(`${testName.replace(/\s+/g, '_')}_${lessonRange.replace(/\s+/g, '_')}_De_${testNumber}.pdf`);
+  });
 };
 
 function removeVietnameseTones(str: string) {
