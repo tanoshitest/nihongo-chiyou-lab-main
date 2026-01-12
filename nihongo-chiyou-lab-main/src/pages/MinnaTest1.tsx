@@ -5,9 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
-import { CheckCircle2, XCircle, AlertCircle, FileText } from "lucide-react";
+import { CheckCircle2, XCircle, AlertCircle, FileText, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ALL_TESTS, ALL_GRAMMAR_TESTS, Question } from "@/data/minnaTest1Data";
+import { generateTestPDF } from "@/lib/pdfExport";
 
 // Helper to parse Furigana text: 
 // 1. [先生|せんせい] -> <ruby>先生<rt>せんせい</rt></ruby>
@@ -230,7 +231,7 @@ const MinnaTest1 = () => {
                     </div>
 
                     {/* Exam Selector */}
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 flex-wrap">
                         {[1, 2, 3].map(id => (
                             <Button
                                 key={id}
@@ -245,6 +246,19 @@ const MinnaTest1 = () => {
                                 Đề {id}
                             </Button>
                         ))}
+
+                        {/* PDF Download Button */}
+                        <Button
+                            variant="outline"
+                            className="gap-2 border-blue-500 text-blue-600 hover:bg-blue-50 hover:text-blue-700"
+                            onClick={() => {
+                                const testType = data[0]?.section?.includes("Mondai") ? "Kiểm tra từ vựng" : "Kiểm tra ngữ pháp";
+                                generateTestPDF(data, testType, "Bài 1 - 2", examId);
+                            }}
+                        >
+                            <Download className="w-4 h-4" />
+                            Tải PDF
+                        </Button>
                     </div>
                 </div>
 
