@@ -49,7 +49,7 @@ export const generateTestPDF = (
           margin-left: 30mm; /* 3cm left margin */
           margin-right: 15mm;
           margin-top: 15mm;
-          margin-bottom: 15mm;
+          margin-bottom: 15mm; /* Same as top */
         }
         body::after {
           content: "Đề thi được tạo bởi tiengnhatvuive.com";
@@ -68,21 +68,6 @@ export const generateTestPDF = (
           margin-bottom: 20px;
           padding-bottom: 10px;
           border-bottom: 2px solid #000;
-        }
-        .header h1 {
-          font-size: 14pt;
-          font-weight: bold;
-          margin: 0;
-          letter-spacing: 1px;
-        }
-        .section-title {
-          font-size: 12pt;
-          font-weight: bold;
-          margin-top: 20px;
-          margin-bottom: 10px;
-          color: #008001;
-          border-bottom: 1px solid #ccc;
-          padding-bottom: 5px;
         }
         .question {
           margin-bottom: 15px;
@@ -133,14 +118,7 @@ export const generateTestPDF = (
   `;
 
   // Group questions by section
-  let currentSection = '';
   questions.forEach((q, idx) => {
-    // Section header
-    if (q.section && q.section !== currentSection) {
-      currentSection = q.section;
-      html += `<div class="section-title">${q.section}</div>`;
-    }
-
     // Question
     const questionText = cleanText(q.question);
     html += `
