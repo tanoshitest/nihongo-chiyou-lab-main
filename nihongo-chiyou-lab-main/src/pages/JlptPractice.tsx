@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Clock, FileText, Play, Filter, BookOpen } from "lucide-react";
+import { Clock, FileText, Play, Filter, BookOpen, Headphones } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { JLPT_PRACTICE_EXAMS, PracticeExam } from "@/data/jlptPracticeData";
 
@@ -39,6 +39,7 @@ const JlptPractice = () => {
   const vocabExams = levelExams.filter(exam => exam.category === "vocabulary");
   const grammarExams = levelExams.filter(exam => exam.category === "grammar");
   const readingExams = levelExams.filter(exam => exam.category === "reading");
+  const listeningExams = levelExams.filter(exam => exam.category === "listening");
 
   const handleStartExam = (exam: PracticeExam) => {
     // Navigate to exam runner with identifier
@@ -69,6 +70,7 @@ const JlptPractice = () => {
                   {exam.category === "vocabulary" && <span className="text-xl">字</span>}
                   {exam.category === "grammar" && <span className="text-xl">文</span>}
                   {exam.category === "reading" && <BookOpen className="w-6 h-6" />}
+                  {exam.category === "listening" && <Headphones className="w-6 h-6" />}
                 </div>
 
                 {/* Content */}
@@ -147,7 +149,7 @@ const JlptPractice = () => {
 
           {/* Tabs */}
           <Tabs defaultValue="kanji" className="space-y-6">
-            <TabsList className="grid w-full grid-cols-4 h-auto p-1 bg-muted/50">
+            <TabsList className="grid w-full grid-cols-5 h-auto p-1 bg-muted/50">
               <TabsTrigger value="kanji" className="py-2.5 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">
                 Kanji
               </TabsTrigger>
@@ -159,6 +161,9 @@ const JlptPractice = () => {
               </TabsTrigger>
               <TabsTrigger value="reading" className="py-2.5 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">
                 Đọc hiểu
+              </TabsTrigger>
+              <TabsTrigger value="listening" className="py-2.5 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">
+                Nghe hiểu
               </TabsTrigger>
             </TabsList>
 
@@ -204,6 +209,17 @@ const JlptPractice = () => {
                 <p className="text-muted-foreground mt-1">Rèn luyện kỹ năng đọc hiểu văn bản ngắn và dài.</p>
               </div>
               {renderExamList(readingExams)}
+            </TabsContent>
+
+            <TabsContent value="listening" className="focus-visible:outline-none space-y-4 animate-in fade-in slide-in-from-bottom-2 duration-300">
+              <div className="mb-4">
+                <h2 className="text-xl font-bold flex items-center gap-2 text-foreground">
+                  <Headphones className="w-8 h-8 bg-primary/10 text-primary p-1.5 rounded-lg" />
+                  Luyện tập Nghe hiểu {selectedLevel}
+                </h2>
+                <p className="text-muted-foreground mt-1">Luyện nghe các đoạn hội thoại và bài phát biểu.</p>
+              </div>
+              {renderExamList(listeningExams)}
             </TabsContent>
           </Tabs>
 

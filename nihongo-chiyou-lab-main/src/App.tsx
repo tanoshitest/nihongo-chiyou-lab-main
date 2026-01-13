@@ -18,6 +18,7 @@ import MinnaTest9 from "./pages/MinnaTest9";
 import MinnaTest10 from "./pages/MinnaTest10";
 import MinnaTest11 from "./pages/MinnaTest11";
 import MinnaTest12 from "./pages/MinnaTest12";
+import MinnaTestN4 from "./pages/MinnaTestN4";
 import Particles from "./pages/Particles";
 import Forms from "./pages/Forms";
 import Adverbs from "./pages/Adverbs";
@@ -62,6 +63,7 @@ const App = () => (
           <Route path="/minna/test-10" element={<MinnaTest10 />} />
           <Route path="/minna/test-11" element={<MinnaTest11 />} />
           <Route path="/minna/test-12" element={<MinnaTest12 />} />
+          <Route path="/minna/test-n4/:id" element={<MinnaTestN4 />} />
           <Route path="/minna/particles" element={<Particles />} />
           <Route path="/minna/forms" element={<Forms />} />
           <Route path="/minna/adverbs" element={<Adverbs />} />

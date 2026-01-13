@@ -2,7 +2,7 @@ export interface PracticeExam {
     id: string;
     title: string;
     level: "N5" | "N4" | "N3" | "N2" | "N1";
-    category: "kanji" | "vocabulary" | "grammar" | "reading";
+    category: "kanji" | "vocabulary" | "grammar" | "reading" | "listening";
     totalQuestions: number;
     duration: number; // in minutes
     difficulty: "Dễ" | "Trung bình" | "Khó";
@@ -199,6 +199,26 @@ export const JLPT_PRACTICE_EXAMS: PracticeExam[] = [
         totalQuestions: 20,
         duration: 40,
         difficulty: "Khó"
+    },
+
+    // --- N5 LISTENING ---
+    {
+        id: generateId("N5", "listening", 1),
+        title: "Đề luyện tập N5 - Nghe hiểu 1",
+        level: "N5",
+        category: "listening",
+        totalQuestions: 10,
+        duration: 20,
+        difficulty: "Dễ"
+    },
+    {
+        id: generateId("N5", "listening", 2),
+        title: "Đề luyện tập N5 - Nghe hiểu 2",
+        level: "N5",
+        category: "listening",
+        totalQuestions: 10,
+        duration: 20,
+        difficulty: "Trung bình"
     },
 
     // Other levels placeholders

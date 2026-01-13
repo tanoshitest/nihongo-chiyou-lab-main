@@ -33,10 +33,16 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
   if (lesson.id === 10015) linkUrl = "/minna/time-expressions";
   if (lesson.id === 10016) linkUrl = "/minna/counters";
 
+  // N4 Tests (IDs 10020 - 10032 mapping to Test 13 - 25)
+  if (lesson.id >= 10020 && lesson.id <= 10050) {
+    const testId = lesson.id - 10007; // 10020 -> 13
+    linkUrl = `/minna/test-n4/${testId}`;
+  }
+
   return (
     <Card className={cn(
-      "group hover:shadow-lg transition-all duration-300 h-full flex flex-col",
-      isTest
+      "group hover:shadow-lg transition-all duration-300 h-full flex flex-col min-h-[220px]",
+      isTest || (lesson.id >= 10020 && lesson.id <= 10050)
         ? "border-orange-500/50 hover:border-orange-500 bg-orange-50/10"
         : "hover:border-[#008001]/50"
     )}>
@@ -44,34 +50,34 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
         <div className="flex items-center justify-between">
           <span className={cn(
             "text-xs font-medium uppercase tracking-wide",
-            isTest ? "text-orange-600" : "text-muted-foreground"
+            isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? "text-orange-600" : "text-muted-foreground"
           )}>
-            {isTest ? "Kiểm tra" : isReference ? "Tổng hợp" : `Bài ${lesson.id}`}
+            {isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? "Kiểm tra" : isReference ? "Tổng hợp" : `Bài ${lesson.id}`}
           </span>
-          {isTest ? (
+          {isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? (
             <ClipboardCheck className="w-4 h-4 text-orange-600 opacity-60 group-hover:opacity-100 transition-opacity" />
           ) : (
             <BookOpen className="w-4 h-4 text-[#008001] opacity-60 group-hover:opacity-100 transition-opacity" />
           )}
         </div>
-        <CardTitle className={cn("text-lg", isTest ? "text-orange-700" : "text-[#008001]")}>
+        <CardTitle className={cn("text-lg", isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? "text-orange-700" : "text-[#008001]")}>
           {lesson.title}
         </CardTitle>
       </CardHeader>
       <CardContent className="pb-3 flex-1">
-        <p className="text-sm text-muted-foreground">{lesson.description}</p>
+        <p className="text-sm text-muted-foreground line-clamp-2">{lesson.description}</p>
       </CardContent>
       <CardFooter>
         <Link to={linkUrl} className="w-full">
           <Button
             className={cn(
               "w-full text-white",
-              isTest
+              isTest || (lesson.id >= 10020 && lesson.id <= 10050)
                 ? "bg-orange-600 hover:bg-orange-700"
                 : "bg-[#008001] hover:bg-[#006801]"
             )}
           >
-            {isTest ? "Làm bài" : "Vào học"}
+            {isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? "Làm bài" : "Vào học"}
           </Button>
         </Link>
       </CardFooter>
@@ -265,76 +271,60 @@ const MinnaNoNihongo = () => {
     }
   }
 
-  // Insert Particles (Trợ từ) after Test 12
-  // We can find Test 12 index
-  const test12Index = lessonsN5WithTest.findIndex(l => l.id === 10002);
-  if (test12Index !== -1 && !lessonsN5WithTest.find(l => l.id === 10010)) {
-    lessonsN5WithTest.splice(test12Index + 1, 0, {
-      id: 10010,
-      title: "Trợ từ",
-      description: "Tổng hợp 17 trợ từ cơ bản"
-    });
-  }
+  // --- REFERENCE LESSONS SETUP ---
+  const lessonsReference: LessonSummary[] = [
+    { id: 10010, title: "Trợ từ", description: "Tổng hợp 17 trợ từ cơ bản" },
+    { id: 10011, title: "Cách dùng các thể", description: "Tổng hợp 9 thể động từ" },
+    { id: 10012, title: "Cách dùng phó từ", description: "Tổng hợp phó từ quan trọng" },
+    { id: 10013, title: "Cách dùng liên từ", description: "Tổng hợp liên từ quan trọng" },
+    { id: 10014, title: "Số đếm", description: "Cách đếm số trong tiếng Nhật" },
+    { id: 10015, title: "Cách nói thời gian", description: "Ngày, giờ, tháng, năm..." },
+    { id: 10016, title: "Đếm đồ vật", description: "Các đơn vị đếm thông dụng" },
+  ];
 
-  // Insert Forms (Cách dùng các thể) after Particles
-  const particlesIndex = lessonsN5WithTest.findIndex(l => l.id === 10010);
-  if (particlesIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10011)) {
-    lessonsN5WithTest.splice(particlesIndex + 1, 0, {
-      id: 10011,
-      title: "Cách dùng các thể",
-      description: "Tổng hợp 9 thể động từ"
-    });
-  }
+  // --- N4 LESSONS SETUP ---
+  const lessonsN4WithTest = [...lessonsN4];
 
-  // Insert Adverbs (Phó từ) after Forms
-  const formsIndex = lessonsN5WithTest.findIndex(l => l.id === 10011);
-  if (formsIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10012)) {
-    lessonsN5WithTest.splice(formsIndex + 1, 0, {
-      id: 10012,
-      title: "Cách dùng phó từ",
-      description: "Tổng hợp phó từ quan trọng"
-    });
-  }
+  // Helper to insert test N4
+  const insertN4Test = (lessonIdBefore: number, testId: number, title: string, desc: string) => {
+    // Don't insert if already exists
+    if (lessonsN4WithTest.find(l => l.id === testId)) return;
 
-  // Insert Conjunctions (Liên từ) after Adverbs
-  const adverbsIndex = lessonsN5WithTest.findIndex(l => l.id === 10012);
-  if (adverbsIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10013)) {
-    lessonsN5WithTest.splice(adverbsIndex + 1, 0, {
-      id: 10013,
-      title: "Cách dùng liên từ",
-      description: "Tổng hợp liên từ quan trọng"
-    });
-  }
+    const idx = lessonsN4WithTest.findIndex(l => l.id === lessonIdBefore);
+    if (idx !== -1) {
+      lessonsN4WithTest.splice(idx + 1, 0, {
+        id: testId,
+        title: title,
+        description: desc
+      });
+    }
+  };
 
-  // Insert Numbers (Số đếm) after Conjunctions
-  const conjunctionsIndex = lessonsN5WithTest.findIndex(l => l.id === 10013);
-  if (conjunctionsIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10014)) {
-    lessonsN5WithTest.splice(conjunctionsIndex + 1, 0, {
-      id: 10014,
-      title: "Số đếm",
-      description: "Cách đếm số trong tiếng Nhật"
-    });
-  }
+  // Test 13: 26, 27
+  insertN4Test(27, 10020, "Kiểm tra 13", "Quiz bài 26 27");
+  // Test 14: 28, 29
+  insertN4Test(29, 10021, "Kiểm tra 14", "Quiz bài 28 29");
+  // Test 15: 30, 31
+  insertN4Test(31, 10022, "Kiểm tra 15", "Quiz bài 30 31");
+  // Test 16: 32, 33
+  insertN4Test(33, 10023, "Kiểm tra 16", "Quiz bài 32 33");
+  // Test 17: 34, 35
+  insertN4Test(35, 10024, "Kiểm tra 17", "Quiz bài 34 35");
+  // Test 18: 36, 37
+  insertN4Test(37, 10025, "Kiểm tra 18", "Quiz bài 36 37");
+  // Test 19: 38, 39
+  insertN4Test(39, 10026, "Kiểm tra 19", "Quiz bài 38 39");
+  // Test 20: 40, 41
+  insertN4Test(41, 10027, "Kiểm tra 20", "Quiz bài 40 41");
+  // Test 21: 42, 43
+  insertN4Test(43, 10028, "Kiểm tra 21", "Quiz bài 42 43");
+  // Test 22: 44, 45
+  insertN4Test(45, 10029, "Kiểm tra 22", "Quiz bài 44 45");
+  // Test 23: 46, 47
+  insertN4Test(47, 10030, "Kiểm tra 23", "Quiz bài 46 47");
+  // Test 24: 48, 49, 50
+  insertN4Test(50, 10031, "Kiểm tra 24", "Quiz bài 48 49 50");
 
-  // Insert Time Expressions (Cách nói thời gian) after Numbers
-  const numbersIndex = lessonsN5WithTest.findIndex(l => l.id === 10014);
-  if (numbersIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10015)) {
-    lessonsN5WithTest.splice(numbersIndex + 1, 0, {
-      id: 10015,
-      title: "Cách nói thời gian",
-      description: "Ngày, giờ, tháng, năm..."
-    });
-  }
-
-  // Insert Counters (Đếm đồ vật) after Time Expressions
-  const timeIndex = lessonsN5WithTest.findIndex(l => l.id === 10015);
-  if (timeIndex !== -1 && !lessonsN5WithTest.find(l => l.id === 10016)) {
-    lessonsN5WithTest.splice(timeIndex + 1, 0, {
-      id: 10016,
-      title: "Đếm đồ vật",
-      description: "Các đơn vị đếm thông dụng"
-    });
-  }
 
   return (
     <Layout>
@@ -351,7 +341,7 @@ const MinnaNoNihongo = () => {
         <main className="container mx-auto px-4 py-8">
           <Tabs defaultValue="n5" className="space-y-8">
             <div className="flex justify-center">
-              <TabsList className="grid w-full max-w-md grid-cols-2 h-12">
+              <TabsList className="grid w-full max-w-md grid-cols-3 h-12">
                 <TabsTrigger
                   value="n5"
                   className="text-base data-[state=active]:bg-[#008001] data-[state=active]:text-white"
@@ -363,6 +353,12 @@ const MinnaNoNihongo = () => {
                   className="text-base data-[state=active]:bg-[#008001] data-[state=active]:text-white"
                 >
                   Sơ cấp 2 (N4)
+                </TabsTrigger>
+                <TabsTrigger
+                  value="reference"
+                  className="text-base data-[state=active]:bg-[#008001] data-[state=active]:text-white"
+                >
+                  Phụ lục
                 </TabsTrigger>
               </TabsList>
             </div>
@@ -380,8 +376,17 @@ const MinnaNoNihongo = () => {
               <LessonSection
                 title="Sơ cấp 2 - Trình độ N4"
                 subtitle="Bài 26 → 50 | Nâng cao ngữ pháp và giao tiếp"
-                lessons={lessonsN4}
+                lessons={lessonsN4WithTest}
                 icon={GraduationCap}
+              />
+            </TabsContent>
+
+            <TabsContent value="reference" className="space-y-8 focus-visible:outline-none">
+              <LessonSection
+                title="Phụ lục - Tổng hợp"
+                subtitle="Các kiến thức bổ trợ quan trọng"
+                lessons={lessonsReference}
+                icon={BookOpen}
               />
             </TabsContent>
           </Tabs>

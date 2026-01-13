@@ -14694,120 +14694,7 @@ export const lesson30Data: LessonDetail = {
   quiz: []
 };
 
-export const lesson31Data: LessonDetail = {
-  id: 31,
-  title: "Bài 31",
-  vocabulary: [
-    { word: 'はじまります[しきが～]', kanji: '始まります[式が～]', romaji: 'hajimarimasu [shiki ga~]', mean: 'bắt đầu [buổi lễ ~]' },
-    { word: 'つづけます', kanji: '続けます', romaji: 'tsuzukemasu', mean: 'tiếp tục' },
-    { word: 'みつけます', kanji: '見つけます', romaji: 'mitsukemasu', mean: 'tìm thấy' },
-    { word: 'うけます[しけんを～]', kanji: '受けます[試験を～]', romaji: 'ukemasu [shiken wo~]', mean: 'thi [kỳ thi]' },
-    { word: 'にゅうがくします[だいがくに～]', kanji: '入学します[大学に～]', romaji: 'nyuugakushimasu [daigaku ni~]', mean: 'nhập học, vào [đại học]' },
-    { word: 'そつぎょうします[だいがくを～]', kanji: '卒業します[大学を～]', romaji: 'sotsugyoushimasu [daigaku wo~]', mean: 'tốt nghiệp [đại học]' },
-    { word: 'しゅっせきします[かいぎに～]', kanji: '出席します[会議に～]', romaji: 'shussekishimasu [kaigi ni~]', mean: 'tham dự [cuộc họp]' },
-    { word: 'きゅうけいします', kanji: '休憩します', romaji: 'kyuukeishimasu', mean: 'nghỉ giải lao' },
-    { word: 'れんきゅう', kanji: '連休', romaji: 'renkyuu', mean: 'ngày nghỉ liền nhau' },
-    { word: 'さくぶん', kanji: '作文', romaji: 'sakubun', mean: 'bài văn' },
-    { word: 'てんらんかい', kanji: '展覧会', romaji: 'tenrankai', mean: 'triển lãm' },
-    { word: 'けっこんしき', kanji: '結婚式', romaji: 'kekkonshiki', mean: 'lễ cưới, đám cưới' },
-    { word: '[お]そうしき', kanji: '[お]葬式', romaji: '[o]soushiki', mean: 'đám tang' },
-    { word: 'しき', kanji: '式', romaji: 'shiki', mean: 'lễ, đám' },
-    { word: 'ほんしゃ', kanji: '本社', romaji: 'honsha', mean: 'trụ sở chính' },
-    { word: 'してん', kanji: '支店', romaji: 'shiten', mean: 'chi nhánh' },
-    { word: 'きょうかい', kanji: '教会', romaji: 'kyoukai', mean: 'nhà thờ' },
-    { word: 'だいがくいん', kanji: '大学院', romaji: 'daigakuin', mean: 'cao học' },
-    { word: 'どうぶつえん', kanji: '動物園', romaji: 'doubutsuen', mean: 'sở thú' },
-    { word: 'おんせん', kanji: '温泉', romaji: 'onsen', mean: 'suối nước nóng' },
-    { word: 'おきゃく[さん]', kanji: 'お客[さん]', romaji: 'okyakusan', mean: 'khách hàng' },
-    { word: 'だれか', kanji: 'だれか', romaji: 'dareka', mean: 'ai đó' },
-    { word: '～の ほう', kanji: '～の 方', romaji: '~no hou', mean: 'phía ~, hướng ~' },
-    { word: 'ずっと', kanji: 'ずっと', romaji: 'zutto', mean: 'suốt, liền' },
-    { word: 'のこります', kanji: '残ります', romaji: 'nokorimasu', mean: 'ở lại, còn lại' },
-    { word: 'つきに', kanji: '月に', romaji: 'tsuki ni', mean: 'một tháng' },
-    { word: 'ふつうの', kanji: '普通の', romaji: 'futsuu no', mean: 'thường, thông thường' },
-    { word: 'インターネット', kanji: 'インターネット', romaji: 'inta-netto', mean: 'Internet' },
-    { word: 'むら', kanji: '村', romaji: 'mura', mean: 'làng' },
-    { word: 'えいがかん', kanji: '映画館', romaji: 'eigakan', mean: 'rạp chiếu phim' },
-    { word: 'いや[な]', kanji: '嫌[な]', romaji: 'iya [na]', mean: 'chán, ghét, không chấp nhận được' },
-    { word: 'そら', kanji: '空', romaji: 'sora', mean: 'bầu trời' },
-    { word: 'とじます', kanji: '閉じます', romaji: 'tojimasu', mean: 'đóng, nhắm' },
-    { word: 'とかい', kanji: '都会', romaji: 'tokai', mean: 'thành phố lớn' },
-    { word: 'こどもたち', kanji: '子どもたち', romaji: 'kodomotachi', mean: 'trẻ em, bọn trẻ' },
-    { word: 'じゆうに', kanji: '自由に', romaji: 'jiyuu ni', mean: 'tự do' },
-    { word: 'せかいじゅう', kanji: '世界中', romaji: 'sekaijuu', mean: 'khắp thế giới' },
-    { word: 'あつまります', kanji: '集まります', romaji: 'atsumarimasu', mean: 'tập trung' },
-    { word: 'うつくしい', kanji: '美しい', romaji: 'utsukushii', mean: 'đẹp' },
-    { word: 'しぜん', kanji: '自然', romaji: 'shizen', mean: 'tự nhiên, thiên nhiên' },
-    { word: 'すばらしさ', kanji: 'すばらしさ', romaji: 'subarashisa', mean: 'tuyệt vời' },
-    { word: 'きが つきます', kanji: '気が つきます', romaji: 'ki ga tsukimasu', mean: 'nhận ra' },
-    { word: 'いがく', kanji: '医学', romaji: 'igaku', mean: 'y học' },
-    { word: 'やくがく', kanji: '薬学', romaji: 'yakugaku', mean: 'dược học' },
-    { word: 'かがく', kanji: '化学', romaji: 'kagaku', mean: 'hóa học' },
-    { word: 'せいかがく', kanji: '生化学', romaji: 'seikagaku', mean: 'hóa sinh học' },
-    { word: 'せいぶつがく', kanji: '生物学', romaji: 'seibutsugaku', mean: 'sinh vật học' },
-    { word: 'のうがく', kanji: '農学', romaji: 'nougaku', mean: 'nông học' },
-    { word: 'ちがく', kanji: '地学', romaji: 'chigaku', mean: 'địa chất học' },
-    { word: 'ちりがく', kanji: '地理学', romaji: 'chirigaku', mean: 'địa lý học' },
-    { word: 'すうがく', kanji: '数学', romaji: 'suugaku', mean: 'toán học' },
-    { word: 'ぶつりがく', kanji: '物理学', romaji: 'butsurigaku', mean: 'vật lý học' },
-    { word: 'こうがく', kanji: '工学', romaji: 'kougaku', mean: 'kỹ thuật' },
-    { word: 'どぼくこうがく', kanji: '土木工学', romaji: 'dobokukougaku', mean: 'kỹ thuật xây dựng' },
-    { word: 'でんしこうがく', kanji: '電子工学', romaji: 'denshikougaku', mean: 'kỹ thuật điện tử' },
-    { word: 'でんきこうがく', kanji: '電気工学', romaji: 'denkikougaku', mean: 'kỹ thuật điện' },
-    { word: 'きかいこうがく', kanji: '機械工学', romaji: 'kikaikougaku', mean: 'kỹ thuật cơ khí' },
-    { word: 'コンピューターこうがく', kanji: 'コンピューター工学', romaji: 'konpyu-ta-kougaku', mean: 'khoa học máy tính' },
-    { word: 'いでんしこうがく', kanji: '遺伝子工学', romaji: 'idenshikougaku', mean: 'kỹ thuật di truyền' },
-    { word: 'けんちくがく', kanji: '建築学', romaji: 'kenchikugaku', mean: 'kiến trúc học' },
-    { word: 'てんもんがく', kanji: '天文学', romaji: 'tenmongaku', mean: 'thiên văn học' },
-    { word: 'かんきょうかがく', kanji: '環境科学', romaji: 'kankyoukagaku', mean: 'khoa học môi trường' },
-    { word: 'せいじがく', kanji: '政治学', romaji: 'seijigaku', mean: 'chính trị học' },
-    { word: 'こくさいかんけいがく', kanji: '国際関係学', romaji: 'kokusaikankeigaku', mean: 'quan hệ quốc tế' },
-    { word: 'ほうりつがく', kanji: '法律学', romaji: 'houritsugaku', mean: 'luật học' },
-    { word: 'けいざいがく', kanji: '経済学', romaji: 'keizaigaku', mean: 'kinh tế học' },
-    { word: 'けいえいがく', kanji: '経営学', romaji: 'keieigaku', mean: 'quản trị kinh doanh' },
-    { word: 'しゃかいがく', kanji: '社会学', romaji: 'shakaigaku', mean: 'xã hội học' },
-    { word: 'きょういくがく', kanji: '教育学', romaji: 'kyouikugaku', mean: 'giáo dục học' },
-    { word: 'ぶんがく', kanji: '文学', romaji: 'bungaku', mean: 'văn học' },
-    { word: 'げんごがく', kanji: '言語学', romaji: 'gengogaku', mean: 'ngôn ngữ học' },
-    { word: 'しんりがく', kanji: '心理学', romaji: 'shinrigaku', mean: 'tâm lý học' },
-    { word: 'てつがく', kanji: '哲学', romaji: 'tetsugaku', mean: 'triết học' },
-    { word: 'しゅうきょうがく', kanji: '宗教学', romaji: 'shuukyougaku', mean: 'tôn giáo học' },
-    { word: 'げいじゅつ', kanji: '芸術', romaji: 'geijutsu', mean: 'nghệ thuật' },
-    { word: 'びじゅつ', kanji: '美術', romaji: 'bijutsu', mean: 'mỹ thuật' },
-    { word: 'おんがく', kanji: '音楽', romaji: 'ongaku', mean: 'âm nhạc' },
-    { word: 'たいいくがく', kanji: '体育学', romaji: 'taiikugaku', mean: 'thể dục học' },
-    { word: 'しんがくします', kanji: '進学します', romaji: 'shingakushimasu', mean: 'học lên (trường cao hơn)' },
-  ],
-  grammar: [
-    {
-      pattern: 'Thể ý chí (Volitional Form)',
-      explanation: 'Cách chia:\n1. Nhóm I: Chuyển hàng "i" trước "masu" thành hàng "o" rồi thêm "u".\n   Ví dụ: かきます → かこう, いそぎます → いそごう\n2. Nhóm II: Bỏ "masu" thêm "you".\n   Ví dụ: たべます → たべよう, みます → みよう\n3. Nhóm III: きます → こよう, します → しよう\n\nCách dùng: Dùng trong thể thông thường thay cho 「～ましょう」 (Rủ rê, đề nghị, hoặc độc thoại).',
-      example: 'ちょっと 休まない？ …うん、休もう。 (Nghỉ một chút không? ...Ừ, nghỉ đi.)\n手伝おうか。 (Để tôi giúp một tay nhé?)'
-    },
-    {
-      pattern: 'V(ý chí) + と 思って います',
-      explanation: 'Biểu thị ý định của người nói.\nKhác với 「～と 思います」 (nghĩ tại thời điểm nói), mẫu câu này diễn tả ý định đã có từ trước và bây giờ vẫn đang giữ ý định đó.',
-      example: '週末は 海に 行こうと 思って います。 (Cuối tuần này tôi định đi biển.)\n今は 銀行へ 行こうと 思って います。 (Bây giờ tôi định đi ngân hàng.)'
-    },
-    {
-      pattern: 'Vる / Vない + つもりです',
-      explanation: 'Biểu thị ý định làm hoặc không làm gì đó.\nQuyết tâm mạnh hơn và cụ thể hơn so với 「～と 思って います」.',
-      example: '国へ 帰っても、柔道を 続ける つもりです。 (Dù về nước tôi vẫn định tiếp tục tập Judo.)\nあしたからは たばこを 吸わない つもりです。 (Từ mai tôi định sẽ không hút thuốc nữa.)'
-    },
-    {
-      pattern: 'Vる / Nの + 予定です',
-      explanation: 'Dự định, kế hoạch (thường là lịch trình đã được sắp xếp).\n"Có kế hoạch...", "Dự kiến..."',
-      example: '7月の 終わりに ドイツへ 出張する 予定です。 (Cuối tháng 7 tôi có lịch đi công tác Đức.)\n旅行は 1週間ぐらいの 予定です。 (Chuyến du lịch dự kiến kéo dài khoảng 1 tuần.)'
-    },
-    {
-      pattern: 'まだ Vて いません',
-      explanation: 'Biểu thị một việc gì đó chưa xảy ra hoặc chưa hoàn thành ở hiện tại.',
-      example: '銀行は まだ 開いて いません。 (Ngân hàng vẫn chưa mở cửa.)\nレポートは もう 書きましたか。 …いいえ、まだ 書いて いません。 (Bạn đã viết xong báo cáo chưa? ...Chưa, tôi vẫn chưa viết.)'
-    }
-  ],
-  kaiwa: [],
-  quiz: []
-};
+
 
 
 
@@ -16469,7 +16356,309 @@ export const lesson46Data: LessonDetail = {
   quiz: []
 };
 
+export const lesson47Data: LessonDetail = {
+  id: 47,
+  title: 'Lesson 47',
+  vocabulary: [
+    { word: 'あつまります [ひとが～]', kanji: '集まります [人が～]', romaji: 'atsumarimasu [hitoga~]', mean: 'tập trung [người ~]' },
+    { word: 'わかれます [ひとが～]', kanji: '別れます [人が～]', romaji: 'wakaremasu [hitoga~]', mean: 'chia tay [người ~]' },
+    { word: 'ながいきします', kanji: '長生きします', romaji: 'nagaikishimasu', mean: 'sống lâu' },
+    { word: 'します [おと/こえが～]', kanji: 'します [音/声が～]', romaji: 'shimasu [oto/koega~]', mean: 'nghe thấy [âm thanh/tiếng ~]' },
+    { word: 'します [あじが～]', kanji: 'します [味が～]', romaji: 'shimasu [ajiga~]', mean: 'có [vị ~]' },
+    { word: 'します [においが～]', kanji: 'します [においが～]', romaji: 'shimasu [nioiga~]', mean: 'có [mùi ~]' },
+    { word: 'さします [かさを～]', kanji: 'さします [傘を～]', romaji: 'sashimasu [kasao~]', mean: 'che [ô]' },
+    { word: 'ひどい', kanji: 'ひどい', romaji: 'hidoi', mean: 'tồi tệ, khủng khiếp' },
+    { word: 'こわい', kanji: '怖い', romaji: 'kowai', mean: 'sợ, đáng sợ' },
+    { word: 'てんきよほう', kanji: '天気予報', romaji: 'tenkeyohou', mean: 'dự báo thời tiết' },
+    { word: 'はっぴょう', kanji: '発表', romaji: 'happyou', mean: 'phát biểu, công bố' },
+    { word: 'じっけん', kanji: '実験', romaji: 'jikken', mean: 'thực nghiệm, thí nghiệm' },
+    { word: 'じんこう', kanji: '人口', romaji: 'jinkou', mean: 'dân số' },
+    { word: 'におい', kanji: 'におい', romaji: 'nioi', mean: 'mùi' },
+    { word: 'かがく', kanji: '科学', romaji: 'kagaku', mean: 'khoa học' },
+    { word: 'いがく', kanji: '医学', romaji: 'igaku', mean: 'y học' },
+    { word: 'ぶんがく', kanji: '文学', romaji: 'bungaku', mean: 'văn học' },
+    { word: 'パトカー', kanji: 'パトカー', romaji: 'patokaa', mean: 'xe cảnh sát (patrol car)' },
+    { word: 'きゅうきゅうしゃ', kanji: '救急車', romaji: 'kyuukyuusha', mean: 'xe cấp cứu' },
+    { word: 'さんせい', kanji: '賛成', romaji: 'sansei', mean: 'tán thành' },
+    { word: 'はんたい', kanji: '反対', romaji: 'hantai', mean: 'phản đối' },
+    { word: 'だんせい', kanji: '男性', romaji: 'dansei', mean: 'nam giới' },
+    { word: 'じょせい', kanji: '女性', romaji: 'josei', mean: 'nữ giới' },
+    { word: 'どうも', kanji: 'どうも', romaji: 'doumo', mean: 'có vẻ như (dùng khi phán đoán)' },
+    { word: '～に よると', kanji: '～に よると', romaji: '~ni yoru to', mean: 'theo ~ (nguồn thông tin)' },
+    // Reference Words
+    { word: 'バリ', kanji: 'バリ', romaji: 'Bari', mean: 'Bali' },
+    { word: 'イラン', kanji: 'イラン', romaji: 'Iran', mean: 'Iran' },
+    { word: 'カリフォルニア', kanji: 'カリフォルニア', romaji: 'Kariforunia', mean: 'California' },
+    { word: 'グアム', kanji: 'グアム', romaji: 'Guamu', mean: 'Guam' },
+    // Kaiwa / Reading
+    { word: 'こいびと', kanji: '恋人', romaji: 'koibito', mean: 'người yêu' },
+    { word: 'こんやくします', kanji: '婚約します', romaji: 'konyakushimasu', mean: 'đính hôn' },
+    { word: 'あいて', kanji: '相手', romaji: 'aite', mean: 'đối phương' },
+    { word: 'しりあいます', kanji: '知り合います', romaji: 'shiriaimasu', mean: 'quen biết' },
+    { word: 'へいきんじゅみょう', kanji: '平均寿命', romaji: 'heikin jumyou', mean: 'tuổi thọ trung bình' },
+    { word: 'くらべます [だんせいと～]', kanji: '比べます [男性と～]', romaji: 'kurabemasu [danseito~]', mean: 'so sánh [với nam giới]' },
+    { word: 'はかせ', kanji: '博士', romaji: 'hakase', mean: 'tiến sĩ' },
+    { word: 'のう', kanji: '脳', romaji: 'nou', mean: 'não' },
+    { word: 'ホルモン', kanji: 'ホルモン', romaji: 'horumon', mean: 'hoóc môn' },
+    { word: 'けしょうひん', kanji: '化粧品', romaji: 'keshouhin', mean: 'mỹ phẩm' },
+    { word: 'しらべ', kanji: '調べ', romaji: 'shirabe', mean: 'điều tra' },
+    { word: 'けしょう', kanji: '化粧', romaji: 'keshou', mean: 'trang điểm (~o shimasu: trang điểm)' },
+    // Onomatopoeia
+    { word: 'ザーザー [ふる]', kanji: 'ザーザー [降る]', romaji: 'zaazaa [furu]', mean: '(mưa) rào rào' },
+    { word: 'ビュービュー [ふく]', kanji: 'ビュービュー [吹く]', romaji: 'byuubyuu [fuku]', mean: '(gió thổi) vù vù' },
+    { word: 'ゴロゴロ [なる]', kanji: 'ゴロゴロ [鳴る]', romaji: 'gorogoro [naru]', mean: '(sấm) ầm ầm' },
+    { word: 'ワンワン [ほえる]', kanji: 'ワンワン [吠える]', romaji: 'wanwan [hoeru]', mean: '(chó sủa) gâu gâu' },
+    { word: 'ニャーニャー [なく]', kanji: 'ニャーニャー [鳴く]', romaji: 'nyaanyaa [naku]', mean: '(mèo kêu) meo meo' },
+    { word: 'カーカー [なく]', kanji: 'カーカー [鳴く]', romaji: 'kaakaa [naku]', mean: '(quạ kêu) quạ quạ' },
+    { word: 'げらげら [わらう]', kanji: 'げらげら [笑う]', romaji: 'geragera [warau]', mean: 'cười ha hả' },
+    { word: 'しくしく [なく]', kanji: 'しくしく [泣く]', romaji: 'shikushiku [naku]', mean: 'khóc thins thít' },
+    { word: 'きょろきょろ [みる]', kanji: 'きょろきょろ [見る]', romaji: 'kyorokyoro [miru]', mean: 'nhìn ngơ ngác' },
+    { word: 'ばくばく [たべる]', kanji: 'ばくばく [食べる]', romaji: 'bakubaku [taberu]', mean: 'ăn ngấu nghiến' },
+    { word: 'ぐうぐう [ねる]', kanji: 'ぐうぐう [寝る]', romaji: 'guuguu [neru]', mean: 'ngủ khò khò' },
+    { word: 'すらすら [よむ]', kanji: 'すらすら [読む]', romaji: 'surasura [yomu]', mean: 'đọc trôi chảy' },
+    { word: 'ざらざら [している]', kanji: 'ざらざら [している]', romaji: 'zarazara [shiteiru]', mean: 'ram ráp' },
+    { word: 'べたべた [している]', kanji: 'べたべた [している]', romaji: 'betabeta [shiteiru]', mean: 'dính nhớp' },
+    { word: 'つるつる [している]', kanji: 'つるつる [している]', romaji: 'tsurutsuru [shiteiru]', mean: 'trơn tuột' }
+  ],
+  grammar: [
+    {
+      pattern: 'Plain form + そうです (Nghe nói)',
+      explanation: 'Truyền đạt lại thông tin nhận được từ nguồn khác mà không thêm quan điểm của người nói.\nNguồn tin thường được dẫn bằng 「～に よると」 (theo ~).\n\nKhác với 「～そうです」 (Bài 43 - Có vẻ/Sắp sửa): \n- L43: 雨が 降りそうです (Có vẻ trời sắp mưa - Quan sát).\n- L47: 雨が 降るそうです (Nghe nói trời sẽ mưa - Thông tin).',
+      example: '天気予報に よると、あしたは 寒く なるそうです。 (Theo dự báo thời tiết thì ngày mai trời sẽ lạnh.)\nバリ島は とても きれいだそうです。 (Nghe nói đảo Bali đẹp lắm.)'
+    },
+    {
+      pattern: 'V / Adj / N (plain form) + ようです (Hình như / Có vẻ)',
+      explanation: 'Diễn tả sự suy đoán mang tính chủ quan của người nói, dựa trên thông tin thu nhận được từ giác quan.\nĐôi khi đi kèm với 「どうも」 để diễn tả sự không chắc chắn.\n\nKhác với 「～そうです」 (Bài 43):\n- ～そうです: Phán đoán trực giác dựa trên thị giác (nhìn thấy -> nghĩ vậy).\n- ～ようです: Phán đoán dựa trên suy luận từ các thông tin thu được (nghe, nhìn, đọc...).',
+      example: '人が 大勢 集まって いますね。…事故の ようですね。パトカーと 救急車が 来て いますよ。 (Đám đông đang tụ tập nhỉ. ...Hình như có tai nạn. Có xe cảnh sát và xe cấp cứu đến kìa.)\nせきも 出るし、頭も 痛い。どうも かぜを ひいたようだ。 (Vừa bị họ lại đau đầu. Hình như tôi bị cảm rồi.)'
+    },
+    {
+      pattern: '声／音／におい／味が します',
+      explanation: 'Diễn tả các hiện tượng cảm nhận được bằng giác quan (thính giác, khứu giác, vị giác).\n- 声が します: Có tiếng (người, động vật).\n- 音が します: Có âm thanh (vật).\n- 味が します: Có vị.\n- においが します: Có mùi.',
+      example: '変な 音が しますね。 (Có âm thanh lạ nhỉ.)\nいい においが しますね。 (Có mùi thơm nhỉ.)'
+    }
+  ],
+  kaiwa: [],
+  quiz: []
+};
+
+export const lesson48Data: LessonDetail = {
+  id: 48,
+  title: 'Lesson 48',
+  vocabulary: [
+    { word: 'おろします [にもつを～]', kanji: '降ろします、下ろします [荷物を～]', romaji: 'oroshimasu [nimotsuo~]', mean: 'cho xuống, hạ xuống [hành lý]' },
+    { word: 'とどけます', kanji: '届けます', romaji: 'todokemasu', mean: 'gửi đến, chuyển đến' },
+    { word: 'せわを します', kanji: '世話を します', romaji: 'sewao shimasu', mean: 'chăm sóc' },
+    { word: 'いや[な]', kanji: '嫌[な]', romaji: 'iya[na]', mean: 'ngán, không thích' },
+    { word: 'きびしい', kanji: '厳しい', romaji: 'kibishii', mean: 'nghiêm khắc, nghiêm ngặt' },
+    { word: 'じゅく', kanji: '塾', romaji: 'juku', mean: 'cơ sở học thêm' },
+    { word: 'スケージュール', kanji: 'スケージュール', romaji: 'sukejuuru', mean: 'lịch trình, thời khóa biểu' },
+    { word: 'せいと', kanji: '生徒', romaji: 'seito', mean: 'học sinh' },
+    { word: 'もの', kanji: '者', romaji: 'mono', mean: 'người (là người thân hoặc cấp dưới)' },
+    { word: 'にゅうかん', kanji: '入管', romaji: 'nyuukan', mean: 'Cục quản lý nhập cảnh' },
+    { word: 'さいにゅうこくビザ', kanji: '再入国ビザ', romaji: 'sainyuukokubiza', mean: 'thị thực tái nhập cảnh' },
+    { word: 'じゆうに', kanji: '自由に', romaji: 'jiyuuni', mean: 'tự do' },
+    { word: '～かん', kanji: '～間', romaji: '~kan', mean: 'trong ~ (dùng để chỉ khoảng thời gian)' },
+    { word: 'いい ことですね', kanji: 'いい ことですね', romaji: 'ii kotodesune', mean: 'Hay quá nhỉ./ Được đấy nhỉ.' },
+    // Kaiwa / Reading
+    { word: 'おいそがしいですか', kanji: 'お忙しいですか', romaji: 'oisogashiidesuka', mean: 'Anh/chị có bận không? (dùng với người trên)' },
+    { word: 'ひさしぶり', kanji: '久しぶり', romaji: 'hisashiburi', mean: 'lâu lắm mới gặp' },
+    { word: 'えいぎょう', kanji: '営業', romaji: 'eigyou', mean: 'kinh doanh, bán hàng' },
+    { word: 'それまでに', kanji: 'それまでに', romaji: 'soremadeni', mean: 'trước thời điểm đó' },
+    { word: 'かまいません', kanji: 'かまいません', romaji: 'kamaimasen', mean: 'Không sao./ Không có vấn đề gì.' },
+    { word: 'たのしみます', kanji: '楽しみます', romaji: 'tanoshimimasu', mean: 'vui, tận hưởng' },
+    { word: 'もともと', kanji: 'もともと', romaji: 'motomoto', mean: 'vốn dĩ' },
+    { word: 'ーせいき', kanji: 'ー世紀', romaji: '-seiki', mean: 'thế kỷ -' },
+    { word: 'かわりを します', kanji: '代わりを します', romaji: 'kawario shimasu', mean: 'thay thế' },
+    { word: 'スピード', kanji: 'スピード', romaji: 'supiido', mean: 'tốc độ (speed)' },
+    { word: 'きょうそうします', kanji: '競走します', romaji: 'kyousoushimasu', mean: 'chạy đua, thi chạy' },
+    { word: 'サーカス', kanji: 'サーカス', romaji: 'saakasu', mean: 'nhào lộn, xiếc (circus)' },
+    { word: 'げい', kanji: '芸', romaji: 'gei', mean: 'trò diễn, tiết mục, tài năng' },
+    { word: 'うつくしい', kanji: '美しい', romaji: 'utsukushii', mean: 'đẹp' },
+    { word: 'すがた', kanji: '姿', romaji: 'sugata', mean: 'dáng điệu, tư thế' },
+    { word: 'こころ', kanji: '心', romaji: 'kokoro', mean: 'trái tim, tấm lòng' },
+    { word: 'とらえます', kanji: 'とらえます', romaji: 'toraemasu', mean: 'giành được, thu, bắt (dùng trừu tượng)' },
+    { word: '～に とって', kanji: '～に とって', romaji: '~ni totte', mean: 'đối với ~' }
+  ],
+  grammar: [
+    {
+      pattern: '使役動詞 (Động từ sai khiến)',
+      explanation: 'Cách chia động từ thể sai khiến (Causative verbs):\n\n1. Nhóm I: Chuyển hàng 「い」 sang hàng 「あ」 + せます\n   Ex: いきます -> いかせます (bắt đi/cho đi)\n       のみます -> のませます (bắt uống/cho uống)\n\n2. Nhóm II: Bỏ 「ます」 + させます\n   Ex: たべます -> たべさせます (bắt ăn/cho ăn)\n       おきます -> おきさせます (bắt dậy/cho dậy)\n\n3. Nhóm III:\n   Ex: きます -> こさせます\n       します -> させます',
+      example: '部長は 加藤さんを 大阪へ 出張させます。 (Trưởng phòng cử anh Kato đi công tác Osaka.)'
+    },
+    {
+      pattern: 'N(người) を V(sai khiến) (Tự động từ)',
+      explanation: 'Cấu trúc dùng với tự động từ (intransitive verb).\nChủ thể của hành động (người bị sai khiến) đi với trợ từ 「を」.\n\nÝ nghĩa: Bắt ai đó làm gì / Cho phép ai đó làm gì.',
+      example: '私は 娘を 自由に 遊ばせました。 (Tôi đã cho con gái vui chơi thỏa thích.)\n先生は 生徒を 走らせました。 (Thầy giáo bắt học sinh chạy.)'
+    },
+    {
+      pattern: 'N(người) に N を V(sai khiến) (Tha động từ)',
+      explanation: 'Cấu trúc dùng với tha động từ (transitive verb).\nChủ thể của hành động (người bị sai khiến) đi với trợ từ 「に」 (để tránh lặp lại hay trợ từ 「を」).\n\nÝ nghĩa: Bắt/Sai ai đó làm việc gì.',
+      example: '朝は 忙しいですから、娘に 朝ごはんの 準備を 手伝わせます。 (Vì buổi sáng bận rộn nên tôi sai (bảo) con gái giúp chuẩn bị bữa sáng.)\n先生は 生徒に 自由に 意見を 言わせました。 (Thầy giáo cho phép học sinh tự do phát biểu ý kiến.)'
+    },
+    {
+      pattern: 'V(sai khiến) て いただけませんか',
+      explanation: 'Xin phép người khác cho mình làm gì đó một cách lịch sự.\n"Anh/Chị có thể cho phép tôi... được không ạ?"\n\nĐây là dạng khiêm nhường và lịch sự hơn của 「～ても いいですか」.\nĐộng từ sai khiến thể hiện hành động của bản thân người nói (được cho phép làm).',
+      example: 'コピー機の 使い方を 教えて いただけませんか。 (Anh/chị làm ơn chỉ cho tôi cách dùng máy photocopy được không ạ?)\n友達の 結婚式が あるので、早退させて いただけませんか。 (Vì có đám cưới của bạn nên cho phép tôi về sớm được không ạ?)'
+    }
+  ],
+  kaiwa: [],
+  quiz: []
+};
+
+
+export const lesson49Data: LessonDetail = {
+  id: 49,
+  title: 'Lesson 49',
+  vocabulary: [
+    { word: 'つとめます [かいしゃに～]', kanji: '勤めます [会社に～]', romaji: 'tsutomemasu [kaishani~]', mean: 'làm việc [ở công ty]' },
+    { word: 'やすみます', kanji: '休みます', romaji: 'yasumimasu', mean: 'ngủ (lịch sự hơn ねます)' },
+    { word: 'かけます [いすに～]', kanji: '掛けます [いすに～]', romaji: 'kakemasu [isuni~]', mean: 'ngồi [ghế]' },
+    { word: 'すごします', kanji: '過ごします', romaji: 'sugoshimasu', mean: 'trải qua (thời gian), sống' },
+    { word: 'よります [ぎんこうに～]', kanji: '寄ります [銀行に～]', romaji: 'yorimasu [ginkouni~]', mean: 'ghé qua [ngân hàng]' },
+    { word: 'いらっしゃいます', kanji: 'いらっしゃいます', romaji: 'irasshaimasu', mean: 'ở, đi, đến (tôn kính ngữ của います, いきます và きます)' },
+    { word: 'めしあがります', kanji: '召し上がります', romaji: 'meshiagarimasu', mean: 'ăn, uống (tôn kính ngữ của たべます và のみます)' },
+    { word: 'おっしゃいます', kanji: 'おっしゃいます', romaji: 'osshaimasu', mean: 'nói (tôn kính ngữ của いいます)' },
+    { word: 'なさいます', kanji: 'なさいます', romaji: 'nasaimasu', mean: 'làm (tôn kính ngữ của します)' },
+    { word: 'ごらんに なります', kanji: 'ご覧に なります', romaji: 'goranni narimasu', mean: 'xem, nhìn (tôn kính ngữ của みます)' },
+    { word: 'ごぞんじです', kanji: 'ご存じです', romaji: 'gozonjidesu', mean: 'biết (tôn kính ngữ của しっています)' },
+    { word: 'あいさつ', kanji: 'あいさつ', romaji: 'aisatsu', mean: 'chào hỏi (~を します: chào hỏi)' },
+    { word: 'はいざら', kanji: '灰皿', romaji: 'haizara', mean: 'gạt tàn' },
+    { word: 'りょかん', kanji: '旅館', romaji: 'ryokan', mean: 'khách sạn kiểu Nhật' },
+    { word: 'かいじょう', kanji: '会場', romaji: 'kaijou', mean: 'hội trường, địa điểm tổ chức' },
+    { word: 'バスてい', kanji: 'バス停', romaji: 'basutei', mean: 'bến xe buýt' },
+    { word: 'ぼうえき', kanji: '貿易', romaji: 'boueki', mean: 'thương mại, ngoại thương' },
+    { word: '～さま', kanji: '～様', romaji: '~sama', mean: 'ngài ~, ông/bà ~ (tôn kính ngữ của ～さん)' },
+    { word: 'かえりに', kanji: '帰りに', romaji: 'kaerini', mean: 'trên đường về' },
+    { word: 'たまに', kanji: 'たまに', romaji: 'tamani', mean: 'thỉnh thoảng' },
+    { word: 'ちっとも', kanji: 'ちっとも', romaji: 'chittomo', mean: 'chẳng ~ tí nào, hoàn toàn không' },
+    { word: 'えんりょなく', kanji: '遠慮なく', romaji: 'enryonaku', mean: 'không giữ ý, không làm khách, đừng ngại' },
+    // Kaiwa / Reading
+    { word: '－ねん－くみ', kanji: '－年－組', romaji: '-nen -kumi', mean: 'lớp -, năm thứ -' },
+    { word: 'では', kanji: 'では', romaji: 'dewa', mean: 'thế thì, vậy thì (thể lịch sự của じゃ)' },
+    { word: 'だします [ねつを～]', kanji: '出します [熱を～]', romaji: 'dashimasu [netsuo~]', mean: 'bị [sốt]' },
+    { word: 'よろしく おつたえ ください', kanji: 'よろしく お伝え ください', romaji: 'yoroshiku otsutae kudasai', mean: 'Cho tôi gửi lời hỏi thăm./ Hãy nhắn lại với ~.' },
+    { word: 'しつれいいたします', kanji: '失礼いたします', romaji: 'shitsureiitashimasu', mean: 'Xin phép anh/chị (dùng khi cúp máy, vào/ra phòng). (khiêm nhường ngữ của しつれいします)' },
+    { word: 'こうし', kanji: '講師', romaji: 'koushi', mean: 'giảng viên, giáo viên' },
+    { word: 'おおくの～', kanji: '多くの～', romaji: 'ookuno~', mean: 'nhiều ~' },
+    { word: 'さくひん', kanji: '作品', romaji: 'sakuhin', mean: 'tác phẩm' },
+    { word: 'じゅしょうします', kanji: '受賞します', romaji: 'jushoushimasu', mean: 'nhận giải thưởng, được giải thưởng' },
+    { word: 'せかいてきに', kanji: '世界的に', romaji: 'sekaitkini', mean: 'tầm cỡ thế giới' },
+    { word: 'さっか', kanji: '作家', romaji: 'sakka', mean: 'nhà văn' },
+    { word: '～で いらっしゃいます', kanji: '～で いらっしゃいます', romaji: '~de irasshaimasu', mean: 'là ~ (tôn kính ngữ của です)' },
+    { word: 'ちょうなん', kanji: '長男', romaji: 'chounan', mean: 'trưởng nam' },
+    { word: 'しょうがい', kanji: '障害', romaji: 'shougai', mean: 'khuyết tật, trở ngại' },
+    { word: 'おもちです', kanji: 'お持ちです', romaji: 'omochidesu', mean: 'có (cách nói tôn kính của もっています)' },
+    { word: 'さっきょく', kanji: '作曲', romaji: 'sakkyoku', mean: 'sáng tác nhạc' },
+    { word: 'かつどう', kanji: '活動', romaji: 'katsudou', mean: 'hoạt động' },
+    { word: 'それでは', kanji: 'それでは', romaji: 'soredewa', mean: 'bây giờ thì, vậy thì' }
+  ],
+  grammar: [
+    {
+      pattern: '尊敬語 (Tôn kính ngữ)',
+      explanation: 'Tôn kính ngữ (Honorific expressions) dùng để thể hiện sự kính trọng của người nói đối với người nghe hoặc người được nói đến (người bề trên, người lạ, khách hàng...).\n\nCó 3 loại kính ngữ:\n1. 尊敬語 (Sonkeigo - Tôn kính ngữ): Dùng cho hành động của người khác.\n2. 謙譲語 (Kenjougo - Khiêm nhường ngữ): Dùng cho hành động của bản thân (Bài 50).\n3. 丁寧語 (Teineigo - Lịch sự ngữ): Desu/Masu (Bài 49).',
+      example: ''
+    },
+    {
+      pattern: '1. Động từ thể bị động (Respectful verbs)',
+      explanation: 'Sử dụng thể bị động (Passive form - Bài 37) làm tôn kính ngữ.\nCách này mức độ tôn kính thấp hơn so với dùng từ chuyên biệt.\nLưu ý: Không dùng cho các động từ khả năng hoặc nhầm lẫn với câu bị động thực sự.',
+      example: '中村さんは 7時に 来られます。 (Ông Nakamura sẽ đến vào lúc 7 giờ.)\nお酒を やめられたんですか。 (Ngài đã bỏ rượu rồi ạ?)'
+    },
+    {
+      pattern: '2. お V(massu) に なります',
+      explanation: 'Mẫu câu này tôn kính hơn dùng thể bị động.\nCấu trúc: お + V(bỏ mass) + に なります\n\nKhông dùng cho:\n- Động từ nhóm III (như します, きます).\n- Động từ có 1 âm tiết (như みます, ねます).\n- Động từ đã có từ tôn kính chuyên biệt (xem mục 3).',
+      example: '社長は もう お帰りに なりました。 (Giám đốc đã về rồi.)'
+    },
+    {
+      pattern: '3. Từ tôn kính đặc biệt (Special respectful words)',
+      explanation: 'Một số động từ có từ tôn kính ngữ chuyên biệt (bắt buộc phải nhớ):\n- いきます / きます / います -> いらっしゃいます\n- たべます / のみます -> めしあがります\n- いいます -> おっしゃいます\n- しっています -> ごぞんじです\n- みます -> ごらんに なります\n- します -> なさいます\n- くれます -> くださいます',
+      example: 'ワット先生は 研究室に いらっしゃいます。 (Thầy Watt đang ở phòng nghiên cứu.)\nどうぞ 召し上がって ください。 (Xin mời ngài dùng.)'
+    },
+    {
+      pattern: '4. お V(massu) ください',
+      explanation: 'Cách yêu cầu / mời ai đó làm gì một cách lịch sự và tôn kính.\nCấu trúc: お + V(bỏ masu) + ください\n\nLưu ý:\n- Với động từ nhóm III (N shimau), dùng: ご N ください (Ex: ご注意ください).\n- Không dùng với các từ tôn kính đặc biệt (trừ: 召し上がってください, ご覧ください).',
+      example: 'あちらから お入り ください。 (Xin mời vào từ phía kia.)'
+    }
+  ],
+  kaiwa: [],
+  quiz: []
+};
+
+export const lesson50Data: LessonDetail = {
+  id: 50,
+  title: 'Lesson 50',
+  vocabulary: [
+    { word: 'まいります', kanji: '参ります', romaji: 'mairimasu', mean: 'đi, đến (khiêm nhường ngữ của いきます và きます)' },
+    { word: 'おります', kanji: 'おります', romaji: 'orimasu', mean: 'ở (khiêm nhường ngữ của います)' },
+    { word: 'いただきます', kanji: 'いただきます', romaji: 'itadakimasu', mean: 'ăn, uống, nhận (khiêm nhường ngữ của たべます, のみます và もらいます)' },
+    { word: 'もうします', kanji: '申します', romaji: 'moushimasu', mean: 'nói (khiêm nhường ngữ của いいます)' },
+    { word: 'いたします', kanji: 'いたします', romaji: 'itashimasu', mean: 'làm (khiêm nhường ngữ của します)' },
+    { word: 'はいけんします', kanji: '拝見します', romaji: 'haikenshimasu', mean: 'xem, nhìn (khiêm nhường ngữ của みます)' },
+    { word: 'ぞんじます', kanji: '存じます', romaji: 'zonjimasu', mean: 'biết (khiêm nhường ngữ của しっています)' },
+    { word: 'うかがいます', kanji: '伺います', romaji: 'ukagaimasu', mean: 'hỏi, nghe, đến thăm (khiêm nhường ngữ của ききます và いきます)' },
+    { word: 'おめにかかります', kanji: 'お目に かかります', romaji: 'omeni kakarimasu', mean: 'gặp (khiêm nhường ngữ của あいます)' },
+    { word: 'ございます', kanji: 'ございます', romaji: 'gozaimasu', mean: 'có (thể lịch sự của あります)' },
+    { word: '～で ございます', kanji: '～で ございます', romaji: '~de gozaimasu', mean: 'là (thể lịch sự của です)' },
+    { word: 'わたくし', kanji: '私', romaji: 'watakushi', mean: 'tôi (khiêm nhường ngữ của わたし)' },
+    { word: 'ガイド', kanji: 'ガイド', romaji: 'gaido', mean: 'hướng dẫn viên du lịch (guide)' },
+    { word: 'おたく', kanji: 'お宅', romaji: 'otaku', mean: 'nhà (của người khác)' },
+    { word: 'こうがい', kanji: '郊外', romaji: 'kougai', mean: 'ngoại ô' },
+    { word: 'アルバム', kanji: 'アルバム', romaji: 'arubamu', mean: 'album' },
+    { word: 'さらいしゅう', kanji: '再来週', romaji: 'saraishuu', mean: 'tuần tới nữa, tuần sau nữa' },
+    { word: 'さらいげつ', kanji: '再来月', romaji: 'saraigetsu', mean: 'tháng tới nữa, tháng sau nữa' },
+    { word: 'さらいねん', kanji: '再来年', romaji: 'sarainen', mean: 'năm tới nữa, năm sau nữa' },
+    { word: 'はんとし', kanji: '半年', romaji: 'hantoshi', mean: 'nửa năm' },
+    { word: 'さいしょに', kanji: '最初に', romaji: 'saishoni', mean: 'đầu tiên, thoạt tiên' },
+    { word: 'さいごに', kanji: '最後に', romaji: 'saigoni', mean: 'cuối cùng' },
+    { word: 'ただいま', kanji: 'ただ今', romaji: 'tadaima', mean: 'bây giờ (thể lịch sự của いま)' },
+    // Kaiwa / Reading
+    { word: 'きんちょうします', kanji: '緊張します', romaji: 'kinchoushimasu', mean: 'căng thẳng, hồi hộp' },
+    { word: 'ほうそうします', kanji: '放送します', romaji: 'housoushimasu', mean: 'phát thanh, truyền hình' },
+    { word: 'とります [ビデオに～]', kanji: '撮ります [ビデオに～]', romaji: 'torimasu [bideoni~]', mean: 'thu [video]' },
+    { word: 'しょうきん', kanji: '賞金', romaji: 'shoukin', mean: 'tiền thưởng' },
+    { word: 'しぜん', kanji: '自然', romaji: 'shizen', mean: 'tự nhiên, thiên nhiên' },
+    { word: 'きりん', kanji: 'きりん', romaji: 'kirin', mean: 'con hươu cao cổ' },
+    { word: 'ぞう', kanji: '象', romaji: 'zou', mean: 'con voi' },
+    { word: 'ころ', kanji: 'ころ', romaji: 'koro', mean: 'hồi, thời' },
+    { word: 'かないます [ゆめが～]', kanji: 'かないます [夢が～]', romaji: 'kanaimasu [yumega~]', mean: 'thành hiện thực [mơ ước ~]' },
+    { word: 'ひとこと よろしいでしょうか', kanji: '一言 よろしいでしょうか', romaji: 'hitokoto yoroshiideshouka', mean: 'Tôi xin phép nói vài lời có được không ạ?' },
+    { word: 'きょうりょくします', kanji: '協力します', romaji: 'kyouryokushimasu', mean: 'hợp tác' },
+    { word: 'こころから', kanji: '心から', romaji: 'kokorokara', mean: 'từ trái tim, tận đáy lòng' },
+    { word: 'かんしゃします', kanji: '感謝します', romaji: 'kanshashimasu', mean: 'cám ơn, cảm tạ' },
+    { word: 'おれい', kanji: 'お礼', romaji: 'orei', mean: 'lời cảm ơn, sự cảm ơn' },
+    { word: 'はいけい', kanji: '拝啓', romaji: 'haikei', mean: 'Kính gửi ~ (câu mở đầu lá thư)' },
+    { word: 'うつくしい', kanji: '美しい', romaji: 'utsukushii', mean: 'đẹp' },
+    { word: 'おげんきで いらっしゃいますか', kanji: 'お元気で いらっしゃいますか', romaji: 'ogenkide irasshaimasuka', mean: 'Anh/chị có khỏe không ạ? (tôn kính ngữ của おげんきですか)' },
+    { word: 'めいわくを かけます', kanji: '迷惑を かけます', romaji: 'meiwakuo kakemasu', mean: 'làm phiền' },
+    { word: 'いかします', kanji: '生かします', romaji: 'ikashimasu', mean: 'tận dụng, phát huy' },
+    { word: 'おしろ', kanji: 'お城', romaji: 'oshiro', mean: 'lâu đài' },
+    { word: 'けいぐ', kanji: '敬具', romaji: 'keigu', mean: 'Kính thư (câu kết thúc lá thư)' }
+  ],
+  grammar: [
+    {
+      pattern: '謙譲語 (Khiêm nhường ngữ)',
+      explanation: 'Dùng để nói về hành động của bản thân hoặc người cùng nhóm (phía mình) nhằm thể hiện sự khiêm tốn và tôn trọng người nghe hoặc người được nhắc đến.\n\n- Nhóm I, II: お + V(bỏ mass) + します\n  (Không dùng cho động từ 1 âm tiết)\n\n- Nhóm III: ご + N (Hán ngữ) + します',
+      example: '私が 社長に スケージュールを お知らせします。 (Tôi sẽ thông báo lịch trình cho giám đốc.)\n兄が 車で お送りします。 (Anh trai tôi sẽ tiễn bằng xe hơi.)\n江戸東京博物館へ ご案内します。 (Tôi sẽ hướng dẫn đến bảo tàng Edo-Tokyo.)'
+    },
+    {
+      pattern: 'Động từ khiêm nhường đặc biệt',
+      explanation: 'Một số động từ có dạng khiêm nhường ngữ đặc biệt (cần nhớ thuộc lòng):\n- いきます / きます -> まいります\n- います -> おります\n- たべます / のみます / もらいます -> いただきます\n- いいます -> もうします\n- します -> いたします\n- みます -> はいけんします\n- しっています -> ぞんじます\n- ききます / いきます (đến thăm) -> うかがいます\n- あいます -> おめに かかります',
+      example: 'ミラーと 申します。 (Tôi tên là Miller.)\nアメリカから 参りました。 (Tôi đến từ Mỹ.)'
+    },
+    {
+      pattern: '丁寧語 (Lịch sự ngữ)',
+      explanation: 'Biểu thị sự lịch sự, tôn trọng người nghe.\n- あります -> ございます\n- です -> ～で ございます\n- いいですか -> よろしいでしょうか',
+      example: '電話は 階段の 横に ございます。 (Điện thoại ở bên cạnh cầu thang.)\nはい、IMCで ございます。 (Vâng, đây là IMC.)\nお飲み物は 何が よろしいでしょうか。 (Ngài muốn dùng đồ uống gì ạ?)'
+    }
+  ],
+  kaiwa: [],
+  quiz: []
+};
+
 export const getLessonData = (id: number): LessonDetail | null => {
+  if (id === 50) return lesson50Data;
+  if (id === 49) return lesson49Data;
+  if (id === 48) return lesson48Data;
+  if (id === 47) return lesson47Data;
   if (id === 46) return lesson46Data;
   if (id === 45) return lesson45Data;
   if (id === 44) return lesson44Data;
@@ -16491,31 +16680,32 @@ export const getLessonData = (id: number): LessonDetail | null => {
   if (id === 28) return lesson28Data;
   if (id === 27) return lesson27Data;
   if (id === 26) return lesson26Data;
-  if (id === 1) return lesson1Data;
-  if (id === 2) return lesson2Data;
-  if (id === 3) return lesson3Data;
-  if (id === 4) return lesson4Data;
-  if (id === 5) return lesson5Data;
-  if (id === 6) return lesson6Data;
-  if (id === 7) return lesson7Data;
-  if (id === 8) return lesson8Data;
-  if (id === 9) return lesson9Data;
-  if (id === 10) return lesson10Data;
-  if (id === 11) return lesson11Data;
-  if (id === 12) return lesson12Data;
-  if (id === 13) return lesson13Data;
-  if (id === 14) return lesson14Data;
-  if (id === 15) return lesson15Data;
-  if (id === 16) return lesson16Data;
-  if (id === 17) return lesson17Data;
-  if (id === 18) return lesson18Data;
-  if (id === 19) return lesson19Data;
-  if (id === 20) return lesson20Data;
-  if (id === 21) return lesson21Data;
-  if (id === 22) return lesson22Data;
-  if (id === 23) return lesson23Data;
-  if (id === 24) return lesson24Data;
   if (id === 25) return lesson25Data;
+  if (id === 24) return lesson24Data;
+  if (id === 23) return lesson23Data;
+  if (id === 22) return lesson22Data;
+  if (id === 21) return lesson21Data;
+  if (id === 20) return lesson20Data;
+  if (id === 19) return lesson19Data;
+  if (id === 18) return lesson18Data;
+  if (id === 17) return lesson17Data;
+  if (id === 16) return lesson16Data;
+  if (id === 15) return lesson15Data;
+  if (id === 14) return lesson14Data;
+  if (id === 13) return lesson13Data;
+  if (id === 12) return lesson12Data;
+  if (id === 11) return lesson11Data;
+  if (id === 10) return lesson10Data;
+  if (id === 9) return lesson9Data;
+  if (id === 8) return lesson8Data;
+  if (id === 7) return lesson7Data;
+  if (id === 6) return lesson6Data;
+  if (id === 5) return lesson5Data;
+  if (id === 4) return lesson4Data;
+  if (id === 3) return lesson3Data;
+  if (id === 2) return lesson2Data;
+  if (id === 1) return lesson1Data;
+
   // Return mock data for other lessons
   const allLessons = [...lessonsN5, ...lessonsN4];
   const lessonSummary = allLessons.find(l => l.id === id);
@@ -16528,38 +16718,7 @@ export const getLessonData = (id: number): LessonDetail | null => {
       { word: 'たんご', kanji: '単語', romaji: 'tango', mean: 'Từ vựng mẫu' },
       { word: 'れい', kanji: '例', romaji: 'rei', mean: 'Ví dụ' },
     ],
-    grammar: [
-      {
-        pattern: 'Vた / Vない + ほうが いいです',
-        explanation: 'Khuyên ai đó nên hoặc không nên làm gì.\nSo sánh và lựa chọn phương án tốt hơn.',
-        example: '毎日 運動した ほうが いいです。 (Hàng ngày nên vận động thì tốt hơn.)\n熱が あるんです。 …じゃ、おふろに 入らない ほうが いいですよ。 (Tôi bị sốt. ...Vậy thì không nên tắm đâu.)'
-      },
-      {
-        pattern: 'V / Adj / N + でしょう (Suy đoán)',
-        explanation: 'Diễn đạt sự suy đoán của người nói dựa trên thông tin có được.\nThường dùng trong bản tin dự báo thời tiết.',
-        example: 'あしたは 雨が 降るでしょう。 (Ngày mai trời có lẽ sẽ mưa.)\nタワポンさんは 合格するでしょう。 (Anh Tawapon có lẽ sẽ đỗ.)'
-      },
-      {
-        pattern: 'V / Adj / N + かも しれません (Khả năng)',
-        explanation: 'Diễn đạt sự phỏng đoán, khả năng xảy ra của sự việc.\nMức độ chắc chắn thấp hơn 「～でしょう」 (khoảng 50%).',
-        example: '約束の 時間に 間に 合わないかも しれません。 (Có thể sẽ không kịp giờ hẹn.)\nもしかしたら 3月に 卒業できないかも しれません。 (Biết đâu tôi lại không thể tốt nghiệp vào tháng 3.)'
-      },
-      {
-        pattern: 'きっと / たぶん / もしかしたら',
-        explanation: 'Các phó từ chỉ mức độ suy đoán:\n- きっと: Chắc chắn (khá cao), đi với 「～でしょう」.\n- たぶん: Có lẽ (mức độ trung bình), đi với 「～でしょう」.\n- もしかしたら: Biết đâu, có thể (mức độ thấp), đi với 「～かも しれません」.',
-        example: '山田さんは この ニュースを たぶん 知らないと 思います。 (Tôi nghĩ anh Yamada có lẽ không biết tin này.)'
-      },
-      {
-        pattern: '何か 心配な こと',
-        explanation: 'Cấu trúc: Từ nghi vấn + Tính từ/Động từ (thể thường) + Noun.\nDùng để nói về một sự việc không xác định cụ thể.',
-        example: '何か 心配な ことが あるんですか。 (Anh có chuyện gì lo lắng à?)\nスキーに 行きたいんですが、どこか いい 所 ありませんか。 (Tôi muốn đi trượt tuyết, có chỗ nào hay không?)'
-      },
-      {
-        pattern: 'Quantifier (Lượng từ) + で',
-        explanation: 'Chỉ giới hạn về giá cả, thời gian, số lượng cần thiết để trạng thái/hành động xảy ra.',
-        example: '駅まで 30分で 行けますか。 (Đi đến ga mất 30 phút có được không?)\n3万円で ビデオが 買えますか。 (3 vạn yên có mua được đầu video không?)'
-      }
-    ],
+    grammar: [],
     kaiwa: [
       { char: 'A', jp: 'サンプル会話です。', vn: 'Đây là hội thoại mẫu.' },
       { char: 'B', jp: 'そうですね。', vn: 'Đúng vậy nhỉ.' },
