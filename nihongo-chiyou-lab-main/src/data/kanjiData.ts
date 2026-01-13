@@ -66,7 +66,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Tháng một",
         furigana: [
           { kanji: "一", reading: "いち", meaning: "một" },
-          { kanji: "月", reading: "がつ", meaning: "tháng" },
+          { kanji: "月",
+    lesson: 26, reading: "がつ", meaning: "tháng" },
         ],
       },
       {
@@ -76,7 +77,8 @@ export const kanjiData: KanjiCard[] = [
         furigana: [
           { kanji: "一", reading: "いち", meaning: "một" },
           { kanji: "年", reading: "ねん", meaning: "năm" },
-          { kanji: "生", reading: "せい", meaning: "học sinh" },
+          { kanji: "生",
+    lesson: 26, reading: "せい", meaning: "học sinh" },
         ],
       },
       {
@@ -85,7 +87,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Ngày mồng một",
         furigana: [
           { kanji: "一", reading: "つい", meaning: "một" },
-          { kanji: "日", reading: "たち", meaning: "ngày" },
+          { kanji: "日",
+    lesson: 27, reading: "たち", meaning: "ngày" },
         ],
       },
     ],
@@ -207,7 +210,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Hình tam giác",
         furigana: [
           { kanji: "三", reading: "さん", meaning: "tam" },
-          { kanji: "角", reading: "かく", meaning: "giác" },
+          { kanji: "角",
+    lesson: 40, reading: "かく", meaning: "giác" },
         ],
       },
     ],
@@ -320,7 +324,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "5 yên",
         furigana: [
           { kanji: "五", reading: "ご", meaning: "năm" },
-          { kanji: "円", reading: "えん", meaning: "yên" },
+          { kanji: "円",
+    lesson: 40, reading: "えん", meaning: "yên" },
         ],
       },
       {
@@ -390,7 +395,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Sáu bộ luật",
         furigana: [
           { kanji: "六", reading: "ろっ", meaning: "lục" },
-          { kanji: "法", reading: "ぽう", meaning: "pháp" },
+          { kanji: "法",
+    lesson: 31, reading: "ぽう", meaning: "pháp" },
         ],
       },
     ],
@@ -452,9 +458,12 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Bảy điều kỳ lạ",
         furigana: [
           { kanji: "七", reading: "なな", meaning: "thất" },
-          { kanji: "不", reading: "ふ", meaning: "bất" },
-          { kanji: "思", reading: "し", meaning: "tư" },
-          { kanji: "議", reading: "ぎ", meaning: "nghị" },
+          { kanji: "不",
+    lesson: 26, reading: "ふ", meaning: "bất" },
+          { kanji: "思",
+    lesson: 27, reading: "し", meaning: "tư" },
+          { kanji: "議",
+    lesson: 27, reading: "ぎ", meaning: "nghị" },
         ],
       },
     ],
@@ -516,7 +525,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Mọi phía",
         furigana: [
           { kanji: "八", reading: "はっ", meaning: "bát" },
-          { kanji: "方", reading: "ぽう", meaning: "phương" },
+          { kanji: "方",
+    lesson: 26, reading: "ぽう", meaning: "phương" },
         ],
       },
     ],
@@ -628,7 +638,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "10 phút",
         furigana: [
           { kanji: "十", reading: "じゅっ", meaning: "thập" },
-          { kanji: "分", reading: "ぷん", meaning: "phút" },
+          { kanji: "分",
+    lesson: 26, reading: "ぷん", meaning: "phút" },
         ],
       },
       {
@@ -699,7 +710,8 @@ export const kanjiData: KanjiCard[] = [
         furigana: [
           { kanji: "百", reading: "ひゃっ", meaning: "bách" },
           { kanji: "貨", reading: "か", meaning: "hóa" },
-          { kanji: "店", reading: "てん", meaning: "điếm" },
+          { kanji: "店",
+    lesson: 31, reading: "てん", meaning: "điếm" },
         ],
       },
     ],
@@ -751,7 +763,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Tỉnh Chiba",
         furigana: [
           { kanji: "千", reading: "ち", meaning: "" },
-          { kanji: "葉", reading: "ば", meaning: "" },
+          { kanji: "葉",
+    lesson: 27, reading: "ば", meaning: "" },
           { kanji: "県", reading: "けん", meaning: "tỉnh" },
         ],
       },
@@ -761,7 +774,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Thái sợi",
         furigana: [
           { kanji: "千", reading: "せん", meaning: "thiên" },
-          { kanji: "切", reading: "ぎ", meaning: "thiết" },
+          { kanji: "切",
+    lesson: 27, reading: "ぎ", meaning: "thiết" },
           { kanji: "り", reading: "り", meaning: "" },
         ],
       },
@@ -797,7 +811,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Vạn quốc",
         furigana: [
           { kanji: "万", reading: "ばん", meaning: "vạn" },
-          { kanji: "国", reading: "こく", meaning: "quốc" },
+          { kanji: "国",
+    lesson: 31, reading: "こく", meaning: "quốc" },
         ],
       },
       {
@@ -876,7 +891,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Hình tròn",
         furigana: [
           { kanji: "円", reading: "えん", meaning: "viên" },
-          { kanji: "形", reading: "けい", meaning: "hình" },
+          { kanji: "形",
+    lesson: 27, reading: "けい", meaning: "hình" },
         ],
       },
       {
@@ -930,7 +946,8 @@ export const kanjiData: KanjiCard[] = [
         romaji: "Deguchi",
         vietnamese: "Cửa ra",
         furigana: [
-          { kanji: "出", reading: "で", meaning: "xuất" },
+          { kanji: "出",
+    lesson: 26, reading: "で", meaning: "xuất" },
           { kanji: "口", reading: "ぐち", meaning: "khẩu" },
         ],
       },
@@ -994,7 +1011,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Thứ hai (vị trí)",
         furigana: [
           { kanji: "二", reading: "に", meaning: "nhị" },
-          { kanji: "番", reading: "ばん", meaning: "phiên" },
+          { kanji: "番",
+    lesson: 28, reading: "ばん", meaning: "phiên" },
           { kanji: "目", reading: "め", meaning: "mục" },
         ],
       },
@@ -1013,7 +1031,8 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Mục lục",
         furigana: [
           { kanji: "目", reading: "もく", meaning: "mục" },
-          { kanji: "次", reading: "じ", meaning: "thứ" },
+          { kanji: "次",
+    lesson: 40, reading: "じ", meaning: "thứ" },
         ],
       },
     ]
@@ -13193,7 +13212,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 401,
     kanji: "遊",
-    lesson: 26,
+    
     onyomi: "ユウ",
     kunyomi: "あそ・ぶ",
     meaning: "Du, Chơi",
@@ -13214,7 +13233,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 402,
     kanji: "泳",
-    lesson: 26,
+    
     onyomi: "エイ",
     kunyomi: "およ・ぐ",
     meaning: "Vịnh, Bơi",
@@ -13235,7 +13254,8 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 403,
     kanji: "疲",
-    lesson: 26,
+    lesson: 39,
+    
     onyomi: "ヒ",
     kunyomi: "つか・れる",
     meaning: "Bì, Mệt",
@@ -13256,7 +13276,8 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 404,
     kanji: "暖",
-    lesson: 26,
+    lesson: 43,
+    
     onyomi: "ダン",
     kunyomi: "あたた・かい",
     meaning: "Noãn, Ấm",
@@ -13282,7 +13303,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 405,
     kanji: "涼",
-    lesson: 26,
+    
     onyomi: "リョウ",
     kunyomi: "すず・しい",
     meaning: "Lương, Mát",
@@ -13303,7 +13324,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 406,
     kanji: "静",
-    lesson: 26,
+    
     onyomi: "セイ",
     kunyomi: "しず・か",
     meaning: "Tĩnh, Yên tĩnh",
@@ -13324,7 +13345,8 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 407,
     kanji: "公",
-    lesson: 26,
+    lesson: 27,
+    
     onyomi: "コウ",
     kunyomi: "おおやけ",
     meaning: "Công, Công cộng",
@@ -13350,7 +13372,8 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 408,
     kanji: "園",
-    lesson: 26,
+    lesson: 31,
+    
     onyomi: "エン",
     kunyomi: "その",
     meaning: "Viên, Vườn, Công viên",
@@ -13377,6 +13400,7 @@ export const kanjiData: KanjiCard[] = [
     id: 409,
     kanji: "込",
     lesson: 26,
+    
     onyomi: "",
     kunyomi: "こ・む、こ・める",
     meaning: "Vào, Đông đúc",
@@ -13403,6 +13427,7 @@ export const kanjiData: KanjiCard[] = [
     id: 410,
     kanji: "連",
     lesson: 26,
+    
     onyomi: "レン",
     kunyomi: "つ・れる、つら・なる",
     meaning: "Liên, Liên lạc",
@@ -13428,7 +13453,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 411,
     kanji: "窓",
-    lesson: 26,
+    
     onyomi: "ソウ",
     kunyomi: "まど",
     meaning: "Song, Cửa sổ",
@@ -13454,7 +13479,8 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 412,
     kanji: "側",
-    lesson: 26,
+    lesson: 29,
+    
     onyomi: "ソク",
     kunyomi: "かわ",
     meaning: "Trắc, Phía",
@@ -13480,7 +13506,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 413,
     kanji: "葉",
-    lesson: 26,
+    
     onyomi: "ヨウ",
     kunyomi: "は",
     meaning: "Diệp, Lá",
@@ -13506,7 +13532,8 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 414,
     kanji: "景",
-    lesson: 26,
+    lesson: 27,
+    
     onyomi: "ケイ",
     kunyomi: "",
     meaning: "Cảnh, Cảnh sắc",
@@ -13532,7 +13559,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 415,
     kanji: "記",
-    lesson: 26,
+    
     imageUrl: "/images/kanji/placeholder.png",
     onyomi: "キ",
     onyomiRomaji: "",
@@ -13547,7 +13574,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 416,
     kanji: "形",
-    lesson: 26,
+    
     imageUrl: "/images/kanji/placeholder.png",
     onyomi: "ケイ, ギョウ",
     onyomiRomaji: "",
@@ -15762,5 +15789,3497 @@ export const kanjiData: KanjiCard[] = [
     radicals: "灬 (hỏa) + 林 (lâm)",
     mnemonic: "Lửa (灬) đốt cháy rừng (林) thành không còn gì (無).",
     examples: [],
+  }
+,
+
+  {
+    id: 513,
+    kanji: "診",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 514,
+    kanji: "探",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 515,
+    kanji: "捜",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 516,
+    kanji: "遅",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 517,
+    kanji: "合",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 518,
+    kanji: "参",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 519,
+    kanji: "加",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 520,
+    kanji: "柔",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 521,
+    kanji: "弁",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 522,
+    kanji: "接",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 523,
+    kanji: "燃",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 524,
+    kanji: "置",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 525,
+    kanji: "瓶",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 526,
+    kanji: "缶",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 527,
+    kanji: "湯",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 528,
+    kanji: "絡",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 529,
+    kanji: "宇",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 530,
+    kanji: "宙",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 531,
+    kanji: "怖",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 532,
+    kanji: "士",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 533,
+    kanji: "可",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 534,
+    kanji: "製",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 535,
+    kanji: "属",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 536,
+    kanji: "粗",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 537,
+    kanji: "具",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 538,
+    kanji: "庭",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 539,
+    kanji: "源",
+    lesson: 26,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 540,
+    kanji: "飼",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 541,
+    kanji: "波",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 542,
+    kanji: "販",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 543,
+    kanji: "原",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 544,
+    kanji: "伊",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 545,
+    kanji: "棚",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 546,
+    kanji: "素",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 547,
+    kanji: "晴",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 548,
+    kanji: "漫",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 549,
+    kanji: "例",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 550,
+    kanji: "現",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 551,
+    kanji: "像",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 552,
+    kanji: "増",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 553,
+    kanji: "伸",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 554,
+    kanji: "染",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 555,
+    kanji: "抜",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 556,
+    kanji: "防",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 557,
+    kanji: "縮",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 558,
+    kanji: "振",
+    lesson: 27,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 559,
+    kanji: "優",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 560,
+    kanji: "偉",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 561,
+    kanji: "慣",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 562,
+    kanji: "値",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 563,
+    kanji: "給",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 564,
+    kanji: "組",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 565,
+    kanji: "管",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 566,
+    kanji: "願",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 567,
+    kanji: "賃",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 568,
+    kanji: "敷",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 569,
+    kanji: "礼",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 570,
+    kanji: "費",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 571,
+    kanji: "畳",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 572,
+    kanji: "向",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 573,
+    kanji: "築",
+    lesson: 28,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 574,
+    kanji: "壊",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 575,
+    kanji: "椅",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 576,
+    kanji: "割",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 577,
+    kanji: "折",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 578,
+    kanji: "破",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 579,
+    kanji: "落",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 580,
+    kanji: "掛",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 581,
+    kanji: "鍵",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 582,
+    kanji: "袋",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 583,
+    kanji: "財",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 584,
+    kanji: "布",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 585,
+    kanji: "枝",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 586,
+    kanji: "辺",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 587,
+    kanji: "網",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 588,
+    kanji: "確",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 589,
+    kanji: "谷",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 590,
+    kanji: "震",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 591,
+    kanji: "壁",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 592,
+    kanji: "針",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 593,
+    kanji: "指",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 594,
+    kanji: "倒",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 595,
+    kanji: "宮",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 596,
+    kanji: "膨",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 597,
+    kanji: "穴",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 598,
+    kanji: "曲",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 599,
+    kanji: "欠",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 600,
+    kanji: "腐",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 601,
+    kanji: "乾",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 602,
+    kanji: "凍",
+    lesson: 29,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 603,
+    kanji: "貼",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 604,
+    kanji: "飾",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 605,
+    kanji: "並",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 606,
+    kanji: "植",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 607,
+    kanji: "授",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 608,
+    kanji: "講",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 609,
+    kanji: "箱",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 610,
+    kanji: "鏡",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 611,
+    kanji: "玄",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 612,
+    kanji: "廊",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 613,
+    kanji: "隅",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 614,
+    kanji: "労",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 615,
+    kanji: "希",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 616,
+    kanji: "望",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 617,
+    kanji: "球",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 618,
+    kanji: "嫌",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 619,
+    kanji: "列",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 620,
+    kanji: "机",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 621,
+    kanji: "斜",
+    lesson: 30,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 622,
+    kanji: "憩",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 623,
+    kanji: "展",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 624,
+    kanji: "覧",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 625,
+    kanji: "葬",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 626,
+    kanji: "支",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 627,
+    kanji: "温",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 628,
+    kanji: "泉",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 629,
+    kanji: "客",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 630,
+    kanji: "普",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 631,
+    kanji: "美",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 632,
+    kanji: "然",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 633,
+    kanji: "農",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 634,
+    kanji: "数",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 635,
+    kanji: "械",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 636,
+    kanji: "遺",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 637,
+    kanji: "環",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 638,
+    kanji: "境",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 639,
+    kanji: "科",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 640,
+    kanji: "営",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 641,
+    kanji: "哲",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 642,
+    kanji: "宗",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 643,
+    kanji: "芸",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 644,
+    kanji: "術",
+    lesson: 31,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 645,
+    kanji: "咲",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 646,
+    kanji: "珍",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 647,
+    kanji: "登",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 648,
+    kanji: "許",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 649,
+    kanji: "操",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 650,
+    kanji: "設",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 651,
+    kanji: "備",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 652,
+    kanji: "根",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 653,
+    kanji: "詳",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 654,
+    kanji: "草",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 655,
+    kanji: "津",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 656,
+    kanji: "志",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 657,
+    kanji: "賀",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 658,
+    kanji: "朱",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 659,
+    kanji: "仲",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 660,
+    kanji: "寄",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 661,
+    kanji: "殊",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 662,
+    kanji: "恵",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 663,
+    kanji: "姿",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 664,
+    kanji: "積",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 665,
+    kanji: "影",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 666,
+    kanji: "苔",
+    lesson: 35,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 667,
+    kanji: "亡",
+    lesson: 38,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 668,
+    kanji: "退",
+    lesson: 38,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 669,
+    kanji: "岸",
+    lesson: 38,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 670,
+    kanji: "類",
+    lesson: 38,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 671,
+    kanji: "爆",
+    lesson: 38,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 672,
+    kanji: "整",
+    lesson: 38,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 673,
+    kanji: "双",
+    lesson: 38,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 674,
+    kanji: "似",
+    lesson: 38,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 675,
+    kanji: "格",
+    lesson: 38,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 676,
+    kanji: "盆",
+    lesson: 38,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 677,
+    kanji: "刻",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 678,
+    kanji: "離",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 679,
+    kanji: "複",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 680,
+    kanji: "雑",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 681,
+    kanji: "邪",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 682,
+    kanji: "魔",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 683,
+    kanji: "故",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 684,
+    kanji: "汗",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 685,
+    kanji: "勢",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 686,
+    kanji: "伺",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 687,
+    kanji: "途",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 688,
+    kanji: "寂",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 689,
+    kanji: "面",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 690,
+    kanji: "懐",
+    lesson: 39,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 691,
+    kanji: "測",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 692,
+    kanji: "到",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 693,
+    kanji: "酔",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 694,
+    kanji: "裏",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 695,
+    kanji: "返",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 696,
+    kanji: "傷",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 697,
+    kanji: "杯",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 698,
+    kanji: "件",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 699,
+    kanji: "弾",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 700,
+    kanji: "懸",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 701,
+    kanji: "命",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 702,
+    kanji: "犯",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 703,
+    kanji: "容",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 704,
+    kanji: "算",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 705,
+    kanji: "線",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 706,
+    kanji: "模",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 707,
+    kanji: "縦",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 708,
+    kanji: "玉",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 709,
+    kanji: "柄",
+    lesson: 40,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 710,
+    kanji: "呼",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 711,
+    kanji: "替",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 712,
+    kanji: "祝",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 713,
+    kanji: "舞",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 714,
+    kanji: "興",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 715,
+    kanji: "報",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 716,
+    kanji: "猿",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 717,
+    kanji: "靴",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 718,
+    kanji: "輪",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 719,
+    kanji: "孫",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 720,
+    kanji: "訳",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 721,
+    kanji: "預",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 722,
+    kanji: "助",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 723,
+    kanji: "亀",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 724,
+    kanji: "城",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 725,
+    kanji: "姫",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 726,
+    kanji: "暮",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 727,
+    kanji: "煙",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 728,
+    kanji: "身",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 729,
+    kanji: "禅",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 730,
+    kanji: "精",
+    lesson: 41,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 731,
+    kanji: "包",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 732,
+    kanji: "沸",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 733,
+    kanji: "混",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 734,
+    kanji: "厚",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 735,
+    kanji: "薄",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 736,
+    kanji: "護",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 737,
+    kanji: "歴",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 738,
+    kanji: "史",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 739,
+    kanji: "論",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 740,
+    kanji: "栓",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 741,
+    kanji: "詰",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 742,
+    kanji: "材",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 743,
+    kanji: "削",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 744,
+    kanji: "鉛",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 745,
+    kanji: "筆",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 746,
+    kanji: "修",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 747,
+    kanji: "液",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 748,
+    kanji: "卓",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 749,
+    kanji: "規",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 750,
+    kanji: "締",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 751,
+    kanji: "緩",
+    lesson: 42,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 752,
+    kanji: "輸",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 753,
+    kanji: "減",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 754,
+    kanji: "丈",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 755,
+    kanji: "房",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 756,
+    kanji: "適",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 757,
+    kanji: "齢",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 758,
+    kanji: "収",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 759,
+    kanji: "誠",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 760,
+    kanji: "実",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 761,
+    kanji: "厳",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 762,
+    kanji: "頑",
+    lesson: 43,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 763,
+    kanji: "滑",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 764,
+    kanji: "節",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 765,
+    kanji: "丁",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 766,
+    kanji: "寧",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 767,
+    kanji: "濃",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 768,
+    kanji: "涙",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 769,
+    kanji: "量",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 770,
+    kanji: "順",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 771,
+    kanji: "序",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 772,
+    kanji: "縁",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 773,
+    kanji: "刈",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 774,
+    kanji: "編",
+    lesson: 44,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 775,
+    kanji: "謝",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 776,
+    kanji: "保",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 777,
+    kanji: "証",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 778,
+    kanji: "領",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 779,
+    kanji: "贈",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 780,
+    kanji: "札",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 781,
+    kanji: "位",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 782,
+    kanji: "悩",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 783,
+    kanji: "鳴",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 784,
+    kanji: "器",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 785,
+    kanji: "貴",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 786,
+    kanji: "救",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 787,
+    kanji: "非",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 788,
+    kanji: "常",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 789,
+    kanji: "避",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 790,
+    kanji: "難",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 791,
+    kanji: "崩",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 792,
+    kanji: "崖",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 793,
+    kanji: "象",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 794,
+    kanji: "検",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 795,
+    kanji: "緊",
+    lesson: 45,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 796,
+    kanji: "渡",
+    lesson: 46,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 797,
+    kanji: "因",
+    lesson: 46,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 798,
+    kanji: "射",
+    lesson: 46,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 799,
+    kanji: "欲",
+    lesson: 46,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 800,
+    kanji: "識",
+    lesson: 46,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 801,
+    kanji: "宝",
+    lesson: 46,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 802,
+    kanji: "庫",
+    lesson: 46,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
+  }
+,
+
+  {
+    id: 803,
+    kanji: "秒",
+    lesson: 46,
+    onyomi: "",
+    kunyomi: "",
+    meaning: "",
+    sinoVietnamese: "",
+    examples: []
   }
 ];
