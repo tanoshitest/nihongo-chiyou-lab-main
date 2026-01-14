@@ -1,0 +1,380 @@
+[
+  {
+    "word": "おきます",
+    "line": 9399,
+    "romaji": "okimasu",
+    "mean": "Dậy, thức dậy"
+  },
+  {
+    "word": "ねます",
+    "line": 9473,
+    "romaji": "nemasu",
+    "mean": "Ngủ, đi ngủ"
+  },
+  {
+    "word": "はたらきます",
+    "line": 9542,
+    "romaji": "hatarakimasu",
+    "mean": "Làm việc"
+  },
+  {
+    "word": "やすみます",
+    "line": 9611,
+    "romaji": "yasumimasu",
+    "mean": "Nghỉ, nghỉ ngơi"
+  },
+  {
+    "word": "べんきょうします",
+    "line": 9680,
+    "romaji": "benkyoushimasu",
+    "mean": "Học"
+  },
+  {
+    "word": "おわります",
+    "line": 9780,
+    "romaji": "owarimasu",
+    "mean": "Hết, kết thúc, xong"
+  },
+  {
+    "word": "デパート",
+    "line": 9833,
+    "romaji": "depaato",
+    "mean": "Bách hóa"
+  },
+  {
+    "word": "ぎんこう",
+    "line": 9839,
+    "romaji": "ginkou",
+    "mean": "Ngân hàng"
+  },
+  {
+    "word": "ゆうびんきょく",
+    "line": 9891,
+    "romaji": "yuubinkyoku",
+    "mean": "Bưu điện"
+  },
+  {
+    "word": "としょかん",
+    "line": 9969,
+    "romaji": "toshokan",
+    "mean": "Thư viện"
+  },
+  {
+    "word": "びじゅつかん",
+    "line": 10043,
+    "romaji": "bijutsukan",
+    "mean": "Bảo tàng mỹ thuật"
+  },
+  {
+    "word": "いま",
+    "line": 10117,
+    "romaji": "ima",
+    "mean": "Bây giờ"
+  },
+  {
+    "word": "ーじ",
+    "line": 10147,
+    "romaji": "-ji",
+    "mean": "- giờ"
+  },
+  {
+    "word": "ーふん（－ぷん）",
+    "line": 10177,
+    "romaji": "-fun (-pun)",
+    "mean": "- phút"
+  },
+  {
+    "word": "はん",
+    "line": 10207,
+    "romaji": "han",
+    "mean": "Rưỡi, nửa"
+  },
+  {
+    "word": "なんじ",
+    "line": 10241,
+    "romaji": "nanji",
+    "mean": "Mấy giờ"
+  },
+  {
+    "word": "なんぷん",
+    "line": 10293,
+    "romaji": "nanpun",
+    "mean": "Mấy phút"
+  },
+  {
+    "word": "ごぜん",
+    "line": 10345,
+    "romaji": "gozen",
+    "mean": "Trước 12 giờ trưa, sáng"
+  },
+  {
+    "word": "ごご",
+    "line": 10401,
+    "romaji": "gogo",
+    "mean": "Sau 12 giờ trưa, chiều"
+  },
+  {
+    "word": "あさ",
+    "line": 10457,
+    "romaji": "asa",
+    "mean": "Buổi sáng, sáng"
+  },
+  {
+    "word": "ひる",
+    "line": 10487,
+    "romaji": "hiru",
+    "mean": "Buổi trưa, trưa"
+  },
+  {
+    "word": "ばん（よる）",
+    "line": 10517,
+    "romaji": "ban (yoru)",
+    "mean": "Buổi tối, tối"
+  },
+  {
+    "word": "おととい",
+    "line": 10573,
+    "romaji": "ototoi",
+    "mean": "Hôm kia"
+  },
+  {
+    "word": "きのう",
+    "line": 10579,
+    "romaji": "kinou",
+    "mean": "Hôm qua"
+  },
+  {
+    "word": "きょう",
+    "line": 10585,
+    "romaji": "kyou",
+    "mean": "Hôm nay"
+  },
+  {
+    "word": "あした",
+    "line": 10591,
+    "romaji": "ashita",
+    "mean": "Ngày mai"
+  },
+  {
+    "word": "あさって",
+    "line": 10597,
+    "romaji": "asatte",
+    "mean": "Ngày kia"
+  },
+  {
+    "word": "けさ",
+    "line": 10603,
+    "romaji": "kesa",
+    "mean": "Sáng nay"
+  },
+  {
+    "word": "こんばん",
+    "line": 10609,
+    "romaji": "konban",
+    "mean": "Tối nay"
+  },
+  {
+    "word": "やすみ",
+    "line": 10661,
+    "romaji": "yasumi",
+    "mean": "Nghỉ, nghỉ phép, ngày nghỉ"
+  },
+  {
+    "word": "ひるやすみ",
+    "line": 10691,
+    "romaji": "hiruyasumi",
+    "mean": "Nghỉ trưa"
+  },
+  {
+    "word": "まいあさ",
+    "line": 10743,
+    "romaji": "maiasa",
+    "mean": "Hàng sáng, mỗi sáng"
+  },
+  {
+    "word": "まいばん",
+    "line": 10791,
+    "romaji": "maiban",
+    "mean": "Hàng tối, mỗi tối"
+  },
+  {
+    "word": "まいにち",
+    "line": 10839,
+    "romaji": "mainichi",
+    "mean": "Hàng ngày, mỗi ngày"
+  },
+  {
+    "word": "げつようび",
+    "line": 10883,
+    "romaji": "getsuyoubi",
+    "mean": "Thứ hai"
+  },
+  {
+    "word": "かようび",
+    "line": 10949,
+    "romaji": "kayoubi",
+    "mean": "Thứ ba"
+  },
+  {
+    "word": "すいようび",
+    "line": 11015,
+    "romaji": "suiyoubi",
+    "mean": "Thứ tư"
+  },
+  {
+    "word": "もくようび",
+    "line": 11081,
+    "romaji": "mokuyoubi",
+    "mean": "Thứ năm"
+  },
+  {
+    "word": "きんようび",
+    "line": 11147,
+    "romaji": "kinyoubi",
+    "mean": "Thứ sáu"
+  },
+  {
+    "word": "どようび",
+    "line": 11213,
+    "romaji": "doyoubi",
+    "mean": "Thứ bảy"
+  },
+  {
+    "word": "にちようび",
+    "line": 11279,
+    "romaji": "nichyoubi",
+    "mean": "Chủ nhật"
+  },
+  {
+    "word": "なんようび",
+    "line": 11345,
+    "romaji": "nanyoubi",
+    "mean": "Thứ mấy"
+  },
+  {
+    "word": "ばんごう",
+    "line": 11415,
+    "romaji": "bangou",
+    "mean": "Số (số điện thoại, số phòng)"
+  },
+  {
+    "word": "なんばん",
+    "line": 11467,
+    "romaji": "nanban",
+    "mean": "Số bao nhiêu, số mấy"
+  },
+  {
+    "word": "～から",
+    "line": 11519,
+    "romaji": "~kara",
+    "mean": "~ từ"
+  },
+  {
+    "word": "～まで",
+    "line": 11525,
+    "romaji": "~made",
+    "mean": "~ đến"
+  },
+  {
+    "word": "～と～",
+    "line": 11531,
+    "romaji": "~to~",
+    "mean": "~ và (dùng để nối hai danh từ)"
+  },
+  {
+    "word": "そちら",
+    "line": 11537,
+    "romaji": "sochira",
+    "mean": "Ông/bà, phía ông/phía bà"
+  },
+  {
+    "word": "たいへんですね",
+    "line": 11543,
+    "romaji": "taihen desu ne",
+    "mean": "Anh/Chị vất vả quá. (dùng để bày tỏ sự thông cảm)"
+  },
+  {
+    "word": "えーと",
+    "line": 11591,
+    "romaji": "eeto",
+    "mean": "Ừ, à (từ đệm trong hội thoại khi đang nghĩ điều muốn nói)"
+  },
+  {
+    "word": "おねがいします",
+    "line": 11597,
+    "romaji": "onegaishimasu",
+    "mean": "Nhờ anh/chị. Phiền anh/chị. Xin vui lòng giúp đỡ."
+  },
+  {
+    "word": "かしこまりました",
+    "line": 11627,
+    "romaji": "kashikomarimashita",
+    "mean": "Tôi hiểu rồi ạ./ Vâng, được rồi ạ."
+  },
+  {
+    "word": "おといあわせのばんごう",
+    "line": 11633,
+    "romaji": "otoiawase no bangou",
+    "mean": "Số điện thoại mà ông/bà muốn hỏi"
+  },
+  {
+    "word": "〔どうも〕ありがとうございました",
+    "line": 11733,
+    "romaji": "〔doumo〕arigatou gozaimashita",
+    "mean": "Xin cám ơn ông/bà."
+  },
+  {
+    "word": "ニューヨーク",
+    "line": 11739,
+    "romaji": "Nyuuyooku",
+    "mean": "New York"
+  },
+  {
+    "word": "ペキン",
+    "line": 11745,
+    "romaji": "Pekin",
+    "mean": "Bắc Kinh"
+  },
+  {
+    "word": "ロンドン",
+    "line": 11801,
+    "romaji": "Rondon",
+    "mean": "Luân Đôn"
+  },
+  {
+    "word": "バンコク",
+    "line": 11807,
+    "romaji": "Bankoku",
+    "mean": "Băng Cốc"
+  },
+  {
+    "word": "ロサンゼルス",
+    "line": 11813,
+    "romaji": "Rosanzerusu",
+    "mean": "Los Angeles"
+  },
+  {
+    "word": "やまとびじゅつかん",
+    "line": 11819,
+    "romaji": "Yamato bijutsukan",
+    "mean": "Tên một bảo tàng mỹ thuật (giả tưởng)"
+  },
+  {
+    "word": "おおさかデパート",
+    "line": 11893,
+    "romaji": "Osaka depaato",
+    "mean": "Tên một bách hóa (giả tưởng)"
+  },
+  {
+    "word": "みどりとしょかん",
+    "line": 11941,
+    "romaji": "Midori toshokan",
+    "mean": "Tên một thư viện (giả tưởng)"
+  },
+  {
+    "word": "アップルぎんこう",
+    "line": 12015,
+    "romaji": "Appuru ginkou",
+    "mean": "Tên một ngân hàng (giả tưởng)"
+  }
+]

@@ -9147,6 +9147,7 @@ export const lesson3Data: LessonDetail = {
     },
     {
       word: 'かいしゃ', kanji: '会社', romaji: 'kaisha', mean: 'công ty',
+      image: '/images/vocabulary/lesson3/kaisha.png',
       examples: [{ jp: '会社はどちらですか。', romaji: 'Kaisha wa dochira desu ka.', vn: 'Công ty của anh ở đâu?', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }] }],
       kanjiDetails: [
         {
@@ -9161,6 +9162,7 @@ export const lesson3Data: LessonDetail = {
     },
     {
       word: 'うち', kanji: '家', romaji: 'uchi', mean: 'nhà',
+      image: '/images/vocabulary/lesson3/uchi.png',
       examples: [{ jp: 'うちは大阪です。', romaji: 'Uchi wa Oosaka desu.', vn: 'Nhà tôi ở Osaka.', furigana: [{ kanji: '大阪', reading: 'おおさか', meaning: 'ĐẠI PHẢN' }] }],
       kanjiDetails: [
         {
@@ -9171,6 +9173,7 @@ export const lesson3Data: LessonDetail = {
     },
     {
       word: 'でんわ', kanji: '電話', romaji: 'denwa', mean: 'điện thoại',
+      image: '/images/vocabulary/lesson3/denwa.png',
       examples: [{ jp: '電話をかけます。', romaji: 'Denwa wo kakemasu.', vn: 'Tôi gọi điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] }],
       kanjiDetails: [
         {
@@ -9185,6 +9188,7 @@ export const lesson3Data: LessonDetail = {
     },
     {
       word: 'くつ', kanji: '靴', romaji: 'kutsu', mean: 'giày',
+      image: '/images/vocabulary/lesson3/kutsu.png',
       examples: [{ jp: '靴を買います。', romaji: 'Kutsu wo kaimasu.', vn: 'Tôi mua giày.', furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'NGOA' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }] }],
       kanjiDetails: [
         {
@@ -9195,14 +9199,17 @@ export const lesson3Data: LessonDetail = {
     },
     {
       word: 'ネクタイ', kanji: '', romaji: 'nekutai', mean: 'cà vạt',
+      image: '/images/vocabulary/lesson3/nekutai.png',
       examples: [{ jp: 'ネクタイをします。', romaji: 'Nekutai wo shimasu.', vn: 'Tôi thắt cà vạt.', furigana: [] }]
     },
     {
       word: 'ワイン', kanji: '', romaji: 'wain', mean: 'rượu vang',
+      image: '/images/vocabulary/lesson3/wain.png',
       examples: [{ jp: 'ワインを飲みます。', romaji: 'Wain wo nomimasu.', vn: 'Tôi uống rượu vang.', furigana: [{ kanji: '飲', reading: 'の', meaning: 'ẨM' }] }]
     },
     {
       word: 'たばこ', kanji: '', romaji: 'tabako', mean: 'thuốc lá',
+      image: '/images/vocabulary/lesson3/tabako.png',
       examples: [{ jp: 'たばこを吸います。', romaji: 'Tabako wo suimasu.', vn: 'Tôi hút thuốc.', furigana: [{ kanji: '吸', reading: 'す', meaning: 'HẤP' }] }]
     },
     {
@@ -9239,6 +9246,7 @@ export const lesson3Data: LessonDetail = {
     },
     {
       word: 'なんがい', kanji: '何階', romaji: 'nangai', mean: 'tầng mấy',
+      image: '/images/vocabulary/lesson3/nangai.png',
       examples: [{ jp: '何階ですか。', romaji: 'Nangai desu ka.', vn: 'Tầng mấy vậy?', furigana: [{ kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }] }],
       kanjiDetails: [
         {
@@ -9253,6 +9261,7 @@ export const lesson3Data: LessonDetail = {
     },
     {
       word: 'ーえん', kanji: 'ー円', romaji: '-en', mean: '- yên (tiền Nhật)',
+      image: '/images/vocabulary/lesson3/en.png',
       examples: [{ jp: '百円です。', romaji: 'Hyaku-en desu.', vn: '100 yên.', furigana: [{ kanji: '百', reading: 'ひゃく', meaning: 'BÁCH' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] }],
       kanjiDetails: [
         {
@@ -9263,10 +9272,12 @@ export const lesson3Data: LessonDetail = {
     },
     {
       word: 'いくら', kanji: '', romaji: 'ikura', mean: 'bao nhiêu tiền',
+      image: '/images/vocabulary/lesson3/ikura.png',
       examples: [{ jp: 'これはいくらですか。', romaji: 'Kore wa ikura desu ka.', vn: 'Cái này bao nhiêu tiền?', furigana: [] }]
     },
     {
       word: 'ひゃく', kanji: '百', romaji: 'hyaku', mean: 'trăm',
+      image: '/images/vocabulary/lesson3/hyaku.png',
       examples: [{ jp: '三百円です。', romaji: 'Sanbyaku-en desu.', vn: '300 yên.', furigana: [{ kanji: '三', reading: 'さん', meaning: 'TAM' }, { kanji: '百', reading: 'びゃく', meaning: 'BÁCH' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] }],
       kanjiDetails: [
         {
@@ -9277,6 +9288,7 @@ export const lesson3Data: LessonDetail = {
     },
     {
       word: 'せん', kanji: '千', romaji: 'sen', mean: 'nghìn',
+      image: '/images/vocabulary/lesson3/sen.png',
       examples: [{ jp: '千円です。', romaji: 'Sen-en desu.', vn: '1000 yên.', furigana: [{ kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] }],
       kanjiDetails: [
         {
@@ -9287,6 +9299,7 @@ export const lesson3Data: LessonDetail = {
     },
     {
       word: 'まん', kanji: '万', romaji: 'man', mean: 'mười nghìn, vạn',
+      image: '/images/vocabulary/lesson3/man.png',
       examples: [{ jp: '一万円です。', romaji: 'Ichiman-en desu.', vn: '10,000 yên.', furigana: [{ kanji: '一', reading: 'いち', meaning: 'NHẤT' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] }],
       kanjiDetails: [
         {
@@ -9397,6 +9410,7 @@ export const lesson4Data: LessonDetail = {
   vocabulary: [
     {
       "word": "おきます",
+      image: "/images/vocabulary/lesson4/okimasu.png",
       "kanji": "起きます",
       "romaji": "okimasu",
       "mean": "Dậy, thức dậy",
@@ -9471,6 +9485,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "ねます",
+      image: "/images/vocabulary/lesson4/nemasu.png",
       "kanji": "寝ます",
       "romaji": "nemasu",
       "mean": "Ngủ, đi ngủ",
@@ -9536,10 +9551,13 @@ export const lesson4Data: LessonDetail = {
             }
           ]
         }
+
       ]
     },
+
     {
       "word": "はたらきます",
+      image: "/images/vocabulary/lesson4/hatarakimasu.png",
       "kanji": "働きます",
       "romaji": "hatarakimasu",
       "mean": "Làm việc",
@@ -9603,12 +9621,15 @@ export const lesson4Data: LessonDetail = {
               "char": "動",
               "meaning": "động"
             }
+
           ]
         }
       ]
+
     },
     {
       "word": "やすみます",
+      image: "/images/vocabulary/lesson4/yasumimasu.png",
       "kanji": "休みます",
       "romaji": "yasumimasu",
       "mean": "Nghỉ, nghỉ ngơi",
@@ -9670,14 +9691,17 @@ export const lesson4Data: LessonDetail = {
             },
             {
               "char": "木",
+
               "meaning": "cây"
             }
           ]
         }
+
       ]
     },
     {
       "word": "べんきょうします",
+      image: "/images/vocabulary/lesson4/benkyoushimasu.png",
       "kanji": "勉強します",
       "romaji": "benkyoushimasu",
       "mean": "Học",
@@ -9768,16 +9792,19 @@ export const lesson4Data: LessonDetail = {
               "char": "ム",
               "meaning": "khư"
             },
+
             {
               "char": "虫",
               "meaning": "côn trùng"
             }
           ]
+
         }
       ]
     },
     {
       "word": "おわります",
+      image: "/images/vocabulary/lesson4/owarimasu.png",
       "kanji": "終わります",
       "romaji": "owarimasu",
       "mean": "Hết, kết thúc, xong",
@@ -9819,24 +9846,29 @@ export const lesson4Data: LessonDetail = {
           "components": [
             {
               "char": "糸",
+
               "meaning": "sợi tơ"
             },
             {
               "char": "冬",
               "meaning": "mùa đông"
             }
+
           ]
         }
       ]
     },
     {
       "word": "デパート",
+
+      image: "/images/vocabulary/lesson4/depaato.png",
       "kanji": "",
       "romaji": "depaato",
       "mean": "Bách hóa"
     },
     {
       "word": "ぎんこう",
+      image: "/images/vocabulary/lesson4/ginkou.png",
       "kanji": "銀行",
       "romaji": "ginkou",
       "mean": "Ngân hàng",
@@ -9873,6 +9905,7 @@ export const lesson4Data: LessonDetail = {
           "jlpt": "N5",
           "radicals": "行 (hành)",
           "mnemonic": "Bước chân trái (彳) bước chân phải (亍) là đi.",
+
           "exampleSentences": [],
           "components": [
             {
@@ -9881,6 +9914,7 @@ export const lesson4Data: LessonDetail = {
             },
             {
               "char": "亍",
+
               "meaning": "bước phải"
             }
           ]
@@ -9889,6 +9923,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "ゆうびんきょく",
+      image: "/images/vocabulary/lesson4/yuubinkyoku.png",
       "kanji": "郵便局",
       "romaji": "yuubinkyoku",
       "mean": "Bưu điện",
@@ -9949,6 +9984,7 @@ export const lesson4Data: LessonDetail = {
           "mnemonic": "Dưới xác chết (尸) có một cái thước (尺).",
           "exampleSentences": [],
           "components": [
+
             {
               "char": "尸",
               "meaning": "xác chết"
@@ -9958,6 +9994,7 @@ export const lesson4Data: LessonDetail = {
               "meaning": "bao"
             },
             {
+
               "char": "口",
               "meaning": "miệng"
             }
@@ -9967,6 +10004,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "としょかん",
+      image: "/images/vocabulary/lesson4/toshokan.png",
       "kanji": "図書館",
       "romaji": "toshokan",
       "mean": "Thư viện",
@@ -10021,6 +10059,7 @@ export const lesson4Data: LessonDetail = {
           "kunyomi": "やかた (yakata)",
           "meaning": "Tòa quán, hội quán",
           "sinoVietnamese": "QUÁN",
+
           "strokes": 16,
           "jlpt": "N4",
           "radicals": "食 (thực)",
@@ -10031,6 +10070,7 @@ export const lesson4Data: LessonDetail = {
               "char": "食",
               "meaning": "thực"
             },
+
             {
               "char": "官",
               "meaning": "quan"
@@ -10041,6 +10081,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "びじゅつかん",
+      image: "/images/vocabulary/lesson4/bijutsukan.png",
       "kanji": "美術館",
       "romaji": "bijutsukan",
       "mean": "Bảo tàng mỹ thuật",
@@ -10094,6 +10135,7 @@ export const lesson4Data: LessonDetail = {
           "onyomi": "カン (kan)",
           "kunyomi": "やかた (yakata)",
           "meaning": "Tòa quán, hội quán",
+
           "sinoVietnamese": "QUÁN",
           "strokes": 16,
           "jlpt": "N4",
@@ -10105,6 +10147,7 @@ export const lesson4Data: LessonDetail = {
               "char": "食",
               "meaning": "thực"
             },
+
             {
               "char": "官",
               "meaning": "quan"
@@ -10115,6 +10158,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "いま",
+      image: "/images/vocabulary/lesson4/ima.png",
       "kanji": "今",
       "romaji": "ima",
       "mean": "Bây giờ",
@@ -10183,6 +10227,7 @@ export const lesson4Data: LessonDetail = {
           "kanji": "分",
           "onyomi": "フン (fun), ブン (bun)",
           "kunyomi": "わ.ける (wakeru)",
+
           "meaning": "Phân chia, phút",
           "sinoVietnamese": "PHÂN",
           "strokes": 4,
@@ -10195,6 +10240,7 @@ export const lesson4Data: LessonDetail = {
               "char": "八",
               "meaning": "bát"
             },
+
             {
               "char": "刀",
               "meaning": "đao"
@@ -10205,6 +10251,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "はん",
+      image: "/images/vocabulary/lesson4/han.png",
       "kanji": "半",
       "romaji": "han",
       "mean": "Rưỡi, nửa",
@@ -10216,6 +10263,7 @@ export const lesson4Data: LessonDetail = {
           "meaning": "Một nửa",
           "sinoVietnamese": "BÁN",
           "strokes": 5,
+
           "jlpt": "N5",
           "radicals": "十 (thập)",
           "mnemonic": "Hai (二) cái que cắm vào cái lỗ ở giữa (丨), chia làm đôi.",
@@ -10229,6 +10277,7 @@ export const lesson4Data: LessonDetail = {
               "char": "二",
               "meaning": "nhị"
             },
+
             {
               "char": "丨",
               "meaning": "sổ"
@@ -10239,6 +10288,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "なんじ",
+      image: "/images/vocabulary/lesson4/nanji.png",
       "kanji": "何時",
       "romaji": "nanji",
       "mean": "Mấy giờ",
@@ -10267,6 +10317,7 @@ export const lesson4Data: LessonDetail = {
         },
         {
           "kanji": "時",
+
           "onyomi": "ジ (ji)",
           "kunyomi": "とき (toki)",
           "meaning": "Thời gian",
@@ -10281,6 +10332,7 @@ export const lesson4Data: LessonDetail = {
               "char": "日",
               "meaning": "nhật"
             },
+
             {
               "char": "寺",
               "meaning": "chùa"
@@ -10291,6 +10343,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "なんぷん",
+      image: "/images/vocabulary/lesson4/nanpun.png",
       "kanji": "何分",
       "romaji": "nanpun",
       "mean": "Mấy phút",
@@ -10318,6 +10371,7 @@ export const lesson4Data: LessonDetail = {
           ]
         },
         {
+
           "kanji": "分",
           "onyomi": "フン (fun)",
           "kunyomi": "わ.ける (wakeru)",
@@ -10333,6 +10387,7 @@ export const lesson4Data: LessonDetail = {
               "char": "八",
               "meaning": "bát"
             },
+
             {
               "char": "刀",
               "meaning": "đao"
@@ -10343,6 +10398,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "ごぜん",
+      image: "/images/vocabulary/lesson4/gozen.png",
       "kanji": "午前",
       "romaji": "gozen",
       "mean": "Trước 12 giờ trưa, sáng",
@@ -10373,6 +10429,7 @@ export const lesson4Data: LessonDetail = {
           "kanji": "前",
           "onyomi": "ゼン (zen)",
           "kunyomi": "まえ (mae)",
+
           "meaning": "Trước",
           "sinoVietnamese": "TIỀN",
           "strokes": 9,
@@ -10389,6 +10446,7 @@ export const lesson4Data: LessonDetail = {
               "char": "月",
               "meaning": "nguyệt"
             },
+
             {
               "char": "刂",
               "meaning": "đao"
@@ -10399,6 +10457,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "ごご",
+      image: "/images/vocabulary/lesson4/gogo.png",
       "kanji": "午後",
       "romaji": "gogo",
       "mean": "Sau 12 giờ trưa, chiều",
@@ -10428,6 +10487,7 @@ export const lesson4Data: LessonDetail = {
         {
           "kanji": "後",
           "onyomi": "ゴ (go), コウ (kou)",
+
           "kunyomi": "うし.ろ (ushiro), あと (ato)",
           "meaning": "Sau",
           "sinoVietnamese": "HẬU",
@@ -10445,6 +10505,7 @@ export const lesson4Data: LessonDetail = {
               "char": "幺",
               "meaning": "yêu"
             },
+
             {
               "char": "夂",
               "meaning": "truy"
@@ -10455,8 +10516,10 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "あさ",
+      image: "/images/vocabulary/lesson4/asa.png",
       "kanji": "朝",
       "romaji": "asa",
+
       "mean": "Buổi sáng, sáng",
       "kanjiDetails": [
         {
@@ -10485,6 +10548,7 @@ export const lesson4Data: LessonDetail = {
     },
     {
       "word": "ひる",
+      image: "/images/vocabulary/lesson4/hiru.png",
       "kanji": "昼",
       "romaji": "hiru",
       "mean": "Buổi trưa, trưa",

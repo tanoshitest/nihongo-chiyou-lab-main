@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { kanjiData } from "@/data/kanjiData";
 import KanjiFlipCard from "./KanjiFlipCard";
 import { Input } from "@/components/ui/input";
@@ -10,11 +10,32 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Button } from "@/components/ui/button";
 
 const KanjiGrid = () => {
   const [activeCardId, setActiveCardId] = useState<number | null>(null);
   const [selectedLesson, setSelectedLesson] = useState<string>("all");
+
   const [searchQuery, setSearchQuery] = useState("");
+  const [showLearnedOnly, setShowLearnedOnly] = useState(false);
+
+  // Selection State with Persistence
+  const [selectedKanji, setSelectedKanji] = useState<number[]>(() => {
+    const saved = localStorage.getItem("kanji_selection");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("kanji_selection", JSON.stringify(selectedKanji));
+  }, [selectedKanji]);
+
+  const toggleSelection = (id: number) => {
+    setSelectedKanji(prev =>
+      prev.includes(id)
+        ? prev.filter(item => item !== id)
+        : [...prev, id]
+    );
+  };
 
   const handleCardFlip = (id: number) => {
     setActiveCardId(activeCardId === id ? null : id);
@@ -26,6 +47,11 @@ const KanjiGrid = () => {
     // Filter by Lesson
     if (selectedLesson !== "all") {
       filtered = filtered.filter((kanji) => kanji.lesson === parseInt(selectedLesson));
+    }
+
+    // Filter by Learned Status
+    if (showLearnedOnly) {
+      filtered = filtered.filter((kanji) => selectedKanji.includes(kanji.id));
     }
 
     // Filter by Search Query
@@ -41,7 +67,7 @@ const KanjiGrid = () => {
     }
 
     return filtered;
-  }, [selectedLesson, searchQuery]);
+  }, [selectedLesson, searchQuery, showLearnedOnly, selectedKanji]);
 
   const lessons = Array.from({ length: 32 }, (_, i) => i + 1);
 
@@ -63,12 +89,12 @@ const KanjiGrid = () => {
             />
           </div>
 
-          <div className="w-full md:w-[180px]">
+          <div className="flex flex-col md:flex-row gap-2 w-full md:w-auto">
             <Select
               value={selectedLesson}
               onValueChange={setSelectedLesson}
             >
-              <SelectTrigger>
+              <SelectTrigger className="w-full md:w-[160px]">
                 <SelectValue placeholder="Chọn bài học" />
               </SelectTrigger>
               <SelectContent>
@@ -80,6 +106,23 @@ const KanjiGrid = () => {
                 ))}
               </SelectContent>
             </Select>
+
+            <div className="flex bg-muted/20 p-1 rounded-lg border">
+              <Button
+                variant={!showLearnedOnly ? "default" : "ghost"}
+                onClick={() => setShowLearnedOnly(false)}
+                className={`h-9 px-3 ${!showLearnedOnly ? "bg-[#008001] hover:bg-[#006801] shadow-sm" : "text-muted-foreground hover:text-[#008001]"}`}
+              >
+                <span className="font-bold text-sm">Tất cả</span>
+              </Button>
+              <Button
+                variant={showLearnedOnly ? "default" : "ghost"}
+                onClick={() => setShowLearnedOnly(true)}
+                className={`h-9 px-3 ${showLearnedOnly ? "bg-[#008001] hover:bg-[#006801] shadow-sm" : "text-muted-foreground hover:text-[#008001]"}`}
+              >
+                <span className="font-bold text-sm">Đã học</span>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
@@ -96,16 +139,20 @@ const KanjiGrid = () => {
             kanji={kanji}
             isFlipped={activeCardId === kanji.id}
             onFlip={() => handleCardFlip(kanji.id)}
+            isSelected={selectedKanji.includes(kanji.id)}
+            onToggleSelection={() => toggleSelection(kanji.id)}
           />
         ))}
       </div>
 
-      {filteredKanji.length === 0 && (
-        <div className="text-center py-12 text-muted-foreground">
-          Không tìm thấy Kanji nào phù hợp với tìm kiếm của bạn.
-        </div>
-      )}
-    </div>
+      {
+        filteredKanji.length === 0 && (
+          <div className="text-center py-12 text-muted-foreground">
+            Không tìm thấy Kanji nào phù hợp với tìm kiếm của bạn.
+          </div>
+        )
+      }
+    </div >
   );
 };
 

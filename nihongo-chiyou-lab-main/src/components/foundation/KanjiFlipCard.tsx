@@ -3,13 +3,17 @@ import { KanjiCard } from "@/data/kanjiData";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
+import { Check } from "lucide-react";
+
 interface KanjiFlipCardProps {
   kanji: KanjiCard;
   isFlipped: boolean;
   onFlip: () => void;
+  isSelected: boolean;
+  onToggleSelection: () => void;
 }
 
-const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
+const KanjiFlipCard = ({ kanji, isFlipped, onFlip, isSelected, onToggleSelection }: KanjiFlipCardProps) => {
   // Get Unicode hex code for the Kanji (e.g. '日' -> '65e5')
   const unicodeHex = kanji.kanji.charCodeAt(0).toString(16).toLowerCase().padStart(5, '0');
   const svgUrl = `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/${unicodeHex}.svg`;
@@ -87,7 +91,26 @@ const KanjiFlipCard = ({ kanji, isFlipped, onFlip }: KanjiFlipCardProps) => {
           className="absolute inset-0 w-full h-full backface-hidden"
           style={{ backfaceVisibility: "hidden" }}
         >
-          <div className="h-full bg-card border border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all duration-300 group flex flex-col">
+          <div className={cn(
+            "h-full bg-card border border-border rounded-xl p-6 hover:shadow-lg hover:border-primary/50 transition-all duration-300 group flex flex-col",
+            isSelected && "bg-blue-50 border-blue-300 shadow-sm"
+          )}>
+            {/* Selection Checkbox */}
+            <div
+              className={cn(
+                "absolute top-3 right-3 w-8 h-8 rounded-full border-2 flex items-center justify-center z-10 transition-colors cursor-pointer hover:scale-110",
+                isSelected
+                  ? "bg-[#008001] border-[#008001] text-white"
+                  : "border-muted-foreground/30 text-transparent hover:border-[#008001]/50"
+              )}
+              onClick={(e) => {
+                e.stopPropagation();
+                onToggleSelection();
+              }}
+            >
+              <Check className="w-5 h-5" strokeWidth={3} />
+            </div>
+
             {/* Header */}
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm text-muted-foreground font-medium">
