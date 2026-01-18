@@ -709,10 +709,10 @@ export const lesson1Data: LessonDetail = {
         },
         {
           jp: '将来, 日本語の先生になりたいです。', romaji: 'Shourai, nihongo no sensei ni naritai desu.', vn: 'Trong tương lai, tôi muốn trở thành giáo viên tiếng Nhật.',
-          furigana: [{ kanji: '将来', reading: 'しょうらい', meaning: 'TƯƠNG LAI' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
-        }
+          furigana: [{ kanji: '将来', reading: 'しょうらい', meaning: 'TƯƠNG LAI' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '先',
           onyomi: 'セン (sen)',
@@ -4332,10 +4332,10 @@ export const lesson1Data: LessonDetail = {
         },
         {
           jp: '毎日英語を勉強します。', romaji: 'Mainichi eigo wo benkyou shimasu.', vn: 'Tôi học tiếng Anh mỗi ngày.',
-          furigana: [{ kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }]
-        }
+          furigana: [{ kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '英',
           onyomi: 'エイ (ei)',
@@ -5801,10 +5801,10 @@ export const lesson1Data: LessonDetail = {
         },
         {
           jp: '富士大学で友達を作ります。', romaji: 'Fuji Daigaku de tomodachi wo tsukurimasu.', vn: 'Tôi kết bạn ở đại học Fuji.',
-          furigana: [{ kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }]
-        }
+          furigana: [{ kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '富',
           onyomi: 'フ (fu), フウ (fuu)',
@@ -6018,10 +6018,10 @@ export const lesson1Data: LessonDetail = {
         },
         {
           jp: '神戸病院はとても大きいです。', romaji: 'Koube Byouin wa totemo ookii desu.', vn: 'Bệnh viện Kobe rất là lớn.',
-          furigana: [{ kanji: '神戸病院', reading: 'こうべびょういん', meaning: 'THẦN HỘ BỆNH VIỆN' }, { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }]
-        }
+          furigana: [{ kanji: '神戸病院', reading: 'こうべびょういん', meaning: 'THẦN HỘ BỆNH VIỆN' }, { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '神',
           onyomi: 'シン (shin), ジン (jin)',
@@ -9046,10 +9046,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '教室に入ります。', romaji: 'Kyoushitsu ni hairimasu.', vn: 'Vào lớp học.', furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }, { kanji: '入', reading: 'はい', meaning: 'NHẬP' }] },
         { jp: '教室はどこですか。', romaji: 'Kyoushitsu wa doko desu ka.', vn: 'Lớp học ở đâu?', furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }] },
         { jp: '日本語の教室です。', romaji: 'Nihongo no kyoushitsu desu.', vn: 'Là lớp học tiếng Nhật.', furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }] },
-        { jp: 'きれいな教室です。', romaji: 'Kirei na kyoushitsu desu.', vn: 'Lớp học sạch sẽ.', furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }] }
+        { jp: 'きれいな教室です。', romaji: 'Kirei na kyoushitsu desu.', vn: 'Lớp học sạch sẽ.', furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }],
+        },
       ],
-
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '教', onyomi: 'キョウ (kyou)', kunyomi: 'おし.える (oshieru)', meaning: 'Dạy, giáo dục', sinoVietnamese: 'GIÁO', strokes: 11, jlpt: 'N4', radicals: '攴 (phộc)', mnemonic: 'Người già (老) cầm roi (攴) dạy trẻ.',
           exampleSentences: [
@@ -9085,10 +9085,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '会社の食堂です。', romaji: 'Kaisha no shokudou desu.', vn: 'Là nhà ăn của công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }] },
         { jp: '食堂へ行きます。', romaji: 'Shokudou he ikimasu.', vn: 'Tôi đi đến nhà ăn.', furigana: [{ kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
         { jp: '安い食堂です。', romaji: 'Yasui shokudou desu.', vn: 'Nhà ăn rẻ.', furigana: [{ kanji: '安', reading: 'やす', meaning: 'AN' }, { kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }] },
-        { jp: '広い食堂ですね。', romaji: 'Hiroi shokudou desu ne.', vn: 'Nhà ăn rộng nhỉ.', furigana: [{ kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }, { kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }] }
+        { jp: '広い食堂ですね。', romaji: 'Hiroi shokudou desu ne.', vn: 'Nhà ăn rộng nhỉ.', furigana: [{ kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }, { kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }],
+        },
       ],
-
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '食', onyomi: 'ショク (shoku)', kunyomi: 'た.べる (taberu)', meaning: 'Ăn, thực phẩm', sinoVietnamese: 'THỰC', strokes: 9, jlpt: 'N5', radicals: '食 (thực)', mnemonic: 'Người (人) tốt (良) thì được ăn ngon.',
           exampleSentences: [
@@ -9124,10 +9124,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '事務所で働きます。', romaji: 'Jimusho de hatarakimasu.', vn: 'Tôi làm việc ở văn phòng.', furigana: [{ kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }] },
         { jp: '社長の事務所です。', romaji: 'Shachou no jimusho desu.', vn: 'Là văn phòng của giám đốc.', furigana: [{ kanji: '社長', reading: 'しゃちょう', meaning: 'XÃ TRƯỜNG' }, { kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }] },
         { jp: '事務所はどこですか。', romaji: 'Jimusho wa doko desu ka.', vn: 'Văn phòng ở đâu?', furigana: [{ kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }] },
-        { jp: 'きれいな事務所です。', romaji: 'Kirei na jimusho desu.', vn: 'Văn phòng đẹp.', furigana: [{ kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }] }
+        { jp: 'きれいな事務所です。', romaji: 'Kirei na jimusho desu.', vn: 'Văn phòng đẹp.', furigana: [{ kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }],
+        },
       ],
-
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '事', onyomi: 'ジ (ji)', kunyomi: 'こと (koto)', meaning: 'Việc, sự việc', sinoVietnamese: 'SỰ', strokes: 8, jlpt: 'N4', radicals: '亅 (quyết)', mnemonic: 'Một cái miệng (口) và tay cầm bút viết sử (history/sự việc).',
           exampleSentences: [
@@ -9175,10 +9175,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '第一会議室です。', romaji: 'Daiichi kaigishitsu desu.', vn: 'Là phòng họp số 1.', furigana: [{ kanji: '第一', reading: 'だいいち', meaning: 'ĐỆ NHẤT' }, { kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }] },
         { jp: '会議室に入ります。', romaji: 'Kaigishitsu ni hairimasu.', vn: 'Tôi vào phòng họp.', furigana: [{ kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }, { kanji: '入', reading: 'はい', meaning: 'NHẬP' }] },
         { jp: '広い会議室です。', romaji: 'Hiroi kaigishitsu desu.', vn: 'Phòng họp rộng.', furigana: [{ kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }, { kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }] },
-        { jp: '会議室は空いていますか。', romaji: 'Kaigishitsu wa aite imasu ka.', vn: 'Phòng họp có trống không?', furigana: [{ kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }, { kanji: '空', reading: 'あ', meaning: 'KHÔNG' }] }
+        { jp: '会議室は空いていますか。', romaji: 'Kaigishitsu wa aite imasu ka.', vn: 'Phòng họp có trống không?', furigana: [{ kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }, { kanji: '空', reading: 'あ', meaning: 'KHÔNG' }],
+        },
       ],
-
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '会', onyomi: 'カイ (kai)', kunyomi: 'あ.う (au)', meaning: 'Gặp gỡ, hội họp', sinoVietnamese: 'HỘI', strokes: 6, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Hai người (二) ngồi dưới mái nhà (ane) họp.',
           exampleSentences: [
@@ -9226,10 +9226,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '受付に人がいます。', romaji: 'Uketsuke ni hito ga imasu.', vn: 'Có người ở quầy tiếp tân.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }, { kanji: '人', reading: 'ひと', meaning: 'NHÂN' }] },
         { jp: 'ホテルの受付です。', romaji: 'Hoteru no uketsuke desu.', vn: 'Là quầy lễ tân khách sạn.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }] },
         { jp: '受付で聞いてください。', romaji: 'Uketsuke de kiite kudasai.', vn: 'Hãy hỏi ở quầy lễ tân.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }] },
-        { jp: '受付の電話番号です。', romaji: 'Uketsuke no denwa bangou desu.', vn: 'Là số điện thoại quầy lễ tân.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }, { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' }] }
+        { jp: '受付の電話番号です。', romaji: 'Uketsuke no denwa bangou desu.', vn: 'Là số điện thoại quầy lễ tân.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }, { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' }],
+        },
       ],
-
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '受', onyomi: 'ジュ (ju)', kunyomi: 'う.ける (ukeru)', meaning: 'Nhận, chịu', sinoVietnamese: 'THỤ', strokes: 8, jlpt: 'N3', radicals: '又 (hựu)', mnemonic: 'Dùng tay (爪) nhận cái gì đó từ tay khác (又) dưới mái nhà (冖).',
           exampleSentences: [
@@ -9278,10 +9278,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '部屋を掃除します。', romaji: 'Heya wo souji shimasu.', vn: 'Tôi dọn phòng.', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }, { kanji: '掃除', reading: 'そうじ', meaning: 'TẢO TRỪ' }] },
         { jp: '部屋にテレビがあります。', romaji: 'Heya ni terebi ga arimasu.', vn: 'Trong phòng có tivi.', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }] },
         { jp: 'あなたの部屋はどこですか。', romaji: 'Anata no heya wa doko desu ka.', vn: 'Phòng của bạn ở đâu?', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }] },
-        { jp: '暗い部屋です。', romaji: 'Kurai heya desu.', vn: 'Căn phòng tối.', furigana: [{ kanji: '暗', reading: 'くら', meaning: 'ÁM' }, { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }] }
+        { jp: '暗い部屋です。', romaji: 'Kurai heya desu.', vn: 'Căn phòng tối.', furigana: [{ kanji: '暗', reading: 'くら', meaning: 'ÁM' }, { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }],
+        },
       ],
-
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '部', onyomi: 'ブ (bu)', kunyomi: '', meaning: 'Bộ phận, phòng', sinoVietnamese: 'BỘ', strokes: 11, jlpt: 'N4', radicals: '邑 (áp)', mnemonic: 'Đứng (立) mở miệng (口) chia vùng (邑) thành các bộ phận.',
           exampleSentences: [
@@ -9317,10 +9317,10 @@ export const lesson3Data: LessonDetail = {
         { jp: 'きれいなトイレです。', romaji: 'Kirei na toire desu.', vn: 'Nhà vệ sinh sạch sẽ.', furigana: [] },
         { jp: '男性用のトイレです。', romaji: 'Danseiyou no toire desu.', vn: 'Nhà vệ sinh nam.', furigana: [{ kanji: '男性用', reading: 'だんせいよう', meaning: 'NAM TÍNH DỤNG' }] },
         { jp: 'トイレを借ります。', romaji: 'Toire wo karimasu.', vn: 'Tôi mượn nhà vệ sinh.', furigana: [{ kanji: '借', reading: 'か', meaning: 'TÁ' }] },
-        { jp: 'トイレはどこですか。', romaji: 'Toire wa doko desu ka.', vn: 'Nhà vệ sinh ở đâu?', furigana: [] }
+        { jp: 'トイレはどこですか。', romaji: 'Toire wa doko desu ka.', vn: 'Nhà vệ sinh ở đâu?', furigana: [],
+        },
       ],
-
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '手', onyomi: 'シュ (shu)', kunyomi: 'て (te)', meaning: 'Tay', sinoVietnamese: 'THỦ', strokes: 4, jlpt: 'N5', radicals: '手 (thủ)', mnemonic: 'Hình bàn tay xòe 5 ngón.',
           exampleSentences: [
@@ -9356,10 +9356,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '階段を下ります。', romaji: 'Kaidan wo orimasu.', vn: 'Tôi xuống cầu thang.', furigana: [{ kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }, { kanji: '下', reading: 'お', meaning: 'HẠ' }] },
         { jp: '階段はあちらです。', romaji: 'Kaidan wa achira desu.', vn: 'Cầu thang ở phía kia.', furigana: [{ kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }] },
         { jp: '長い階段です。', romaji: 'Nagai kaidan desu.', vn: 'Cầu thang dài.', furigana: [{ kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' }, { kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }] },
-        { jp: '非常階段です。', romaji: 'Hijou kaidan desu.', vn: 'Cầu thang thoát hiểm.', furigana: [{ kanji: '非常', reading: 'ひじょう', meaning: 'PHI THƯỜNG' }, { kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }] }
+        { jp: '非常階段です。', romaji: 'Hijou kaidan desu.', vn: 'Cầu thang thoát hiểm.', furigana: [{ kanji: '非常', reading: 'ひじょう', meaning: 'PHI THƯỜNG' }, { kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }],
+        },
       ],
-
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '階', onyomi: 'カイ (kai)', kunyomi: '', meaning: 'Giai cấp, tầng', sinoVietnamese: 'GIAI', strokes: 12, jlpt: 'N3', radicals: '阜 (phụ)', mnemonic: 'Mọi người (皆) đều phải leo lên gò đất (阜) từng giai đoạn.',
           exampleSentences: [
@@ -9420,9 +9420,10 @@ export const lesson3Data: LessonDetail = {
         { jp: 'お国へ帰ります。', romaji: 'Okuni he kaerimasu.', vn: 'Tôi về nước.', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }, { kanji: '帰', reading: 'かえ', meaning: 'QUY' }] },
         { jp: 'お国で働きます。', romaji: 'Okuni de hatarakimasu.', vn: 'Tôi làm việc ở nước tôi.', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }] },
         { jp: '遠いお国ですね。', romaji: 'Tooi okuni desu ne.', vn: 'Đất nước xa nhỉ.', furigana: [{ kanji: '遠', reading: 'とお', meaning: 'VIỄN' }, { kanji: '国', reading: 'くに', meaning: 'QUỐC' }] },
-        { jp: 'お国の家族に電話します。', romaji: 'Okuni no kazoku ni denwa shimasu.', vn: 'Tôi gọi điện cho gia đình ở nước.', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }, { kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] }
+        { jp: 'お国の家族に電話します。', romaji: 'Okuni no kazoku ni denwa shimasu.', vn: 'Tôi gọi điện cho gia đình ở nước.', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }, { kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '国', onyomi: 'コク (koku)', kunyomi: 'くに (kuni)', meaning: 'Đất nước', sinoVietnamese: 'QUỐC', strokes: 8, jlpt: 'N5', radicals: '囗 (vi)', mnemonic: 'Viên ngọc (玉) quý được bao quanh bởi biên giới (囗) là quốc gia.',
           exampleSentences: [
@@ -9446,9 +9447,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '会社へ行きます。', romaji: 'Kaisha he ikimasu.', vn: 'Tôi đi đến công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
         { jp: '会社の電話番号です。', romaji: 'Kaisha no denwa bangou desu.', vn: 'Là số điện thoại công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' }] },
         { jp: '大きい会社です。', romaji: 'Ookii kaisha desu.', vn: 'Công ty lớn.', furigana: [{ kanji: '大', reading: 'おお', meaning: 'ĐẠI' }, { kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }] },
-        { jp: '会社で働きます。', romaji: 'Kaisha de hatarakimasu.', vn: 'Tôi làm việc ở công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }] }
+        { jp: '会社で働きます。', romaji: 'Kaisha de hatarakimasu.', vn: 'Tôi làm việc ở công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '会', onyomi: 'カイ (kai)', kunyomi: 'あ.う (au)', meaning: 'Gặp gỡ', sinoVietnamese: 'HỘI', strokes: 6, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Hai người (二) gặp nhau dưới mái nhà.',
           exampleSentences: [
@@ -9484,9 +9486,10 @@ export const lesson3Data: LessonDetail = {
         { jp: 'うちへ帰ります。', romaji: 'Uchi he kaerimasu.', vn: 'Tôi về nhà.', furigana: [{ kanji: '帰', reading: 'かえ', meaning: 'QUY' }] },
         { jp: '広いうちです。', romaji: 'Hiroi uchi desu.', vn: 'Ngôi nhà rộng.', furigana: [{ kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }] },
         { jp: '友達のうちへ行きます。', romaji: 'Tomodachi no uchi he ikimasu.', vn: 'Tôi đi đến nhà bạn.', furigana: [{ kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
-        { jp: 'うちで勉強します。', romaji: 'Uchi de benkyou shimasu.', vn: 'Tôi học ở nhà.', furigana: [{ kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }] }
+        { jp: 'うちで勉強します。', romaji: 'Uchi de benkyou shimasu.', vn: 'Tôi học ở nhà.', furigana: [{ kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '家', onyomi: 'カ (ka)', kunyomi: 'いえ (ie), うち (uchi)', meaning: 'Nhà', sinoVietnamese: 'GIA', strokes: 10, jlpt: 'N4', radicals: '宀 (miên)', mnemonic: 'Dưới mái nhà (宀) có con lợn (豕) là nhà (ngày xưa).',
           exampleSentences: [
@@ -9510,9 +9513,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '電話があります。', romaji: 'Denwa ga arimasu.', vn: 'Có điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] },
         { jp: '新しい電話です。', romaji: 'Atarashii denwa desu.', vn: 'Điện thoại mới.', furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] },
         { jp: '電話を借ります。', romaji: 'Denwa wo karimasu.', vn: 'Tôi mượn điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }, { kanji: '借', reading: 'か', meaning: 'TÁ' }] },
-        { jp: '電話で話します。', romaji: 'Denwa de hanashimasu.', vn: 'Tôi nói chuyện bằng điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }] }
+        { jp: '電話で話します。', romaji: 'Denwa de hanashimasu.', vn: 'Tôi nói chuyện bằng điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '電', onyomi: 'デン (den)', kunyomi: '', meaning: 'Điện', sinoVietnamese: 'ĐIỆN', strokes: 13, jlpt: 'N5', radicals: '雨 (vũ)', mnemonic: 'Mưa (雨) có sét là điện (申 - gần giống).',
           exampleSentences: [
@@ -9548,9 +9552,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '靴を履きます。', romaji: 'Kutsu wo hakimasu.', vn: 'Tôi đi giày.', furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'NGOA' }, { kanji: '履', reading: 'は', meaning: 'LÝ' }] },
         { jp: 'イタリアの靴です。', romaji: 'Itaria no kutsu desu.', vn: 'Giày của Ý.', furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'NGOA' }] },
         { jp: '赤い靴です。', romaji: 'Akai kutsu desu.', vn: 'Giày màu đỏ.', furigana: [{ kanji: '赤', reading: 'あか', meaning: 'XÍCH' }, { kanji: '靴', reading: 'くつ', meaning: 'NGOA' }] },
-        { jp: '靴を見せてください。', romaji: 'Kutsu wo misete kudasai.', vn: 'Cho tôi xem đôi giày.', furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'NGOA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }] }
+        { jp: '靴を見せてください。', romaji: 'Kutsu wo misete kudasai.', vn: 'Cho tôi xem đôi giày.', furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'NGOA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '靴', onyomi: 'カ (ka)', kunyomi: 'くつ (kutsu)', meaning: 'Giày', sinoVietnamese: 'NGOA', strokes: 13, jlpt: 'N1', radicals: '革 (cách)', mnemonic: 'Làm giày bằng da (革) thì biến hóa (化) đôi chân.',
           exampleSentences: [
@@ -9610,10 +9615,10 @@ export const lesson3Data: LessonDetail = {
         { jp: 'ワイン売り場へ行きます。', romaji: 'Wain uriba he ikimasu.', vn: 'Tôi đi đến quầy bán rượu vang.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
         { jp: '売り場が広いです。', romaji: 'Uriba ga hiroi desu.', vn: 'Quầy bán hàng rộng.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }, { kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }] },
         { jp: 'きれいな売り場です。', romaji: 'Kirei na uriba desu.', vn: 'Quầy bán hàng đẹp.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }] },
-        { jp: 'あの売り場は混んでいます。', romaji: 'Ano uriba wa konde imasu.', vn: 'Quầy bán hàng kia đông người.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }, { kanji: '混', reading: 'こ', meaning: 'HỖN' }] }
+        { jp: 'あの売り場は混んでいます。', romaji: 'Ano uriba wa konde imasu.', vn: 'Quầy bán hàng kia đông người.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }, { kanji: '混', reading: 'こ', meaning: 'HỖN' }],
+        },
       ],
-
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '売', onyomi: 'バイ (bai)', kunyomi: 'う.る (uru)', meaning: 'Bán', sinoVietnamese: 'MẠI', strokes: 7, jlpt: 'N4', radicals: '士 (sĩ)', mnemonic: 'Kẻ sĩ (士) trùm khăn (冖) đi bán chân (儿) tình.',
           exampleSentences: [
@@ -9649,10 +9654,10 @@ export const lesson3Data: LessonDetail = {
         { jp: 'レストランは地下にあります。', romaji: 'Resutoran wa chika ni arimasu.', vn: 'Nhà hàng ở tầng hầm.', furigana: [{ kanji: '地下', reading: 'ちか', meaning: 'ĐỊA HẠ' }] },
         { jp: '地下鉄で行きます。', romaji: 'Chikatetsu de ikimasu.', vn: 'Tôi đi bằng tàu điện ngầm.', furigana: [{ kanji: '地下鉄', reading: 'ちかてつ', meaning: 'ĐỊA HẠ THIẾT' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
         { jp: '地下へ下ります。', romaji: 'Chika he orimasu.', vn: 'Tôi xuống tầng hầm.', furigana: [{ kanji: '地下', reading: 'ちか', meaning: 'ĐỊA HẠ' }, { kanji: '下', reading: 'お', meaning: 'HẠ' }] },
-        { jp: '地下は涼しいです。', romaji: 'Chika wa suzushii desu.', vn: 'Tầng hầm mát mẻ.', furigana: [{ kanji: '地下', reading: 'ちか', meaning: 'ĐỊA HẠ' }, { kanji: '涼', reading: 'すず', meaning: 'LƯƠNG' }] }
+        { jp: '地下は涼しいです。', romaji: 'Chika wa suzushii desu.', vn: 'Tầng hầm mát mẻ.', furigana: [{ kanji: '地下', reading: 'ちか', meaning: 'ĐỊA HẠ' }, { kanji: '涼', reading: 'すず', meaning: 'LƯƠNG' }],
+        },
       ],
-
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '地', onyomi: 'チ (chi), ジ (ji)', kunyomi: '', meaning: 'Đất', sinoVietnamese: 'ĐỊA', strokes: 6, jlpt: 'N4', radicals: '土 (thổ)', mnemonic: 'Đất (土) cũng (也) là nơi để sống.',
           exampleSentences: [
@@ -9688,9 +9693,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '部屋は何階にありますか。', romaji: 'Heya wa nangai ni arimasu ka.', vn: 'Phòng ở tầng mấy?', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }, { kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }] },
         { jp: '何階まで行きますか。', romaji: 'Nangai made ikimasu ka.', vn: 'Anh đi đến tầng mấy?', furigana: [{ kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
         { jp: '食堂は何階ですか。', romaji: 'Shokudou wa nangai desu ka.', vn: 'Nhà ăn ở tầng mấy?', furigana: [{ kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }, { kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }] },
-        { jp: 'あなたの部屋は何階ですか。', romaji: 'Anata no heya wa nangai desu ka.', vn: 'Phòng của bạn ở tầng mấy?', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }, { kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }] }
+        { jp: 'あなたの部屋は何階ですか。', romaji: 'Anata no heya wa nangai desu ka.', vn: 'Phòng của bạn ở tầng mấy?', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }, { kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '何', onyomi: 'カ (ka)', kunyomi: 'なに (nani)', meaning: 'Cái gì', sinoVietnamese: 'HÀ', strokes: 7, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Người (亻) khả (可) ái.',
           exampleSentences: [
@@ -9726,9 +9732,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '千円かかります。', romaji: 'Sen-en kakarimasu.', vn: 'Tốn 1000 yên.', furigana: [{ kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
         { jp: '一万円札。', romaji: 'Ichiman-en satsu.', vn: 'Tờ 1 vạn yên.', furigana: [{ kanji: '一', reading: 'いち', meaning: 'NHẤT' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }, { kanji: '札', reading: 'さつ', meaning: 'TRÁT' }] },
         { jp: '何円ですか。', romaji: 'Nan-en desu ka.', vn: 'Bao nhiêu yên?', furigana: [{ kanji: '何', reading: 'なん', meaning: 'HÀ' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
-        { jp: '円が安いです。', romaji: 'En ga yasui desu.', vn: 'Đồng yên rẻ.', furigana: [{ kanji: '円', reading: 'えん', meaning: 'VIÊN' }, { kanji: '安', reading: 'やす', meaning: 'AN' }] }
+        { jp: '円が安いです。', romaji: 'En ga yasui desu.', vn: 'Đồng yên rẻ.', furigana: [{ kanji: '円', reading: 'えん', meaning: 'VIÊN' }, { kanji: '安', reading: 'やす', meaning: 'AN' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '円', onyomi: 'エン (en)', kunyomi: 'まる.い (marui)', meaning: 'Tròn, yên', sinoVietnamese: 'VIÊN', strokes: 4, jlpt: 'N5', radicals: '冂 (quynh)', mnemonic: 'Một chiếc nắp (冂) tròn.',
           exampleSentences: [
@@ -9764,9 +9771,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '六百円です。', romaji: 'Roppyaku-en desu.', vn: '600 yên.', furigana: [{ kanji: '六', reading: 'ろっ', meaning: 'LỤC' }, { kanji: '百', reading: 'ぴゃく', meaning: 'BÁCH' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
         { jp: '八百円です。', romaji: 'Happyaku-en desu.', vn: '800 yên.', furigana: [{ kanji: '八', reading: 'はっ', meaning: 'BÁT' }, { kanji: '百', reading: 'ぴゃく', meaning: 'BÁCH' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
         { jp: '百年前。', romaji: 'Hyakunen mae.', vn: '100 năm trước.', furigana: [{ kanji: '百', reading: 'ひゃく', meaning: 'BÁCH' }, { kanji: '年', reading: 'ねん', meaning: 'NIÊN' }, { kanji: '前', reading: 'まえ', meaning: 'TIỀN' }] },
-        { jp: '百パーセント。', romaji: 'Hyaku pa-sento.', vn: '100 phần trăm.', furigana: [{ kanji: '百', reading: 'ひゃく', meaning: 'BÁCH' }] }
+        { jp: '百パーセント。', romaji: 'Hyaku pa-sento.', vn: '100 phần trăm.', furigana: [{ kanji: '百', reading: 'ひゃく', meaning: 'BÁCH' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '百', onyomi: 'ヒャク (hyaku)', kunyomi: '', meaning: 'Trăm', sinoVietnamese: 'BÁCH', strokes: 6, jlpt: 'N5', radicals: '白 (bạch)', mnemonic: 'Một (一) màu trắng (白) là bạch.',
           exampleSentences: [
@@ -9790,9 +9798,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '八千円です。', romaji: 'Hassen-en desu.', vn: '8000 yên.', furigana: [{ kanji: '八', reading: 'はっ', meaning: 'BÁT' }, { kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
         { jp: '一千万円。', romaji: 'Issinman-en.', vn: '10 triệu yên.', furigana: [{ kanji: '一', reading: 'いっ', meaning: 'NHẤT' }, { kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
         { jp: '千葉県。', romaji: 'Chiba-ken.', vn: 'Tỉnh Chiba.', furigana: [{ kanji: '千葉', reading: 'ちば', meaning: 'THIÊN DIỆP' }, { kanji: '県', reading: 'けん', meaning: 'HUYỆN' }] },
-        { jp: '二千円です。', romaji: 'Nisen-en desu.', vn: '2000 yên.', furigana: [{ kanji: '二', reading: 'に', meaning: 'NHỊ' }, { kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] }
+        { jp: '二千円です。', romaji: 'Nisen-en desu.', vn: '2000 yên.', furigana: [{ kanji: '二', reading: 'に', meaning: 'NHỊ' }, { kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '千', onyomi: 'セン (sen)', kunyomi: 'ち (chi)', meaning: 'Nghìn', sinoVietnamese: 'THIÊN', strokes: 3, jlpt: 'N5', radicals: '十 (thập)', mnemonic: 'Mười (十) người (丿) là một thiên.',
           exampleSentences: [
@@ -9816,9 +9825,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '万年筆。', romaji: 'Mannenhitsu.', vn: 'Bút máy.', furigana: [{ kanji: '万年筆', reading: 'まんねんひつ', meaning: 'VẠN NIÊN BÚT' }] },
         { jp: '万歳。', romaji: 'Banzai.', vn: 'Vạn tuế.', furigana: [{ kanji: '万歳', reading: 'ばんざい', meaning: 'VẠN TUẾ' }] },
         { jp: '五万円です。', romaji: 'Goman-en desu.', vn: '5 vạn yên.', furigana: [{ kanji: '五', reading: 'ご', meaning: 'NGŨ' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
-        { jp: '一万歩。', romaji: 'Ichimanpo.', vn: '1 vạn bước.', furigana: [{ kanji: '一', reading: 'いち', meaning: 'NHẤT' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '歩', reading: 'ぽ', meaning: 'BỘ' }] }
+        { jp: '一万歩。', romaji: 'Ichimanpo.', vn: '1 vạn bước.', furigana: [{ kanji: '一', reading: 'いち', meaning: 'NHẤT' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '歩', reading: 'ぽ', meaning: 'BỘ' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '万', onyomi: 'マン (man)', kunyomi: '', meaning: 'Vạn', sinoVietnamese: 'VẠN', strokes: 3, jlpt: 'N5', radicals: '一 (nhất)', mnemonic: 'Một (一) cái bao (勹) lớn.',
           exampleSentences: [
@@ -9863,9 +9873,10 @@ export const lesson3Data: LessonDetail = {
         { jp: '写真を見せてください。', romaji: 'Shashin wo misete kudasai.', vn: 'Cho tôi xem ảnh.', furigana: [{ kanji: '写真', reading: 'しゃしん', meaning: 'TẢ CHÂN' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }] },
         { jp: '切符を見せてください。', romaji: 'Kippu wo misete kudasai.', vn: 'Cho tôi xem vé.', furigana: [{ kanji: '切符', reading: 'きっぷ', meaning: 'THIẾT PHÙ' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }] },
         { jp: 'そのかばんを見せてください。', romaji: 'Sono kaban wo misete kudasai.', vn: 'Cho tôi xem cái túi đó.', furigana: [{ kanji: '見', reading: 'み', meaning: 'KIẾN' }] },
-        { jp: 'メニューを見せてください。', romaji: 'Menyu- wo misete kudasai.', vn: 'Cho tôi xem thực đơn.', furigana: [{ kanji: '見', reading: 'み', meaning: 'KIẾN' }] }
+        { jp: 'メニューを見せてください。', romaji: 'Menyu- wo misete kudasai.', vn: 'Cho tôi xem thực đơn.', furigana: [{ kanji: '見', reading: 'み', meaning: 'KIẾN' }],
+        },
       ],
-      kanjiDetails: [
+    kanjiDetails: [
         {
           kanji: '見', onyomi: 'ケン (ken)', kunyomi: 'み.る (miru)', meaning: 'Nhìn, xem', sinoVietnamese: 'KIẾN', strokes: 7, jlpt: 'N5', radicals: '見 (kiến)', mnemonic: 'Mắt (目) nhìn người đi (儿).', exampleSentences: [],
           components: [{ char: '目', meaning: 'mắt' }, { char: '儿', meaning: 'đi' }]
@@ -14090,10 +14101,10 @@ export const lesson5Data: LessonDetail = {
               reading: "い",
               meaning: "HÀNH"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "行",
           onyomi: "コウ (kou), ギョウ (gyou)",
@@ -14216,10 +14227,10 @@ export const lesson5Data: LessonDetail = {
               reading: "き",
               meaning: "LAI"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "来",
           onyomi: "ライ (rai)",
@@ -14337,10 +14348,10 @@ export const lesson5Data: LessonDetail = {
               reading: "かえ",
               meaning: "QUY"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "帰",
           onyomi: "キ (ki)",
@@ -14468,10 +14479,10 @@ export const lesson5Data: LessonDetail = {
               reading: "がっこう",
               meaning: "HỌC HIỆU"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "学",
           onyomi: "ガク (gaku)",
@@ -14712,10 +14723,10 @@ export const lesson5Data: LessonDetail = {
               reading: "おお",
               meaning: "ĐẠI"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "駅",
           onyomi: "エキ (eki)",
@@ -14838,10 +14849,10 @@ export const lesson5Data: LessonDetail = {
               reading: "じかん",
               meaning: "THỜI GIAN"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "飛",
           onyomi: "ヒ (hi)",
@@ -15005,10 +15016,10 @@ export const lesson5Data: LessonDetail = {
               reading: "たの",
               meaning: "LẠC"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "船",
           onyomi: "セン (sen)",
@@ -15147,10 +15158,10 @@ export const lesson5Data: LessonDetail = {
               reading: "つか",
               meaning: "SỬ"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "電",
           onyomi: "デン (den)",
@@ -15309,10 +15320,10 @@ export const lesson5Data: LessonDetail = {
               reading: "い",
               meaning: "HÀNH"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "地",
           onyomi: "チ (chi), ジ (ji)",
@@ -15489,10 +15500,10 @@ export const lesson5Data: LessonDetail = {
               reading: "べんり",
               meaning: "TIỆN LỢI"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "新",
           onyomi: "シン (shin)",
@@ -15839,10 +15850,10 @@ export const lesson5Data: LessonDetail = {
               reading: "の",
               meaning: "THỪA"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "自",
           onyomi: "ジ (ji), シ (shi)",
@@ -16007,10 +16018,10 @@ export const lesson5Data: LessonDetail = {
               reading: "い",
               meaning: "HÀNH"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "歩",
           onyomi: "ホ (ho), ブ (bu)",
@@ -16138,10 +16149,10 @@ export const lesson5Data: LessonDetail = {
               reading: "にほんじん",
               meaning: "NHẬT BẢN NHÂN"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "人",
           onyomi: "ジン (jin), ニン (nin)",
@@ -16273,10 +16284,10 @@ export const lesson5Data: LessonDetail = {
               reading: "ともだち",
               meaning: "HỮU ĐẠT"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "友",
           onyomi: "ユウ (yuu)",
@@ -16435,10 +16446,10 @@ export const lesson5Data: LessonDetail = {
               reading: "かえ",
               meaning: "QUY"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           kanji: "彼",
           onyomi: "ヒ (hi)",
@@ -26477,10 +26488,10 @@ const lesson7Data: LessonDetail = {
               "kanji": "切",
               "reading": "き"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           "kanji": "切",
           "onyomi": "セツ",
@@ -26856,10 +26867,10 @@ const lesson7Data: LessonDetail = {
               "kanji": "貸",
               "reading": "か"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           "kanji": "貸",
           "onyomi": "タイ",
@@ -26986,10 +26997,10 @@ const lesson7Data: LessonDetail = {
               "kanji": "借",
               "reading": "か"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           "kanji": "借",
           "onyomi": "シャク",
@@ -27124,10 +27135,10 @@ const lesson7Data: LessonDetail = {
               "kanji": "教",
               "reading": "おし"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           "kanji": "教",
           "onyomi": "キョウ",
@@ -27410,10 +27421,10 @@ const lesson7Data: LessonDetail = {
               "kanji": "繋",
               "reading": "つな"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           "kanji": "手",
           "onyomi": "シュ",
@@ -28308,10 +28319,10 @@ const lesson7Data: LessonDetail = {
             }
           ]
         }
-      ]
-    }
-  ],
-  kanjiDetails: [
+      ],
+      },
+    ],
+    kanjiDetails: [
     {
       "kanji": "紙",
       "onyomi": "シ",
@@ -28347,9 +28358,7 @@ const lesson7Data: LessonDetail = {
           ]
         }
       ]
-    }
-  ]
-},
+    },
   {
     word: '\u306f\u306a', kanji: '\u82b1', romaji: 'hana', mean: 'Hoa', examples: [
       {
@@ -28422,8 +28431,8 @@ const lesson7Data: LessonDetail = {
             "kanji": "飾",
             "reading": "かざ"
           }
-        ]
-      }
+        ],
+      },
     ],
     kanjiDetails: [
       {
@@ -28655,10 +28664,8 @@ const lesson7Data: LessonDetail = {
         }
         ]
       }
-    ]
-  }
     ],
-kanjiDetails: [
+    kanjiDetails: [
   {
     "kanji": "荷",
     "onyomi": "カ",
@@ -28811,10 +28818,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "金",
     "onyomi": "キン",
@@ -29059,10 +29064,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "父",
     "onyomi": "フ",
@@ -29187,10 +29190,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "母",
     "onyomi": "ボ",
@@ -30068,10 +30069,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "旅",
     "onyomi": "リョ",
@@ -30673,10 +30672,10 @@ const lesson8Data: LessonDetail = {
               "kanji": "静",
               "reading": "しず"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           "kanji": "静",
           "onyomi": "セイ",
@@ -30858,10 +30857,10 @@ const lesson8Data: LessonDetail = {
               "kanji": "映画",
               "reading": "えいが"
             }
-          ]
-        }
-      ],
-      kanjiDetails: [
+          ],
+      },
+    ],
+    kanjiDetails: [
         {
           "kanji": "有",
           "onyomi": "ユウ",
@@ -31010,10 +31009,10 @@ const lesson8Data: LessonDetail = {
             }
           ]
         }
-      ]
-    }
-  ],
-  kanjiDetails: [
+      ],
+      },
+    ],
+    kanjiDetails: [
     {
       "kanji": "親",
       "onyomi": "シン",
@@ -31141,9 +31140,7 @@ const lesson8Data: LessonDetail = {
           ]
         }
       ]
-    }
-  ]
-},
+    },
   {
     word: 'げんき [な]', kanji: '元気 [な]', romaji: 'genki', mean: 'Khỏe', examples: [
       {
@@ -31222,10 +31219,8 @@ const lesson8Data: LessonDetail = {
         }
         ]
       }
-    ]
-  }
     ],
-kanjiDetails: [
+    kanjiDetails: [
   {
     "kanji": "元",
     "onyomi": "ゲン",
@@ -31382,10 +31377,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "暇",
     "onyomi": "カ",
@@ -31498,10 +31491,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "便",
     "onyomi": "ベン",
@@ -31733,10 +31724,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "大",
     "onyomi": "ダイ",
@@ -31861,10 +31850,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "小",
     "onyomi": "ショウ",
@@ -31977,10 +31964,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "新",
     "onyomi": "シン",
@@ -32105,10 +32090,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "古",
     "onyomi": "コ",
@@ -32289,10 +32272,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "悪",
     "onyomi": "アク",
@@ -32405,10 +32386,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "暑",
     "onyomi": "ショ",
@@ -32561,10 +32540,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "寒",
     "onyomi": "カン",
@@ -32677,10 +32654,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "冷",
     "onyomi": "レイ",
@@ -32797,10 +32772,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "難",
     "onyomi": "ナン",
@@ -32921,10 +32894,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "易",
     "onyomi": "エキ",
@@ -33033,10 +33004,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "高",
     "onyomi": "コウ",
@@ -33145,10 +33114,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "安",
     "onyomi": "アン",
@@ -33261,10 +33228,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "低",
     "onyomi": "テイ",
@@ -33381,10 +33346,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "面",
     "onyomi": "メン",
@@ -33578,10 +33541,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "忙",
     "onyomi": "ボウ",
@@ -33698,10 +33659,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "楽",
     "onyomi": "ラク",
@@ -33822,10 +33781,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "白",
     "onyomi": "ハク",
@@ -33930,10 +33887,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "黒",
     "onyomi": "コク",
@@ -34042,10 +33997,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "赤",
     "onyomi": "セキ",
@@ -34158,10 +34111,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "青",
     "onyomi": "セイ",
@@ -34278,10 +34229,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "桜",
     "onyomi": "オウ",
@@ -34406,10 +34355,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "山",
     "onyomi": "サン",
@@ -34518,10 +34465,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "町",
     "onyomi": "チョウ",
@@ -34662,10 +34607,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "物",
     "onyomi": "ブツ",
@@ -34790,10 +34733,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "車",
     "onyomi": "シャ",
@@ -34906,10 +34847,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "所",
     "onyomi": "ショ",
@@ -35030,10 +34969,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "寮",
     "onyomi": "リョウ",
@@ -35150,10 +35087,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "勉",
     "onyomi": "ベン",
@@ -35306,10 +35241,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "活",
     "onyomi": "カツ",
@@ -35426,10 +35359,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "仕",
     "onyomi": "シ",
@@ -36564,10 +36495,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "富",
     "onyomi": "フ",
@@ -36740,10 +36669,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "琵",
     "onyomi": "ビ",
@@ -37066,10 +36993,8 @@ kanjiDetails: [
         }
       ]
     }
-  ]
-}
-    ],
-kanjiDetails: [
+  ],
+    kanjiDetails: [
   {
     "kanji": "金",
     "onyomi": "キン",
