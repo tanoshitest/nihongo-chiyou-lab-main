@@ -1,0 +1,2038 @@
+export interface GrammarExample {
+    jp: string;
+    vn: string;
+}
+
+export interface GrammarItem {
+    id: number;
+    level: 'N5' | 'N4';
+    group: string;
+    label: string; // The specific grammar point e.g. "~です"
+    meaning: string;
+    examples: GrammarExample[];
+    note?: string; // For extra context like "Groups 1, 2, 3"
+}
+
+export const grammarAppendixData: GrammarItem[] = [
+    // --- N5: Đại từ & Chỉ từ ---
+    {
+        id: 1,
+        level: 'N5',
+        group: 'Đại từ & Chỉ từ',
+        label: 'これ / それ / あれ',
+        meaning: 'Cái này / Cái đó / Cái kia (Vật)',
+        examples: [
+            { jp: 'これは本です。', vn: 'Đây là quyển sách.' },
+            { jp: 'それは私の傘です。', vn: 'Đó là cái ô của tôi.' },
+            { jp: 'あれは病院です。', vn: 'Kia là bệnh viện.' },
+            { jp: 'これは何ですか。', vn: 'Đây là cái gì?' },
+            { jp: 'それは辞書ですか。', vn: 'Đó có phải là từ điển không?' },
+            { jp: 'あれは誰の鞄ですか。', vn: 'Kia là cặp của ai?' },
+            { jp: 'これはコンビューターです。', vn: 'Đây là máy vi tính.' },
+            { jp: 'それは美味しいですね。', vn: 'Cái đó ngon nhỉ.' },
+            { jp: 'あれは富士山です。', vn: 'Kia là núi Phú Sĩ.' },
+            { jp: 'これは私の鍵じゃありません。', vn: 'Đây không phải là chìa khóa của tôi.' }
+        ]
+    },
+    {
+        id: 2,
+        level: 'N5',
+        group: 'Đại từ & Chỉ từ',
+        label: 'この / その / あの + Noun',
+        meaning: 'Cái... này / đó / kia (Bổ nghĩa cho Danh từ)',
+        examples: [
+            { jp: 'この本は面白いです。', vn: 'Quyển sách này thú vị.' },
+            { jp: 'その人は誰ですか。', vn: 'Người đó là ai?' },
+            { jp: 'あの方はずっとあそこにいます。', vn: 'Vị kia ở đằng kia suốt.' },
+            { jp: 'この靴はいくらですか。', vn: 'Đôi giày này bao nhiêu tiền?' },
+            { jp: 'そのカメラを見せてください。', vn: 'Hãy cho tôi xem cái máy ảnh đó.' },
+            { jp: 'あのレストランは有名です。', vn: 'Nhà hàng kia nổi tiếng.' },
+            { jp: 'このペンを使ってください。', vn: 'Hãy dùng cây bút này.' },
+            { jp: 'その話は本当ですか。', vn: 'Câu chuyện đó có thật không?' },
+            { jp: 'あの建物は図書館です。', vn: 'Tòa nhà kia là thư viện.' },
+            { jp: 'この猫は可愛いです。', vn: 'Con mèo này dễ thương.' }
+        ]
+    },
+    {
+        id: 3,
+        level: 'N5',
+        group: 'Đại từ & Chỉ từ',
+        label: 'ここ / そこ / あそこ',
+        meaning: 'Ở đây / Ở đó / Ở kia (Địa điểm)',
+        examples: [
+            { jp: 'ここは教室です。', vn: 'Đây là lớp học.' },
+            { jp: 'そこはトイレです。', vn: 'Đó là nhà vệ sinh.' },
+            { jp: 'あそこは食堂です。', vn: 'Kia là nhà ăn.' },
+            { jp: '受付はここです。', vn: 'Quầy lễ tân ở đây.' },
+            { jp: '電話はそこにあります。', vn: 'Điện thoại ở đó.' },
+            { jp: '駅はあそこです。', vn: 'Nhà ga ở đằng kia.' },
+            { jp: 'ここは静かですね。', vn: 'Ở đây yên tĩnh nhỉ.' },
+            { jp: 'そこ座ってもいいですか。', vn: 'Tôi ngồi đó được không?' },
+            { jp: 'あそこで休みましょう。', vn: 'Chúng ta nghỉ ở đằng kia đi.' },
+            { jp: '会議室はここじゃありません。', vn: 'Phòng họp không phải ở đây.' }
+        ]
+    },
+    {
+        id: 4,
+        level: 'N5',
+        group: 'Đại từ & Chỉ từ',
+        label: 'どれ / どの',
+        meaning: 'Cái nào / [Danh từ] nào',
+        examples: [
+            { jp: 'あなたの傘はどれですか。', vn: 'Cái ô của bạn là cái nào?' },
+            { jp: '林さんの机はどれですか。', vn: 'Bàn của anh Hayashi là cái nào?' },
+            { jp: '一番美味しい料理はどれですか。', vn: 'Món ngon nhất là món nào?' },
+            { jp: 'どの人が佐藤さんですか。', vn: 'Người nào là anh Sato?' },
+            { jp: 'どのバスが京都へ行きますか。', vn: 'Xe buýt nào đi Kyoto?' },
+            { jp: 'どの本を読みましたか。', vn: 'Bạn đã đọc quyển sách nào?' },
+            { jp: '正解はどれですか。', vn: 'Đáp án đúng là cái nào?' },
+            { jp: 'どの果物が好きですか。', vn: 'Bạn thích loại quả nào?' },
+            { jp: 'どれでもいいです。', vn: 'Cái nào cũng được.' },
+            { jp: 'どの道が近いですか。', vn: 'Con đường nào gần hơn?' }
+        ]
+    },
+    {
+        id: 5,
+        level: 'N5',
+        group: 'Đại từ & Chỉ từ',
+        label: '～の (Sở hữu)',
+        meaning: 'Của... (Sở hữu cách, thay thế danh từ)',
+        examples: [
+            { jp: 'これは私の本です。', vn: 'Đây là sách của tôi.' },
+            { jp: 'それは誰の鞄ですか。', vn: 'Đó là cặp của ai?' },
+            { jp: 'あれは先生の車です。', vn: 'Kia là xe của thầy giáo.' },
+            { jp: 'この傘はあなたのですか。', vn: 'Cái ô này là của bạn phải không?' },
+            { jp: 'いいえ、わたしのではありません。', vn: 'Không, không phải của tôi.' },
+            { jp: 'それは会社のですが、私のです。', vn: 'Cái đó là của công ty, nhưng là (đồ) của tôi.' },
+            { jp: 'この靴はイタリアのです。', vn: 'Đôi giày này là (giày) của Ý.' },
+            { jp: 'あのカメラは兄のです。', vn: 'Cái máy ảnh kia là của anh trai.' },
+            { jp: '日本語の本はどれですか。', vn: 'Sách tiếng Nhật là quyển nào?' },
+            { jp: '私の部屋は2階のです。', vn: 'Phòng của tôi là phòng ở tầng 2.' }
+        ]
+    },
+    // --- N5: Cấu trúc câu cơ bản & Trợ từ ---
+    {
+        id: 6,
+        level: 'N5',
+        group: 'Cấu trúc & Trợ từ',
+        label: '〜です / 〜じゃありません',
+        meaning: 'Là... / Không phải là...',
+        examples: [
+            { jp: '私は学生です。', vn: 'Tôi là sinh viên.' },
+            { jp: '田中さんは会社員です。', vn: 'Anh Tanaka là nhân viên công ty.' },
+            { jp: '山田さんは先生じゃありません。', vn: 'Chị Yamada không phải là giáo viên.' },
+            { jp: '今日は日曜日です。', vn: 'Hôm nay là chủ nhật.' },
+            { jp: '明日は雨じゃありません。', vn: 'Ngày mai trời không mưa.' },
+            { jp: 'これは私の本じゃありません。', vn: 'Đây không phải là sách của tôi.' },
+            { jp: '彼は日本人です。', vn: 'Anh ấy là người Nhật.' },
+            { jp: '彼女は医者じゃありません。', vn: 'Cô ấy không phải là bác sĩ.' },
+            { jp: 'ここは図書館です。', vn: 'Đây là thư viện.' },
+            { jp: 'そこは入り口じゃありません。', vn: 'Đó không phải là lối vào.' }
+        ]
+    },
+    {
+        id: 7,
+        level: 'N5',
+        group: 'Cấu trúc & Trợ từ',
+        label: '〜か (Câu hỏi)',
+        meaning: 'Hỏi xác nhận hoặc nghi vấn',
+        examples: [
+            { jp: 'お元気ですか。', vn: 'Bạn có khỏe không?' },
+            { jp: 'これは何ですか。', vn: 'Đây là cái gì?' },
+            { jp: 'あなたは学生ですか。', vn: 'Bạn là học sinh phải không?' },
+            { jp: '今何時ですか。', vn: 'Bây giờ là mấy giờ?' },
+            { jp: 'トイレはどこですか。', vn: 'Nhà vệ sinh ở đâu?' },
+            { jp: 'あの人は誰ですか。', vn: 'Người kia là ai?' },
+            { jp: 'コーヒーを飲みますか。', vn: 'Bạn có uống cà phê không?' },
+            { jp: '明日学校へ行きますか。', vn: 'Ngày mai bạn có đi học không?' },
+            { jp: 'それは本当ですか。', vn: 'Điều đó có thật không?' },
+            { jp: '理解しましたか。', vn: 'Bạn đã hiểu chưa?' }
+        ]
+    },
+    {
+        id: 8,
+        level: 'N5',
+        group: 'Cấu trúc & Trợ từ',
+        label: 'あります / います',
+        meaning: 'Có (vật) / Có (người/động vật) (Sự tồn tại)',
+        examples: [
+            { jp: '机の上に本があります。', vn: 'Trên bàn có quyển sách.' },
+            { jp: 'あそこにコンビニがあります。', vn: 'Ở đằng kia có cửa hàng tiện lợi.' },
+            { jp: '教室に学生がいます。', vn: 'Trong lớp có học sinh.' },
+            { jp: '庭に犬がいます。', vn: 'Trong vườn có con chó.' },
+            { jp: '時間はありますか。', vn: 'Bạn có thời gian không?' },
+            { jp: '冷蔵庫に卵があります。', vn: 'Trong tủ lạnh có trứng.' },
+            { jp: '事務所に田中さんがいます。', vn: 'Anh Tanaka có ở văn phòng.' },
+            { jp: '兄弟がいますか。', vn: 'Bạn có anh chị em không?' },
+            { jp: 'お金がありません。', vn: 'Tôi không có tiền.' },
+            { jp: '猫はいません。', vn: 'Không có con mèo nào.' }
+        ]
+    },
+    {
+        id: 9,
+        level: 'N5',
+        group: 'Cấu trúc & Trợ từ',
+        label: '〜も (Cũng)',
+        meaning: 'Đồng tình, liệt kê thêm',
+        examples: [
+            { jp: '私も学生です。', vn: 'Tôi cũng là học sinh.' },
+            { jp: 'これも美味しいです。', vn: 'Cái này cũng ngon.' },
+            { jp: '田中さんも来ます。', vn: 'Anh Tanaka cũng đến.' },
+            { jp: '昨日も雨でした。', vn: 'Hôm qua trời cũng mưa.' },
+            { jp: '英語も話せます。', vn: 'Tôi cũng nói được tiếng Anh.' },
+            { jp: '日曜日も働きます。', vn: 'Chủ nhật tôi cũng làm việc.' },
+            { jp: '彼も知りません。', vn: 'Anh ấy cũng không biết.' },
+            { jp: '朝ごはんも食べませんでした。', vn: 'Sáng nay tôi cũng chưa ăn gì.' },
+            { jp: '安いし、味もいいです。', vn: 'Vừa rẻ mà vị cũng ngon.' },
+            { jp: '東京へも行きました。', vn: 'Tôi cũng đã đi đến Tokyo.' }
+        ]
+    },
+    {
+        id: 10,
+        level: 'N5',
+        group: 'Cấu trúc & Trợ từ',
+        label: '〜を (Đối tượng)',
+        meaning: 'Trợ từ chỉ đối tượng của hành động',
+        examples: [
+            { jp: 'ご飯を食べます。', vn: 'Tôi ăn cơm.' },
+            { jp: '水を飲みます。', vn: 'Tôi uống nước.' },
+            { jp: '本を読みます。', vn: 'Tôi đọc sách.' },
+            { jp: 'テレビを見ます。', vn: 'Tôi xem tivi.' },
+            { jp: '音楽を聞きます。', vn: 'Tôi nghe nhạc.' },
+            { jp: '日本語を勉強します。', vn: 'Tôi học tiếng Nhật.' },
+            { jp: '手紙を書きます。', vn: 'Tôi viết thư.' },
+            { jp: '写真を撮ります。', vn: 'Tôi chụp ảnh.' },
+            { jp: 'タバコを吸います。', vn: 'Tôi hút thuốc.' },
+            { jp: '宿題をしました。', vn: 'Tôi đã làm bài tập.' }
+        ]
+    },
+    {
+        id: 11,
+        level: 'N5',
+        group: 'Cấu trúc & Trợ từ',
+        label: '〜に / 〜で (Địa điểm)',
+        meaning: 'Tại / Ở / Đến (Chỉ địa điểm hành động hoặc tồn tại)',
+        examples: [
+            { jp: '学校に行きます。', vn: 'Tôi đi đến trường (dùng に).' },
+            { jp: '大阪に住んでいます。', vn: 'Tôi đang sống ở Osaka (dùng に).' },
+            { jp: 'ここに名前を書いてください。', vn: 'Hãy viết tên vào đây (dùng に).' },
+            { jp: '食堂でご飯を食べます。', vn: 'Tôi ăn cơm tại nhà ăn (dùng で - hành động).' },
+            { jp: '図書館で勉強します。', vn: 'Tôi học ở thư viện (dùng で).' },
+            { jp: '日本で働きたいです。', vn: 'Tôi muốn làm việc tại Nhật Bản (dùng で).' },
+            { jp: '駅で新聞を買いました。', vn: 'Tôi đã mua báo ở nhà ga (dùng で).' },
+            { jp: '部屋にテレビがあります。', vn: 'Trong phòng có tivi (dùng に - tồn tại).' },
+            { jp: '公園で会いましょう。', vn: 'Gặp nhau ở công viên nhé (dùng で).' },
+            { jp: '家に帰ります。', vn: 'Tôi về nhà (dùng に).' }
+        ]
+    },
+    {
+        id: 12,
+        level: 'N5',
+        group: 'Cấu trúc & Trợ từ',
+        label: '〜から 〜まで',
+        meaning: 'Từ... đến... (Thời gian / Địa điểm)',
+        examples: [
+            { jp: '9時から5時まで働きます。', vn: 'Tôi làm việc từ 9 giờ đến 5 giờ.' },
+            { jp: '大阪から東京まで新幹線で行きます。', vn: 'Tôi đi Shinkansen từ Osaka đến Tokyo.' },
+            { jp: '月曜日から金曜日まで学校です。', vn: 'Tôi đi học từ thứ Hai đến thứ Sáu.' },
+            { jp: '家から会社まで1時間かかります。', vn: 'Từ nhà đến công ty mất 1 tiếng.' },
+            { jp: 'ここから駅まで近いです。', vn: 'Từ đây đến ga thì gần.' },
+            { jp: '会議は午後2時までです。', vn: 'Cuộc họp kéo dài đến 2 giờ chiều.' },
+            { jp: '朝から晩まで雨でした。', vn: 'Trời mưa từ sáng đến tối.' },
+            { jp: '何時から何時までですか。', vn: 'Từ mấy giờ đến mấy giờ vậy?' },
+            { jp: '今日から始めます。', vn: 'Tôi sẽ bắt đầu từ hôm nay.' },
+            { jp: '駅まで送ります。', vn: 'Tôi sẽ tiễn bạn đến nhà ga.' }
+        ]
+    },
+    {
+        id: 13,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜たいです',
+        meaning: 'Muốn làm gì (Ngôi thứ nhất)',
+        examples: [
+            { jp: '水が飲みたいです。', vn: 'Tôi muốn uống nước.' },
+            { jp: '日本へ行きたいです。', vn: 'Tôi muốn đi Nhật.' },
+            { jp: '新しい靴を買いたいです。', vn: 'Tôi muốn mua giày mới.' },
+            { jp: 'あなたに会いたいです。', vn: 'Tôi muốn gặp bạn.' },
+            { jp: '映画を見たいです。', vn: 'Tôi muốn xem phim.' },
+            { jp: '早く帰りたいです。', vn: 'Tôi muốn về sớm.' },
+            { jp: '何もしたくありません。', vn: 'Tôi không muốn làm gì cả.' },
+            { jp: 'お寿司が食べたいです。', vn: 'Tôi muốn ăn sushi.' },
+            { jp: 'サッカーがしたいです。', vn: 'Tôi muốn chơi bóng đá.' },
+            { jp: '海で泳ぎたいです。', vn: 'Tôi muốn bơi ở biển.' }
+        ]
+    },
+    {
+        id: 14,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜てください',
+        meaning: 'Hãy làm... / Vui lòng làm... (Sai khiến nhẹ nhàng)',
+        examples: [
+            { jp: 'ちょっと待ってください。', vn: 'Vui lòng chờ một chút.' },
+            { jp: 'ここに書いてください。', vn: 'Hãy viết vào đây.' },
+            { jp: '窓を開けてください。', vn: 'Hãy mở cửa sổ giúp tôi.' },
+            { jp: 'ゆっくり話してください。', vn: 'Hãy nói chậm lại.' },
+            { jp: 'これを見てください。', vn: 'Hãy nhìn cái này.' },
+            { jp: '座ってください。', vn: 'Mời ngồi.' },
+            { jp: '気をつけてください。', vn: 'Hãy bảo trọng.' },
+            { jp: '電話してください。', vn: 'Hãy gọi điện cho tôi.' },
+            { jp: '日本語で話してください。', vn: 'Hãy nói bằng tiếng Nhật.' },
+            { jp: '写真を撮ってください。', vn: 'Hãy chụp ảnh giúp tôi.' }
+        ]
+    },
+    {
+        id: 15,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜ないでください',
+        meaning: 'Xin đừng làm...',
+        examples: [
+            { jp: 'ここで写真を撮らないでください。', vn: 'Xin đừng chụp ảnh ở đây.' },
+            { jp: 'タバコを吸わないでください。', vn: 'Xin đừng hút thuốc.' },
+            { jp: '入らないでください。', vn: 'Xin đừng vào.' },
+            { jp: '忘れないでください。', vn: 'Xin đừng quên.' },
+            { jp: '心配しないでください。', vn: 'Xin đừng lo lắng.' },
+            { jp: '窓を閉めないでください。', vn: 'Xin đừng đóng cửa sổ.' },
+            { jp: 'ここに車を止めないでください。', vn: 'Xin đừng đậu xe ở đây.' },
+            { jp: '行かないでください。', vn: 'Xin đừng đi.' },
+            { jp: '無理しないでください。', vn: 'Xin đừng quá sức.' },
+            { jp: '英語で話さないでください。', vn: 'Xin đừng nói bằng tiếng Anh.' }
+        ]
+    },
+    {
+        id: 16,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '～ています',
+        meaning: 'Đang làm (Tiếp diễn) / Trạng thái',
+        examples: [
+            { jp: '今、ご飯を食べています。', vn: 'Bây giờ tôi đang ăn cơm.' },
+            { jp: '雨が降っています。', vn: 'Trời đang mưa.' },
+            { jp: '田中さんを知っていますか。', vn: 'Bạn có biết anh Tanaka không?' },
+            { jp: '私は大阪に住んでいます。', vn: 'Tôi đang sống ở Osaka.' },
+            { jp: '彼は結婚しています。', vn: 'Anh ấy đã kết hôn (đang trong trạng thái).' },
+            { jp: '何をしていますか。', vn: 'Bạn đang làm gì vậy?' },
+            { jp: 'バスを待っています。', vn: 'Tôi đang đợi xe buýt.' },
+            { jp: '父は働いています。', vn: 'Bố tôi đang làm việc.' },
+            { jp: 'ドアが開いています。', vn: 'Cửa đang mở.' },
+            { jp: 'カメラを持っていますか。', vn: 'Bạn có mang theo máy ảnh không?' }
+        ]
+    },
+    {
+        id: 17,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '～てもいいですか',
+        meaning: 'Làm... có được không? (Xin phép)',
+        examples: [
+            { jp: '写真を撮ってもいいですか。', vn: 'Tôi chụp ảnh có được không?' },
+            { jp: 'ここに入ってもいいですか。', vn: 'Tôi vào đây có được không?' },
+            { jp: 'これを食べてもいいですか。', vn: 'Tôi ăn cái này có được không?' },
+            { jp: 'タバコを吸ってもいいですか。', vn: 'Tôi hút thuốc có được không?' },
+            { jp: '窓を開けてもいいですか。', vn: 'Tôi mở cửa sổ có được không?' },
+            { jp: 'テレビを見てもいいですか。', vn: 'Tôi xem tivi có được không?' },
+            { jp: 'この本を借りてもいいですか。', vn: 'Tôi mượn quyển sách này có được không?' },
+            { jp: 'トイレに行ってもいいですか。', vn: 'Tôi đi vệ sinh có được không?' },
+            { jp: 'ここで遊んでもいいですか。', vn: 'Chơi ở đây có được không?' },
+            { jp: '質問してもいいですか。', vn: 'Tôi hỏi có được không?' }
+        ]
+    },
+    {
+        id: 18,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜てはいけません',
+        meaning: 'Không được làm... (Cấm đoán)',
+        examples: [
+            { jp: 'ここでタバコを吸ってはいけません。', vn: 'Không được hút thuốc ở đây.' },
+            { jp: '教室で食べてはいけません。', vn: 'Không được ăn trong lớp học.' },
+            { jp: 'お酒を飲んではいけません。', vn: 'Không được uống rượu.' },
+            { jp: 'ここに入ってはいけません。', vn: 'Không được vào đây.' },
+            { jp: '写真を撮ってはいけません。', vn: 'Không được chụp ảnh.' },
+            { jp: '廊下を走ってはいけません。', vn: 'Không được chạy ngoài hành lang.' },
+            { jp: '車を止めてはいけません。', vn: 'Không được đậu xe.' },
+            { jp: '携帯電話を使ってはいけません。', vn: 'Không được sử dụng điện thoại di động.' },
+            { jp: '大声で話してはいけません。', vn: 'Không được nói lớn tiếng.' },
+            { jp: 'ゴミを捨ててはいけません。', vn: 'Không được vứt rác.' }
+        ]
+    },
+    {
+        id: 19,
+        level: 'N5',
+        group: 'Tính từ & So sánh',
+        label: '〜が好き / 〜が嫌い',
+        meaning: 'Thích / Ghét',
+        examples: [
+            { jp: '私は猫が好きです。', vn: 'Tôi thích mèo.' },
+            { jp: '私は魚が嫌いです。', vn: 'Tôi ghét cá.' },
+            { jp: 'どんなスポーツが好きですか。', vn: 'Bạn thích môn thể thao nào?' },
+            { jp: '日本語の勉強が好きです。', vn: 'Tôi thích việc học tiếng Nhật.' },
+            { jp: 'あの人が好きですか。', vn: 'Bạn có thích người kia không?' },
+            { jp: '納豆はあまり好きじゃありません。', vn: 'Tôi không thích Natto lắm.' },
+            { jp: '歌うことが大好きです。', vn: 'Tôi rất thích hát.' },
+            { jp: '寒いのは嫌いです。', vn: 'Tôi ghét trời lạnh.' },
+            { jp: '野球は好きでも嫌いでもありません。', vn: 'Bóng chày thì tôi không thích cũng không ghét.' },
+            { jp: '旅行が好きですか。', vn: 'Bạn có thích đi du lịch không?' }
+        ]
+    },
+    {
+        id: 20,
+        level: 'N5',
+        group: 'Tính từ & So sánh',
+        label: 'AはBより〜',
+        meaning: 'A... hơn B (So sánh hơn)',
+        examples: [
+            { jp: '中国は日本より大きいです。', vn: 'Trung Quốc lớn hơn Nhật Bản.' },
+            { jp: '新幹線は電車より速いです。', vn: 'Shinkansen nhanh hơn tàu điện thường.' },
+            { jp: '今日は昨日より暑いです。', vn: 'Hôm nay nóng hơn hôm qua.' },
+            { jp: 'この本はあの本より高いです。', vn: 'Quyển sách này đắt hơn quyển kia.' },
+            { jp: '英語は日本語より難しいですか。', vn: 'Tiếng Anh có khó hơn tiếng Nhật không?' },
+            { jp: '北海道は九州より寒いです。', vn: 'Hokkaido lạnh hơn Kyushu.' },
+            { jp: '肉は魚より好きです。', vn: 'Tôi thích thịt hơn cá.' },
+            { jp: '私は兄より背が高いです。', vn: 'Tôi cao hơn anh trai.' },
+            { jp: '車はバイクより便利です。', vn: 'Ô tô tiện lợi hơn xe máy.' },
+            { jp: 'クラスで誰より頭がいいですか。', vn: 'Trong lớp thông minh hơn ai?' }
+        ]
+    },
+    // --- N4: Các thể động từ nâng cao ---
+    {
+        id: 21,
+        level: 'N4',
+        group: 'Các thể động từ',
+        label: 'Thể Khả năng (可能形)',
+        meaning: 'Có thể làm...',
+        examples: [
+            { jp: '私は漢字が読めます。', vn: 'Tôi có thể đọc được chữ Hán.' },
+            { jp: '明日来られますか。', vn: 'Ngày mai bạn có thể đến không?' },
+            { jp: '日本語が話せます。', vn: 'Tôi có thể nói tiếng Nhật.' },
+            { jp: '納豆が食べられません。', vn: 'Tôi không thể ăn được Natto.' },
+            { jp: '50メートル泳げます。', vn: 'Tôi có thể bơi 50 mét.' },
+            { jp: '自転車に乗れます。', vn: 'Tôi có thể đi xe đạp.' },
+            { jp: 'どこでチケットが買えますか。', vn: 'Có thể mua vé ở đâu?' },
+            { jp: 'この水は飲めますか。', vn: 'Nước này có uống được không?' },
+            { jp: 'ピアノが弾けます。', vn: 'Tôi có thể chơi piano.' },
+            { jp: '予約はネットでできます。', vn: 'Có thể đặt chỗ qua mạng.' }
+        ]
+    },
+    {
+        id: 22,
+        level: 'N4',
+        group: 'Mẫu câu Nguyên nhân & Lý do',
+        label: '〜し、〜し',
+        meaning: 'Vừa... vừa... / Vì... và vì... (Liệt kê lý do)',
+        examples: [
+            { jp: '彼は親切だし、頭もいいです。', vn: 'Anh ấy vừa tốt bụng, vừa thông minh.' },
+            { jp: 'この店は安いし、美味しいです。', vn: 'Quán này vừa rẻ, vừa ngon.' },
+            { jp: '今日は雨だし、お金もないから、出かけません。', vn: 'Hôm nay trời mưa, lại không có tiền nên tôi không ra ngoài.' },
+            { jp: '荷物が多いし、雨も降っているし、タクシーで帰りましょう。', vn: 'Hành lý nhiều, trời lại mưa, nên chúng ta về bằng taxi đi.' },
+            { jp: '駅に近いし、家賃も安いです。', vn: 'Vừa gần ga, tiền thuê nhà lại rẻ.' },
+            { jp: '疲れたし、眠いし、もう寝ます。', vn: 'Vừa mệt, vừa buồn ngủ, nên tôi đi ngủ đây.' },
+            { jp: 'デザインもいいし、色もきれいです。', vn: 'Thiết kế đẹp, màu sắc cũng đẹp.' },
+            { jp: '先生は熱心だし、授業も面白いです。', vn: 'Thầy giáo nhiệt tình, giờ học cũng thú vị.' },
+            { jp: '野菜も食べるし、運動もします。', vn: 'Tôi vừa ăn rau, vừa vận động.' },
+            { jp: '給料はいいし、残業もありません。', vn: 'Lương cao, lại không phải làm thêm giờ.' }
+        ]
+    },
+    {
+        id: 23,
+        level: 'N4',
+        group: 'Cho & Nhận',
+        label: '〜てあげる / 〜てくれる / 〜てもらう',
+        meaning: 'Làm cho ai / Ai làm cho mình / Được ai làm cho',
+        examples: [
+            { jp: '彼女にプレゼントを買ってあげました。', vn: 'Tôi đã mua quà cho cô ấy (tôi làm cho người khác).' },
+            { jp: '友達が荷物を持ってくれました。', vn: 'Bạn tôi đã xách hành lý giúp tôi (người khác làm cho tôi).' },
+            { jp: '田中さんに日本語を教えてもらいました。', vn: 'Tôi được anh Tanaka dạy tiếng Nhật cho (nhận hành động từ người khác).' },
+            { jp: '母に料理を作ってあげます。', vn: 'Tôi nấu ăn cho mẹ.' },
+            { jp: 'おじいさんが道を教えてくれました。', vn: 'Ông lão đã chỉ đường cho tôi.' },
+            { jp: '先生に本を貸してもらいました。', vn: 'Tôi được thầy giáo cho mượn sách.' },
+            { jp: '傘を貸してあげましょうか。', vn: 'Tôi cho bạn mượn ô nhé?' },
+            { jp: '父が車で送ってくれました。', vn: 'Bố đã lái xe đưa tôi (đi/về).' },
+            { jp: '誰に直してもらったんですか。', vn: 'Bạn đã nhờ ai sửa cho vậy?' },
+            { jp: '犬に餌をやってください（あげてください）。', vn: 'Hãy cho chó ăn đi.' }
+        ]
+    },
+    {
+        id: 24,
+        level: 'N4',
+        group: 'Lời khuyên & Dự định',
+        label: '〜ほうがいいです',
+        meaning: 'Nên... / Không nên... (Lời khuyên)',
+        examples: [
+            { jp: 'タバコは辞めたほうがいいです。', vn: 'Bạn nên bỏ thuốc lá đi.' },
+            { jp: 'もっと野菜を食べたほうがいいですよ。', vn: 'Bạn nên ăn nhiều rau hơn.' },
+            { jp: '今日は早く帰ったほうがいいです。', vn: 'Hôm nay nên về sớm thì hơn.' },
+            { jp: '熱があるなら、行かないほうがいいです。', vn: 'Nếu bị sốt thì không nên đi.' },
+            { jp: '無理しないほうがいいです。', vn: 'Không nên quá sức.' },
+            { jp: 'その本は読まないほうがいいです。', vn: 'Không nên đọc quyển sách đó.' },
+            { jp: '病院へ行ったほうがいいです。', vn: 'Nên đi bệnh viện.' },
+            { jp: 'あまりお酒を飲まないほうがいいです。', vn: 'Không nên uống nhiều rượu.' },
+            { jp: '事前に予約したほうがいいですか。', vn: 'Có nên đặt chỗ trước không?' },
+            { jp: '彼に相談したほうがいいです。', vn: 'Nên thảo luận với anh ấy.' }
+        ]
+    },
+    {
+        id: 25,
+        level: 'N4',
+        group: 'Điều kiện',
+        label: '〜たら',
+        meaning: 'Nếu... / Sau khi... (Điều kiện giả định/xác định)',
+        examples: [
+            { jp: '雨が降ったら、行きません。', vn: 'Nếu trời mưa thì tôi sẽ không đi.' },
+            { jp: 'お金があったら、旅行したいです。', vn: 'Nếu có tiền, tôi muốn đi du lịch.' },
+            { jp: '駅に着いたら、電話してください。', vn: 'Sau khi đến nhà ga, hãy gọi điện cho tôi.' },
+            { jp: '夏休みになったら、国へ帰ります。', vn: 'Khi nghỉ hè, tôi sẽ về nước.' },
+            { jp: '安かったら、買います。', vn: 'Nếu rẻ thì tôi sẽ mua.' },
+            { jp: '暇だったら、遊びに来てください。', vn: 'Nếu rảnh thì hãy đến chơi nhé.' },
+            { jp: '薬を飲んだら、治りました。', vn: 'Sau khi uống thuốc thì đã khỏi.' },
+            { jp: '8時になったら、出発しましょう。', vn: 'Đến 8 giờ thì chúng ta xuất phát nhé.' },
+            { jp: 'わからなかったら、聞いてください。', vn: 'Nếu không hiểu thì hãy hỏi.' },
+            { jp: '日本へ行ったら、着物を着たいです。', vn: 'Nếu đi Nhật, tôi muốn mặc Kimono.' }
+        ]
+    },
+    {
+        id: 26,
+        level: 'N4',
+        group: 'Phỏng đoán',
+        label: '〜そうです (Dạng vẻ)',
+        meaning: 'Trông có vẻ... / Sắp sửa...',
+        examples: [
+            { jp: '雨が降りそうです。', vn: 'Trời trông có vẻ sắp mưa.' },
+            { jp: 'このケーキは美味しそうです。', vn: 'Cái bánh này trông ngon quá.' },
+            { jp: '彼は忙しそうです。', vn: 'Anh ấy trông có vẻ bận rộn.' },
+            { jp: 'ボタンが取れそうです。', vn: 'Cái cúc áo sắp tuột ra rồi.' },
+            { jp: 'この荷物は重そうです。', vn: 'Hành lý này trông có vẻ nặng.' },
+            { jp: '元気そうですね。', vn: 'Trông bạn khỏe nhỉ.' },
+            { jp: '楽しそうに遊んでいます。', vn: 'Đang chơi đùa trông rất vui vẻ.' },
+            { jp: 'その映画は面白そうです。', vn: 'Bộ phim đó có vẻ thú vị.' },
+            { jp: '袋が破れそうです。', vn: 'Cái túi sắp rách rồi.' },
+            { jp: '子供が泣きそうです。', vn: 'Đứa trẻ trông như sắp khóc.' }
+        ]
+    },
+    {
+        id: 27,
+        level: 'N4',
+        group: 'Kính ngữ',
+        label: 'Tôn kính ngữ & Khiêm nhường ngữ',
+        meaning: 'Kính ngữ cơ bản',
+        examples: [
+            { jp: '社長はもう帰られました。（尊）', vn: 'Giám đốc đã về rồi ạ.' },
+            { jp: 'お名前は何とおっしゃいますか。（尊）', vn: 'Ngài tên là gì ạ?' },
+            { jp: '召し上がってください。（尊）', vn: 'Xin mời dùng bữa.' },
+            { jp: 'ご覧になりましたか。（尊）', vn: 'Ngài đã xem chưa ạ?' },
+            { jp: '私が参ります。（謙）', vn: 'Tôi sẽ đi (khiêm nhường).' },
+            { jp: '重い荷物をお持ちします。（謙）', vn: 'Tôi xin mang hành lý nặng giúp ngài.' },
+            { jp: '先生に本をいただきました。（謙）', vn: 'Tôi đã nhận sách từ thầy giáo.' },
+            { jp: '明日、お目にかかります。（謙）', vn: 'Ngày mai tôi sẽ gặp ngài.' },
+            { jp: 'お待ちしております。（謙）', vn: 'Tôi đang đợi ngài.' },
+            { jp: 'よろしくお願いいたします。（謙）', vn: 'Xin nhờ ngài giúp đỡ.' }
+        ]
+    },
+    // --- N5: Tiếp tục ---
+    {
+        id: 28,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '[Noun] がほしいです',
+        meaning: 'Muốn có [Danh từ]',
+        examples: [
+            { jp: '私は新しい車がほしいです。', vn: 'Tôi muốn có một chiếc xe hơi mới.' },
+            { jp: 'いい友達がほしいです。', vn: 'Tôi muốn có những người bạn tốt.' },
+            { jp: '時間とお金がほしいです。', vn: 'Tôi muốn có thời gian và tiền bạc.' },
+            { jp: 'あなたは今何が一番ほしいですか。', vn: 'Bây giờ bạn muốn có cái gì nhất?' },
+            { jp: '何もほしくないです。', vn: 'Tôi không muốn có gì cả.' },
+            { jp: '誕生日にカメラがほしいです。', vn: 'Tôi muốn có máy ảnh vào ngày sinh nhật.' },
+            { jp: '平和な世界がほしいです。', vn: 'Tôi muốn có một thế giới hòa bình.' },
+            { jp: '彼女がほしいです。', vn: 'Tôi muốn có bạn gái.' },
+            { jp: '冷たい水がほしいです。', vn: 'Tôi muốn có nước lạnh.' },
+            { jp: '休みがほしいです。', vn: 'Tôi muốn có ngày nghỉ.' }
+        ]
+    },
+    {
+        id: 29,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜なります',
+        meaning: 'Trở nên / Trở thành (Sự thay đổi)',
+        examples: [
+            { jp: '来年２０歳になります。', vn: 'Sang năm tôi sẽ tròn 20 tuổi.' },
+            { jp: '元気になりました。', vn: 'Tôi đã khỏe lại rồi.' },
+            { jp: '暗くなりました。', vn: 'Trời đã tối rồi.' },
+            { jp: '部屋がきれいになりました。', vn: 'Căn phòng đã trở nên sạch sẽ.' },
+            { jp: '日本語が上手になりたいです。', vn: 'Tôi muốn trở nên giỏi tiếng Nhật.' },
+            { jp: '将来医者になります。', vn: 'Tương lai tôi sẽ trở thành bác sĩ.' },
+            { jp: '背が高くなりましたね。', vn: 'Bạn đã cao lên nhỉ.' },
+            { jp: '涼しくなりました。', vn: 'Trời đã trở nên mát mẻ.' },
+            { jp: '部長になりました。', vn: 'Anh ấy đã trở thành trưởng phòng.' },
+            { jp: '静かになりました。', vn: 'Trở nên yên tĩnh.' }
+        ]
+    },
+    {
+        id: 30,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜へ行きます/来ます/帰ります',
+        meaning: 'Đi / Đến / Về (Di chuyển)',
+        examples: [
+            { jp: '明日東京へ行きます。', vn: 'Ngày mai tôi sẽ đi Tokyo.' },
+            { jp: '去年日本へ来ました。', vn: 'Tôi đã đến Nhật Bản vào năm ngoái.' },
+            { jp: '６時にうちへ帰ります。', vn: 'Tôi về nhà lúc 6 giờ.' },
+            { jp: 'どこへも行きませんでした。', vn: 'Tôi đã không đi đâu cả.' },
+            { jp: 'タクシーで空港へ行きます。', vn: 'Tôi đi taxi đến sân bay.' },
+            { jp: 'いつ国へ帰りますか。', vn: 'Khi nào bạn về nước?' },
+            { jp: '友達が遊びに来ました。', vn: 'Bạn tôi đã đến chơi.' },
+            { jp: '歩いて学校へ行きます。', vn: 'Tôi đi bộ đến trường.' },
+            { jp: '船でアメリカへ行きました。', vn: 'Tôi đã đi Mỹ bằng tàu thủy.' },
+            { jp: '彼と一緒に帰りました。', vn: 'Tôi đã về cùng với anh ấy.' }
+        ]
+    },
+    {
+        id: 31,
+        level: 'N5',
+        group: 'Cho & Nhận',
+        label: 'あげます / もらいます / くれます',
+        meaning: 'Cho (tặng) / Nhận / (Ai đó) Cho mình',
+        examples: [
+            { jp: '私は彼にチョコをあげました。', vn: 'Tôi đã tặng sô cô la cho anh ấy.' },
+            { jp: '母に花をあげます。', vn: 'Tôi sẽ tặng hoa cho mẹ.' },
+            { jp: '誕生日に何をもらいましたか。', vn: 'Sinh nhật bạn đã nhận được gì?' },
+            { jp: '父に時計をもらいました。', vn: 'Tôi được bố tặng đồng hồ.' },
+            { jp: '彼女は私に本をくれました。', vn: 'Cô ấy đã tặng sách cho tôi.' },
+            { jp: '佐藤さんはプレゼントをくれましたか。', vn: 'Anh Sato có tặng quà cho bạn không?' },
+            { jp: '誰にあげますか。', vn: 'Bạn sẽ tặng cho ai?' },
+            { jp: '先生から辞書をもらいました。', vn: 'Tôi đã nhận từ điển từ thầy giáo.' },
+            { jp: '山田さんは妹にお菓子をあげました。', vn: 'Chị Yamada đã cho em gái kẹo.' },
+            { jp: 'これは父がくれたペンです。', vn: 'Đây là cái bút bố đã cho tôi.' }
+        ]
+    },
+    {
+        id: 32,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜ませんか',
+        meaning: 'Cùng làm... không? (Mời rủ)',
+        examples: [
+            { jp: '一緒に映画を見ませんか。', vn: 'Cùng đi xem phim không?' },
+            { jp: '今晩、食事しませんか。', vn: 'Tối nay cùng đi ăn không?' },
+            { jp: '日曜日、テニスをしませんか。', vn: 'Chủ nhật cùng chơi quần vợt không?' },
+            { jp: 'ちょっと休みませんか。', vn: 'Cùng nghỉ một chút nhé?' },
+            { jp: '明日、買い物に行きませんか。', vn: 'Ngày mai cùng đi mua sắm không?' },
+            { jp: 'お茶を飲みませんか。', vn: 'Cùng uống trà không?' },
+            { jp: '公園を散歩しませんか。', vn: 'Cùng đi dạo công viên không?' },
+            { jp: 'カラオケに行きませんか。', vn: 'Cùng đi hát karaoke không?' },
+            { jp: '昼ごはんを食べませんか。', vn: 'Cùng ăn trưa không?' },
+            { jp: '海へ行きませんか。', vn: 'Cùng đi biển không?' }
+        ]
+    },
+    {
+        id: 33,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜て、〜て',
+        meaning: 'Làm A, rồi làm B (Nối hành động)',
+        examples: [
+            { jp: '朝起きて、朝ごはんを食べます。', vn: 'Sáng tôi thức dậy rồi ăn sáng.' },
+            { jp: '昨日はデパートへ行って、買い物をしました。', vn: 'Hôm qua tôi đi bách hóa rồi mua sắm.' },
+            { jp: '図書館へ行って、本を借りました。', vn: 'Tôi đến thư viện rồi mượn sách.' },
+            { jp: '手を洗って、ご飯を食べます。', vn: 'Tôi rửa tay rồi ăn cơm.' },
+            { jp: '仕事を終わって、飲みに行きました。', vn: 'Tôi làm xong việc rồi đi uống.' },
+            { jp: 'テレビを見て、寝ました。', vn: 'Tôi xem tivi rồi ngủ.' },
+            { jp: 'シャワーを浴びて、歯を磨きます。', vn: 'Tôi tắm vòi sen rồi đánh răng.' },
+            { jp: '電話をかけて、友達と話しました。', vn: 'Tôi gọi điện thoại rồi nói chuyện với bạn.' },
+            { jp: '家に帰って、宿題をします。', vn: 'Tôi về nhà rồi làm bài tập.' },
+            { jp: '5時に終わって、すぐ帰ります。', vn: '5 giờ kết thúc rồi tôi về ngay.' }
+        ]
+    },
+    {
+        id: 34,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜てから',
+        meaning: 'Sau khi làm...',
+        examples: [
+            { jp: '手を洗ってから、食べます。', vn: 'Sau khi rửa tay, tôi sẽ ăn.' },
+            { jp: '国へ帰ってから、父の会社で働きます。', vn: 'Sau khi về nước, tôi sẽ làm việc ở công ty của bố.' },
+            { jp: '仕事が終わってから、飲みに行きましょう。', vn: 'Sau khi xong việc, chúng ta đi uống nhé.' },
+            { jp: '説明を聞いてから、質問してください。', vn: 'Sau khi nghe giải thích, hãy đặt câu hỏi.' },
+            { jp: '駅に着いてから、電話しました。', vn: 'Sau khi đến ga, tôi đã gọi điện.' },
+            { jp: 'ご飯を食べてから、薬を飲みます。', vn: 'Sau khi ăn cơm, tôi uống thuốc.' },
+            { jp: 'よく考えてから、答えてください。', vn: 'Sau khi suy nghĩ kỹ, hãy trả lời.' },
+            { jp: '日本へ来てから、3年になります。', vn: 'Sau khi đến Nhật đã được 3 năm.' },
+            { jp: 'あの映画を見てから、彼が好きになりました。', vn: 'Sau khi xem phim đó, tôi trở nên thích anh ấy.' },
+            { jp: '確認してから、連絡します。', vn: 'Sau khi xác nhận, tôi sẽ liên lạc.' }
+        ]
+    },
+    {
+        id: 35,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜たことがあります',
+        meaning: 'Đã từng làm... (Kinh nghiệm)',
+        examples: [
+            { jp: '私は日本へ行ったことがあります。', vn: 'Tôi đã từng đi Nhật.' },
+            { jp: '馬に乗ったことがありますか。', vn: 'Bạn đã từng cưỡi ngựa chưa?' },
+            { jp: '寿司を食べたことがあります。', vn: 'Tôi đã từng ăn sushi.' },
+            { jp: '桜を見たことがありません。', vn: 'Tôi chưa từng thấy hoa anh đào.' },
+            { jp: '相撲を見たことがありますか。', vn: 'Bạn đã từng xem sumo chưa?' },
+            { jp: '新幹線に乗ったことがあります。', vn: 'Tôi đã từng đi shinkansen.' },
+            { jp: '日本人の友達と話したことがあります。', vn: 'Tôi đã từng nói chuyện với bạn người Nhật.' },
+            { jp: '着物を着たことがありますか。', vn: 'Bạn đã từng mặc kimono chưa?' },
+            { jp: '富士山に登ったことがあります。', vn: 'Tôi đã từng leo núi Phú Sĩ.' },
+            { jp: '一回も休んだことがありません。', vn: 'Tôi chưa từng nghỉ buổi nào.' }
+        ]
+    },
+    {
+        id: 36,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜たり 〜たりします',
+        meaning: 'Lúc thì... lúc thì... (Liệt kê hành động tiêu biểu)',
+        examples: [
+            { jp: '日曜日はテニスをしたり、映画を見たりします。', vn: 'Chủ nhật tôi lúc thì chơi tennis, lúc thì xem phim.' },
+            { jp: '昨日は本を読んだり、音楽を聞いたりしました。', vn: 'Hôm qua tôi lúc thì đọc sách, lúc thì nghe nhạc.' },
+            { jp: '休みの日は掃除したり、洗濯したりします。', vn: 'Ngày nghỉ tôi dọn dẹp, giặt giũ...' },
+            { jp: '食べたり飲んだりして、楽しかったです。', vn: 'Ăn ăn uống uống rất vui.' },
+            { jp: '泣いたり笑ったりしないでください。', vn: 'Đừng có lúc khóc lúc cười.' },
+            { jp: '日本の天気は暑かったり寒かったりです。', vn: 'Thời tiết Nhật Bản lúc nóng lúc lạnh.' },
+            { jp: '店は客が多かったり少なかったりです。', vn: 'Cửa hàng thì khách lúc đông lúc vắng.' },
+            { jp: '寝る前に本を読んだり、テレビを見たりします。', vn: 'Trước khi ngủ tôi đọc sách hoặc xem tivi.' },
+            { jp: '冬休みはスキーに行ったり、温泉に入ったりしたいです。', vn: 'Nghỉ đông tôi muốn đi trượt tuyết, tắm suối nước nóng...' },
+            { jp: '携帯でメールしたり、ゲームしたりしてはいけません。', vn: 'Không được nhắn tin hay chơi game.' }
+        ]
+    },
+    {
+        id: 37,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜ましょうか',
+        meaning: 'Tôi làm... nhé? (Đề nghị giúp đỡ) / Cùng làm... nhé?',
+        examples: [
+            { jp: '荷物を持ちましょうか。', vn: 'Tôi mang hành lý giúp bạn nhé?' },
+            { jp: '窓を開けましょうか。', vn: 'Tôi mở cửa sổ giúp bạn nhé?' },
+            { jp: '手伝いましょうか。', vn: 'Tôi giúp bạn một tay nhé?' },
+            { jp: '駅まで迎えに行きましょうか。', vn: 'Tôi ra ga đón bạn nhé?' },
+            { jp: '地図を描きましょうか。', vn: 'Tôi vẽ bản đồ cho bạn nhé?' },
+            { jp: 'タクシーを呼びましょうか。', vn: 'Tôi gọi taxi cho bạn nhé?' },
+            { jp: '写真を撮りましょうか。', vn: 'Tôi chụp ảnh cho bạn nhé?' },
+            { jp: '傘を貸しましょうか。', vn: 'Tôi cho bạn mượn ô nhé?' },
+            { jp: '少し休みましょうか。', vn: 'Chúng ta nghỉ một chút nhé?' },
+            { jp: '何時に会いましょうか。', vn: 'Chúng ta gặp nhau lúc mấy giờ?' }
+        ]
+    },
+    {
+        id: 38,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '[Place] へ [V-stem] に行きます',
+        meaning: 'Đi đến... để làm gì (Mục đích)',
+        examples: [
+            { jp: '日本へ日本語を勉強しに行きます。', vn: 'Tôi đi Nhật để học tiếng Nhật.' },
+            { jp: 'デパートへ買い物に行きます。', vn: 'Tôi đi bách hóa để mua sắm.' },
+            { jp: '図書館へ本を借りに行きます。', vn: 'Tôi đến thư viện để mượn sách.' },
+            { jp: '友達の家へ遊びに行きます。', vn: 'Tôi đến nhà bạn để chơi.' },
+            { jp: '公園へ散歩に行きます。', vn: 'Tôi ra công viên để đi dạo.' },
+            { jp: '川へ釣りに行きます。', vn: 'Tôi ra sông để câu cá.' },
+            { jp: '国へ母に会いに行きます。', vn: 'Tôi về nước để gặp mẹ.' },
+            { jp: '暑いですから、プールへ泳ぎに行きましょう。', vn: 'Vì nóng nên chúng ta đi hồ bơi để bơi đi.' },
+            { jp: 'どこへ写真を撮りに行きますか。', vn: 'Bạn đi đâu để chụp ảnh vậy?' },
+            { jp: 'レストランへ食事に行きます。', vn: 'Tôi đến nhà hàng để dùng bữa.' }
+        ]
+    },
+    {
+        id: 39,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜前に',
+        meaning: 'Trước khi...',
+        examples: [
+            { jp: '寝る前に、歯を磨きます。', vn: 'Trước khi ngủ, tôi đánh răng.' },
+            { jp: 'ご飯を食べる前に、手を洗います。', vn: 'Trước khi ăn cơm, tôi rửa tay.' },
+            { jp: '日本へ来る前に、日本語を勉強しました。', vn: 'Trước khi đến Nhật, tôi đã học tiếng Nhật.' },
+            { jp: '出かける前に、電気を消してください。', vn: 'Trước khi ra ngoài, hãy tắt điện.' },
+            { jp: '会議の前に、資料をコピーします。', vn: 'Trước cuộc họp, tôi photo tài liệu (Danh từ + no).' },
+            { jp: '3年前に、結婚しました。', vn: 'Tôi đã kết hôn 3 năm trước.' },
+            { jp: '泳ぐ前に、準備運動をします。', vn: 'Trước khi bơi, tôi khởi động.' },
+            { jp: '買う前に、よく見ます。', vn: 'Trước khi mua, tôi xem kỹ.' },
+            { jp: '試験の前に、復習します。', vn: 'Trước kỳ thi, tôi ôn tập.' },
+            { jp: '1時間前に、ここに着きました。', vn: 'Tôi đã đến đây 1 tiếng trước.' }
+        ]
+    },
+    {
+        id: 40,
+        level: 'N5',
+        group: 'Mẫu câu với Động từ',
+        label: '〜ことができます',
+        meaning: 'Có thể làm... (Khả năng)',
+        examples: [
+            { jp: '私は日本語を話すことができます。', vn: 'Tôi có thể nói tiếng Nhật.' },
+            { jp: 'ここでタバコを吸うことができますか。', vn: 'Ở đây có thể hút thuốc không?' },
+            { jp: 'カードで払うことができます。', vn: 'Có thể thanh toán bằng thẻ.' },
+            { jp: '図書館で本を借りることができます。', vn: 'Có thể mượn sách ở thư viện.' },
+            { jp: 'スマホで予約することができます。', vn: 'Có thể đặt chỗ bằng điện thoại thông minh.' },
+            { jp: 'ピアノを弾くことができます。', vn: 'Tôi có thể chơi đàn piano.' },
+            { jp: '100メートル泳ぐことができます。', vn: 'Tôi có thể bơi 100 mét.' },
+            { jp: '漢字を書くことができますか。', vn: 'Bạn có thể viết chữ Hán không?' },
+            { jp: '安く買うことができます。', vn: 'Có thể mua với giá rẻ.' },
+            { jp: 'どこで両替することができますか。', vn: 'Có thể đổi tiền ở đâu?' }
+        ]
+    },
+    {
+        id: 41,
+        level: 'N5',
+        group: 'Danh từ hóa',
+        label: '〜ことです',
+        meaning: 'Việc... (Danh từ hóa, sở thích)',
+        examples: [
+            { jp: '私の趣味は映画を見ることです。', vn: 'Sở thích của tôi là xem phim.' },
+            { jp: '夢は医者になることです。', vn: 'Ước mơ của tôi là trở thành bác sĩ.' },
+            { jp: '大切なことは諦めないことです。', vn: 'Điều quan trọng là không bỏ cuộc.' },
+            { jp: '趣味は写真を撮ることです。', vn: 'Sở thích là chụp ảnh.' },
+            { jp: '楽しみは食べることです。', vn: 'Niềm vui là ăn uống.' },
+            { jp: '私の仕事は日本語を教えることです。', vn: 'Công việc của tôi là dạy tiếng Nhật.' },
+            { jp: '目標はN1に合格することです。', vn: 'Mục tiêu là đỗ N1.' },
+            { jp: '趣味は音楽を聞くことですか。', vn: 'Sở thích của bạn là nghe nhạc phải không?' },
+            { jp: '習慣は毎朝ジョギングすることです。', vn: 'Thói quen là chạy bộ mỗi sáng.' },
+            { jp: '悪いことは嘘をつくことです。', vn: 'Điều xấu là nói dối.' }
+        ]
+    },
+    {
+        id: 42,
+        level: 'N5',
+        group: 'Tính từ & Bổ nghĩa',
+        label: '[Adjective] + [Noun]',
+        meaning: 'Tính từ bổ nghĩa cho Danh từ',
+        examples: [
+            { jp: 'これは美味しいケーキです。', vn: 'Đây là cái bánh ngon.' },
+            { jp: '親切な人に会いました。', vn: 'Tôi đã gặp một người tốt bụng.' },
+            { jp: '大阪は賑やかな町です。', vn: 'Osaka là thành phố náo nhiệt.' },
+            { jp: '白いシャツを買いました。', vn: 'Tôi đã mua cái áo sơ mi trắng.' },
+            { jp: '有名なレストランで食べました。', vn: 'Tôi đã ăn ở nhà hàng nổi tiếng.' },
+            { jp: '熱いお茶をください。', vn: 'Hãy cho tôi trà nóng.' },
+            { jp: '静かな公園が好きです。', vn: 'Tôi thích công viên yên tĩnh.' },
+            { jp: '新しいパソコンがほしいです。', vn: 'Tôi muốn máy tính mới.' },
+            { jp: '古いお寺を見学しました。', vn: 'Tôi đã tham quan ngôi chùa cổ.' },
+            { jp: 'ハンサムな彼氏がいます。', vn: 'Tôi có bạn trai đẹp trai.' }
+        ]
+    },
+    {
+        id: 43,
+        level: 'N5',
+        group: 'Tính từ & Bổ nghĩa',
+        label: '〜は〜が [Adjective]',
+        meaning: 'Chủ ngữ có đặc điểm... (Mô tả bộ phận/đặc điểm)',
+        examples: [
+            { jp: '象は鼻が長いです。', vn: 'Con voi có cái mũi dài.' },
+            { jp: '田中さんは背が高いです。', vn: 'Anh Tanaka dáng cao.' },
+            { jp: 'この部屋は窓が小さいです。', vn: 'Căn phòng này có cửa sổ nhỏ.' },
+            { jp: '日本は生活費が高いです。', vn: 'Nhật Bản chi phí sinh hoạt cao.' },
+            { jp: 'ベトナムは料理がおいしいです。', vn: 'Việt Nam có đồ ăn ngon.' },
+            { jp: '彼女は髪が長いです。', vn: 'Cô ấy có mái tóc dài.' },
+            { jp: '大阪は人が多いです。', vn: 'Osaka có đông người.' },
+            { jp: 'あの店はサービスがいいです。', vn: 'Cửa hàng đó dịch vụ tốt.' },
+            { jp: 'マリアさんは目が青いです。', vn: 'Chị Maria có đôi mắt xanh.' },
+            { jp: '彼は足が速いです。', vn: 'Anh ấy chạy nhanh (chân nhanh).' }
+        ]
+    },
+    {
+        id: 44,
+        level: 'N5',
+        group: 'So sánh',
+        label: '〜と〜とどちらが',
+        meaning: 'Giữa A và B, cái nào... hơn?',
+        examples: [
+            { jp: 'サッカーと野球とどちらが好きですか。', vn: 'Bóng đá và bóng chày, bạn thích môn nào hơn?' },
+            { jp: 'サッカーのほうが好きです。', vn: 'Tôi thích bóng đá hơn.' },
+            { jp: 'コーヒーと紅茶とどちらがいいですか。', vn: 'Cà phê và hồng trà, bạn chọn cái nào?' },
+            { jp: '春と秋とどちらが好きですか。', vn: 'Mùa xuân và mùa thu, bạn thích mùa nào hơn?' },
+            { jp: '肉と魚とどちらを食べたいですか。', vn: 'Thịt và cá, bạn muốn ăn món nào?' },
+            { jp: '月曜日と火曜日とどちらが暇ですか。', vn: 'Thứ hai và thứ ba, hôm nào bạn rảnh hơn?' },
+            { jp: '北海道と沖縄とどちらが遠いですか。', vn: 'Hokkaido và Okinawa, chỗ nào xa hơn?' },
+            { jp: 'これとあれとどちらが安いですか。', vn: 'Cái này và cái kia, cái nào rẻ hơn?' },
+            { jp: '仕事と勉強とどちらが面白いですか。', vn: 'Công việc và việc học, cái nào thú vị hơn?' },
+            { jp: '海と山とどちらに行きたいですか。', vn: 'Biển và núi, bạn muốn đi đâu hơn?' }
+        ]
+    },
+    {
+        id: 45,
+        level: 'N5',
+        group: 'So sánh',
+        label: '〜で〜がいちばん',
+        meaning: 'Trong số... cái nào... nhất?',
+        examples: [
+            { jp: 'スポーツで何が一番好きですか。', vn: 'Trong các môn thể thao, bạn thích môn nào nhất?' },
+            { jp: 'サッカーが一番好きです。', vn: 'Tôi thích bóng đá nhất.' },
+            { jp: '日本料理で何が一番おいしいですか。', vn: 'Trong các món ăn Nhật, món nào ngon nhất?' },
+            { jp: 'クラスで誰が一番背が高いですか。', vn: 'Trong lớp ai là người cao nhất?' },
+            { jp: '一年でいつが一番寒いですか。', vn: 'Trong một năm, khi nào lạnh nhất?' },
+            { jp: '家族で誰が一番元気ですか。', vn: 'Trong gia đình, ai khỏe mạnh nhất?' },
+            { jp: 'この中でどれが一番安いですか。', vn: 'Trong số này, cái nào rẻ nhất?' },
+            { jp: '世界でどこが一番広いですか。', vn: 'Trên thế giới, nơi nào rộng lớn nhất?' },
+            { jp: '果物で何が一番好きですか。', vn: 'Trong các loại quả, bạn thích quả nào nhất?' },
+            { jp: '一週間で土曜日が一番楽しいです。', vn: 'Trong một tuần, thứ bảy là vui nhất.' }
+        ]
+    },
+    {
+        id: 46,
+        level: 'N5',
+        group: 'Thời gian & Số đếm',
+        label: 'Số đếm & Đơn vị',
+        meaning: 'Cách đếm cơ bản',
+        examples: [
+            { jp: 'りんごを３つください。', vn: 'Cho tôi 3 quả táo.' },
+            { jp: '８０円切手を５枚買いました。', vn: 'Tôi đã mua 5 cái tem 80 yên.' },
+            { jp: '家族は４人です。', vn: 'Gia đình tôi có 4 người.' },
+            { jp: '１週間に２回習います。', vn: 'Tôi học 2 lần 1 tuần.' },
+            { jp: 'この国に２か月います。', vn: 'Tôi ở nước này 2 tháng.' },
+            { jp: '車が３台あります。', vn: 'Có 3 chiếc ô tô.' },
+            { jp: 'ビールを２本飲みました。', vn: 'Tôi đã uống 2 chai bia.' },
+            { jp: 'シャツを２枚洗いました。', vn: 'Tôi đã giặt 2 cái áo.' },
+            { jp: '消しゴムが１個あります。', vn: 'Có 1 cục tẩy.' },
+            { jp: '全部でいくらですか。', vn: 'Tổng cộng bao nhiêu tiền?' }
+        ]
+    },
+    {
+        id: 47,
+        level: 'N5',
+        group: 'Khác',
+        label: 'もう / まだ',
+        meaning: 'Đã (xong) / Chưa... (Hoàn thành)',
+        examples: [
+            { jp: 'もう昼ご飯を食べましたか。', vn: 'Bạn đã ăn trưa chưa?' },
+            { jp: 'はい、もう食べました。', vn: 'Vâng, tôi ăn rồi.' },
+            { jp: 'いいえ、まだです。', vn: 'Không, tôi chưa ăn.' },
+            { jp: 'もう荷物を送りましたか。', vn: 'Bạn đã gửi hành lý chưa?' },
+            { jp: 'もう１２時ですよ。', vn: 'Đã 12 giờ rồi đấy.' },
+            { jp: 'まだ宿題をしていません。', vn: 'Tôi vẫn chưa làm bài tập.' },
+            { jp: 'まだ雨が降っています。', vn: 'Trời vẫn đang mưa.' },
+            { jp: '銀行はまだ開いていますか。', vn: 'Ngân hàng vẫn còn mở cửa chứ?' },
+            { jp: 'もう宿題が終わりましたか。', vn: 'Đã làm xong bài tập chưa?' },
+            { jp: 'まだ寝ません。', vn: 'Tôi vẫn chưa ngủ.' }
+        ]
+    },
+    {
+        id: 48,
+        level: 'N5',
+        group: 'Khác',
+        label: 'Trạng từ mức độ',
+        meaning: 'よく, だいたい, たくさん, 少し...',
+        examples: [
+            { jp: '日本語がよくわかります。', vn: 'Tôi hiểu rõ tiếng Nhật.' },
+            { jp: '平仮名が大体わかります。', vn: 'Tôi hiểu đại khái chữ Hiragana.' },
+            { jp: '英語が少しわかります。', vn: 'Tôi hiểu một chút tiếng Anh.' },
+            { jp: 'フランス語が全然わかりません。', vn: 'Tôi hoàn toàn không hiểu tiếng Pháp.' },
+            { jp: 'お金がたくさんあります。', vn: 'Tôi có rất nhiều tiền.' },
+            { jp: '時間が少しあります。', vn: 'Tôi có một chút thời gian.' },
+            { jp: '全然食べませんでした。', vn: 'Tôi đã hoàn toàn không ăn gì.' },
+            { jp: 'とても暑いですね。', vn: 'Nóng quá nhỉ.' },
+            { jp: 'あまり寒くないです。', vn: 'Không lạnh lắm.' },
+            { jp: 'もっとゆっくり話してください。', vn: 'Hãy nói chậm hơn nữa.' }
+        ]
+    },
+    {
+        id: 49,
+        level: 'N5',
+        group: 'Khác',
+        label: '〜とき',
+        meaning: 'Khi... (Thời gian)',
+        examples: [
+            { jp: '寝るとき、「おやすみなさい」と言います。', vn: 'Khi đi ngủ, nói "Chúc ngủ ngon".' },
+            { jp: '図書館で本を借りるとき、カードがいります。', vn: 'Khi mượn sách ở thư viện, cần có thẻ.' },
+            { jp: 'わからないとき、先生に聞きます。', vn: 'Khi không hiểu, tôi hỏi thầy giáo.' },
+            { jp: '暇なとき、テレビを見ます。', vn: 'Khi rảnh rỗi, tôi xem tivi.' },
+            { jp: '子供のとき、よく川で泳ぎました。', vn: 'Khi còn bé, tôi hay bơi ở sông.' },
+            { jp: '忙しいとき、残業します。', vn: 'Khi bận rộn, tôi làm thêm giờ.' },
+            { jp: '病気のとき、学校を休みます。', vn: 'Khi bị ốm, tôi nghỉ học.' },
+            { jp: '食べたとき、「ごちそうさま」と言います。', vn: 'Khi ăn xong, nói "Cảm ơn vì bữa ăn".' },
+            { jp: '道を渡るとき、気をつけてください。', vn: 'Khi qua đường, hãy cẩn thận.' },
+            { jp: '寂しいとき、家族に電話します。', vn: 'Khi buồn, tôi gọi điện cho gia đình.' }
+        ]
+    },
+    {
+        id: 50,
+        level: 'N5',
+        group: 'Khác',
+        label: '〜でしょう',
+        meaning: '...đúng không? (Xác nhận/Đồng tình)',
+        examples: [
+            { jp: '明日は雨でしょう。', vn: 'Ngày mai chắc là mưa.' },
+            { jp: 'その映画は面白いでしょう。', vn: 'Phim đó chắc hay nhỉ?' },
+            { jp: '田中さんも行くでしょう。', vn: 'Anh Tanaka chắc cũng đi nhỉ?' },
+            { jp: 'これはあなたの傘でしょう？', vn: 'Cái này là ô của bạn đúng không?' },
+            { jp: '北海道は寒いでしょう。', vn: 'Hokkaido chắc lạnh lắm nhỉ.' },
+            { jp: '試験は難しかったでしょう？', vn: 'Kỳ thi chắc là khó lắm đúng không?' },
+            { jp: '疲れたでしょう。', vn: 'Chắc bạn mệt rồi.' },
+            { jp: '彼も知っているでしょう。', vn: 'Chắc anh ấy cũng biết.' },
+            { jp: '大丈夫でしょう。', vn: 'Chắc là không sao đâu.' },
+            { jp: 'いい天気でしょう。', vn: 'Thời tiết đẹp nhỉ.' }
+        ]
+    },
+    // --- N4: Tiếp tục ---
+    {
+        id: 51,
+        level: 'N4',
+        group: 'Điều kiện',
+        label: '〜ば / 〜なら',
+        meaning: 'Nếu... (Điều kiện)',
+        examples: [
+            { jp: '春になれば、桜が咲きます。', vn: 'Nếu sang xuân, hoa anh đào sẽ nở.' },
+            { jp: '安ければ、買います。', vn: 'Nếu rẻ thì tôi sẽ mua.' },
+            { jp: '天気がよければ、行きます。', vn: 'Nếu thời tiết tốt, tôi sẽ đi.' },
+            { jp: '時間があれば、手伝ってください。', vn: 'Nếu có thời gian, hãy giúp tôi.' },
+            { jp: '彼が行けば、私も行きます。', vn: 'Nếu anh ấy đi, tôi cũng đi.' },
+            { jp: '東京へ行くなら、新幹線が便利です。', vn: 'Nếu đi Tokyo thì Shinkansen tiện lợi.' },
+            { jp: 'カメラを買うなら、あの店がいいです。', vn: 'Nếu mua máy ảnh thì cửa hàng kia được đấy.' },
+            { jp: '嫌なら、しなくてもいいです。', vn: 'Nếu ghét thì không làm cũng được.' },
+            { jp: '明日なら、暇です。', vn: 'Nếu là ngày mai thì tôi rảnh.' },
+            { jp: '説明書を読めば、わかります。', vn: 'Nếu đọc hướng dẫn thì sẽ hiểu.' }
+        ]
+    },
+    {
+        id: 52,
+        level: 'N4',
+        group: 'Mẫu câu với Động từ',
+        label: '〜よう / 〜意向形',
+        meaning: 'Định làm, cùng làm (Thể ý hướng)',
+        examples: [
+            { jp: 'さあ、行こう。', vn: 'Nào, đi thôi.' },
+            { jp: '少し休もう。', vn: 'Nghỉ một chút nào.' },
+            { jp: '一緒に帰ろう。', vn: 'Cùng về thôi.' },
+            { jp: 'もっと勉強しよう。', vn: 'Hãy học nhiều hơn nào.' },
+            { jp: '明日また来よう。', vn: 'Ngày mai lại đến nhé.' },
+            { jp: '何をしようか。', vn: 'Chúng ta làm gì đây (thân mật)?' },
+            { jp: '夏休みに旅行しようと思います。', vn: 'Tôi định đi du lịch vào nghỉ hè.' },
+            { jp: '早く寝よう。', vn: 'Ngủ sớm thôi.' },
+            { jp: '頑張ろう！', vn: 'Cùng cố gắng nào!' },
+            { jp: '会議を始めよう。', vn: 'Bắt đầu cuộc họp thôi.' }
+        ]
+    },
+    {
+        id: 53,
+        level: 'N4',
+        group: 'Dự định & Mong muốn',
+        label: '〜と思います',
+        meaning: 'Tôi nghĩ rằng / Tôi định...',
+        examples: [
+            { jp: '明日は雨が降ると思います。', vn: 'Tôi nghĩ ngày mai trời sẽ mưa.' },
+            { jp: '彼は来ないと思います。', vn: 'Tôi nghĩ anh ấy sẽ không đến.' },
+            { jp: '値段が高いと思います。', vn: 'Tôi nghĩ giá đắt.' },
+            { jp: '日本はきれいだと思います。', vn: 'Tôi nghĩ Nhật Bản đẹp.' },
+            { jp: '週末、海へ行こうと思います。', vn: 'Tôi định cuối tuần đi biển.' },
+            { jp: '日本語は面白いと思います。', vn: 'Tôi nghĩ tiếng Nhật thú vị.' },
+            { jp: '会議は役に立つと思います。', vn: 'Tôi nghĩ cuộc họp có ích.' },
+            { jp: '彼女は病気だと思います。', vn: 'Tôi nghĩ cô ấy bị ốm.' },
+            { jp: '成功すると思います。', vn: 'Tôi nghĩ sẽ thành công.' },
+            { jp: '外国で働こうと思っています。', vn: 'Tôi đang định làm việc ở nước ngoài.' }
+        ]
+    },
+    {
+        id: 54,
+        level: 'N4',
+        group: 'Dự định & Mong muốn',
+        label: '〜つもり / 予定',
+        meaning: 'Dự định / Kế hoạch',
+        examples: [
+            { jp: '来月、国へ帰るつもりです。', vn: 'Tháng sau tôi định về nước.' },
+            { jp: 'タバコを辞めるつもりです。', vn: 'Tôi định bỏ thuốc lá.' },
+            { jp: '大学院で勉強するつもりです。', vn: 'Tôi định học cao học.' },
+            { jp: '車を買うつもりはありません。', vn: 'Tôi không có định mua ô tô.' },
+            { jp: '明日は何をするつもりですか。', vn: 'Ngày mai bạn định làm gì?' },
+            { jp: '7月末にドイツへ出張する予定です。', vn: 'Dự định cuối tháng 7 tôi đi công tác Đức.' },
+            { jp: '会議は10時から始まる予定です。', vn: 'Cuộc họp dự kiến bắt đầu lúc 10 giờ.' },
+            { jp: '旅行の予定がありますか。', vn: 'Bạn có kế hoạch đi du lịch không?' },
+            { jp: 'ずっと日本に住むつもりです。', vn: 'Tôi định sống ở Nhật mãi.' },
+            { jp: '午後はお客様に会う予定です。', vn: 'Buổi chiều tôi có lịch gặp khách hàng.' }
+        ]
+    },
+    {
+        id: 55,
+        level: 'N4',
+        group: 'Trạng thái',
+        label: '〜てある / 〜ている',
+        meaning: 'Có sẵn (kết quả hành động) / Đang (Trạng thái)',
+        examples: [
+            { jp: '壁に絵が掛けてあります。', vn: 'Trên tường có treo bức tranh (ai đó đã treo).' },
+            { jp: 'カレンダーに予定が書いてあります。', vn: 'Trên lịch có ghi lịch trình.' },
+            { jp: '窓が開いています。', vn: 'Cửa sổ đang mở (tự động từ).' },
+            { jp: '窓を開けてあります。', vn: 'Cửa sổ đang được mở (tha động từ - có mục đích).' },
+            { jp: '電気がついています。', vn: 'Điện đang bật.' },
+            { jp: '皿が割れています。', vn: 'Cái đĩa đang bị vỡ.' },
+            { jp: '飲み物が冷やしてあります。', vn: 'Đồ uống đã được làm lạnh sẵn.' },
+            { jp: '名前が書いてあります。', vn: 'Có viết tên.' },
+            { jp: '電車が込んでいます。', vn: 'Tàu điện đang đông.' },
+            { jp: '準備がしてあります。', vn: 'Đã chuẩn bị sẵn rồi.' }
+        ]
+    },
+    {
+        id: 56,
+        level: 'N4',
+        group: 'Trạng thái',
+        label: '〜てしまう',
+        meaning: 'Lỡ làm / Hoàn thành hết',
+        examples: [
+            { jp: '宿題をやってしまいました。', vn: 'Tôi đã làm xong hết bài tập.' },
+            { jp: '大切な皿を割ってしまいました。', vn: 'Tôi lỡ làm vỡ cái đĩa quý.' },
+            { jp: '電車の中に傘を忘れてしまいました。', vn: 'Tôi lỡ để quên ô trên tàu.' },
+            { jp: '全部食べてしまいました。', vn: 'Tôi đã ăn hết sạch rồi.' },
+            { jp: '本を読んでしまいました。', vn: 'Tôi đã đọc xong quyển sách.' },
+            { jp: '道に迷ってしまいました。', vn: 'Tôi lỡ bị lạc đường.' },
+            { jp: 'パスポートをなくしてしまいました。', vn: 'Tôi lỡ làm mất hộ chiếu.' },
+            { jp: '寝てしまいました。', vn: 'Tôi lỡ ngủ quên mất.' },
+            { jp: 'お金を使ってしまいました。', vn: 'Tôi xài hết tiền mất rồi.' },
+            { jp: '1日でやってしまいたいです。', vn: 'Tôi muốn làm xong hết trong 1 ngày.' }
+        ]
+    },
+    {
+        id: 57,
+        level: 'N4',
+        group: 'Trạng thái',
+        label: '〜ところ / 〜ばかり',
+        meaning: 'Sắp/Đang/Vừa mới (Thời điểm) / Vừa mới (Cảm giác)',
+        examples: [
+            { jp: 'これから食べるところです。', vn: 'Bây giờ tôi chuẩn bị ăn.' },
+            { jp: '今、調べているところです。', vn: 'Bây giờ tôi đang tìm hiểu.' },
+            { jp: 'たった今、バスが出たところです。', vn: 'Xe buýt vừa mới chạy xong.' },
+            { jp: '会議はまだ終わらないところです。', vn: 'Cuộc họp vẫn chưa kết thúc.' },
+            { jp: '日本へ来たばかりです。', vn: 'Tôi vừa mới đến Nhật (cảm giác gần đây).' },
+            { jp: '買ったばかりの靴が汚れました。', vn: 'Đôi giày vừa mới mua đã bị bẩn.' },
+            { jp: 'さっき起きたばかりです。', vn: 'Tôi vừa mới ngủ dậy.' },
+            { jp: 'この本は読んだばかりです。', vn: 'Quyển sách này tôi vừa mới đọc xong.' },
+            { jp: '食事は終わったところです。', vn: 'Tôi vừa ăn xong.' },
+            { jp: 'ちょうど帰ったところです。', vn: 'Tôi vừa mới về tới nơi.' }
+        ]
+    },
+    {
+        id: 58,
+        level: 'N4',
+        group: 'Bổ sung ý nghĩa',
+        label: '〜とおりに / 〜あとで',
+        meaning: 'Làm theo... / Sau khi... (N4)',
+        examples: [
+            { jp: '私が言うとおりに、書いてください。', vn: 'Hãy viết theo đúng như tôi nói.' },
+            { jp: '見たとおりに、話してください。', vn: 'Hãy kể lại đúng như những gì đã thấy.' },
+            { jp: '線のとおりに、紙を切ってください。', vn: 'Hãy cắt giấy theo đường kẻ.' },
+            { jp: '説明書のとおりに、組み立てました。', vn: 'Tôi đã lắp ráp theo sách hướng dẫn.' },
+            { jp: 'ご飯を食べたあとで、歯を磨きます。', vn: 'Sau khi ăn cơm, tôi đánh răng.' },
+            { jp: 'ジョギングのあとで、シャワーを浴びます。', vn: 'Sau khi chạy bộ, tôi tắm.' },
+            { jp: '仕事のあとで、飲みに行きませんか。', vn: 'Sau khi làm việc, đi uống không?' },
+            { jp: '授業のあとで、質問してもいいですか。', vn: 'Sau giờ học, tôi hỏi có được không?' },
+            { jp: '考えたとおりに、言いました。', vn: 'Tôi đã nói theo đúng suy nghĩ.' },
+            { jp: '映画を見たあとで、食事しました。', vn: 'Sau khi xem phim, chúng tôi đã đi ăn.' }
+        ]
+    },
+    {
+        id: 59,
+        level: 'N4',
+        group: 'Bổ sung ý nghĩa',
+        label: '〜かもしれない / 〜はず',
+        meaning: 'Có lẽ (50%) / Chắc chắn (Suy luận)',
+        examples: [
+            { jp: '明日は雨が降るかもしれません。', vn: 'Ngày mai có thể trời sẽ mưa.' },
+            { jp: '約束に間に合わないかもしれません。', vn: 'Có thể tôi không kịp giờ hẹn.' },
+            { jp: '彼は病気かもしれません。', vn: 'Có thể anh ấy bị ốm.' },
+            { jp: 'これは偽物かもしれません。', vn: 'Cái này có thể là đồ giả.' },
+            { jp: '荷物は明日届くはずです。', vn: 'Hành lý chắc chắn ngày mai sẽ tới.' },
+            { jp: '田中さんは知っているはずです。', vn: 'Anh Tanaka chắc chắn biết.' },
+            { jp: '彼は今日来るはずです。', vn: 'Anh ấy chắc chắn hôm nay sẽ đến.' },
+            { jp: 'そんなはずはありません。', vn: 'Chắc chắn không có chuyện đó đâu.' },
+            { jp: '店は今日休みかもしれません。', vn: 'Cửa hàng có thể hôm nay nghỉ.' },
+            { jp: '会議はもう終わったはずです。', vn: 'Cuộc họp chắc chắn đã kết thúc rồi.' }
+        ]
+    },
+    {
+        id: 60,
+        level: 'N4',
+        group: 'Thể bị động & Sai khiến',
+        label: 'Bị động (受身) / Sai khiến (使役)',
+        meaning: 'Bị/Được làm / Bắt/Cho phép làm',
+        examples: [
+            { jp: '先生に褒められました。', vn: 'Tôi được thầy giáo khen.' },
+            { jp: '誰かに足を踏まれました。', vn: 'Tôi bị ai đó giẫm vào chân.' },
+            { jp: '母に漫画を捨てられました。', vn: 'Tôi bị mẹ vứt truyện tranh.' },
+            { jp: 'この本は世界中で読まれています。', vn: 'Quyển sách này được đọc trên toàn thế giới.' },
+            { jp: '泥棒にお金を盗まれました。', vn: 'Tôi bị kẻ trộm lấy mất tiền.' },
+            { jp: '部長は田中さんを出張させました。', vn: 'Trưởng phòng đã cho anh Tanaka đi công tác.' },
+            { jp: '子供に野菜を食べさせます。', vn: 'Tôi bắt con ăn rau.' },
+            { jp: '面白い話をさせてください。', vn: 'Hãy cho phép tôi kể một câu chuyện thú vị.' },
+            { jp: '母は子供を遊ばせました。', vn: 'Mẹ đã cho phép con chơi.' },
+            { jp: 'すみません、休ませていただけませんか。', vn: 'Xin lỗi, cho phép tôi nghỉ được không?' }
+        ]
+    },
+    {
+        id: 61,
+        level: 'N4',
+        group: 'Thể động từ',
+        label: 'Mệnh lệnh & Cấm chỉ',
+        meaning: 'Hãy làm ngay / Cấm làm (Mạnh mẽ)',
+        examples: [
+            { jp: '頑張れ！', vn: 'Cố lên! (Mệnh lệnh)' },
+            { jp: '走れ！', vn: 'Chạy đi!' },
+            { jp: '早くしろ。', vn: 'Làm nhanh lên.' },
+            { jp: 'こっちへ来い。', vn: 'Lại đây.' },
+            { jp: '動くな。', vn: 'Cấm động đậy. (Cấm chỉ)' },
+            { jp: '入るな。', vn: 'Cấm vào.' },
+            { jp: 'タバコを吸うな。', vn: 'Cấm hút thuốc.' },
+            { jp: '触るな。', vn: 'Cấm sờ.' },
+            { jp: '勉強しなさい。', vn: 'Hãy học đi (Cha mẹ nói với con).' },
+            { jp: '寝なさい。', vn: 'Ngủ đi.' }
+        ]
+    },
+    {
+        id: 62,
+        level: 'N4',
+        group: 'Thể động từ',
+        label: '〜させられる (Sai khiến bị động)',
+        meaning: 'Bị bắt phải làm...',
+        examples: [
+            { jp: '母に野菜を食べさせられました。', vn: 'Tôi bị mẹ bắt ăn rau.' },
+            { jp: '先生に走らせられました。', vn: 'Tôi bị thầy giáo bắt chạy.' },
+            { jp: '部長にお酒を飲ませられました。', vn: 'Tôi bị trưởng phòng ép uống rượu.' },
+            { jp: '待たされました。', vn: 'Tôi bị bắt phải đợi.' },
+            { jp: '歌わされました。', vn: 'Tôi bị bắt hát.' },
+            { jp: '荷物を持たされました。', vn: 'Tôi bị bắt mang hành lý.' },
+            { jp: '日曜日に働かされました。', vn: 'Tôi bị bắt làm việc vào chủ nhật.' },
+            { jp: '掃除させられました。', vn: 'Tôi bị bắt dọn dẹp.' },
+            { jp: '1時間も立たされました。', vn: 'Tôi bị bắt đứng suốt 1 tiếng.' },
+            { jp: '妻に料理を作らされました。', vn: 'Tôi bị vợ bắt nấu ăn.' }
+        ]
+    },
+    {
+        id: 63,
+        level: 'N4',
+        group: 'Nguyên nhân',
+        label: '〜ので / 〜から',
+        meaning: 'Bởi vì... (Khách quan / Chủ quan)',
+        examples: [
+            { jp: '雨が降っているので、出かけません。', vn: 'Vì trời đang mưa nên tôi không ra ngoài (nhẹ nhàng).' },
+            { jp: 'バスが来ないので、遅れました。', vn: 'Vì xe buýt không đến nên tôi bị muộn.' },
+            { jp: '用事があるので、お先に失礼します。', vn: 'Vì có việc bận nên tôi xin phép về trước.' },
+            { jp: '危ないですから、触らないでください。', vn: 'Vì nguy hiểm nên đừng chạm vào.' },
+            { jp: '時間がありませんから、急ぎましょう。', vn: 'Vì không có thời gian nên chúng ta gấp rút lên nào.' },
+            { jp: '気分が悪いので、帰ってもいいですか。', vn: 'Vì tôi thấy không khỏe, tôi về có được không?' },
+            { jp: '日曜日なので、休みです。', vn: 'Vì là chủ nhật nên được nghỉ.' },
+            { jp: '好きなので、毎日食べます。', vn: 'Vì thích nên ngày nào tôi cũng ăn.' },
+            { jp: '日本語がわからないので、英語で話しました。', vn: 'Vì không hiểu tiếng Nhật nên tôi đã nói bằng tiếng Anh.' },
+            { jp: '約束がありますから、帰ります。', vn: 'Vì có hẹn nên tôi về.' }
+        ]
+    },
+    {
+        id: 64,
+        level: 'N4',
+        group: 'Nguyên nhân',
+        label: '〜て / 〜で (Nguyên nhân)',
+        meaning: 'Vì... (Dẫn đến kết quả tự nhiên)',
+        examples: [
+            { jp: 'ニュースを聞いて、びっくりしました。', vn: 'Nghe tin tức, tôi đã giật mình.' },
+            { jp: '家族に会えなくて、寂しいです。', vn: 'Không gặp được gia đình, tôi buồn.' },
+            { jp: '土曜日は都合が悪くて、行けません。', vn: 'Thứ bảy tôi không tiện nên không đi được.' },
+            { jp: '地震でビルが倒れました。', vn: 'Vì động đất, tòa nhà đã đổ.' },
+            { jp: '病気で会社を休みました。', vn: 'Vì bệnh nên tôi nghỉ làm.' },
+            { jp: '事故で電車が止まりました。', vn: 'Do tai nạn nên tàu điện đã dừng.' },
+            { jp: '説明が複雑で、わかりません。', vn: 'Giải thích phức tạp nên tôi không hiểu.' },
+            { jp: '遅くなって、すみません。', vn: 'Xin lỗi vì tôi đến muộn.' },
+            { jp: '電話がなくて、困りました。', vn: 'Không có điện thoại nên tôi đã gặp rắc rối.' },
+            { jp: '火事で家が焼けました。', vn: 'Vì hỏa hoạn, ngôi nhà đã bị cháy.' }
+        ]
+    },
+    {
+        id: 65,
+        level: 'N4',
+        group: 'Giải thích',
+        label: '〜んです',
+        meaning: '...ấy mà / ...đấy (Giải thích lý do, nhấn mạnh)',
+        examples: [
+            { jp: 'どうしたんですか。', vn: 'Có chuyện gì vậy?' },
+            { jp: '頭が痛いんです。', vn: 'Tôi bị đau đầu (giải thích).' },
+            { jp: 'どこへ行くんですか。', vn: 'Bạn đi đâu đấy?' },
+            { jp: '日本語が上手ですね。ー日本に住んでいたんです。', vn: 'Tiếng Nhật giỏi nhỉ. - Vì tôi từng sống ở Nhật mà.' },
+            { jp: '遅れてすみません。バスが来なかったんです。', vn: 'Xin lỗi vì đến muộn. Tại xe buýt không tới.' },
+            { jp: 'きれいな靴ですね。どこで買ったんですか。', vn: 'Giày đẹp nhỉ. Bạn mua ở đâu vậy?' },
+            { jp: '食べないんですか。ーええ、お腹がいっぱいなんです。', vn: 'Bạn không ăn à? - Ừ, tôi no quá.' },
+            { jp: '明日は暇ですか。ーいいえ、用事があるんです。', vn: 'Mai rảnh không? - Không, tôi có việc bận.' },
+            { jp: 'どうして休んだんですか。', vn: 'Tại sao bạn nghỉ thế?' },
+            { jp: 'その本、面白いんですか。', vn: 'Quyển sách đó hay không (tò mò)?' }
+        ]
+    },
+    {
+        id: 66,
+        level: 'N4',
+        group: 'Cho & Nhận',
+        label: '〜ていただけませんか',
+        meaning: 'Làm ơn... giúp tôi được không? (Hỏi lịch sự)',
+        examples: [
+            { jp: '塩を取っていただけませんか。', vn: 'Làm ơn lấy giúp tôi lọ muối được không?' },
+            { jp: '道を教えていただけませんか。', vn: 'Làm ơn chỉ đường giúp tôi được không?' },
+            { jp: 'もう一度説明していただけませんか。', vn: 'Làm ơn giải thích lại giúp tôi được không?' },
+            { jp: '写真を撮っていただけませんか。', vn: 'Làm ơn chụp giúp tôi tấm ảnh được không?' },
+            { jp: 'ちょっと手伝ってくれませんか。', vn: 'Giúp tôi một tay được không (thân mật hơn)?' },
+            { jp: '本を貸してくれませんか。', vn: 'Cho tôi mượn sách được không?' },
+            { jp: '明日来てくれませんか。', vn: 'Mai đến nhé?' },
+            { jp: '書き方を教えてくださいませんか。', vn: 'Làm ơn chỉ tôi cách viết được không?' },
+            { jp: '紹介していただけませんか。', vn: 'Làm ơn giới thiệu giúp tôi được không?' },
+            { jp: '日本語を直していただけませんか。', vn: 'Làm ơn sửa tiếng Nhật giúp tôi được không?' }
+        ]
+    },
+    {
+        id: 67,
+        level: 'N4',
+        group: 'Trạng thái',
+        label: '見える / 聞こえる',
+        meaning: 'Nhìn thấy / Nghe thấy (Khả năng tự nhiên)',
+        examples: [
+            { jp: '富士山が見えます。', vn: 'Có thể nhìn thấy núi Phú Sĩ (từ đây).' },
+            { jp: '波の音が聞こえます。', vn: 'Có thể nghe thấy tiếng sóng.' },
+            { jp: 'ここから海が見えます。', vn: 'Từ đây có thể thấy biển.' },
+            { jp: '声がよく聞こえません。', vn: 'Tôi không nghe rõ tiếng.' },
+            { jp: '不思議な音が聞こえます。', vn: 'Nghe thấy âm thanh lạ.' },
+            { jp: '星が見えますか。', vn: 'Bạn có thấy sao không?' },
+            { jp: '新しいビルが見えます。', vn: 'Nhìn thấy tòa nhà mới.' },
+            { jp: '鳥の声が聞こえます。', vn: 'Nghe thấy tiếng chim.' },
+            { jp: '眼鏡がないと、見えません。', vn: 'Không có kính thì tôi không thấy gì.' },
+            { jp: '隣の部屋の話し声が聞こえます。', vn: 'Nghe thấy tiếng nói chuyện phòng bên cạnh.' }
+        ]
+    },
+    {
+        id: 68,
+        level: 'N4',
+        group: 'Chuẩn bị',
+        label: '〜ておきます',
+        meaning: 'Làm sẵn / Để nguyên',
+        examples: [
+            { jp: '旅行の前に、切符を買っておきます。', vn: 'Trước khi đi du lịch, tôi sẽ mua vé sẵn.' },
+            { jp: 'この資料を読んでおいてください。', vn: 'Hãy đọc trước tài liệu này nhé.' },
+            { jp: '使ったあとで、道具を片付けておきます。', vn: 'Sau khi dùng, tôi dọn dẹp dụng cụ (về chỗ cũ).' },
+            { jp: '窓を開けておいてください。', vn: 'Cứ để cửa sổ mở đi.' },
+            { jp: 'ホテルを予約しておきました。', vn: 'Tôi đã đặt khách sạn sẵn rồi.' },
+            { jp: 'そのままにしておいてください。', vn: 'Cứ để nguyên như vậy.' },
+            { jp: '授業の前に、予習しておきます。', vn: 'Trước giờ học tôi soạn bài sẵn.' },
+            { jp: '晩ご飯を作っておきます。', vn: 'Tôi sẽ nấu cơm tối sẵn.' },
+            { jp: '冷やしておいてください。', vn: 'Hãy làm lạnh sẵn đi.' },
+            { jp: 'メモしておきます。', vn: 'Tôi sẽ ghi chú lại.' }
+        ]
+    },
+    {
+        id: 69,
+        level: 'N4',
+        group: 'Thử nghiệm',
+        label: '〜てみます',
+        meaning: 'Làm thử',
+        examples: [
+            { jp: 'この靴を履いてみてもいいですか。', vn: 'Tôi đi thử đôi giày này được không?' },
+            { jp: '納豆を食べてみました。', vn: 'Tôi đã ăn thử Natto.' },
+            { jp: '一度着物を着てみたいです。', vn: 'Tôi muốn mặc thử Kimono một lần.' },
+            { jp: 'サイズが合うかどうか、着てみます。', vn: 'Tôi sẽ mặc thử xem kích cỡ có vừa không.' },
+            { jp: '行ってみましょう。', vn: 'Chúng ta đi thử xem sao.' },
+            { jp: '彼に聞いてみます。', vn: 'Tôi sẽ hỏi thử anh ấy.' },
+            { jp: '自分で作ってみました。', vn: 'Tôi đã tự làm thử.' },
+            { jp: '日本の酒を飲んでみたいです。', vn: 'Tôi muốn uống thử rượu Nhật.' },
+            { jp: 'そこへ行ってみたいです。', vn: 'Tôi muốn đi thử đến đó.' },
+            { jp: '日本語で話してみます。', vn: 'Tôi sẽ nói thử bằng tiếng Nhật.' }
+        ]
+    },
+    {
+        id: 70,
+        level: 'N4',
+        group: 'Nghĩa vụ',
+        label: '〜なければなりません',
+        meaning: 'Phải làm... (Bắt buộc)',
+        examples: [
+            { jp: '薬を飲まなければなりません。', vn: 'Phải uống thuốc.' },
+            { jp: '明日、病院へ行かなければなりません。', vn: 'Ngày mai phải đi bệnh viện.' },
+            { jp: '宿題をしなければなりません。', vn: 'Phải làm bài tập.' },
+            { jp: 'パスポートを見せなければなりません。', vn: 'Phải cho xem hộ chiếu.' },
+            { jp: 'シートベルトをしなければなりません。', vn: 'Phải thắt dây an toàn.' },
+            { jp: '土曜日も働かなければなりません。', vn: 'Thứ 7 cũng phải làm việc.' },
+            { jp: '早く帰らなければなりません。', vn: 'Phải về sớm.' },
+            { jp: '勉強しなくてはいけません。', vn: 'Phải học (văn nói).' },
+            { jp: '税金を払わなければなりません。', vn: 'Phải đóng thuế.' },
+            { jp: '約束を守らなければなりません。', vn: 'Phải giữ lời hứa.' }
+        ]
+    },
+    {
+        id: 71,
+        level: 'N4',
+        group: 'Mục đích',
+        label: '〜ように / 〜ために',
+        meaning: 'Để... (Mục đích kèm khả năng / Lợi ích)',
+        examples: [
+            { jp: '日本語が話せるように、毎日練習します。', vn: 'Tôi luyện tập hàng ngày để có thể nói tiếng Nhật (Khả năng).' },
+            { jp: '忘れないように、メモします。', vn: 'Tôi ghi chú để không quên.' },
+            { jp: 'よく見えるように、前の方に座りました。', vn: 'Tôi ngồi phía trước để nhìn rõ.' },
+            { jp: '家を買うために、貯金しています。', vn: 'Tôi tiết kiệm tiền để mua nhà (Hành động ý chí).' },
+            { jp: '健康のために、野菜を食べます。', vn: 'Vì sức khỏe, tôi ăn rau.' },
+            { jp: '家族のために、働きます。', vn: 'Tôi làm việc vì gia đình.' },
+            { jp: '風邪を引かないように、気をつけています。', vn: 'Tôi cẩn thận để không bị cảm.' },
+            { jp: '間に合うように、走りました。', vn: 'Tôi đã chạy để kịp giờ.' },
+            { jp: '日本へ行くために、日本語を勉強します。', vn: 'Tôi học tiếng Nhật để đi Nhật.' },
+            { jp: 'みんなに聞こえるように、大きな声で話しました。', vn: 'Tôi nói to để mọi người nghe thấy.' }
+        ]
+    },
+    {
+        id: 72,
+        level: 'N4',
+        group: 'Quyết định',
+        label: '〜ことにします',
+        meaning: 'Quyết định làm / Chọn',
+        examples: [
+            { jp: '明日からタバコを辞めることにします。', vn: 'Tôi quyết định bỏ thuốc từ ngày mai.' },
+            { jp: '毎朝ジョギングすることにしました。', vn: 'Tôi đã quyết định chạy bộ mỗi sáng.' },
+            { jp: '昼ご飯はラーメンにします。', vn: 'Trưa nay tôi chọn ăn mì Ramen.' },
+            { jp: '会議は月曜日にします。', vn: 'Quyết định cuộc họp vào thứ hai.' },
+            { jp: '旅行に行かないことにしました。', vn: 'Tôi đã quyết định không đi du lịch.' },
+            { jp: '今日から日記を書くことにします。', vn: 'Tôi quyết định viết nhật ký từ hôm nay.' },
+            { jp: '車を売ることにしました。', vn: 'Tôi đã quyết định bán xe.' },
+            { jp: 'これにします。', vn: 'Tôi chọn cái này.' },
+            { jp: 'コーヒーにしますか、それとも紅茶にしますか。', vn: 'Bạn chọn cà phê hay hồng trà?' },
+            { jp: 'ホテルは駅の近くにしました。', vn: 'Tôi đã chọn khách sạn gần nhà ga.' }
+        ]
+    },
+    {
+        id: 73,
+        level: 'N4',
+        group: 'Thay đổi',
+        label: '〜ようになります',
+        meaning: 'Trở nên (Thay đổi khả năng/thói quen)',
+        examples: [
+            { jp: '日本語が話せるようになりました。', vn: 'Tôi đã có thể nói được tiếng Nhật.' },
+            { jp: '自転車に乗れるようになりました。', vn: 'Tôi đã biết đi xe đạp.' },
+            { jp: 'やっと納豆が食べられるようになりました。', vn: 'Cuối cùng tôi cũng ăn được Natto.' },
+            { jp: '小さな字が見えなくなりました。', vn: 'Tôi đã không còn nhìn thấy chữ nhỏ.' },
+            { jp: '毎日運動するようになりました。', vn: 'Tôi đã bắt đầu (có thói quen) vận động mỗi ngày.' },
+            { jp: 'ニュースがわかるようになりました。', vn: 'Tôi đã hiểu được bản tin.' },
+            { jp: 'ピアノが弾けるようになりました。', vn: 'Tôi đã biết chơi piano.' },
+            { jp: '早起きするようになりました。', vn: 'Tôi đã bắt đầu dậy sớm.' },
+            { jp: 'ここを通れるようになりました。', vn: 'Đã có thể đi qua chỗ này.' },
+            { jp: 'パソコンが使えるようになりました。', vn: 'Tôi đã biết sử dụng máy tính.' }
+        ]
+    },
+    {
+        id: 74,
+        level: 'N4',
+        group: 'Điều kiện',
+        label: '〜と (Hễ... thì)',
+        meaning: 'Hễ A thì B (Kết quả tất yếu / Máy móc)',
+        examples: [
+            { jp: 'このボタンを押すと、お釣りが出ます。', vn: 'Hễ ấn nút này thì tiền thừa sẽ ra.' },
+            { jp: 'これを回すと、音が大きくなります。', vn: 'Hễ vặn cái này thì tiếng sẽ to lên.' },
+            { jp: '春になると、暖かくなります。', vn: 'Hễ sang xuân thì trời ấm lên.' },
+            { jp: 'まっすぐ行くと、右に駅があります。', vn: 'Hễ đi thẳng thì nhà ga ở bên phải.' },
+            { jp: '酒を飲むと、顔が赤くなります。', vn: 'Hễ uống rượu là mặt đỏ.' },
+            { jp: '夜になると、暗くなります。', vn: 'Hễ trời tối thì sẽ tối.' },
+            { jp: 'あの交差点を左へ曲がると、銀行があります。', vn: 'Hễ rẽ trái ở ngã tư kia thì có ngân hàng.' },
+            { jp: '冬になると、雪が降ります。', vn: 'Hễ đến mùa đông thì tuyết rơi.' },
+            { jp: '100を2で割ると、50になります。', vn: '100 chia 2 thì bằng 50.' },
+            { jp: '値段が高いと、売れません', vn: 'Hễ giá cao thì không bán được.' }
+        ]
+    },
+    {
+        id: 75,
+        level: 'N4',
+        group: 'Nghịch cảnh',
+        label: '〜のに',
+        meaning: 'Mặc dù... thế mà... (Bất mãn / Ngạc nhiên)',
+        examples: [
+            { jp: '一生懸命勉強したのに、不合格でした。', vn: 'Mặc dù đã học chăm chỉ thế mà vẫn trượt.' },
+            { jp: '約束したのに、彼は来ませんでした。', vn: 'Mặc dù đã hứa thế mà anh ấy không đến.' },
+            { jp: '今日は日曜日なのに、働かなければなりません。', vn: 'Mặc dù hôm nay là chủ nhật thế mà vẫn phải làm việc.' },
+            { jp: '高いのに、あまり美味しくないです。', vn: 'Mặc dù đắt thế mà không ngon lắm.' },
+            { jp: 'お金がないのに、買い物しました。', vn: 'Mặc dù không có tiền thế mà đã mua sắm.' },
+            { jp: '薬を飲んだのに、熱が下がりません。', vn: 'Mặc dù đã uống thuốc thế mà không hạ sốt.' },
+            { jp: 'もう春なのに、まだ寒いです。', vn: 'Mặc dù đã là mùa xuân thế mà vẫn lạnh.' },
+            { jp: '知っているのに、教えてくれません。', vn: 'Mặc dù biết thế mà không chỉ cho tôi.' },
+            { jp: '元気なのに、仕事をしません。', vn: 'Mặc dù khỏe mạnh thế mà không làm việc.' },
+            { jp: 'このアパートは狭いのに、家賃が高いです。', vn: 'Căn hộ này chật thế mà tiền thuê đắt.' }
+        ]
+
+    },
+    {
+        id: 76,
+        level: 'N5',
+        group: 'Trợ từ',
+        label: '〜や〜（など）',
+        meaning: 'Liệt kê không đầy đủ (Như là A, như là B...)',
+        examples: [
+            { jp: '机の上に本やペンがあります。', vn: 'Trên bàn có sách, bút (và những thứ khác).' },
+            { jp: '鞄の中に財布や鍵などがあります。', vn: 'Trong túi có ví, chìa khóa (chẳng hạn).' },
+            { jp: '日曜日はテニスやサッカーをします。', vn: 'Chủ nhật tôi chơi tennis, bóng đá (v.v).' },
+            { jp: 'お店で野菜や果物を買いました。', vn: 'Tôi đã mua rau, hoa quả... ở cửa hàng.' },
+            { jp: '京都や奈良へ行きたいです。', vn: 'Tôi muốn đi Kyoto, Nara...' },
+            { jp: '朝ごはんはパンや卵を食べます。', vn: 'Sáng tôi ăn bánh mì, trứng...' },
+            { jp: '教室に田中さんや山田さんがいます。', vn: 'Trong lớp có anh Tanaka, anh Yamada...' },
+            { jp: '日本料理やタイ料理が好きです。', vn: 'Tôi thích món Nhật, món Thái...' },
+            { jp: '動物園で象やライオンを見ました。', vn: 'Ở sở thú tôi đã thấy voi, sư tử...' },
+            { jp: '飲み物やお菓子を用意しました。', vn: 'Tôi đã chuẩn bị đồ uống, bánh kẹo...' }
+        ]
+    },
+    {
+        id: 77,
+        level: 'N5',
+        group: 'Trợ từ',
+        label: '[Noun] で (Phương tiện)',
+        meaning: 'Bằng (Công cụ / Phương tiện)',
+        examples: [
+            { jp: '箸で食べます。', vn: 'Tôi ăn bằng đũa.' },
+            { jp: '日本語でレポートを書きます。', vn: 'Tôi viết báo cáo bằng tiếng Nhật.' },
+            { jp: 'バスで会社へ行きます。', vn: 'Tôi đi đến công ty bằng xe buýt.' },
+            { jp: 'ハサミで紙を切ります。', vn: 'Tôi cắt giấy bằng kéo.' },
+            { jp: 'これは日本語で何と言いますか。', vn: 'Cái này tiếng Nhật gọi là gì?' },
+            { jp: 'インターネットで調べます。', vn: 'Tôi tra cứu bằng internet.' },
+            { jp: 'カードで払います。', vn: 'Tôi trả bằng thẻ.' },
+            { jp: 'ボールペンで書いてください。', vn: 'Hãy viết bằng bút bi.' },
+            { jp: 'ファックスで送りました。', vn: 'Tôi đã gửi bằng fax.' },
+            { jp: '自転車で来ました。', vn: 'Tôi đã đến bằng xe đạp.' }
+        ]
+    },
+    {
+        id: 78,
+        level: 'N5',
+        group: 'Liên từ',
+        label: '〜が / 〜けど',
+        meaning: 'Nhưng... (Nối câu)',
+        examples: [
+            { jp: '日本の食べ物は美味しいですが、高いです。', vn: 'Đồ ăn Nhật ngon nhưng đắt.' },
+            { jp: '行きたいですが、時間がありません。', vn: 'Tôi muốn đi nhưng không có thời gian.' },
+            { jp: '雨が降っていますが、出かけます。', vn: 'Trời đang mưa nhưng tôi vẫn ra ngoài.' },
+            { jp: '勉強しましたが、わかりませんでした。', vn: 'Tôi đã học nhưng vẫn không hiểu.' },
+            { jp: 'すみませんが、塩を取ってください。', vn: 'Xin lỗi, làm ơn lấy giúp tôi lọ muối.' },
+            { jp: '部屋を探しているんですが...。', vn: 'Tôi đang tìm phòng (nhưng có chút khó khăn)...' },
+            { jp: '薬を飲みましたが、治りません。', vn: 'Tôi đã uống thuốc nhưng không khỏi.' },
+            { jp: '安かったけど、買いませんでした。', vn: 'Rẻ đấy nhưng tôi đã không mua.' },
+            { jp: '会いたいけど、会えません。', vn: 'Muốn gặp nhưng không gặp được.' },
+            { jp: '田中さんは来ましたが、山田さんは来ませんでした。', vn: 'Anh Tanaka đã đến nhưng anh Yamada thì không.' }
+        ]
+    },
+    {
+        id: 79,
+        level: 'N5',
+        group: 'Vĩ tố',
+        label: '〜ね / 〜よ',
+        meaning: 'Nhỉ (Đồng tình) / Đấy (Thông báo)',
+        examples: [
+            { jp: 'いい天気ですね。', vn: 'Thời tiết đẹp nhỉ.' },
+            { jp: 'そうですね。', vn: 'Đúng vậy nhỉ.' },
+            { jp: 'きれいですね。', vn: 'Đẹp nhỉ.' },
+            { jp: '明日ですよ。', vn: 'Là ngày mai đấy.' },
+            { jp: 'この本は面白いですよ。', vn: 'Quyển sách này hay đấy.' },
+            { jp: '危ないですよ。', vn: 'Nguy hiểm đấy.' },
+            { jp: 'もう12時ですね。', vn: 'Đã 12 giờ rồi nhỉ.' },
+            { jp: '私がやりますよ。', vn: 'Tôi sẽ làm đấy (để tôi làm cho).' },
+            { jp: '知っていますね。', vn: 'Bạn biết đúng không?' },
+            { jp: '違いますよ。', vn: 'Sai rồi đấy.' }
+        ]
+    },
+    {
+        id: 80,
+        level: 'N5',
+        group: 'Từ để hỏi',
+        label: '何・どこ・誰・いつ...',
+        meaning: 'Các từ để hỏi cơ bản',
+        examples: [
+            { jp: 'これは何ですか。', vn: 'Đây là cái gì?' },
+            { jp: 'トイレはどこですか。', vn: 'Nhà vệ sinh ở đâu?' },
+            { jp: 'あの人は誰ですか。', vn: 'Người kia là ai?' },
+            { jp: '誕生日はいつですか。', vn: 'Sinh nhật là khi nào?' },
+            { jp: 'いくらですか。', vn: 'Bao nhiêu tiền?' },
+            { jp: 'どんな映画が好きですか。', vn: 'Bạn thích loại phim thế nào?' },
+            { jp: 'どうやって学校へ行きますか。', vn: 'Bạn đi đến trường bằng cách nào?' },
+            { jp: '日本の生活はどうですか。', vn: 'Cuộc sống ở Nhật thế nào?' },
+            { jp: '何歳ですか。', vn: 'Mấy tuổi vậy?' },
+            { jp: 'なぜ（どうして）ここに来ましたか。', vn: 'Tại sao lại đến đây?' }
+        ]
+    },
+    // --- N4 Bổ sung ---
+    {
+        id: 81,
+        level: 'N4',
+        group: 'Nghịch cảnh',
+        label: '〜ても',
+        meaning: 'Cho dù... (vẫn)',
+        examples: [
+            { jp: '雨が降っても、行きます。', vn: 'Cho dù trời mưa, tôi vẫn đi.' },
+            { jp: '高くても、買いたいです。', vn: 'Cho dù đắt tôi vẫn muốn mua.' },
+            { jp: '調べても、わかりません。', vn: 'Cho dù đã tra cứu, tôi vẫn không hiểu.' },
+            { jp: '静かでも、寝られません。', vn: 'Cho dù yên tĩnh, tôi vẫn không ngủ được.' },
+            { jp: 'いくら考えても、わかりません。', vn: 'Cho dù suy nghĩ bao nhiêu đi nữa cũng không hiểu.' },
+            { jp: '先生に聞いても、教えてくれませんでした。', vn: 'Cho dù hỏi thầy giáo, thầy cũng không chỉ.' },
+            { jp: '日曜日でも、働きます。', vn: 'Cho dù là chủ nhật, tôi vẫn làm việc.' },
+            { jp: '薬を飲んでも、熱が下がりません。', vn: 'Cho dù uống thuốc, sốt vẫn không hạ.' },
+            { jp: '遠くても、歩いて行きます。', vn: 'Cho dù xa, tôi vẫn đi bộ.' },
+            { jp: '嫌でも、しなければなりません。', vn: 'Cho dù ghét, vẫn phải làm.' }
+        ]
+    },
+    {
+        id: 82,
+        level: 'N4',
+        group: 'Điều kiện',
+        label: '〜場合は',
+        meaning: 'Trong trường hợp...',
+        examples: [
+            { jp: '火事の場合は、119番に電話してください。', vn: 'Trong trường hợp hỏa hoạn, hãy gọi 119.' },
+            { jp: '遅れる場合は、連絡してください。', vn: 'Trong trường hợp đến muộn, hãy liên lạc.' },
+            { jp: 'パスポートをなくした場合は、大使館へ行きます。', vn: 'Trong trường hợp mất hộ chiếu, hãy đến đại sứ quán.' },
+            { jp: '雨の場合は、中止です。', vn: 'Trong trường hợp mưa, sẽ hủy bỏ.' },
+            { jp: '故障した場合は、修理します。', vn: 'Trong trường hợp bị hỏng, sẽ sửa chữa.' },
+            { jp: '参加できない場合は、教えてください。', vn: 'Trong trường hợp không thể tham gia, hãy cho tôi biết.' },
+            { jp: '緊急の場合は、ボタンを押してください。', vn: 'Trường hợp khẩn cấp, hãy ấn nút.' },
+            { jp: 'カードを紛失した場合は、すぐ銀行に言います。', vn: 'Trường hợp mất thẻ, hãy báo ngay cho ngân hàng.' },
+            { jp: 'サイズが合わない場合は、交換できます。', vn: 'Trường hợp kích cỡ không vừa, có thể đổi.' },
+            { jp: '必要な場合は、コピーします。', vn: 'Trường hợp cần thiết, tôi sẽ photo.' }
+        ]
+    },
+    {
+        id: 83,
+        level: 'N4',
+        group: 'Cho phép/Không cần',
+        label: '〜なくてもいいです',
+        meaning: 'Không cần làm... cũng được',
+        examples: [
+            { jp: '明日は来なくてもいいです。', vn: 'Ngày mai không cần đến cũng được.' },
+            { jp: '薬を飲まなくてもいいです。', vn: 'Không cần uống thuốc cũng được.' },
+            { jp: '靴を脱がなくてもいいです。', vn: 'Không cần cởi giày cũng được.' },
+            { jp: '急がなくてもいいですよ。', vn: 'Không cần vội đâu.' },
+            { jp: '全部食べなくてもいいです。', vn: 'Không cần ăn hết cũng được.' },
+            { jp: '名前を書かなくてもいいです。', vn: 'Không cần viết tên cũng được.' },
+            { jp: 'お金を払わなくてもいいです。無料ですから。', vn: 'Không cần trả tiền đâu. Vì miễn phí mà.' },
+            { jp: '日曜日は早く起きなくてもいいです。', vn: 'Chủ nhật không cần dậy sớm cũng được.' },
+            { jp: '心配しなくてもいいです。', vn: 'Không cần lo lắng đâu.' },
+            { jp: '無理しなくてもいいです。', vn: 'Không cần quá sức đâu.' }
+        ]
+    },
+    {
+        id: 84,
+        level: 'N4',
+        group: 'Cố gắng',
+        label: '〜ようにします',
+        meaning: 'Cố gắng làm... (Thói quen / Nỗ lực)',
+        examples: [
+            { jp: '毎日野菜を食べるようにしています。', vn: 'Tôi đang cố gắng ăn rau mỗi ngày.' },
+            { jp: '甘い物を食べないようにしています。', vn: 'Tôi đang cố gắng không ăn đồ ngọt.' },
+            { jp: '毎日運動するようにします。', vn: 'Tôi sẽ cố gắng vận động hàng ngày.' },
+            { jp: '12時までに寝るようにしています。', vn: 'Tôi cố gắng ngủ trước 12 giờ.' },
+            { jp: '忘れ物をしないようにしてください。', vn: 'Hãy cố gắng đừng để quên đồ.' },
+            { jp: '日本語で話すようにします。', vn: 'Tôi sẽ cố gắng nói bằng tiếng Nhật.' },
+            { jp: '絶対に遅れないようにしてください。', vn: 'Tuyệt đối cố gắng đừng đến muộn.' },
+            { jp: '無理しないようにしてください。', vn: 'Hãy cố gắng đừng quá sức.' },
+            { jp: 'できるだけ歩くようにしています。', vn: 'Tôi cố gắng đi bộ nhiều nhất có thể.' },
+            { jp: 'お酒を飲まないようにします。', vn: 'Tôi sẽ cố gắng không uống rượu.' }
+        ]
+    },
+    {
+        id: 85,
+        level: 'N4',
+        group: 'Kết quả/Quyết định',
+        label: '〜ことになります',
+        meaning: 'Được quyết định là... (Kết quả khách quan)',
+        examples: [
+            { jp: '来月、転勤することになりました。', vn: 'Tôi đã có quyết định chuyển công tác vào tháng sau.' },
+            { jp: '明日、会議で発表することになりました。', vn: 'Đã quyết định là ngày mai tôi sẽ phát biểu trong cuộc họp.' },
+            { jp: '日本へ行くことになりました。', vn: 'Việc đi Nhật đã được quyết định.' },
+            { jp: '結婚することになりました。', vn: 'Chúng tôi đã quyết định kết hôn (đã được định đoạt).' },
+            { jp: 'この規則は変わることになりました。', vn: 'Quy tắc này đã được quyết định là sẽ thay đổi.' },
+            { jp: '来週から出張することになりました。', vn: 'Việc đi công tác từ tuần sau đã được ấn định.' },
+            { jp: 'ここで止まってはいけないことになっています。', vn: 'Quy định là không được dừng ở đây.' },
+            { jp: '寮に入ることになりました。', vn: 'Tôi được sắp xếp vào ở ký túc xá.' },
+            { jp: '手術することになりました。', vn: 'Việc phẫu thuật đã được quyết định.' },
+            { jp: '来年帰国することになりました。', vn: 'Việc về nước vào năm sau đã được quyết định.' }
+        ]
+    },
+    {
+        id: 86,
+        level: 'N4',
+        group: 'Trích dẫn',
+        label: '〜と言いました',
+        meaning: 'Nói rằng...',
+        examples: [
+            { jp: '田中さんは「明日休む」と言いました。', vn: 'Anh Tanaka nói rằng "Ngày mai tôi nghỉ".' },
+            { jp: '医者はタバコを辞めたほうがいいと言いました。', vn: 'Bác sĩ nói rằng nên bỏ thuốc lá.' },
+            { jp: '彼は知らないと言いました。', vn: 'Anh ấy nói là không biết.' },
+            { jp: '母は早く帰って来てと言いました。', vn: 'Mẹ bảo là hãy về sớm.' },
+            { jp: '社長は会議に出席すると言いました。', vn: 'Giám đốc nói sẽ tham dự cuộc họp.' },
+            { jp: '天気予報は雨が降ると言っていました。', vn: 'Dự báo thời tiết nói là trời sẽ mưa.' },
+            { jp: '日本料理が好きだと言いました。', vn: 'Anh ấy nói là thích món Nhật.' },
+            { jp: '友達は遅れると言いました。', vn: 'Bạn tôi nói là sẽ đến muộn.' },
+            { jp: '先生は「頑張れ」と言いました。', vn: 'Thầy giáo đã nói "Cố lên".' },
+            { jp: 'これは何と言う魚ですか。', vn: 'Đây gọi là cá gì?' }
+        ]
+    },
+    {
+        id: 87,
+        level: 'N4',
+        group: 'Phỏng đoán',
+        label: '〜ようです / 〜みたいです',
+        meaning: 'Hình như / Giống như (Phán đoán chủ quan)',
+        examples: [
+            { jp: '彼は疲れているようです。', vn: 'Anh ấy hình như đang mệt.' },
+            { jp: '外は雨のようです。', vn: 'Bên ngoài hình như trời mưa.' },
+            { jp: '誰もいないようです。', vn: 'Hình như không có ai cả.' },
+            { jp: '故障したようです。', vn: 'Hình như bị hỏng rồi.' },
+            { jp: '夢のようです。', vn: 'Giống như là mơ vậy.' },
+            { jp: '風邪を引いたみたいです。', vn: 'Hình như tôi bị cảm rồi (văn nói).' },
+            { jp: '子供みたいです。', vn: 'Như trẻ con vậy.' },
+            { jp: '何かあったようです。', vn: 'Hình như đã có chuyện gì đó.' },
+            { jp: '会議は終わったようです。', vn: 'Cuộc họp hình như đã kết thúc.' },
+            { jp: '道に迷ったみたいです。', vn: 'Hình như bị lạc đường rồi.' }
+        ]
+    },
+    {
+        id: 88,
+        level: 'N4',
+        group: 'Truyền đạt',
+        label: '〜そうです（伝聞）',
+        meaning: 'Nghe nói là...',
+        examples: [
+            { jp: '天気予報によると、明日は晴れだそうです。', vn: 'Theo dự báo thời tiết, nghe nói mai trời nắng.' },
+            { jp: '田中さんは結婚するそうです。', vn: 'Nghe nói anh Tanaka sắp kết hôn.' },
+            { jp: 'この店は美味しいそうです。', vn: 'Nghe nói quán này ngon lắm.' },
+            { jp: '彼は来月帰国するそうです。', vn: 'Nghe nói tháng sau anh ấy về nước.' },
+            { jp: '昔、ここは海だったそうです。', vn: 'Nghe nói ngày xưa ở đây là biển.' },
+            { jp: '新しい映画は面白いそうです。', vn: 'Nghe nói bộ phim mới hay lắm.' },
+            { jp: '彼女は英語が上手だそうです。', vn: 'Nghe nói cô ấy giỏi tiếng Anh.' },
+            { jp: 'インフルエンザが流行っているそうです。', vn: 'Nghe nói dịch cúm đang hoành hành.' },
+            { jp: '社長は変わるそうです。', vn: 'Nghe nói giám đốc sẽ thay đổi.' },
+            { jp: 'ベトナムは暑いそうです。', vn: 'Nghe nói Việt Nam nóng lắm.' }
+        ]
+    },
+    {
+        id: 89,
+        level: 'N4',
+        group: 'Cảm giác',
+        label: '〜がします',
+        meaning: 'Có (mùi / tiếng / vị / cảm giác)',
+        examples: [
+            { jp: 'いい匂いがします。', vn: 'Có mùi thơm.' },
+            { jp: '変な音がします。', vn: 'Có tiếng động lạ.' },
+            { jp: 'この料理は不思議な味がします。', vn: 'Món này có vị lạ.' },
+            { jp: '鳥の声がします。', vn: 'Có tiếng chim hót.' },
+            { jp: '寒気がします。', vn: 'Tôi cảm thấy ớn lạnh.' },
+            { jp: 'ガスの匂いがします。', vn: 'Có mùi ga.' },
+            { jp: '隣の部屋で声がします。', vn: 'Có tiếng nói ở phòng bên.' },
+            { jp: '甘い味がします。', vn: 'Có vị ngọt.' },
+            { jp: 'めまいがします。', vn: 'Tôi cảm thấy chóng mặt.' },
+            { jp: '吐き気がします。', vn: 'Tôi cảm thấy buồn nôn.' }
+        ]
+    },
+    {
+        id: 90,
+        level: 'N4',
+        group: 'Định nghĩa',
+        label: '〜という意味です',
+        meaning: 'Có nghĩa là...',
+        examples: [
+            { jp: '「立入禁止」は入ってはいけないという意味です。', vn: '"Lập nhập cấm chỉ" có nghĩa là không được vào.' },
+            { jp: 'このマークはどういう意味ですか。', vn: 'Ký hiệu này nghĩa là gì?' },
+            { jp: '「ありがとう」は感謝の言葉という意味です。', vn: '"Arigatou" có nghĩa là lời cảm ơn.' },
+            { jp: 'それはどういう意味ですか。', vn: 'Điều đó có nghĩa là gì?' },
+            { jp: '故障中というのは、壊れているという意味です。', vn: '"Cố chướng trung" nghĩa là đang bị hỏng.' },
+            { jp: '使用中というのは、今使っているという意味です。', vn: '"Sử dụng trung" nghĩa là đang sử dụng.' },
+            { jp: 'この漢字は「休み」という意味です。', vn: 'Chữ Hán này có nghĩa là "Nghỉ ngơi".' },
+            { jp: '「無料」はお金を払わなくてもいいという意味です。', vn: '"Vô liệu" nghĩa là không cần trả tiền.' },
+            { jp: '「禁煙」はタバコを吸ってはいけないという意味です。', vn: '"Cấm yên" nghĩa là không được hút thuốc.' },
+            { jp: '0点というのは、全然できなかったという意味です。', vn: '0 điểm nghĩa là hoàn toàn không làm được gì.' }
+        ]
+    },
+    {
+        id: 91,
+        level: 'N4',
+        group: 'Hành động',
+        label: '〜ないで',
+        meaning: 'Làm A mà không làm B (Trạng thái phủ định)',
+        examples: [
+            { jp: '朝ごはんを食べないで、学校へ行きました。', vn: 'Tôi đi học mà không ăn sáng.' },
+            { jp: '傘を持たないで、出かけました。', vn: 'Tôi ra ngoài mà không mang theo ô.' },
+            { jp: '寝ないで、勉強しました。', vn: 'Tôi đã học mà không ngủ.' },
+            { jp: '何も言わないで、帰りました。', vn: 'Anh ấy đã về mà không nói gì.' },
+            { jp: '砂糖を入れないで、コーヒーを飲みます。', vn: 'Tôi uống cà phê mà không bỏ đường.' },
+            { jp: '見ないで、描きました。', vn: 'Tôi đã vẽ mà không nhìn.' },
+            { jp: '切符を買わないで、電車に乗ってはいけません。', vn: 'Không được lên tàu mà không mua vé.' },
+            { jp: '辞書を使わないで、書いてください。', vn: 'Hãy viết mà không dùng từ điển.' },
+            { jp: '歯を磨かないで、寝ました。', vn: 'Tôi đã ngủ mà không đánh răng.' },
+            { jp: '予約しないで、行きました。', vn: 'Tôi đã đi mà không đặt chỗ.' }
+        ]
+    },
+    {
+        id: 92,
+        level: 'N4',
+        group: 'Tính chất',
+        label: '〜やすい / 〜にくい',
+        meaning: 'Dễ làm... / Khó làm...',
+        examples: [
+            { jp: 'このペンは書きやすいです。', vn: 'Cây bút này dễ viết.' },
+            { jp: 'この靴は歩きやすいです。', vn: 'Đôi giày này dễ đi bộ.' },
+            { jp: 'この薬は飲みやすいです。', vn: 'Thuốc này dễ uống.' },
+            { jp: '名前は覚えにくいです。', vn: 'Tên khó nhớ.' },
+            { jp: '肉は硬くて、食べにくいです。', vn: 'Thịt dai nên khó ăn.' },
+            { jp: '東京は住みやすいですか。', vn: 'Tokyo có dễ sống không?' },
+            { jp: 'この辞書は使いやすいです。', vn: 'Quyển từ điển này dễ sử dụng.' },
+            { jp: '雨の日は洗濯物が乾きにくいです。', vn: 'Ngày mưa thì đồ giặt khó khô.' },
+            { jp: '漢字は書きにくいです。', vn: 'Chữ Hán khó viết.' },
+            { jp: '説明がわかりにくいです。', vn: 'Lời giải thích khó hiểu.' }
+        ]
+    },
+    {
+        id: 93,
+        level: 'N4',
+        group: 'Thời gian',
+        label: '〜までに',
+        meaning: 'Trước... (Hạn chót)',
+        examples: [
+            { jp: '金曜日までにレポートを出してください。', vn: 'Hãy nộp báo cáo trước thứ 6.' },
+            { jp: '5時までに帰らなければなりません。', vn: 'Tôi phải về trước 5 giờ.' },
+            { jp: '会議が始まるまでに、準備します。', vn: 'Tôi sẽ chuẩn bị trước khi cuộc họp bắt đầu.' },
+            { jp: '明日までに連絡します。', vn: 'Tôi sẽ liên lạc trước ngày mai.' },
+            { jp: '暗くなるまでに戻りましょう。', vn: 'Chúng ta hãy quay lại trước khi trời tối.' },
+            { jp: '卒業するまでに、車の免許を取りたいです。', vn: 'Tôi muốn lấy bằng lái xe trước khi tốt nghiệp.' },
+            { jp: '来月までに払ってください。', vn: 'Hãy thanh toán trước tháng sau.' },
+            { jp: '9時までに来てください。', vn: 'Hãy đến trước 9 giờ.' },
+            { jp: '資料は会議までにコピーしておきます。', vn: 'Tôi sẽ photo tài liệu sẵn trước cuộc họp.' },
+            { jp: '死ぬまでに世界一周したいです。', vn: 'Tôi muốn đi vòng quanh thế giới trước khi chết.' }
+        ]
+    },
+    {
+        id: 94,
+        level: 'N4',
+        group: 'Hành động',
+        label: '〜ながら',
+        meaning: 'Vừa... vừa... (Hai hành động cùng lúc)',
+        examples: [
+            { jp: '音楽を聞きながら、勉強します。', vn: 'Vừa nghe nhạc vừa học.' },
+            { jp: 'ご飯を食べながら、テレビを見ます。', vn: 'Vừa ăn cơm vừa xem tivi.' },
+            { jp: 'お茶を飲みながら、話しましょう。', vn: 'Vừa uống trà vừa nói chuyện nào.' },
+            { jp: '運転しながら、電話してはいけません。', vn: 'Không được vừa lái xe vừa gọi điện thoại.' },
+            { jp: '働きながら、大学で勉強しています。', vn: 'Tôi vừa đi làm vừa học đại học.' },
+            { jp: '歩きながら、本を読まないでください。', vn: 'Đừng vừa đi bộ vừa đọc sách.' },
+            { jp: '歌いながら、料理を作ります。', vn: 'Vừa hát vừa nấu ăn.' },
+            { jp: '考えながら、書いてください。', vn: 'Hãy vừa suy nghĩ vừa viết.' },
+            { jp: '辞書を見ながら、新聞を読みます。', vn: 'Vừa tra từ điển vừa đọc báo.' },
+            { jp: 'アルバイトをしながら、日本語を習っています。', vn: 'Tôi vừa đi làm thêm vừa học tiếng Nhật.' }
+        ]
+    },
+    {
+        id: 95,
+        level: 'N4',
+        group: 'Trạng thái',
+        label: '〜すぎます',
+        meaning: 'Quá... (Mức độ tiêu cực/vượt quá)',
+        examples: [
+            { jp: '食べ過ぎて、お腹が痛いです。', vn: 'Vì ăn quá nhiều nên tôi bị đau bụng.' },
+            { jp: '飲み過ぎに注意してください。', vn: 'Hãy chú ý đừng uống quá nhiều.' },
+            { jp: 'このシャツは大きすぎます。', vn: 'Cái áo này quá to.' },
+            { jp: '高すぎて、買えません。', vn: 'Đắt quá, không thể mua được.' },
+            { jp: '問題を難しすぎます。', vn: 'Vấn đề quá khó.' },
+            { jp: '働きすぎは体に悪いです。', vn: 'Làm việc quá sức không tốt cho cơ thể.' },
+            { jp: 'テレビを見すぎました。', vn: 'Tôi đã xem tivi quá nhiều.' },
+            { jp: '静かすぎると、寂しいです。', vn: 'Tĩnh mịch quá thì buồn.' },
+            { jp: '言い過ぎました。すみません。', vn: 'Tôi đã nói quá lời. Xin lỗi.' },
+            { jp: '方法が複雑すぎます。', vn: 'Phương pháp quá phức tạp.' }
+        ]
+    },
+    {
+        id: 96,
+        level: 'N4',
+        group: 'Giới hạn',
+        label: '〜しか 〜ない',
+        meaning: 'Chỉ... (Phủ định)',
+        examples: [
+            { jp: '100円しかありません。', vn: 'Chỉ còn có 100 yên.' },
+            { jp: '日曜日しか休みません。', vn: 'Tôi chỉ nghỉ vào chủ nhật.' },
+            { jp: '日本語しか話せません。', vn: 'Tôi chỉ nói được tiếng Nhật.' },
+            { jp: '学生は二人しか来ませんでした。', vn: 'Học sinh chỉ có 2 người đến.' },
+            { jp: 'ひらがなしか書けません。', vn: 'Tôi chỉ viết được Hiragana.' },
+            { jp: '朝はコーヒーしか飲みません。', vn: 'Buổi sáng tôi chỉ uống cà phê.' },
+            { jp: 'あなたしか知りません。', vn: 'Tôi chỉ biết mỗi bạn.' },
+            { jp: '少ししか寝ませんでした。', vn: 'Tôi chỉ ngủ được một chút.' },
+            { jp: '店にはリンゴしかありませんでした。', vn: 'Ở cửa hàng chỉ có mỗi táo.' },
+            { jp: '一回しか行ったことがありません。', vn: 'Tôi chỉ mới đi có một lần.' }
+        ]
+    },
+    {
+        id: 97,
+        level: 'N4',
+        group: 'Giới hạn',
+        label: '[Quantity] で',
+        meaning: 'Với (số lượng/tiền bạc/thời gian)',
+        examples: [
+            { jp: '3つで500円です。', vn: '3 cái giá 500 yên.' },
+            { jp: '1時間で行けますか。', vn: 'Đi 1 tiếng có tới không?' },
+            { jp: '全部でいくらですか。', vn: 'Tổng cộng bao nhiêu tiền?' },
+            { jp: '3万円でビデオが買えますか。', vn: 'Với 3 vạn yên có mua được đầu video không?' },
+            { jp: 'あと5分で始まります。', vn: 'Còn 5 phút nữa là bắt đầu.' },
+            { jp: '二人で仕事をしました。', vn: 'Hai người đã làm việc cùng nhau.' },
+            { jp: '1日でできますか。', vn: 'Làm trong 1 ngày có xong không?' },
+            { jp: 'この作業は30分で終わります。', vn: 'Công việc này sẽ xong trong 30 phút.' },
+            { jp: '1000円で足りると思います。', vn: 'Tôi nghĩ 1000 yên là đủ.' },
+            { jp: 'みんなで行きましょう。', vn: 'Mọi người cùng đi nhé.' }
+        ]
+    },
+    {
+        id: 98,
+        level: 'N4',
+        group: 'Liệt kê',
+        label: '〜とか 〜とか',
+        meaning: 'Như là... như là... (Liệt kê ví dụ)',
+        examples: [
+            { jp: '休みの日は、テニスとか水泳とかをします。', vn: 'Ngày nghỉ tôi chơi tennis, bơi lội...' },
+            { jp: '冷蔵庫に肉とか野菜とかがあります。', vn: 'Trong tủ lạnh có thịt, rau... v.v.' },
+            { jp: '「ありがとう」とか「すみません」とかの言葉をよく使います。', vn: 'Tôi hay dùng những từ như "Cảm ơn", "Xin lỗi".' },
+            { jp: 'プレゼントは花とかケーキとかがいいです。', vn: 'Quà thì hoa hay bánh kem thì được.' },
+            { jp: '息子は漫画とかアニメとかが好きです。', vn: 'Con trai tôi thích truyện tranh, hoạt hình...' },
+            { jp: '電車とかバスとかに乗ります。', vn: 'Tôi đi tàu điện, xe buýt...' },
+            { jp: '京都とか奈良とかへ行きたいです。', vn: 'Tôi muốn đi Kyoto, Nara...' },
+            { jp: '漢字とか文法とかを勉強しなければなりません。', vn: 'Phải học Hán tự, ngữ pháp...' },
+            { jp: '夏休みは海へ行くとか、山へ登るとかしたいです。', vn: 'Nghỉ hè tôi muốn đi biển, leo núi...' },
+            { jp: '母とか姉とかに相談します。', vn: 'Tôi sẽ thảo luận với mẹ, với chị...' }
+        ]
+    },
+    {
+        id: 99,
+        level: 'N4',
+        group: 'Đề xuất',
+        label: '[Noun] でも',
+        meaning: '...chẳng hạn (Đề xuất) / Dù là...',
+        examples: [
+            { jp: 'お茶でも飲みませんか。', vn: 'Cùng uống trà (chẳng hạn) không?' },
+            { jp: '日曜日でも働きます。', vn: 'Dù là chủ nhật vẫn làm việc.' },
+            { jp: '映画でも見ましょうか。', vn: 'Hay là cùng xem phim đi.' },
+            { jp: '先生でもわかりません。', vn: 'Dù là giáo viên cũng không hiểu.' },
+            { jp: '子供でもできます。', vn: 'Dù là trẻ con cũng làm được.' },
+            { jp: 'コーヒーでもいかがですか。', vn: 'Mời bạn dùng cà phê (hay gì đó) nhé?' },
+            { jp: 'いつでもいいです。', vn: 'Khi nào cũng được.' },
+            { jp: 'どこでもいいです。', vn: 'Đâu cũng được.' },
+            { jp: '誰でも参加できます。', vn: 'Ai cũng có thể tham gia.' },
+            { jp: '散歩でもしましょう。', vn: 'Cùng đi dạo đi.' }
+        ]
+    },
+    {
+        id: 100,
+        level: 'N4',
+        group: 'Nguyên liệu',
+        label: '〜から / 〜で作ります',
+        meaning: 'Làm từ (biến đổi chất / vật liệu)',
+        examples: [
+            { jp: 'ビールは麦から作られます。', vn: 'Bia được làm từ lúa mạch.' },
+            { jp: '昔の日本の家は木で作られました。', vn: 'Nhà của Nhật ngày xưa được làm bằng gỗ.' },
+            { jp: '紙は木から作ります。', vn: 'Giấy làm từ gỗ.' },
+            { jp: 'この机は金属で作られています。', vn: 'Cái bàn này làm bằng kim loại.' },
+            { jp: 'ワインはブドウから作られます。', vn: 'Rượu vang làm từ nho.' },
+            { jp: 'これはプラスチックで作った箱です。', vn: 'Đây là cái hộp làm bằng nhựa.' },
+            { jp: '日本酒は米から作ります。', vn: 'Rượu Nhật làm từ gạo.' },
+            { jp: 'ガラスで作ったコップ。', vn: 'Cốc làm bằng thủy tinh.' },
+            { jp: 'チーズは牛乳から作られます。', vn: 'Phô mai làm từ sữa bò.' },
+            { jp: 'お皿は土で作ります。', vn: 'Đĩa làm từ đất sét.' }
+        ]
+    },
+    {
+        id: 101,
+        level: 'N4',
+        group: 'Di chuyển',
+        label: '〜てきます',
+        meaning: 'Đi (làm gì) rồi về / Thay đổi tới hiện tại',
+        examples: [
+            { jp: 'ちょっとタバコを買ってきます。', vn: 'Tôi đi mua thuốc lá chút rồi về.' },
+            { jp: 'トイレに行ってきます。', vn: 'Tôi đi vệ sinh chút.' },
+            { jp: '明日、友達を連れてきます。', vn: 'Ngày mai tôi sẽ dẫn bạn đến.' },
+            { jp: '出かけてきます。', vn: 'Tôi đi ra ngoài đây (rồi sẽ về).' },
+            { jp: '雨が降ってきました。', vn: 'Trời đã bắt đầu mưa.' },
+            { jp: '寒くなってきました。', vn: 'Trời đã trở lạnh.' },
+            { jp: 'お腹が空いてきました。', vn: 'Bụng thấy đói rồi.' },
+            { jp: '日本語がわかってきました。', vn: 'Tôi đã bắt đầu hiểu tiếng Nhật.' },
+            { jp: '太ってきました。', vn: 'Tôi béo lên rồi.' },
+            { jp: '電話をかけてきます。', vn: 'Tôi đi gọi điện thoại rồi quay lại.' }
+        ]
+    },
+    {
+        id: 102,
+        level: 'N4',
+        group: 'Câu hỏi',
+        label: '〜か / 〜かどうか',
+        meaning: 'Câu hỏi lồng / Có hay không',
+        examples: [
+            { jp: '会議はいつ終わるか、わかりません。', vn: 'Tôi không biết khi nào cuộc họp kết thúc.' },
+            { jp: '箱の中に何があるか、調べてください。', vn: 'Hãy kiểm tra xem trong hộp có gì.' },
+            { jp: '間違いがないか、確認します。', vn: 'Tôi xác nhận xem có lỗi sai không.' },
+            { jp: 'あの人は誰か知っていますか。', vn: 'Bạn có biết người kia là ai không?' },
+            { jp: '明日雨が降るかどうか、わかりません。', vn: 'Không biết ngày mai trời có mưa hay không.' },
+            { jp: '美味しいかどうか、食べてみます。', vn: 'Tôi ăn thử xem có ngon hay không.' },
+            { jp: 'サイズが合うかどうか、心配です。', vn: 'Tôi lo không biết kích cỡ có vừa hay không.' },
+            { jp: 'できるかどうかわかりませんが、やってみます。', vn: 'Không biết có làm được không nhưng tôi sẽ làm thử.' },
+            { jp: '彼が来るかどうか、聞いてみます。', vn: 'Tôi sẽ hỏi thử xem anh ấy có đến hay không.' },
+            { jp: '成功するかどうかわかりません。', vn: 'Không biết có thành công hay không.' }
+        ]
+    },
+    {
+        id: 103,
+        level: 'N4',
+        group: 'Danh từ hóa',
+        label: '[Adjective] + さ',
+        meaning: 'Độ... (Tính chất)',
+        examples: [
+            { jp: '富士山の高さは3776メートルです。', vn: 'Độ cao của núi Phú Sĩ là 3776m.' },
+            { jp: 'この川の深さを測ります。', vn: 'Đo độ sâu của con sông này.' },
+            { jp: '命の大切さを教えます。', vn: 'Dạy cho biết tầm quan trọng của sinh mệnh.' },
+            { jp: '大きさはどのくらいですか。', vn: 'Độ lớn khoảng bao nhiêu?' },
+            { jp: '暑さで眠れませんでした。', vn: 'Vì độ nóng (trời nóng) nên không ngủ được.' },
+            { jp: '重さを量ってください。', vn: 'Hãy cân trọng lượng.' },
+            { jp: '長さは5メートルです。', vn: 'Chiều dài là 5 mét.' },
+            { jp: '雪の白さがきれいですね。', vn: 'Màu trắng (độ trắng) của tuyết đẹp nhỉ.' },
+            { jp: '広さは十分です。', vn: 'Độ rộng thì đủ rồi.' },
+            { jp: '寒さが苦手です。', vn: 'Tôi kém chịu lạnh (độ lạnh).' }
+        ]
+    },
+    {
+        id: 104,
+        level: 'N4',
+        group: 'Trạng từ',
+        label: '[Adjective] + く/に [Verb]',
+        meaning: 'Làm gì một cách...',
+        examples: [
+            { jp: '早く帰りましょう。', vn: 'Hãy về sớm nào.' },
+            { jp: '字をきれいに書いてください。', vn: 'Hãy viết chữ cho đẹp.' },
+            { jp: '大きく書きます。', vn: 'Viết to lên.' },
+            { jp: '静かにしてください。', vn: 'Hãy giữ yên lặng.' },
+            { jp: '野菜を細かく切ります。', vn: 'Thái rau nhỏ ra.' },
+            { jp: '部屋を明るくしました。', vn: 'Tôi đã làm cho căn phòng sáng lên.' },
+            { jp: '自由に意見を言ってください。', vn: 'Hãy tự do phát biểu ý kiến.' },
+            { jp: '楽しく遊びました。', vn: 'Đã chơi rất vui vẻ.' },
+            { jp: '短く髪を切りました。', vn: 'Tôi đã cắt tóc ngắn.' },
+            { jp: '安く買いました。', vn: 'Tôi đã mua rẻ.' }
+        ]
+    },
+    {
+        id: 105,
+        level: 'N4',
+        group: 'Kính ngữ',
+        label: 'Kính ngữ (Trao nhận)',
+        meaning: 'くださる / いただく / さしあげる / やる',
+        examples: [
+            { jp: '社長は私に本をくださいました。', vn: 'Giám đốc đã tặng sách cho tôi (Tôn kính).' },
+            { jp: '私は先生に辞書をいただきました。', vn: 'Tôi đã nhận từ điển từ thầy giáo (Khiêm nhường).' },
+            { jp: '先生にお土産を差し上げました。', vn: 'Tôi đã biếu quà đặc sản cho thầy (Khiêm nhường).' },
+            { jp: '弟にお菓子をやりました。', vn: 'Tôi đã cho em trai kẹo (Dùng cho người dưới/động vật).' },
+            { jp: '花に水をやります。', vn: 'Tưới nước cho hoa.' },
+            { jp: '犬に餌をやりました。', vn: 'Cho chó ăn.' },
+            { jp: '部長が説明してくださいました。', vn: 'Trưởng phòng đã giải thích cho tôi.' },
+            { jp: '先生に直していただきました。', vn: 'Tôi được thầy giáo sửa giúp.' },
+            { jp: '皆さんに案内して差し上げます。', vn: 'Tôi xin hướng dẫn cho mọi người.' },
+            { jp: '誰にいただいたんですか。', vn: 'Bạn đã nhận từ ai vậy?' }
+        ]
+    },
+    {
+        id: 106,
+        level: 'N4',
+        group: 'Kính ngữ',
+        label: '〜させていただけませんか',
+        meaning: 'Cho phép tôi làm... được không?',
+        examples: [
+            { jp: 'ここに座らせていただけませんか。', vn: 'Cho phép tôi ngồi đây được không?' },
+            { jp: '早退させていただけませんか。', vn: 'Cho phép tôi về sớm được không?' },
+            { jp: '話させていただけませんか。', vn: 'Cho phép tôi nói được không?' },
+            { jp: 'コピーさせていただけませんか。', vn: 'Cho phép tôi photo được không?' },
+            { jp: '電話を使わせていただけませんか。', vn: 'Cho phép tôi dùng điện thoại được không?' },
+            { jp: '考えさせていただけませんか。', vn: 'Cho phép tôi suy nghĩ thêm được không?' },
+            { jp: '紹介させていただけませんか。', vn: 'Cho phép tôi giới thiệu được không?' },
+            { jp: '質問させていただけませんか。', vn: 'Cho phép tôi đặt câu hỏi được không?' },
+            { jp: '見学させていただけませんか。', vn: 'Cho phép tôi tham quan được không?' },
+            { jp: '休ませていただけませんか。', vn: 'Cho phép tôi nghỉ được không?' }
+        ]
+    }
+];

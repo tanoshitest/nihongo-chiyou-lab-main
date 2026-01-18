@@ -247,18 +247,7 @@ const MinnaTest1 = () => {
                             </Button>
                         ))}
 
-                        {/* PDF Download Button */}
-                        <Button
-                            variant="outline"
-                            className="gap-2 border-blue-500 text-blue-600 hover:bg-blue-50 hover:text-blue-700"
-                            onClick={() => {
-                                const testType = data[0]?.section?.includes("Mondai") ? "Kiểm tra từ vựng" : "Kiểm tra ngữ pháp";
-                                generateTestPDF(data, testType, "Bài 1 - 2", examId);
-                            }}
-                        >
-                            <Download className="w-4 h-4" />
-                            Tải PDF
-                        </Button>
+                        {/* PDF Download Button Removed */}
                     </div>
                 </div>
 

@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { ArrowLeft, Volume2, BookOpen, MessageSquare, PenTool, CheckCircle2, XCircle, RotateCcw, ChevronDown, ChevronUp, BookMarked, Search } from "lucide-react";
+import { FuriganaText } from "@/components/FuriganaText";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -842,69 +843,56 @@ const GrammarExampleItem = ({
 
 // Kanji Tab Component
 const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['vocabulary']; lessonId: number }) => {
-  // 1. Collect unique Kanji from vocabulary kanjiDetails (Lesson specific overrides)
-  const vocabKanjiDetails = vocabulary.reduce((acc: KanjiDetail[], item) => {
-    if (item.kanjiDetails) {
-      item.kanjiDetails.forEach(detail => {
-        if (!acc.some(d => d.kanji === detail.kanji)) {
-          acc.push(detail);
-        }
-      });
-    }
-    return acc;
-  }, []);
-
-  // 2. Fetch Kanji from master dictionary for this lesson
-  const masterLessonKanji = masterKanjiData.filter(k => k.lesson === lessonId).map(master => ({
-    kanji: master.kanji,
-    meaning: master.meaning,
-    onyomi: master.onyomi,
-    kunyomi: master.kunyomi,
-    sinoVietnamese: master.sinoVietnamese,
-    imageUrl: master.imageUrl,
-    strokes: 0,
-    jlpt: "N5", // Default or you could map this if available
-    radicals: master.radicals,
-    mnemonic: master.mnemonic, // Add mnemonic
-    examples: master.examples.map(ex => ex.japanese), // Map examples for list
-    exampleSentences: master.examples.map(ex => ({ // Map examples for sentences
-      jp: ex.japanese,
-      vn: ex.vietnamese,
-      romaji: ex.romaji,
-      furigana: ex.furigana
-    }))
-  } as KanjiDetail));
-
-  // 3. Merge lists (Master data takes precedence for this lesson if not overridden by specific vocab detail, 
-  // or actually vocab detail should probably override if specific? 
-  // Let's combine: Master first, then if Vocab has detail for same kanji, use that (or vice versa).
-  // Usually Master data is the "Definition" source. Vocab might just link to it.
-  // We'll use a map to deduplicate.
-
-  // 3. Merge lists - PRIORITIZING VOCABULARY ORDER
-  // We want to show Kanji in the order they appear in the vocabulary list.
-  // Then append any remaining Kanji from the master list (that are in the lesson but not in vocab).
-
+  // 3. Logic mới: Chỉ lấy Kanji CÓ TRONG vocabulary của bài này
+  // Duyệt qua từng từ vựng theo thứ tự, trích xuất Kanji, và lookup detail
   const allKanjiDetails: KanjiDetail[] = [];
   const addedKanji = new Set<string>();
 
-  // A. Add Kanji from Vocabulary (in order of appearance)
-  vocabKanjiDetails.forEach(vk => {
-    if (!addedKanji.has(vk.kanji)) {
-      // Prefer Master data (richer with images/mnemonics) if available for this lesson
-      // If not in this lesson's master list (e.g. from another lesson), use vocab detail
-      const masterData = masterLessonKanji.find(m => m.kanji === vk.kanji);
-      allKanjiDetails.push(masterData || vk);
-      addedKanji.add(vk.kanji);
-    }
-  });
+  vocabulary.forEach(vocab => {
+    if (!vocab.kanji) return;
 
-  // B. Add remaining Master Kanji (not in vocab)
-  masterLessonKanji.forEach(mk => {
-    if (!addedKanji.has(mk.kanji)) {
-      allKanjiDetails.push(mk);
-      addedKanji.add(mk.kanji);
-    }
+    // Trích xuất từng ký tự Kanji từ chuỗi kanji (ví dụ "食" từ "食べます")
+    // Sử dụng Regex để bắt các ký tự trong dải Kanji
+    const chars = vocab.kanji.match(/[\u4e00-\u9faf]/g) || [];
+
+    chars.forEach(char => {
+      if (!addedKanji.has(char)) {
+        // 1. Tìm trong detail của chính từ vựng đó trước (nếu có, thường ít khi đầy đủ ở đây nếu không phải cấu trúc data mới)
+        let detail = vocab.kanjiDetails?.find(k => k.kanji === char);
+
+        // 2. Nếu không có, tìm trong master dictionary
+        if (!detail) {
+          const master = masterKanjiData.find(k => k.kanji === char);
+          if (master) {
+            detail = {
+              kanji: master.kanji,
+              meaning: master.meaning,
+              onyomi: master.onyomi,
+              kunyomi: master.kunyomi,
+              sinoVietnamese: master.sinoVietnamese,
+              imageUrl: master.imageUrl,
+              strokes: 0,
+              jlpt: master.jlpt || "N5",
+              radicals: master.radicals,
+              components: master.components,
+              mnemonic: master.mnemonic,
+              examples: master.examples.map(ex => ex.japanese),
+              exampleSentences: master.examples.map(ex => ({
+                jp: ex.japanese,
+                vn: ex.vietnamese,
+                romaji: ex.romaji,
+                furigana: ex.furigana
+              }))
+            };
+          }
+        }
+
+        if (detail) {
+          allKanjiDetails.push(detail);
+          addedKanji.add(char);
+        }
+      }
+    });
   });
 
   // Filter with Search query
@@ -1165,7 +1153,7 @@ const QuizEngine = ({ questions }: { questions: QuizQuestion[] }) => {
                         userAnswer ? <XCircle className="w-4 h-4" /> : qIndex + 1
                     ) : qIndex + 1}
                   </span>
-                  <span className="text-foreground">{question.question}</span>
+                  <span className="text-foreground"><FuriganaText text={question.question} /></span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -1234,7 +1222,7 @@ const QuizEngine = ({ questions }: { questions: QuizQuestion[] }) => {
                       )}
                     </p>
 
-                    <p className="text-sm text-muted-foreground font-medium">{question.explanation}</p>
+                    <FuriganaText text={question.explanation} className="text-sm text-muted-foreground font-medium" />
 
                     {/* Rich Metadata Explanation */}
                     {question.metadata && (
@@ -1456,6 +1444,18 @@ const TranslationQuiz = ({ vocabulary = [], grammar = [] }: { vocabulary?: Vocab
 
 // Helpers for question generation
 // Helpers for question generation
+const applyFurigana = (text: string, furiganaList?: { kanji: string; reading: string }[]) => {
+  if (!furiganaList || furiganaList.length === 0) return text;
+  let result = text;
+  const sorted = [...furiganaList].sort((a, b) => b.kanji.length - a.kanji.length);
+  sorted.forEach(f => {
+    if (!f.kanji || !f.reading) return;
+    const escaped = f.kanji.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    result = result.replace(new RegExp(escaped, 'g'), `{${f.kanji}|${f.reading}}`);
+  });
+  return result;
+};
+
 const createSeededRNG = (seed: number) => {
   let s = seed;
   return () => {
@@ -1512,12 +1512,16 @@ const QuizTab = ({ vocabulary = [], grammar = [], quiz = [], lessonId }: { vocab
           const poolFiltered = vocabPool.filter(p => p !== item.word);
           const choices = shuffleArray(poolFiltered, rng).slice(0, 3);
 
+          const plainQuestion = validExample.jp.replace(targetText, '（　　）');
+          const formattedQuestion = applyFurigana(plainQuestion, validExample.furigana);
+          const formattedFullSentence = applyFurigana(validExample.jp, validExample.furigana);
+
           questions.push({
             id: qId,
-            question: `${validExample.jp.replace(targetText, '（　　）')}`,
+            question: formattedQuestion,
             correctAnswer: item.word,
             options: shuffleArray([item.word, ...choices], rng),
-            explanation: `Đáp án đúng là "${item.word}" (${item.mean || ''}).\nCâu hoàn chỉnh: ${validExample.jp}\n(${validExample.vn || ''})`,
+            explanation: `Đáp án đúng là "${item.word}" (${item.mean || ''}).\nCâu hoàn chỉnh: ${formattedFullSentence}\n(${validExample.vn || ''})`,
             metadata: { vocab: item }
           });
           continue;
@@ -1702,12 +1706,17 @@ const QuizTab = ({ vocabulary = [], grammar = [], quiz = [], lessonId }: { vocab
         const parts = ex.jp.split(target);
         if (parts.length >= 2) {
           const qId = 4000 + questions.length;
+
+          const plainQuestion = ex.jp.replace(target, '（　　）');
+          const formattedQuestion = applyFurigana(plainQuestion, ex.furigana);
+          const formattedFullSentence = applyFurigana(ex.jp, ex.furigana);
+
           questions.push({
             id: qId,
-            question: `${ex.jp.replace(target, '（　　）')}`,
+            question: formattedQuestion,
             correctAnswer: target,
             options: shuffleArray([target, ...distractors], rng),
-            explanation: `Đáp án đúng là "${target}".\nCâu hoàn chỉnh: ${ex.jp}\n(${ex.vn || ''})\nMẫu ngữ pháp: ${point.pattern} - ${point.explanation}`,
+            explanation: `Đáp án đúng là "${target}".\nCâu hoàn chỉnh: ${formattedFullSentence}\n(${ex.vn || ''})\nMẫu ngữ pháp: ${point.pattern} - ${point.explanation}`,
             metadata: {}
           });
         }

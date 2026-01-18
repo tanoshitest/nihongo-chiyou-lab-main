@@ -33,6 +33,7 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
   if (lesson.id === 10015) linkUrl = "/minna/time-expressions";
   if (lesson.id === 10016) linkUrl = "/minna/counters";
   if (lesson.id === 10017) linkUrl = "/minna/vocabulary";
+  if (lesson.id === 10018) linkUrl = "/minna/grammar-review";
 
   // N4 Tests (IDs 10020 - 10032 mapping to Test 13 - 25)
   if (lesson.id >= 10020 && lesson.id <= 10050) {
@@ -282,6 +283,7 @@ const MinnaNoNihongo = () => {
     { id: 10015, title: "Cách nói thời gian", description: "Ngày, giờ, tháng, năm..." },
     { id: 10016, title: "Đếm đồ vật", description: "Các đơn vị đếm thông dụng" },
     { id: 10017, title: "Từ vựng", description: "Từ vựng theo chủ đề thông dụng" },
+    { id: 10018, title: "Tổng hợp Ngữ pháp", description: "Tra cứu ngữ pháp N5 - N4" },
   ];
 
   // --- N4 LESSONS SETUP ---

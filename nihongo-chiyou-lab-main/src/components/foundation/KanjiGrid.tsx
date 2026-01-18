@@ -17,7 +17,7 @@ const KanjiGrid = () => {
   const [selectedLesson, setSelectedLesson] = useState<string>("all");
 
   const [searchQuery, setSearchQuery] = useState("");
-  const [showLearnedOnly, setShowLearnedOnly] = useState(false);
+
 
   // Selection State with Persistence
   const [selectedKanji, setSelectedKanji] = useState<number[]>(() => {
@@ -49,10 +49,7 @@ const KanjiGrid = () => {
       filtered = filtered.filter((kanji) => kanji.lesson === parseInt(selectedLesson));
     }
 
-    // Filter by Learned Status
-    if (showLearnedOnly) {
-      filtered = filtered.filter((kanji) => selectedKanji.includes(kanji.id));
-    }
+
 
     // Filter by Search Query
     if (searchQuery.trim()) {
@@ -67,7 +64,7 @@ const KanjiGrid = () => {
     }
 
     return filtered;
-  }, [selectedLesson, searchQuery, showLearnedOnly, selectedKanji]);
+  }, [selectedLesson, searchQuery, selectedKanji]);
 
   const lessons = Array.from({ length: 32 }, (_, i) => i + 1);
 
@@ -106,23 +103,6 @@ const KanjiGrid = () => {
                 ))}
               </SelectContent>
             </Select>
-
-            <div className="flex bg-muted/20 p-1 rounded-lg border">
-              <Button
-                variant={!showLearnedOnly ? "default" : "ghost"}
-                onClick={() => setShowLearnedOnly(false)}
-                className={`h-9 px-3 ${!showLearnedOnly ? "bg-[#008001] hover:bg-[#006801] shadow-sm" : "text-muted-foreground hover:text-[#008001]"}`}
-              >
-                <span className="font-bold text-sm">Tất cả</span>
-              </Button>
-              <Button
-                variant={showLearnedOnly ? "default" : "ghost"}
-                onClick={() => setShowLearnedOnly(true)}
-                className={`h-9 px-3 ${showLearnedOnly ? "bg-[#008001] hover:bg-[#006801] shadow-sm" : "text-muted-foreground hover:text-[#008001]"}`}
-              >
-                <span className="font-bold text-sm">Đã học</span>
-              </Button>
-            </div>
           </div>
         </div>
       </div>

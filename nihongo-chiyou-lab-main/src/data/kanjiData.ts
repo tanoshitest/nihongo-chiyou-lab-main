@@ -66,8 +66,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Tháng một",
         furigana: [
           { kanji: "一", reading: "いち", meaning: "một" },
-          { kanji: "月",
-    lesson: 26, reading: "がつ", meaning: "tháng" },
+          {
+            kanji: "月",
+            lesson: 26, reading: "がつ", meaning: "tháng"
+          },
         ],
       },
       {
@@ -77,8 +79,10 @@ export const kanjiData: KanjiCard[] = [
         furigana: [
           { kanji: "一", reading: "いち", meaning: "một" },
           { kanji: "年", reading: "ねん", meaning: "năm" },
-          { kanji: "生",
-    lesson: 26, reading: "せい", meaning: "học sinh" },
+          {
+            kanji: "生",
+            lesson: 26, reading: "せい", meaning: "học sinh"
+          },
         ],
       },
       {
@@ -87,8 +91,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Ngày mồng một",
         furigana: [
           { kanji: "一", reading: "つい", meaning: "một" },
-          { kanji: "日",
-    lesson: 27, reading: "たち", meaning: "ngày" },
+          {
+            kanji: "日",
+            lesson: 27, reading: "たち", meaning: "ngày"
+          },
         ],
       },
     ],
@@ -210,8 +216,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Hình tam giác",
         furigana: [
           { kanji: "三", reading: "さん", meaning: "tam" },
-          { kanji: "角",
-    lesson: 40, reading: "かく", meaning: "giác" },
+          {
+            kanji: "角",
+            lesson: 40, reading: "かく", meaning: "giác"
+          },
         ],
       },
     ],
@@ -324,8 +332,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "5 yên",
         furigana: [
           { kanji: "五", reading: "ご", meaning: "năm" },
-          { kanji: "円",
-    lesson: 40, reading: "えん", meaning: "yên" },
+          {
+            kanji: "円",
+            lesson: 40, reading: "えん", meaning: "yên"
+          },
         ],
       },
       {
@@ -395,8 +405,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Sáu bộ luật",
         furigana: [
           { kanji: "六", reading: "ろっ", meaning: "lục" },
-          { kanji: "法",
-    lesson: 31, reading: "ぽう", meaning: "pháp" },
+          {
+            kanji: "法",
+            lesson: 31, reading: "ぽう", meaning: "pháp"
+          },
         ],
       },
     ],
@@ -458,12 +470,18 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Bảy điều kỳ lạ",
         furigana: [
           { kanji: "七", reading: "なな", meaning: "thất" },
-          { kanji: "不",
-    lesson: 26, reading: "ふ", meaning: "bất" },
-          { kanji: "思",
-    lesson: 27, reading: "し", meaning: "tư" },
-          { kanji: "議",
-    lesson: 27, reading: "ぎ", meaning: "nghị" },
+          {
+            kanji: "不",
+            lesson: 26, reading: "ふ", meaning: "bất"
+          },
+          {
+            kanji: "思",
+            lesson: 27, reading: "し", meaning: "tư"
+          },
+          {
+            kanji: "議",
+            lesson: 27, reading: "ぎ", meaning: "nghị"
+          },
         ],
       },
     ],
@@ -525,8 +543,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Mọi phía",
         furigana: [
           { kanji: "八", reading: "はっ", meaning: "bát" },
-          { kanji: "方",
-    lesson: 26, reading: "ぽう", meaning: "phương" },
+          {
+            kanji: "方",
+            lesson: 26, reading: "ぽう", meaning: "phương"
+          },
         ],
       },
     ],
@@ -638,8 +658,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "10 phút",
         furigana: [
           { kanji: "十", reading: "じゅっ", meaning: "thập" },
-          { kanji: "分",
-    lesson: 26, reading: "ぷん", meaning: "phút" },
+          {
+            kanji: "分",
+            lesson: 26, reading: "ぷん", meaning: "phút"
+          },
         ],
       },
       {
@@ -710,8 +732,10 @@ export const kanjiData: KanjiCard[] = [
         furigana: [
           { kanji: "百", reading: "ひゃっ", meaning: "bách" },
           { kanji: "貨", reading: "か", meaning: "hóa" },
-          { kanji: "店",
-    lesson: 31, reading: "てん", meaning: "điếm" },
+          {
+            kanji: "店",
+            lesson: 31, reading: "てん", meaning: "điếm"
+          },
         ],
       },
     ],
@@ -763,8 +787,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Tỉnh Chiba",
         furigana: [
           { kanji: "千", reading: "ち", meaning: "" },
-          { kanji: "葉",
-    lesson: 27, reading: "ば", meaning: "" },
+          {
+            kanji: "葉",
+            lesson: 27, reading: "ば", meaning: ""
+          },
           { kanji: "県", reading: "けん", meaning: "tỉnh" },
         ],
       },
@@ -774,8 +800,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Thái sợi",
         furigana: [
           { kanji: "千", reading: "せん", meaning: "thiên" },
-          { kanji: "切",
-    lesson: 27, reading: "ぎ", meaning: "thiết" },
+          {
+            kanji: "切",
+            lesson: 27, reading: "ぎ", meaning: "thiết"
+          },
           { kanji: "り", reading: "り", meaning: "" },
         ],
       },
@@ -811,8 +839,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Vạn quốc",
         furigana: [
           { kanji: "万", reading: "ばん", meaning: "vạn" },
-          { kanji: "国",
-    lesson: 31, reading: "こく", meaning: "quốc" },
+          {
+            kanji: "国",
+            lesson: 31, reading: "こく", meaning: "quốc"
+          },
         ],
       },
       {
@@ -891,8 +921,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Hình tròn",
         furigana: [
           { kanji: "円", reading: "えん", meaning: "viên" },
-          { kanji: "形",
-    lesson: 27, reading: "けい", meaning: "hình" },
+          {
+            kanji: "形",
+            lesson: 27, reading: "けい", meaning: "hình"
+          },
         ],
       },
       {
@@ -946,8 +978,10 @@ export const kanjiData: KanjiCard[] = [
         romaji: "Deguchi",
         vietnamese: "Cửa ra",
         furigana: [
-          { kanji: "出",
-    lesson: 26, reading: "で", meaning: "xuất" },
+          {
+            kanji: "出",
+            lesson: 26, reading: "で", meaning: "xuất"
+          },
           { kanji: "口", reading: "ぐち", meaning: "khẩu" },
         ],
       },
@@ -1011,8 +1045,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Thứ hai (vị trí)",
         furigana: [
           { kanji: "二", reading: "に", meaning: "nhị" },
-          { kanji: "番",
-    lesson: 28, reading: "ばん", meaning: "phiên" },
+          {
+            kanji: "番",
+            lesson: 28, reading: "ばん", meaning: "phiên"
+          },
           { kanji: "目", reading: "め", meaning: "mục" },
         ],
       },
@@ -1031,8 +1067,10 @@ export const kanjiData: KanjiCard[] = [
         vietnamese: "Mục lục",
         furigana: [
           { kanji: "目", reading: "もく", meaning: "mục" },
-          { kanji: "次",
-    lesson: 40, reading: "じ", meaning: "thứ" },
+          {
+            kanji: "次",
+            lesson: 40, reading: "じ", meaning: "thứ"
+          },
         ],
       },
     ]
@@ -7253,7 +7291,6 @@ export const kanjiData: KanjiCard[] = [
     onyomi: "シャ",
     kunyomi: "うつ・す、うつ・る",
     meaning: "Tả, Sao chép",
-    meaning: "Tả, Sao chép",
     sinoVietnamese: "Tả",
     radicals: "冖 (mịch) + 与 (dữ)",
     mnemonic: "Ở dưới mái nhà (冖), trao (与) lại bản sao chép.",
@@ -7375,7 +7412,6 @@ export const kanjiData: KanjiCard[] = [
     onyomi: "エイ",
     kunyomi: "うつ・る、うつ・す",
     meaning: "Ánh, Phản chiếu",
-    meaning: "Ánh, Phản chiếu",
     sinoVietnamese: "Ánh",
     radicals: "日 (nhật) + 央 (ương)",
     mnemonic: "Mặt trời (日) chiếu sáng ở trung tâm (央).",
@@ -7404,7 +7440,6 @@ export const kanjiData: KanjiCard[] = [
     lesson: 12,
     onyomi: "ガ、カク",
     kunyomi: "",
-    meaning: "Họa, Hoạch",
     meaning: "Họa, Hoạch",
     sinoVietnamese: "Họa, Hoạch",
     radicals: "一 (nhất) + 田 (điền) + 凵 (khảm)",
@@ -11052,7 +11087,6 @@ export const kanjiData: KanjiCard[] = [
     onyomi: "コ",
     kunyomi: "と",
     meaning: "Hộ, Cửa",
-    meaning: "Hộ, Cửa",
     sinoVietnamese: "Hộ",
     radicals: "戸 (hộ)",
     mnemonic: "Cánh cửa (戸) một cánh.",
@@ -11081,7 +11115,6 @@ export const kanjiData: KanjiCard[] = [
     lesson: 20,
     onyomi: "ショ",
     kunyomi: "ところ",
-    meaning: "Sở, Nơi chốn",
     meaning: "Sở, Nơi chốn",
     sinoVietnamese: "Sở",
     radicals: "戸 (hộ) + 斤 (cân)",
@@ -11117,7 +11150,6 @@ export const kanjiData: KanjiCard[] = [
     onyomi: "オク",
     kunyomi: "や",
     meaning: "Ốc, Mái nhà, Cửa hàng",
-    meaning: "Ốc, Mái nhà, Cửa hàng",
     sinoVietnamese: "Ốc",
     radicals: "尸 (thi) + 至 (chí)",
     mnemonic: "Đến (至) và ở lại dưới mái nhà (尸).",
@@ -11152,7 +11184,6 @@ export const kanjiData: KanjiCard[] = [
     onyomi: "ドウ",
     kunyomi: "",
     meaning: "Đường, Nhà lớn",
-    meaning: "Đường, Nhà lớn",
     sinoVietnamese: "Đường",
     radicals: "尚 (thượng) + 土 (thổ)",
     mnemonic: "Tòa nhà lớn nằm trên đất (土) được tôn kính (尚).",
@@ -11181,7 +11212,6 @@ export const kanjiData: KanjiCard[] = [
     lesson: 20,
     onyomi: "ト、ツ",
     kunyomi: "みやこ",
-    meaning: "Đô, Kinh đô",
     meaning: "Đô, Kinh đô",
     sinoVietnamese: "Đô",
     radicals: "者 (giả) + 阝 (ấp)",
@@ -11217,7 +11247,6 @@ export const kanjiData: KanjiCard[] = [
     onyomi: "ケン",
     kunyomi: "",
     meaning: "Huyện, Tỉnh",
-    meaning: "Huyện, Tỉnh",
     sinoVietnamese: "Huyện",
     radicals: "目 (mục) + 乚 + 小 (tiểu)",
     mnemonic: "Mắt (目) nhìn bản đồ tỉnh treo trên móc (乚) nhỏ (小).",
@@ -11246,7 +11275,6 @@ export const kanjiData: KanjiCard[] = [
     lesson: 20,
     onyomi: "ク",
     kunyomi: "",
-    meaning: "Khu, Quận",
     meaning: "Khu, Quận",
     sinoVietnamese: "Khu",
     radicals: "匚 (phương) + メ (nhân)",
@@ -13212,7 +13240,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 401,
     kanji: "遊",
-    
+
     onyomi: "ユウ",
     kunyomi: "あそ・ぶ",
     meaning: "Du, Chơi",
@@ -13233,7 +13261,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 402,
     kanji: "泳",
-    
+
     onyomi: "エイ",
     kunyomi: "およ・ぐ",
     meaning: "Vịnh, Bơi",
@@ -13255,7 +13283,7 @@ export const kanjiData: KanjiCard[] = [
     id: 403,
     kanji: "疲",
     lesson: 39,
-    
+
     onyomi: "ヒ",
     kunyomi: "つか・れる",
     meaning: "Bì, Mệt",
@@ -13277,7 +13305,7 @@ export const kanjiData: KanjiCard[] = [
     id: 404,
     kanji: "暖",
     lesson: 43,
-    
+
     onyomi: "ダン",
     kunyomi: "あたた・かい",
     meaning: "Noãn, Ấm",
@@ -13303,7 +13331,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 405,
     kanji: "涼",
-    
+
     onyomi: "リョウ",
     kunyomi: "すず・しい",
     meaning: "Lương, Mát",
@@ -13324,7 +13352,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 406,
     kanji: "静",
-    
+
     onyomi: "セイ",
     kunyomi: "しず・か",
     meaning: "Tĩnh, Yên tĩnh",
@@ -13346,7 +13374,7 @@ export const kanjiData: KanjiCard[] = [
     id: 407,
     kanji: "公",
     lesson: 27,
-    
+
     onyomi: "コウ",
     kunyomi: "おおやけ",
     meaning: "Công, Công cộng",
@@ -13373,7 +13401,7 @@ export const kanjiData: KanjiCard[] = [
     id: 408,
     kanji: "園",
     lesson: 31,
-    
+
     onyomi: "エン",
     kunyomi: "その",
     meaning: "Viên, Vườn, Công viên",
@@ -13400,7 +13428,7 @@ export const kanjiData: KanjiCard[] = [
     id: 409,
     kanji: "込",
     lesson: 26,
-    
+
     onyomi: "",
     kunyomi: "こ・む、こ・める",
     meaning: "Vào, Đông đúc",
@@ -13427,7 +13455,7 @@ export const kanjiData: KanjiCard[] = [
     id: 410,
     kanji: "連",
     lesson: 26,
-    
+
     onyomi: "レン",
     kunyomi: "つ・れる、つら・なる",
     meaning: "Liên, Liên lạc",
@@ -13453,7 +13481,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 411,
     kanji: "窓",
-    
+
     onyomi: "ソウ",
     kunyomi: "まど",
     meaning: "Song, Cửa sổ",
@@ -13480,7 +13508,7 @@ export const kanjiData: KanjiCard[] = [
     id: 412,
     kanji: "側",
     lesson: 29,
-    
+
     onyomi: "ソク",
     kunyomi: "かわ",
     meaning: "Trắc, Phía",
@@ -13506,7 +13534,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 413,
     kanji: "葉",
-    
+
     onyomi: "ヨウ",
     kunyomi: "は",
     meaning: "Diệp, Lá",
@@ -13533,7 +13561,7 @@ export const kanjiData: KanjiCard[] = [
     id: 414,
     kanji: "景",
     lesson: 27,
-    
+
     onyomi: "ケイ",
     kunyomi: "",
     meaning: "Cảnh, Cảnh sắc",
@@ -13559,7 +13587,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 415,
     kanji: "記",
-    
+
     imageUrl: "/images/kanji/placeholder.png",
     onyomi: "キ",
     onyomiRomaji: "",
@@ -13574,7 +13602,7 @@ export const kanjiData: KanjiCard[] = [
   {
     id: 416,
     kanji: "形",
-    
+
     imageUrl: "/images/kanji/placeholder.png",
     onyomi: "ケイ, ギョウ",
     onyomiRomaji: "",
@@ -15154,7 +15182,6 @@ export const kanjiData: KanjiCard[] = [
     onyomi: "シン",
     kunyomi: "",
     meaning: "Tín, Tin tưởng",
-    meaning: "Tín, Tin tưởng",
     sinoVietnamese: "Tín",
     radicals: "亻 (nhân) + 言 (ngôn)",
     mnemonic: "Lời nói (言) của người (亻) phải đáng tin.",
@@ -15503,7 +15530,7 @@ export const kanjiData: KanjiCard[] = [
     id: 498,
     kanji: "険",
     lesson: 32,
-    imageUrl: "/images/kanji/498_険険_3d.png",
+    imageUrl: "/images/kanji/498_danger_steep_3d.png",
     onyomi: "ケン",
     onyomiRomaji: "ken",
     kunyomi: "けわ・しい",
@@ -15790,7 +15817,7 @@ export const kanjiData: KanjiCard[] = [
     mnemonic: "Lửa (灬) đốt cháy rừng (林) thành không còn gì (無).",
     examples: [],
   }
-,
+  ,
 
   {
     id: 513,
@@ -15802,7 +15829,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 514,
@@ -15814,7 +15841,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 515,
@@ -15826,7 +15853,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 516,
@@ -15838,7 +15865,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 517,
@@ -15850,7 +15877,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 518,
@@ -15862,7 +15889,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 519,
@@ -15874,7 +15901,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 520,
@@ -15886,7 +15913,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 521,
@@ -15898,7 +15925,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 522,
@@ -15910,7 +15937,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 523,
@@ -15922,7 +15949,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 524,
@@ -15934,7 +15961,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 525,
@@ -15946,7 +15973,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 526,
@@ -15958,7 +15985,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 527,
@@ -15970,7 +15997,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 528,
@@ -15982,7 +16009,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 529,
@@ -15994,7 +16021,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 530,
@@ -16006,7 +16033,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 531,
@@ -16018,7 +16045,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 532,
@@ -16030,7 +16057,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 533,
@@ -16042,7 +16069,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 534,
@@ -16054,7 +16081,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 535,
@@ -16066,7 +16093,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 536,
@@ -16078,7 +16105,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 537,
@@ -16090,7 +16117,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 538,
@@ -16102,7 +16129,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 539,
@@ -16114,7 +16141,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 540,
@@ -16126,7 +16153,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 541,
@@ -16138,7 +16165,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 542,
@@ -16150,7 +16177,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 543,
@@ -16162,7 +16189,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 544,
@@ -16174,7 +16201,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 545,
@@ -16186,7 +16213,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 546,
@@ -16198,7 +16225,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 547,
@@ -16210,7 +16237,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 548,
@@ -16222,7 +16249,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 549,
@@ -16234,7 +16261,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 550,
@@ -16246,7 +16273,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 551,
@@ -16258,7 +16285,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 552,
@@ -16270,7 +16297,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 553,
@@ -16282,7 +16309,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 554,
@@ -16294,7 +16321,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 555,
@@ -16306,7 +16333,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 556,
@@ -16318,7 +16345,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 557,
@@ -16330,7 +16357,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 558,
@@ -16342,7 +16369,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 559,
@@ -16354,7 +16381,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 560,
@@ -16366,7 +16393,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 561,
@@ -16378,7 +16405,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 562,
@@ -16390,7 +16417,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 563,
@@ -16402,7 +16429,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 564,
@@ -16414,7 +16441,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 565,
@@ -16426,7 +16453,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 566,
@@ -16438,7 +16465,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 567,
@@ -16450,7 +16477,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 568,
@@ -16462,7 +16489,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 569,
@@ -16474,7 +16501,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 570,
@@ -16486,7 +16513,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 571,
@@ -16498,7 +16525,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 572,
@@ -16510,7 +16537,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 573,
@@ -16522,7 +16549,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 574,
@@ -16534,7 +16561,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 575,
@@ -16546,7 +16573,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 576,
@@ -16558,7 +16585,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 577,
@@ -16570,7 +16597,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 578,
@@ -16582,7 +16609,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 579,
@@ -16594,7 +16621,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 580,
@@ -16606,7 +16633,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 581,
@@ -16618,7 +16645,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 582,
@@ -16630,7 +16657,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 583,
@@ -16642,7 +16669,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 584,
@@ -16654,7 +16681,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 585,
@@ -16666,7 +16693,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 586,
@@ -16678,7 +16705,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 587,
@@ -16690,7 +16717,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 588,
@@ -16702,7 +16729,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 589,
@@ -16714,7 +16741,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 590,
@@ -16726,7 +16753,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 591,
@@ -16738,7 +16765,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 592,
@@ -16750,7 +16777,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 593,
@@ -16762,7 +16789,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 594,
@@ -16774,7 +16801,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 595,
@@ -16786,7 +16813,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 596,
@@ -16798,7 +16825,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 597,
@@ -16810,7 +16837,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 598,
@@ -16822,7 +16849,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 599,
@@ -16834,7 +16861,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 600,
@@ -16846,7 +16873,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 601,
@@ -16858,7 +16885,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 602,
@@ -16870,7 +16897,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 603,
@@ -16882,7 +16909,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 604,
@@ -16894,7 +16921,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 605,
@@ -16906,7 +16933,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 606,
@@ -16918,7 +16945,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 607,
@@ -16930,7 +16957,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 608,
@@ -16942,7 +16969,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 609,
@@ -16954,7 +16981,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 610,
@@ -16966,7 +16993,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 611,
@@ -16978,7 +17005,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 612,
@@ -16990,7 +17017,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 613,
@@ -17002,7 +17029,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 614,
@@ -17014,7 +17041,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 615,
@@ -17026,7 +17053,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 616,
@@ -17038,7 +17065,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 617,
@@ -17050,7 +17077,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 618,
@@ -17062,7 +17089,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 619,
@@ -17074,7 +17101,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 620,
@@ -17086,7 +17113,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 621,
@@ -17098,7 +17125,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 622,
@@ -17110,7 +17137,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 623,
@@ -17122,7 +17149,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 624,
@@ -17134,7 +17161,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 625,
@@ -17146,7 +17173,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 626,
@@ -17158,7 +17185,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 627,
@@ -17170,7 +17197,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 628,
@@ -17182,7 +17209,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 629,
@@ -17194,7 +17221,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 630,
@@ -17206,7 +17233,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 631,
@@ -17218,7 +17245,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 632,
@@ -17230,7 +17257,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 633,
@@ -17242,7 +17269,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 634,
@@ -17254,7 +17281,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 635,
@@ -17266,7 +17293,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 636,
@@ -17278,7 +17305,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 637,
@@ -17290,7 +17317,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 638,
@@ -17302,7 +17329,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 639,
@@ -17314,7 +17341,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 640,
@@ -17326,7 +17353,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 641,
@@ -17338,7 +17365,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 642,
@@ -17350,7 +17377,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 643,
@@ -17362,7 +17389,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 644,
@@ -17374,7 +17401,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 645,
@@ -17386,7 +17413,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 646,
@@ -17398,7 +17425,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 647,
@@ -17410,7 +17437,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 648,
@@ -17422,7 +17449,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 649,
@@ -17434,7 +17461,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 650,
@@ -17446,7 +17473,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 651,
@@ -17458,7 +17485,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 652,
@@ -17470,7 +17497,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 653,
@@ -17482,7 +17509,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 654,
@@ -17494,7 +17521,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 655,
@@ -17506,7 +17533,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 656,
@@ -17518,7 +17545,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 657,
@@ -17530,7 +17557,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 658,
@@ -17542,7 +17569,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 659,
@@ -17554,7 +17581,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 660,
@@ -17566,7 +17593,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 661,
@@ -17578,7 +17605,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 662,
@@ -17590,7 +17617,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 663,
@@ -17602,7 +17629,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 664,
@@ -17614,7 +17641,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 665,
@@ -17626,7 +17653,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 666,
@@ -17638,7 +17665,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 667,
@@ -17650,7 +17677,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 668,
@@ -17662,7 +17689,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 669,
@@ -17674,7 +17701,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 670,
@@ -17686,7 +17713,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 671,
@@ -17698,7 +17725,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 672,
@@ -17710,7 +17737,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 673,
@@ -17722,7 +17749,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 674,
@@ -17734,7 +17761,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 675,
@@ -17746,7 +17773,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 676,
@@ -17758,7 +17785,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 677,
@@ -17770,7 +17797,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 678,
@@ -17782,7 +17809,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 679,
@@ -17794,7 +17821,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 680,
@@ -17806,7 +17833,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 681,
@@ -17818,7 +17845,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 682,
@@ -17830,7 +17857,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 683,
@@ -17842,7 +17869,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 684,
@@ -17854,7 +17881,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 685,
@@ -17866,7 +17893,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 686,
@@ -17878,7 +17905,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 687,
@@ -17890,7 +17917,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 688,
@@ -17902,7 +17929,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 689,
@@ -17914,7 +17941,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 690,
@@ -17926,7 +17953,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 691,
@@ -17938,7 +17965,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 692,
@@ -17950,7 +17977,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 693,
@@ -17962,7 +17989,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 694,
@@ -17974,7 +18001,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 695,
@@ -17986,7 +18013,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 696,
@@ -17998,7 +18025,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 697,
@@ -18010,7 +18037,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 698,
@@ -18022,7 +18049,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 699,
@@ -18034,7 +18061,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 700,
@@ -18046,7 +18073,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 701,
@@ -18058,7 +18085,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 702,
@@ -18070,7 +18097,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 703,
@@ -18082,7 +18109,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 704,
@@ -18094,7 +18121,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 705,
@@ -18106,7 +18133,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 706,
@@ -18118,7 +18145,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 707,
@@ -18130,7 +18157,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 708,
@@ -18142,7 +18169,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 709,
@@ -18154,7 +18181,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 710,
@@ -18166,7 +18193,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 711,
@@ -18178,7 +18205,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 712,
@@ -18190,7 +18217,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 713,
@@ -18202,7 +18229,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 714,
@@ -18214,7 +18241,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 715,
@@ -18226,7 +18253,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 716,
@@ -18238,7 +18265,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 717,
@@ -18250,7 +18277,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 718,
@@ -18262,7 +18289,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 719,
@@ -18274,7 +18301,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 720,
@@ -18286,7 +18313,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 721,
@@ -18298,7 +18325,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 722,
@@ -18310,7 +18337,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 723,
@@ -18322,7 +18349,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 724,
@@ -18334,7 +18361,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 725,
@@ -18346,7 +18373,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 726,
@@ -18358,7 +18385,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 727,
@@ -18370,7 +18397,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 728,
@@ -18382,7 +18409,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 729,
@@ -18394,7 +18421,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 730,
@@ -18406,7 +18433,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 731,
@@ -18418,7 +18445,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 732,
@@ -18430,7 +18457,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 733,
@@ -18442,7 +18469,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 734,
@@ -18454,7 +18481,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 735,
@@ -18466,7 +18493,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 736,
@@ -18478,7 +18505,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 737,
@@ -18490,7 +18517,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 738,
@@ -18502,7 +18529,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 739,
@@ -18514,7 +18541,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 740,
@@ -18526,7 +18553,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 741,
@@ -18538,7 +18565,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 742,
@@ -18550,7 +18577,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 743,
@@ -18562,7 +18589,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 744,
@@ -18574,7 +18601,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 745,
@@ -18586,7 +18613,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 746,
@@ -18598,7 +18625,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 747,
@@ -18610,7 +18637,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 748,
@@ -18622,7 +18649,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 749,
@@ -18634,7 +18661,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 750,
@@ -18646,7 +18673,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 751,
@@ -18658,7 +18685,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 752,
@@ -18670,7 +18697,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 753,
@@ -18682,7 +18709,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 754,
@@ -18694,7 +18721,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 755,
@@ -18706,7 +18733,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 756,
@@ -18718,7 +18745,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 757,
@@ -18730,7 +18757,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 758,
@@ -18742,7 +18769,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 759,
@@ -18754,7 +18781,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 760,
@@ -18766,7 +18793,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 761,
@@ -18778,7 +18805,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 762,
@@ -18790,7 +18817,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 763,
@@ -18802,7 +18829,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 764,
@@ -18814,7 +18841,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 765,
@@ -18826,7 +18853,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 766,
@@ -18838,7 +18865,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 767,
@@ -18850,7 +18877,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 768,
@@ -18862,7 +18889,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 769,
@@ -18874,7 +18901,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 770,
@@ -18886,7 +18913,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 771,
@@ -18898,7 +18925,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 772,
@@ -18910,7 +18937,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 773,
@@ -18922,7 +18949,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 774,
@@ -18934,7 +18961,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 775,
@@ -18946,7 +18973,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 776,
@@ -18958,7 +18985,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 777,
@@ -18970,7 +18997,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 778,
@@ -18982,7 +19009,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 779,
@@ -18994,7 +19021,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 780,
@@ -19006,7 +19033,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 781,
@@ -19018,7 +19045,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 782,
@@ -19030,7 +19057,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 783,
@@ -19042,7 +19069,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 784,
@@ -19054,7 +19081,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 785,
@@ -19066,7 +19093,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 786,
@@ -19078,7 +19105,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 787,
@@ -19090,7 +19117,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 788,
@@ -19102,7 +19129,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 789,
@@ -19114,7 +19141,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 790,
@@ -19126,7 +19153,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 791,
@@ -19138,7 +19165,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 792,
@@ -19150,7 +19177,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 793,
@@ -19162,7 +19189,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 794,
@@ -19174,7 +19201,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 795,
@@ -19186,7 +19213,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 796,
@@ -19198,7 +19225,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 797,
@@ -19210,7 +19237,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 798,
@@ -19222,7 +19249,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 799,
@@ -19234,7 +19261,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 800,
@@ -19246,7 +19273,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 801,
@@ -19258,7 +19285,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 802,
@@ -19270,7 +19297,7 @@ export const kanjiData: KanjiCard[] = [
     sinoVietnamese: "",
     examples: []
   }
-,
+  ,
 
   {
     id: 803,

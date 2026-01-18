@@ -26,6 +26,7 @@ import Conjunctions from "./pages/Conjunctions";
 import Numbers from "./pages/Numbers";
 import TimeExpressions from "./pages/TimeExpressions";
 import Counters from "./pages/Counters";
+import GrammarReview from "./pages/GrammarReview";
 import VocabularyList from "./pages/VocabularyList";
 import LessonDetail from "./pages/LessonDetail";
 import Irodori from "./pages/Irodori";
@@ -72,6 +73,7 @@ const App = () => (
           <Route path="/minna/numbers" element={<Numbers />} />
           <Route path="/minna/time-expressions" element={<TimeExpressions />} />
           <Route path="/minna/counters" element={<Counters />} />
+          <Route path="/minna/grammar-review" element={<GrammarReview />} />
           <Route path="/minna/vocabulary" element={<VocabularyList />} />
           <Route path="/minna/:id" element={<LessonDetail />} />
           <Route path="/irodori" element={<Irodori />} />

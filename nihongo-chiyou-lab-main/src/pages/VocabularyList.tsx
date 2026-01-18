@@ -21,7 +21,7 @@ const VocabularyList = () => {
         const saved = localStorage.getItem("vocabulary_selection");
         return saved ? JSON.parse(saved) : [];
     });
-    const [showLearnedOnly, setShowLearnedOnly] = useState(false);
+
 
     useEffect(() => {
         localStorage.setItem("vocabulary_selection", JSON.stringify(selectedVocabulary));
@@ -39,12 +39,11 @@ const VocabularyList = () => {
         // 1. Filter by Topic
         const matchesTopic = selectedTopic === "all" || item.topicId === selectedTopic;
 
-        // 2. Filter by Learned Status
-        const matchesLearned = !showLearnedOnly || selectedVocabulary.includes(item.id);
+
 
         // 3. Filter by Search Query
         const query = searchQuery.toLowerCase().trim();
-        if (!query) return matchesTopic && matchesLearned;
+        if (!query) return matchesTopic;
 
         const matchesWord = item.word.toLowerCase().includes(query);
         const matchesMeaning = item.meaning.toLowerCase().includes(query);
@@ -54,7 +53,7 @@ const VocabularyList = () => {
         // Search inside specific Kanji if available in furigana
         const matchesKanji = item.furigana?.some(f => f.kanji.includes(query)) || false;
 
-        return matchesTopic && matchesLearned && (matchesWord || matchesMeaning || matchesRomaji || matchesHiragana || matchesKanji);
+        return matchesTopic && (matchesWord || matchesMeaning || matchesRomaji || matchesHiragana || matchesKanji);
     });
 
     return (
@@ -92,23 +91,6 @@ const VocabularyList = () => {
                                     ))}
                                 </SelectContent>
                             </Select>
-
-                            <div className="flex bg-muted/20 p-1 rounded-lg border">
-                                <Button
-                                    variant={!showLearnedOnly ? "default" : "ghost"}
-                                    onClick={() => setShowLearnedOnly(false)}
-                                    className={`h-9 px-4 ${!showLearnedOnly ? "bg-[#008001] hover:bg-[#006801] shadow-sm" : "text-muted-foreground hover:text-[#008001]"}`}
-                                >
-                                    <span className="font-bold text-sm">Tất cả</span>
-                                </Button>
-                                <Button
-                                    variant={showLearnedOnly ? "default" : "ghost"}
-                                    onClick={() => setShowLearnedOnly(true)}
-                                    className={`h-9 px-4 ${showLearnedOnly ? "bg-[#008001] hover:bg-[#006801] shadow-sm" : "text-muted-foreground hover:text-[#008001]"}`}
-                                >
-                                    <span className="font-bold text-sm">Đã học</span>
-                                </Button>
-                            </div>
                         </div>
 
                         <div className="relative w-full md:w-1/3">

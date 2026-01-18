@@ -136,12 +136,24 @@ const QuestionItem = ({
 
 const MinnaTest2 = () => {
     // Kanji Test State
-    const [selectedExamId, setSelectedExamId] = useState(1);
+    const [selectedExamId, setSelectedExamId] = useState(() => {
+        if (typeof window !== 'undefined') {
+            const saved = localStorage.getItem("minna2_selectedExamId");
+            return saved ? parseInt(saved) : 1;
+        }
+        return 1;
+    });
     const [answers, setAnswers] = useState<Record<number, string>>({});
     const [showResults, setShowResults] = useState(false);
 
     // Grammar Test State
-    const [selectedGrammarExamId, setSelectedGrammarExamId] = useState(1);
+    const [selectedGrammarExamId, setSelectedGrammarExamId] = useState(() => {
+        if (typeof window !== 'undefined') {
+            const saved = localStorage.getItem("minna2_selectedGrammarExamId");
+            return saved ? parseInt(saved) : 1;
+        }
+        return 1;
+    });
     const [grammarAnswers, setGrammarAnswers] = useState<Record<number, string>>({});
     const [showGrammarResults, setShowGrammarResults] = useState(false);
 
@@ -157,11 +169,13 @@ const MinnaTest2 = () => {
 
     // Reset when switching exams
     useEffect(() => {
+        localStorage.setItem("minna2_selectedExamId", selectedExamId.toString());
         setAnswers({});
         setShowResults(false);
     }, [selectedExamId]);
 
     useEffect(() => {
+        localStorage.setItem("minna2_selectedGrammarExamId", selectedGrammarExamId.toString());
         setGrammarAnswers({});
         setShowGrammarResults(false);
     }, [selectedGrammarExamId]);
