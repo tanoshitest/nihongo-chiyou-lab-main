@@ -712,7 +712,7 @@ export const lesson1Data: LessonDetail = {
           furigana: [{ kanji: '将来', reading: 'しょうらい', meaning: 'TƯƠNG LAI' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '先',
           onyomi: 'セン (sen)',
@@ -4335,7 +4335,7 @@ export const lesson1Data: LessonDetail = {
           furigana: [{ kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '英',
           onyomi: 'エイ (ei)',
@@ -5804,7 +5804,7 @@ export const lesson1Data: LessonDetail = {
           furigana: [{ kanji: '富士大学', reading: 'ふじだいがく', meaning: 'PHÚ SĨ ĐẠI HỌC' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '富',
           onyomi: 'フ (fu), フウ (fuu)',
@@ -6021,7 +6021,7 @@ export const lesson1Data: LessonDetail = {
           furigana: [{ kanji: '神戸病院', reading: 'こうべびょういん', meaning: 'THẦN HỘ BỆNH VIỆN' }, { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '神',
           onyomi: 'シン (shin), ジン (jin)',
@@ -9046,10 +9046,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '教室に入ります。', romaji: 'Kyoushitsu ni hairimasu.', vn: 'Vào lớp học.', furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }, { kanji: '入', reading: 'はい', meaning: 'NHẬP' }] },
         { jp: '教室はどこですか。', romaji: 'Kyoushitsu wa doko desu ka.', vn: 'Lớp học ở đâu?', furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }] },
         { jp: '日本語の教室です。', romaji: 'Nihongo no kyoushitsu desu.', vn: 'Là lớp học tiếng Nhật.', furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }] },
-        { jp: 'きれいな教室です。', romaji: 'Kirei na kyoushitsu desu.', vn: 'Lớp học sạch sẽ.', furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }],
+        {
+          jp: 'きれいな教室です。', romaji: 'Kirei na kyoushitsu desu.', vn: 'Lớp học sạch sẽ.', furigana: [{ kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '教', onyomi: 'キョウ (kyou)', kunyomi: 'おし.える (oshieru)', meaning: 'Dạy, giáo dục', sinoVietnamese: 'GIÁO', strokes: 11, jlpt: 'N4', radicals: '攴 (phộc)', mnemonic: 'Người già (老) cầm roi (攴) dạy trẻ.',
           exampleSentences: [
@@ -9085,10 +9086,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '会社の食堂です。', romaji: 'Kaisha no shokudou desu.', vn: 'Là nhà ăn của công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }] },
         { jp: '食堂へ行きます。', romaji: 'Shokudou he ikimasu.', vn: 'Tôi đi đến nhà ăn.', furigana: [{ kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
         { jp: '安い食堂です。', romaji: 'Yasui shokudou desu.', vn: 'Nhà ăn rẻ.', furigana: [{ kanji: '安', reading: 'やす', meaning: 'AN' }, { kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }] },
-        { jp: '広い食堂ですね。', romaji: 'Hiroi shokudou desu ne.', vn: 'Nhà ăn rộng nhỉ.', furigana: [{ kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }, { kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }],
+        {
+          jp: '広い食堂ですね。', romaji: 'Hiroi shokudou desu ne.', vn: 'Nhà ăn rộng nhỉ.', furigana: [{ kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }, { kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '食', onyomi: 'ショク (shoku)', kunyomi: 'た.べる (taberu)', meaning: 'Ăn, thực phẩm', sinoVietnamese: 'THỰC', strokes: 9, jlpt: 'N5', radicals: '食 (thực)', mnemonic: 'Người (人) tốt (良) thì được ăn ngon.',
           exampleSentences: [
@@ -9124,10 +9126,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '事務所で働きます。', romaji: 'Jimusho de hatarakimasu.', vn: 'Tôi làm việc ở văn phòng.', furigana: [{ kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }] },
         { jp: '社長の事務所です。', romaji: 'Shachou no jimusho desu.', vn: 'Là văn phòng của giám đốc.', furigana: [{ kanji: '社長', reading: 'しゃちょう', meaning: 'XÃ TRƯỜNG' }, { kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }] },
         { jp: '事務所はどこですか。', romaji: 'Jimusho wa doko desu ka.', vn: 'Văn phòng ở đâu?', furigana: [{ kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }] },
-        { jp: 'きれいな事務所です。', romaji: 'Kirei na jimusho desu.', vn: 'Văn phòng đẹp.', furigana: [{ kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }],
+        {
+          jp: 'きれいな事務所です。', romaji: 'Kirei na jimusho desu.', vn: 'Văn phòng đẹp.', furigana: [{ kanji: '事務所', reading: 'じむしょ', meaning: 'SỰ VỤ SỞ' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '事', onyomi: 'ジ (ji)', kunyomi: 'こと (koto)', meaning: 'Việc, sự việc', sinoVietnamese: 'SỰ', strokes: 8, jlpt: 'N4', radicals: '亅 (quyết)', mnemonic: 'Một cái miệng (口) và tay cầm bút viết sử (history/sự việc).',
           exampleSentences: [
@@ -9175,10 +9178,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '第一会議室です。', romaji: 'Daiichi kaigishitsu desu.', vn: 'Là phòng họp số 1.', furigana: [{ kanji: '第一', reading: 'だいいち', meaning: 'ĐỆ NHẤT' }, { kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }] },
         { jp: '会議室に入ります。', romaji: 'Kaigishitsu ni hairimasu.', vn: 'Tôi vào phòng họp.', furigana: [{ kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }, { kanji: '入', reading: 'はい', meaning: 'NHẬP' }] },
         { jp: '広い会議室です。', romaji: 'Hiroi kaigishitsu desu.', vn: 'Phòng họp rộng.', furigana: [{ kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }, { kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }] },
-        { jp: '会議室は空いていますか。', romaji: 'Kaigishitsu wa aite imasu ka.', vn: 'Phòng họp có trống không?', furigana: [{ kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }, { kanji: '空', reading: 'あ', meaning: 'KHÔNG' }],
+        {
+          jp: '会議室は空いていますか。', romaji: 'Kaigishitsu wa aite imasu ka.', vn: 'Phòng họp có trống không?', furigana: [{ kanji: '会議室', reading: 'かいぎしつ', meaning: 'HỘI NGHỊ THẤT' }, { kanji: '空', reading: 'あ', meaning: 'KHÔNG' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '会', onyomi: 'カイ (kai)', kunyomi: 'あ.う (au)', meaning: 'Gặp gỡ, hội họp', sinoVietnamese: 'HỘI', strokes: 6, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Hai người (二) ngồi dưới mái nhà (ane) họp.',
           exampleSentences: [
@@ -9226,10 +9230,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '受付に人がいます。', romaji: 'Uketsuke ni hito ga imasu.', vn: 'Có người ở quầy tiếp tân.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }, { kanji: '人', reading: 'ひと', meaning: 'NHÂN' }] },
         { jp: 'ホテルの受付です。', romaji: 'Hoteru no uketsuke desu.', vn: 'Là quầy lễ tân khách sạn.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }] },
         { jp: '受付で聞いてください。', romaji: 'Uketsuke de kiite kudasai.', vn: 'Hãy hỏi ở quầy lễ tân.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }] },
-        { jp: '受付の電話番号です。', romaji: 'Uketsuke no denwa bangou desu.', vn: 'Là số điện thoại quầy lễ tân.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }, { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' }],
+        {
+          jp: '受付の電話番号です。', romaji: 'Uketsuke no denwa bangou desu.', vn: 'Là số điện thoại quầy lễ tân.', furigana: [{ kanji: '受付', reading: 'うけつけ', meaning: 'THỤ PHÓ' }, { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '受', onyomi: 'ジュ (ju)', kunyomi: 'う.ける (ukeru)', meaning: 'Nhận, chịu', sinoVietnamese: 'THỤ', strokes: 8, jlpt: 'N3', radicals: '又 (hựu)', mnemonic: 'Dùng tay (爪) nhận cái gì đó từ tay khác (又) dưới mái nhà (冖).',
           exampleSentences: [
@@ -9278,10 +9283,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '部屋を掃除します。', romaji: 'Heya wo souji shimasu.', vn: 'Tôi dọn phòng.', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }, { kanji: '掃除', reading: 'そうじ', meaning: 'TẢO TRỪ' }] },
         { jp: '部屋にテレビがあります。', romaji: 'Heya ni terebi ga arimasu.', vn: 'Trong phòng có tivi.', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }] },
         { jp: 'あなたの部屋はどこですか。', romaji: 'Anata no heya wa doko desu ka.', vn: 'Phòng của bạn ở đâu?', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }] },
-        { jp: '暗い部屋です。', romaji: 'Kurai heya desu.', vn: 'Căn phòng tối.', furigana: [{ kanji: '暗', reading: 'くら', meaning: 'ÁM' }, { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }],
+        {
+          jp: '暗い部屋です。', romaji: 'Kurai heya desu.', vn: 'Căn phòng tối.', furigana: [{ kanji: '暗', reading: 'くら', meaning: 'ÁM' }, { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '部', onyomi: 'ブ (bu)', kunyomi: '', meaning: 'Bộ phận, phòng', sinoVietnamese: 'BỘ', strokes: 11, jlpt: 'N4', radicals: '邑 (áp)', mnemonic: 'Đứng (立) mở miệng (口) chia vùng (邑) thành các bộ phận.',
           exampleSentences: [
@@ -9317,10 +9323,11 @@ export const lesson3Data: LessonDetail = {
         { jp: 'きれいなトイレです。', romaji: 'Kirei na toire desu.', vn: 'Nhà vệ sinh sạch sẽ.', furigana: [] },
         { jp: '男性用のトイレです。', romaji: 'Danseiyou no toire desu.', vn: 'Nhà vệ sinh nam.', furigana: [{ kanji: '男性用', reading: 'だんせいよう', meaning: 'NAM TÍNH DỤNG' }] },
         { jp: 'トイレを借ります。', romaji: 'Toire wo karimasu.', vn: 'Tôi mượn nhà vệ sinh.', furigana: [{ kanji: '借', reading: 'か', meaning: 'TÁ' }] },
-        { jp: 'トイレはどこですか。', romaji: 'Toire wa doko desu ka.', vn: 'Nhà vệ sinh ở đâu?', furigana: [],
+        {
+          jp: 'トイレはどこですか。', romaji: 'Toire wa doko desu ka.', vn: 'Nhà vệ sinh ở đâu?', furigana: [],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '手', onyomi: 'シュ (shu)', kunyomi: 'て (te)', meaning: 'Tay', sinoVietnamese: 'THỦ', strokes: 4, jlpt: 'N5', radicals: '手 (thủ)', mnemonic: 'Hình bàn tay xòe 5 ngón.',
           exampleSentences: [
@@ -9356,10 +9363,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '階段を下ります。', romaji: 'Kaidan wo orimasu.', vn: 'Tôi xuống cầu thang.', furigana: [{ kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }, { kanji: '下', reading: 'お', meaning: 'HẠ' }] },
         { jp: '階段はあちらです。', romaji: 'Kaidan wa achira desu.', vn: 'Cầu thang ở phía kia.', furigana: [{ kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }] },
         { jp: '長い階段です。', romaji: 'Nagai kaidan desu.', vn: 'Cầu thang dài.', furigana: [{ kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' }, { kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }] },
-        { jp: '非常階段です。', romaji: 'Hijou kaidan desu.', vn: 'Cầu thang thoát hiểm.', furigana: [{ kanji: '非常', reading: 'ひじょう', meaning: 'PHI THƯỜNG' }, { kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }],
+        {
+          jp: '非常階段です。', romaji: 'Hijou kaidan desu.', vn: 'Cầu thang thoát hiểm.', furigana: [{ kanji: '非常', reading: 'ひじょう', meaning: 'PHI THƯỜNG' }, { kanji: '階段', reading: 'かいだん', meaning: 'GIAI ĐOẠN' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '階', onyomi: 'カイ (kai)', kunyomi: '', meaning: 'Giai cấp, tầng', sinoVietnamese: 'GIAI', strokes: 12, jlpt: 'N3', radicals: '阜 (phụ)', mnemonic: 'Mọi người (皆) đều phải leo lên gò đất (阜) từng giai đoạn.',
           exampleSentences: [
@@ -9420,10 +9428,11 @@ export const lesson3Data: LessonDetail = {
         { jp: 'お国へ帰ります。', romaji: 'Okuni he kaerimasu.', vn: 'Tôi về nước.', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }, { kanji: '帰', reading: 'かえ', meaning: 'QUY' }] },
         { jp: 'お国で働きます。', romaji: 'Okuni de hatarakimasu.', vn: 'Tôi làm việc ở nước tôi.', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }] },
         { jp: '遠いお国ですね。', romaji: 'Tooi okuni desu ne.', vn: 'Đất nước xa nhỉ.', furigana: [{ kanji: '遠', reading: 'とお', meaning: 'VIỄN' }, { kanji: '国', reading: 'くに', meaning: 'QUỐC' }] },
-        { jp: 'お国の家族に電話します。', romaji: 'Okuni no kazoku ni denwa shimasu.', vn: 'Tôi gọi điện cho gia đình ở nước.', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }, { kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }],
+        {
+          jp: 'お国の家族に電話します。', romaji: 'Okuni no kazoku ni denwa shimasu.', vn: 'Tôi gọi điện cho gia đình ở nước.', furigana: [{ kanji: '国', reading: 'くに', meaning: 'QUỐC' }, { kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '国', onyomi: 'コク (koku)', kunyomi: 'くに (kuni)', meaning: 'Đất nước', sinoVietnamese: 'QUỐC', strokes: 8, jlpt: 'N5', radicals: '囗 (vi)', mnemonic: 'Viên ngọc (玉) quý được bao quanh bởi biên giới (囗) là quốc gia.',
           exampleSentences: [
@@ -9447,10 +9456,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '会社へ行きます。', romaji: 'Kaisha he ikimasu.', vn: 'Tôi đi đến công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
         { jp: '会社の電話番号です。', romaji: 'Kaisha no denwa bangou desu.', vn: 'Là số điện thoại công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' }] },
         { jp: '大きい会社です。', romaji: 'Ookii kaisha desu.', vn: 'Công ty lớn.', furigana: [{ kanji: '大', reading: 'おお', meaning: 'ĐẠI' }, { kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }] },
-        { jp: '会社で働きます。', romaji: 'Kaisha de hatarakimasu.', vn: 'Tôi làm việc ở công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }],
+        {
+          jp: '会社で働きます。', romaji: 'Kaisha de hatarakimasu.', vn: 'Tôi làm việc ở công ty.', furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '会', onyomi: 'カイ (kai)', kunyomi: 'あ.う (au)', meaning: 'Gặp gỡ', sinoVietnamese: 'HỘI', strokes: 6, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Hai người (二) gặp nhau dưới mái nhà.',
           exampleSentences: [
@@ -9486,10 +9496,11 @@ export const lesson3Data: LessonDetail = {
         { jp: 'うちへ帰ります。', romaji: 'Uchi he kaerimasu.', vn: 'Tôi về nhà.', furigana: [{ kanji: '帰', reading: 'かえ', meaning: 'QUY' }] },
         { jp: '広いうちです。', romaji: 'Hiroi uchi desu.', vn: 'Ngôi nhà rộng.', furigana: [{ kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }] },
         { jp: '友達のうちへ行きます。', romaji: 'Tomodachi no uchi he ikimasu.', vn: 'Tôi đi đến nhà bạn.', furigana: [{ kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
-        { jp: 'うちで勉強します。', romaji: 'Uchi de benkyou shimasu.', vn: 'Tôi học ở nhà.', furigana: [{ kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }],
+        {
+          jp: 'うちで勉強します。', romaji: 'Uchi de benkyou shimasu.', vn: 'Tôi học ở nhà.', furigana: [{ kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '家', onyomi: 'カ (ka)', kunyomi: 'いえ (ie), うち (uchi)', meaning: 'Nhà', sinoVietnamese: 'GIA', strokes: 10, jlpt: 'N4', radicals: '宀 (miên)', mnemonic: 'Dưới mái nhà (宀) có con lợn (豕) là nhà (ngày xưa).',
           exampleSentences: [
@@ -9513,10 +9524,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '電話があります。', romaji: 'Denwa ga arimasu.', vn: 'Có điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] },
         { jp: '新しい電話です。', romaji: 'Atarashii denwa desu.', vn: 'Điện thoại mới.', furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }] },
         { jp: '電話を借ります。', romaji: 'Denwa wo karimasu.', vn: 'Tôi mượn điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }, { kanji: '借', reading: 'か', meaning: 'TÁ' }] },
-        { jp: '電話で話します。', romaji: 'Denwa de hanashimasu.', vn: 'Tôi nói chuyện bằng điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }],
+        {
+          jp: '電話で話します。', romaji: 'Denwa de hanashimasu.', vn: 'Tôi nói chuyện bằng điện thoại.', furigana: [{ kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '電', onyomi: 'デン (den)', kunyomi: '', meaning: 'Điện', sinoVietnamese: 'ĐIỆN', strokes: 13, jlpt: 'N5', radicals: '雨 (vũ)', mnemonic: 'Mưa (雨) có sét là điện (申 - gần giống).',
           exampleSentences: [
@@ -9552,10 +9564,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '靴を履きます。', romaji: 'Kutsu wo hakimasu.', vn: 'Tôi đi giày.', furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'NGOA' }, { kanji: '履', reading: 'は', meaning: 'LÝ' }] },
         { jp: 'イタリアの靴です。', romaji: 'Itaria no kutsu desu.', vn: 'Giày của Ý.', furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'NGOA' }] },
         { jp: '赤い靴です。', romaji: 'Akai kutsu desu.', vn: 'Giày màu đỏ.', furigana: [{ kanji: '赤', reading: 'あか', meaning: 'XÍCH' }, { kanji: '靴', reading: 'くつ', meaning: 'NGOA' }] },
-        { jp: '靴を見せてください。', romaji: 'Kutsu wo misete kudasai.', vn: 'Cho tôi xem đôi giày.', furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'NGOA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }],
+        {
+          jp: '靴を見せてください。', romaji: 'Kutsu wo misete kudasai.', vn: 'Cho tôi xem đôi giày.', furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'NGOA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '靴', onyomi: 'カ (ka)', kunyomi: 'くつ (kutsu)', meaning: 'Giày', sinoVietnamese: 'NGOA', strokes: 13, jlpt: 'N1', radicals: '革 (cách)', mnemonic: 'Làm giày bằng da (革) thì biến hóa (化) đôi chân.',
           exampleSentences: [
@@ -9615,10 +9628,11 @@ export const lesson3Data: LessonDetail = {
         { jp: 'ワイン売り場へ行きます。', romaji: 'Wain uriba he ikimasu.', vn: 'Tôi đi đến quầy bán rượu vang.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
         { jp: '売り場が広いです。', romaji: 'Uriba ga hiroi desu.', vn: 'Quầy bán hàng rộng.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }, { kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' }] },
         { jp: 'きれいな売り場です。', romaji: 'Kirei na uriba desu.', vn: 'Quầy bán hàng đẹp.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }] },
-        { jp: 'あの売り場は混んでいます。', romaji: 'Ano uriba wa konde imasu.', vn: 'Quầy bán hàng kia đông người.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }, { kanji: '混', reading: 'こ', meaning: 'HỖN' }],
+        {
+          jp: 'あの売り場は混んでいます。', romaji: 'Ano uriba wa konde imasu.', vn: 'Quầy bán hàng kia đông người.', furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }, { kanji: '混', reading: 'こ', meaning: 'HỖN' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '売', onyomi: 'バイ (bai)', kunyomi: 'う.る (uru)', meaning: 'Bán', sinoVietnamese: 'MẠI', strokes: 7, jlpt: 'N4', radicals: '士 (sĩ)', mnemonic: 'Kẻ sĩ (士) trùm khăn (冖) đi bán chân (儿) tình.',
           exampleSentences: [
@@ -9654,10 +9668,11 @@ export const lesson3Data: LessonDetail = {
         { jp: 'レストランは地下にあります。', romaji: 'Resutoran wa chika ni arimasu.', vn: 'Nhà hàng ở tầng hầm.', furigana: [{ kanji: '地下', reading: 'ちか', meaning: 'ĐỊA HẠ' }] },
         { jp: '地下鉄で行きます。', romaji: 'Chikatetsu de ikimasu.', vn: 'Tôi đi bằng tàu điện ngầm.', furigana: [{ kanji: '地下鉄', reading: 'ちかてつ', meaning: 'ĐỊA HẠ THIẾT' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
         { jp: '地下へ下ります。', romaji: 'Chika he orimasu.', vn: 'Tôi xuống tầng hầm.', furigana: [{ kanji: '地下', reading: 'ちか', meaning: 'ĐỊA HẠ' }, { kanji: '下', reading: 'お', meaning: 'HẠ' }] },
-        { jp: '地下は涼しいです。', romaji: 'Chika wa suzushii desu.', vn: 'Tầng hầm mát mẻ.', furigana: [{ kanji: '地下', reading: 'ちか', meaning: 'ĐỊA HẠ' }, { kanji: '涼', reading: 'すず', meaning: 'LƯƠNG' }],
+        {
+          jp: '地下は涼しいです。', romaji: 'Chika wa suzushii desu.', vn: 'Tầng hầm mát mẻ.', furigana: [{ kanji: '地下', reading: 'ちか', meaning: 'ĐỊA HẠ' }, { kanji: '涼', reading: 'すず', meaning: 'LƯƠNG' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '地', onyomi: 'チ (chi), ジ (ji)', kunyomi: '', meaning: 'Đất', sinoVietnamese: 'ĐỊA', strokes: 6, jlpt: 'N4', radicals: '土 (thổ)', mnemonic: 'Đất (土) cũng (也) là nơi để sống.',
           exampleSentences: [
@@ -9693,10 +9708,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '部屋は何階にありますか。', romaji: 'Heya wa nangai ni arimasu ka.', vn: 'Phòng ở tầng mấy?', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }, { kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }] },
         { jp: '何階まで行きますか。', romaji: 'Nangai made ikimasu ka.', vn: 'Anh đi đến tầng mấy?', furigana: [{ kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }] },
         { jp: '食堂は何階ですか。', romaji: 'Shokudou wa nangai desu ka.', vn: 'Nhà ăn ở tầng mấy?', furigana: [{ kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' }, { kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }] },
-        { jp: 'あなたの部屋は何階ですか。', romaji: 'Anata no heya wa nangai desu ka.', vn: 'Phòng của bạn ở tầng mấy?', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }, { kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }],
+        {
+          jp: 'あなたの部屋は何階ですか。', romaji: 'Anata no heya wa nangai desu ka.', vn: 'Phòng của bạn ở tầng mấy?', furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }, { kanji: '何階', reading: 'なんがい', meaning: 'HÀ GIAI' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '何', onyomi: 'カ (ka)', kunyomi: 'なに (nani)', meaning: 'Cái gì', sinoVietnamese: 'HÀ', strokes: 7, jlpt: 'N5', radicals: '人 (nhân)', mnemonic: 'Người (亻) khả (可) ái.',
           exampleSentences: [
@@ -9732,10 +9748,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '千円かかります。', romaji: 'Sen-en kakarimasu.', vn: 'Tốn 1000 yên.', furigana: [{ kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
         { jp: '一万円札。', romaji: 'Ichiman-en satsu.', vn: 'Tờ 1 vạn yên.', furigana: [{ kanji: '一', reading: 'いち', meaning: 'NHẤT' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }, { kanji: '札', reading: 'さつ', meaning: 'TRÁT' }] },
         { jp: '何円ですか。', romaji: 'Nan-en desu ka.', vn: 'Bao nhiêu yên?', furigana: [{ kanji: '何', reading: 'なん', meaning: 'HÀ' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
-        { jp: '円が安いです。', romaji: 'En ga yasui desu.', vn: 'Đồng yên rẻ.', furigana: [{ kanji: '円', reading: 'えん', meaning: 'VIÊN' }, { kanji: '安', reading: 'やす', meaning: 'AN' }],
+        {
+          jp: '円が安いです。', romaji: 'En ga yasui desu.', vn: 'Đồng yên rẻ.', furigana: [{ kanji: '円', reading: 'えん', meaning: 'VIÊN' }, { kanji: '安', reading: 'やす', meaning: 'AN' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '円', onyomi: 'エン (en)', kunyomi: 'まる.い (marui)', meaning: 'Tròn, yên', sinoVietnamese: 'VIÊN', strokes: 4, jlpt: 'N5', radicals: '冂 (quynh)', mnemonic: 'Một chiếc nắp (冂) tròn.',
           exampleSentences: [
@@ -9771,10 +9788,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '六百円です。', romaji: 'Roppyaku-en desu.', vn: '600 yên.', furigana: [{ kanji: '六', reading: 'ろっ', meaning: 'LỤC' }, { kanji: '百', reading: 'ぴゃく', meaning: 'BÁCH' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
         { jp: '八百円です。', romaji: 'Happyaku-en desu.', vn: '800 yên.', furigana: [{ kanji: '八', reading: 'はっ', meaning: 'BÁT' }, { kanji: '百', reading: 'ぴゃく', meaning: 'BÁCH' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
         { jp: '百年前。', romaji: 'Hyakunen mae.', vn: '100 năm trước.', furigana: [{ kanji: '百', reading: 'ひゃく', meaning: 'BÁCH' }, { kanji: '年', reading: 'ねん', meaning: 'NIÊN' }, { kanji: '前', reading: 'まえ', meaning: 'TIỀN' }] },
-        { jp: '百パーセント。', romaji: 'Hyaku pa-sento.', vn: '100 phần trăm.', furigana: [{ kanji: '百', reading: 'ひゃく', meaning: 'BÁCH' }],
+        {
+          jp: '百パーセント。', romaji: 'Hyaku pa-sento.', vn: '100 phần trăm.', furigana: [{ kanji: '百', reading: 'ひゃく', meaning: 'BÁCH' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '百', onyomi: 'ヒャク (hyaku)', kunyomi: '', meaning: 'Trăm', sinoVietnamese: 'BÁCH', strokes: 6, jlpt: 'N5', radicals: '白 (bạch)', mnemonic: 'Một (一) màu trắng (白) là bạch.',
           exampleSentences: [
@@ -9798,10 +9816,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '八千円です。', romaji: 'Hassen-en desu.', vn: '8000 yên.', furigana: [{ kanji: '八', reading: 'はっ', meaning: 'BÁT' }, { kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
         { jp: '一千万円。', romaji: 'Issinman-en.', vn: '10 triệu yên.', furigana: [{ kanji: '一', reading: 'いっ', meaning: 'NHẤT' }, { kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
         { jp: '千葉県。', romaji: 'Chiba-ken.', vn: 'Tỉnh Chiba.', furigana: [{ kanji: '千葉', reading: 'ちば', meaning: 'THIÊN DIỆP' }, { kanji: '県', reading: 'けん', meaning: 'HUYỆN' }] },
-        { jp: '二千円です。', romaji: 'Nisen-en desu.', vn: '2000 yên.', furigana: [{ kanji: '二', reading: 'に', meaning: 'NHỊ' }, { kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }],
+        {
+          jp: '二千円です。', romaji: 'Nisen-en desu.', vn: '2000 yên.', furigana: [{ kanji: '二', reading: 'に', meaning: 'NHỊ' }, { kanji: '千', reading: 'せん', meaning: 'THIÊN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '千', onyomi: 'セン (sen)', kunyomi: 'ち (chi)', meaning: 'Nghìn', sinoVietnamese: 'THIÊN', strokes: 3, jlpt: 'N5', radicals: '十 (thập)', mnemonic: 'Mười (十) người (丿) là một thiên.',
           exampleSentences: [
@@ -9825,10 +9844,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '万年筆。', romaji: 'Mannenhitsu.', vn: 'Bút máy.', furigana: [{ kanji: '万年筆', reading: 'まんねんひつ', meaning: 'VẠN NIÊN BÚT' }] },
         { jp: '万歳。', romaji: 'Banzai.', vn: 'Vạn tuế.', furigana: [{ kanji: '万歳', reading: 'ばんざい', meaning: 'VẠN TUẾ' }] },
         { jp: '五万円です。', romaji: 'Goman-en desu.', vn: '5 vạn yên.', furigana: [{ kanji: '五', reading: 'ご', meaning: 'NGŨ' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '円', reading: 'えん', meaning: 'VIÊN' }] },
-        { jp: '一万歩。', romaji: 'Ichimanpo.', vn: '1 vạn bước.', furigana: [{ kanji: '一', reading: 'いち', meaning: 'NHẤT' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '歩', reading: 'ぽ', meaning: 'BỘ' }],
+        {
+          jp: '一万歩。', romaji: 'Ichimanpo.', vn: '1 vạn bước.', furigana: [{ kanji: '一', reading: 'いち', meaning: 'NHẤT' }, { kanji: '万', reading: 'まん', meaning: 'VẠN' }, { kanji: '歩', reading: 'ぽ', meaning: 'BỘ' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '万', onyomi: 'マン (man)', kunyomi: '', meaning: 'Vạn', sinoVietnamese: 'VẠN', strokes: 3, jlpt: 'N5', radicals: '一 (nhất)', mnemonic: 'Một (一) cái bao (勹) lớn.',
           exampleSentences: [
@@ -9873,10 +9893,11 @@ export const lesson3Data: LessonDetail = {
         { jp: '写真を見せてください。', romaji: 'Shashin wo misete kudasai.', vn: 'Cho tôi xem ảnh.', furigana: [{ kanji: '写真', reading: 'しゃしん', meaning: 'TẢ CHÂN' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }] },
         { jp: '切符を見せてください。', romaji: 'Kippu wo misete kudasai.', vn: 'Cho tôi xem vé.', furigana: [{ kanji: '切符', reading: 'きっぷ', meaning: 'THIẾT PHÙ' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }] },
         { jp: 'そのかばんを見せてください。', romaji: 'Sono kaban wo misete kudasai.', vn: 'Cho tôi xem cái túi đó.', furigana: [{ kanji: '見', reading: 'み', meaning: 'KIẾN' }] },
-        { jp: 'メニューを見せてください。', romaji: 'Menyu- wo misete kudasai.', vn: 'Cho tôi xem thực đơn.', furigana: [{ kanji: '見', reading: 'み', meaning: 'KIẾN' }],
+        {
+          jp: 'メニューを見せてください。', romaji: 'Menyu- wo misete kudasai.', vn: 'Cho tôi xem thực đơn.', furigana: [{ kanji: '見', reading: 'み', meaning: 'KIẾN' }],
         },
       ],
-    kanjiDetails: [
+      kanjiDetails: [
         {
           kanji: '見', onyomi: 'ケン (ken)', kunyomi: 'み.る (miru)', meaning: 'Nhìn, xem', sinoVietnamese: 'KIẾN', strokes: 7, jlpt: 'N5', radicals: '見 (kiến)', mnemonic: 'Mắt (目) nhìn người đi (儿).', exampleSentences: [],
           components: [{ char: '目', meaning: 'mắt' }, { char: '儿', meaning: 'đi' }]
@@ -14102,9 +14123,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "HÀNH"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "行",
           onyomi: "コウ (kou), ギョウ (gyou)",
@@ -14228,9 +14249,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "LAI"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "来",
           onyomi: "ライ (rai)",
@@ -14349,9 +14370,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "QUY"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "帰",
           onyomi: "キ (ki)",
@@ -14480,9 +14501,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "HỌC HIỆU"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "学",
           onyomi: "ガク (gaku)",
@@ -14724,9 +14745,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "ĐẠI"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "駅",
           onyomi: "エキ (eki)",
@@ -14850,9 +14871,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "THỜI GIAN"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "飛",
           onyomi: "ヒ (hi)",
@@ -15017,9 +15038,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "LẠC"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "船",
           onyomi: "セン (sen)",
@@ -15159,9 +15180,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "SỬ"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "電",
           onyomi: "デン (den)",
@@ -15321,9 +15342,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "HÀNH"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "地",
           onyomi: "チ (chi), ジ (ji)",
@@ -15501,9 +15522,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "TIỆN LỢI"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "新",
           onyomi: "シン (shin)",
@@ -15851,9 +15872,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "THỪA"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "自",
           onyomi: "ジ (ji), シ (shi)",
@@ -16019,9 +16040,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "HÀNH"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "歩",
           onyomi: "ホ (ho), ブ (bu)",
@@ -16150,9 +16171,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "NHẬT BẢN NHÂN"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "人",
           onyomi: "ジン (jin), ニン (nin)",
@@ -16285,9 +16306,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "HỮU ĐẠT"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "友",
           onyomi: "ユウ (yuu)",
@@ -16447,9 +16468,9 @@ export const lesson5Data: LessonDetail = {
               meaning: "QUY"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           kanji: "彼",
           onyomi: "ヒ (hi)",
@@ -26489,9 +26510,9 @@ const lesson7Data: LessonDetail = {
               "reading": "き"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           "kanji": "切",
           "onyomi": "セツ",
@@ -26868,9 +26889,9 @@ const lesson7Data: LessonDetail = {
               "reading": "か"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           "kanji": "貸",
           "onyomi": "タイ",
@@ -26998,9 +27019,9 @@ const lesson7Data: LessonDetail = {
               "reading": "か"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           "kanji": "借",
           "onyomi": "シャク",
@@ -27136,9 +27157,9 @@ const lesson7Data: LessonDetail = {
               "reading": "おし"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           "kanji": "教",
           "onyomi": "キョウ",
@@ -27422,9 +27443,9 @@ const lesson7Data: LessonDetail = {
               "reading": "つな"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           "kanji": "手",
           "onyomi": "シュ",
@@ -28320,9 +28341,9 @@ const lesson7Data: LessonDetail = {
           ]
         }
       ],
-      },
-    ],
-    kanjiDetails: [
+    },
+  ],
+  kanjiDetails: [
     {
       "kanji": "紙",
       "onyomi": "シ",
@@ -28359,2111 +28380,2182 @@ const lesson7Data: LessonDetail = {
         }
       ]
     },
-  {
-    word: '\u306f\u306a', kanji: '\u82b1', romaji: 'hana', mean: 'Hoa', examples: [
-      {
-        "jp": "花をあげます。",
-        "vn": "Tặng hoa.",
-        "furigana": [
-          {
-            "kanji": "花",
-            "reading": "はな"
-          }
-        ]
-      },
-      {
-        "jp": "花をもらいました。",
-        "vn": "Đã nhận hoa.",
-        "furigana": [
-          {
-            "kanji": "花",
-            "reading": "はな"
-          }
-        ]
-      },
-      {
-        "jp": "綺麗な花",
-        "vn": "Hoa đẹp.",
-        "furigana": [
-          {
-            "kanji": "綺麗",
-            "reading": "きれい"
-          },
-          {
-            "kanji": "花",
-            "reading": "はな"
-          }
-        ]
-      },
-      {
-        "jp": "桜の花",
-        "vn": "Hoa anh đào.",
-        "furigana": [
-          {
-            "kanji": "桜",
-            "reading": "さくら"
-          },
-          {
-            "kanji": "花",
-            "reading": "はな"
-          }
-        ]
-      },
-      {
-        "jp": "花屋",
-        "vn": "Cửa hàng hoa.",
-        "furigana": [
-          {
-            "kanji": "花屋",
-            "reading": "はなや"
-          }
-        ]
-      },
-      {
-        "jp": "花を飾ります。",
-        "vn": "Trang trí hoa.",
-        "furigana": [
-          {
-            "kanji": "花",
-            "reading": "はな"
-          },
-          {
-            "kanji": "飾",
-            "reading": "かざ"
-          }
-        ],
-      },
-    ],
-    kanjiDetails: [
-      {
-        "kanji": "花",
-        "onyomi": "カ",
-        "kunyomi": "はな",
-        "meaning": "Hoa",
-        "strokes": 7,
-        "jlpt": "N4",
-        "radicals": "艸 (cỏ)",
-        "components": [
-          {
-            "char": "艹",
-            "meaning": "cỏ/thảo"
-          },
-          {
-            "char": "化",
-            "meaning": "hóa/biến đổi"
-          }
-        ],
-        "mnemonic": "Cỏ (艹) biến hóa (化) thành hoa (花).",
-        "exampleSentences": [
-          {
-            "jp": "花をあげます。",
-            "vn": "Tặng hoa.",
-            "furigana": [
-              {
-                "kanji": "花",
-                "reading": "はな"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    word: 'シャツ', kanji: 'シャツ', romaji: 'shatsu', mean: 'Áo sơ mi', examples: [
-      {
-        "jp": "シャツを着ます。",
-        "vn": "Mặc áo sơ mi.",
-        "furigana": [
-          {
-            "kanji": "着",
-            "reading": "き"
-        }
-        ]
-      },
-      {
-        "jp": "白いシャツ",
-        "vn": "Áo sơ mi trắng.",
-        "furigana": [
-          {
-            "kanji": "白",
-            "reading": "しろ"
-        }
-        ]
-      },
-      {
-        "jp": "シャツを洗います。",
-        "vn": "Giặt áo sơ mi.",
-        "furigana": [
-          {
-            "kanji": "洗",
-            "reading": "あら"
-        }
-        ]
-      },
-      {
-        "jp": "シャツをアイロンします。",
-        "vn": "Là áo sơ mi.",
-        "furigana": []
-      },
-      {
-        "jp": "新しいシャツ",
-        "vn": "Áo sơ mi mới.",
-        "furigana": [
-          {
-            "kanji": "新",
-            "reading": "あたら"
-        }
-        ]
-      },
-      {
-        "jp": "シャツを買いました。",
-        "vn": "Đã mua áo sơ mi.",
-        "furigana": [
-          {
-            "kanji": "買",
-            "reading": "か"
-        }
-        ]
-      }
-    ]
-  },
-  {
-    word: 'プレゼント', kanji: 'プレゼント', romaji: 'purezento', mean: 'Quà tặng', examples: [
-      {
-        "jp": "プレゼントをあげます。",
-        "vn": "Tặng quà.",
-        "furigana": []
-      },
-      {
-        "jp": "プレゼントをもらいます。",
-        "vn": "Nhận quà.",
-        "furigana": []
-      },
-      {
-        "jp": "誕生日のプレゼント",
-        "vn": "Quà sinh nhật.",
-        "furigana": [
-          {
-            "kanji": "誕生日",
-            "reading": "たんじょうび"
-        }
-        ]
-      },
-      {
-        "jp": "素敵なプレゼント",
-        "vn": "Món quà tuyệt vời.",
-        "furigana": [
-          {
-            "kanji": "素敵",
-            "reading": "すてき"
-        }
-        ]
-      },
-      {
-        "jp": "プレゼントを選びます。",
-        "vn": "Chọn quà.",
-        "furigana": [
-          {
-            "kanji": "選",
-            "reading": "えら"
-        }
-        ]
-      },
-      {
-        "jp": "プレゼントを開けます。",
-        "vn": "Mở quà.",
-        "furigana": [
-          {
-            "kanji": "開",
-            "reading": "あ"
-        }
-        ]
-      }
-    ]
-  },
-  {
-    word: 'にもつ', kanji: '荷物', romaji: 'nimotsu', mean: 'Đồ đạc, hành lý', examples: [
-      {
-        "jp": "荷物を送ります。",
-        "vn": "Gửi hành lý.",
-        "furigana": [
-          {
-            "kanji": "荷物",
-            "reading": "にもつ"
-        },
-          {
-            "kanji": "送",
-            "reading": "おく"
-        }
-        ]
-      },
-      {
-        "jp": "荷物を持ちます。",
-        "vn": "Mang hành lý.",
-        "furigana": [
-          {
-            "kanji": "荷物",
-            "reading": "にもつ"
-        },
-          {
-            "kanji": "持",
-            "reading": "も"
-        }
-        ]
-      },
-      {
-        "jp": "重い荷物",
-        "vn": "Hành lý nặng.",
-        "furigana": [
-          {
-            "kanji": "重",
-            "reading": "おも"
-        },
-          {
-            "kanji": "荷物",
-            "reading": "にもつ"
-        }
-        ]
-      },
-      {
-        "jp": "荷物が届きました。",
-        "vn": "Hành lý đã đến.",
-        "furigana": [
-          {
-            "kanji": "荷物",
-            "reading": "にもつ"
-        },
-          {
-            "kanji": "届",
-            "reading": "とど"
-        }
-        ]
-      },
-      {
-        "jp": "荷物を整理します。",
-        "vn": "Sắp xếp hành lý.",
-        "furigana": [
-          {
-            "kanji": "荷物",
-            "reading": "にもつ"
-        },
-          {
-            "kanji": "整理",
-            "reading": "せいり"
-        }
-        ]
-      },
-      {
-        "jp": "手荷物",
-        "vn": "Hành lý xách tay.",
-        "furigana": [
-          {
-            "kanji": "手荷物",
-            "reading": "てにもつ"
-        }
-        ]
-      }
-    ],
-    kanjiDetails: [
-  {
-    "kanji": "荷",
-    "onyomi": "カ",
-    "kunyomi": "に",
-    "meaning": "Hành lý",
-    "strokes": 10,
-    "jlpt": "N4",
-    "radicals": "艸 (cỏ)",
-    "components": [
-      {
-        "char": "艹",
-        "meaning": "cỏ"
-      },
-      {
-        "char": "何",
-        "meaning": "cái gì"
-      }
-    ],
-    "mnemonic": "Cái gì (何) để trên cỏ (艹)? Là hành lý (荷).",
-    "exampleSentences": [
-      {
-        "jp": "荷物を送ります。",
-        "vn": "Gửi hành lý.",
-        "furigana": [
-          {
-            "kanji": "荷物",
-            "reading": "にもつ"
-          },
-          {
-            "kanji": "送",
-            "reading": "おく"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "物",
-    "onyomi": "ブツ",
-    "kunyomi": "もの",
-    "meaning": "Vật",
-    "strokes": 8,
-    "jlpt": "N5",
-    "radicals": "牛 (bò)",
-    "components": [
-      {
-        "char": "牛",
-        "meaning": "bò"
-      },
-      {
-        "char": "勿",
-        "meaning": "chớ"
-      }
-    ],
-    "mnemonic": "Đừng (勿) coi con bò (牛) là một đồ vật (物) vô tri.",
-    "exampleSentences": [
-      {
-        "jp": "食べ物",
-        "vn": "Đồ ăn.",
-        "furigana": [
-          {
-            "kanji": "食",
-            "reading": "た"
-          },
-          {
-            "kanji": "物",
-            "reading": "もの"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'おかね', kanji: 'お金', romaji: 'okane', mean: 'Tiền', examples: [
     {
-      "jp": "お金がありません。",
-      "vn": "Không có tiền.",
-      "furigana": [
+      word: '\u306f\u306a', kanji: '\u82b1', romaji: 'hana', mean: 'Hoa', examples: [
         {
-          "kanji": "金",
-          "reading": "かね"
-        }
-      ]
-    },
-    {
-      "jp": "お金を払います。",
-      "vn": "Trả tiền.",
-      "furigana": [
-        {
-          "kanji": "金",
-          "reading": "かね"
+          "jp": "花をあげます。",
+          "vn": "Tặng hoa.",
+          "furigana": [
+            {
+              "kanji": "花",
+              "reading": "はな"
+            }
+          ]
         },
         {
-          "kanji": "払",
-          "reading": "はら"
-        }
-      ]
-    },
-    {
-      "jp": "お金を借ります。",
-      "vn": "Vay tiền.",
-      "furigana": [
-        {
-          "kanji": "金",
-          "reading": "かね"
+          "jp": "花をもらいました。",
+          "vn": "Đã nhận hoa.",
+          "furigana": [
+            {
+              "kanji": "花",
+              "reading": "はな"
+            }
+          ]
         },
         {
-          "kanji": "借",
-          "reading": "か"
-        }
-      ]
-    },
-    {
-      "jp": "お金を貸します。",
-      "vn": "Cho vay tiền.",
-      "furigana": [
-        {
-          "kanji": "金",
-          "reading": "かね"
+          "jp": "綺麗な花",
+          "vn": "Hoa đẹp.",
+          "furigana": [
+            {
+              "kanji": "綺麗",
+              "reading": "きれい"
+            },
+            {
+              "kanji": "花",
+              "reading": "はな"
+            }
+          ]
         },
         {
-          "kanji": "貸",
-          "reading": "か"
-        }
-      ]
-    },
-    {
-      "jp": "お金をおろします。",
-      "vn": "Rút tiền.",
-      "furigana": [
-        {
-          "kanji": "金",
-          "reading": "かね"
-        }
-      ]
-    },
-    {
-      "jp": "お金を貯めます。",
-      "vn": "Tiết kiệm tiền.",
-      "furigana": [
-        {
-          "kanji": "金",
-          "reading": "かね"
+          "jp": "桜の花",
+          "vn": "Hoa anh đào.",
+          "furigana": [
+            {
+              "kanji": "桜",
+              "reading": "さくら"
+            },
+            {
+              "kanji": "花",
+              "reading": "はな"
+            }
+          ]
         },
         {
-          "kanji": "貯",
-          "reading": "た"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "金",
-    "onyomi": "キン",
-    "kunyomi": "かね",
-    "meaning": "Vàng, tiền",
-    "strokes": 8,
-    "jlpt": "N5",
-    "radicals": "金 (vàng)",
-    "components": [
-      {
-        "char": "金",
-        "meaning": "vàng"
-      }
-    ],
-    "mnemonic": "Người ta (人) cất giấu vàng (trong đất).",
-    "exampleSentences": [
-      {
-        "jp": "お金があります。",
-        "vn": "Có tiền.",
-        "furigana": [
-          {
-            "kanji": "金",
-            "reading": "かね"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'きっぷ', kanji: '切符', romaji: 'kippu', mean: 'Vé', examples: [
-    {
-      "jp": "切符を買います。",
-      "vn": "Mua vé.",
-      "furigana": [
-        {
-          "kanji": "切符",
-          "reading": "きっぷ"
+          "jp": "花屋",
+          "vn": "Cửa hàng hoa.",
+          "furigana": [
+            {
+              "kanji": "花屋",
+              "reading": "はなや"
+            }
+          ]
         },
         {
-          "kanji": "買",
-          "reading": "か"
-        }
-      ]
-    },
-    {
-      "jp": "電車の切符",
-      "vn": "Vé tàu.",
-      "furigana": [
-        {
-          "kanji": "電車",
-          "reading": "でんしゃ"
+          "jp": "花を飾ります。",
+          "vn": "Trang trí hoa.",
+          "furigana": [
+            {
+              "kanji": "花",
+              "reading": "はな"
+            },
+            {
+              "kanji": "飾",
+              "reading": "かざ"
+            }
+          ],
         },
-        {
-          "kanji": "切符",
-          "reading": "きっぷ"
-        }
-      ]
-    },
-    {
-      "jp": "切符をなくしました。",
-      "vn": "Làm mất vé.",
-      "furigana": [
-        {
-          "kanji": "切符",
-          "reading": "きっぷ"
-        }
-      ]
-    },
-    {
-      "jp": "切符を見せます。",
-      "vn": "Cho xem vé.",
-      "furigana": [
-        {
-          "kanji": "切符",
-          "reading": "きっぷ"
-        },
-        {
-          "kanji": "見",
-          "reading": "み"
-        }
-      ]
-    },
-    {
-      "jp": "往復切符",
-      "vn": "Vé khứ hồi.",
-      "furigana": [
-        {
-          "kanji": "往復",
-          "reading": "おうふく"
-        },
-        {
-          "kanji": "切符",
-          "reading": "きっぷ"
-        }
-      ]
-    },
-    {
-      "jp": "片道切符",
-      "vn": "Vé một chiều.",
-      "furigana": [
-        {
-          "kanji": "片道",
-          "reading": "かたみち"
-        },
-        {
-          "kanji": "切符",
-          "reading": "きっぷ"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'クリスマス', kanji: 'クリスマス', romaji: 'kurisumasu', mean: 'Giáng sinh', examples: [
-    {
-      "jp": "クリスマスにパーティーをします。",
-      "vn": "Tổ chức tiệc vào lễ Giáng sinh.",
-      "furigana": []
-    },
-    {
-      "jp": "クリスマスプレゼント",
-      "vn": "Quà Giáng sinh.",
-      "furigana": []
-    },
-    {
-      "jp": "クリスマスのケーキ",
-      "vn": "Bánh kem Giáng sinh.",
-      "furigana": []
-    },
-    {
-      "jp": "メリークリスマス",
-      "vn": "Chúc mừng Giáng sinh.",
-      "furigana": []
-    },
-    {
-      "jp": "クリスマスの飾り",
-      "vn": "Trang trí Giáng sinh.",
-      "furigana": [
-        {
-          "kanji": "飾",
-          "reading": "かざ"
-        }
-      ]
-    },
-    {
-      "jp": "今年はクリスマスに何をしますか。",
-      "vn": "Giáng sinh năm nay bạn làm gì?",
-      "furigana": [
-        {
-          "kanji": "今年",
-          "reading": "ことし"
-        },
-        {
-          "kanji": "何",
-          "reading": "なに"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'ちち', kanji: '父', romaji: 'chichi', mean: 'Bố (dùng khi nói về bố mình)', examples: [
-    {
-      "jp": "父は会社員です。",
-      "vn": "Bố tôi là nhân viên công ty.",
-      "furigana": [
-        {
-          "kanji": "父",
-          "reading": "ちち"
-        },
-        {
-          "kanji": "会社員",
-          "reading": "かいしゃいん"
-        }
-      ]
-    },
-    {
-      "jp": "父にシャツをあげます。",
-      "vn": "Tôi tặng bố áo sơ mi.",
-      "furigana": [
-        {
-          "kanji": "父",
-          "reading": "ちち"
-        }
-      ]
-    },
-    {
-      "jp": "父は元気です。",
-      "vn": "Bố tôi khỏe.",
-      "furigana": [
-        {
-          "kanji": "父",
-          "reading": "ちち"
-        },
-        {
-          "kanji": "元気",
-          "reading": "げんき"
-        }
-      ]
-    },
-    {
-      "jp": "父の誕生日",
-      "vn": "Sinh nhật bố.",
-      "furigana": [
-        {
-          "kanji": "父",
-          "reading": "ちち"
-        },
-        {
-          "kanji": "誕生日",
-          "reading": "たんじょうび"
-        }
-      ]
-    },
-    {
-      "jp": "父と母",
-      "vn": "Bố và mẹ.",
-      "furigana": [
-        {
-          "kanji": "父",
-          "reading": "ちち"
-        },
-        {
-          "kanji": "母",
-          "reading": "はは"
-        }
-      ]
-    },
-    {
-      "jp": "父に電話をかけます。",
-      "vn": "Gọi điện cho bố.",
-      "furigana": [
-        {
-          "kanji": "父",
-          "reading": "ちち"
-        },
-        {
-          "kanji": "電話",
-          "reading": "でんわ"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "父",
-    "onyomi": "フ",
-    "kunyomi": "ちち",
-    "meaning": "Bố",
-    "strokes": 4,
-    "jlpt": "N5",
-    "radicals": "父 (bố)",
-    "components": [
-      {
-        "char": "父",
-        "meaning": "bố"
-      }
-    ],
-    "mnemonic": "Hình ảnh người cha cầm roi dạy con.",
-    "exampleSentences": [
-      {
-        "jp": "私の父は医者です。",
-        "vn": "Bố tôi là bác sĩ.",
-        "furigana": [
-          {
-            "kanji": "私",
-            "reading": "わたし"
-          },
-          {
-            "kanji": "父",
-            "reading": "ちち"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'はは', kanji: '母', romaji: 'haha', mean: 'Mẹ (dùng khi nói về mẹ mình)', examples: [
-    {
-      "jp": "母は料理が上手です。",
-      "vn": "Mẹ tôi nấu ăn giỏi.",
-      "furigana": [
-        {
-          "kanji": "母",
-          "reading": "はは"
-        },
-        {
-          "kanji": "料理",
-          "reading": "りょうり"
-        },
-        {
-          "kanji": "上手",
-          "reading": "じょうず"
-        }
-      ]
-    },
-    {
-      "jp": "母に花をあげます。",
-      "vn": "Tặng hoa cho mẹ.",
-      "furigana": [
-        {
-          "kanji": "母",
-          "reading": "はは"
-        },
+      ],
+      kanjiDetails: [
         {
           "kanji": "花",
-          "reading": "はな"
+          "onyomi": "カ",
+          "kunyomi": "はな",
+          "meaning": "Hoa",
+          "strokes": 7,
+          "jlpt": "N4",
+          "radicals": "艸 (cỏ)",
+          "components": [
+            {
+              "char": "艹",
+              "meaning": "cỏ/thảo"
+            },
+            {
+              "char": "化",
+              "meaning": "hóa/biến đổi"
+            }
+          ],
+          "mnemonic": "Cỏ (艹) biến hóa (化) thành hoa (花).",
+          "exampleSentences": [
+            {
+              "jp": "花をあげます。",
+              "vn": "Tặng hoa.",
+              "furigana": [
+                {
+                  "kanji": "花",
+                  "reading": "はな"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "母の手紙",
-      "vn": "Thư của mẹ.",
-      "furigana": [
+      word: 'シャツ', kanji: 'シャツ', romaji: 'shatsu', mean: 'Áo sơ mi', examples: [
         {
-          "kanji": "母",
-          "reading": "はは"
+          "jp": "シャツを着ます。",
+          "vn": "Mặc áo sơ mi.",
+          "furigana": [
+            {
+              "kanji": "着",
+              "reading": "き"
+            }
+          ]
         },
         {
-          "kanji": "手紙",
-          "reading": "てがみ"
-        }
-      ]
-    },
-    {
-      "jp": "母の日",
-      "vn": "Ngày của mẹ.",
-      "furigana": [
-        {
-          "kanji": "母",
-          "reading": "はは"
+          "jp": "白いシャツ",
+          "vn": "Áo sơ mi trắng.",
+          "furigana": [
+            {
+              "kanji": "白",
+              "reading": "しろ"
+            }
+          ]
         },
         {
-          "kanji": "日",
-          "reading": "ひ"
-        }
-      ]
-    },
-    {
-      "jp": "母は先生です。",
-      "vn": "Mẹ tôi là giáo viên.",
-      "furigana": [
-        {
-          "kanji": "母",
-          "reading": "はは"
+          "jp": "シャツを洗います。",
+          "vn": "Giặt áo sơ mi.",
+          "furigana": [
+            {
+              "kanji": "洗",
+              "reading": "あら"
+            }
+          ]
         },
         {
-          "kanji": "先生",
-          "reading": "せんせい"
-        }
-      ]
-    },
-    {
-      "jp": "母に習います。",
-      "vn": "Học từ mẹ.",
-      "furigana": [
-        {
-          "kanji": "母",
-          "reading": "はは"
+          "jp": "シャツをアイロンします。",
+          "vn": "Là áo sơ mi.",
+          "furigana": []
         },
         {
-          "kanji": "習",
-          "reading": "なら"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "母",
-    "onyomi": "ボ",
-    "kunyomi": "はは",
-    "meaning": "Mẹ",
-    "strokes": 5,
-    "jlpt": "N5",
-    "radicals": "毋 (chớ/đừng)",
-    "components": [
-      {
-        "char": "母",
-        "meaning": "mẹ"
-      }
-    ],
-    "mnemonic": "Hình ảnh người mẹ đang cho con bú.",
-    "exampleSentences": [
-      {
-        "jp": "私の母は先生です。",
-        "vn": "Mẹ tôi là giáo viên.",
-        "furigana": [
-          {
-            "kanji": "私",
-            "reading": "わたし"
-          },
-          {
-            "kanji": "母",
-            "reading": "はは"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'おとうさん', kanji: 'お父さん', romaji: 'otousan', mean: 'Bố (dùng khi nói về bố người khác)', examples: [
-    {
-      "jp": "お父さんはお元気ですか。",
-      "vn": "Bố bạn có khỏe không?",
-      "furigana": [
-        {
-          "kanji": "父",
-          "reading": "とう"
+          "jp": "新しいシャツ",
+          "vn": "Áo sơ mi mới.",
+          "furigana": [
+            {
+              "kanji": "新",
+              "reading": "あたら"
+            }
+          ]
         },
         {
-          "kanji": "元気",
-          "reading": "げんき"
+          "jp": "シャツを買いました。",
+          "vn": "Đã mua áo sơ mi.",
+          "furigana": [
+            {
+              "kanji": "買",
+              "reading": "か"
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "田中さんのお父さん",
-      "vn": "Bố của anh Tanaka.",
-      "furigana": [
+      word: 'プレゼント', kanji: 'プレゼント', romaji: 'purezento', mean: 'Quà tặng', examples: [
         {
-          "kanji": "父",
-          "reading": "とう"
-        }
-      ]
-    },
-    {
-      "jp": "お父さんは何歳ですか。",
-      "vn": "Bố bạn bao nhiêu tuổi?",
-      "furigana": [
-        {
-          "kanji": "父",
-          "reading": "とう"
+          "jp": "プレゼントをあげます。",
+          "vn": "Tặng quà.",
+          "furigana": []
         },
         {
-          "kanji": "何歳",
-          "reading": "なんさい"
-        }
-      ]
-    },
-    {
-      "jp": "お父さんと一緒に",
-      "vn": "Cùng với bố.",
-      "furigana": [
-        {
-          "kanji": "父",
-          "reading": "とう"
+          "jp": "プレゼントをもらいます。",
+          "vn": "Nhận quà.",
+          "furigana": []
         },
         {
-          "kanji": "一緒",
-          "reading": "いっしょ"
-        }
-      ]
-    },
-    {
-      "jp": "優しいお父さん",
-      "vn": "Ông bố hiền lành.",
-      "furigana": [
-        {
-          "kanji": "優",
-          "reading": "やさ"
+          "jp": "誕生日のプレゼント",
+          "vn": "Quà sinh nhật.",
+          "furigana": [
+            {
+              "kanji": "誕生日",
+              "reading": "たんじょうび"
+            }
+          ]
         },
         {
-          "kanji": "父",
-          "reading": "とう"
-        }
-      ]
-    },
-    {
-      "jp": "お父さんの仕事",
-      "vn": "Công việc của bố.",
-      "furigana": [
-        {
-          "kanji": "父",
-          "reading": "とう"
+          "jp": "素敵なプレゼント",
+          "vn": "Món quà tuyệt vời.",
+          "furigana": [
+            {
+              "kanji": "素敵",
+              "reading": "すてき"
+            }
+          ]
         },
         {
-          "kanji": "仕事",
-          "reading": "しごと"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'おかあさん', kanji: 'お母さん', romaji: 'okaasan', mean: 'Mẹ (dùng khi nói về mẹ người khác)', examples: [
-    {
-      "jp": "お母さんはいますか。",
-      "vn": "Mẹ bạn có nhà không?",
-      "furigana": [
-        {
-          "kanji": "母",
-          "reading": "かあ"
-        }
-      ]
-    },
-    {
-      "jp": "山田さんのお母さん",
-      "vn": "Mẹ của chị Yamada.",
-      "furigana": [
-        {
-          "kanji": "母",
-          "reading": "かあ"
-        }
-      ]
-    },
-    {
-      "jp": "きれいなお母さん",
-      "vn": "Mẹ (bạn) đẹp.",
-      "furigana": [
-        {
-          "kanji": "母",
-          "reading": "かあ"
-        }
-      ]
-    },
-    {
-      "jp": "お母さんと買い物に行きます。",
-      "vn": "Đi mua sắm với mẹ.",
-      "furigana": [
-        {
-          "kanji": "母",
-          "reading": "かあ"
+          "jp": "プレゼントを選びます。",
+          "vn": "Chọn quà.",
+          "furigana": [
+            {
+              "kanji": "選",
+              "reading": "えら"
+            }
+          ]
         },
         {
-          "kanji": "買",
-          "reading": "か"
+          "jp": "プレゼントを開けます。",
+          "vn": "Mở quà.",
+          "furigana": [
+            {
+              "kanji": "開",
+              "reading": "あ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'にもつ', kanji: '荷物', romaji: 'nimotsu', mean: 'Đồ đạc, hành lý', examples: [
+        {
+          "jp": "荷物を送ります。",
+          "vn": "Gửi hành lý.",
+          "furigana": [
+            {
+              "kanji": "荷物",
+              "reading": "にもつ"
+            },
+            {
+              "kanji": "送",
+              "reading": "おく"
+            }
+          ]
+        },
+        {
+          "jp": "荷物を持ちます。",
+          "vn": "Mang hành lý.",
+          "furigana": [
+            {
+              "kanji": "荷物",
+              "reading": "にもつ"
+            },
+            {
+              "kanji": "持",
+              "reading": "も"
+            }
+          ]
+        },
+        {
+          "jp": "重い荷物",
+          "vn": "Hành lý nặng.",
+          "furigana": [
+            {
+              "kanji": "重",
+              "reading": "おも"
+            },
+            {
+              "kanji": "荷物",
+              "reading": "にもつ"
+            }
+          ]
+        },
+        {
+          "jp": "荷物が届きました。",
+          "vn": "Hành lý đã đến.",
+          "furigana": [
+            {
+              "kanji": "荷物",
+              "reading": "にもつ"
+            },
+            {
+              "kanji": "届",
+              "reading": "とど"
+            }
+          ]
+        },
+        {
+          "jp": "荷物を整理します。",
+          "vn": "Sắp xếp hành lý.",
+          "furigana": [
+            {
+              "kanji": "荷物",
+              "reading": "にもつ"
+            },
+            {
+              "kanji": "整理",
+              "reading": "せいり"
+            }
+          ]
+        },
+        {
+          "jp": "手荷物",
+          "vn": "Hành lý xách tay.",
+          "furigana": [
+            {
+              "kanji": "手荷物",
+              "reading": "てにもつ"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "荷",
+          "onyomi": "カ",
+          "kunyomi": "に",
+          "meaning": "Hành lý",
+          "strokes": 10,
+          "jlpt": "N4",
+          "radicals": "艸 (cỏ)",
+          "components": [
+            {
+              "char": "艹",
+              "meaning": "cỏ"
+            },
+            {
+              "char": "何",
+              "meaning": "cái gì"
+            }
+          ],
+          "mnemonic": "Cái gì (何) để trên cỏ (艹)? Là hành lý (荷).",
+          "exampleSentences": [
+            {
+              "jp": "荷物を送ります。",
+              "vn": "Gửi hành lý.",
+              "furigana": [
+                {
+                  "kanji": "荷物",
+                  "reading": "にもつ"
+                },
+                {
+                  "kanji": "送",
+                  "reading": "おく"
+                }
+              ]
+            }
+          ]
         },
         {
           "kanji": "物",
-          "reading": "もの"
-        },
-        {
-          "kanji": "行",
-          "reading": "い"
+          "onyomi": "ブツ",
+          "kunyomi": "もの",
+          "meaning": "Vật",
+          "strokes": 8,
+          "jlpt": "N5",
+          "radicals": "牛 (bò)",
+          "components": [
+            {
+              "char": "牛",
+              "meaning": "bò"
+            },
+            {
+              "char": "勿",
+              "meaning": "chớ"
+            }
+          ],
+          "mnemonic": "Đừng (勿) coi con bò (牛) là một đồ vật (物) vô tri.",
+          "exampleSentences": [
+            {
+              "jp": "食べ物",
+              "vn": "Đồ ăn.",
+              "furigana": [
+                {
+                  "kanji": "食",
+                  "reading": "た"
+                },
+                {
+                  "kanji": "物",
+                  "reading": "もの"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "お母さんの料理",
-      "vn": "Món ăn mẹ nấu.",
-      "furigana": [
+      word: 'おかね', kanji: 'お金', romaji: 'okane', mean: 'Tiền', examples: [
+        {
+          "jp": "お金がありません。",
+          "vn": "Không có tiền.",
+          "furigana": [
+            {
+              "kanji": "金",
+              "reading": "かね"
+            }
+          ]
+        },
+        {
+          "jp": "お金を払います。",
+          "vn": "Trả tiền.",
+          "furigana": [
+            {
+              "kanji": "金",
+              "reading": "かね"
+            },
+            {
+              "kanji": "払",
+              "reading": "はら"
+            }
+          ]
+        },
+        {
+          "jp": "お金を借ります。",
+          "vn": "Vay tiền.",
+          "furigana": [
+            {
+              "kanji": "金",
+              "reading": "かね"
+            },
+            {
+              "kanji": "借",
+              "reading": "か"
+            }
+          ]
+        },
+        {
+          "jp": "お金を貸します。",
+          "vn": "Cho vay tiền.",
+          "furigana": [
+            {
+              "kanji": "金",
+              "reading": "かね"
+            },
+            {
+              "kanji": "貸",
+              "reading": "か"
+            }
+          ]
+        },
+        {
+          "jp": "お金をおろします。",
+          "vn": "Rút tiền.",
+          "furigana": [
+            {
+              "kanji": "金",
+              "reading": "かね"
+            }
+          ]
+        },
+        {
+          "jp": "お金を貯めます。",
+          "vn": "Tiết kiệm tiền.",
+          "furigana": [
+            {
+              "kanji": "金",
+              "reading": "かね"
+            },
+            {
+              "kanji": "貯",
+              "reading": "た"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "金",
+          "onyomi": "キン",
+          "kunyomi": "かね",
+          "meaning": "Vàng, tiền",
+          "strokes": 8,
+          "jlpt": "N5",
+          "radicals": "金 (vàng)",
+          "components": [
+            {
+              "char": "金",
+              "meaning": "vàng"
+            }
+          ],
+          "mnemonic": "Người ta (人) cất giấu vàng (trong đất).",
+          "exampleSentences": [
+            {
+              "jp": "お金があります。",
+              "vn": "Có tiền.",
+              "furigana": [
+                {
+                  "kanji": "金",
+                  "reading": "かね"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'きっぷ', kanji: '切符', romaji: 'kippu', mean: 'Vé', examples: [
+        {
+          "jp": "切符を買います。",
+          "vn": "Mua vé.",
+          "furigana": [
+            {
+              "kanji": "切符",
+              "reading": "きっぷ"
+            },
+            {
+              "kanji": "買",
+              "reading": "か"
+            }
+          ]
+        },
+        {
+          "jp": "電車の切符",
+          "vn": "Vé tàu.",
+          "furigana": [
+            {
+              "kanji": "電車",
+              "reading": "でんしゃ"
+            },
+            {
+              "kanji": "切符",
+              "reading": "きっぷ"
+            }
+          ]
+        },
+        {
+          "jp": "切符をなくしました。",
+          "vn": "Làm mất vé.",
+          "furigana": [
+            {
+              "kanji": "切符",
+              "reading": "きっぷ"
+            }
+          ]
+        },
+        {
+          "jp": "切符を見せます。",
+          "vn": "Cho xem vé.",
+          "furigana": [
+            {
+              "kanji": "切符",
+              "reading": "きっぷ"
+            },
+            {
+              "kanji": "見",
+              "reading": "み"
+            }
+          ]
+        },
+        {
+          "jp": "往復切符",
+          "vn": "Vé khứ hồi.",
+          "furigana": [
+            {
+              "kanji": "往復",
+              "reading": "おうふく"
+            },
+            {
+              "kanji": "切符",
+              "reading": "きっぷ"
+            }
+          ]
+        },
+        {
+          "jp": "片道切符",
+          "vn": "Vé một chiều.",
+          "furigana": [
+            {
+              "kanji": "片道",
+              "reading": "かたみち"
+            },
+            {
+              "kanji": "切符",
+              "reading": "きっぷ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'クリスマス', kanji: 'クリスマス', romaji: 'kurisumasu', mean: 'Giáng sinh', examples: [
+        {
+          "jp": "クリスマスにパーティーをします。",
+          "vn": "Tổ chức tiệc vào lễ Giáng sinh.",
+          "furigana": []
+        },
+        {
+          "jp": "クリスマスプレゼント",
+          "vn": "Quà Giáng sinh.",
+          "furigana": []
+        },
+        {
+          "jp": "クリスマスのケーキ",
+          "vn": "Bánh kem Giáng sinh.",
+          "furigana": []
+        },
+        {
+          "jp": "メリークリスマス",
+          "vn": "Chúc mừng Giáng sinh.",
+          "furigana": []
+        },
+        {
+          "jp": "クリスマスの飾り",
+          "vn": "Trang trí Giáng sinh.",
+          "furigana": [
+            {
+              "kanji": "飾",
+              "reading": "かざ"
+            }
+          ]
+        },
+        {
+          "jp": "今年はクリスマスに何をしますか。",
+          "vn": "Giáng sinh năm nay bạn làm gì?",
+          "furigana": [
+            {
+              "kanji": "今年",
+              "reading": "ことし"
+            },
+            {
+              "kanji": "何",
+              "reading": "なに"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ちち', kanji: '父', romaji: 'chichi', mean: 'Bố (dùng khi nói về bố mình)', examples: [
+        {
+          "jp": "父は会社員です。",
+          "vn": "Bố tôi là nhân viên công ty.",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "ちち"
+            },
+            {
+              "kanji": "会社員",
+              "reading": "かいしゃいん"
+            }
+          ]
+        },
+        {
+          "jp": "父にシャツをあげます。",
+          "vn": "Tôi tặng bố áo sơ mi.",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "ちち"
+            }
+          ]
+        },
+        {
+          "jp": "父は元気です。",
+          "vn": "Bố tôi khỏe.",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "ちち"
+            },
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        },
+        {
+          "jp": "父の誕生日",
+          "vn": "Sinh nhật bố.",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "ちち"
+            },
+            {
+              "kanji": "誕生日",
+              "reading": "たんじょうび"
+            }
+          ]
+        },
+        {
+          "jp": "父と母",
+          "vn": "Bố và mẹ.",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "ちち"
+            },
+            {
+              "kanji": "母",
+              "reading": "はは"
+            }
+          ]
+        },
+        {
+          "jp": "父に電話をかけます。",
+          "vn": "Gọi điện cho bố.",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "ちち"
+            },
+            {
+              "kanji": "電話",
+              "reading": "でんわ"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "父",
+          "onyomi": "フ",
+          "kunyomi": "ちち",
+          "meaning": "Bố",
+          "strokes": 4,
+          "jlpt": "N5",
+          "radicals": "父 (bố)",
+          "components": [
+            {
+              "char": "父",
+              "meaning": "bố"
+            }
+          ],
+          "mnemonic": "Hình ảnh người cha cầm roi dạy con.",
+          "exampleSentences": [
+            {
+              "jp": "私の父は医者です。",
+              "vn": "Bố tôi là bác sĩ.",
+              "furigana": [
+                {
+                  "kanji": "私",
+                  "reading": "わたし"
+                },
+                {
+                  "kanji": "父",
+                  "reading": "ちち"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'はは', kanji: '母', romaji: 'haha', mean: 'Mẹ (dùng khi nói về mẹ mình)', examples: [
+        {
+          "jp": "母は料理が上手です。",
+          "vn": "Mẹ tôi nấu ăn giỏi.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "はは"
+            },
+            {
+              "kanji": "料理",
+              "reading": "りょうり"
+            },
+            {
+              "kanji": "上手",
+              "reading": "じょうず"
+            }
+          ]
+        },
+        {
+          "jp": "母に花をあげます。",
+          "vn": "Tặng hoa cho mẹ.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "はは"
+            },
+            {
+              "kanji": "花",
+              "reading": "はな"
+            }
+          ]
+        },
+        {
+          "jp": "母の手紙",
+          "vn": "Thư của mẹ.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "はは"
+            },
+            {
+              "kanji": "手紙",
+              "reading": "てがみ"
+            }
+          ]
+        },
+        {
+          "jp": "母の日",
+          "vn": "Ngày của mẹ.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "はは"
+            },
+            {
+              "kanji": "日",
+              "reading": "ひ"
+            }
+          ]
+        },
+        {
+          "jp": "母は先生です。",
+          "vn": "Mẹ tôi là giáo viên.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "はは"
+            },
+            {
+              "kanji": "先生",
+              "reading": "せんせい"
+            }
+          ]
+        },
+        {
+          "jp": "母に習います。",
+          "vn": "Học từ mẹ.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "はは"
+            },
+            {
+              "kanji": "習",
+              "reading": "なら"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
         {
           "kanji": "母",
-          "reading": "かあ"
+          "onyomi": "ボ",
+          "kunyomi": "はは",
+          "meaning": "Mẹ",
+          "strokes": 5,
+          "jlpt": "N5",
+          "radicals": "毋 (chớ/đừng)",
+          "components": [
+            {
+              "char": "母",
+              "meaning": "mẹ"
+            }
+          ],
+          "mnemonic": "Hình ảnh người mẹ đang cho con bú.",
+          "exampleSentences": [
+            {
+              "jp": "私の母は先生です。",
+              "vn": "Mẹ tôi là giáo viên.",
+              "furigana": [
+                {
+                  "kanji": "私",
+                  "reading": "わたし"
+                },
+                {
+                  "kanji": "母",
+                  "reading": "はは"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おとうさん', kanji: 'お父さん', romaji: 'otousan', mean: 'Bố (dùng khi nói về bố người khác)', examples: [
+        {
+          "jp": "お父さんはお元気ですか。",
+          "vn": "Bố bạn có khỏe không?",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "とう"
+            },
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
         },
         {
-          "kanji": "料理",
-          "reading": "りょうり"
-        }
-      ]
-    },
-    {
-      "jp": "お母さんを手伝います。",
-      "vn": "Giúp đỡ mẹ.",
-      "furigana": [
-        {
-          "kanji": "母",
-          "reading": "かあ"
+          "jp": "田中さんのお父さん",
+          "vn": "Bố của anh Tanaka.",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "とう"
+            }
+          ]
         },
         {
-          "kanji": "手伝",
-          "reading": "てつだ"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'もう', kanji: 'もう', romaji: 'mou', mean: 'Đã, rồi', examples: [
-    {
-      "jp": "もう昼ごはんを食べましたか。",
-      "vn": "Bạn đã ăn trưa chưa?",
-      "furigana": [
-        {
-          "kanji": "昼",
-          "reading": "ひる"
+          "jp": "お父さんは何歳ですか。",
+          "vn": "Bố bạn bao nhiêu tuổi?",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "とう"
+            },
+            {
+              "kanji": "何歳",
+              "reading": "なんさい"
+            }
+          ]
         },
         {
-          "kanji": "飯",
-          "reading": "はん"
+          "jp": "お父さんと一緒に",
+          "vn": "Cùng với bố.",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "とう"
+            },
+            {
+              "kanji": "一緒",
+              "reading": "いっしょ"
+            }
+          ]
         },
         {
-          "kanji": "食",
-          "reading": "た"
-        }
-      ]
-    },
-    {
-      "jp": "はい、もう食べました。",
-      "vn": "Vâng, tôi ăn rồi.",
-      "furigana": [
-        {
-          "kanji": "食",
-          "reading": "た"
-        }
-      ]
-    },
-    {
-      "jp": "もう帰ります。",
-      "vn": "Tôi về đây (đã đến lúc về).",
-      "furigana": [
-        {
-          "kanji": "帰",
-          "reading": "かえ"
-        }
-      ]
-    },
-    {
-      "jp": "もう12時です。",
-      "vn": "Đã 12 giờ rồi.",
-      "furigana": [
-        {
-          "kanji": "時",
-          "reading": "じ"
-        }
-      ]
-    },
-    {
-      "jp": "もう一度お願いします。",
-      "vn": "Xin nhắc lại một lần nữa.",
-      "furigana": [
-        {
-          "kanji": "一度",
-          "reading": "いちど"
+          "jp": "優しいお父さん",
+          "vn": "Ông bố hiền lành.",
+          "furigana": [
+            {
+              "kanji": "優",
+              "reading": "やさ"
+            },
+            {
+              "kanji": "父",
+              "reading": "とう"
+            }
+          ]
         },
         {
-          "kanji": "願",
-          "reading": "ねが"
+          "jp": "お父さんの仕事",
+          "vn": "Công việc của bố.",
+          "furigana": [
+            {
+              "kanji": "父",
+              "reading": "とう"
+            },
+            {
+              "kanji": "仕事",
+              "reading": "しごと"
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "もう寝ます。",
-      "vn": "Tôi đi ngủ đây.",
-      "furigana": [
+      word: 'おかあさん', kanji: 'お母さん', romaji: 'okaasan', mean: 'Mẹ (dùng khi nói về mẹ người khác)', examples: [
         {
-          "kanji": "寝",
-          "reading": "ね"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'まだ', kanji: 'まだ', romaji: 'mada', mean: 'Chưa', examples: [
-    {
-      "jp": "いいえ、まだです。",
-      "vn": "Không, chưa.",
-      "furigana": []
-    },
-    {
-      "jp": "まだ食べていません。",
-      "vn": "Tôi chưa ăn.",
-      "furigana": [
+          "jp": "お母さんはいますか。",
+          "vn": "Mẹ bạn có nhà không?",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "かあ"
+            }
+          ]
+        },
         {
-          "kanji": "食",
-          "reading": "た"
-        }
-      ]
-    },
-    {
-      "jp": "まだわかりません。",
-      "vn": "Tôi vẫn chưa hiểu.",
-      "furigana": []
-    },
-    {
-      "jp": "まだ子供です。",
-      "vn": "Vẫn còn là trẻ con.",
-      "furigana": [
+          "jp": "山田さんのお母さん",
+          "vn": "Mẹ của chị Yamada.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "かあ"
+            }
+          ]
+        },
         {
-          "kanji": "子供",
-          "reading": "こども"
+          "jp": "きれいなお母さん",
+          "vn": "Mẹ (bạn) đẹp.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "かあ"
+            }
+          ]
+        },
+        {
+          "jp": "お母さんと買い物に行きます。",
+          "vn": "Đi mua sắm với mẹ.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "かあ"
+            },
+            {
+              "kanji": "買",
+              "reading": "か"
+            },
+            {
+              "kanji": "物",
+              "reading": "もの"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "お母さんの料理",
+          "vn": "Món ăn mẹ nấu.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "かあ"
+            },
+            {
+              "kanji": "料理",
+              "reading": "りょうり"
+            }
+          ]
+        },
+        {
+          "jp": "お母さんを手伝います。",
+          "vn": "Giúp đỡ mẹ.",
+          "furigana": [
+            {
+              "kanji": "母",
+              "reading": "かあ"
+            },
+            {
+              "kanji": "手伝",
+              "reading": "てつだ"
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "まだ終わっていません。",
-      "vn": "Vẫn chưa xong.",
-      "furigana": [
+      word: 'もう', kanji: 'もう', romaji: 'mou', mean: 'Đã, rồi', examples: [
         {
-          "kanji": "終",
-          "reading": "お"
+          "jp": "もう昼ごはんを食べましたか。",
+          "vn": "Bạn đã ăn trưa chưa?",
+          "furigana": [
+            {
+              "kanji": "昼",
+              "reading": "ひる"
+            },
+            {
+              "kanji": "飯",
+              "reading": "はん"
+            },
+            {
+              "kanji": "食",
+              "reading": "た"
+            }
+          ]
+        },
+        {
+          "jp": "はい、もう食べました。",
+          "vn": "Vâng, tôi ăn rồi.",
+          "furigana": [
+            {
+              "kanji": "食",
+              "reading": "た"
+            }
+          ]
+        },
+        {
+          "jp": "もう帰ります。",
+          "vn": "Tôi về đây (đã đến lúc về).",
+          "furigana": [
+            {
+              "kanji": "帰",
+              "reading": "かえ"
+            }
+          ]
+        },
+        {
+          "jp": "もう12時です。",
+          "vn": "Đã 12 giờ rồi.",
+          "furigana": [
+            {
+              "kanji": "時",
+              "reading": "じ"
+            }
+          ]
+        },
+        {
+          "jp": "もう一度お願いします。",
+          "vn": "Xin nhắc lại một lần nữa.",
+          "furigana": [
+            {
+              "kanji": "一度",
+              "reading": "いちど"
+            },
+            {
+              "kanji": "願",
+              "reading": "ねが"
+            }
+          ]
+        },
+        {
+          "jp": "もう寝ます。",
+          "vn": "Tôi đi ngủ đây.",
+          "furigana": [
+            {
+              "kanji": "寝",
+              "reading": "ね"
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "まだ時間があります。",
-      "vn": "Vẫn còn thời gian.",
-      "furigana": [
+      word: 'まだ', kanji: 'まだ', romaji: 'mada', mean: 'Chưa', examples: [
         {
-          "kanji": "時間",
-          "reading": "じかん"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'これから', kanji: 'これから', romaji: 'korekara', mean: 'Từ bây giờ', examples: [
-    {
-      "jp": "これから食べます。",
-      "vn": "Bây giờ tôi sẽ ăn.",
-      "furigana": [
+          "jp": "いいえ、まだです。",
+          "vn": "Không, chưa.",
+          "furigana": []
+        },
         {
-          "kanji": "食",
-          "reading": "た"
+          "jp": "まだ食べていません。",
+          "vn": "Tôi chưa ăn.",
+          "furigana": [
+            {
+              "kanji": "食",
+              "reading": "た"
+            }
+          ]
+        },
+        {
+          "jp": "まだわかりません。",
+          "vn": "Tôi vẫn chưa hiểu.",
+          "furigana": []
+        },
+        {
+          "jp": "まだ子供です。",
+          "vn": "Vẫn còn là trẻ con.",
+          "furigana": [
+            {
+              "kanji": "子供",
+              "reading": "こども"
+            }
+          ]
+        },
+        {
+          "jp": "まだ終わっていません。",
+          "vn": "Vẫn chưa xong.",
+          "furigana": [
+            {
+              "kanji": "終",
+              "reading": "お"
+            }
+          ]
+        },
+        {
+          "jp": "まだ時間があります。",
+          "vn": "Vẫn còn thời gian.",
+          "furigana": [
+            {
+              "kanji": "時間",
+              "reading": "じかん"
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "これから行きます。",
-      "vn": "Bây giờ tôi sẽ đi.",
-      "furigana": [
+      word: 'これから', kanji: 'これから', romaji: 'korekara', mean: 'Từ bây giờ', examples: [
+        {
+          "jp": "これから食べます。",
+          "vn": "Bây giờ tôi sẽ ăn.",
+          "furigana": [
+            {
+              "kanji": "食",
+              "reading": "た"
+            }
+          ]
+        },
+        {
+          "jp": "これから行きます。",
+          "vn": "Bây giờ tôi sẽ đi.",
+          "furigana": [
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "これから勉強します。",
+          "vn": "Bây giờ tôi sẽ học.",
+          "furigana": [
+            {
+              "kanji": "勉強",
+              "reading": "べんきょう"
+            }
+          ]
+        },
+        {
+          "jp": "これから寒くなります。",
+          "vn": "Từ bây giờ trời sẽ lạnh hơn.",
+          "furigana": [
+            {
+              "kanji": "寒",
+              "reading": "さむ"
+            }
+          ]
+        },
+        {
+          "jp": "これからどうしますか。",
+          "vn": "Từ bây giờ bạn sẽ làm gì?",
+          "furigana": []
+        },
+        {
+          "jp": "これからお世話になります。",
+          "vn": "Mong được giúp đỡ từ bây giờ.",
+          "furigana": [
+            {
+              "kanji": "世話",
+              "reading": "せわ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'すてきですね', kanji: 'すてきですね', romaji: 'suteki desu ne', mean: 'Hay nhỉ. / Đẹp nhỉ.', examples: [
+        {
+          "jp": "そのシャツ、すてきですね。",
+          "vn": "Cái áo sơ mi đó đẹp nhỉ.",
+          "furigana": []
+        },
+        {
+          "jp": "すてきですね。",
+          "vn": "Tuyệt nhỉ.",
+          "furigana": []
+        },
+        {
+          "jp": "素敵な家ですね。",
+          "vn": "Ngôi nhà đẹp nhỉ.",
+          "furigana": [
+            {
+              "kanji": "素敵",
+              "reading": "すてき"
+            },
+            {
+              "kanji": "家",
+              "reading": "いえ"
+            }
+          ]
+        },
+        {
+          "jp": "素敵なプレゼントですね。",
+          "vn": "Món quà tuyệt vời nhỉ.",
+          "furigana": [
+            {
+              "kanji": "素敵",
+              "reading": "すてき"
+            }
+          ]
+        },
+        {
+          "jp": "素敵な方ですね。",
+          "vn": "Người tuyệt vời nhỉ.",
+          "furigana": [
+            {
+              "kanji": "素敵",
+              "reading": "すてき"
+            },
+            {
+              "kanji": "方",
+              "reading": "かた"
+            }
+          ]
+        },
+        {
+          "jp": "その鞄、すてきですね。",
+          "vn": "Cái cặp đó đẹp nhỉ.",
+          "furigana": [
+            {
+              "kanji": "鞄",
+              "reading": "かばん"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ごめんください', kanji: 'ごめんください', romaji: 'gomen kudasai', mean: 'Xin lỗi, có ai ở nhà không? / Tôi có thể vào được chứ?', examples: [
+        {
+          "jp": "ごめんください。",
+          "vn": "Xin lỗi, có ai ở nhà không?",
+          "furigana": []
+        },
+        {
+          "jp": "玄関で「ごめんください」と言います。",
+          "vn": "Nói \"Gomen kudasai\" ở cửa ra vào.",
+          "furigana": [
+            {
+              "kanji": "玄関",
+              "reading": "げんかん"
+            },
+            {
+              "kanji": "言",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "ごめんください、どなたかいらっしゃいますか。",
+          "vn": "Xin lỗi, có ai ở đó không?",
+          "furigana": []
+        },
+        {
+          "jp": "夜遅くに「ごめんください」。",
+          "vn": "Nói \"Xin lỗi...\" vào đêm muộn.",
+          "furigana": [
+            {
+              "kanji": "夜",
+              "reading": "よる"
+            },
+            {
+              "kanji": "遅",
+              "reading": "おそ"
+            }
+          ]
+        },
+        {
+          "jp": "店で「ごめんください」。",
+          "vn": "Gọi ở cửa hàng.",
+          "furigana": [
+            {
+              "kanji": "店",
+              "reading": "みせ"
+            }
+          ]
+        },
+        {
+          "jp": "大きな声で「ごめんください」。",
+          "vn": "Nói to \"Gomen kudasai\".",
+          "furigana": [
+            {
+              "kanji": "大",
+              "reading": "おお"
+            },
+            {
+              "kanji": "声",
+              "reading": "こえ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'いらっしゃい', kanji: 'いらっしゃい', romaji: 'irasshai', mean: 'Rất hoan nghênh anh/chị đã đến chơi.', examples: [
+        {
+          "jp": "いらっしゃい。",
+          "vn": "Chào mừng.",
+          "furigana": []
+        },
+        {
+          "jp": "ようこそ、いらっしゃい。",
+          "vn": "Chào mừng bạn đã đến.",
+          "furigana": []
+        },
+        {
+          "jp": "さあ、いらっしゃい。",
+          "vn": "Nào, mời vào.",
+          "furigana": []
+        },
+        {
+          "jp": "皆さん、いらっしゃい。",
+          "vn": "Chào mừng mọi người.",
+          "furigana": [
+            {
+              "kanji": "皆",
+              "reading": "みな"
+            }
+          ]
+        },
+        {
+          "jp": "いつでもいらっしゃい。",
+          "vn": "Hãy đến bất cứ lúc nào.",
+          "furigana": []
+        },
+        {
+          "jp": "またいらっしゃい。",
+          "vn": "Lần sau lại đến nhé.",
+          "furigana": []
+        }
+      ]
+    },
+    {
+      word: 'どうぞ おあがり ください', kanji: 'どうぞ お上がり ください', romaji: 'douzo oagari kudasai', mean: 'Mời anh/chị vào.', examples: [
+        {
+          "jp": "どうぞお上がりください。",
+          "vn": "Xin mời vào.",
+          "furigana": [
+            {
+              "kanji": "上",
+              "reading": "あ"
+            }
+          ]
+        },
+        {
+          "jp": "どうぞ。",
+          "vn": "Xin mời.",
+          "furigana": []
+        },
+        {
+          "jp": "靴を脱いで、どうぞお上がりください。",
+          "vn": "Cởi giày ra và mời vào.",
+          "furigana": [
+            {
+              "kanji": "靴",
+              "reading": "くつ"
+            },
+            {
+              "kanji": "脱",
+              "reading": "ぬ"
+            },
+            {
+              "kanji": "上",
+              "reading": "あ"
+            }
+          ]
+        },
+        {
+          "jp": "遠慮しないで、どうぞお上がりください。",
+          "vn": "Đừng ngại, mời vào.",
+          "furigana": [
+            {
+              "kanji": "遠慮",
+              "reading": "えんりょ"
+            },
+            {
+              "kanji": "上",
+              "reading": "あ"
+            }
+          ]
+        },
+        {
+          "jp": "さあ、どうぞお上がりください。",
+          "vn": "Nào, xin mời vào.",
+          "furigana": [
+            {
+              "kanji": "上",
+              "reading": "あ"
+            }
+          ]
+        },
+        {
+          "jp": "奥へどうぞお上がりください。",
+          "vn": "Mời vào bên trong.",
+          "furigana": [
+            {
+              "kanji": "奥",
+              "reading": "おく"
+            },
+            {
+              "kanji": "上",
+              "reading": "あ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'しつれいします', kanji: '失礼します', romaji: 'shitsurei shimasu', mean: 'Xin phép tôi vào. / Xin phép ~.', examples: [
+        {
+          "jp": "失礼します。",
+          "vn": "Xin phép.",
+          "furigana": [
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        },
+        {
+          "jp": "お先に失礼します。",
+          "vn": "Tôi xin phép về trước.",
+          "furigana": [
+            {
+              "kanji": "先",
+              "reading": "さき"
+            },
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        },
+        {
+          "jp": "部屋に入るとき、「失礼します」と言います。",
+          "vn": "Khi vào phòng, nói \"Shitsureishimasu\".",
+          "furigana": [
+            {
+              "kanji": "部屋",
+              "reading": "へや"
+            },
+            {
+              "kanji": "入",
+              "reading": "はい"
+            },
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            },
+            {
+              "kanji": "言",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "では、失礼します。",
+          "vn": "Vậy, tôi xin phép.",
+          "furigana": [
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        },
+        {
+          "jp": "そろそろ失礼します。",
+          "vn": "Đã đến lúc tôi phải về.",
+          "furigana": [
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        },
+        {
+          "jp": "ちょっと失礼します。",
+          "vn": "Xin lỗi một chút.",
+          "furigana": [
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'いただきます', kanji: 'いただきます', romaji: 'itadakimasu', mean: 'Mời anh/chị dùng ~. (cách nói dùng trước khi ăn uống)', examples: [
+        {
+          "jp": "いただきます。",
+          "vn": "Mời cả nhà ăn cơm (câu nói trước khi ăn).",
+          "furigana": []
+        },
+        {
+          "jp": "ご飯を食べる前に、「いただきます」と言います。",
+          "vn": "Trước khi ăn cơm, nói \"Itadakimasu\".",
+          "furigana": [
+            {
+              "kanji": "飯",
+              "reading": "はん"
+            },
+            {
+              "kanji": "食",
+              "reading": "た"
+            },
+            {
+              "kanji": "前",
+              "reading": "まえ"
+            },
+            {
+              "kanji": "言",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "手を合わせて、「いただきます」。",
+          "vn": "Chắp tay lại và nói \"Itadakimasu\".",
+          "furigana": [
+            {
+              "kanji": "手",
+              "reading": "て"
+            },
+            {
+              "kanji": "合",
+              "reading": "あ"
+            }
+          ]
+        },
+        {
+          "jp": "みんなで「いただきます」。",
+          "vn": "Mọi người cùng nói \"Itadakimasu\".",
+          "furigana": []
+        },
+        {
+          "jp": "大きな声で「いただきます」。",
+          "vn": "Nói to \"Itadakimasu\".",
+          "furigana": [
+            {
+              "kanji": "大",
+              "reading": "おお"
+            },
+            {
+              "kanji": "声",
+              "reading": "こえ"
+            }
+          ]
+        },
+        {
+          "jp": "おいしい料理を、いただきます。",
+          "vn": "Tôi xin phép ăn món ngon này.",
+          "furigana": [
+            {
+              "kanji": "料理",
+              "reading": "りょうり"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'りょこう', kanji: '旅行', romaji: 'ryokou', mean: 'Du lịch', examples: [
+        {
+          "jp": "旅行に行きます。",
+          "vn": "Đi du lịch.",
+          "furigana": [
+            {
+              "kanji": "旅行",
+              "reading": "りょこう"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "旅行が好きです。",
+          "vn": "Thích đi du lịch.",
+          "furigana": [
+            {
+              "kanji": "旅行",
+              "reading": "りょこう"
+            },
+            {
+              "kanji": "好",
+              "reading": "す"
+            }
+          ]
+        },
+        {
+          "jp": "海外旅行",
+          "vn": "Du lịch nước ngoài.",
+          "furigana": [
+            {
+              "kanji": "海外",
+              "reading": "かいがい"
+            },
+            {
+              "kanji": "旅行",
+              "reading": "りょこう"
+            }
+          ]
+        },
+        {
+          "jp": "修学旅行",
+          "vn": "Du lịch trường học.",
+          "furigana": [
+            {
+              "kanji": "修学",
+              "reading": "しゅうがく"
+            },
+            {
+              "kanji": "旅行",
+              "reading": "りょこう"
+            }
+          ]
+        },
+        {
+          "jp": "旅行のお土産",
+          "vn": "Quà du lịch.",
+          "furigana": [
+            {
+              "kanji": "旅行",
+              "reading": "りょこう"
+            },
+            {
+              "kanji": "土産",
+              "reading": "みやげ"
+            }
+          ]
+        },
+        {
+          "jp": "日本へ旅行に来ました。",
+          "vn": "Đến Nhật Bản du lịch.",
+          "furigana": [
+            {
+              "kanji": "日本",
+              "reading": "にほん"
+            },
+            {
+              "kanji": "旅行",
+              "reading": "りょこう"
+            },
+            {
+              "kanji": "来",
+              "reading": "き"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "旅",
+          "onyomi": "リョ",
+          "kunyomi": "たび",
+          "meaning": "Du lịch",
+          "strokes": 10,
+          "jlpt": "N4",
+          "radicals": "方 (phương)",
+          "components": [
+            {
+              "char": "方",
+              "meaning": "phương"
+            },
+            {
+              "char": "人",
+              "meaning": "người"
+            }
+          ],
+          "mnemonic": "Người (人) đi về phương (方) xa để du lịch.",
+          "exampleSentences": [
+            {
+              "jp": "旅行します。",
+              "vn": "Đi du lịch.",
+              "furigana": [
+                {
+                  "kanji": "旅行",
+                  "reading": "りょこう"
+                }
+              ]
+            }
+          ]
+        },
         {
           "kanji": "行",
-          "reading": "い"
+          "onyomi": "コウ",
+          "kunyomi": "い.く",
+          "meaning": "Đi",
+          "strokes": 6,
+          "jlpt": "N5",
+          "radicals": "行 (đi)",
+          "components": [
+            {
+              "char": "行",
+              "meaning": "đi"
+            }
+          ],
+          "mnemonic": "Hình ảnh ngã tư đường.",
+          "exampleSentences": [
+            {
+              "jp": "学校へ行きます。",
+              "vn": "Đi đến trường.",
+              "furigana": [
+                {
+                  "kanji": "学校",
+                  "reading": "がっこう"
+                },
+                {
+                  "kanji": "行",
+                  "reading": "い"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "これから勉強します。",
-      "vn": "Bây giờ tôi sẽ học.",
-      "furigana": [
+      word: 'おみやげ', kanji: 'お土産', romaji: 'omiyage', mean: 'Quà (mua khi đi xa về)', examples: [
         {
-          "kanji": "勉強",
-          "reading": "べんきょう"
-        }
-      ]
-    },
-    {
-      "jp": "これから寒くなります。",
-      "vn": "Từ bây giờ trời sẽ lạnh hơn.",
-      "furigana": [
-        {
-          "kanji": "寒",
-          "reading": "さむ"
-        }
-      ]
-    },
-    {
-      "jp": "これからどうしますか。",
-      "vn": "Từ bây giờ bạn sẽ làm gì?",
-      "furigana": []
-    },
-    {
-      "jp": "これからお世話になります。",
-      "vn": "Mong được giúp đỡ từ bây giờ.",
-      "furigana": [
-        {
-          "kanji": "世話",
-          "reading": "せわ"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'すてきですね', kanji: 'すてきですね', romaji: 'suteki desu ne', mean: 'Hay nhỉ. / Đẹp nhỉ.', examples: [
-    {
-      "jp": "そのシャツ、すてきですね。",
-      "vn": "Cái áo sơ mi đó đẹp nhỉ.",
-      "furigana": []
-    },
-    {
-      "jp": "すてきですね。",
-      "vn": "Tuyệt nhỉ.",
-      "furigana": []
-    },
-    {
-      "jp": "素敵な家ですね。",
-      "vn": "Ngôi nhà đẹp nhỉ.",
-      "furigana": [
-        {
-          "kanji": "素敵",
-          "reading": "すてき"
+          "jp": "お土産を買います。",
+          "vn": "Mua quà lưu niệm.",
+          "furigana": [
+            {
+              "kanji": "土産",
+              "reading": "みやげ"
+            },
+            {
+              "kanji": "買",
+              "reading": "か"
+            }
+          ]
         },
         {
-          "kanji": "家",
-          "reading": "いえ"
-        }
-      ]
-    },
-    {
-      "jp": "素敵なプレゼントですね。",
-      "vn": "Món quà tuyệt vời nhỉ.",
-      "furigana": [
-        {
-          "kanji": "素敵",
-          "reading": "すてき"
-        }
-      ]
-    },
-    {
-      "jp": "素敵な方ですね。",
-      "vn": "Người tuyệt vời nhỉ.",
-      "furigana": [
-        {
-          "kanji": "素敵",
-          "reading": "すてき"
+          "jp": "お土産をあげます。",
+          "vn": "Tặng quà lưu niệm.",
+          "furigana": [
+            {
+              "kanji": "土産",
+              "reading": "みやげ"
+            }
+          ]
         },
         {
-          "kanji": "方",
-          "reading": "かた"
-        }
-      ]
-    },
-    {
-      "jp": "その鞄、すてきですね。",
-      "vn": "Cái cặp đó đẹp nhỉ.",
-      "furigana": [
-        {
-          "kanji": "鞄",
-          "reading": "かばん"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'ごめんください', kanji: 'ごめんください', romaji: 'gomen kudasai', mean: 'Xin lỗi, có ai ở nhà không? / Tôi có thể vào được chứ?', examples: [
-    {
-      "jp": "ごめんください。",
-      "vn": "Xin lỗi, có ai ở nhà không?",
-      "furigana": []
-    },
-    {
-      "jp": "玄関で「ごめんください」と言います。",
-      "vn": "Nói \"Gomen kudasai\" ở cửa ra vào.",
-      "furigana": [
-        {
-          "kanji": "玄関",
-          "reading": "げんかん"
+          "jp": "旅行のお土産",
+          "vn": "Quà đi du lịch.",
+          "furigana": [
+            {
+              "kanji": "旅行",
+              "reading": "りょこう"
+            },
+            {
+              "kanji": "土産",
+              "reading": "みやげ"
+            }
+          ]
         },
         {
-          "kanji": "言",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "ごめんください、どなたかいらっしゃいますか。",
-      "vn": "Xin lỗi, có ai ở đó không?",
-      "furigana": []
-    },
-    {
-      "jp": "夜遅くに「ごめんください」。",
-      "vn": "Nói \"Xin lỗi...\" vào đêm muộn.",
-      "furigana": [
-        {
-          "kanji": "夜",
-          "reading": "よる"
+          "jp": "有名なお土産",
+          "vn": "Quà lưu niệm nổi tiếng.",
+          "furigana": [
+            {
+              "kanji": "有名",
+              "reading": "ゆうめい"
+            },
+            {
+              "kanji": "土産",
+              "reading": "みやげ"
+            }
+          ]
         },
         {
-          "kanji": "遅",
-          "reading": "おそ"
-        }
-      ]
-    },
-    {
-      "jp": "店で「ごめんください」。",
-      "vn": "Gọi ở cửa hàng.",
-      "furigana": [
-        {
-          "kanji": "店",
-          "reading": "みせ"
-        }
-      ]
-    },
-    {
-      "jp": "大きな声で「ごめんください」。",
-      "vn": "Nói to \"Gomen kudasai\".",
-      "furigana": [
-        {
-          "kanji": "大",
-          "reading": "おお"
+          "jp": "お土産は何がいいですか。",
+          "vn": "Quà lưu niệm gì thì tốt?",
+          "furigana": [
+            {
+              "kanji": "土産",
+              "reading": "みやげ"
+            },
+            {
+              "kanji": "何",
+              "reading": "なに"
+            }
+          ]
         },
         {
-          "kanji": "声",
-          "reading": "こえ"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'いらっしゃい', kanji: 'いらっしゃい', romaji: 'irasshai', mean: 'Rất hoan nghênh anh/chị đã đến chơi.', examples: [
-    {
-      "jp": "いらっしゃい。",
-      "vn": "Chào mừng.",
-      "furigana": []
-    },
-    {
-      "jp": "ようこそ、いらっしゃい。",
-      "vn": "Chào mừng bạn đã đến.",
-      "furigana": []
-    },
-    {
-      "jp": "さあ、いらっしゃい。",
-      "vn": "Nào, mời vào.",
-      "furigana": []
-    },
-    {
-      "jp": "皆さん、いらっしゃい。",
-      "vn": "Chào mừng mọi người.",
-      "furigana": [
-        {
-          "kanji": "皆",
-          "reading": "みな"
+          "jp": "日本のお土産",
+          "vn": "Quà lưu niệm Nhật Bản.",
+          "furigana": [
+            {
+              "kanji": "日本",
+              "reading": "にほん"
+            },
+            {
+              "kanji": "土産",
+              "reading": "みやげ"
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "いつでもいらっしゃい。",
-      "vn": "Hãy đến bất cứ lúc nào.",
-      "furigana": []
-    },
-    {
-      "jp": "またいらっしゃい。",
-      "vn": "Lần sau lại đến nhé.",
-      "furigana": []
-    }
-  ]
-},
-{
-  word: 'どうぞ おあがり ください', kanji: 'どうぞ お上がり ください', romaji: 'douzo oagari kudasai', mean: 'Mời anh/chị vào.', examples: [
-    {
-      "jp": "どうぞお上がりください。",
-      "vn": "Xin mời vào.",
-      "furigana": [
+      word: 'ヨーロッパ', kanji: 'ヨーロッパ', romaji: 'yooroppa', mean: 'Châu Âu', examples: [
         {
-          "kanji": "上",
-          "reading": "あ"
-        }
-      ]
-    },
-    {
-      "jp": "どうぞ。",
-      "vn": "Xin mời.",
-      "furigana": []
-    },
-    {
-      "jp": "靴を脱いで、どうぞお上がりください。",
-      "vn": "Cởi giày ra và mời vào.",
-      "furigana": [
-        {
-          "kanji": "靴",
-          "reading": "くつ"
+          "jp": "ヨーロッパへ旅行に行きます。",
+          "vn": "Đi du lịch Châu Âu.",
+          "furigana": [
+            {
+              "kanji": "旅行",
+              "reading": "りょこう"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
         },
         {
-          "kanji": "脱",
-          "reading": "ぬ"
-        },
-        {
-          "kanji": "上",
-          "reading": "あ"
+          "jp": "ヨーロッパの国",
+          "vn": "Các nước Châu Âu.",
+          "furigana": [
+            {
+              "kanji": "国",
+              "reading": "くに"
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "遠慮しないで、どうぞお上がりください。",
-      "vn": "Đừng ngại, mời vào.",
-      "furigana": [
+      word: 'スペイン', kanji: 'スペイン', romaji: 'supein', mean: 'Tây Ban Nha', examples: [
         {
-          "kanji": "遠慮",
-          "reading": "えんりょ"
+          "jp": "スペイン語",
+          "vn": "Tiếng Tây Ban Nha.",
+          "furigana": [
+            {
+              "kanji": "語",
+              "reading": "ご"
+            }
+          ]
         },
         {
-          "kanji": "上",
-          "reading": "あ"
+          "jp": "スペインへ行きたいです。",
+          "vn": "Tôi muốn đi Tây Ban Nha.",
+          "furigana": [
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "さあ、どうぞお上がりください。",
-      "vn": "Nào, xin mời vào.",
-      "furigana": [
+      word: 'いかがですか', kanji: '[～は] いかがですか', romaji: '[~wa] ikaga desu ka', mean: '[~] có được không ạ? (dùng khi mời ai đó cái gì)', examples: [
         {
-          "kanji": "上",
-          "reading": "あ"
-        }
-      ]
-    },
-    {
-      "jp": "奥へどうぞお上がりください。",
-      "vn": "Mời vào bên trong.",
-      "furigana": [
-        {
-          "kanji": "奥",
-          "reading": "おく"
+          "jp": "コーヒーはいかがですか。",
+          "vn": "Dùng cà phê nhé (có được không)?",
+          "furigana": []
         },
         {
-          "kanji": "上",
-          "reading": "あ"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'しつれいします', kanji: '失礼します', romaji: 'shitsurei shimasu', mean: 'Xin phép tôi vào. / Xin phép ~.', examples: [
-    {
-      "jp": "失礼します。",
-      "vn": "Xin phép.",
-      "furigana": [
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    },
-    {
-      "jp": "お先に失礼します。",
-      "vn": "Tôi xin phép về trước.",
-      "furigana": [
-        {
-          "kanji": "先",
-          "reading": "さき"
-        },
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    },
-    {
-      "jp": "部屋に入るとき、「失礼します」と言います。",
-      "vn": "Khi vào phòng, nói \"Shitsureishimasu\".",
-      "furigana": [
-        {
-          "kanji": "部屋",
-          "reading": "へや"
-        },
-        {
-          "kanji": "入",
-          "reading": "はい"
-        },
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        },
-        {
-          "kanji": "言",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "では、失礼します。",
-      "vn": "Vậy, tôi xin phép.",
-      "furigana": [
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    },
-    {
-      "jp": "そろそろ失礼します。",
-      "vn": "Đã đến lúc tôi phải về.",
-      "furigana": [
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    },
-    {
-      "jp": "ちょっと失礼します。",
-      "vn": "Xin lỗi một chút.",
-      "furigana": [
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'いただきます', kanji: 'いただきます', romaji: 'itadakimasu', mean: 'Mời anh/chị dùng ~. (cách nói dùng trước khi ăn uống)', examples: [
-    {
-      "jp": "いただきます。",
-      "vn": "Mời cả nhà ăn cơm (câu nói trước khi ăn).",
-      "furigana": []
-    },
-    {
-      "jp": "ご飯を食べる前に、「いただきます」と言います。",
-      "vn": "Trước khi ăn cơm, nói \"Itadakimasu\".",
-      "furigana": [
-        {
-          "kanji": "飯",
-          "reading": "はん"
-        },
-        {
-          "kanji": "食",
-          "reading": "た"
-        },
-        {
-          "kanji": "前",
-          "reading": "まえ"
-        },
-        {
-          "kanji": "言",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "手を合わせて、「いただきます」。",
-      "vn": "Chắp tay lại và nói \"Itadakimasu\".",
-      "furigana": [
-        {
-          "kanji": "手",
-          "reading": "て"
-        },
-        {
-          "kanji": "合",
-          "reading": "あ"
-        }
-      ]
-    },
-    {
-      "jp": "みんなで「いただきます」。",
-      "vn": "Mọi người cùng nói \"Itadakimasu\".",
-      "furigana": []
-    },
-    {
-      "jp": "大きな声で「いただきます」。",
-      "vn": "Nói to \"Itadakimasu\".",
-      "furigana": [
-        {
-          "kanji": "大",
-          "reading": "おお"
-        },
-        {
-          "kanji": "声",
-          "reading": "こえ"
-        }
-      ]
-    },
-    {
-      "jp": "おいしい料理を、いただきます。",
-      "vn": "Tôi xin phép ăn món ngon này.",
-      "furigana": [
-        {
-          "kanji": "料理",
-          "reading": "りょうり"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'りょこう', kanji: '旅行', romaji: 'ryokou', mean: 'Du lịch', examples: [
-    {
-      "jp": "旅行に行きます。",
-      "vn": "Đi du lịch.",
-      "furigana": [
-        {
-          "kanji": "旅行",
-          "reading": "りょこう"
-        },
-        {
-          "kanji": "行",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "旅行が好きです。",
-      "vn": "Thích đi du lịch.",
-      "furigana": [
-        {
-          "kanji": "旅行",
-          "reading": "りょこう"
-        },
-        {
-          "kanji": "好",
-          "reading": "す"
-        }
-      ]
-    },
-    {
-      "jp": "海外旅行",
-      "vn": "Du lịch nước ngoài.",
-      "furigana": [
-        {
-          "kanji": "海外",
-          "reading": "かいがい"
-        },
-        {
-          "kanji": "旅行",
-          "reading": "りょこう"
-        }
-      ]
-    },
-    {
-      "jp": "修学旅行",
-      "vn": "Du lịch trường học.",
-      "furigana": [
-        {
-          "kanji": "修学",
-          "reading": "しゅうがく"
-        },
-        {
-          "kanji": "旅行",
-          "reading": "りょこう"
-        }
-      ]
-    },
-    {
-      "jp": "旅行のお土産",
-      "vn": "Quà du lịch.",
-      "furigana": [
-        {
-          "kanji": "旅行",
-          "reading": "りょこう"
-        },
-        {
-          "kanji": "土産",
-          "reading": "みやげ"
-        }
-      ]
-    },
-    {
-      "jp": "日本へ旅行に来ました。",
-      "vn": "Đến Nhật Bản du lịch.",
-      "furigana": [
-        {
-          "kanji": "日本",
-          "reading": "にほん"
-        },
-        {
-          "kanji": "旅行",
-          "reading": "りょこう"
-        },
-        {
-          "kanji": "来",
-          "reading": "き"
+          "jp": "お茶はいかがですか。",
+          "vn": "Dùng trà nhé?",
+          "furigana": [
+            {
+              "kanji": "茶",
+              "reading": "ちゃ"
+            }
+          ]
         }
       ]
     }
   ],
-    kanjiDetails: [
-  {
-    "kanji": "旅",
-    "onyomi": "リョ",
-    "kunyomi": "たび",
-    "meaning": "Du lịch",
-    "strokes": 10,
-    "jlpt": "N4",
-    "radicals": "方 (phương)",
-    "components": [
-      {
-        "char": "方",
-        "meaning": "phương"
-      },
-      {
-        "char": "人",
-        "meaning": "người"
-      }
-    ],
-    "mnemonic": "Người (人) đi về phương (方) xa để du lịch.",
-    "exampleSentences": [
-      {
-        "jp": "旅行します。",
-        "vn": "Đi du lịch.",
-        "furigana": [
-          {
-            "kanji": "旅行",
-            "reading": "りょこう"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "行",
-    "onyomi": "コウ",
-    "kunyomi": "い.く",
-    "meaning": "Đi",
-    "strokes": 6,
-    "jlpt": "N5",
-    "radicals": "行 (đi)",
-    "components": [
-      {
-        "char": "行",
-        "meaning": "đi"
-      }
-    ],
-    "mnemonic": "Hình ảnh ngã tư đường.",
-    "exampleSentences": [
-      {
-        "jp": "学校へ行きます。",
-        "vn": "Đi đến trường.",
-        "furigana": [
-          {
-            "kanji": "学校",
-            "reading": "がっこう"
-          },
-          {
-            "kanji": "行",
-            "reading": "い"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'おみやげ', kanji: 'お土産', romaji: 'omiyage', mean: 'Quà (mua khi đi xa về)', examples: [
+  grammar: [
     {
-      "jp": "お土産を買います。",
-      "vn": "Mua quà lưu niệm.",
-      "furigana": [
+      pattern: 'Danh từ (công cụ/phương tiện) で Động từ',
+      explanation: 'Trợ từ 「で」 biểu thị phương tiện hay cách thức tiến hành một việc gì đó. (Tôi làm việc gì đó ĐẰNG/BẰNG cái gì đó)',
+      example: 'はしで 食べます。 (Tôi ăn cơm bằng đũa.)\n日本語で レポートを 書きます。 (Tôi viết báo cáo bằng tiếng Nhật.)',
+      examples: [
         {
-          "kanji": "土産",
-          "reading": "みやげ"
+          jp: 'はしで食べます。', vn: 'Tôi ăn bằng đũa.',
+          furigana: [{ kanji: '箸', reading: 'はし', meaning: 'TRỨ' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
         },
         {
-          "kanji": "買",
-          "reading": "か"
+          jp: 'ボールペンで書きます。', vn: 'Tôi viết bằng bút bi.',
+          furigana: [{ kanji: '書', reading: 'か', meaning: 'THƯ' }]
+        },
+        {
+          jp: 'はさみで紙を切ります。', vn: 'Tôi cắt giấy bằng kéo.',
+          furigana: [{ kanji: '紙', reading: 'かみ', meaning: 'CHỈ' }, { kanji: '切', reading: 'き', meaning: 'THIẾT' }]
+        },
+        {
+          jp: '日本語で話します。', vn: 'Tôi nói bằng tiếng Nhật.',
+          furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
+        },
+        {
+          jp: '自転車で学校へ行きます。', vn: 'Tôi đi đến trường bằng xe đạp.',
+          furigana: [{ kanji: '自転車', reading: 'じてんしゃ', meaning: 'TỰ CHUYỂN XA' }, { kanji: '学校', reading: 'がっこう', meaning: 'HỌC HIỆU' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'ナイフで肉を切ります。', vn: 'Tôi cắt thịt bằng dao.',
+          furigana: [{ kanji: '肉', reading: 'にく', meaning: 'NHỤC' }, { kanji: '切', reading: 'き', meaning: 'THIẾT' }]
+        },
+        {
+          jp: '手で取ります。', vn: 'Tôi lấy bằng tay.',
+          furigana: [{ kanji: '手', reading: 'て', meaning: 'THỦ' }, { kanji: '取', reading: 'と', meaning: 'THỦ' }]
+        },
+        {
+          jp: 'タクシーで帰ります。', vn: 'Tôi về bằng taxi.',
+          furigana: [{ kanji: '帰', reading: 'かえ', meaning: 'QUY' }]
+        },
+        {
+          jp: 'パソコンで映画を見ます。', vn: 'Tôi xem phim bằng máy tính.',
+          furigana: [{ kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: 'ファクスで送ります。', vn: 'Tôi gửi bằng fax.',
+          furigana: [{ kanji: '送', reading: 'おく', meaning: 'TỐNG' }]
         }
       ]
     },
     {
-      "jp": "お土産をあげます。",
-      "vn": "Tặng quà lưu niệm.",
-      "furigana": [
+      pattern: '\"Từ/Câu\" は ～語で 何ですか',
+      explanation: 'Mẫu câu này dùng để hỏi một từ, một ngữ hoặc một câu được nói như thế nào bằng một ngôn ngữ khác.',
+      example: '「ありがとう」は 英語で 何ですか。 ("Arigatou" tiếng Anh nói thế nào?)\n･･･「Thank you」です。 (Tiếng Anh nói là "Thank you".)\n「Thank you」は 日本語で 何ですか。 ("Thank you" tiếng Nhật nói thế nào?)\n･･･「ありがとう」です。 (Tiếng Nhật nói là "Arigatou".)',
+      examples: [
         {
-          "kanji": "土産",
-          "reading": "みやげ"
+          jp: '「ありがとう」は英語で何ですか。', vn: '“Arigatou” tiếng Anh là gì?',
+          furigana: [{ kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: '「Good morning」は日本語で何ですか。', vn: '“Good morning” tiếng Nhật là gì?',
+          furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: '「さようなら」はベトナム語で何ですか。', vn: '“Sayounara” tiếng Việt là gì?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: '「これ」は日本語で何ですか。', vn: 'Cái này tiếng Nhật là gì?',
+          furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: '「Love」はフランス語で何ですか。', vn: '“Love” tiếng Pháp là gì?',
+          furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: '「本」は英語で何ですか。', vn: '“Sách” tiếng Anh là gì?',
+          furigana: [{ kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: '「水」はタイ語で何ですか。', vn: '“Nước” tiếng Thái là gì?',
+          furigana: [{ kanji: '水', reading: 'みず', meaning: 'THỦY' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: '「お金」は中国語で何ですか。', vn: '“Tiền” tiếng Trung là gì?',
+          furigana: [{ kanji: '金', reading: 'かね', meaning: 'KIM' }, { kanji: '中国語', reading: 'ちゅうごくご', meaning: 'TRUNG QUỐC NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: '「はい」は韓国語で何ですか。', vn: '“Vâng” tiếng Hàn là gì?',
+          furigana: [{ kanji: '韓国語', reading: 'かんこくご', meaning: 'HÀN QUỐC NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: '「Clock」は日本語で何ですか。', vn: '“Clock” tiếng Nhật là gì?',
+          furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
         }
       ]
     },
     {
-      "jp": "旅行のお土産",
-      "vn": "Quà đi du lịch.",
-      "furigana": [
+      pattern: 'Danh từ (người) に あげます/かします/おしえます',
+      explanation: 'Những động từ như 「あげます」 (tặng), 「かします」 (cho mượn), 「おしえます」 (dạy) cần người làm đối tượng (để cho, cho mượn, dạy). Chúng ta đặt trợ từ 「に」 sau danh từ chỉ đối tượng này.\n*Chú ý: Đối với những động từ như 「おくります」 (gửi), 「でんわを かけます」 (gọi điện thoại) thì đối tượng không chỉ là người mà còn có thể là địa điểm (danh từ). Trong trường hợp đó, ngoài trợ từ 「に」, chúng ta còn có thể dùng trợ từ 「へ」.',
+      example: '山田さんは 木村さんに 花を あげました。 (Ông Yamada tặng hoa cho chị Kimura.)\nイーさんに 本を 貸しました。 (Tôi cho chị Lee mượn sách.)\n太郎君に 英語を 教えます。 (Tôi dạy tiếng Anh cho cậu Tarou.)\n会社に 電話を かけます。 (Tôi gọi điện thoại đến công ty.)',
+      examples: [
         {
-          "kanji": "旅行",
-          "reading": "りょこう"
+          jp: '母に花をあげます。', vn: 'Tôi tặng hoa cho mẹ.',
+          furigana: [{ kanji: '母', reading: 'はは', meaning: 'MẪU' }, { kanji: '花', reading: 'はな', meaning: 'HOA' }]
         },
         {
-          "kanji": "土産",
-          "reading": "みやげ"
+          jp: '友達に本を貸します。', vn: 'Tôi cho bạn mượn sách.',
+          furigana: [{ kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '貸', reading: 'か', meaning: 'THẢI' }]
+        },
+        {
+          jp: '弟に英語を教えます。', vn: 'Tôi dạy tiếng Anh cho em trai.',
+          furigana: [{ kanji: '弟', reading: 'おとうと', meaning: 'ĐỆ' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '教', reading: 'おし', meaning: 'GIÁO' }]
+        },
+        {
+          jp: '父にシャツをあげます。', vn: 'Tôi tặng áo sơ mi cho bố.',
+          furigana: [{ kanji: '父', reading: 'ちち', meaning: 'PHỤ' }]
+        },
+        {
+          jp: '会社に電話をかけます。', vn: 'Tôi gọi điện đến công ty.',
+          furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }]
+        },
+        {
+          jp: '学生に日本語を教えます。', vn: 'Tôi dạy tiếng Nhật cho sinh viên.',
+          furigana: [{ kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '教', reading: 'おし', meaning: 'GIÁO' }]
+        },
+        {
+          jp: '彼女にプレゼントをあげます。', vn: 'Tôi tặng quà cho cô ấy.',
+          furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }]
+        },
+        {
+          jp: '友達にお金を貸します。', vn: 'Tôi cho bạn vay tiền.',
+          furigana: [{ kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '金', reading: 'かね', meaning: 'KIM' }, { kanji: '貸', reading: 'か', meaning: 'THẢI' }]
+        },
+        {
+          jp: '先生にメールを送ります。', vn: 'Tôi gửi mail cho thầy giáo.',
+          furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '送', reading: 'おく', meaning: 'TỐNG' }]
+        },
+        {
+          jp: '子供にお菓子をあげます。', vn: 'Tôi cho trẻ con bánh kẹo.',
+          furigana: [{ kanji: '子供', reading: 'こども', meaning: 'TỬ CUNG' }, { kanji: '菓子', reading: 'かし', meaning: 'QUẢ TỬ' }]
         }
       ]
     },
     {
-      "jp": "有名なお土産",
-      "vn": "Quà lưu niệm nổi tiếng.",
-      "furigana": [
+      pattern: 'Danh từ (người) に もらいます/かります/ならいます',
+      explanation: 'Các động từ như 「もらいます」 (nhận), 「かります」 (vay, mượn), 「ならいます」 (học) biểu thị hành động từ phía người tiếp nhận. Khi dùng những động từ này trong câu mà chủ ngữ là người tiếp nhận thì chúng ta thêm 「に」 vào sau danh từ chỉ đối tác.\n*Trong mẫu câu này, chúng ta có thể dùng trợ từ 「から」 thay cho 「に」. Đặc biệt là khi đối tác không phải là người mà là một tổ chức nào đó (ví dụ: công ty hoặc trường học) thì không dùng 「に」 mà dùng 「から」.',
+      example: '木村さんは 山田さんに 花を もらいました。 (Chị Kimura đã nhận hoa từ ông Yamada.)\nカリナさんに CDを 借りました。 (Tôi đã mượn đĩa CD từ chị Karina.)\nワンさんに 中国語を 習います。 (Tôi học tiếng Trung từ ông Wang.)\n銀行から お金を 借りました。 (Tôi đã vay tiền từ ngân hàng.)',
+      examples: [
         {
-          "kanji": "有名",
-          "reading": "ゆうめい"
+          jp: '彼にプレゼントをもらいました。', vn: 'Tôi đã nhận quà từ anh ấy.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }]
         },
         {
-          "kanji": "土産",
-          "reading": "みやげ"
+          jp: '図書館で本を借ります。', vn: 'Tôi mượn sách ở thư viện.',
+          furigana: [{ kanji: '図書館', reading: 'としょかん', meaning: 'ĐỒ THƯ QUÁN' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '借', reading: 'か', meaning: 'TÁ' }]
+        },
+        {
+          jp: '先生に日本語を習います。', vn: 'Tôi học tiếng Nhật từ thầy giáo.',
+          furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        },
+        {
+          jp: '父にお金をもらいました。', vn: 'Tôi đã nhận tiền từ bố.',
+          furigana: [{ kanji: '父', reading: 'ちち', meaning: 'PHỤ' }, { kanji: '金', reading: 'かね', meaning: 'KIM' }]
+        },
+        {
+          jp: '友達に自転車を借りました。', vn: 'Tôi đã mượn xe đạp của bạn.',
+          furigana: [{ kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '自転車', reading: 'じてんしゃ', meaning: 'TỰ CHUYỂN XA' }, { kanji: '借', reading: 'か', meaning: 'TÁ' }]
+        },
+        {
+          jp: '母に料理を習います。', vn: 'Tôi học nấu ăn từ mẹ.',
+          furigana: [{ kanji: '母', reading: 'はは', meaning: 'MẪU' }, { kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        },
+        {
+          jp: '会社から花をもらいました。', vn: 'Tôi đã nhận hoa từ công ty.',
+          furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '花', reading: 'はな', meaning: 'HOA' }]
+        },
+        {
+          jp: '銀行からお金を借りました。', vn: 'Tôi đã vay tiền từ ngân hàng.',
+          furigana: [{ kanji: '銀行', reading: 'ぎんこう', meaning: 'NGÂN HÀNH' }, { kanji: '金', reading: 'かね', meaning: 'KIM' }, { kanji: '借', reading: 'か', meaning: 'TÁ' }]
+        },
+        {
+          jp: 'ワンさんに中国語を習います。', vn: 'Tôi học tiếng Trung từ anh Wang.',
+          furigana: [{ kanji: '中国語', reading: 'ちゅうごくご', meaning: 'TRUNG QUỐC NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
+        },
+        {
+          jp: '部長に手紙をもらいました。', vn: 'Tôi đã nhận thư từ trưởng phòng.',
+          furigana: [{ kanji: '部長', reading: 'ぶちょう', meaning: 'BỘ TRƯỞNG' }, { kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' }]
         }
       ]
     },
     {
-      "jp": "お土産は何がいいですか。",
-      "vn": "Quà lưu niệm gì thì tốt?",
-      "furigana": [
+      pattern: 'もう Động từ ました',
+      explanation: '「もう」 có nghĩa là "đã/rồi" và được dùng với động từ ở thời quá khứ 「Động từ ました」. Trong trường hợp này thì động từ ở thời quá khứ 「Động từ ました」 biểu thị một hành động nào đó đã kết thúc ở thời điểm hiện tại.\nĐối với câu hỏi 「もう Động từ ました」, thì câu trả lời là 「はい、もう Động từ ました」(trong trường hợp khẳng định), và 「いいえ、まだです」(trong trường hợp phủ định).',
+      example: 'もう 荷物を 送りましたか。 (Anh/Chị đã gửi đồ chưa?)\n･･･はい、[もう] 送りました。 (Rồi, tôi đã gửi rồi.)\n･･･いいえ、まだです。 (Chưa, tôi chưa gửi.)',
+      examples: [
         {
-          "kanji": "土産",
-          "reading": "みやげ"
+          jp: 'もう昼ごはんを食べましたか。', vn: 'Bạn đã ăn trưa chưa?',
+          furigana: [{ kanji: '昼', reading: 'ひる', meaning: 'TRÚ' }, { kanji: '飯', reading: 'はん', meaning: 'PHẠN' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
         },
         {
-          "kanji": "何",
-          "reading": "なに"
-        }
-      ]
-    },
-    {
-      "jp": "日本のお土産",
-      "vn": "Quà lưu niệm Nhật Bản.",
-      "furigana": [
-        {
-          "kanji": "日本",
-          "reading": "にほん"
+          jp: 'いいえ、まだです。', vn: 'Chưa, tôi chưa ăn.',
+          furigana: []
         },
         {
-          "kanji": "土産",
-          "reading": "みやげ"
+          jp: 'もう宿題をしましたか。', vn: 'Bạn đã làm bài tập chưa?',
+          furigana: [{ kanji: '宿題', reading: 'しゅくだい', meaning: 'TÚC ĐỀ' }]
+        },
+        {
+          jp: 'はい、もうしました。', vn: 'Vâng, tôi làm rồi.',
+          furigana: []
+        },
+        {
+          jp: 'もう切符を買いましたか。', vn: 'Bạn đã mua vé chưa?',
+          furigana: [{ kanji: '切符', reading: 'きっぷ', meaning: 'THIẾT PHÙ' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        },
+        {
+          jp: 'もうレポートを送りましたか。', vn: 'Bạn đã gửi báo cáo chưa?',
+          furigana: [{ kanji: '送', reading: 'おく', meaning: 'TỐNG' }]
+        },
+        {
+          jp: 'もう映画を見ましたか。', vn: 'Bạn đã xem phim này chưa?',
+          furigana: [{ kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: 'もう大阪へ行きましたか。', vn: 'Bạn đã đi Osaka chưa?',
+          furigana: [{ kanji: '大阪', reading: 'おおさか', meaning: 'ĐẠI PHẢN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: 'もう単語を覚えましたか。', vn: 'Bạn đã nhớ từ vựng chưa?',
+          furigana: [{ kanji: '単語', reading: 'たんご', meaning: 'ĐƠN NGỮ' }, { kanji: '覚', reading: 'おぼ', meaning: 'GIÁC' }]
+        },
+        {
+          jp: 'もう荷物を整理しましたか。', vn: 'Bạn đã sắp xếp hành lý chưa?',
+          furigana: [{ kanji: '荷物', reading: 'にもつ', meaning: 'HÀ VẬT' }, { kanji: '整理', reading: 'せいり', meaning: 'CHỈNH LÝ' }]
         }
       ]
     }
-  ]
-},
   ],
-grammar: [
-  {
-    pattern: 'Danh từ (công cụ/phương tiện) で Động từ',
-    explanation: 'Trợ từ 「で」 biểu thị phương tiện hay cách thức tiến hành một việc gì đó. (Tôi làm việc gì đó ĐẰNG/BẰNG cái gì đó)',
-    example: 'はしで 食べます。 (Tôi ăn cơm bằng đũa.)\n日本語で レポートを 書きます。 (Tôi viết báo cáo bằng tiếng Nhật.)',
-    examples: [
-      {
-        jp: 'はしで食べます。', vn: 'Tôi ăn bằng đũa.',
-        furigana: [{ kanji: '箸', reading: 'はし', meaning: 'TRỨ' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
-      },
-      {
-        jp: 'ボールペンで書きます。', vn: 'Tôi viết bằng bút bi.',
-        furigana: [{ kanji: '書', reading: 'か', meaning: 'THƯ' }]
-      },
-      {
-        jp: 'はさみで紙を切ります。', vn: 'Tôi cắt giấy bằng kéo.',
-        furigana: [{ kanji: '紙', reading: 'かみ', meaning: 'CHỈ' }, { kanji: '切', reading: 'き', meaning: 'THIẾT' }]
-      },
-      {
-        jp: '日本語で話します。', vn: 'Tôi nói bằng tiếng Nhật.',
-        furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '話', reading: 'はな', meaning: 'THOẠI' }]
-      },
-      {
-        jp: '自転車で学校へ行きます。', vn: 'Tôi đi đến trường bằng xe đạp.',
-        furigana: [{ kanji: '自転車', reading: 'じてんしゃ', meaning: 'TỰ CHUYỂN XA' }, { kanji: '学校', reading: 'がっこう', meaning: 'HỌC HIỆU' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
-      },
-      {
-        jp: 'ナイフで肉を切ります。', vn: 'Tôi cắt thịt bằng dao.',
-        furigana: [{ kanji: '肉', reading: 'にく', meaning: 'NHỤC' }, { kanji: '切', reading: 'き', meaning: 'THIẾT' }]
-      },
-      {
-        jp: '手で取ります。', vn: 'Tôi lấy bằng tay.',
-        furigana: [{ kanji: '手', reading: 'て', meaning: 'THỦ' }, { kanji: '取', reading: 'と', meaning: 'THỦ' }]
-      },
-      {
-        jp: 'タクシーで帰ります。', vn: 'Tôi về bằng taxi.',
-        furigana: [{ kanji: '帰', reading: 'かえ', meaning: 'QUY' }]
-      },
-      {
-        jp: 'パソコンで映画を見ます。', vn: 'Tôi xem phim bằng máy tính.',
-        furigana: [{ kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
-      },
-      {
-        jp: 'ファクスで送ります。', vn: 'Tôi gửi bằng fax.',
-        furigana: [{ kanji: '送', reading: 'おく', meaning: 'TỐNG' }]
-      }
-    ]
-  },
-  {
-    pattern: '\"Từ/Câu\" は ～語で 何ですか',
-    explanation: 'Mẫu câu này dùng để hỏi một từ, một ngữ hoặc một câu được nói như thế nào bằng một ngôn ngữ khác.',
-    example: '「ありがとう」は 英語で 何ですか。 ("Arigatou" tiếng Anh nói thế nào?)\n･･･「Thank you」です。 (Tiếng Anh nói là "Thank you".)\n「Thank you」は 日本語で 何ですか。 ("Thank you" tiếng Nhật nói thế nào?)\n･･･「ありがとう」です。 (Tiếng Nhật nói là "Arigatou".)',
-    examples: [
-      {
-        jp: '「ありがとう」は英語で何ですか。', vn: '“Arigatou” tiếng Anh là gì?',
-        furigana: [{ kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
-      },
-      {
-        jp: '「Good morning」は日本語で何ですか。', vn: '“Good morning” tiếng Nhật là gì?',
-        furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
-      },
-      {
-        jp: '「さようなら」はベトナム語で何ですか。', vn: '“Sayounara” tiếng Việt là gì?',
-        furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
-      },
-      {
-        jp: '「これ」は日本語で何ですか。', vn: 'Cái này tiếng Nhật là gì?',
-        furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
-      },
-      {
-        jp: '「Love」はフランス語で何ですか。', vn: '“Love” tiếng Pháp là gì?',
-        furigana: [{ kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
-      },
-      {
-        jp: '「本」は英語で何ですか。', vn: '“Sách” tiếng Anh là gì?',
-        furigana: [{ kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
-      },
-      {
-        jp: '「水」はタイ語で何ですか。', vn: '“Nước” tiếng Thái là gì?',
-        furigana: [{ kanji: '水', reading: 'みず', meaning: 'THỦY' }, { kanji: '語', reading: 'ご', meaning: 'NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
-      },
-      {
-        jp: '「お金」は中国語で何ですか。', vn: '“Tiền” tiếng Trung là gì?',
-        furigana: [{ kanji: '金', reading: 'かね', meaning: 'KIM' }, { kanji: '中国語', reading: 'ちゅうごくご', meaning: 'TRUNG QUỐC NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
-      },
-      {
-        jp: '「はい」は韓国語で何ですか。', vn: '“Vâng” tiếng Hàn là gì?',
-        furigana: [{ kanji: '韓国語', reading: 'かんこくご', meaning: 'HÀN QUỐC NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
-      },
-      {
-        jp: '「Clock」は日本語で何ですか。', vn: '“Clock” tiếng Nhật là gì?',
-        furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
-      }
-    ]
-  },
-  {
-    pattern: 'Danh từ (người) に あげます/かします/おしえます',
-    explanation: 'Những động từ như 「あげます」 (tặng), 「かします」 (cho mượn), 「おしえます」 (dạy) cần người làm đối tượng (để cho, cho mượn, dạy). Chúng ta đặt trợ từ 「に」 sau danh từ chỉ đối tượng này.\n*Chú ý: Đối với những động từ như 「おくります」 (gửi), 「でんわを かけます」 (gọi điện thoại) thì đối tượng không chỉ là người mà còn có thể là địa điểm (danh từ). Trong trường hợp đó, ngoài trợ từ 「に」, chúng ta còn có thể dùng trợ từ 「へ」.',
-    example: '山田さんは 木村さんに 花を あげました。 (Ông Yamada tặng hoa cho chị Kimura.)\nイーさんに 本を 貸しました。 (Tôi cho chị Lee mượn sách.)\n太郎君に 英語を 教えます。 (Tôi dạy tiếng Anh cho cậu Tarou.)\n会社に 電話を かけます。 (Tôi gọi điện thoại đến công ty.)',
-    examples: [
-      {
-        jp: '母に花をあげます。', vn: 'Tôi tặng hoa cho mẹ.',
-        furigana: [{ kanji: '母', reading: 'はは', meaning: 'MẪU' }, { kanji: '花', reading: 'はな', meaning: 'HOA' }]
-      },
-      {
-        jp: '友達に本を貸します。', vn: 'Tôi cho bạn mượn sách.',
-        furigana: [{ kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '貸', reading: 'か', meaning: 'THẢI' }]
-      },
-      {
-        jp: '弟に英語を教えます。', vn: 'Tôi dạy tiếng Anh cho em trai.',
-        furigana: [{ kanji: '弟', reading: 'おとうと', meaning: 'ĐỆ' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '教', reading: 'おし', meaning: 'GIÁO' }]
-      },
-      {
-        jp: '父にシャツをあげます。', vn: 'Tôi tặng áo sơ mi cho bố.',
-        furigana: [{ kanji: '父', reading: 'ちち', meaning: 'PHỤ' }]
-      },
-      {
-        jp: '会社に電話をかけます。', vn: 'Tôi gọi điện đến công ty.',
-        furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' }]
-      },
-      {
-        jp: '学生に日本語を教えます。', vn: 'Tôi dạy tiếng Nhật cho sinh viên.',
-        furigana: [{ kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '教', reading: 'おし', meaning: 'GIÁO' }]
-      },
-      {
-        jp: '彼女にプレゼントをあげます。', vn: 'Tôi tặng quà cho cô ấy.',
-        furigana: [{ kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' }]
-      },
-      {
-        jp: '友達にお金を貸します。', vn: 'Tôi cho bạn vay tiền.',
-        furigana: [{ kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '金', reading: 'かね', meaning: 'KIM' }, { kanji: '貸', reading: 'か', meaning: 'THẢI' }]
-      },
-      {
-        jp: '先生にメールを送ります。', vn: 'Tôi gửi mail cho thầy giáo.',
-        furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '送', reading: 'おく', meaning: 'TỐNG' }]
-      },
-      {
-        jp: '子供にお菓子をあげます。', vn: 'Tôi cho trẻ con bánh kẹo.',
-        furigana: [{ kanji: '子供', reading: 'こども', meaning: 'TỬ CUNG' }, { kanji: '菓子', reading: 'かし', meaning: 'QUẢ TỬ' }]
-      }
-    ]
-  },
-  {
-    pattern: 'Danh từ (người) に もらいます/かります/ならいます',
-    explanation: 'Các động từ như 「もらいます」 (nhận), 「かります」 (vay, mượn), 「ならいます」 (học) biểu thị hành động từ phía người tiếp nhận. Khi dùng những động từ này trong câu mà chủ ngữ là người tiếp nhận thì chúng ta thêm 「に」 vào sau danh từ chỉ đối tác.\n*Trong mẫu câu này, chúng ta có thể dùng trợ từ 「から」 thay cho 「に」. Đặc biệt là khi đối tác không phải là người mà là một tổ chức nào đó (ví dụ: công ty hoặc trường học) thì không dùng 「に」 mà dùng 「から」.',
-    example: '木村さんは 山田さんに 花を もらいました。 (Chị Kimura đã nhận hoa từ ông Yamada.)\nカリナさんに CDを 借りました。 (Tôi đã mượn đĩa CD từ chị Karina.)\nワンさんに 中国語を 習います。 (Tôi học tiếng Trung từ ông Wang.)\n銀行から お金を 借りました。 (Tôi đã vay tiền từ ngân hàng.)',
-    examples: [
-      {
-        jp: '彼にプレゼントをもらいました。', vn: 'Tôi đã nhận quà từ anh ấy.',
-        furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }]
-      },
-      {
-        jp: '図書館で本を借ります。', vn: 'Tôi mượn sách ở thư viện.',
-        furigana: [{ kanji: '図書館', reading: 'としょかん', meaning: 'ĐỒ THƯ QUÁN' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '借', reading: 'か', meaning: 'TÁ' }]
-      },
-      {
-        jp: '先生に日本語を習います。', vn: 'Tôi học tiếng Nhật từ thầy giáo.',
-        furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
-      },
-      {
-        jp: '父にお金をもらいました。', vn: 'Tôi đã nhận tiền từ bố.',
-        furigana: [{ kanji: '父', reading: 'ちち', meaning: 'PHỤ' }, { kanji: '金', reading: 'かね', meaning: 'KIM' }]
-      },
-      {
-        jp: '友達に自転車を借りました。', vn: 'Tôi đã mượn xe đạp của bạn.',
-        furigana: [{ kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '自転車', reading: 'じてんしゃ', meaning: 'TỰ CHUYỂN XA' }, { kanji: '借', reading: 'か', meaning: 'TÁ' }]
-      },
-      {
-        jp: '母に料理を習います。', vn: 'Tôi học nấu ăn từ mẹ.',
-        furigana: [{ kanji: '母', reading: 'はは', meaning: 'MẪU' }, { kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
-      },
-      {
-        jp: '会社から花をもらいました。', vn: 'Tôi đã nhận hoa từ công ty.',
-        furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '花', reading: 'はな', meaning: 'HOA' }]
-      },
-      {
-        jp: '銀行からお金を借りました。', vn: 'Tôi đã vay tiền từ ngân hàng.',
-        furigana: [{ kanji: '銀行', reading: 'ぎんこう', meaning: 'NGÂN HÀNH' }, { kanji: '金', reading: 'かね', meaning: 'KIM' }, { kanji: '借', reading: 'か', meaning: 'TÁ' }]
-      },
-      {
-        jp: 'ワンさんに中国語を習います。', vn: 'Tôi học tiếng Trung từ anh Wang.',
-        furigana: [{ kanji: '中国語', reading: 'ちゅうごくご', meaning: 'TRUNG QUỐC NGỮ' }, { kanji: '習', reading: 'なら', meaning: 'TẬP' }]
-      },
-      {
-        jp: '部長に手紙をもらいました。', vn: 'Tôi đã nhận thư từ trưởng phòng.',
-        furigana: [{ kanji: '部長', reading: 'ぶちょう', meaning: 'BỘ TRƯỞNG' }, { kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' }]
-      }
-    ]
-  },
-  {
-    pattern: 'もう Động từ ました',
-    explanation: '「もう」 có nghĩa là "đã/rồi" và được dùng với động từ ở thời quá khứ 「Động từ ました」. Trong trường hợp này thì động từ ở thời quá khứ 「Động từ ました」 biểu thị một hành động nào đó đã kết thúc ở thời điểm hiện tại.\nĐối với câu hỏi 「もう Động từ ました」, thì câu trả lời là 「はい、もう Động từ ました」(trong trường hợp khẳng định), và 「いいえ、まだです」(trong trường hợp phủ định).',
-    example: 'もう 荷物を 送りましたか。 (Anh/Chị đã gửi đồ chưa?)\n･･･はい、[もう] 送りました。 (Rồi, tôi đã gửi rồi.)\n･･･いいえ、まだです。 (Chưa, tôi chưa gửi.)',
-    examples: [
-      {
-        jp: 'もう昼ごはんを食べましたか。', vn: 'Bạn đã ăn trưa chưa?',
-        furigana: [{ kanji: '昼', reading: 'ひる', meaning: 'TRÚ' }, { kanji: '飯', reading: 'はん', meaning: 'PHẠN' }, { kanji: '食', reading: 'た', meaning: 'THỰC' }]
-      },
-      {
-        jp: 'いいえ、まだです。', vn: 'Chưa, tôi chưa ăn.',
-        furigana: []
-      },
-      {
-        jp: 'もう宿題をしましたか。', vn: 'Bạn đã làm bài tập chưa?',
-        furigana: [{ kanji: '宿題', reading: 'しゅくだい', meaning: 'TÚC ĐỀ' }]
-      },
-      {
-        jp: 'はい、もうしました。', vn: 'Vâng, tôi làm rồi.',
-        furigana: []
-      },
-      {
-        jp: 'もう切符を買いましたか。', vn: 'Bạn đã mua vé chưa?',
-        furigana: [{ kanji: '切符', reading: 'きっぷ', meaning: 'THIẾT PHÙ' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }]
-      },
-      {
-        jp: 'もうレポートを送りましたか。', vn: 'Bạn đã gửi báo cáo chưa?',
-        furigana: [{ kanji: '送', reading: 'おく', meaning: 'TỐNG' }]
-      },
-      {
-        jp: 'もう映画を見ましたか。', vn: 'Bạn đã xem phim này chưa?',
-        furigana: [{ kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
-      },
-      {
-        jp: 'もう大阪へ行きましたか。', vn: 'Bạn đã đi Osaka chưa?',
-        furigana: [{ kanji: '大阪', reading: 'おおさか', meaning: 'ĐẠI PHẢN' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
-      },
-      {
-        jp: 'もう単語を覚えましたか。', vn: 'Bạn đã nhớ từ vựng chưa?',
-        furigana: [{ kanji: '単語', reading: 'たんご', meaning: 'ĐƠN NGỮ' }, { kanji: '覚', reading: 'おぼ', meaning: 'GIÁC' }]
-      },
-      {
-        jp: 'もう荷物を整理しましたか。', vn: 'Bạn đã sắp xếp hành lý chưa?',
-        furigana: [{ kanji: '荷物', reading: 'にもつ', meaning: 'HÀ VẬT' }, { kanji: '整理', reading: 'せいり', meaning: 'CHỈNH LÝ' }]
-      }
-    ]
-  }
-],
   kaiwa: [
     { char: 'A', jp: 'ごめんください。', vn: 'Xin lỗi, có ai ở nhà không?' },
     { char: 'B', jp: 'いらっしゃい。', vn: 'Chào mừng anh/chị đến chơi.' },
   ],
-    quiz: []
+  quiz: []
 };
 
 const lesson8Data: LessonDetail = {
@@ -30673,9 +30765,9 @@ const lesson8Data: LessonDetail = {
               "reading": "しず"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           "kanji": "静",
           "onyomi": "セイ",
@@ -30858,9 +30950,9 @@ const lesson8Data: LessonDetail = {
               "reading": "えいが"
             }
           ],
-      },
-    ],
-    kanjiDetails: [
+        },
+      ],
+      kanjiDetails: [
         {
           "kanji": "有",
           "onyomi": "ユウ",
@@ -31010,9 +31102,9 @@ const lesson8Data: LessonDetail = {
           ]
         }
       ],
-      },
-    ],
-    kanjiDetails: [
+    },
+  ],
+  kanjiDetails: [
     {
       "kanji": "親",
       "onyomi": "シン",
@@ -31141,6128 +31233,6128 @@ const lesson8Data: LessonDetail = {
         }
       ]
     },
-  {
-    word: 'げんき [な]', kanji: '元気 [な]', romaji: 'genki', mean: 'Khỏe', examples: [
-      {
-        "jp": "元気な子供",
-        "vn": "Đứa trẻ khỏe mạnh.",
-        "furigana": [
-          {
-            "kanji": "元気",
-            "reading": "げんき"
-        },
-          {
-            "kanji": "子供",
-            "reading": "こども"
-        }
-        ]
-      },
-      {
-        "jp": "お元気ですか。",
-        "vn": "Bạn có khỏe không?",
-        "furigana": [
-          {
-            "kanji": "元気",
-            "reading": "げんき"
-        }
-        ]
-      },
-      {
-        "jp": "祖母は元気です。",
-        "vn": "Bà tôi khỏe.",
-        "furigana": [
-          {
-            "kanji": "祖母",
-            "reading": "そぼ"
-        },
-          {
-            "kanji": "元気",
-            "reading": "げんき"
-        }
-        ]
-      },
-      {
-        "jp": "元気な声",
-        "vn": "Giọng nói khỏe khoắn.",
-        "furigana": [
-          {
-            "kanji": "元気",
-            "reading": "げんき"
-        },
-          {
-            "kanji": "声",
-            "reading": "こえ"
-        }
-        ]
-      },
-      {
-        "jp": "元気を出してください。",
-        "vn": "Hãy vui lên (lấy lại tinh thần).",
-        "furigana": [
-          {
-            "kanji": "元気",
-            "reading": "げんき"
-        },
-          {
-            "kanji": "出",
-            "reading": "だ"
-        }
-        ]
-      },
-      {
-        "jp": "あまり元気じゃありません。",
-        "vn": "Không khỏe lắm.",
-        "furigana": [
-          {
-            "kanji": "元気",
-            "reading": "げんき"
-        }
-        ]
-      }
-    ],
-    kanjiDetails: [
-  {
-    "kanji": "元",
-    "onyomi": "ゲン",
-    "kunyomi": "もと",
-    "meaning": "Nguồn gốc",
-    "strokes": 4,
-    "jlpt": "N5",
-    "radicals": "儿",
-    "components": [
-      {
-        "char": "二",
-        "meaning": "hai"
-      },
-      {
-        "char": "儿",
-        "meaning": "chân"
-      }
-    ],
-    "mnemonic": "Hai người chạy đua xem ai khỏe.",
-    "exampleSentences": [
-      {
-        "jp": "元気です。",
-        "vn": "Khỏe mạnh.",
-        "furigana": [
-          {
-            "kanji": "元気",
-            "reading": "げんき"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "気",
-    "onyomi": "キ",
-    "kunyomi": "",
-    "meaning": "Khí",
-    "strokes": 6,
-    "jlpt": "N5",
-    "radicals": "气",
-    "components": [
-      {
-        "char": "气",
-        "meaning": "khí"
-      },
-      {
-        "char": "メ",
-        "meaning": "chéo"
-      }
-    ],
-    "mnemonic": "Khí vô hình.",
-    "exampleSentences": [
-      {
-        "jp": "元気",
-        "vn": "Khỏe.",
-        "furigana": [
-          {
-            "kanji": "元気",
-            "reading": "げんき"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'ひま [な]', kanji: '暇 [な]', romaji: 'hima', mean: 'Rảnh rỗi', examples: [
     {
-      "jp": "暇な時",
-      "vn": "Khi rảnh rỗi.",
-      "furigana": [
+      word: 'げんき [な]', kanji: '元気 [な]', romaji: 'genki', mean: 'Khỏe', examples: [
+        {
+          "jp": "元気な子供",
+          "vn": "Đứa trẻ khỏe mạnh.",
+          "furigana": [
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            },
+            {
+              "kanji": "子供",
+              "reading": "こども"
+            }
+          ]
+        },
+        {
+          "jp": "お元気ですか。",
+          "vn": "Bạn có khỏe không?",
+          "furigana": [
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        },
+        {
+          "jp": "祖母は元気です。",
+          "vn": "Bà tôi khỏe.",
+          "furigana": [
+            {
+              "kanji": "祖母",
+              "reading": "そぼ"
+            },
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        },
+        {
+          "jp": "元気な声",
+          "vn": "Giọng nói khỏe khoắn.",
+          "furigana": [
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            },
+            {
+              "kanji": "声",
+              "reading": "こえ"
+            }
+          ]
+        },
+        {
+          "jp": "元気を出してください。",
+          "vn": "Hãy vui lên (lấy lại tinh thần).",
+          "furigana": [
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            },
+            {
+              "kanji": "出",
+              "reading": "だ"
+            }
+          ]
+        },
+        {
+          "jp": "あまり元気じゃありません。",
+          "vn": "Không khỏe lắm.",
+          "furigana": [
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "元",
+          "onyomi": "ゲン",
+          "kunyomi": "もと",
+          "meaning": "Nguồn gốc",
+          "strokes": 4,
+          "jlpt": "N5",
+          "radicals": "儿",
+          "components": [
+            {
+              "char": "二",
+              "meaning": "hai"
+            },
+            {
+              "char": "儿",
+              "meaning": "chân"
+            }
+          ],
+          "mnemonic": "Hai người chạy đua xem ai khỏe.",
+          "exampleSentences": [
+            {
+              "jp": "元気です。",
+              "vn": "Khỏe mạnh.",
+              "furigana": [
+                {
+                  "kanji": "元気",
+                  "reading": "げんき"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kanji": "気",
+          "onyomi": "キ",
+          "kunyomi": "",
+          "meaning": "Khí",
+          "strokes": 6,
+          "jlpt": "N5",
+          "radicals": "气",
+          "components": [
+            {
+              "char": "气",
+              "meaning": "khí"
+            },
+            {
+              "char": "メ",
+              "meaning": "chéo"
+            }
+          ],
+          "mnemonic": "Khí vô hình.",
+          "exampleSentences": [
+            {
+              "jp": "元気",
+              "vn": "Khỏe.",
+              "furigana": [
+                {
+                  "kanji": "元気",
+                  "reading": "げんき"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ひま [な]', kanji: '暇 [な]', romaji: 'hima', mean: 'Rảnh rỗi', examples: [
+        {
+          "jp": "暇な時",
+          "vn": "Khi rảnh rỗi.",
+          "furigana": [
+            {
+              "kanji": "暇",
+              "reading": "ひま"
+            },
+            {
+              "kanji": "時",
+              "reading": "とき"
+            }
+          ]
+        },
+        {
+          "jp": "今日は暇です。",
+          "vn": "Hôm nay tôi rảnh.",
+          "furigana": [
+            {
+              "kanji": "今日",
+              "reading": "きょう"
+            },
+            {
+              "kanji": "暇",
+              "reading": "ひま"
+            }
+          ]
+        },
+        {
+          "jp": "日曜日は暇じゃありません。",
+          "vn": "Chủ nhật tôi không rảnh.",
+          "furigana": [
+            {
+              "kanji": "日曜日",
+              "reading": "にちようび"
+            },
+            {
+              "kanji": "暇",
+              "reading": "ひま"
+            }
+          ]
+        },
+        {
+          "jp": "暇な日",
+          "vn": "Ngày rảnh.",
+          "furigana": [
+            {
+              "kanji": "暇",
+              "reading": "ひま"
+            },
+            {
+              "kanji": "日",
+              "reading": "ひ"
+            }
+          ]
+        },
+        {
+          "jp": "暇な人",
+          "vn": "Người rảnh rỗi.",
+          "furigana": [
+            {
+              "kanji": "暇",
+              "reading": "ひま"
+            },
+            {
+              "kanji": "人",
+              "reading": "ひと"
+            }
+          ]
+        },
+        {
+          "jp": "暇ですから、遊びに行きます。",
+          "vn": "Vì rảnh nên tôi đi chơi.",
+          "furigana": [
+            {
+              "kanji": "暇",
+              "reading": "ひま"
+            },
+            {
+              "kanji": "遊",
+              "reading": "あそ"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
         {
           "kanji": "暇",
-          "reading": "ひま"
-        },
-        {
-          "kanji": "時",
-          "reading": "とき"
+          "onyomi": "カ",
+          "kunyomi": "ひま",
+          "meaning": "Rảnh rỗi",
+          "strokes": 13,
+          "jlpt": "N4",
+          "radicals": "日",
+          "components": [
+            {
+              "char": "日",
+              "meaning": "ngày"
+            },
+            {
+              "char": "叺",
+              "meaning": "giả"
+            }
+          ],
+          "mnemonic": "Ngày nghỉ là ngày rảnh.",
+          "exampleSentences": [
+            {
+              "jp": "暇な時",
+              "vn": "Khi rảnh.",
+              "furigana": [
+                {
+                  "kanji": "暇",
+                  "reading": "ひま"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "今日は暇です。",
-      "vn": "Hôm nay tôi rảnh.",
-      "furigana": [
+      word: 'べんり [な]', kanji: '便利 [な]', romaji: 'benri', mean: 'Tiện lợi', examples: [
         {
-          "kanji": "今日",
-          "reading": "きょう"
+          "jp": "便利なパソコン",
+          "vn": "Máy tính tiện lợi.",
+          "furigana": [
+            {
+              "kanji": "便利",
+              "reading": "べんり"
+            }
+          ]
         },
         {
-          "kanji": "暇",
-          "reading": "ひま"
+          "jp": "この鞄は便利です。",
+          "vn": "Cái túi này tiện lợi.",
+          "furigana": [
+            {
+              "kanji": "鞄",
+              "reading": "かばん"
+            },
+            {
+              "kanji": "便利",
+              "reading": "べんり"
+            }
+          ]
+        },
+        {
+          "jp": "便利な道具",
+          "vn": "Dụng cụ tiện lợi.",
+          "furigana": [
+            {
+              "kanji": "便利",
+              "reading": "べんり"
+            },
+            {
+              "kanji": "道具",
+              "reading": "どうぐ"
+            }
+          ]
+        },
+        {
+          "jp": "駅に近くて便利です。",
+          "vn": "Gần ga nên tiện.",
+          "furigana": [
+            {
+              "kanji": "駅",
+              "reading": "えき"
+            },
+            {
+              "kanji": "近",
+              "reading": "ちか"
+            },
+            {
+              "kanji": "便利",
+              "reading": "べんり"
+            }
+          ]
+        },
+        {
+          "jp": "不便",
+          "vn": "Bất tiện (trái nghĩa).",
+          "furigana": [
+            {
+              "kanji": "不便",
+              "reading": "ふべん"
+            }
+          ]
+        },
+        {
+          "jp": "コンビニは便利です。",
+          "vn": "Cửa hàng tiện lợi rất tiện.",
+          "furigana": [
+            {
+              "kanji": "便利",
+              "reading": "べんり"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "便",
+          "onyomi": "ベン",
+          "kunyomi": "たよ.り",
+          "meaning": "Tiện lợi",
+          "strokes": 9,
+          "jlpt": "N4",
+          "radicals": "人",
+          "components": [
+            {
+              "char": "イ",
+              "meaning": "người"
+            },
+            {
+              "char": "更",
+              "meaning": "đổi"
+            }
+          ],
+          "mnemonic": "Người thay đổi cách làm cho tiện.",
+          "exampleSentences": [
+            {
+              "jp": "便利です。",
+              "vn": "Tiện lợi.",
+              "furigana": [
+                {
+                  "kanji": "便利",
+                  "reading": "べんり"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kanji": "利",
+          "onyomi": "リ",
+          "kunyomi": "き.く",
+          "meaning": "Lợi ích",
+          "strokes": 7,
+          "jlpt": "N4",
+          "radicals": "刀",
+          "components": [
+            {
+              "char": "禾",
+              "meaning": "lúa"
+            },
+            {
+              "char": "刂",
+              "meaning": "dao"
+            }
+          ],
+          "mnemonic": "Dùng dao gặt lúa thu lợi.",
+          "exampleSentences": [
+            {
+              "jp": "便利",
+              "vn": "Tiện lợi.",
+              "furigana": [
+                {
+                  "kanji": "便利",
+                  "reading": "べんり"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "日曜日は暇じゃありません。",
-      "vn": "Chủ nhật tôi không rảnh.",
-      "furigana": [
+      word: 'すてき [な]', kanji: 'すてき [な]', romaji: 'suteki', mean: 'Đẹp, hay', examples: [
         {
-          "kanji": "日曜日",
-          "reading": "にちようび"
+          "jp": "素敵な方",
+          "vn": "Người tuyệt vời.",
+          "furigana": [
+            {
+              "kanji": "素敵",
+              "reading": "すてき"
+            },
+            {
+              "kanji": "方",
+              "reading": "かた"
+            }
+          ]
         },
         {
-          "kanji": "暇",
-          "reading": "ひま"
+          "jp": "素敵なプレゼント",
+          "vn": "Món quà tuyệt vời.",
+          "furigana": [
+            {
+              "kanji": "素敵",
+              "reading": "すてき"
+            }
+          ]
+        },
+        {
+          "jp": "すてきですね。",
+          "vn": "Đẹp quá / Tuyệt quá.",
+          "furigana": []
+        },
+        {
+          "jp": "素敵な服",
+          "vn": "Bộ quần áo đẹp.",
+          "furigana": [
+            {
+              "kanji": "素敵",
+              "reading": "すてき"
+            },
+            {
+              "kanji": "服",
+              "reading": "ふく"
+            }
+          ]
+        },
+        {
+          "jp": "素敵な景色",
+          "vn": "Phong cảnh tuyệt vời.",
+          "furigana": [
+            {
+              "kanji": "素敵",
+              "reading": "すてき"
+            },
+            {
+              "kanji": "景色",
+              "reading": "けしき"
+            }
+          ]
+        },
+        {
+          "jp": "素敵な笑顔",
+          "vn": "Nụ cười đẹp.",
+          "furigana": [
+            {
+              "kanji": "素敵",
+              "reading": "すてき"
+            },
+            {
+              "kanji": "笑顔",
+              "reading": "えがお"
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "暇な日",
-      "vn": "Ngày rảnh.",
-      "furigana": [
+      word: 'おおきい', kanji: '大きい', romaji: 'ookii', mean: 'Lớn, to', examples: [
         {
-          "kanji": "暇",
-          "reading": "ひま"
+          "jp": "大きい家",
+          "vn": "Ngôi nhà to.",
+          "furigana": [
+            {
+              "kanji": "大",
+              "reading": "おお"
+            },
+            {
+              "kanji": "家",
+              "reading": "いえ"
+            }
+          ]
         },
         {
-          "kanji": "日",
-          "reading": "ひ"
-        }
-      ]
-    },
-    {
-      "jp": "暇な人",
-      "vn": "Người rảnh rỗi.",
-      "furigana": [
-        {
-          "kanji": "暇",
-          "reading": "ひま"
+          "jp": "背が高い",
+          "vn": "Dáng người cao (to).",
+          "furigana": [
+            {
+              "kanji": "背",
+              "reading": "せ"
+            },
+            {
+              "kanji": "高",
+              "reading": "たか"
+            }
+          ]
         },
         {
-          "kanji": "人",
-          "reading": "ひと"
-        }
-      ]
-    },
-    {
-      "jp": "暇ですから、遊びに行きます。",
-      "vn": "Vì rảnh nên tôi đi chơi.",
-      "furigana": [
-        {
-          "kanji": "暇",
-          "reading": "ひま"
+          "jp": "大きい声",
+          "vn": "Giọng to.",
+          "furigana": [
+            {
+              "kanji": "大",
+              "reading": "おお"
+            },
+            {
+              "kanji": "声",
+              "reading": "こえ"
+            }
+          ]
         },
         {
-          "kanji": "遊",
-          "reading": "あそ"
+          "jp": "この靴は大きいです。",
+          "vn": "Đôi giày này to.",
+          "furigana": [
+            {
+              "kanji": "靴",
+              "reading": "くつ"
+            },
+            {
+              "kanji": "大",
+              "reading": "おお"
+            }
+          ]
         },
         {
-          "kanji": "行",
-          "reading": "い"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "暇",
-    "onyomi": "カ",
-    "kunyomi": "ひま",
-    "meaning": "Rảnh rỗi",
-    "strokes": 13,
-    "jlpt": "N4",
-    "radicals": "日",
-    "components": [
-      {
-        "char": "日",
-        "meaning": "ngày"
-      },
-      {
-        "char": "叺",
-        "meaning": "giả"
-      }
-    ],
-    "mnemonic": "Ngày nghỉ là ngày rảnh.",
-    "exampleSentences": [
-      {
-        "jp": "暇な時",
-        "vn": "Khi rảnh.",
-        "furigana": [
-          {
-            "kanji": "暇",
-            "reading": "ひま"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'べんり [な]', kanji: '便利 [な]', romaji: 'benri', mean: 'Tiện lợi', examples: [
-    {
-      "jp": "便利なパソコン",
-      "vn": "Máy tính tiện lợi.",
-      "furigana": [
-        {
-          "kanji": "便利",
-          "reading": "べんり"
-        }
-      ]
-    },
-    {
-      "jp": "この鞄は便利です。",
-      "vn": "Cái túi này tiện lợi.",
-      "furigana": [
-        {
-          "kanji": "鞄",
-          "reading": "かばん"
+          "jp": "大きい町",
+          "vn": "Thành phố lớn.",
+          "furigana": [
+            {
+              "kanji": "大",
+              "reading": "おお"
+            },
+            {
+              "kanji": "町",
+              "reading": "まち"
+            }
+          ]
         },
         {
-          "kanji": "便利",
-          "reading": "べんり"
+          "jp": "字を大きく書きます。",
+          "vn": "Viết chữ to.",
+          "furigana": [
+            {
+              "kanji": "字",
+              "reading": "じ"
+            },
+            {
+              "kanji": "大",
+              "reading": "おお"
+            },
+            {
+              "kanji": "書",
+              "reading": "か"
+            }
+          ]
         }
-      ]
-    },
-    {
-      "jp": "便利な道具",
-      "vn": "Dụng cụ tiện lợi.",
-      "furigana": [
-        {
-          "kanji": "便利",
-          "reading": "べんり"
-        },
-        {
-          "kanji": "道具",
-          "reading": "どうぐ"
-        }
-      ]
-    },
-    {
-      "jp": "駅に近くて便利です。",
-      "vn": "Gần ga nên tiện.",
-      "furigana": [
-        {
-          "kanji": "駅",
-          "reading": "えき"
-        },
-        {
-          "kanji": "近",
-          "reading": "ちか"
-        },
-        {
-          "kanji": "便利",
-          "reading": "べんり"
-        }
-      ]
-    },
-    {
-      "jp": "不便",
-      "vn": "Bất tiện (trái nghĩa).",
-      "furigana": [
-        {
-          "kanji": "不便",
-          "reading": "ふべん"
-        }
-      ]
-    },
-    {
-      "jp": "コンビニは便利です。",
-      "vn": "Cửa hàng tiện lợi rất tiện.",
-      "furigana": [
-        {
-          "kanji": "便利",
-          "reading": "べんり"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "便",
-    "onyomi": "ベン",
-    "kunyomi": "たよ.り",
-    "meaning": "Tiện lợi",
-    "strokes": 9,
-    "jlpt": "N4",
-    "radicals": "人",
-    "components": [
-      {
-        "char": "イ",
-        "meaning": "người"
-      },
-      {
-        "char": "更",
-        "meaning": "đổi"
-      }
-    ],
-    "mnemonic": "Người thay đổi cách làm cho tiện.",
-    "exampleSentences": [
-      {
-        "jp": "便利です。",
-        "vn": "Tiện lợi.",
-        "furigana": [
-          {
-            "kanji": "便利",
-            "reading": "べんり"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "利",
-    "onyomi": "リ",
-    "kunyomi": "き.く",
-    "meaning": "Lợi ích",
-    "strokes": 7,
-    "jlpt": "N4",
-    "radicals": "刀",
-    "components": [
-      {
-        "char": "禾",
-        "meaning": "lúa"
-      },
-      {
-        "char": "刂",
-        "meaning": "dao"
-      }
-    ],
-    "mnemonic": "Dùng dao gặt lúa thu lợi.",
-    "exampleSentences": [
-      {
-        "jp": "便利",
-        "vn": "Tiện lợi.",
-        "furigana": [
-          {
-            "kanji": "便利",
-            "reading": "べんり"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'すてき [な]', kanji: 'すてき [な]', romaji: 'suteki', mean: 'Đẹp, hay', examples: [
-    {
-      "jp": "素敵な方",
-      "vn": "Người tuyệt vời.",
-      "furigana": [
-        {
-          "kanji": "素敵",
-          "reading": "すてき"
-        },
-        {
-          "kanji": "方",
-          "reading": "かた"
-        }
-      ]
-    },
-    {
-      "jp": "素敵なプレゼント",
-      "vn": "Món quà tuyệt vời.",
-      "furigana": [
-        {
-          "kanji": "素敵",
-          "reading": "すてき"
-        }
-      ]
-    },
-    {
-      "jp": "すてきですね。",
-      "vn": "Đẹp quá / Tuyệt quá.",
-      "furigana": []
-    },
-    {
-      "jp": "素敵な服",
-      "vn": "Bộ quần áo đẹp.",
-      "furigana": [
-        {
-          "kanji": "素敵",
-          "reading": "すてき"
-        },
-        {
-          "kanji": "服",
-          "reading": "ふく"
-        }
-      ]
-    },
-    {
-      "jp": "素敵な景色",
-      "vn": "Phong cảnh tuyệt vời.",
-      "furigana": [
-        {
-          "kanji": "素敵",
-          "reading": "すてき"
-        },
-        {
-          "kanji": "景色",
-          "reading": "けしき"
-        }
-      ]
-    },
-    {
-      "jp": "素敵な笑顔",
-      "vn": "Nụ cười đẹp.",
-      "furigana": [
-        {
-          "kanji": "素敵",
-          "reading": "すてき"
-        },
-        {
-          "kanji": "笑顔",
-          "reading": "えがお"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'おおきい', kanji: '大きい', romaji: 'ookii', mean: 'Lớn, to', examples: [
-    {
-      "jp": "大きい家",
-      "vn": "Ngôi nhà to.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "大",
-          "reading": "おお"
-        },
-        {
-          "kanji": "家",
-          "reading": "いえ"
+          "onyomi": "ダイ",
+          "kunyomi": "おお.きい",
+          "meaning": "To lớn",
+          "strokes": 3,
+          "jlpt": "N5",
+          "radicals": "大",
+          "components": [
+            {
+              "char": "大",
+              "meaning": "to"
+            }
+          ],
+          "mnemonic": "Hình người dang tay.",
+          "exampleSentences": [
+            {
+              "jp": "大きい家",
+              "vn": "Nhà to.",
+              "furigana": [
+                {
+                  "kanji": "大",
+                  "reading": "おお"
+                },
+                {
+                  "kanji": "家",
+                  "reading": "いえ"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "背が高い",
-      "vn": "Dáng người cao (to).",
-      "furigana": [
+      word: 'ちいさい', kanji: '小さい', romaji: 'chiisai', mean: 'Bé, nhỏ', examples: [
         {
-          "kanji": "背",
-          "reading": "せ"
+          "jp": "小さい鞄",
+          "vn": "Cái cặp nhỏ.",
+          "furigana": [
+            {
+              "kanji": "小",
+              "reading": "ちい"
+            },
+            {
+              "kanji": "鞄",
+              "reading": "かばん"
+            }
+          ]
         },
         {
-          "kanji": "高",
-          "reading": "たか"
+          "jp": "小さい声",
+          "vn": "Giọng nhỏ.",
+          "furigana": [
+            {
+              "kanji": "小",
+              "reading": "ちい"
+            },
+            {
+              "kanji": "声",
+              "reading": "こえ"
+            }
+          ]
+        },
+        {
+          "jp": "私の部屋は小さいです。",
+          "vn": "Phòng của tôi nhỏ.",
+          "furigana": [
+            {
+              "kanji": "私",
+              "reading": "わたし"
+            },
+            {
+              "kanji": "部屋",
+              "reading": "へや"
+            },
+            {
+              "kanji": "小",
+              "reading": "ちい"
+            }
+          ]
+        },
+        {
+          "jp": "小さい車",
+          "vn": "Xe ô tô nhỏ.",
+          "furigana": [
+            {
+              "kanji": "小",
+              "reading": "ちい"
+            },
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            }
+          ]
+        },
+        {
+          "jp": "小さい村",
+          "vn": "Ngôi làng nhỏ.",
+          "furigana": [
+            {
+              "kanji": "小",
+              "reading": "ちい"
+            },
+            {
+              "kanji": "村",
+              "reading": "むら"
+            }
+          ]
+        },
+        {
+          "jp": "小さく切ります。",
+          "vn": "Cắt nhỏ.",
+          "furigana": [
+            {
+              "kanji": "小",
+              "reading": "ちい"
+            },
+            {
+              "kanji": "切",
+              "reading": "き"
+            }
+          ]
         }
-      ]
-    },
-    {
-      "jp": "大きい声",
-      "vn": "Giọng to.",
-      "furigana": [
-        {
-          "kanji": "大",
-          "reading": "おお"
-        },
-        {
-          "kanji": "声",
-          "reading": "こえ"
-        }
-      ]
-    },
-    {
-      "jp": "この靴は大きいです。",
-      "vn": "Đôi giày này to.",
-      "furigana": [
-        {
-          "kanji": "靴",
-          "reading": "くつ"
-        },
-        {
-          "kanji": "大",
-          "reading": "おお"
-        }
-      ]
-    },
-    {
-      "jp": "大きい町",
-      "vn": "Thành phố lớn.",
-      "furigana": [
-        {
-          "kanji": "大",
-          "reading": "おお"
-        },
-        {
-          "kanji": "町",
-          "reading": "まち"
-        }
-      ]
-    },
-    {
-      "jp": "字を大きく書きます。",
-      "vn": "Viết chữ to.",
-      "furigana": [
-        {
-          "kanji": "字",
-          "reading": "じ"
-        },
-        {
-          "kanji": "大",
-          "reading": "おお"
-        },
-        {
-          "kanji": "書",
-          "reading": "か"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "大",
-    "onyomi": "ダイ",
-    "kunyomi": "おお.きい",
-    "meaning": "To lớn",
-    "strokes": 3,
-    "jlpt": "N5",
-    "radicals": "大",
-    "components": [
-      {
-        "char": "大",
-        "meaning": "to"
-      }
-    ],
-    "mnemonic": "Hình người dang tay.",
-    "exampleSentences": [
-      {
-        "jp": "大きい家",
-        "vn": "Nhà to.",
-        "furigana": [
-          {
-            "kanji": "大",
-            "reading": "おお"
-          },
-          {
-            "kanji": "家",
-            "reading": "いえ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'ちいさい', kanji: '小さい', romaji: 'chiisai', mean: 'Bé, nhỏ', examples: [
-    {
-      "jp": "小さい鞄",
-      "vn": "Cái cặp nhỏ.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "小",
-          "reading": "ちい"
-        },
-        {
-          "kanji": "鞄",
-          "reading": "かばん"
+          "onyomi": "ショウ",
+          "kunyomi": "ちい.さい",
+          "meaning": "Nhỏ",
+          "strokes": 3,
+          "jlpt": "N5",
+          "radicals": "小",
+          "components": [
+            {
+              "char": "小",
+              "meaning": "nhỏ"
+            }
+          ],
+          "mnemonic": "Hạt cát nhỏ chia ra.",
+          "exampleSentences": [
+            {
+              "jp": "小さい犬",
+              "vn": "Chó nhỏ.",
+              "furigana": [
+                {
+                  "kanji": "小",
+                  "reading": "ちい"
+                },
+                {
+                  "kanji": "犬",
+                  "reading": "いぬ"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "小さい声",
-      "vn": "Giọng nhỏ.",
-      "furigana": [
+      word: 'あたらしい', kanji: '新しい', romaji: 'atarashii', mean: 'Mới', examples: [
         {
-          "kanji": "小",
-          "reading": "ちい"
+          "jp": "新しい本",
+          "vn": "Sách mới.",
+          "furigana": [
+            {
+              "kanji": "新",
+              "reading": "あたら"
+            },
+            {
+              "kanji": "本",
+              "reading": "ほん"
+            }
+          ]
         },
         {
-          "kanji": "声",
-          "reading": "こえ"
+          "jp": "新しい車",
+          "vn": "Xe mới.",
+          "furigana": [
+            {
+              "kanji": "新",
+              "reading": "あたら"
+            },
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            }
+          ]
+        },
+        {
+          "jp": "この靴は新しいです。",
+          "vn": "Đôi giày này mới.",
+          "furigana": [
+            {
+              "kanji": "靴",
+              "reading": "くつ"
+            },
+            {
+              "kanji": "新",
+              "reading": "あたら"
+            }
+          ]
+        },
+        {
+          "jp": "新しいパソコン",
+          "vn": "Máy tính mới.",
+          "furigana": [
+            {
+              "kanji": "新",
+              "reading": "あたら"
+            }
+          ]
+        },
+        {
+          "jp": "新しい年",
+          "vn": "Năm mới.",
+          "furigana": [
+            {
+              "kanji": "新",
+              "reading": "あたら"
+            },
+            {
+              "kanji": "年",
+              "reading": "とし"
+            }
+          ]
+        },
+        {
+          "jp": "新入社員",
+          "vn": "Nhân viên mới.",
+          "furigana": [
+            {
+              "kanji": "新入社員",
+              "reading": "しんにゅうしゃいん"
+            }
+          ]
         }
-      ]
-    },
-    {
-      "jp": "私の部屋は小さいです。",
-      "vn": "Phòng của tôi nhỏ.",
-      "furigana": [
-        {
-          "kanji": "私",
-          "reading": "わたし"
-        },
-        {
-          "kanji": "部屋",
-          "reading": "へや"
-        },
-        {
-          "kanji": "小",
-          "reading": "ちい"
-        }
-      ]
-    },
-    {
-      "jp": "小さい車",
-      "vn": "Xe ô tô nhỏ.",
-      "furigana": [
-        {
-          "kanji": "小",
-          "reading": "ちい"
-        },
-        {
-          "kanji": "車",
-          "reading": "くるま"
-        }
-      ]
-    },
-    {
-      "jp": "小さい村",
-      "vn": "Ngôi làng nhỏ.",
-      "furigana": [
-        {
-          "kanji": "小",
-          "reading": "ちい"
-        },
-        {
-          "kanji": "村",
-          "reading": "むら"
-        }
-      ]
-    },
-    {
-      "jp": "小さく切ります。",
-      "vn": "Cắt nhỏ.",
-      "furigana": [
-        {
-          "kanji": "小",
-          "reading": "ちい"
-        },
-        {
-          "kanji": "切",
-          "reading": "き"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "小",
-    "onyomi": "ショウ",
-    "kunyomi": "ちい.さい",
-    "meaning": "Nhỏ",
-    "strokes": 3,
-    "jlpt": "N5",
-    "radicals": "小",
-    "components": [
-      {
-        "char": "小",
-        "meaning": "nhỏ"
-      }
-    ],
-    "mnemonic": "Hạt cát nhỏ chia ra.",
-    "exampleSentences": [
-      {
-        "jp": "小さい犬",
-        "vn": "Chó nhỏ.",
-        "furigana": [
-          {
-            "kanji": "小",
-            "reading": "ちい"
-          },
-          {
-            "kanji": "犬",
-            "reading": "いぬ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'あたらしい', kanji: '新しい', romaji: 'atarashii', mean: 'Mới', examples: [
-    {
-      "jp": "新しい本",
-      "vn": "Sách mới.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "新",
-          "reading": "あたら"
+          "onyomi": "シン",
+          "kunyomi": "あたら.しい",
+          "meaning": "Mới",
+          "strokes": 13,
+          "jlpt": "N5",
+          "radicals": "斤",
+          "components": [
+            {
+              "char": "立",
+              "meaning": "đứng"
+            },
+            {
+              "char": "木",
+              "meaning": "cây"
+            },
+            {
+              "char": "斤",
+              "meaning": "rìu"
+            }
+          ],
+          "mnemonic": "Đứng bên cây dùng rìu làm nhà mới.",
+          "exampleSentences": [
+            {
+              "jp": "新しい車",
+              "vn": "Xe mới.",
+              "furigana": [
+                {
+                  "kanji": "新",
+                  "reading": "あたら"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ふるい', kanji: '古い', romaji: 'furui', mean: 'Cũ', examples: [
+        {
+          "jp": "古い家",
+          "vn": "Ngôi nhà cũ.",
+          "furigana": [
+            {
+              "kanji": "古",
+              "reading": "ふる"
+            },
+            {
+              "kanji": "家",
+              "reading": "いえ"
+            }
+          ]
         },
         {
-          "kanji": "本",
-          "reading": "ほん"
-        }
-      ]
-    },
-    {
-      "jp": "新しい車",
-      "vn": "Xe mới.",
-      "furigana": [
-        {
-          "kanji": "新",
-          "reading": "あたら"
+          "jp": "古い時計",
+          "vn": "Đồng hồ cũ.",
+          "furigana": [
+            {
+              "kanji": "古",
+              "reading": "ふる"
+            },
+            {
+              "kanji": "時計",
+              "reading": "とけい"
+            }
+          ]
         },
         {
-          "kanji": "車",
-          "reading": "くるま"
-        }
-      ]
-    },
-    {
-      "jp": "この靴は新しいです。",
-      "vn": "Đôi giày này mới.",
-      "furigana": [
-        {
-          "kanji": "靴",
-          "reading": "くつ"
+          "jp": "この本は古いです。",
+          "vn": "Quyển sách này cũ.",
+          "furigana": [
+            {
+              "kanji": "本",
+              "reading": "ほん"
+            },
+            {
+              "kanji": "古",
+              "reading": "ふる"
+            }
+          ]
         },
         {
-          "kanji": "新",
-          "reading": "あたら"
-        }
-      ]
-    },
-    {
-      "jp": "新しいパソコン",
-      "vn": "Máy tính mới.",
-      "furigana": [
-        {
-          "kanji": "新",
-          "reading": "あたら"
-        }
-      ]
-    },
-    {
-      "jp": "新しい年",
-      "vn": "Năm mới.",
-      "furigana": [
-        {
-          "kanji": "新",
-          "reading": "あたら"
+          "jp": "古い友達",
+          "vn": "Bạn cũ.",
+          "furigana": [
+            {
+              "kanji": "古",
+              "reading": "ふる"
+            },
+            {
+              "kanji": "友達",
+              "reading": "ともだち"
+            }
+          ]
         },
         {
-          "kanji": "年",
-          "reading": "とし"
-        }
-      ]
-    },
-    {
-      "jp": "新入社員",
-      "vn": "Nhân viên mới.",
-      "furigana": [
+          "jp": "古い手紙",
+          "vn": "Bức thư cũ.",
+          "furigana": [
+            {
+              "kanji": "古",
+              "reading": "ふる"
+            },
+            {
+              "kanji": "手紙",
+              "reading": "てがみ"
+            }
+          ]
+        },
         {
-          "kanji": "新入社員",
-          "reading": "しんにゅうしゃいん"
+          "jp": "古い町",
+          "vn": "Phố cổ.",
+          "furigana": [
+            {
+              "kanji": "古",
+              "reading": "ふる"
+            },
+            {
+              "kanji": "町",
+              "reading": "まち"
+            }
+          ]
         }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "新",
-    "onyomi": "シン",
-    "kunyomi": "あたら.しい",
-    "meaning": "Mới",
-    "strokes": 13,
-    "jlpt": "N5",
-    "radicals": "斤",
-    "components": [
-      {
-        "char": "立",
-        "meaning": "đứng"
-      },
-      {
-        "char": "木",
-        "meaning": "cây"
-      },
-      {
-        "char": "斤",
-        "meaning": "rìu"
-      }
-    ],
-    "mnemonic": "Đứng bên cây dùng rìu làm nhà mới.",
-    "exampleSentences": [
-      {
-        "jp": "新しい車",
-        "vn": "Xe mới.",
-        "furigana": [
-          {
-            "kanji": "新",
-            "reading": "あたら"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'ふるい', kanji: '古い', romaji: 'furui', mean: 'Cũ', examples: [
-    {
-      "jp": "古い家",
-      "vn": "Ngôi nhà cũ.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "古",
-          "reading": "ふる"
+          "onyomi": "コ",
+          "kunyomi": "ふる.い",
+          "meaning": "Cũ",
+          "strokes": 5,
+          "jlpt": "N5",
+          "radicals": "口",
+          "components": [
+            {
+              "char": "十",
+              "meaning": "10"
+            },
+            {
+              "char": "口",
+              "meaning": "miệng"
+            }
+          ],
+          "mnemonic": "Chuyện qua 10 miệng là chuyện cổ.",
+          "exampleSentences": [
+            {
+              "jp": "古い本",
+              "vn": "Sách cũ.",
+              "furigana": [
+                {
+                  "kanji": "古",
+                  "reading": "ふる"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'いい (よい)', kanji: 'いい (よい)', romaji: 'ii (yoi)', mean: 'Tốt', examples: [
+        {
+          "jp": "いい天気",
+          "vn": "Thời tiết tốt.",
+          "furigana": [
+            {
+              "kanji": "天気",
+              "reading": "てんき"
+            }
+          ]
         },
         {
-          "kanji": "家",
-          "reading": "いえ"
-        }
-      ]
-    },
-    {
-      "jp": "古い時計",
-      "vn": "Đồng hồ cũ.",
-      "furigana": [
-        {
-          "kanji": "古",
-          "reading": "ふる"
+          "jp": "いい人",
+          "vn": "Người tốt.",
+          "furigana": [
+            {
+              "kanji": "人",
+              "reading": "ひと"
+            }
+          ]
         },
         {
-          "kanji": "時計",
-          "reading": "とけい"
-        }
-      ]
-    },
-    {
-      "jp": "この本は古いです。",
-      "vn": "Quyển sách này cũ.",
-      "furigana": [
-        {
-          "kanji": "本",
-          "reading": "ほん"
+          "jp": "体にいいです。",
+          "vn": "Tốt cho cơ thể.",
+          "furigana": [
+            {
+              "kanji": "体",
+              "reading": "からだ"
+            }
+          ]
         },
         {
-          "kanji": "古",
-          "reading": "ふる"
-        }
-      ]
-    },
-    {
-      "jp": "古い友達",
-      "vn": "Bạn cũ.",
-      "furigana": [
-        {
-          "kanji": "古",
-          "reading": "ふる"
+          "jp": "いい考え",
+          "vn": "Ý kiến hay.",
+          "furigana": [
+            {
+              "kanji": "考",
+              "reading": "かんが"
+            }
+          ]
         },
         {
-          "kanji": "友達",
-          "reading": "ともだち"
-        }
-      ]
-    },
-    {
-      "jp": "古い手紙",
-      "vn": "Bức thư cũ.",
-      "furigana": [
-        {
-          "kanji": "古",
-          "reading": "ふる"
+          "jp": "調子がいい",
+          "vn": "Tình trạng tốt.",
+          "furigana": [
+            {
+              "kanji": "調子",
+              "reading": "ちょうし"
+            }
+          ]
         },
         {
-          "kanji": "手紙",
-          "reading": "てがみ"
+          "jp": "頭がいい",
+          "vn": "Thông minh.",
+          "furigana": [
+            {
+              "kanji": "頭",
+              "reading": "あたま"
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "古い町",
-      "vn": "Phố cổ.",
-      "furigana": [
+      word: 'わるい', kanji: '悪い', romaji: 'warui', mean: 'Xấu', examples: [
         {
-          "kanji": "古",
-          "reading": "ふる"
+          "jp": "悪い人",
+          "vn": "Người xấu.",
+          "furigana": [
+            {
+              "kanji": "悪",
+              "reading": "わる"
+            },
+            {
+              "kanji": "人",
+              "reading": "ひと"
+            }
+          ]
         },
         {
-          "kanji": "町",
-          "reading": "まち"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "古",
-    "onyomi": "コ",
-    "kunyomi": "ふる.い",
-    "meaning": "Cũ",
-    "strokes": 5,
-    "jlpt": "N5",
-    "radicals": "口",
-    "components": [
-      {
-        "char": "十",
-        "meaning": "10"
-      },
-      {
-        "char": "口",
-        "meaning": "miệng"
-      }
-    ],
-    "mnemonic": "Chuyện qua 10 miệng là chuyện cổ.",
-    "exampleSentences": [
-      {
-        "jp": "古い本",
-        "vn": "Sách cũ.",
-        "furigana": [
-          {
-            "kanji": "古",
-            "reading": "ふる"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'いい (よい)', kanji: 'いい (よい)', romaji: 'ii (yoi)', mean: 'Tốt', examples: [
-    {
-      "jp": "いい天気",
-      "vn": "Thời tiết tốt.",
-      "furigana": [
+          "jp": "目が悪いです。",
+          "vn": "Mắt kém.",
+          "furigana": [
+            {
+              "kanji": "目",
+              "reading": "め"
+            },
+            {
+              "kanji": "悪",
+              "reading": "わる"
+            }
+          ]
+        },
         {
-          "kanji": "天気",
-          "reading": "てんき"
-        }
-      ]
-    },
-    {
-      "jp": "いい人",
-      "vn": "Người tốt.",
-      "furigana": [
+          "jp": "気分が悪い",
+          "vn": "Cảm thấy không khỏe.",
+          "furigana": [
+            {
+              "kanji": "気分",
+              "reading": "きぶん"
+            },
+            {
+              "kanji": "悪",
+              "reading": "わる"
+            }
+          ]
+        },
         {
-          "kanji": "人",
-          "reading": "ひと"
-        }
-      ]
-    },
-    {
-      "jp": "体にいいです。",
-      "vn": "Tốt cho cơ thể.",
-      "furigana": [
+          "jp": "天気が悪いです。",
+          "vn": "Thời tiết xấu.",
+          "furigana": [
+            {
+              "kanji": "天気",
+              "reading": "てんき"
+            },
+            {
+              "kanji": "悪",
+              "reading": "わる"
+            }
+          ]
+        },
         {
-          "kanji": "体",
-          "reading": "からだ"
-        }
-      ]
-    },
-    {
-      "jp": "いい考え",
-      "vn": "Ý kiến hay.",
-      "furigana": [
+          "jp": "悪いニュース",
+          "vn": "Tin xấu.",
+          "furigana": [
+            {
+              "kanji": "悪",
+              "reading": "わる"
+            }
+          ]
+        },
         {
-          "kanji": "考",
-          "reading": "かんが"
+          "jp": "頭が悪い",
+          "vn": "Kém thông minh (ngốc).",
+          "furigana": [
+            {
+              "kanji": "頭",
+              "reading": "あたま"
+            },
+            {
+              "kanji": "悪",
+              "reading": "わる"
+            }
+          ]
         }
-      ]
-    },
-    {
-      "jp": "調子がいい",
-      "vn": "Tình trạng tốt.",
-      "furigana": [
-        {
-          "kanji": "調子",
-          "reading": "ちょうし"
-        }
-      ]
-    },
-    {
-      "jp": "頭がいい",
-      "vn": "Thông minh.",
-      "furigana": [
-        {
-          "kanji": "頭",
-          "reading": "あたま"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'わるい', kanji: '悪い', romaji: 'warui', mean: 'Xấu', examples: [
-    {
-      "jp": "悪い人",
-      "vn": "Người xấu.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "悪",
-          "reading": "わる"
-        },
-        {
-          "kanji": "人",
-          "reading": "ひと"
+          "onyomi": "アク",
+          "kunyomi": "わる.い",
+          "meaning": "Xấu",
+          "strokes": 11,
+          "jlpt": "N4",
+          "radicals": "心",
+          "components": [
+            {
+              "char": "亜",
+              "meaning": "á"
+            },
+            {
+              "char": "心",
+              "meaning": "tâm"
+            }
+          ],
+          "mnemonic": "Tâm đặt sai chỗ là xấu.",
+          "exampleSentences": [
+            {
+              "jp": "天気が悪いです。",
+              "vn": "Thời tiết xấu.",
+              "furigana": [
+                {
+                  "kanji": "悪",
+                  "reading": "わる"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "目が悪いです。",
-      "vn": "Mắt kém.",
-      "furigana": [
+      word: 'あつい', kanji: '暑い, 熱い', romaji: 'atsui', mean: 'Nóng', examples: [
         {
-          "kanji": "目",
-          "reading": "め"
+          "jp": "暑いですね。",
+          "vn": "Trời nóng nhỉ.",
+          "furigana": [
+            {
+              "kanji": "暑",
+              "reading": "あつ"
+            }
+          ]
         },
         {
-          "kanji": "悪",
-          "reading": "わる"
-        }
-      ]
-    },
-    {
-      "jp": "気分が悪い",
-      "vn": "Cảm thấy không khỏe.",
-      "furigana": [
-        {
-          "kanji": "気分",
-          "reading": "きぶん"
+          "jp": "熱いお茶",
+          "vn": "Trà nóng.",
+          "furigana": [
+            {
+              "kanji": "熱",
+              "reading": "あつ"
+            },
+            {
+              "kanji": "茶",
+              "reading": "ちゃ"
+            }
+          ]
         },
         {
-          "kanji": "悪",
-          "reading": "わる"
-        }
-      ]
-    },
-    {
-      "jp": "天気が悪いです。",
-      "vn": "Thời tiết xấu.",
-      "furigana": [
-        {
-          "kanji": "天気",
-          "reading": "てんき"
+          "jp": "今日は暑いです。",
+          "vn": "Hôm nay trời nóng.",
+          "furigana": [
+            {
+              "kanji": "今日",
+              "reading": "きょう"
+            },
+            {
+              "kanji": "暑",
+              "reading": "あつ"
+            }
+          ]
         },
         {
-          "kanji": "悪",
-          "reading": "わる"
-        }
-      ]
-    },
-    {
-      "jp": "悪いニュース",
-      "vn": "Tin xấu.",
-      "furigana": [
-        {
-          "kanji": "悪",
-          "reading": "わる"
-        }
-      ]
-    },
-    {
-      "jp": "頭が悪い",
-      "vn": "Kém thông minh (ngốc).",
-      "furigana": [
-        {
-          "kanji": "頭",
-          "reading": "あたま"
+          "jp": "熱いコーヒー",
+          "vn": "Cà phê nóng.",
+          "furigana": [
+            {
+              "kanji": "熱",
+              "reading": "あつ"
+            }
+          ]
         },
         {
-          "kanji": "悪",
-          "reading": "わる"
+          "jp": "お湯が熱いです。",
+          "vn": "Nước nóng (bỏng).",
+          "furigana": [
+            {
+              "kanji": "湯",
+              "reading": "ゆ"
+            },
+            {
+              "kanji": "熱",
+              "reading": "あつ"
+            }
+          ]
+        },
+        {
+          "jp": "厚い本",
+          "vn": "Quyển sách dày.",
+          "furigana": [
+            {
+              "kanji": "厚",
+              "reading": "あつ"
+            },
+            {
+              "kanji": "本",
+              "reading": "ほん"
+            }
+          ]
         }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "悪",
-    "onyomi": "アク",
-    "kunyomi": "わる.い",
-    "meaning": "Xấu",
-    "strokes": 11,
-    "jlpt": "N4",
-    "radicals": "心",
-    "components": [
-      {
-        "char": "亜",
-        "meaning": "á"
-      },
-      {
-        "char": "心",
-        "meaning": "tâm"
-      }
-    ],
-    "mnemonic": "Tâm đặt sai chỗ là xấu.",
-    "exampleSentences": [
-      {
-        "jp": "天気が悪いです。",
-        "vn": "Thời tiết xấu.",
-        "furigana": [
-          {
-            "kanji": "悪",
-            "reading": "わる"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'あつい', kanji: '暑い, 熱い', romaji: 'atsui', mean: 'Nóng', examples: [
-    {
-      "jp": "暑いですね。",
-      "vn": "Trời nóng nhỉ.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "暑",
-          "reading": "あつ"
-        }
-      ]
-    },
-    {
-      "jp": "熱いお茶",
-      "vn": "Trà nóng.",
-      "furigana": [
-        {
-          "kanji": "熱",
-          "reading": "あつ"
-        },
-        {
-          "kanji": "茶",
-          "reading": "ちゃ"
-        }
-      ]
-    },
-    {
-      "jp": "今日は暑いです。",
-      "vn": "Hôm nay trời nóng.",
-      "furigana": [
-        {
-          "kanji": "今日",
-          "reading": "きょう"
-        },
-        {
-          "kanji": "暑",
-          "reading": "あつ"
-        }
-      ]
-    },
-    {
-      "jp": "熱いコーヒー",
-      "vn": "Cà phê nóng.",
-      "furigana": [
-        {
-          "kanji": "熱",
-          "reading": "あつ"
-        }
-      ]
-    },
-    {
-      "jp": "お湯が熱いです。",
-      "vn": "Nước nóng (bỏng).",
-      "furigana": [
-        {
-          "kanji": "湯",
-          "reading": "ゆ"
+          "onyomi": "ショ",
+          "kunyomi": "あつ.い",
+          "meaning": "Nóng",
+          "strokes": 12,
+          "jlpt": "N4",
+          "radicals": "日",
+          "components": [
+            {
+              "char": "日",
+              "meaning": "trời"
+            },
+            {
+              "char": "者",
+              "meaning": "người"
+            }
+          ],
+          "mnemonic": "Người đứng dưới trời nắng thì nóng.",
+          "exampleSentences": [
+            {
+              "jp": "今日は暑いです。",
+              "vn": "Hôm nay nóng.",
+              "furigana": [
+                {
+                  "kanji": "暑",
+                  "reading": "あつ"
+                }
+              ]
+            }
+          ]
         },
         {
           "kanji": "熱",
-          "reading": "あつ"
+          "onyomi": "ネツ",
+          "kunyomi": "あつ.い",
+          "meaning": "Nóng (vật)",
+          "strokes": 15,
+          "jlpt": "N4",
+          "radicals": "火",
+          "components": [
+            {
+              "char": "勢",
+              "meaning": "thế"
+            },
+            {
+              "char": "灬",
+              "meaning": "hỏa"
+            }
+          ],
+          "mnemonic": "Đốt lửa tạo nhiệt.",
+          "exampleSentences": [
+            {
+              "jp": "熱いコーヒー",
+              "vn": "Cafe nóng.",
+              "furigana": [
+                {
+                  "kanji": "熱",
+                  "reading": "あつ"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "厚い本",
-      "vn": "Quyển sách dày.",
-      "furigana": [
+      word: 'さむい', kanji: '寒い', romaji: 'samui', mean: 'Lạnh, rét (dùng cho thời tiết)', examples: [
         {
-          "kanji": "厚",
-          "reading": "あつ"
+          "jp": "寒い天気",
+          "vn": "Thời tiết lạnh.",
+          "furigana": [
+            {
+              "kanji": "寒",
+              "reading": "さむ"
+            },
+            {
+              "kanji": "天気",
+              "reading": "てんき"
+            }
+          ]
         },
         {
-          "kanji": "本",
-          "reading": "ほん"
+          "jp": "今日は寒いです。",
+          "vn": "Hôm nay trời lạnh.",
+          "furigana": [
+            {
+              "kanji": "今日",
+              "reading": "きょう"
+            },
+            {
+              "kanji": "寒",
+              "reading": "さむ"
+            }
+          ]
+        },
+        {
+          "jp": "寒いですね。",
+          "vn": "Lạnh nhỉ.",
+          "furigana": [
+            {
+              "kanji": "寒",
+              "reading": "さむ"
+            }
+          ]
+        },
+        {
+          "jp": "寒い部屋",
+          "vn": "Căn phòng lạnh.",
+          "furigana": [
+            {
+              "kanji": "寒",
+              "reading": "さむ"
+            },
+            {
+              "kanji": "部屋",
+              "reading": "へや"
+            }
+          ]
+        },
+        {
+          "jp": "寒くて風邪を引きました。",
+          "vn": "Vì lạnh nên tôi bị cảm.",
+          "furigana": [
+            {
+              "kanji": "寒",
+              "reading": "さむ"
+            },
+            {
+              "kanji": "風邪",
+              "reading": "かぜ"
+            },
+            {
+              "kanji": "引",
+              "reading": "ひ"
+            }
+          ]
+        },
+        {
+          "jp": "懐が寒い",
+          "vn": "Cháy túi (hết tiền).",
+          "furigana": [
+            {
+              "kanji": "懐",
+              "reading": "ふところ"
+            },
+            {
+              "kanji": "寒",
+              "reading": "さむ"
+            }
+          ]
         }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "暑",
-    "onyomi": "ショ",
-    "kunyomi": "あつ.い",
-    "meaning": "Nóng",
-    "strokes": 12,
-    "jlpt": "N4",
-    "radicals": "日",
-    "components": [
-      {
-        "char": "日",
-        "meaning": "trời"
-      },
-      {
-        "char": "者",
-        "meaning": "người"
-      }
-    ],
-    "mnemonic": "Người đứng dưới trời nắng thì nóng.",
-    "exampleSentences": [
-      {
-        "jp": "今日は暑いです。",
-        "vn": "Hôm nay nóng.",
-        "furigana": [
-          {
-            "kanji": "暑",
-            "reading": "あつ"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "熱",
-    "onyomi": "ネツ",
-    "kunyomi": "あつ.い",
-    "meaning": "Nóng (vật)",
-    "strokes": 15,
-    "jlpt": "N4",
-    "radicals": "火",
-    "components": [
-      {
-        "char": "勢",
-        "meaning": "thế"
-      },
-      {
-        "char": "灬",
-        "meaning": "hỏa"
-      }
-    ],
-    "mnemonic": "Đốt lửa tạo nhiệt.",
-    "exampleSentences": [
-      {
-        "jp": "熱いコーヒー",
-        "vn": "Cafe nóng.",
-        "furigana": [
-          {
-            "kanji": "熱",
-            "reading": "あつ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'さむい', kanji: '寒い', romaji: 'samui', mean: 'Lạnh, rét (dùng cho thời tiết)', examples: [
-    {
-      "jp": "寒い天気",
-      "vn": "Thời tiết lạnh.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "寒",
-          "reading": "さむ"
-        },
-        {
-          "kanji": "天気",
-          "reading": "てんき"
+          "onyomi": "カン",
+          "kunyomi": "さむ.い",
+          "meaning": "Lạnh",
+          "strokes": 12,
+          "jlpt": "N4",
+          "radicals": "宀",
+          "components": [
+            {
+              "char": "宀",
+              "meaning": "nhà"
+            },
+            {
+              "char": "井",
+              "meaning": "giếng"
+            },
+            {
+              "char": "冫",
+              "meaning": "băng"
+            }
+          ],
+          "mnemonic": "Trong nhà nước giếng đóng băng thì lạnh.",
+          "exampleSentences": [
+            {
+              "jp": "寒いです。",
+              "vn": "Lạnh.",
+              "furigana": [
+                {
+                  "kanji": "寒",
+                  "reading": "さむ"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "今日は寒いです。",
-      "vn": "Hôm nay trời lạnh.",
-      "furigana": [
+      word: 'つめたい', kanji: '冷たい', romaji: 'tsumetai', mean: 'Lạnh, buốt (dùng cho cảm giác)', examples: [
         {
-          "kanji": "今日",
-          "reading": "きょう"
+          "jp": "冷たい水",
+          "vn": "Nước lạnh.",
+          "furigana": [
+            {
+              "kanji": "冷",
+              "reading": "つめ"
+            },
+            {
+              "kanji": "水",
+              "reading": "みず"
+            }
+          ]
         },
         {
-          "kanji": "寒",
-          "reading": "さむ"
-        }
-      ]
-    },
-    {
-      "jp": "寒いですね。",
-      "vn": "Lạnh nhỉ.",
-      "furigana": [
-        {
-          "kanji": "寒",
-          "reading": "さむ"
-        }
-      ]
-    },
-    {
-      "jp": "寒い部屋",
-      "vn": "Căn phòng lạnh.",
-      "furigana": [
-        {
-          "kanji": "寒",
-          "reading": "さむ"
+          "jp": "冷たいジュース",
+          "vn": "Nước trái cây lạnh.",
+          "furigana": [
+            {
+              "kanji": "冷",
+              "reading": "つめ"
+            }
+          ]
         },
         {
-          "kanji": "部屋",
-          "reading": "へや"
-        }
-      ]
-    },
-    {
-      "jp": "寒くて風邪を引きました。",
-      "vn": "Vì lạnh nên tôi bị cảm.",
-      "furigana": [
-        {
-          "kanji": "寒",
-          "reading": "さむ"
+          "jp": "手が冷たいです。",
+          "vn": "Tay lạnh.",
+          "furigana": [
+            {
+              "kanji": "手",
+              "reading": "て"
+            },
+            {
+              "kanji": "冷",
+              "reading": "つめ"
+            }
+          ]
         },
         {
-          "kanji": "風邪",
-          "reading": "かぜ"
+          "jp": "冷たい人",
+          "vn": "Người lạnh lùng.",
+          "furigana": [
+            {
+              "kanji": "冷",
+              "reading": "つめ"
+            },
+            {
+              "kanji": "人",
+              "reading": "ひと"
+            }
+          ]
         },
         {
-          "kanji": "引",
-          "reading": "ひ"
-        }
-      ]
-    },
-    {
-      "jp": "懐が寒い",
-      "vn": "Cháy túi (hết tiền).",
-      "furigana": [
-        {
-          "kanji": "懐",
-          "reading": "ふところ"
+          "jp": "冷たいビール",
+          "vn": "Bia lạnh.",
+          "furigana": [
+            {
+              "kanji": "冷",
+              "reading": "つめ"
+            }
+          ]
         },
         {
-          "kanji": "寒",
-          "reading": "さむ"
+          "jp": "冷たくします。",
+          "vn": "Làm lạnh.",
+          "furigana": [
+            {
+              "kanji": "冷",
+              "reading": "つめ"
+            }
+          ]
         }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "寒",
-    "onyomi": "カン",
-    "kunyomi": "さむ.い",
-    "meaning": "Lạnh",
-    "strokes": 12,
-    "jlpt": "N4",
-    "radicals": "宀",
-    "components": [
-      {
-        "char": "宀",
-        "meaning": "nhà"
-      },
-      {
-        "char": "井",
-        "meaning": "giếng"
-      },
-      {
-        "char": "冫",
-        "meaning": "băng"
-      }
-    ],
-    "mnemonic": "Trong nhà nước giếng đóng băng thì lạnh.",
-    "exampleSentences": [
-      {
-        "jp": "寒いです。",
-        "vn": "Lạnh.",
-        "furigana": [
-          {
-            "kanji": "寒",
-            "reading": "さむ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'つめたい', kanji: '冷たい', romaji: 'tsumetai', mean: 'Lạnh, buốt (dùng cho cảm giác)', examples: [
-    {
-      "jp": "冷たい水",
-      "vn": "Nước lạnh.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "冷",
-          "reading": "つめ"
+          "onyomi": "レイ",
+          "kunyomi": "つめ.たい",
+          "meaning": "Lạnh (vật)",
+          "strokes": 7,
+          "jlpt": "N4",
+          "radicals": "冫",
+          "components": [
+            {
+              "char": "冫",
+              "meaning": "băng"
+            },
+            {
+              "char": "令",
+              "meaning": "lệnh"
+            }
+          ],
+          "mnemonic": "Ra lệnh làm đóng băng.",
+          "exampleSentences": [
+            {
+              "jp": "冷たい水",
+              "vn": "Nước lạnh.",
+              "furigana": [
+                {
+                  "kanji": "冷",
+                  "reading": "つめ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'むずかしい', kanji: '難しい', romaji: 'muzukashii', mean: 'Khó', examples: [
+        {
+          "jp": "難しい問題",
+          "vn": "Vấn đề khó.",
+          "furigana": [
+            {
+              "kanji": "難",
+              "reading": "むずか"
+            },
+            {
+              "kanji": "問題",
+              "reading": "もんだい"
+            }
+          ]
         },
         {
-          "kanji": "水",
-          "reading": "みず"
-        }
-      ]
-    },
-    {
-      "jp": "冷たいジュース",
-      "vn": "Nước trái cây lạnh.",
-      "furigana": [
-        {
-          "kanji": "冷",
-          "reading": "つめ"
-        }
-      ]
-    },
-    {
-      "jp": "手が冷たいです。",
-      "vn": "Tay lạnh.",
-      "furigana": [
-        {
-          "kanji": "手",
-          "reading": "て"
+          "jp": "日本語は難しいです。",
+          "vn": "Tiếng Nhật khó.",
+          "furigana": [
+            {
+              "kanji": "日本語",
+              "reading": "にほんご"
+            },
+            {
+              "kanji": "難",
+              "reading": "むずか"
+            }
+          ]
         },
         {
-          "kanji": "冷",
-          "reading": "つめ"
-        }
-      ]
-    },
-    {
-      "jp": "冷たい人",
-      "vn": "Người lạnh lùng.",
-      "furigana": [
-        {
-          "kanji": "冷",
-          "reading": "つめ"
+          "jp": "難しい本",
+          "vn": "Sách khó (hiểu).",
+          "furigana": [
+            {
+              "kanji": "難",
+              "reading": "むずか"
+            },
+            {
+              "kanji": "本",
+              "reading": "ほん"
+            }
+          ]
         },
         {
-          "kanji": "人",
-          "reading": "ひと"
-        }
-      ]
-    },
-    {
-      "jp": "冷たいビール",
-      "vn": "Bia lạnh.",
-      "furigana": [
+          "jp": "難しくないです。",
+          "vn": "Không khó.",
+          "furigana": [
+            {
+              "kanji": "難",
+              "reading": "むずか"
+            }
+          ]
+        },
         {
-          "kanji": "冷",
-          "reading": "つめ"
-        }
-      ]
-    },
-    {
-      "jp": "冷たくします。",
-      "vn": "Làm lạnh.",
-      "furigana": [
+          "jp": "難しい試験",
+          "vn": "Kỳ thi khó.",
+          "furigana": [
+            {
+              "kanji": "難",
+              "reading": "むずか"
+            },
+            {
+              "kanji": "試験",
+              "reading": "しけん"
+            }
+          ]
+        },
         {
-          "kanji": "冷",
-          "reading": "つめ"
+          "jp": "漢字は難しいです。",
+          "vn": "Chữ Hán khó.",
+          "furigana": [
+            {
+              "kanji": "漢字",
+              "reading": "かんじ"
+            },
+            {
+              "kanji": "難",
+              "reading": "むずか"
+            }
+          ]
         }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "冷",
-    "onyomi": "レイ",
-    "kunyomi": "つめ.たい",
-    "meaning": "Lạnh (vật)",
-    "strokes": 7,
-    "jlpt": "N4",
-    "radicals": "冫",
-    "components": [
-      {
-        "char": "冫",
-        "meaning": "băng"
-      },
-      {
-        "char": "令",
-        "meaning": "lệnh"
-      }
-    ],
-    "mnemonic": "Ra lệnh làm đóng băng.",
-    "exampleSentences": [
-      {
-        "jp": "冷たい水",
-        "vn": "Nước lạnh.",
-        "furigana": [
-          {
-            "kanji": "冷",
-            "reading": "つめ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'むずかしい', kanji: '難しい', romaji: 'muzukashii', mean: 'Khó', examples: [
-    {
-      "jp": "難しい問題",
-      "vn": "Vấn đề khó.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "難",
-          "reading": "むずか"
-        },
-        {
-          "kanji": "問題",
-          "reading": "もんだい"
+          "onyomi": "ナン",
+          "kunyomi": "むずか.しい",
+          "meaning": "Khó",
+          "strokes": 18,
+          "jlpt": "N3",
+          "radicals": "隹",
+          "components": [
+            {
+              "char": "",
+              "meaning": "hán"
+            },
+            {
+              "char": "隹",
+              "meaning": "chim"
+            }
+          ],
+          "mnemonic": "Bắt chim khi hạn hán thì khó.",
+          "exampleSentences": [
+            {
+              "jp": "難しいです。",
+              "vn": "Khó.",
+              "furigana": [
+                {
+                  "kanji": "難",
+                  "reading": "むずか"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "日本語は難しいです。",
-      "vn": "Tiếng Nhật khó.",
-      "furigana": [
+      word: 'やさしい', kanji: '易しい', romaji: 'yasashii', mean: 'Dễ', examples: [
         {
-          "kanji": "日本語",
-          "reading": "にほんご"
+          "jp": "易しい問題",
+          "vn": "Vấn đề dễ.",
+          "furigana": [
+            {
+              "kanji": "易",
+              "reading": "やさ"
+            },
+            {
+              "kanji": "問題",
+              "reading": "もんだい"
+            }
+          ]
         },
         {
-          "kanji": "難",
-          "reading": "むずか"
-        }
-      ]
-    },
-    {
-      "jp": "難しい本",
-      "vn": "Sách khó (hiểu).",
-      "furigana": [
-        {
-          "kanji": "難",
-          "reading": "むずか"
+          "jp": "この本は易しいです。",
+          "vn": "Quyển sách này dễ.",
+          "furigana": [
+            {
+              "kanji": "本",
+              "reading": "ほん"
+            },
+            {
+              "kanji": "易",
+              "reading": "やさ"
+            }
+          ]
         },
         {
-          "kanji": "本",
-          "reading": "ほん"
-        }
-      ]
-    },
-    {
-      "jp": "難しくないです。",
-      "vn": "Không khó.",
-      "furigana": [
-        {
-          "kanji": "難",
-          "reading": "むずか"
-        }
-      ]
-    },
-    {
-      "jp": "難しい試験",
-      "vn": "Kỳ thi khó.",
-      "furigana": [
-        {
-          "kanji": "難",
-          "reading": "むずか"
+          "jp": "優しい人",
+          "vn": "Người hiền lành (dùng chữ Hán khác).",
+          "furigana": [
+            {
+              "kanji": "優",
+              "reading": "やさ"
+            },
+            {
+              "kanji": "人",
+              "reading": "ひと"
+            }
+          ]
         },
         {
-          "kanji": "試験",
-          "reading": "しけん"
-        }
-      ]
-    },
-    {
-      "jp": "漢字は難しいです。",
-      "vn": "Chữ Hán khó.",
-      "furigana": [
-        {
-          "kanji": "漢字",
-          "reading": "かんじ"
+          "jp": "易しい日本語",
+          "vn": "Tiếng Nhật dễ.",
+          "furigana": [
+            {
+              "kanji": "易",
+              "reading": "やさ"
+            },
+            {
+              "kanji": "日本語",
+              "reading": "にほんご"
+            }
+          ]
         },
         {
-          "kanji": "難",
-          "reading": "むずか"
+          "jp": "先生は優しいです。",
+          "vn": "Thầy giáo hiền.",
+          "furigana": [
+            {
+              "kanji": "先生",
+              "reading": "せんせい"
+            },
+            {
+              "kanji": "優",
+              "reading": "やさ"
+            }
+          ]
+        },
+        {
+          "jp": "易しく説明します。",
+          "vn": "Giải thích một cách dễ hiểu.",
+          "furigana": [
+            {
+              "kanji": "易",
+              "reading": "やさ"
+            },
+            {
+              "kanji": "説明",
+              "reading": "せつめい"
+            }
+          ]
         }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "難",
-    "onyomi": "ナン",
-    "kunyomi": "むずか.しい",
-    "meaning": "Khó",
-    "strokes": 18,
-    "jlpt": "N3",
-    "radicals": "隹",
-    "components": [
-      {
-        "char": "",
-        "meaning": "hán"
-      },
-      {
-        "char": "隹",
-        "meaning": "chim"
-      }
-    ],
-    "mnemonic": "Bắt chim khi hạn hán thì khó.",
-    "exampleSentences": [
-      {
-        "jp": "難しいです。",
-        "vn": "Khó.",
-        "furigana": [
-          {
-            "kanji": "難",
-            "reading": "むずか"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'やさしい', kanji: '易しい', romaji: 'yasashii', mean: 'Dễ', examples: [
-    {
-      "jp": "易しい問題",
-      "vn": "Vấn đề dễ.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "易",
-          "reading": "やさ"
-        },
-        {
-          "kanji": "問題",
-          "reading": "もんだい"
+          "onyomi": "エキ",
+          "kunyomi": "やさ.しい",
+          "meaning": "Dễ",
+          "strokes": 8,
+          "jlpt": "N4",
+          "radicals": "日",
+          "components": [
+            {
+              "char": "日",
+              "meaning": "trời"
+            },
+            {
+              "char": "勿",
+              "meaning": "chớ"
+            }
+          ],
+          "mnemonic": "Mặt trời mọc thì chớ lo, mọi việc sẽ dễ.",
+          "exampleSentences": [
+            {
+              "jp": "易しい問題",
+              "vn": "Vấn đề dễ.",
+              "furigana": [
+                {
+                  "kanji": "易",
+                  "reading": "やさ"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "この本は易しいです。",
-      "vn": "Quyển sách này dễ.",
-      "furigana": [
+      word: 'たかい', kanji: '高い', romaji: 'takai', mean: 'Đắt, cao', examples: [
         {
-          "kanji": "本",
-          "reading": "ほん"
+          "jp": "高い山",
+          "vn": "Núi cao.",
+          "furigana": [
+            {
+              "kanji": "高",
+              "reading": "たか"
+            },
+            {
+              "kanji": "山",
+              "reading": "やま"
+            }
+          ]
         },
         {
-          "kanji": "易",
-          "reading": "やさ"
-        }
-      ]
-    },
-    {
-      "jp": "優しい人",
-      "vn": "Người hiền lành (dùng chữ Hán khác).",
-      "furigana": [
-        {
-          "kanji": "優",
-          "reading": "やさ"
+          "jp": "値段が高い",
+          "vn": "Giá cao (đắt).",
+          "furigana": [
+            {
+              "kanji": "値段",
+              "reading": "ねだん"
+            },
+            {
+              "kanji": "高",
+              "reading": "たか"
+            }
+          ]
         },
         {
-          "kanji": "人",
-          "reading": "ひと"
-        }
-      ]
-    },
-    {
-      "jp": "易しい日本語",
-      "vn": "Tiếng Nhật dễ.",
-      "furigana": [
-        {
-          "kanji": "易",
-          "reading": "やさ"
+          "jp": "背が高い",
+          "vn": "Dáng cao.",
+          "furigana": [
+            {
+              "kanji": "背",
+              "reading": "せ"
+            },
+            {
+              "kanji": "高",
+              "reading": "たか"
+            }
+          ]
         },
         {
-          "kanji": "日本語",
-          "reading": "にほんご"
-        }
-      ]
-    },
-    {
-      "jp": "先生は優しいです。",
-      "vn": "Thầy giáo hiền.",
-      "furigana": [
-        {
-          "kanji": "先生",
-          "reading": "せんせい"
+          "jp": "高いカメラ",
+          "vn": "Máy ảnh đắt tiền.",
+          "furigana": [
+            {
+              "kanji": "高",
+              "reading": "たか"
+            }
+          ]
         },
         {
-          "kanji": "優",
-          "reading": "やさ"
-        }
-      ]
-    },
-    {
-      "jp": "易しく説明します。",
-      "vn": "Giải thích một cách dễ hiểu.",
-      "furigana": [
-        {
-          "kanji": "易",
-          "reading": "やさ"
+          "jp": "ビルが高いです。",
+          "vn": "Tòa nhà cao.",
+          "furigana": [
+            {
+              "kanji": "高",
+              "reading": "たか"
+            }
+          ]
         },
         {
-          "kanji": "説明",
-          "reading": "せつめい"
+          "jp": "高すぎます。",
+          "vn": "Đắt quá / Cao quá.",
+          "furigana": [
+            {
+              "kanji": "高",
+              "reading": "たか"
+            }
+          ]
         }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "易",
-    "onyomi": "エキ",
-    "kunyomi": "やさ.しい",
-    "meaning": "Dễ",
-    "strokes": 8,
-    "jlpt": "N4",
-    "radicals": "日",
-    "components": [
-      {
-        "char": "日",
-        "meaning": "trời"
-      },
-      {
-        "char": "勿",
-        "meaning": "chớ"
-      }
-    ],
-    "mnemonic": "Mặt trời mọc thì chớ lo, mọi việc sẽ dễ.",
-    "exampleSentences": [
-      {
-        "jp": "易しい問題",
-        "vn": "Vấn đề dễ.",
-        "furigana": [
-          {
-            "kanji": "易",
-            "reading": "やさ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'たかい', kanji: '高い', romaji: 'takai', mean: 'Đắt, cao', examples: [
-    {
-      "jp": "高い山",
-      "vn": "Núi cao.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "高",
-          "reading": "たか"
+          "onyomi": "コウ",
+          "kunyomi": "たか.い",
+          "meaning": "Cao",
+          "strokes": 10,
+          "jlpt": "N5",
+          "radicals": "高",
+          "components": [
+            {
+              "char": "高",
+              "meaning": "cao"
+            }
+          ],
+          "mnemonic": "Tòa tháp cao.",
+          "exampleSentences": [
+            {
+              "jp": "高い山",
+              "vn": "Núi cao.",
+              "furigana": [
+                {
+                  "kanji": "高",
+                  "reading": "たか"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'やすい', kanji: '安い', romaji: 'yasui', mean: 'Rẻ', examples: [
+        {
+          "jp": "安い店",
+          "vn": "Cửa hàng giá rẻ.",
+          "furigana": [
+            {
+              "kanji": "安",
+              "reading": "やす"
+            },
+            {
+              "kanji": "店",
+              "reading": "みせ"
+            }
+          ]
         },
         {
-          "kanji": "山",
-          "reading": "やま"
-        }
-      ]
-    },
-    {
-      "jp": "値段が高い",
-      "vn": "Giá cao (đắt).",
-      "furigana": [
-        {
-          "kanji": "値段",
-          "reading": "ねだん"
+          "jp": "値段が安いです。",
+          "vn": "Giá rẻ.",
+          "furigana": [
+            {
+              "kanji": "値段",
+              "reading": "ねだん"
+            },
+            {
+              "kanji": "安",
+              "reading": "やす"
+            }
+          ]
         },
         {
-          "kanji": "高",
-          "reading": "たか"
-        }
-      ]
-    },
-    {
-      "jp": "背が高い",
-      "vn": "Dáng cao.",
-      "furigana": [
-        {
-          "kanji": "背",
-          "reading": "せ"
+          "jp": "安いシャツ",
+          "vn": "Áo sơ mi rẻ.",
+          "furigana": [
+            {
+              "kanji": "安",
+              "reading": "やす"
+            }
+          ]
         },
         {
-          "kanji": "高",
-          "reading": "たか"
-        }
-      ]
-    },
-    {
-      "jp": "高いカメラ",
-      "vn": "Máy ảnh đắt tiền.",
-      "furigana": [
+          "jp": "安く買いました。",
+          "vn": "Đã mua với giá rẻ.",
+          "furigana": [
+            {
+              "kanji": "安",
+              "reading": "やす"
+            },
+            {
+              "kanji": "買",
+              "reading": "か"
+            }
+          ]
+        },
         {
-          "kanji": "高",
-          "reading": "たか"
-        }
-      ]
-    },
-    {
-      "jp": "ビルが高いです。",
-      "vn": "Tòa nhà cao.",
-      "furigana": [
+          "jp": "安売り",
+          "vn": "Bán rẻ (giảm giá).",
+          "furigana": [
+            {
+              "kanji": "安売",
+              "reading": "やすう"
+            }
+          ]
+        },
         {
-          "kanji": "高",
-          "reading": "たか"
+          "jp": "この本は安いです。",
+          "vn": "Quyển sách này rẻ.",
+          "furigana": [
+            {
+              "kanji": "本",
+              "reading": "ほん"
+            },
+            {
+              "kanji": "安",
+              "reading": "やす"
+            }
+          ]
         }
-      ]
-    },
-    {
-      "jp": "高すぎます。",
-      "vn": "Đắt quá / Cao quá.",
-      "furigana": [
-        {
-          "kanji": "高",
-          "reading": "たか"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "高",
-    "onyomi": "コウ",
-    "kunyomi": "たか.い",
-    "meaning": "Cao",
-    "strokes": 10,
-    "jlpt": "N5",
-    "radicals": "高",
-    "components": [
-      {
-        "char": "高",
-        "meaning": "cao"
-      }
-    ],
-    "mnemonic": "Tòa tháp cao.",
-    "exampleSentences": [
-      {
-        "jp": "高い山",
-        "vn": "Núi cao.",
-        "furigana": [
-          {
-            "kanji": "高",
-            "reading": "たか"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'やすい', kanji: '安い', romaji: 'yasui', mean: 'Rẻ', examples: [
-    {
-      "jp": "安い店",
-      "vn": "Cửa hàng giá rẻ.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "安",
-          "reading": "やす"
+          "onyomi": "アン",
+          "kunyomi": "やす.い",
+          "meaning": "Rẻ",
+          "strokes": 6,
+          "jlpt": "N5",
+          "radicals": "宀",
+          "components": [
+            {
+              "char": "宀",
+              "meaning": "nhà"
+            },
+            {
+              "char": "女",
+              "meaning": "nữ"
+            }
+          ],
+          "mnemonic": "Phụ nữ trong nhà thì an tâm.",
+          "exampleSentences": [
+            {
+              "jp": "安い車",
+              "vn": "Xe rẻ.",
+              "furigana": [
+                {
+                  "kanji": "安",
+                  "reading": "やす"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ひくい', kanji: '低い', romaji: 'hikui', mean: 'Thấp', examples: [
+        {
+          "jp": "低い山",
+          "vn": "Núi thấp.",
+          "furigana": [
+            {
+              "kanji": "低",
+              "reading": "ひく"
+            },
+            {
+              "kanji": "山",
+              "reading": "やま"
+            }
+          ]
         },
         {
-          "kanji": "店",
-          "reading": "みせ"
-        }
-      ]
-    },
-    {
-      "jp": "値段が安いです。",
-      "vn": "Giá rẻ.",
-      "furigana": [
-        {
-          "kanji": "値段",
-          "reading": "ねだん"
+          "jp": "背が低い",
+          "vn": "Dáng thấp.",
+          "furigana": [
+            {
+              "kanji": "背",
+              "reading": "せ"
+            },
+            {
+              "kanji": "低",
+              "reading": "ひく"
+            }
+          ]
         },
         {
-          "kanji": "安",
-          "reading": "やす"
-        }
-      ]
-    },
-    {
-      "jp": "安いシャツ",
-      "vn": "Áo sơ mi rẻ.",
-      "furigana": [
-        {
-          "kanji": "安",
-          "reading": "やす"
-        }
-      ]
-    },
-    {
-      "jp": "安く買いました。",
-      "vn": "Đã mua với giá rẻ.",
-      "furigana": [
-        {
-          "kanji": "安",
-          "reading": "やす"
+          "jp": "低い声",
+          "vn": "Giọng trầm (thấp).",
+          "furigana": [
+            {
+              "kanji": "低",
+              "reading": "ひく"
+            },
+            {
+              "kanji": "声",
+              "reading": "こえ"
+            }
+          ]
         },
         {
-          "kanji": "買",
-          "reading": "か"
-        }
-      ]
-    },
-    {
-      "jp": "安売り",
-      "vn": "Bán rẻ (giảm giá).",
-      "furigana": [
-        {
-          "kanji": "安売",
-          "reading": "やすう"
-        }
-      ]
-    },
-    {
-      "jp": "この本は安いです。",
-      "vn": "Quyển sách này rẻ.",
-      "furigana": [
-        {
-          "kanji": "本",
-          "reading": "ほん"
+          "jp": "温度が低い",
+          "vn": "Nhiệt độ thấp.",
+          "furigana": [
+            {
+              "kanji": "温度",
+              "reading": "おんど"
+            },
+            {
+              "kanji": "低",
+              "reading": "ひく"
+            }
+          ]
         },
         {
-          "kanji": "安",
-          "reading": "やす"
+          "jp": "低いテーブル",
+          "vn": "Cái bàn thấp.",
+          "furigana": [
+            {
+              "kanji": "低",
+              "reading": "ひく"
+            }
+          ]
+        },
+        {
+          "jp": "レベルが低い",
+          "vn": "Trình độ thấp.",
+          "furigana": [
+            {
+              "kanji": "低",
+              "reading": "ひく"
+            }
+          ]
         }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "安",
-    "onyomi": "アン",
-    "kunyomi": "やす.い",
-    "meaning": "Rẻ",
-    "strokes": 6,
-    "jlpt": "N5",
-    "radicals": "宀",
-    "components": [
-      {
-        "char": "宀",
-        "meaning": "nhà"
-      },
-      {
-        "char": "女",
-        "meaning": "nữ"
-      }
-    ],
-    "mnemonic": "Phụ nữ trong nhà thì an tâm.",
-    "exampleSentences": [
-      {
-        "jp": "安い車",
-        "vn": "Xe rẻ.",
-        "furigana": [
-          {
-            "kanji": "安",
-            "reading": "やす"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'ひくい', kanji: '低い', romaji: 'hikui', mean: 'Thấp', examples: [
-    {
-      "jp": "低い山",
-      "vn": "Núi thấp.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "低",
-          "reading": "ひく"
+          "onyomi": "テイ",
+          "kunyomi": "ひく.い",
+          "meaning": "Thấp",
+          "strokes": 7,
+          "jlpt": "N4",
+          "radicals": "人",
+          "components": [
+            {
+              "char": "イ",
+              "meaning": "người"
+            },
+            {
+              "char": "氏",
+              "meaning": "giấy"
+            },
+            {
+              "char": "一",
+              "meaning": "đất"
+            }
+          ],
+          "mnemonic": "Người cúi nhặt giấy dưới đất.",
+          "exampleSentences": [
+            {
+              "jp": "低い山",
+              "vn": "Núi thấp.",
+              "furigana": [
+                {
+                  "kanji": "低",
+                  "reading": "ひく"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おもしろい', kanji: 'おもしろい', romaji: 'omoshiroi', mean: 'Thú vị, hay', examples: [
+        {
+          "jp": "面白い映画",
+          "vn": "Phim hay / thú vị.",
+          "furigana": [
+            {
+              "kanji": "面白",
+              "reading": "おもしろ"
+            },
+            {
+              "kanji": "映画",
+              "reading": "えいが"
+            }
+          ]
         },
         {
-          "kanji": "山",
-          "reading": "やま"
-        }
-      ]
-    },
-    {
-      "jp": "背が低い",
-      "vn": "Dáng thấp.",
-      "furigana": [
-        {
-          "kanji": "背",
-          "reading": "せ"
+          "jp": "面白い人",
+          "vn": "Người thú vị (hài hước).",
+          "furigana": [
+            {
+              "kanji": "面白",
+              "reading": "おもしろ"
+            },
+            {
+              "kanji": "人",
+              "reading": "ひと"
+            }
+          ]
         },
         {
-          "kanji": "低",
-          "reading": "ひく"
-        }
-      ]
-    },
-    {
-      "jp": "低い声",
-      "vn": "Giọng trầm (thấp).",
-      "furigana": [
-        {
-          "kanji": "低",
-          "reading": "ひく"
+          "jp": "ゲームは面白いです。",
+          "vn": "Trò chơi thú vị.",
+          "furigana": [
+            {
+              "kanji": "面白",
+              "reading": "おもしろ"
+            }
+          ]
         },
         {
-          "kanji": "声",
-          "reading": "こえ"
-        }
-      ]
-    },
-    {
-      "jp": "温度が低い",
-      "vn": "Nhiệt độ thấp.",
-      "furigana": [
-        {
-          "kanji": "温度",
-          "reading": "おんど"
+          "jp": "面白い本",
+          "vn": "Sách hay.",
+          "furigana": [
+            {
+              "kanji": "面白",
+              "reading": "おもしろ"
+            },
+            {
+              "kanji": "本",
+              "reading": "ほん"
+            }
+          ]
         },
         {
-          "kanji": "低",
-          "reading": "ひく"
-        }
-      ]
-    },
-    {
-      "jp": "低いテーブル",
-      "vn": "Cái bàn thấp.",
-      "furigana": [
-        {
-          "kanji": "低",
-          "reading": "ひく"
-        }
-      ]
-    },
-    {
-      "jp": "レベルが低い",
-      "vn": "Trình độ thấp.",
-      "furigana": [
-        {
-          "kanji": "低",
-          "reading": "ひく"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "低",
-    "onyomi": "テイ",
-    "kunyomi": "ひく.い",
-    "meaning": "Thấp",
-    "strokes": 7,
-    "jlpt": "N4",
-    "radicals": "人",
-    "components": [
-      {
-        "char": "イ",
-        "meaning": "người"
-      },
-      {
-        "char": "氏",
-        "meaning": "giấy"
-      },
-      {
-        "char": "一",
-        "meaning": "đất"
-      }
-    ],
-    "mnemonic": "Người cúi nhặt giấy dưới đất.",
-    "exampleSentences": [
-      {
-        "jp": "低い山",
-        "vn": "Núi thấp.",
-        "furigana": [
-          {
-            "kanji": "低",
-            "reading": "ひく"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'おもしろい', kanji: 'おもしろい', romaji: 'omoshiroi', mean: 'Thú vị, hay', examples: [
-    {
-      "jp": "面白い映画",
-      "vn": "Phim hay / thú vị.",
-      "furigana": [
-        {
-          "kanji": "面白",
-          "reading": "おもしろ"
+          "jp": "面白くないです。",
+          "vn": "Không thú vị.",
+          "furigana": [
+            {
+              "kanji": "面白",
+              "reading": "おもしろ"
+            }
+          ]
         },
         {
-          "kanji": "映画",
-          "reading": "えいが"
+          "jp": "面白い話",
+          "vn": "Câu chuyện thú vị.",
+          "furigana": [
+            {
+              "kanji": "面白",
+              "reading": "おもしろ"
+            },
+            {
+              "kanji": "話",
+              "reading": "はなし"
+            }
+          ]
         }
-      ]
-    },
-    {
-      "jp": "面白い人",
-      "vn": "Người thú vị (hài hước).",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
-          "kanji": "面白",
-          "reading": "おもしろ"
-        },
-        {
-          "kanji": "人",
-          "reading": "ひと"
-        }
-      ]
-    },
-    {
-      "jp": "ゲームは面白いです。",
-      "vn": "Trò chơi thú vị.",
-      "furigana": [
-        {
-          "kanji": "面白",
-          "reading": "おもしろ"
-        }
-      ]
-    },
-    {
-      "jp": "面白い本",
-      "vn": "Sách hay.",
-      "furigana": [
-        {
-          "kanji": "面白",
-          "reading": "おもしろ"
-        },
-        {
-          "kanji": "本",
-          "reading": "ほん"
-        }
-      ]
-    },
-    {
-      "jp": "面白くないです。",
-      "vn": "Không thú vị.",
-      "furigana": [
-        {
-          "kanji": "面白",
-          "reading": "おもしろ"
-        }
-      ]
-    },
-    {
-      "jp": "面白い話",
-      "vn": "Câu chuyện thú vị.",
-      "furigana": [
-        {
-          "kanji": "面白",
-          "reading": "おもしろ"
-        },
-        {
-          "kanji": "話",
-          "reading": "はなし"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "面",
-    "onyomi": "メン",
-    "kunyomi": "おも",
-    "meaning": "Mặt",
-    "strokes": 9,
-    "jlpt": "N3",
-    "radicals": "面",
-    "components": [
-      {
-        "char": "面",
-        "meaning": "mặt"
-      }
-    ],
-    "mnemonic": "Khuôn mặt.",
-    "exampleSentences": [
-      {
-        "jp": "面白い",
-        "vn": "Thú vị.",
-        "furigana": [
-          {
-            "kanji": "面",
-            "reading": "おも"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "白",
-    "onyomi": "ハク",
-    "kunyomi": "しろ.い",
-    "meaning": "Trắng",
-    "strokes": 5,
-    "jlpt": "N5",
-    "radicals": "白",
-    "components": [
-      {
-        "char": "白",
-        "meaning": "trắng"
-      }
-    ],
-    "mnemonic": "Mặt trời tỏa sáng trắng.",
-    "exampleSentences": [
-      {
-        "jp": "白いシャツ",
-        "vn": "Áo trắng.",
-        "furigana": [
-          {
-            "kanji": "白",
-            "reading": "しろ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'おいしい', kanji: 'おいしい', romaji: 'oishii', mean: 'Ngon', examples: [
-    {
-      "jp": "おいしい料理",
-      "vn": "Món ăn ngon.",
-      "furigana": [
-        {
-          "kanji": "料理",
-          "reading": "りょうり"
-        }
-      ]
-    },
-    {
-      "jp": "おいしい水",
-      "vn": "Nước ngon.",
-      "furigana": [
-        {
-          "kanji": "水",
-          "reading": "みず"
-        }
-      ]
-    },
-    {
-      "jp": "これはおいしいです。",
-      "vn": "Cái này ngon.",
-      "furigana": []
-    },
-    {
-      "jp": "おいしい店",
-      "vn": "Quán ăn ngon.",
-      "furigana": [
-        {
-          "kanji": "店",
-          "reading": "みせ"
-        }
-      ]
-    },
-    {
-      "jp": "おいしそうです。",
-      "vn": "Trông có vẻ ngon.",
-      "furigana": []
-    },
-    {
-      "jp": "おいしいコーヒー",
-      "vn": "Cà phê ngon.",
-      "furigana": []
-    }
-  ]
-},
-{
-  word: 'いそがしい', kanji: '忙しい', romaji: 'isogashii', mean: 'Bận', examples: [
-    {
-      "jp": "忙しい日",
-      "vn": "Ngày bận rộn.",
-      "furigana": [
-        {
-          "kanji": "忙",
-          "reading": "いそが"
-        },
-        {
-          "kanji": "日",
-          "reading": "ひ"
-        }
-      ]
-    },
-    {
-      "jp": "仕事が忙しいです。",
-      "vn": "Công việc bận rộn.",
-      "furigana": [
-        {
-          "kanji": "仕事",
-          "reading": "しごと"
-        },
-        {
-          "kanji": "忙",
-          "reading": "いそが"
-        }
-      ]
-    },
-    {
-      "jp": "忙しい人",
-      "vn": "Người bận rộn.",
-      "furigana": [
-        {
-          "kanji": "忙",
-          "reading": "いそが"
-        },
-        {
-          "kanji": "人",
-          "reading": "ひと"
-        }
-      ]
-    },
-    {
-      "jp": "今日は忙しいですか。",
-      "vn": "Hôm nay bạn có bận không?",
-      "furigana": [
-        {
-          "kanji": "今日",
-          "reading": "きょう"
-        },
-        {
-          "kanji": "忙",
-          "reading": "いそが"
-        }
-      ]
-    },
-    {
-      "jp": "忙しくて行けません。",
-      "vn": "Vì bận nên tôi không đi được.",
-      "furigana": [
-        {
-          "kanji": "忙",
-          "reading": "いそが"
-        },
-        {
-          "kanji": "行",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "毎日忙しいです。",
-      "vn": "Mỗi ngày đều bận.",
-      "furigana": [
-        {
-          "kanji": "毎日",
-          "reading": "まいにち"
-        },
-        {
-          "kanji": "忙",
-          "reading": "いそが"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "忙",
-    "onyomi": "ボウ",
-    "kunyomi": "いそが.しい",
-    "meaning": "Bận",
-    "strokes": 6,
-    "jlpt": "N4",
-    "radicals": "心",
-    "components": [
-      {
-        "char": "忄",
-        "meaning": "tâm"
-      },
-      {
-        "char": "亡",
-        "meaning": "vong"
-      }
-    ],
-    "mnemonic": "Tâm chết vì quá bận.",
-    "exampleSentences": [
-      {
-        "jp": "忙しいです。",
-        "vn": "Bận.",
-        "furigana": [
-          {
-            "kanji": "忙",
-            "reading": "いそが"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'たのしい', kanji: '楽しい', romaji: 'tanoshii', mean: 'Vui', examples: [
-    {
-      "jp": "楽しいパーティー",
-      "vn": "Bữa tiệc vui vẻ.",
-      "furigana": [
-        {
-          "kanji": "楽",
-          "reading": "たの"
-        }
-      ]
-    },
-    {
-      "jp": "毎日が楽しいです。",
-      "vn": "Mỗi ngày đều vui vẻ.",
-      "furigana": [
-        {
-          "kanji": "毎日",
-          "reading": "まいにち"
-        },
-        {
-          "kanji": "楽",
-          "reading": "たの"
-        }
-      ]
-    },
-    {
-      "jp": "楽しい一日",
-      "vn": "Một ngày vui vẻ.",
-      "furigana": [
-        {
-          "kanji": "楽",
-          "reading": "たの"
-        },
-        {
-          "kanji": "一日",
-          "reading": "いちにち"
-        }
-      ]
-    },
-    {
-      "jp": "楽しい旅行",
-      "vn": "Chuyến du lịch vui vẻ.",
-      "furigana": [
-        {
-          "kanji": "楽",
-          "reading": "たの"
-        },
-        {
-          "kanji": "旅行",
-          "reading": "りょこう"
-        }
-      ]
-    },
-    {
-      "jp": "楽しく勉強します。",
-      "vn": "Học một cách vui vẻ.",
-      "furigana": [
-        {
-          "kanji": "楽",
-          "reading": "たの"
-        },
-        {
-          "kanji": "勉強",
-          "reading": "べんきょう"
-        }
-      ]
-    },
-    {
-      "jp": "楽しい音楽",
-      "vn": "Âm nhạc vui tươi.",
-      "furigana": [
-        {
-          "kanji": "楽",
-          "reading": "たの"
-        },
-        {
-          "kanji": "音楽",
-          "reading": "おんがく"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "楽",
-    "onyomi": "ラク",
-    "kunyomi": "たの.しい",
-    "meaning": "Vui",
-    "strokes": 13,
-    "jlpt": "N4",
-    "radicals": "木",
-    "components": [
-      {
-        "char": "白",
-        "meaning": "trắng"
-      },
-      {
-        "char": "木",
-        "meaning": "cây"
-      },
-      {
-        "char": "幺",
-        "meaning": "nhỏ"
-      }
-    ],
-    "mnemonic": "Cây đàn trắng tâu nhạc vui.",
-    "exampleSentences": [
-      {
-        "jp": "楽しい生活",
-        "vn": "Cuộc sống vui vẻ.",
-        "furigana": [
-          {
-            "kanji": "楽",
-            "reading": "たの"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'しろい', kanji: '白い', romaji: 'shiroi', mean: 'Trắng', examples: [
-    {
-      "jp": "白いシャツ",
-      "vn": "Áo sơ mi trắng.",
-      "furigana": [
-        {
-          "kanji": "白",
-          "reading": "しろ"
-        }
-      ]
-    },
-    {
-      "jp": "白い雲",
-      "vn": "Mây trắng.",
-      "furigana": [
-        {
-          "kanji": "白",
-          "reading": "しろ"
-        },
-        {
-          "kanji": "雲",
-          "reading": "くも"
-        }
-      ]
-    },
-    {
-      "jp": "白い花",
-      "vn": "Hoa trắng.",
-      "furigana": [
-        {
-          "kanji": "白",
-          "reading": "しろ"
-        },
-        {
-          "kanji": "花",
-          "reading": "はな"
-        }
-      ]
-    },
-    {
-      "jp": "顔が白い",
-      "vn": "Mặt trắng (nhợt nhạt).",
-      "furigana": [
-        {
-          "kanji": "顔",
-          "reading": "かお"
+          "kanji": "面",
+          "onyomi": "メン",
+          "kunyomi": "おも",
+          "meaning": "Mặt",
+          "strokes": 9,
+          "jlpt": "N3",
+          "radicals": "面",
+          "components": [
+            {
+              "char": "面",
+              "meaning": "mặt"
+            }
+          ],
+          "mnemonic": "Khuôn mặt.",
+          "exampleSentences": [
+            {
+              "jp": "面白い",
+              "vn": "Thú vị.",
+              "furigana": [
+                {
+                  "kanji": "面",
+                  "reading": "おも"
+                }
+              ]
+            }
+          ]
         },
         {
           "kanji": "白",
-          "reading": "しろ"
+          "onyomi": "ハク",
+          "kunyomi": "しろ.い",
+          "meaning": "Trắng",
+          "strokes": 5,
+          "jlpt": "N5",
+          "radicals": "白",
+          "components": [
+            {
+              "char": "白",
+              "meaning": "trắng"
+            }
+          ],
+          "mnemonic": "Mặt trời tỏa sáng trắng.",
+          "exampleSentences": [
+            {
+              "jp": "白いシャツ",
+              "vn": "Áo trắng.",
+              "furigana": [
+                {
+                  "kanji": "白",
+                  "reading": "しろ"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "白い車",
-      "vn": "Xe ô tô trắng.",
-      "furigana": [
+      word: 'おいしい', kanji: 'おいしい', romaji: 'oishii', mean: 'Ngon', examples: [
         {
-          "kanji": "白",
-          "reading": "しろ"
+          "jp": "おいしい料理",
+          "vn": "Món ăn ngon.",
+          "furigana": [
+            {
+              "kanji": "料理",
+              "reading": "りょうり"
+            }
+          ]
         },
         {
-          "kanji": "車",
-          "reading": "くるま"
+          "jp": "おいしい水",
+          "vn": "Nước ngon.",
+          "furigana": [
+            {
+              "kanji": "水",
+              "reading": "みず"
+            }
+          ]
+        },
+        {
+          "jp": "これはおいしいです。",
+          "vn": "Cái này ngon.",
+          "furigana": []
+        },
+        {
+          "jp": "おいしい店",
+          "vn": "Quán ăn ngon.",
+          "furigana": [
+            {
+              "kanji": "店",
+              "reading": "みせ"
+            }
+          ]
+        },
+        {
+          "jp": "おいしそうです。",
+          "vn": "Trông có vẻ ngon.",
+          "furigana": []
+        },
+        {
+          "jp": "おいしいコーヒー",
+          "vn": "Cà phê ngon.",
+          "furigana": []
         }
       ]
     },
     {
-      "jp": "雪は白いです。",
-      "vn": "Tuyết màu trắng.",
-      "furigana": [
+      word: 'いそがしい', kanji: '忙しい', romaji: 'isogashii', mean: 'Bận', examples: [
         {
-          "kanji": "雪",
-          "reading": "ゆき"
+          "jp": "忙しい日",
+          "vn": "Ngày bận rộn.",
+          "furigana": [
+            {
+              "kanji": "忙",
+              "reading": "いそが"
+            },
+            {
+              "kanji": "日",
+              "reading": "ひ"
+            }
+          ]
         },
         {
-          "kanji": "白",
-          "reading": "しろ"
+          "jp": "仕事が忙しいです。",
+          "vn": "Công việc bận rộn.",
+          "furigana": [
+            {
+              "kanji": "仕事",
+              "reading": "しごと"
+            },
+            {
+              "kanji": "忙",
+              "reading": "いそが"
+            }
+          ]
+        },
+        {
+          "jp": "忙しい人",
+          "vn": "Người bận rộn.",
+          "furigana": [
+            {
+              "kanji": "忙",
+              "reading": "いそが"
+            },
+            {
+              "kanji": "人",
+              "reading": "ひと"
+            }
+          ]
+        },
+        {
+          "jp": "今日は忙しいですか。",
+          "vn": "Hôm nay bạn có bận không?",
+          "furigana": [
+            {
+              "kanji": "今日",
+              "reading": "きょう"
+            },
+            {
+              "kanji": "忙",
+              "reading": "いそが"
+            }
+          ]
+        },
+        {
+          "jp": "忙しくて行けません。",
+          "vn": "Vì bận nên tôi không đi được.",
+          "furigana": [
+            {
+              "kanji": "忙",
+              "reading": "いそが"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "毎日忙しいです。",
+          "vn": "Mỗi ngày đều bận.",
+          "furigana": [
+            {
+              "kanji": "毎日",
+              "reading": "まいにち"
+            },
+            {
+              "kanji": "忙",
+              "reading": "いそが"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "忙",
+          "onyomi": "ボウ",
+          "kunyomi": "いそが.しい",
+          "meaning": "Bận",
+          "strokes": 6,
+          "jlpt": "N4",
+          "radicals": "心",
+          "components": [
+            {
+              "char": "忄",
+              "meaning": "tâm"
+            },
+            {
+              "char": "亡",
+              "meaning": "vong"
+            }
+          ],
+          "mnemonic": "Tâm chết vì quá bận.",
+          "exampleSentences": [
+            {
+              "jp": "忙しいです。",
+              "vn": "Bận.",
+              "furigana": [
+                {
+                  "kanji": "忙",
+                  "reading": "いそが"
+                }
+              ]
+            }
+          ]
         }
       ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "白",
-    "onyomi": "ハク",
-    "kunyomi": "しろ.い",
-    "meaning": "Trắng",
-    "strokes": 5,
-    "jlpt": "N5",
-    "radicals": "白",
-    "components": [
-      {
-        "char": "白",
-        "meaning": "trắng"
-      }
-    ],
-    "mnemonic": "Mặt trời tỏa sáng trắng.",
-    "exampleSentences": [
-      {
-        "jp": "白いシャツ",
-        "vn": "Áo trắng.",
-        "furigana": [
-          {
-            "kanji": "白",
-            "reading": "しろ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'くろい', kanji: '黒い', romaji: 'kuroi', mean: 'Đen', examples: [
+    },
     {
-      "jp": "黒いかばん",
-      "vn": "Cặp màu đen.",
-      "furigana": [
+      word: 'たのしい', kanji: '楽しい', romaji: 'tanoshii', mean: 'Vui', examples: [
+        {
+          "jp": "楽しいパーティー",
+          "vn": "Bữa tiệc vui vẻ.",
+          "furigana": [
+            {
+              "kanji": "楽",
+              "reading": "たの"
+            }
+          ]
+        },
+        {
+          "jp": "毎日が楽しいです。",
+          "vn": "Mỗi ngày đều vui vẻ.",
+          "furigana": [
+            {
+              "kanji": "毎日",
+              "reading": "まいにち"
+            },
+            {
+              "kanji": "楽",
+              "reading": "たの"
+            }
+          ]
+        },
+        {
+          "jp": "楽しい一日",
+          "vn": "Một ngày vui vẻ.",
+          "furigana": [
+            {
+              "kanji": "楽",
+              "reading": "たの"
+            },
+            {
+              "kanji": "一日",
+              "reading": "いちにち"
+            }
+          ]
+        },
+        {
+          "jp": "楽しい旅行",
+          "vn": "Chuyến du lịch vui vẻ.",
+          "furigana": [
+            {
+              "kanji": "楽",
+              "reading": "たの"
+            },
+            {
+              "kanji": "旅行",
+              "reading": "りょこう"
+            }
+          ]
+        },
+        {
+          "jp": "楽しく勉強します。",
+          "vn": "Học một cách vui vẻ.",
+          "furigana": [
+            {
+              "kanji": "楽",
+              "reading": "たの"
+            },
+            {
+              "kanji": "勉強",
+              "reading": "べんきょう"
+            }
+          ]
+        },
+        {
+          "jp": "楽しい音楽",
+          "vn": "Âm nhạc vui tươi.",
+          "furigana": [
+            {
+              "kanji": "楽",
+              "reading": "たの"
+            },
+            {
+              "kanji": "音楽",
+              "reading": "おんがく"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "楽",
+          "onyomi": "ラク",
+          "kunyomi": "たの.しい",
+          "meaning": "Vui",
+          "strokes": 13,
+          "jlpt": "N4",
+          "radicals": "木",
+          "components": [
+            {
+              "char": "白",
+              "meaning": "trắng"
+            },
+            {
+              "char": "木",
+              "meaning": "cây"
+            },
+            {
+              "char": "幺",
+              "meaning": "nhỏ"
+            }
+          ],
+          "mnemonic": "Cây đàn trắng tâu nhạc vui.",
+          "exampleSentences": [
+            {
+              "jp": "楽しい生活",
+              "vn": "Cuộc sống vui vẻ.",
+              "furigana": [
+                {
+                  "kanji": "楽",
+                  "reading": "たの"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'しろい', kanji: '白い', romaji: 'shiroi', mean: 'Trắng', examples: [
+        {
+          "jp": "白いシャツ",
+          "vn": "Áo sơ mi trắng.",
+          "furigana": [
+            {
+              "kanji": "白",
+              "reading": "しろ"
+            }
+          ]
+        },
+        {
+          "jp": "白い雲",
+          "vn": "Mây trắng.",
+          "furigana": [
+            {
+              "kanji": "白",
+              "reading": "しろ"
+            },
+            {
+              "kanji": "雲",
+              "reading": "くも"
+            }
+          ]
+        },
+        {
+          "jp": "白い花",
+          "vn": "Hoa trắng.",
+          "furigana": [
+            {
+              "kanji": "白",
+              "reading": "しろ"
+            },
+            {
+              "kanji": "花",
+              "reading": "はな"
+            }
+          ]
+        },
+        {
+          "jp": "顔が白い",
+          "vn": "Mặt trắng (nhợt nhạt).",
+          "furigana": [
+            {
+              "kanji": "顔",
+              "reading": "かお"
+            },
+            {
+              "kanji": "白",
+              "reading": "しろ"
+            }
+          ]
+        },
+        {
+          "jp": "白い車",
+          "vn": "Xe ô tô trắng.",
+          "furigana": [
+            {
+              "kanji": "白",
+              "reading": "しろ"
+            },
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            }
+          ]
+        },
+        {
+          "jp": "雪は白いです。",
+          "vn": "Tuyết màu trắng.",
+          "furigana": [
+            {
+              "kanji": "雪",
+              "reading": "ゆき"
+            },
+            {
+              "kanji": "白",
+              "reading": "しろ"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "白",
+          "onyomi": "ハク",
+          "kunyomi": "しろ.い",
+          "meaning": "Trắng",
+          "strokes": 5,
+          "jlpt": "N5",
+          "radicals": "白",
+          "components": [
+            {
+              "char": "白",
+              "meaning": "trắng"
+            }
+          ],
+          "mnemonic": "Mặt trời tỏa sáng trắng.",
+          "exampleSentences": [
+            {
+              "jp": "白いシャツ",
+              "vn": "Áo trắng.",
+              "furigana": [
+                {
+                  "kanji": "白",
+                  "reading": "しろ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'くろい', kanji: '黒い', romaji: 'kuroi', mean: 'Đen', examples: [
+        {
+          "jp": "黒いかばん",
+          "vn": "Cặp màu đen.",
+          "furigana": [
+            {
+              "kanji": "黒",
+              "reading": "くろ"
+            }
+          ]
+        },
+        {
+          "jp": "黒い髪",
+          "vn": "Tóc đen.",
+          "furigana": [
+            {
+              "kanji": "黒",
+              "reading": "くろ"
+            },
+            {
+              "kanji": "髪",
+              "reading": "かみ"
+            }
+          ]
+        },
+        {
+          "jp": "黒い服",
+          "vn": "Quần áo đen.",
+          "furigana": [
+            {
+              "kanji": "黒",
+              "reading": "くろ"
+            },
+            {
+              "kanji": "服",
+              "reading": "ふく"
+            }
+          ]
+        },
+        {
+          "jp": "黒い靴",
+          "vn": "Giày đen.",
+          "furigana": [
+            {
+              "kanji": "黒",
+              "reading": "くろ"
+            },
+            {
+              "kanji": "靴",
+              "reading": "くつ"
+            }
+          ]
+        },
+        {
+          "jp": "黒猫",
+          "vn": "Mèo đen.",
+          "furigana": [
+            {
+              "kanji": "黒猫",
+              "reading": "くろねこ"
+            }
+          ]
+        },
+        {
+          "jp": "黒いペン",
+          "vn": "Bút mực đen.",
+          "furigana": [
+            {
+              "kanji": "黒",
+              "reading": "くろ"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
         {
           "kanji": "黒",
-          "reading": "くろ"
+          "onyomi": "コク",
+          "kunyomi": "くろ.い",
+          "meaning": "Đen",
+          "strokes": 11,
+          "jlpt": "N5",
+          "radicals": "黒",
+          "components": [
+            {
+              "char": "里",
+              "meaning": "làng"
+            },
+            {
+              "char": "灬",
+              "meaning": "hỏa"
+            }
+          ],
+          "mnemonic": "Làng bị cháy đen.",
+          "exampleSentences": [
+            {
+              "jp": "黒い髪",
+              "vn": "Tóc đen.",
+              "furigana": [
+                {
+                  "kanji": "黒",
+                  "reading": "くろ"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "黒い髪",
-      "vn": "Tóc đen.",
-      "furigana": [
+      word: 'あかい', kanji: '赤い', romaji: 'akai', mean: 'Đỏ', examples: [
         {
-          "kanji": "黒",
-          "reading": "くろ"
+          "jp": "赤いりんご",
+          "vn": "Quả táo đỏ.",
+          "furigana": [
+            {
+              "kanji": "赤",
+              "reading": "あか"
+            }
+          ]
         },
         {
-          "kanji": "髪",
-          "reading": "かみ"
-        }
-      ]
-    },
-    {
-      "jp": "黒い服",
-      "vn": "Quần áo đen.",
-      "furigana": [
-        {
-          "kanji": "黒",
-          "reading": "くろ"
+          "jp": "赤いバラ",
+          "vn": "Hoa hồng đỏ.",
+          "furigana": [
+            {
+              "kanji": "赤",
+              "reading": "あか"
+            }
+          ]
         },
         {
-          "kanji": "服",
-          "reading": "ふく"
-        }
-      ]
-    },
-    {
-      "jp": "黒い靴",
-      "vn": "Giày đen.",
-      "furigana": [
-        {
-          "kanji": "黒",
-          "reading": "くろ"
+          "jp": "顔が赤いです。",
+          "vn": "Mặt đỏ.",
+          "furigana": [
+            {
+              "kanji": "顔",
+              "reading": "かお"
+            },
+            {
+              "kanji": "赤",
+              "reading": "あか"
+            }
+          ]
         },
         {
-          "kanji": "靴",
-          "reading": "くつ"
-        }
-      ]
-    },
-    {
-      "jp": "黒猫",
-      "vn": "Mèo đen.",
-      "furigana": [
-        {
-          "kanji": "黒猫",
-          "reading": "くろねこ"
-        }
-      ]
-    },
-    {
-      "jp": "黒いペン",
-      "vn": "Bút mực đen.",
-      "furigana": [
-        {
-          "kanji": "黒",
-          "reading": "くろ"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "黒",
-    "onyomi": "コク",
-    "kunyomi": "くろ.い",
-    "meaning": "Đen",
-    "strokes": 11,
-    "jlpt": "N5",
-    "radicals": "黒",
-    "components": [
-      {
-        "char": "里",
-        "meaning": "làng"
-      },
-      {
-        "char": "灬",
-        "meaning": "hỏa"
-      }
-    ],
-    "mnemonic": "Làng bị cháy đen.",
-    "exampleSentences": [
-      {
-        "jp": "黒い髪",
-        "vn": "Tóc đen.",
-        "furigana": [
-          {
-            "kanji": "黒",
-            "reading": "くろ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'あかい', kanji: '赤い', romaji: 'akai', mean: 'Đỏ', examples: [
-    {
-      "jp": "赤いりんご",
-      "vn": "Quả táo đỏ.",
-      "furigana": [
-        {
-          "kanji": "赤",
-          "reading": "あか"
-        }
-      ]
-    },
-    {
-      "jp": "赤いバラ",
-      "vn": "Hoa hồng đỏ.",
-      "furigana": [
-        {
-          "kanji": "赤",
-          "reading": "あか"
-        }
-      ]
-    },
-    {
-      "jp": "顔が赤いです。",
-      "vn": "Mặt đỏ.",
-      "furigana": [
-        {
-          "kanji": "顔",
-          "reading": "かお"
+          "jp": "赤い靴",
+          "vn": "Giày đỏ.",
+          "furigana": [
+            {
+              "kanji": "赤",
+              "reading": "あか"
+            },
+            {
+              "kanji": "靴",
+              "reading": "くつ"
+            }
+          ]
         },
         {
-          "kanji": "赤",
-          "reading": "あか"
-        }
-      ]
-    },
-    {
-      "jp": "赤い靴",
-      "vn": "Giày đỏ.",
-      "furigana": [
-        {
-          "kanji": "赤",
-          "reading": "あか"
+          "jp": "赤い車",
+          "vn": "Xe đỏ.",
+          "furigana": [
+            {
+              "kanji": "赤",
+              "reading": "あか"
+            },
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            }
+          ]
         },
         {
-          "kanji": "靴",
-          "reading": "くつ"
+          "jp": "赤ちゃん",
+          "vn": "Em bé (sơ sinh).",
+          "furigana": [
+            {
+              "kanji": "赤",
+              "reading": "あか"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "赤",
+          "onyomi": "セキ",
+          "kunyomi": "あか.い",
+          "meaning": "Đỏ",
+          "strokes": 7,
+          "jlpt": "N5",
+          "radicals": "赤",
+          "components": [
+            {
+              "char": "土",
+              "meaning": "đất"
+            },
+            {
+              "char": "火",
+              "meaning": "lửa"
+            }
+          ],
+          "mnemonic": "Lửa trên đất màu đỏ.",
+          "exampleSentences": [
+            {
+              "jp": "赤い花",
+              "vn": "Hoa đỏ.",
+              "furigana": [
+                {
+                  "kanji": "赤",
+                  "reading": "あか"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "赤い車",
-      "vn": "Xe đỏ.",
-      "furigana": [
+      word: 'あおい', kanji: '青い', romaji: 'aoi', mean: 'Xanh da trời', examples: [
         {
-          "kanji": "赤",
-          "reading": "あか"
+          "jp": "青い空",
+          "vn": "Bầu trời xanh.",
+          "furigana": [
+            {
+              "kanji": "青",
+              "reading": "あお"
+            },
+            {
+              "kanji": "空",
+              "reading": "そら"
+            }
+          ]
         },
         {
-          "kanji": "車",
-          "reading": "くるま"
-        }
-      ]
-    },
-    {
-      "jp": "赤ちゃん",
-      "vn": "Em bé (sơ sinh).",
-      "furigana": [
+          "jp": "青い海",
+          "vn": "Biển xanh.",
+          "furigana": [
+            {
+              "kanji": "青",
+              "reading": "あお"
+            },
+            {
+              "kanji": "海",
+              "reading": "うみ"
+            }
+          ]
+        },
         {
-          "kanji": "赤",
-          "reading": "あか"
+          "jp": "青い目",
+          "vn": "Mắt xanh.",
+          "furigana": [
+            {
+              "kanji": "青",
+              "reading": "あお"
+            },
+            {
+              "kanji": "目",
+              "reading": "め"
+            }
+          ]
+        },
+        {
+          "jp": "青いシャツ",
+          "vn": "Áo sơ mi xanh.",
+          "furigana": [
+            {
+              "kanji": "青",
+              "reading": "あお"
+            }
+          ]
+        },
+        {
+          "jp": "顔が青いです。",
+          "vn": "Mặt xanh xao.",
+          "furigana": [
+            {
+              "kanji": "顔",
+              "reading": "かお"
+            },
+            {
+              "kanji": "青",
+              "reading": "あお"
+            }
+          ]
+        },
+        {
+          "jp": "青信号",
+          "vn": "Đèn xanh (giao thông).",
+          "furigana": [
+            {
+              "kanji": "青信号",
+              "reading": "あおしんごう"
+            }
+          ]
         }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "赤",
-    "onyomi": "セキ",
-    "kunyomi": "あか.い",
-    "meaning": "Đỏ",
-    "strokes": 7,
-    "jlpt": "N5",
-    "radicals": "赤",
-    "components": [
-      {
-        "char": "土",
-        "meaning": "đất"
-      },
-      {
-        "char": "火",
-        "meaning": "lửa"
-      }
-    ],
-    "mnemonic": "Lửa trên đất màu đỏ.",
-    "exampleSentences": [
-      {
-        "jp": "赤い花",
-        "vn": "Hoa đỏ.",
-        "furigana": [
-          {
-            "kanji": "赤",
-            "reading": "あか"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'あおい', kanji: '青い', romaji: 'aoi', mean: 'Xanh da trời', examples: [
-    {
-      "jp": "青い空",
-      "vn": "Bầu trời xanh.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "青",
-          "reading": "あお"
+          "onyomi": "セイ",
+          "kunyomi": "あお.い",
+          "meaning": "Xanh",
+          "strokes": 8,
+          "jlpt": "N5",
+          "radicals": "青",
+          "components": [
+            {
+              "char": "生",
+              "meaning": "sinh"
+            },
+            {
+              "char": "月",
+              "meaning": "trăng"
+            }
+          ],
+          "mnemonic": "Trăng sinh ánh sáng xanh.",
+          "exampleSentences": [
+            {
+              "jp": "青い海",
+              "vn": "Biển xanh.",
+              "furigana": [
+                {
+                  "kanji": "青",
+                  "reading": "あお"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'さくら', kanji: '桜', romaji: 'sakura', mean: 'Anh đào (hoa, cây)', examples: [
+        {
+          "jp": "桜が咲きました。",
+          "vn": "Hoa anh đào đã nở.",
+          "furigana": [
+            {
+              "kanji": "桜",
+              "reading": "さくら"
+            },
+            {
+              "kanji": "咲",
+              "reading": "さ"
+            }
+          ]
         },
         {
-          "kanji": "空",
-          "reading": "そら"
-        }
-      ]
-    },
-    {
-      "jp": "青い海",
-      "vn": "Biển xanh.",
-      "furigana": [
-        {
-          "kanji": "青",
-          "reading": "あお"
+          "jp": "桜を見ます。",
+          "vn": "Ngắm hoa anh đào.",
+          "furigana": [
+            {
+              "kanji": "桜",
+              "reading": "さくら"
+            },
+            {
+              "kanji": "見",
+              "reading": "み"
+            }
+          ]
         },
         {
-          "kanji": "海",
-          "reading": "うみ"
-        }
-      ]
-    },
-    {
-      "jp": "青い目",
-      "vn": "Mắt xanh.",
-      "furigana": [
-        {
-          "kanji": "青",
-          "reading": "あお"
+          "jp": "きれいな桜",
+          "vn": "Hoa anh đào đẹp.",
+          "furigana": [
+            {
+              "kanji": "桜",
+              "reading": "さくら"
+            }
+          ]
         },
         {
-          "kanji": "目",
-          "reading": "め"
-        }
-      ]
-    },
-    {
-      "jp": "青いシャツ",
-      "vn": "Áo sơ mi xanh.",
-      "furigana": [
-        {
-          "kanji": "青",
-          "reading": "あお"
-        }
-      ]
-    },
-    {
-      "jp": "顔が青いです。",
-      "vn": "Mặt xanh xao.",
-      "furigana": [
-        {
-          "kanji": "顔",
-          "reading": "かお"
+          "jp": "桜の木",
+          "vn": "Cây anh đào.",
+          "furigana": [
+            {
+              "kanji": "桜",
+              "reading": "さくら"
+            },
+            {
+              "kanji": "木",
+              "reading": "き"
+            }
+          ]
         },
         {
-          "kanji": "青",
-          "reading": "あお"
-        }
-      ]
-    },
-    {
-      "jp": "青信号",
-      "vn": "Đèn xanh (giao thông).",
-      "furigana": [
-        {
-          "kanji": "青信号",
-          "reading": "あおしんごう"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "青",
-    "onyomi": "セイ",
-    "kunyomi": "あお.い",
-    "meaning": "Xanh",
-    "strokes": 8,
-    "jlpt": "N5",
-    "radicals": "青",
-    "components": [
-      {
-        "char": "生",
-        "meaning": "sinh"
-      },
-      {
-        "char": "月",
-        "meaning": "trăng"
-      }
-    ],
-    "mnemonic": "Trăng sinh ánh sáng xanh.",
-    "exampleSentences": [
-      {
-        "jp": "青い海",
-        "vn": "Biển xanh.",
-        "furigana": [
-          {
-            "kanji": "青",
-            "reading": "あお"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'さくら', kanji: '桜', romaji: 'sakura', mean: 'Anh đào (hoa, cây)', examples: [
-    {
-      "jp": "桜が咲きました。",
-      "vn": "Hoa anh đào đã nở.",
-      "furigana": [
-        {
-          "kanji": "桜",
-          "reading": "さくら"
+          "jp": "桜祭り",
+          "vn": "Lễ hội hoa anh đào.",
+          "furigana": [
+            {
+              "kanji": "桜",
+              "reading": "さくら"
+            },
+            {
+              "kanji": "祭",
+              "reading": "まつ"
+            }
+          ]
         },
         {
-          "kanji": "咲",
-          "reading": "さ"
+          "jp": "桜の花",
+          "vn": "Bông hoa anh đào.",
+          "furigana": [
+            {
+              "kanji": "桜",
+              "reading": "さくら"
+            },
+            {
+              "kanji": "花",
+              "reading": "はな"
+            }
+          ]
         }
-      ]
-    },
-    {
-      "jp": "桜を見ます。",
-      "vn": "Ngắm hoa anh đào.",
-      "furigana": [
+      ],
+      kanjiDetails: [
         {
           "kanji": "桜",
-          "reading": "さくら"
-        },
-        {
-          "kanji": "見",
-          "reading": "み"
+          "onyomi": "オウ",
+          "kunyomi": "さくら",
+          "meaning": "Hoa anh đào",
+          "strokes": 10,
+          "jlpt": "N3",
+          "radicals": "木",
+          "components": [
+            {
+              "char": "木",
+              "meaning": "cây"
+            },
+            {
+              "char": "ツ",
+              "meaning": "hạt"
+            },
+            {
+              "char": "女",
+              "meaning": "nữ"
+            }
+          ],
+          "mnemonic": "Cây anh đào đẹp như người nữ.",
+          "exampleSentences": [
+            {
+              "jp": "桜が咲きます。",
+              "vn": "Hoa anh đào nở.",
+              "furigana": [
+                {
+                  "kanji": "桜",
+                  "reading": "さくら"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "きれいな桜",
-      "vn": "Hoa anh đào đẹp.",
-      "furigana": [
+      word: 'やま', kanji: '山', romaji: 'yama', mean: 'Núi', examples: [
         {
-          "kanji": "桜",
-          "reading": "さくら"
-        }
-      ]
-    },
-    {
-      "jp": "桜の木",
-      "vn": "Cây anh đào.",
-      "furigana": [
-        {
-          "kanji": "桜",
-          "reading": "さくら"
+          "jp": "山に登ります。",
+          "vn": "Leo núi.",
+          "furigana": [
+            {
+              "kanji": "山",
+              "reading": "やま"
+            },
+            {
+              "kanji": "登",
+              "reading": "のぼ"
+            }
+          ]
         },
         {
-          "kanji": "木",
-          "reading": "き"
-        }
-      ]
-    },
-    {
-      "jp": "桜祭り",
-      "vn": "Lễ hội hoa anh đào.",
-      "furigana": [
-        {
-          "kanji": "桜",
-          "reading": "さくら"
+          "jp": "高い山",
+          "vn": "Núi cao.",
+          "furigana": [
+            {
+              "kanji": "高",
+              "reading": "たか"
+            },
+            {
+              "kanji": "山",
+              "reading": "やま"
+            }
+          ]
         },
         {
-          "kanji": "祭",
-          "reading": "まつ"
-        }
-      ]
-    },
-    {
-      "jp": "桜の花",
-      "vn": "Bông hoa anh đào.",
-      "furigana": [
-        {
-          "kanji": "桜",
-          "reading": "さくら"
+          "jp": "富士山は山です。",
+          "vn": "Phú Sĩ là một ngọn núi.",
+          "furigana": [
+            {
+              "kanji": "富士山",
+              "reading": "ふじさん"
+            },
+            {
+              "kanji": "山",
+              "reading": "やま"
+            }
+          ]
         },
         {
-          "kanji": "花",
-          "reading": "はな"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "桜",
-    "onyomi": "オウ",
-    "kunyomi": "さくら",
-    "meaning": "Hoa anh đào",
-    "strokes": 10,
-    "jlpt": "N3",
-    "radicals": "木",
-    "components": [
-      {
-        "char": "木",
-        "meaning": "cây"
-      },
-      {
-        "char": "ツ",
-        "meaning": "hạt"
-      },
-      {
-        "char": "女",
-        "meaning": "nữ"
-      }
-    ],
-    "mnemonic": "Cây anh đào đẹp như người nữ.",
-    "exampleSentences": [
-      {
-        "jp": "桜が咲きます。",
-        "vn": "Hoa anh đào nở.",
-        "furigana": [
-          {
-            "kanji": "桜",
-            "reading": "さくら"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'やま', kanji: '山', romaji: 'yama', mean: 'Núi', examples: [
-    {
-      "jp": "山に登ります。",
-      "vn": "Leo núi.",
-      "furigana": [
-        {
-          "kanji": "山",
-          "reading": "やま"
+          "jp": "山の写真",
+          "vn": "Ảnh núi.",
+          "furigana": [
+            {
+              "kanji": "山",
+              "reading": "やま"
+            },
+            {
+              "kanji": "写真",
+              "reading": "しゃしん"
+            }
+          ]
         },
         {
-          "kanji": "登",
-          "reading": "のぼ"
-        }
-      ]
-    },
-    {
-      "jp": "高い山",
-      "vn": "Núi cao.",
-      "furigana": [
-        {
-          "kanji": "高",
-          "reading": "たか"
+          "jp": "山へ行きます。",
+          "vn": "Đi lên núi.",
+          "furigana": [
+            {
+              "kanji": "山",
+              "reading": "やま"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
         },
         {
-          "kanji": "山",
-          "reading": "やま"
+          "jp": "緑の山",
+          "vn": "Núi xanh.",
+          "furigana": [
+            {
+              "kanji": "緑",
+              "reading": "みどり"
+            },
+            {
+              "kanji": "山",
+              "reading": "やま"
+            }
+          ]
         }
-      ]
-    },
-    {
-      "jp": "富士山は山です。",
-      "vn": "Phú Sĩ là một ngọn núi.",
-      "furigana": [
-        {
-          "kanji": "富士山",
-          "reading": "ふじさん"
-        },
+      ],
+      kanjiDetails: [
         {
           "kanji": "山",
-          "reading": "やま"
+          "onyomi": "サン",
+          "kunyomi": "やま",
+          "meaning": "Núi",
+          "strokes": 3,
+          "jlpt": "N5",
+          "radicals": "山",
+          "components": [
+            {
+              "char": "山",
+              "meaning": "núi"
+            }
+          ],
+          "mnemonic": "Hình núi.",
+          "exampleSentences": [
+            {
+              "jp": "富士山",
+              "vn": "úi Phú Sĩ.",
+              "furigana": [
+                {
+                  "kanji": "富士山",
+                  "reading": "ふじさん"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "山の写真",
-      "vn": "Ảnh núi.",
-      "furigana": [
+      word: 'まち', kanji: '町', romaji: 'machi', mean: 'Thị trấn, thị xã, thành phố', examples: [
+        {
+          "jp": "にぎやかな町",
+          "vn": "Thành phố náo nhiệt.",
+          "furigana": [
+            {
+              "kanji": "町",
+              "reading": "まち"
+            }
+          ]
+        },
+        {
+          "jp": "静かな町",
+          "vn": "Thị trấn yên tĩnh.",
+          "furigana": [
+            {
+              "kanji": "静",
+              "reading": "しず"
+            },
+            {
+              "kanji": "町",
+              "reading": "まち"
+            }
+          ]
+        },
+        {
+          "jp": "私の町",
+          "vn": "Thành phố của tôi.",
+          "furigana": [
+            {
+              "kanji": "私",
+              "reading": "わたし"
+            },
+            {
+              "kanji": "町",
+              "reading": "まち"
+            }
+          ]
+        },
+        {
+          "jp": "町へ行きます。",
+          "vn": "Đi ra phố.",
+          "furigana": [
+            {
+              "kanji": "町",
+              "reading": "まち"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "きれいな町",
+          "vn": "Thành phố đẹp/sạch.",
+          "furigana": [
+            {
+              "kanji": "町",
+              "reading": "まち"
+            }
+          ]
+        },
+        {
+          "jp": "古い町",
+          "vn": "Phố cổ.",
+          "furigana": [
+            {
+              "kanji": "古",
+              "reading": "ふる"
+            },
+            {
+              "kanji": "町",
+              "reading": "まち"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "町",
+          "onyomi": "チョウ",
+          "kunyomi": "まち",
+          "meaning": "Phố",
+          "strokes": 7,
+          "jlpt": "N4",
+          "radicals": "田",
+          "components": [
+            {
+              "char": "田",
+              "meaning": "ruộng"
+            },
+            {
+              "char": "丁",
+              "meaning": "khu"
+            }
+          ],
+          "mnemonic": "Khu vực cạnh ruộng là phố.",
+          "exampleSentences": [
+            {
+              "jp": "賑やかな町",
+              "vn": "Phố náo nhiệt.",
+              "furigana": [
+                {
+                  "kanji": "町",
+                  "reading": "まち"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'たべもの', kanji: '食べ物', romaji: 'tabemono', mean: 'Đồ ăn', examples: [
+        {
+          "jp": "おいしい食べ物",
+          "vn": "Đồ ăn ngon.",
+          "furigana": [
+            {
+              "kanji": "食",
+              "reading": "た"
+            },
+            {
+              "kanji": "物",
+              "reading": "もの"
+            }
+          ]
+        },
+        {
+          "jp": "日本の食べ物",
+          "vn": "Đồ ăn Nhật.",
+          "furigana": [
+            {
+              "kanji": "日本",
+              "reading": "にほん"
+            },
+            {
+              "kanji": "食",
+              "reading": "た"
+            },
+            {
+              "kanji": "物",
+              "reading": "もの"
+            }
+          ]
+        },
+        {
+          "jp": "好きな食べ物",
+          "vn": "Đồ ăn yêu thích.",
+          "furigana": [
+            {
+              "kanji": "好",
+              "reading": "す"
+            },
+            {
+              "kanji": "食",
+              "reading": "た"
+            },
+            {
+              "kanji": "物",
+              "reading": "もの"
+            }
+          ]
+        },
+        {
+          "jp": "食べ物を買います。",
+          "vn": "Mua đồ ăn.",
+          "furigana": [
+            {
+              "kanji": "食",
+              "reading": "た"
+            },
+            {
+              "kanji": "物",
+              "reading": "もの"
+            },
+            {
+              "kanji": "買",
+              "reading": "か"
+            }
+          ]
+        },
+        {
+          "jp": "辛い食べ物",
+          "vn": "Đồ ăn cay.",
+          "furigana": [
+            {
+              "kanji": "辛",
+              "reading": "から"
+            },
+            {
+              "kanji": "食",
+              "reading": "た"
+            },
+            {
+              "kanji": "物",
+              "reading": "もの"
+            }
+          ]
+        },
+        {
+          "jp": "食べ物屋",
+          "vn": "Cửa hàng đồ ăn.",
+          "furigana": [
+            {
+              "kanji": "食",
+              "reading": "た"
+            },
+            {
+              "kanji": "物",
+              "reading": "もの"
+            },
+            {
+              "kanji": "屋",
+              "reading": "や"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "物",
+          "onyomi": "ブツ",
+          "kunyomi": "もの",
+          "meaning": "Vật",
+          "strokes": 8,
+          "jlpt": "N5",
+          "radicals": "牛 (bò)",
+          "components": [
+            {
+              "char": "牛",
+              "meaning": "bò"
+            },
+            {
+              "char": "勿",
+              "meaning": "chớ"
+            }
+          ],
+          "mnemonic": "Đừng (勿) coi con bò (牛) là một đồ vật (物) vô tri.",
+          "exampleSentences": [
+            {
+              "jp": "食べ物",
+              "vn": "Đồ ăn.",
+              "furigana": [
+                {
+                  "kanji": "食",
+                  "reading": "た"
+                },
+                {
+                  "kanji": "物",
+                  "reading": "もの"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'くるま', kanji: '車', romaji: 'kuruma', mean: 'Xe ô-tô', examples: [
+        {
+          "jp": "車を運転します。",
+          "vn": "Lái xe ô tô.",
+          "furigana": [
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            },
+            {
+              "kanji": "運転",
+              "reading": "うんてん"
+            }
+          ]
+        },
+        {
+          "jp": "新しい車",
+          "vn": "Xe ô tô mới.",
+          "furigana": [
+            {
+              "kanji": "新",
+              "reading": "あたら"
+            },
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            }
+          ]
+        },
+        {
+          "jp": "赤い車",
+          "vn": "Xe ô tô đỏ.",
+          "furigana": [
+            {
+              "kanji": "赤",
+              "reading": "あか"
+            },
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            }
+          ]
+        },
+        {
+          "jp": "車で行きます。",
+          "vn": "Đi bằng ô tô.",
+          "furigana": [
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "日本の車",
+          "vn": "Xe Nhật.",
+          "furigana": [
+            {
+              "kanji": "日本",
+              "reading": "にほん"
+            },
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            }
+          ]
+        },
+        {
+          "jp": "大きい車",
+          "vn": "Xe to.",
+          "furigana": [
+            {
+              "kanji": "大",
+              "reading": "おお"
+            },
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "車",
+          "onyomi": "シャ",
+          "kunyomi": "くるま",
+          "meaning": "Xe",
+          "strokes": 7,
+          "jlpt": "N5",
+          "radicals": "車",
+          "components": [
+            {
+              "char": "車",
+              "meaning": "xe"
+            }
+          ],
+          "mnemonic": "Hình xe.",
+          "exampleSentences": [
+            {
+              "jp": "自動車",
+              "vn": "Ô tô.",
+              "furigana": [
+                {
+                  "kanji": "自動車",
+                  "reading": "じどうしゃ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ところ', kanji: '所', romaji: 'tokoro', mean: 'Nơi, chỗ', examples: [
+        {
+          "jp": "静かな所",
+          "vn": "Nơi yên tĩnh.",
+          "furigana": [
+            {
+              "kanji": "静",
+              "reading": "しず"
+            },
+            {
+              "kanji": "所",
+              "reading": "ところ"
+            }
+          ]
+        },
+        {
+          "jp": "きれいな所",
+          "vn": "Nơi đẹp đẽ.",
+          "furigana": [
+            {
+              "kanji": "所",
+              "reading": "ところ"
+            }
+          ]
+        },
+        {
+          "jp": "有名な所",
+          "vn": "Nơi nổi tiếng.",
+          "furigana": [
+            {
+              "kanji": "有名",
+              "reading": "ゆうめい"
+            },
+            {
+              "kanji": "所",
+              "reading": "ところ"
+            }
+          ]
+        },
+        {
+          "jp": "どんな所ですか。",
+          "vn": "Là nơi như thế nào?",
+          "furigana": [
+            {
+              "kanji": "所",
+              "reading": "ところ"
+            }
+          ]
+        },
+        {
+          "jp": "いい所",
+          "vn": "Nơi tốt.",
+          "furigana": [
+            {
+              "kanji": "所",
+              "reading": "ところ"
+            }
+          ]
+        },
+        {
+          "jp": "所が変われば品変わる",
+          "vn": "Mỗi nơi mỗi khác (tục ngữ).",
+          "furigana": [
+            {
+              "kanji": "所",
+              "reading": "ところ"
+            },
+            {
+              "kanji": "変",
+              "reading": "か"
+            },
+            {
+              "kanji": "品",
+              "reading": "しな"
+            },
+            {
+              "kanji": "変",
+              "reading": "か"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "所",
+          "onyomi": "ショ",
+          "kunyomi": "ところ",
+          "meaning": "Nơi chốn",
+          "strokes": 8,
+          "jlpt": "N4",
+          "radicals": "戸",
+          "components": [
+            {
+              "char": "戸",
+              "meaning": "cửa"
+            },
+            {
+              "char": "斤",
+              "meaning": "rìu"
+            }
+          ],
+          "mnemonic": "Chỗ để rìu sau cửa.",
+          "exampleSentences": [
+            {
+              "jp": "場所",
+              "vn": "Địa điểm.",
+              "furigana": [
+                {
+                  "kanji": "場所",
+                  "reading": "ばしょ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'りょう', kanji: '寮', romaji: 'ryou', mean: 'Kí túc xá', examples: [
+        {
+          "jp": "寮に住んでいます。",
+          "vn": "Đang sống ở ký túc xá.",
+          "furigana": [
+            {
+              "kanji": "寮",
+              "reading": "りょう"
+            },
+            {
+              "kanji": "住",
+              "reading": "す"
+            }
+          ]
+        },
+        {
+          "jp": "会社の寮",
+          "vn": "Ký túc xá công ty.",
+          "furigana": [
+            {
+              "kanji": "会社",
+              "reading": "かいしゃ"
+            },
+            {
+              "kanji": "寮",
+              "reading": "りょう"
+            }
+          ]
+        },
+        {
+          "jp": "寮の生活",
+          "vn": "Cuộc sống ký túc xá.",
+          "furigana": [
+            {
+              "kanji": "寮",
+              "reading": "りょう"
+            },
+            {
+              "kanji": "生活",
+              "reading": "せいかつ"
+            }
+          ]
+        },
+        {
+          "jp": "新しい寮",
+          "vn": "Ký túc xá mới.",
+          "furigana": [
+            {
+              "kanji": "新",
+              "reading": "あたら"
+            },
+            {
+              "kanji": "寮",
+              "reading": "りょう"
+            }
+          ]
+        },
+        {
+          "jp": "寮へ帰ります。",
+          "vn": "Về ký túc xá.",
+          "furigana": [
+            {
+              "kanji": "寮",
+              "reading": "りょう"
+            },
+            {
+              "kanji": "帰",
+              "reading": "かえ"
+            }
+          ]
+        },
+        {
+          "jp": "独身寮",
+          "vn": "Ký túc xá độc thân.",
+          "furigana": [
+            {
+              "kanji": "独身",
+              "reading": "どくしん"
+            },
+            {
+              "kanji": "寮",
+              "reading": "りょう"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "寮",
+          "onyomi": "リョウ",
+          "kunyomi": "",
+          "meaning": "Ký túc xá",
+          "strokes": 15,
+          "jlpt": "N3",
+          "radicals": "宀",
+          "components": [
+            {
+              "char": "宀",
+              "meaning": "nhà"
+            },
+            {
+              "char": "尞",
+              "meaning": "liêu"
+            }
+          ],
+          "mnemonic": "Nhà lớn cho nhiều người.",
+          "exampleSentences": [
+            {
+              "jp": "学生寮",
+              "vn": "KTX sinh viên.",
+              "furigana": [
+                {
+                  "kanji": "学生寮",
+                  "reading": "がくせいりょう"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'べんきょう', kanji: '勉強', romaji: 'benkyou', mean: 'Học', examples: [
+        {
+          "jp": "日本語の勉強",
+          "vn": "Việc học tiếng Nhật.",
+          "furigana": [
+            {
+              "kanji": "日本語",
+              "reading": "にほんご"
+            },
+            {
+              "kanji": "勉強",
+              "reading": "べんきょう"
+            }
+          ]
+        },
+        {
+          "jp": "勉強が好きです。",
+          "vn": "Thích việc học.",
+          "furigana": [
+            {
+              "kanji": "勉強",
+              "reading": "べんきょう"
+            },
+            {
+              "kanji": "好",
+              "reading": "す"
+            }
+          ]
+        },
+        {
+          "jp": "勉強は楽しいです。",
+          "vn": "Việc học rất vui.",
+          "furigana": [
+            {
+              "kanji": "勉強",
+              "reading": "べんきょう"
+            },
+            {
+              "kanji": "楽",
+              "reading": "たの"
+            }
+          ]
+        },
+        {
+          "jp": "勉強します。",
+          "vn": "Học.",
+          "furigana": [
+            {
+              "kanji": "勉強",
+              "reading": "べんきょう"
+            }
+          ]
+        },
+        {
+          "jp": "勉強部屋",
+          "vn": "Phòng học.",
+          "furigana": [
+            {
+              "kanji": "勉強",
+              "reading": "べんきょう"
+            },
+            {
+              "kanji": "部屋",
+              "reading": "へや"
+            }
+          ]
+        },
+        {
+          "jp": "毎日勉強します。",
+          "vn": "Học mỗi ngày.",
+          "furigana": [
+            {
+              "kanji": "毎日",
+              "reading": "まいにち"
+            },
+            {
+              "kanji": "勉強",
+              "reading": "べんきょう"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "勉",
+          "onyomi": "ベン",
+          "kunyomi": "つと.める",
+          "meaning": "Cố gắng",
+          "strokes": 10,
+          "jlpt": "N4",
+          "radicals": "力",
+          "components": [
+            {
+              "char": "免",
+              "meaning": "miễn"
+            },
+            {
+              "char": "力",
+              "meaning": "lực"
+            }
+          ],
+          "mnemonic": "Dùng lực để làm việc.",
+          "exampleSentences": [
+            {
+              "jp": "勉強",
+              "vn": "Học.",
+              "furigana": [
+                {
+                  "kanji": "勉強",
+                  "reading": "べんきょう"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kanji": "強",
+          "onyomi": "キョウ",
+          "kunyomi": "つよ.い",
+          "meaning": "Mạnh",
+          "strokes": 11,
+          "jlpt": "N4",
+          "radicals": "弓",
+          "components": [
+            {
+              "char": "弓",
+              "meaning": "cung"
+            },
+            {
+              "char": "ム",
+              "meaning": "tư"
+            },
+            {
+              "char": "虫",
+              "meaning": "sâu"
+            }
+          ],
+          "mnemonic": "Cung bắn sâu mạnh.",
+          "exampleSentences": [
+            {
+              "jp": "強い風",
+              "vn": "Gió mạnh.",
+              "furigana": [
+                {
+                  "kanji": "強",
+                  "reading": "つよ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'せいかつ', kanji: '生活', romaji: 'seikatsu', mean: 'Cuộc sống, sinh hoạt', examples: [
+        {
+          "jp": "日本の生活",
+          "vn": "Cuộc sống ở Nhật.",
+          "furigana": [
+            {
+              "kanji": "日本",
+              "reading": "にほん"
+            },
+            {
+              "kanji": "生活",
+              "reading": "せいかつ"
+            }
+          ]
+        },
+        {
+          "jp": "楽しい生活",
+          "vn": "Cuộc sống vui vẻ.",
+          "furigana": [
+            {
+              "kanji": "楽",
+              "reading": "たの"
+            },
+            {
+              "kanji": "生活",
+              "reading": "せいかつ"
+            }
+          ]
+        },
+        {
+          "jp": "生活に慣れます。",
+          "vn": "Quen với cuộc sống.",
+          "furigana": [
+            {
+              "kanji": "生活",
+              "reading": "せいかつ"
+            },
+            {
+              "kanji": "慣",
+              "reading": "な"
+            }
+          ]
+        },
+        {
+          "jp": "忙しい生活",
+          "vn": "Cuộc sống bận rộn.",
+          "furigana": [
+            {
+              "kanji": "忙",
+              "reading": "いそが"
+            },
+            {
+              "kanji": "生活",
+              "reading": "せいかつ"
+            }
+          ]
+        },
+        {
+          "jp": "ひとり暮らしの生活",
+          "vn": "Cuộc sống độc thân (sống một mình).",
+          "furigana": [
+            {
+              "kanji": "暮",
+              "reading": "ぐ"
+            },
+            {
+              "kanji": "生活",
+              "reading": "せいかつ"
+            }
+          ]
+        },
+        {
+          "jp": "生活費",
+          "vn": "Phí sinh hoạt.",
+          "furigana": [
+            {
+              "kanji": "生活費",
+              "reading": "せいかつひ"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "活",
+          "onyomi": "カツ",
+          "kunyomi": "",
+          "meaning": "Hoạt",
+          "strokes": 9,
+          "jlpt": "N3",
+          "radicals": "水",
+          "components": [
+            {
+              "char": "氵",
+              "meaning": "nước"
+            },
+            {
+              "char": "舌",
+              "meaning": "lưỡi"
+            }
+          ],
+          "mnemonic": "Lưỡi có nước thì hoạt động tốt.",
+          "exampleSentences": [
+            {
+              "jp": "生活",
+              "vn": "Cuộc sống.",
+              "furigana": [
+                {
+                  "kanji": "生活",
+                  "reading": "せいかつ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おしごと', kanji: '[お]仕事', romaji: 'shigoto', mean: 'Công việc (~を します: làm việc)', examples: [
+        {
+          "jp": "お仕事はなんですか。",
+          "vn": "Công việc của bạn là gì?",
+          "furigana": [
+            {
+              "kanji": "仕事",
+              "reading": "しごと"
+            },
+            {
+              "kanji": "何",
+              "reading": "なん"
+            }
+          ]
+        },
+        {
+          "jp": "お仕事、頑張ってください。",
+          "vn": "Hãy cố gắng trong công việc nhé.",
+          "furigana": [
+            {
+              "kanji": "仕事",
+              "reading": "しごと"
+            },
+            {
+              "kanji": "頑張",
+              "reading": "がんば"
+            }
+          ]
+        },
+        {
+          "jp": "お仕事は忙しいですか。",
+          "vn": "Công việc có bận không?",
+          "furigana": [
+            {
+              "kanji": "仕事",
+              "reading": "しごと"
+            },
+            {
+              "kanji": "忙",
+              "reading": "いそが"
+            }
+          ]
+        },
+        {
+          "jp": "お仕事をします。",
+          "vn": "Làm việc.",
+          "furigana": [
+            {
+              "kanji": "仕事",
+              "reading": "しごと"
+            }
+          ]
+        },
+        {
+          "jp": "新しいお仕事",
+          "vn": "Công việc mới.",
+          "furigana": [
+            {
+              "kanji": "新",
+              "reading": "あたら"
+            },
+            {
+              "kanji": "仕事",
+              "reading": "しごと"
+            }
+          ]
+        },
+        {
+          "jp": "お仕事が終わります。",
+          "vn": "Công việc kết thúc.",
+          "furigana": [
+            {
+              "kanji": "仕事",
+              "reading": "しごと"
+            },
+            {
+              "kanji": "終",
+              "reading": "お"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "仕",
+          "onyomi": "シ",
+          "kunyomi": "つか.える",
+          "meaning": "Phục vụ",
+          "strokes": 5,
+          "jlpt": "N4",
+          "radicals": "人",
+          "components": [
+            {
+              "char": "イ",
+              "meaning": "người"
+            },
+            {
+              "char": "士",
+              "meaning": "sĩ"
+            }
+          ],
+          "mnemonic": "Sĩ quan phục vụ nước.",
+          "exampleSentences": [
+            {
+              "jp": "仕事",
+              "vn": "Công việc.",
+              "furigana": [
+                {
+                  "kanji": "仕事",
+                  "reading": "しごと"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kanji": "事",
+          "onyomi": "ジ",
+          "kunyomi": "こと",
+          "meaning": "Việc",
+          "strokes": 8,
+          "jlpt": "N4",
+          "radicals": "亅",
+          "components": [
+            {
+              "char": "口",
+              "meaning": "miệng"
+            },
+            {
+              "char": "亅",
+              "meaning": "quyết"
+            }
+          ],
+          "mnemonic": "Miệng quyết định việc.",
+          "exampleSentences": [
+            {
+              "jp": "仕事",
+              "vn": "Công việc.",
+              "furigana": [
+                {
+                  "kanji": "仕事",
+                  "reading": "しごと"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'どう', kanji: 'どう', romaji: 'dou', mean: 'Thế nào', examples: [
+        {
+          "jp": "日本の生活はどうですか。",
+          "vn": "Cuộc sống ở Nhật thế nào?",
+          "furigana": [
+            {
+              "kanji": "日本",
+              "reading": "にほん"
+            },
+            {
+              "kanji": "生活",
+              "reading": "せいかつ"
+            }
+          ]
+        },
+        {
+          "jp": "どうですか。",
+          "vn": "Thế nào?",
+          "furigana": []
+        },
+        {
+          "jp": "この靴はどうですか。",
+          "vn": "Đôi giày này thế nào?",
+          "furigana": [
+            {
+              "kanji": "靴",
+              "reading": "くつ"
+            }
+          ]
+        },
+        {
+          "jp": "調子はどうですか。",
+          "vn": "Tình hình thế nào?",
+          "furigana": [
+            {
+              "kanji": "調子",
+              "reading": "ちょうし"
+            }
+          ]
+        },
+        {
+          "jp": "味はどうですか。",
+          "vn": "Vị thế nào?",
+          "furigana": [
+            {
+              "kanji": "味",
+              "reading": "あじ"
+            }
+          ]
+        },
+        {
+          "jp": "最近どうですか。",
+          "vn": "Gần đây thế nào?",
+          "furigana": [
+            {
+              "kanji": "最近",
+              "reading": "さいきん"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'どんな', kanji: 'どんな', romaji: 'donna', mean: 'Như thế nào', examples: [
+        {
+          "jp": "どんな人ですか。",
+          "vn": "Là người như thế nào?",
+          "furigana": [
+            {
+              "kanji": "人",
+              "reading": "ひと"
+            }
+          ]
+        },
+        {
+          "jp": "どんな町ですか。",
+          "vn": "Là thành phố như thế nào?",
+          "furigana": [
+            {
+              "kanji": "町",
+              "reading": "まち"
+            }
+          ]
+        },
+        {
+          "jp": "どんな料理ですか。",
+          "vn": "Là món ăn như thế nào?",
+          "furigana": [
+            {
+              "kanji": "料理",
+              "reading": "りょうり"
+            }
+          ]
+        },
+        {
+          "jp": "どんなスポーツが好きですか。",
+          "vn": "Bạn thích môn thể thao nào?",
+          "furigana": [
+            {
+              "kanji": "好",
+              "reading": "す"
+            }
+          ]
+        },
+        {
+          "jp": "どんな所ですか。",
+          "vn": "Là nơi như thế nào?",
+          "furigana": [
+            {
+              "kanji": "所",
+              "reading": "ところ"
+            }
+          ]
+        },
+        {
+          "jp": "どんな本ですか。",
+          "vn": "Là sách gì (như thế nào)?",
+          "furigana": [
+            {
+              "kanji": "本",
+              "reading": "ほん"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'どれ', kanji: 'どれ', romaji: 'dore', mean: 'Cái nào', examples: [
+        {
+          "jp": "あなたの傘はどれですか。",
+          "vn": "Ô của bạn là cái nào?",
+          "furigana": [
+            {
+              "kanji": "傘",
+              "reading": "かさ"
+            }
+          ]
+        },
+        {
+          "jp": "どれですか。",
+          "vn": "Là cái nào?",
+          "furigana": []
+        },
+        {
+          "jp": "どれが好きですか。",
+          "vn": "Bạn thích cái nào?",
+          "furigana": [
+            {
+              "kanji": "好",
+              "reading": "す"
+            }
+          ]
+        },
+        {
+          "jp": "どれがいいですか。",
+          "vn": "Cái nào thì tốt?",
+          "furigana": []
+        },
+        {
+          "jp": "どれを食べますか。",
+          "vn": "Bạn ăn cái nào?",
+          "furigana": [
+            {
+              "kanji": "食",
+              "reading": "た"
+            }
+          ]
+        },
+        {
+          "jp": "どれもおいしいです。",
+          "vn": "Cái nào cũng ngon.",
+          "furigana": []
+        }
+      ]
+    },
+    {
+      word: 'とても', kanji: 'とても', romaji: 'totemo', mean: 'Rất, lắm', examples: [
+        {
+          "jp": "とてもおいしいです。",
+          "vn": "Rất ngon.",
+          "furigana": []
+        },
+        {
+          "jp": "とても寒いです。",
+          "vn": "Rất lạnh.",
+          "furigana": [
+            {
+              "kanji": "寒",
+              "reading": "さむ"
+            }
+          ]
+        },
+        {
+          "jp": "とてもきれいです。",
+          "vn": "Rất đẹp.",
+          "furigana": []
+        },
+        {
+          "jp": "とても元気です。",
+          "vn": "Rất khỏe.",
+          "furigana": [
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        },
+        {
+          "jp": "とても有名です。",
+          "vn": "Rất nổi tiếng.",
+          "furigana": [
+            {
+              "kanji": "有名",
+              "reading": "ゆうめい"
+            }
+          ]
+        },
+        {
+          "jp": "とても忙しいです。",
+          "vn": "Rất bận.",
+          "furigana": [
+            {
+              "kanji": "忙",
+              "reading": "いそが"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'あまり', kanji: 'あまり', romaji: 'amari', mean: 'Không ~ lắm', examples: [
+        {
+          "jp": "あまり元気じゃありません。",
+          "vn": "Không khỏe lắm.",
+          "furigana": [
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        },
+        {
+          "jp": "あまり大きくないです。",
+          "vn": "Không to lắm.",
+          "furigana": [
+            {
+              "kanji": "大",
+              "reading": "おお"
+            }
+          ]
+        },
+        {
+          "jp": "あまり好きじゃありません。",
+          "vn": "Không thích lắm.",
+          "furigana": [
+            {
+              "kanji": "好",
+              "reading": "す"
+            }
+          ]
+        },
+        {
+          "jp": "あまり難しくないです。",
+          "vn": "Không khó lắm.",
+          "furigana": [
+            {
+              "kanji": "難",
+              "reading": "むずか"
+            }
+          ]
+        },
+        {
+          "jp": "あまり食べません。",
+          "vn": "Tôi không ăn nhiều lắm.",
+          "furigana": [
+            {
+              "kanji": "食",
+              "reading": "た"
+            }
+          ]
+        },
+        {
+          "jp": "時間がありませんから、あまり見ません。",
+          "vn": "Vì không có thời gian nên tôi không xem mấy.",
+          "furigana": [
+            {
+              "kanji": "時間",
+              "reading": "じかん"
+            },
+            {
+              "kanji": "見",
+              "reading": "み"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'そして', kanji: 'そして', romaji: 'soshite', mean: 'Và, thêm nữa (dùng để nối hai câu)', examples: [
+        {
+          "jp": "そして、寝ました。",
+          "vn": "Và sau đó tôi đã ngủ.",
+          "furigana": [
+            {
+              "kanji": "寝",
+              "reading": "ね"
+            }
+          ]
+        },
+        {
+          "jp": "きれいです。そして、親切です。",
+          "vn": "Đẹp. Và còn tốt bụng nữa.",
+          "furigana": [
+            {
+              "kanji": "親切",
+              "reading": "しんせつ"
+            }
+          ]
+        },
+        {
+          "jp": "おいしいです。そして、安いです。",
+          "vn": "Ngon. Và còn rẻ nữa.",
+          "furigana": [
+            {
+              "kanji": "安",
+              "reading": "やす"
+            }
+          ]
+        },
+        {
+          "jp": "ご飯を食べました。そして、映画を見ました。",
+          "vn": "Tôi ăn cơm. Và sau đó xem phim.",
+          "furigana": [
+            {
+              "kanji": "飯",
+              "reading": "はん"
+            },
+            {
+              "kanji": "食",
+              "reading": "た"
+            },
+            {
+              "kanji": "映画",
+              "reading": "えいが"
+            },
+            {
+              "kanji": "見",
+              "reading": "み"
+            }
+          ]
+        },
+        {
+          "jp": "8時です。そして、彼はまだ来ません。",
+          "vn": "8 giờ rồi. Và anh ấy vẫn chưa đến.",
+          "furigana": [
+            {
+              "kanji": "時",
+              "reading": "じ"
+            },
+            {
+              "kanji": "彼",
+              "reading": "かれ"
+            },
+            {
+              "kanji": "来",
+              "reading": "き"
+            }
+          ]
+        },
+        {
+          "jp": "東京へ行きました。そして、京都へ行きました。",
+          "vn": "Tôi đã đi Tokyo. Và sau đó đi Kyoto.",
+          "furigana": [
+            {
+              "kanji": "東京",
+              "reading": "とうきょう"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            },
+            {
+              "kanji": "京都",
+              "reading": "きょうと"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'が', kanji: '～が、～', romaji: 'ga', mean: '～, nhưng ～', examples: [
+        {
+          "jp": "日本の食べ物は美味しいですが、高いです。",
+          "vn": "Đồ ăn Nhật ngon nhưng đắt.",
+          "furigana": [
+            {
+              "kanji": "日本",
+              "reading": "にほん"
+            },
+            {
+              "kanji": "食",
+              "reading": "た"
+            },
+            {
+              "kanji": "物",
+              "reading": "もの"
+            },
+            {
+              "kanji": "美味",
+              "reading": "おい"
+            },
+            {
+              "kanji": "高",
+              "reading": "たか"
+            }
+          ]
+        },
+        {
+          "jp": "雨ですが、行きます。",
+          "vn": "Trời mưa nhưng tôi vẫn đi.",
+          "furigana": [
+            {
+              "kanji": "雨",
+              "reading": "あめ"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "便利ですが、車が多すぎます。",
+          "vn": "Tiện lợi nhưng nhiều xe quá.",
+          "furigana": [
+            {
+              "kanji": "便利",
+              "reading": "べんり"
+            },
+            {
+              "kanji": "車",
+              "reading": "くるま"
+            },
+            {
+              "kanji": "多",
+              "reading": "おお"
+            }
+          ]
+        },
+        {
+          "jp": "古いですが、きれいな家です。",
+          "vn": "Cũ nhưng là ngôi nhà đẹp/sạch.",
+          "furigana": [
+            {
+              "kanji": "古",
+              "reading": "ふる"
+            },
+            {
+              "kanji": "家",
+              "reading": "いえ"
+            }
+          ]
+        },
+        {
+          "jp": "高いですが、いい靴です。",
+          "vn": "Đắt nhưng là đôi giày tốt.",
+          "furigana": [
+            {
+              "kanji": "高",
+              "reading": "たか"
+            },
+            {
+              "kanji": "靴",
+              "reading": "くつ"
+            }
+          ]
+        },
+        {
+          "jp": "すみませんが、塩を取ってください。",
+          "vn": "Xin lỗi nhưng hãy lấy giúp tôi muối.",
+          "furigana": [
+            {
+              "kanji": "塩",
+              "reading": "しお"
+            },
+            {
+              "kanji": "取",
+              "reading": "と"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おげんきですか', kanji: 'お元気ですか', romaji: 'ogenki desu ka', mean: 'Anh/Chị có khỏe không?', examples: [
+        {
+          "jp": "お元気ですか。",
+          "vn": "Bạn có khỏe không?",
+          "furigana": [
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        },
+        {
+          "jp": "みなさん、お元気ですか。",
+          "vn": "Mọi người có khỏe không?",
+          "furigana": []
+        },
+        {
+          "jp": "ご家族はお元気ですか。",
+          "vn": "Gia đình bạn có khỏe không?",
+          "furigana": [
+            {
+              "kanji": "家族",
+              "reading": "かぞく"
+            },
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        },
+        {
+          "jp": "先生、お元気ですか。",
+          "vn": "Thầy ơi, thầy có khỏe không?",
+          "furigana": [
+            {
+              "kanji": "先生",
+              "reading": "せんせい"
+            },
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        },
+        {
+          "jp": "はい、元気です。",
+          "vn": "Vâng, tôi khỏe.",
+          "furigana": [
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        },
+        {
+          "jp": "お変わりなく、お元気ですか。",
+          "vn": "Không có gì thay đổi chứ, bạn khỏe không?",
+          "furigana": [
+            {
+              "kanji": "変",
+              "reading": "か"
+            },
+            {
+              "kanji": "元気",
+              "reading": "げんき"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'そうですね', kanji: 'そうですね', romaji: 'sou desu ne', mean: 'Thế à./ Để tôi xem.', examples: [
+        {
+          "jp": "そうですね。",
+          "vn": "Thế à / Để tôi xem.",
+          "furigana": []
+        },
+        {
+          "jp": "あ、そうですね。",
+          "vn": "À, đúng vậy nhỉ.",
+          "furigana": []
+        },
+        {
+          "jp": "うーん、そうですね。",
+          "vn": "Ừm, để xem nào.",
+          "furigana": []
+        },
+        {
+          "jp": "東京はにぎやかですね。…そうですね。",
+          "vn": "Tokyo náo nhiệt nhỉ... Đúng vậy nhỉ.",
+          "furigana": [
+            {
+              "kanji": "東京",
+              "reading": "とうきょう"
+            }
+          ]
+        },
+        {
+          "jp": "いい天気ですね。…そうですね。",
+          "vn": "Thời tiết đẹp nhỉ... Đúng vậy nhỉ.",
+          "furigana": [
+            {
+              "kanji": "天気",
+              "reading": "てんき"
+            }
+          ]
+        },
+        {
+          "jp": "便利ですね。…そうですね。",
+          "vn": "Tiện lợi nhỉ... Đúng vậy.",
+          "furigana": [
+            {
+              "kanji": "便利",
+              "reading": "べんり"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'なれましたか', kanji: '日本の生活に慣れましたか', romaji: 'Nihon no seikatsu ni naremashita ka', mean: 'Anh/Chị đã quen với cuộc sống ở Nhật chưa?', examples: [
+        {
+          "jp": "日本の生活に慣れましたか。",
+          "vn": "Bạn đã quen với cuộc sống ở Nhật chưa?",
+          "furigana": [
+            {
+              "kanji": "日本",
+              "reading": "にほん"
+            },
+            {
+              "kanji": "生活",
+              "reading": "せいかつ"
+            },
+            {
+              "kanji": "慣",
+              "reading": "な"
+            }
+          ]
+        },
+        {
+          "jp": "はい、もう慣れました。",
+          "vn": "Vâng, tôi quen rồi.",
+          "furigana": [
+            {
+              "kanji": "慣",
+              "reading": "な"
+            }
+          ]
+        },
+        {
+          "jp": "仕事に慣れましたか。",
+          "vn": "Bạn đã quen việc chưa?",
+          "furigana": [
+            {
+              "kanji": "仕事",
+              "reading": "しごと"
+            },
+            {
+              "kanji": "慣",
+              "reading": "な"
+            }
+          ]
+        },
+        {
+          "jp": "まだ慣れていません。",
+          "vn": "Tôi vẫn chưa quen.",
+          "furigana": [
+            {
+              "kanji": "慣",
+              "reading": "な"
+            }
+          ]
+        },
+        {
+          "jp": "運転に慣れましたか。",
+          "vn": "Bạn đã quen lái xe chưa?",
+          "furigana": [
+            {
+              "kanji": "運転",
+              "reading": "うんてん"
+            },
+            {
+              "kanji": "慣",
+              "reading": "な"
+            }
+          ]
+        },
+        {
+          "jp": "学校に慣れましたか。",
+          "vn": "Bạn đã quen với trường học chưa?",
+          "furigana": [
+            {
+              "kanji": "学校",
+              "reading": "がっこう"
+            },
+            {
+              "kanji": "慣",
+              "reading": "な"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'いかがですか', kanji: '[～,] もう一杯いかがですか', romaji: 'mou ippai ikaga desu ka', mean: 'Anh/Chị dùng thêm một chén [~] nữa được không ạ?', examples: [
+        {
+          "jp": "もう一杯いかがですか。",
+          "vn": "Thêm một chén nữa nhé?",
+          "furigana": [
+            {
+              "kanji": "杯",
+              "reading": "ぱい"
+            }
+          ]
+        },
+        {
+          "jp": "コーヒーはいかがですか。",
+          "vn": "Dùng cà phê nhé?",
+          "furigana": []
+        },
+        {
+          "jp": "お茶はいかがですか。",
+          "vn": "Dùng trà nhé?",
+          "furigana": [
+            {
+              "kanji": "茶",
+              "reading": "ちゃ"
+            }
+          ]
+        },
+        {
+          "jp": "デザートはいかがですか。",
+          "vn": "Dùng tráng miệng nhé?",
+          "furigana": []
+        },
+        {
+          "jp": "調子はいかがですか。",
+          "vn": "Tình hình thế nào?",
+          "furigana": [
+            {
+              "kanji": "調子",
+              "reading": "ちょうし"
+            }
+          ]
+        },
+        {
+          "jp": "いかがですか。",
+          "vn": "Thế nào ạ?",
+          "furigana": []
+        }
+      ]
+    },
+    {
+      word: 'けっこうです', kanji: 'いいえ、けっこうです', romaji: 'iie, kekkou desu', mean: 'Không, đủ rồi ạ.', examples: [
+        {
+          "jp": "いいえ、けっこうです。",
+          "vn": "Không, tôi đủ rồi.",
+          "furigana": []
+        },
+        {
+          "jp": "もういいです、けっこうです。",
+          "vn": "Được rồi, đủ rồi ạ.",
+          "furigana": []
+        },
+        {
+          "jp": "それでけっこうです。",
+          "vn": "Như vậy là được rồi.",
+          "furigana": []
+        },
+        {
+          "jp": "お味はいかがですか。…けっこうです。",
+          "vn": "Vị thế nào? ...Rất ngon (được).",
+          "furigana": [
+            {
+              "kanji": "味",
+              "reading": "あじ"
+            }
+          ]
+        },
+        {
+          "jp": "けっこうなお手前で。",
+          "vn": "Trà rất ngon (trong trà đạo).",
+          "furigana": [
+            {
+              "kanji": "手前",
+              "reading": "てまえ"
+            }
+          ]
+        },
+        {
+          "jp": "けっこうな品",
+          "vn": "Món đồ tuyệt vời.",
+          "furigana": [
+            {
+              "kanji": "品",
+              "reading": "しな"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'もう～ですね', kanji: 'もう ～です[ね]', romaji: 'mou ~ desu ne', mean: 'Đã ~ rồi nhỉ./ Đã ~ rồi, đúng không ạ?', examples: [
+        {
+          "jp": "もう12時ですね。",
+          "vn": "Đã 12 giờ rồi nhỉ.",
+          "furigana": [
+            {
+              "kanji": "時",
+              "reading": "じ"
+            }
+          ]
+        },
+        {
+          "jp": "もう春ですね。",
+          "vn": "Đã mùa xuân rồi nhỉ.",
+          "furigana": [
+            {
+              "kanji": "春",
+              "reading": "はる"
+            }
+          ]
+        },
+        {
+          "jp": "もう金曜日ですね。",
+          "vn": "Đã thứ sáu rồi nhỉ.",
+          "furigana": [
+            {
+              "kanji": "金曜日",
+              "reading": "きんようび"
+            }
+          ]
+        },
+        {
+          "jp": "もう、時間ですね。",
+          "vn": "Đã đến giờ rồi.",
+          "furigana": [
+            {
+              "kanji": "時間",
+              "reading": "じかん"
+            }
+          ]
+        },
+        {
+          "jp": "もう終わりましたね。",
+          "vn": "Đã xong rồi nhỉ.",
+          "furigana": [
+            {
+              "kanji": "終",
+              "reading": "お"
+            }
+          ]
+        },
+        {
+          "jp": "もう9月ですね。",
+          "vn": "Đã tháng 9 rồi nhỉ.",
+          "furigana": [
+            {
+              "kanji": "月",
+              "reading": "がつ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'しつれいします', kanji: 'そろそろ失礼します', romaji: 'sorosoro shitsurei shimasu', mean: 'Sắp đến lúc tôi phải xin phép rồi./ Đã đến lúc tôi phải về.', examples: [
+        {
+          "jp": "そろそろ失礼します。",
+          "vn": "Tôi sắp phải về rồi.",
+          "furigana": [
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        },
+        {
+          "jp": "お先に失礼します。",
+          "vn": "Tôi xin phép về trước.",
+          "furigana": [
+            {
+              "kanji": "先",
+              "reading": "さき"
+            },
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        },
+        {
+          "jp": "失礼します。",
+          "vn": "Xin phép.",
+          "furigana": [
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        },
+        {
+          "jp": "では、失礼します。",
+          "vn": "Vậy, tôi xin phép.",
+          "furigana": [
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        },
+        {
+          "jp": "ちょっと失礼します。",
+          "vn": "Xin lỗi một chút.",
+          "furigana": [
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        },
+        {
+          "jp": "失礼しました。",
+          "vn": "Tôi đã thất lễ (xin lỗi vì chuyện đã qua).",
+          "furigana": [
+            {
+              "kanji": "失礼",
+              "reading": "しつれい"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'いらっしゃってください', kanji: 'また いらっしゃって ください', romaji: 'mata irasshatte kudasai', mean: 'Lần sau anh/chị lại đến chơi nhé.', examples: [
+        {
+          "jp": "また、いらっしゃってください。",
+          "vn": "Lần sau lại đến chơi nhé.",
+          "furigana": []
+        },
+        {
+          "jp": "是非、いらっしゃってください。",
+          "vn": "Nhất định hãy đến nhé.",
+          "furigana": [
+            {
+              "kanji": "是非",
+              "reading": "ぜひ"
+            }
+          ]
+        },
+        {
+          "jp": "いつでもいらっしゃってください。",
+          "vn": "Hãy đến bất cứ lúc nào.",
+          "furigana": []
+        },
+        {
+          "jp": "遊びにいらっしゃってください。",
+          "vn": "Hãy đến chơi nhé.",
+          "furigana": [
+            {
+              "kanji": "遊",
+              "reading": "あそ"
+            }
+          ]
+        },
+        {
+          "jp": "明日、いらっしゃってください。",
+          "vn": "Ngày mai hãy đến nhé.",
+          "furigana": [
+            {
+              "kanji": "明日",
+              "reading": "あした"
+            }
+          ]
+        },
+        {
+          "jp": "皆さんでいらっしゃってください。",
+          "vn": "Mọi người hãy cùng đến nhé.",
+          "furigana": [
+            {
+              "kanji": "皆",
+              "reading": "みな"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ふじさん', kanji: '富士山', romaji: 'Fujisan', mean: 'Núi Phú Sĩ', examples: [
+        {
+          "jp": "富士山は高いです。",
+          "vn": "Núi Phú Sĩ cao.",
+          "furigana": [
+            {
+              "kanji": "富士山",
+              "reading": "ふじさん"
+            },
+            {
+              "kanji": "高",
+              "reading": "たか"
+            }
+          ]
+        },
+        {
+          "jp": "富士山に登ります。",
+          "vn": "Leo núi Phú Sĩ.",
+          "furigana": [
+            {
+              "kanji": "富士山",
+              "reading": "ふじさん"
+            },
+            {
+              "kanji": "登",
+              "reading": "のぼ"
+            }
+          ]
+        },
+        {
+          "jp": "きれいな富士山",
+          "vn": "Núi Phú Sĩ đẹp.",
+          "furigana": [
+            {
+              "kanji": "富士山",
+              "reading": "ふじさん"
+            }
+          ]
+        },
+        {
+          "jp": "冬の富士山",
+          "vn": "Núi Phú Sĩ mùa đông.",
+          "furigana": [
+            {
+              "kanji": "冬",
+              "reading": "ふゆ"
+            },
+            {
+              "kanji": "富士山",
+              "reading": "ふじさん"
+            }
+          ]
+        },
+        {
+          "jp": "富士山が見えます。",
+          "vn": "Nhìn thấy núi Phú Sĩ.",
+          "furigana": [
+            {
+              "kanji": "富士山",
+              "reading": "ふじさん"
+            },
+            {
+              "kanji": "見",
+              "reading": "み"
+            }
+          ]
+        },
+        {
+          "jp": "富士山は日本にあります。",
+          "vn": "Núi Phú Sĩ ở Nhật Bản.",
+          "furigana": [
+            {
+              "kanji": "富士山",
+              "reading": "ふじさん"
+            },
+            {
+              "kanji": "日本",
+              "reading": "にほん"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "富",
+          "onyomi": "フ",
+          "kunyomi": "とみ",
+          "meaning": "Phú",
+          "strokes": 12,
+          "jlpt": "N3",
+          "radicals": "宀",
+          "components": [
+            {
+              "char": "宀",
+              "meaning": "nhà"
+            },
+            {
+              "char": "畐",
+              "meaning": "đầy"
+            }
+          ],
+          "mnemonic": "Nhà đầy của cải.",
+          "exampleSentences": [
+            {
+              "jp": "富士山",
+              "vn": "Núi Phú Sĩ.",
+              "furigana": [
+                {
+                  "kanji": "富士山",
+                  "reading": "ふじさん"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kanji": "士",
+          "onyomi": "シ",
+          "kunyomi": "",
+          "meaning": "Sĩ",
+          "strokes": 3,
+          "jlpt": "N4",
+          "radicals": "士",
+          "components": [
+            {
+              "char": "士",
+              "meaning": "sĩ"
+            }
+          ],
+          "mnemonic": "Người đứng thẳng.",
+          "exampleSentences": [
+            {
+              "jp": "富士山",
+              "vn": "Núi Phú Sĩ.",
+              "furigana": [
+                {
+                  "kanji": "富士山",
+                  "reading": "ふじさん"
+                }
+              ]
+            }
+          ]
+        },
         {
           "kanji": "山",
-          "reading": "やま"
-        },
-        {
-          "kanji": "写真",
-          "reading": "しゃしん"
+          "onyomi": "サン",
+          "kunyomi": "やま",
+          "meaning": "Núi",
+          "strokes": 3,
+          "jlpt": "N5",
+          "radicals": "山",
+          "components": [
+            {
+              "char": "山",
+              "meaning": "núi"
+            }
+          ],
+          "mnemonic": "Hình núi.",
+          "exampleSentences": [
+            {
+              "jp": "富士山",
+              "vn": "úi Phú Sĩ.",
+              "furigana": [
+                {
+                  "kanji": "富士山",
+                  "reading": "ふじさん"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "山へ行きます。",
-      "vn": "Đi lên núi.",
-      "furigana": [
+      word: 'びわこ', kanji: '琵琶湖', romaji: 'Biwako', mean: 'Hồ Biwa', examples: [
         {
-          "kanji": "山",
-          "reading": "やま"
+          "jp": "琵琶湖は大きいです。",
+          "vn": "Hồ Biwa lớn.",
+          "furigana": [
+            {
+              "kanji": "琵琶湖",
+              "reading": "びわこ"
+            },
+            {
+              "kanji": "大",
+              "reading": "おお"
+            }
+          ]
         },
         {
-          "kanji": "行",
-          "reading": "い"
+          "jp": "滋賀県に琵琶湖があります。",
+          "vn": "Hồ Biwa ở tỉnh Shiga.",
+          "furigana": [
+            {
+              "kanji": "滋賀県",
+              "reading": "しがけん"
+            },
+            {
+              "kanji": "琵琶湖",
+              "reading": "びわこ"
+            }
+          ]
+        },
+        {
+          "jp": "琵琶湖へ行きます。",
+          "vn": "Đi hồ Biwa.",
+          "furigana": [
+            {
+              "kanji": "琵琶湖",
+              "reading": "びわこ"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "きれいな琵琶湖",
+          "vn": "Hồ Biwa đẹp.",
+          "furigana": [
+            {
+              "kanji": "琵琶湖",
+              "reading": "びわこ"
+            }
+          ]
+        },
+        {
+          "jp": "琵琶湖の水",
+          "vn": "Nước hồ Biwa.",
+          "furigana": [
+            {
+              "kanji": "琵琶湖",
+              "reading": "びわこ"
+            },
+            {
+              "kanji": "水",
+              "reading": "みず"
+            }
+          ]
+        },
+        {
+          "jp": "琵琶湖一周",
+          "vn": "Một vòng hồ Biwa.",
+          "furigana": [
+            {
+              "kanji": "琵琶湖",
+              "reading": "びわこ"
+            },
+            {
+              "kanji": "一周",
+              "reading": "いっしゅう"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "琵",
+          "onyomi": "ビ",
+          "kunyomi": "",
+          "meaning": "Tỳ",
+          "strokes": 12,
+          "jlpt": "N1",
+          "radicals": "比",
+          "exampleSentences": [
+            {
+              "jp": "琵琶湖",
+              "vn": "Hồ Biwa.",
+              "furigana": [
+                {
+                  "kanji": "琵琶湖",
+                  "reading": "びわこ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kanji": "琶",
+          "onyomi": "ワ",
+          "kunyomi": "",
+          "meaning": "Bà",
+          "strokes": 12,
+          "jlpt": "N1",
+          "radicals": "巴",
+          "exampleSentences": [
+            {
+              "jp": "琵琶湖",
+              "vn": "Hồ Biwa.",
+              "furigana": [
+                {
+                  "kanji": "琵琶湖",
+                  "reading": "びわこ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kanji": "湖",
+          "onyomi": "コ",
+          "kunyomi": "みずうみ",
+          "meaning": "Hồ",
+          "strokes": 12,
+          "jlpt": "N3",
+          "radicals": "水",
+          "exampleSentences": [
+            {
+              "jp": "琵琶湖",
+              "vn": "Hồ Biwa.",
+              "furigana": [
+                {
+                  "kanji": "琵琶湖",
+                  "reading": "びわこ"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
-      "jp": "緑の山",
-      "vn": "Núi xanh.",
-      "furigana": [
+      word: 'シャンハイ', kanji: 'シャンハイ', romaji: 'Shanhai', mean: 'Thượng Hải', examples: [
         {
-          "kanji": "緑",
-          "reading": "みどり"
+          "jp": "シャンハイに行きます。",
+          "vn": "Đi Thượng Hải.",
+          "furigana": [
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
         },
         {
-          "kanji": "山",
-          "reading": "やま"
+          "jp": "シャンハイはにぎやかです。",
+          "vn": "Thượng Hải rất náo nhiệt.",
+          "furigana": []
+        },
+        {
+          "jp": "シャンハイの人口",
+          "vn": "Dân số Thượng Hải.",
+          "furigana": [
+            {
+              "kanji": "人口",
+              "reading": "じんこう"
+            }
+          ]
+        },
+        {
+          "jp": "シャンハイの料理",
+          "vn": "Món ăn Thượng Hải.",
+          "furigana": [
+            {
+              "kanji": "料理",
+              "reading": "りょうり"
+            }
+          ]
+        },
+        {
+          "jp": "シャンハイは中国にあります。",
+          "vn": "Thượng Hải ở Trung Quốc.",
+          "furigana": [
+            {
+              "kanji": "中国",
+              "reading": "ちゅうごく"
+            }
+          ]
+        },
+        {
+          "jp": "夜のシャンハイ",
+          "vn": "Thượng Hải về đêm.",
+          "furigana": [
+            {
+              "kanji": "夜",
+              "reading": "よる"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'しちにんのさむらい', kanji: '七人の侍', romaji: 'Shichinin no Samurai', mean: 'Bảy chàng võ sĩ Samurai (tên phim)', examples: [
+        {
+          "jp": "「七人の侍」を見ましたか。",
+          "vn": "Bạn đã xem \"7 chàng võ sĩ Samurai\" chưa?",
+          "furigana": [
+            {
+              "kanji": "七人",
+              "reading": "しちにん"
+            },
+            {
+              "kanji": "侍",
+              "reading": "さむらい"
+            },
+            {
+              "kanji": "見",
+              "reading": "み"
+            }
+          ]
+        },
+        {
+          "jp": "「七人の侍」は映画です。",
+          "vn": "\"7 chàng võ sĩ Samurai\" là phim.",
+          "furigana": [
+            {
+              "kanji": "七人",
+              "reading": "しちにん"
+            },
+            {
+              "kanji": "侍",
+              "reading": "さむらい"
+            },
+            {
+              "kanji": "映画",
+              "reading": "えいが"
+            }
+          ]
+        },
+        {
+          "jp": "「七人の侍」は有名です。",
+          "vn": "\"7 chàng võ sĩ Samurai\" rất nổi tiếng.",
+          "furigana": [
+            {
+              "kanji": "七人",
+              "reading": "しちにん"
+            },
+            {
+              "kanji": "侍",
+              "reading": "さむらい"
+            },
+            {
+              "kanji": "有名",
+              "reading": "ゆうめい"
+            }
+          ]
+        },
+        {
+          "jp": "「七人の侍」はおもしろいです。",
+          "vn": "\"7 chàng võ sĩ Samurai\" rất hay.",
+          "furigana": [
+            {
+              "kanji": "七人",
+              "reading": "しちにん"
+            },
+            {
+              "kanji": "侍",
+              "reading": "さむらい"
+            },
+            {
+              "kanji": "面白",
+              "reading": "おもしろ"
+            }
+          ]
+        },
+        {
+          "jp": "黒澤明の「七人の侍」",
+          "vn": "\"7 chàng võ sĩ Samurai\" của Kurosawa Akira.",
+          "furigana": [
+            {
+              "kanji": "黒澤明",
+              "reading": "くろさわあきら"
+            },
+            {
+              "kanji": "七人",
+              "reading": "しちにん"
+            },
+            {
+              "kanji": "侍",
+              "reading": "さむらい"
+            }
+          ]
+        },
+        {
+          "jp": "昔の映画、「七人の侍」",
+          "vn": "Phim ngày xưa, \"7 chàng võ sĩ Samurai\".",
+          "furigana": [
+            {
+              "kanji": "昔",
+              "reading": "むかし"
+            },
+            {
+              "kanji": "映画",
+              "reading": "えいが"
+            },
+            {
+              "kanji": "七人",
+              "reading": "しちにん"
+            },
+            {
+              "kanji": "侍",
+              "reading": "さむらい"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'きんかくじ', kanji: '金閣寺', romaji: 'Kinkakuji', mean: 'Chùa Kinkaku-ji (Chùa Vàng)', examples: [
+        {
+          "jp": "金閣寺はきれいです。",
+          "vn": "Chùa Vàng rất đẹp.",
+          "furigana": [
+            {
+              "kanji": "金閣寺",
+              "reading": "きんかくじ"
+            }
+          ]
+        },
+        {
+          "jp": "金閣寺へ行きました。",
+          "vn": "Tôi đã đi Chùa Vàng.",
+          "furigana": [
+            {
+              "kanji": "金閣寺",
+              "reading": "きんかくじ"
+            },
+            {
+              "kanji": "行",
+              "reading": "い"
+            }
+          ]
+        },
+        {
+          "jp": "金閣寺は京都にあります。",
+          "vn": "Chùa Vàng ở Kyoto.",
+          "furigana": [
+            {
+              "kanji": "金閣寺",
+              "reading": "きんかくじ"
+            },
+            {
+              "kanji": "京都",
+              "reading": "きょうと"
+            }
+          ]
+        },
+        {
+          "jp": "金閣寺の庭",
+          "vn": "Vườn của Chùa Vàng.",
+          "furigana": [
+            {
+              "kanji": "金閣寺",
+              "reading": "きんかくじ"
+            },
+            {
+              "kanji": "庭",
+              "reading": "にわ"
+            }
+          ]
+        },
+        {
+          "jp": "金閣寺を見ます。",
+          "vn": "Ngắm Chùa Vàng.",
+          "furigana": [
+            {
+              "kanji": "金閣寺",
+              "reading": "きんかくじ"
+            },
+            {
+              "kanji": "見",
+              "reading": "み"
+            }
+          ]
+        },
+        {
+          "jp": "金閣寺は有名です。",
+          "vn": "Chùa Vàng rất nổi tiếng.",
+          "furigana": [
+            {
+              "kanji": "金閣寺",
+              "reading": "きんかくじ"
+            },
+            {
+              "kanji": "有名",
+              "reading": "ゆうめい"
+            }
+          ]
+        }
+      ],
+      kanjiDetails: [
+        {
+          "kanji": "金",
+          "onyomi": "キン",
+          "kunyomi": "かね",
+          "meaning": "Vàng, tiền",
+          "strokes": 8,
+          "jlpt": "N5",
+          "radicals": "金 (vàng)",
+          "components": [
+            {
+              "char": "金",
+              "meaning": "vàng"
+            }
+          ],
+          "mnemonic": "Người ta (人) cất giấu vàng (trong đất).",
+          "exampleSentences": [
+            {
+              "jp": "お金があります。",
+              "vn": "Có tiền.",
+              "furigana": [
+                {
+                  "kanji": "金",
+                  "reading": "かね"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kanji": "閣",
+          "onyomi": "カク",
+          "kunyomi": "",
+          "meaning": "Các",
+          "strokes": 14,
+          "jlpt": "N2",
+          "radicals": "門",
+          "exampleSentences": [
+            {
+              "jp": "金閣寺",
+              "vn": "Chùa Vàng.",
+              "furigana": [
+                {
+                  "kanji": "金閣寺",
+                  "reading": "きんかくじ"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kanji": "寺",
+          "onyomi": "ジ",
+          "kunyomi": "てら",
+          "meaning": "Chùa",
+          "strokes": 6,
+          "jlpt": "N3",
+          "radicals": "寸",
+          "exampleSentences": [
+            {
+              "jp": "金閣寺",
+              "vn": "Chùa Vàng.",
+              "furigana": [
+                {
+                  "kanji": "金閣寺",
+                  "reading": "きんかくじ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+  ],
+  grammar: [
+    {
+      pattern: 'Tính từ',
+      explanation: 'Tính từ được chia làm 2 loại: Tính từ đuôi な và Tính từ đuôi い.',
+      example: 'ハンサム[な] (đẹp trai), 親切[な] (tốt bụng)\n大きい (to), 小さい (nhỏ)',
+      examples: [
+        {
+          jp: 'ハンサムな人', vn: 'Người đẹp trai',
+          furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }]
+        },
+        {
+          jp: '親切な先生', vn: 'Thầy giáo tốt bụng',
+          furigana: [{ kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
+        },
+        {
+          jp: '静かな町', vn: 'Thị trấn yên tĩnh',
+          furigana: [{ kanji: '静', reading: 'しず', meaning: 'TĨNH' }, { kanji: '町', reading: 'まち', meaning: 'ĐINH' }]
+        },
+        {
+          jp: 'きれいな花', vn: 'Hoa đẹp',
+          furigana: [{ kanji: '花', reading: 'はな', meaning: 'HOA' }]
+        },
+        {
+          jp: '有名な大学', vn: 'Đại học nổi tiếng',
+          furigana: [{ kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }, { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }]
+        },
+        {
+          jp: 'おいしい料理', vn: 'Món ăn ngon',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }]
+        },
+        {
+          jp: '大きい車', vn: 'Xe ô tô to',
+          furigana: [{ kanji: '大', reading: 'おお', meaning: 'ĐẠI' }, { kanji: '車', reading: 'くるま', meaning: 'XA' }]
+        },
+        {
+          jp: '新しい本', vn: 'Sách mới',
+          furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }]
+        },
+        {
+          jp: '暑い天気', vn: 'Thời tiết nóng',
+          furigana: [{ kanji: '暑', reading: 'あつ', meaning: 'THỬ' }, { kanji: '天気', reading: 'てんき', meaning: 'THIÊN KHÍ' }]
+        },
+        {
+          jp: '黒いかばん', vn: 'Cặp màu đen',
+          furigana: [{ kanji: '黒', reading: 'くろ', meaning: 'HẮC' }]
+        }
+      ]
+    },
+    {
+      pattern: 'Danh từ は Tính từ です',
+      explanation: 'Mẫu câu dùng để miêu tả trạng thái, tính chất của sự vật, sự việc.',
+      example: 'ワット先生は 親切です。 (Thầy Watt tốt bụng.)\n富士山は 高いです。 (Núi Phú Sĩ cao.)',
+      examples: [
+        {
+          jp: 'ワット先生は親切です。', vn: 'Thầy Watt tốt bụng.',
+          furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: '富士山は高いです。', vn: 'Núi Phú Sĩ cao.',
+          furigana: [{ kanji: '富士山', reading: 'ふじさん', meaning: 'PHÚ SĨ SƠN' }, { kanji: '高', reading: 'たか', meaning: 'CAO' }]
+        },
+        {
+          jp: 'あそこは静かです。', vn: 'Chỗ kia yên tĩnh.',
+          furigana: [{ kanji: '静', reading: 'しず', meaning: 'TĨNH' }]
+        },
+        {
+          jp: 'この花はきれいです。', vn: 'Hoa này đẹp (sạch).',
+          furigana: [{ kanji: '花', reading: 'はな', meaning: 'HOA' }]
+        },
+        {
+          jp: 'その映画は有名です。', vn: 'Phim đó nổi tiếng.',
+          furigana: [{ kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
+        },
+        {
+          jp: '今日は暑いです。', vn: 'Hôm nay trời nóng.',
+          furigana: [{ kanji: '今日', reading: 'きょう', meaning: 'KIM NHẬT' }, { kanji: '暑', reading: 'あつ', meaning: 'THỬ' }]
+        },
+        {
+          jp: 'この料理はおいしいです。', vn: 'Món này ngon.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }]
+        },
+        {
+          jp: '私の車は小さいです。', vn: 'Xe của tôi nhỏ.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '小', reading: 'ちい', meaning: 'TIỂU' }]
+        },
+        {
+          jp: '日本語はおもしろいです。', vn: 'Tiếng Nhật thú vị.',
+          furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }]
+        },
+        {
+          jp: 'この辞書はいいです。', vn: 'Từ điển này tốt.',
+          furigana: [{ kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }]
+        }
+      ]
+    },
+    {
+      pattern: 'Tính từ な (bỏ な) ではありません',
+      explanation: 'Phủ định của tính từ đuôi な.',
+      example: 'あそこは 静かじゃ ありません。 (Chỗ kia không yên tĩnh.)',
+      examples: [
+        {
+          jp: 'あそこは静かじゃありません。', vn: 'Chỗ kia không yên tĩnh.',
+          furigana: [{ kanji: '静', reading: 'しず', meaning: 'TĨNH' }]
+        },
+        {
+          jp: 'この町はにぎやかじゃありません。', vn: 'Thị trấn này không náo nhiệt.',
+          furigana: [{ kanji: '町', reading: 'まち', meaning: 'ĐINH' }]
+        },
+        {
+          jp: '彼は親切じゃありません。', vn: 'Anh ấy không tốt bụng.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
+        },
+        {
+          jp: 'その部屋はきれいじゃありません。', vn: 'Căn phòng đó không sạch/đẹp.',
+          furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }]
+        },
+        {
+          jp: 'この公園は有名じゃありません。', vn: 'Công viên này không nổi tiếng.',
+          furigana: [{ kanji: '公園', reading: 'こうえん', meaning: 'CÔNG VIÊN' }, { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
+        },
+        {
+          jp: '私は暇じゃありません。', vn: 'Tôi không rảnh rỗi.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '暇', reading: 'ひま', meaning: 'HẠ' }]
+        },
+        {
+          jp: 'このカメラは便利じゃありません。', vn: 'Cái máy ảnh này không tiện lợi.',
+          furigana: [{ kanji: '便利', reading: 'べんり', meaning: 'TIỆN LỢI' }]
+        },
+        {
+          jp: '彼は元気じゃありません。', vn: 'Anh ấy không khỏe.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '元気', reading: 'げんき', meaning: 'NGUYÊN KHÍ' }]
+        },
+        {
+          jp: 'この料理は好きじゃありません。', vn: 'Tôi không thích món này.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        },
+        {
+          jp: 'あの店は静かじゃありません。', vn: 'Cửa hàng kia không yên tĩnh.',
+          furigana: [{ kanji: '店', reading: 'みせ', meaning: 'ĐIẾM' }, { kanji: '静', reading: 'しず', meaning: 'TĨNH' }]
+        }
+      ]
+    },
+    {
+      pattern: 'Tính từ い (bỏ い) くないです',
+      explanation: 'Phủ định của tính từ đuôi い.',
+      example: 'この本は 面白くないです。 (Quyển sách này không hay.)',
+      examples: [
+        {
+          jp: 'この本は面白くないです。', vn: 'Sách này không hay.',
+          furigana: [{ kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '面白', reading: 'おもしろ', meaning: 'DIỆN BẠCH' }]
+        },
+        {
+          jp: '今日は寒くないです。', vn: 'Hôm nay không lạnh.',
+          furigana: [{ kanji: '今日', reading: 'きょう', meaning: 'KIM NHẬT' }, { kanji: '寒', reading: 'さむ', meaning: 'HÀN' }]
+        },
+        {
+          jp: 'この車は大きくないです。', vn: 'Xe này không to.',
+          furigana: [{ kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }]
+        },
+        {
+          jp: 'そのカメラは高くないです。', vn: 'Cái máy ảnh đó không đắt.',
+          furigana: [{ kanji: '高', reading: 'たか', meaning: 'CAO' }]
+        },
+        {
+          jp: 'この料理はおいしくないです。', vn: 'Món này không ngon.',
+          furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }]
+        },
+        {
+          jp: '昨日は忙しくなかったです。', vn: 'Hôm qua không bận.',
+          furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '忙', reading: 'いそが', meaning: 'MANG' }]
+        },
+        {
+          jp: 'このお茶は熱くないです。', vn: 'Trà này không nóng.',
+          furigana: [{ kanji: '茶', reading: 'ちゃ', meaning: 'TRÀ' }, { kanji: '熱', reading: 'あつ', meaning: 'NHIỆT' }]
+        },
+        {
+          jp: '日本語は難しくないです。', vn: 'Tiếng Nhật không khó.',
+          furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '難', reading: 'むずか', meaning: 'NAN' }]
+        },
+        {
+          jp: 'この寮は古くないです。', vn: 'Ký túc xá này không cũ.',
+          furigana: [{ kanji: '寮', reading: 'りょう', meaning: 'LIÊU' }, { kanji: '古', reading: 'ふる', meaning: 'CỔ' }]
+        },
+        {
+          jp: 'その靴は白くないです。', vn: 'Đôi giày đó không phải màu trắng.',
+          furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'IT' }, { kanji: '白', reading: 'しろ', meaning: 'BẠCH' }]
         }
       ]
     }
   ],
-    kanjiDetails: [
-  {
-    "kanji": "山",
-    "onyomi": "サン",
-    "kunyomi": "やま",
-    "meaning": "Núi",
-    "strokes": 3,
-    "jlpt": "N5",
-    "radicals": "山",
-    "components": [
-      {
-        "char": "山",
-        "meaning": "núi"
-      }
-    ],
-    "mnemonic": "Hình núi.",
-    "exampleSentences": [
-      {
-        "jp": "富士山",
-        "vn": "úi Phú Sĩ.",
-        "furigana": [
-          {
-            "kanji": "富士山",
-            "reading": "ふじさん"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'まち', kanji: '町', romaji: 'machi', mean: 'Thị trấn, thị xã, thành phố', examples: [
-    {
-      "jp": "にぎやかな町",
-      "vn": "Thành phố náo nhiệt.",
-      "furigana": [
-        {
-          "kanji": "町",
-          "reading": "まち"
-        }
-      ]
-    },
-    {
-      "jp": "静かな町",
-      "vn": "Thị trấn yên tĩnh.",
-      "furigana": [
-        {
-          "kanji": "静",
-          "reading": "しず"
-        },
-        {
-          "kanji": "町",
-          "reading": "まち"
-        }
-      ]
-    },
-    {
-      "jp": "私の町",
-      "vn": "Thành phố của tôi.",
-      "furigana": [
-        {
-          "kanji": "私",
-          "reading": "わたし"
-        },
-        {
-          "kanji": "町",
-          "reading": "まち"
-        }
-      ]
-    },
-    {
-      "jp": "町へ行きます。",
-      "vn": "Đi ra phố.",
-      "furigana": [
-        {
-          "kanji": "町",
-          "reading": "まち"
-        },
-        {
-          "kanji": "行",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "きれいな町",
-      "vn": "Thành phố đẹp/sạch.",
-      "furigana": [
-        {
-          "kanji": "町",
-          "reading": "まち"
-        }
-      ]
-    },
-    {
-      "jp": "古い町",
-      "vn": "Phố cổ.",
-      "furigana": [
-        {
-          "kanji": "古",
-          "reading": "ふる"
-        },
-        {
-          "kanji": "町",
-          "reading": "まち"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "町",
-    "onyomi": "チョウ",
-    "kunyomi": "まち",
-    "meaning": "Phố",
-    "strokes": 7,
-    "jlpt": "N4",
-    "radicals": "田",
-    "components": [
-      {
-        "char": "田",
-        "meaning": "ruộng"
-      },
-      {
-        "char": "丁",
-        "meaning": "khu"
-      }
-    ],
-    "mnemonic": "Khu vực cạnh ruộng là phố.",
-    "exampleSentences": [
-      {
-        "jp": "賑やかな町",
-        "vn": "Phố náo nhiệt.",
-        "furigana": [
-          {
-            "kanji": "町",
-            "reading": "まち"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'たべもの', kanji: '食べ物', romaji: 'tabemono', mean: 'Đồ ăn', examples: [
-    {
-      "jp": "おいしい食べ物",
-      "vn": "Đồ ăn ngon.",
-      "furigana": [
-        {
-          "kanji": "食",
-          "reading": "た"
-        },
-        {
-          "kanji": "物",
-          "reading": "もの"
-        }
-      ]
-    },
-    {
-      "jp": "日本の食べ物",
-      "vn": "Đồ ăn Nhật.",
-      "furigana": [
-        {
-          "kanji": "日本",
-          "reading": "にほん"
-        },
-        {
-          "kanji": "食",
-          "reading": "た"
-        },
-        {
-          "kanji": "物",
-          "reading": "もの"
-        }
-      ]
-    },
-    {
-      "jp": "好きな食べ物",
-      "vn": "Đồ ăn yêu thích.",
-      "furigana": [
-        {
-          "kanji": "好",
-          "reading": "す"
-        },
-        {
-          "kanji": "食",
-          "reading": "た"
-        },
-        {
-          "kanji": "物",
-          "reading": "もの"
-        }
-      ]
-    },
-    {
-      "jp": "食べ物を買います。",
-      "vn": "Mua đồ ăn.",
-      "furigana": [
-        {
-          "kanji": "食",
-          "reading": "た"
-        },
-        {
-          "kanji": "物",
-          "reading": "もの"
-        },
-        {
-          "kanji": "買",
-          "reading": "か"
-        }
-      ]
-    },
-    {
-      "jp": "辛い食べ物",
-      "vn": "Đồ ăn cay.",
-      "furigana": [
-        {
-          "kanji": "辛",
-          "reading": "から"
-        },
-        {
-          "kanji": "食",
-          "reading": "た"
-        },
-        {
-          "kanji": "物",
-          "reading": "もの"
-        }
-      ]
-    },
-    {
-      "jp": "食べ物屋",
-      "vn": "Cửa hàng đồ ăn.",
-      "furigana": [
-        {
-          "kanji": "食",
-          "reading": "た"
-        },
-        {
-          "kanji": "物",
-          "reading": "もの"
-        },
-        {
-          "kanji": "屋",
-          "reading": "や"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "物",
-    "onyomi": "ブツ",
-    "kunyomi": "もの",
-    "meaning": "Vật",
-    "strokes": 8,
-    "jlpt": "N5",
-    "radicals": "牛 (bò)",
-    "components": [
-      {
-        "char": "牛",
-        "meaning": "bò"
-      },
-      {
-        "char": "勿",
-        "meaning": "chớ"
-      }
-    ],
-    "mnemonic": "Đừng (勿) coi con bò (牛) là một đồ vật (物) vô tri.",
-    "exampleSentences": [
-      {
-        "jp": "食べ物",
-        "vn": "Đồ ăn.",
-        "furigana": [
-          {
-            "kanji": "食",
-            "reading": "た"
-          },
-          {
-            "kanji": "物",
-            "reading": "もの"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'くるま', kanji: '車', romaji: 'kuruma', mean: 'Xe ô-tô', examples: [
-    {
-      "jp": "車を運転します。",
-      "vn": "Lái xe ô tô.",
-      "furigana": [
-        {
-          "kanji": "車",
-          "reading": "くるま"
-        },
-        {
-          "kanji": "運転",
-          "reading": "うんてん"
-        }
-      ]
-    },
-    {
-      "jp": "新しい車",
-      "vn": "Xe ô tô mới.",
-      "furigana": [
-        {
-          "kanji": "新",
-          "reading": "あたら"
-        },
-        {
-          "kanji": "車",
-          "reading": "くるま"
-        }
-      ]
-    },
-    {
-      "jp": "赤い車",
-      "vn": "Xe ô tô đỏ.",
-      "furigana": [
-        {
-          "kanji": "赤",
-          "reading": "あか"
-        },
-        {
-          "kanji": "車",
-          "reading": "くるま"
-        }
-      ]
-    },
-    {
-      "jp": "車で行きます。",
-      "vn": "Đi bằng ô tô.",
-      "furigana": [
-        {
-          "kanji": "車",
-          "reading": "くるま"
-        },
-        {
-          "kanji": "行",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "日本の車",
-      "vn": "Xe Nhật.",
-      "furigana": [
-        {
-          "kanji": "日本",
-          "reading": "にほん"
-        },
-        {
-          "kanji": "車",
-          "reading": "くるま"
-        }
-      ]
-    },
-    {
-      "jp": "大きい車",
-      "vn": "Xe to.",
-      "furigana": [
-        {
-          "kanji": "大",
-          "reading": "おお"
-        },
-        {
-          "kanji": "車",
-          "reading": "くるま"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "車",
-    "onyomi": "シャ",
-    "kunyomi": "くるま",
-    "meaning": "Xe",
-    "strokes": 7,
-    "jlpt": "N5",
-    "radicals": "車",
-    "components": [
-      {
-        "char": "車",
-        "meaning": "xe"
-      }
-    ],
-    "mnemonic": "Hình xe.",
-    "exampleSentences": [
-      {
-        "jp": "自動車",
-        "vn": "Ô tô.",
-        "furigana": [
-          {
-            "kanji": "自動車",
-            "reading": "じどうしゃ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'ところ', kanji: '所', romaji: 'tokoro', mean: 'Nơi, chỗ', examples: [
-    {
-      "jp": "静かな所",
-      "vn": "Nơi yên tĩnh.",
-      "furigana": [
-        {
-          "kanji": "静",
-          "reading": "しず"
-        },
-        {
-          "kanji": "所",
-          "reading": "ところ"
-        }
-      ]
-    },
-    {
-      "jp": "きれいな所",
-      "vn": "Nơi đẹp đẽ.",
-      "furigana": [
-        {
-          "kanji": "所",
-          "reading": "ところ"
-        }
-      ]
-    },
-    {
-      "jp": "有名な所",
-      "vn": "Nơi nổi tiếng.",
-      "furigana": [
-        {
-          "kanji": "有名",
-          "reading": "ゆうめい"
-        },
-        {
-          "kanji": "所",
-          "reading": "ところ"
-        }
-      ]
-    },
-    {
-      "jp": "どんな所ですか。",
-      "vn": "Là nơi như thế nào?",
-      "furigana": [
-        {
-          "kanji": "所",
-          "reading": "ところ"
-        }
-      ]
-    },
-    {
-      "jp": "いい所",
-      "vn": "Nơi tốt.",
-      "furigana": [
-        {
-          "kanji": "所",
-          "reading": "ところ"
-        }
-      ]
-    },
-    {
-      "jp": "所が変われば品変わる",
-      "vn": "Mỗi nơi mỗi khác (tục ngữ).",
-      "furigana": [
-        {
-          "kanji": "所",
-          "reading": "ところ"
-        },
-        {
-          "kanji": "変",
-          "reading": "か"
-        },
-        {
-          "kanji": "品",
-          "reading": "しな"
-        },
-        {
-          "kanji": "変",
-          "reading": "か"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "所",
-    "onyomi": "ショ",
-    "kunyomi": "ところ",
-    "meaning": "Nơi chốn",
-    "strokes": 8,
-    "jlpt": "N4",
-    "radicals": "戸",
-    "components": [
-      {
-        "char": "戸",
-        "meaning": "cửa"
-      },
-      {
-        "char": "斤",
-        "meaning": "rìu"
-      }
-    ],
-    "mnemonic": "Chỗ để rìu sau cửa.",
-    "exampleSentences": [
-      {
-        "jp": "場所",
-        "vn": "Địa điểm.",
-        "furigana": [
-          {
-            "kanji": "場所",
-            "reading": "ばしょ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'りょう', kanji: '寮', romaji: 'ryou', mean: 'Kí túc xá', examples: [
-    {
-      "jp": "寮に住んでいます。",
-      "vn": "Đang sống ở ký túc xá.",
-      "furigana": [
-        {
-          "kanji": "寮",
-          "reading": "りょう"
-        },
-        {
-          "kanji": "住",
-          "reading": "す"
-        }
-      ]
-    },
-    {
-      "jp": "会社の寮",
-      "vn": "Ký túc xá công ty.",
-      "furigana": [
-        {
-          "kanji": "会社",
-          "reading": "かいしゃ"
-        },
-        {
-          "kanji": "寮",
-          "reading": "りょう"
-        }
-      ]
-    },
-    {
-      "jp": "寮の生活",
-      "vn": "Cuộc sống ký túc xá.",
-      "furigana": [
-        {
-          "kanji": "寮",
-          "reading": "りょう"
-        },
-        {
-          "kanji": "生活",
-          "reading": "せいかつ"
-        }
-      ]
-    },
-    {
-      "jp": "新しい寮",
-      "vn": "Ký túc xá mới.",
-      "furigana": [
-        {
-          "kanji": "新",
-          "reading": "あたら"
-        },
-        {
-          "kanji": "寮",
-          "reading": "りょう"
-        }
-      ]
-    },
-    {
-      "jp": "寮へ帰ります。",
-      "vn": "Về ký túc xá.",
-      "furigana": [
-        {
-          "kanji": "寮",
-          "reading": "りょう"
-        },
-        {
-          "kanji": "帰",
-          "reading": "かえ"
-        }
-      ]
-    },
-    {
-      "jp": "独身寮",
-      "vn": "Ký túc xá độc thân.",
-      "furigana": [
-        {
-          "kanji": "独身",
-          "reading": "どくしん"
-        },
-        {
-          "kanji": "寮",
-          "reading": "りょう"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "寮",
-    "onyomi": "リョウ",
-    "kunyomi": "",
-    "meaning": "Ký túc xá",
-    "strokes": 15,
-    "jlpt": "N3",
-    "radicals": "宀",
-    "components": [
-      {
-        "char": "宀",
-        "meaning": "nhà"
-      },
-      {
-        "char": "尞",
-        "meaning": "liêu"
-      }
-    ],
-    "mnemonic": "Nhà lớn cho nhiều người.",
-    "exampleSentences": [
-      {
-        "jp": "学生寮",
-        "vn": "KTX sinh viên.",
-        "furigana": [
-          {
-            "kanji": "学生寮",
-            "reading": "がくせいりょう"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'べんきょう', kanji: '勉強', romaji: 'benkyou', mean: 'Học', examples: [
-    {
-      "jp": "日本語の勉強",
-      "vn": "Việc học tiếng Nhật.",
-      "furigana": [
-        {
-          "kanji": "日本語",
-          "reading": "にほんご"
-        },
-        {
-          "kanji": "勉強",
-          "reading": "べんきょう"
-        }
-      ]
-    },
-    {
-      "jp": "勉強が好きです。",
-      "vn": "Thích việc học.",
-      "furigana": [
-        {
-          "kanji": "勉強",
-          "reading": "べんきょう"
-        },
-        {
-          "kanji": "好",
-          "reading": "す"
-        }
-      ]
-    },
-    {
-      "jp": "勉強は楽しいです。",
-      "vn": "Việc học rất vui.",
-      "furigana": [
-        {
-          "kanji": "勉強",
-          "reading": "べんきょう"
-        },
-        {
-          "kanji": "楽",
-          "reading": "たの"
-        }
-      ]
-    },
-    {
-      "jp": "勉強します。",
-      "vn": "Học.",
-      "furigana": [
-        {
-          "kanji": "勉強",
-          "reading": "べんきょう"
-        }
-      ]
-    },
-    {
-      "jp": "勉強部屋",
-      "vn": "Phòng học.",
-      "furigana": [
-        {
-          "kanji": "勉強",
-          "reading": "べんきょう"
-        },
-        {
-          "kanji": "部屋",
-          "reading": "へや"
-        }
-      ]
-    },
-    {
-      "jp": "毎日勉強します。",
-      "vn": "Học mỗi ngày.",
-      "furigana": [
-        {
-          "kanji": "毎日",
-          "reading": "まいにち"
-        },
-        {
-          "kanji": "勉強",
-          "reading": "べんきょう"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "勉",
-    "onyomi": "ベン",
-    "kunyomi": "つと.める",
-    "meaning": "Cố gắng",
-    "strokes": 10,
-    "jlpt": "N4",
-    "radicals": "力",
-    "components": [
-      {
-        "char": "免",
-        "meaning": "miễn"
-      },
-      {
-        "char": "力",
-        "meaning": "lực"
-      }
-    ],
-    "mnemonic": "Dùng lực để làm việc.",
-    "exampleSentences": [
-      {
-        "jp": "勉強",
-        "vn": "Học.",
-        "furigana": [
-          {
-            "kanji": "勉強",
-            "reading": "べんきょう"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "強",
-    "onyomi": "キョウ",
-    "kunyomi": "つよ.い",
-    "meaning": "Mạnh",
-    "strokes": 11,
-    "jlpt": "N4",
-    "radicals": "弓",
-    "components": [
-      {
-        "char": "弓",
-        "meaning": "cung"
-      },
-      {
-        "char": "ム",
-        "meaning": "tư"
-      },
-      {
-        "char": "虫",
-        "meaning": "sâu"
-      }
-    ],
-    "mnemonic": "Cung bắn sâu mạnh.",
-    "exampleSentences": [
-      {
-        "jp": "強い風",
-        "vn": "Gió mạnh.",
-        "furigana": [
-          {
-            "kanji": "強",
-            "reading": "つよ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'せいかつ', kanji: '生活', romaji: 'seikatsu', mean: 'Cuộc sống, sinh hoạt', examples: [
-    {
-      "jp": "日本の生活",
-      "vn": "Cuộc sống ở Nhật.",
-      "furigana": [
-        {
-          "kanji": "日本",
-          "reading": "にほん"
-        },
-        {
-          "kanji": "生活",
-          "reading": "せいかつ"
-        }
-      ]
-    },
-    {
-      "jp": "楽しい生活",
-      "vn": "Cuộc sống vui vẻ.",
-      "furigana": [
-        {
-          "kanji": "楽",
-          "reading": "たの"
-        },
-        {
-          "kanji": "生活",
-          "reading": "せいかつ"
-        }
-      ]
-    },
-    {
-      "jp": "生活に慣れます。",
-      "vn": "Quen với cuộc sống.",
-      "furigana": [
-        {
-          "kanji": "生活",
-          "reading": "せいかつ"
-        },
-        {
-          "kanji": "慣",
-          "reading": "な"
-        }
-      ]
-    },
-    {
-      "jp": "忙しい生活",
-      "vn": "Cuộc sống bận rộn.",
-      "furigana": [
-        {
-          "kanji": "忙",
-          "reading": "いそが"
-        },
-        {
-          "kanji": "生活",
-          "reading": "せいかつ"
-        }
-      ]
-    },
-    {
-      "jp": "ひとり暮らしの生活",
-      "vn": "Cuộc sống độc thân (sống một mình).",
-      "furigana": [
-        {
-          "kanji": "暮",
-          "reading": "ぐ"
-        },
-        {
-          "kanji": "生活",
-          "reading": "せいかつ"
-        }
-      ]
-    },
-    {
-      "jp": "生活費",
-      "vn": "Phí sinh hoạt.",
-      "furigana": [
-        {
-          "kanji": "生活費",
-          "reading": "せいかつひ"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "活",
-    "onyomi": "カツ",
-    "kunyomi": "",
-    "meaning": "Hoạt",
-    "strokes": 9,
-    "jlpt": "N3",
-    "radicals": "水",
-    "components": [
-      {
-        "char": "氵",
-        "meaning": "nước"
-      },
-      {
-        "char": "舌",
-        "meaning": "lưỡi"
-      }
-    ],
-    "mnemonic": "Lưỡi có nước thì hoạt động tốt.",
-    "exampleSentences": [
-      {
-        "jp": "生活",
-        "vn": "Cuộc sống.",
-        "furigana": [
-          {
-            "kanji": "生活",
-            "reading": "せいかつ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'おしごと', kanji: '[お]仕事', romaji: 'shigoto', mean: 'Công việc (~を します: làm việc)', examples: [
-    {
-      "jp": "お仕事はなんですか。",
-      "vn": "Công việc của bạn là gì?",
-      "furigana": [
-        {
-          "kanji": "仕事",
-          "reading": "しごと"
-        },
-        {
-          "kanji": "何",
-          "reading": "なん"
-        }
-      ]
-    },
-    {
-      "jp": "お仕事、頑張ってください。",
-      "vn": "Hãy cố gắng trong công việc nhé.",
-      "furigana": [
-        {
-          "kanji": "仕事",
-          "reading": "しごと"
-        },
-        {
-          "kanji": "頑張",
-          "reading": "がんば"
-        }
-      ]
-    },
-    {
-      "jp": "お仕事は忙しいですか。",
-      "vn": "Công việc có bận không?",
-      "furigana": [
-        {
-          "kanji": "仕事",
-          "reading": "しごと"
-        },
-        {
-          "kanji": "忙",
-          "reading": "いそが"
-        }
-      ]
-    },
-    {
-      "jp": "お仕事をします。",
-      "vn": "Làm việc.",
-      "furigana": [
-        {
-          "kanji": "仕事",
-          "reading": "しごと"
-        }
-      ]
-    },
-    {
-      "jp": "新しいお仕事",
-      "vn": "Công việc mới.",
-      "furigana": [
-        {
-          "kanji": "新",
-          "reading": "あたら"
-        },
-        {
-          "kanji": "仕事",
-          "reading": "しごと"
-        }
-      ]
-    },
-    {
-      "jp": "お仕事が終わります。",
-      "vn": "Công việc kết thúc.",
-      "furigana": [
-        {
-          "kanji": "仕事",
-          "reading": "しごと"
-        },
-        {
-          "kanji": "終",
-          "reading": "お"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "仕",
-    "onyomi": "シ",
-    "kunyomi": "つか.える",
-    "meaning": "Phục vụ",
-    "strokes": 5,
-    "jlpt": "N4",
-    "radicals": "人",
-    "components": [
-      {
-        "char": "イ",
-        "meaning": "người"
-      },
-      {
-        "char": "士",
-        "meaning": "sĩ"
-      }
-    ],
-    "mnemonic": "Sĩ quan phục vụ nước.",
-    "exampleSentences": [
-      {
-        "jp": "仕事",
-        "vn": "Công việc.",
-        "furigana": [
-          {
-            "kanji": "仕事",
-            "reading": "しごと"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "事",
-    "onyomi": "ジ",
-    "kunyomi": "こと",
-    "meaning": "Việc",
-    "strokes": 8,
-    "jlpt": "N4",
-    "radicals": "亅",
-    "components": [
-      {
-        "char": "口",
-        "meaning": "miệng"
-      },
-      {
-        "char": "亅",
-        "meaning": "quyết"
-      }
-    ],
-    "mnemonic": "Miệng quyết định việc.",
-    "exampleSentences": [
-      {
-        "jp": "仕事",
-        "vn": "Công việc.",
-        "furigana": [
-          {
-            "kanji": "仕事",
-            "reading": "しごと"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'どう', kanji: 'どう', romaji: 'dou', mean: 'Thế nào', examples: [
-    {
-      "jp": "日本の生活はどうですか。",
-      "vn": "Cuộc sống ở Nhật thế nào?",
-      "furigana": [
-        {
-          "kanji": "日本",
-          "reading": "にほん"
-        },
-        {
-          "kanji": "生活",
-          "reading": "せいかつ"
-        }
-      ]
-    },
-    {
-      "jp": "どうですか。",
-      "vn": "Thế nào?",
-      "furigana": []
-    },
-    {
-      "jp": "この靴はどうですか。",
-      "vn": "Đôi giày này thế nào?",
-      "furigana": [
-        {
-          "kanji": "靴",
-          "reading": "くつ"
-        }
-      ]
-    },
-    {
-      "jp": "調子はどうですか。",
-      "vn": "Tình hình thế nào?",
-      "furigana": [
-        {
-          "kanji": "調子",
-          "reading": "ちょうし"
-        }
-      ]
-    },
-    {
-      "jp": "味はどうですか。",
-      "vn": "Vị thế nào?",
-      "furigana": [
-        {
-          "kanji": "味",
-          "reading": "あじ"
-        }
-      ]
-    },
-    {
-      "jp": "最近どうですか。",
-      "vn": "Gần đây thế nào?",
-      "furigana": [
-        {
-          "kanji": "最近",
-          "reading": "さいきん"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'どんな', kanji: 'どんな', romaji: 'donna', mean: 'Như thế nào', examples: [
-    {
-      "jp": "どんな人ですか。",
-      "vn": "Là người như thế nào?",
-      "furigana": [
-        {
-          "kanji": "人",
-          "reading": "ひと"
-        }
-      ]
-    },
-    {
-      "jp": "どんな町ですか。",
-      "vn": "Là thành phố như thế nào?",
-      "furigana": [
-        {
-          "kanji": "町",
-          "reading": "まち"
-        }
-      ]
-    },
-    {
-      "jp": "どんな料理ですか。",
-      "vn": "Là món ăn như thế nào?",
-      "furigana": [
-        {
-          "kanji": "料理",
-          "reading": "りょうり"
-        }
-      ]
-    },
-    {
-      "jp": "どんなスポーツが好きですか。",
-      "vn": "Bạn thích môn thể thao nào?",
-      "furigana": [
-        {
-          "kanji": "好",
-          "reading": "す"
-        }
-      ]
-    },
-    {
-      "jp": "どんな所ですか。",
-      "vn": "Là nơi như thế nào?",
-      "furigana": [
-        {
-          "kanji": "所",
-          "reading": "ところ"
-        }
-      ]
-    },
-    {
-      "jp": "どんな本ですか。",
-      "vn": "Là sách gì (như thế nào)?",
-      "furigana": [
-        {
-          "kanji": "本",
-          "reading": "ほん"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'どれ', kanji: 'どれ', romaji: 'dore', mean: 'Cái nào', examples: [
-    {
-      "jp": "あなたの傘はどれですか。",
-      "vn": "Ô của bạn là cái nào?",
-      "furigana": [
-        {
-          "kanji": "傘",
-          "reading": "かさ"
-        }
-      ]
-    },
-    {
-      "jp": "どれですか。",
-      "vn": "Là cái nào?",
-      "furigana": []
-    },
-    {
-      "jp": "どれが好きですか。",
-      "vn": "Bạn thích cái nào?",
-      "furigana": [
-        {
-          "kanji": "好",
-          "reading": "す"
-        }
-      ]
-    },
-    {
-      "jp": "どれがいいですか。",
-      "vn": "Cái nào thì tốt?",
-      "furigana": []
-    },
-    {
-      "jp": "どれを食べますか。",
-      "vn": "Bạn ăn cái nào?",
-      "furigana": [
-        {
-          "kanji": "食",
-          "reading": "た"
-        }
-      ]
-    },
-    {
-      "jp": "どれもおいしいです。",
-      "vn": "Cái nào cũng ngon.",
-      "furigana": []
-    }
-  ]
-},
-{
-  word: 'とても', kanji: 'とても', romaji: 'totemo', mean: 'Rất, lắm', examples: [
-    {
-      "jp": "とてもおいしいです。",
-      "vn": "Rất ngon.",
-      "furigana": []
-    },
-    {
-      "jp": "とても寒いです。",
-      "vn": "Rất lạnh.",
-      "furigana": [
-        {
-          "kanji": "寒",
-          "reading": "さむ"
-        }
-      ]
-    },
-    {
-      "jp": "とてもきれいです。",
-      "vn": "Rất đẹp.",
-      "furigana": []
-    },
-    {
-      "jp": "とても元気です。",
-      "vn": "Rất khỏe.",
-      "furigana": [
-        {
-          "kanji": "元気",
-          "reading": "げんき"
-        }
-      ]
-    },
-    {
-      "jp": "とても有名です。",
-      "vn": "Rất nổi tiếng.",
-      "furigana": [
-        {
-          "kanji": "有名",
-          "reading": "ゆうめい"
-        }
-      ]
-    },
-    {
-      "jp": "とても忙しいです。",
-      "vn": "Rất bận.",
-      "furigana": [
-        {
-          "kanji": "忙",
-          "reading": "いそが"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'あまり', kanji: 'あまり', romaji: 'amari', mean: 'Không ~ lắm', examples: [
-    {
-      "jp": "あまり元気じゃありません。",
-      "vn": "Không khỏe lắm.",
-      "furigana": [
-        {
-          "kanji": "元気",
-          "reading": "げんき"
-        }
-      ]
-    },
-    {
-      "jp": "あまり大きくないです。",
-      "vn": "Không to lắm.",
-      "furigana": [
-        {
-          "kanji": "大",
-          "reading": "おお"
-        }
-      ]
-    },
-    {
-      "jp": "あまり好きじゃありません。",
-      "vn": "Không thích lắm.",
-      "furigana": [
-        {
-          "kanji": "好",
-          "reading": "す"
-        }
-      ]
-    },
-    {
-      "jp": "あまり難しくないです。",
-      "vn": "Không khó lắm.",
-      "furigana": [
-        {
-          "kanji": "難",
-          "reading": "むずか"
-        }
-      ]
-    },
-    {
-      "jp": "あまり食べません。",
-      "vn": "Tôi không ăn nhiều lắm.",
-      "furigana": [
-        {
-          "kanji": "食",
-          "reading": "た"
-        }
-      ]
-    },
-    {
-      "jp": "時間がありませんから、あまり見ません。",
-      "vn": "Vì không có thời gian nên tôi không xem mấy.",
-      "furigana": [
-        {
-          "kanji": "時間",
-          "reading": "じかん"
-        },
-        {
-          "kanji": "見",
-          "reading": "み"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'そして', kanji: 'そして', romaji: 'soshite', mean: 'Và, thêm nữa (dùng để nối hai câu)', examples: [
-    {
-      "jp": "そして、寝ました。",
-      "vn": "Và sau đó tôi đã ngủ.",
-      "furigana": [
-        {
-          "kanji": "寝",
-          "reading": "ね"
-        }
-      ]
-    },
-    {
-      "jp": "きれいです。そして、親切です。",
-      "vn": "Đẹp. Và còn tốt bụng nữa.",
-      "furigana": [
-        {
-          "kanji": "親切",
-          "reading": "しんせつ"
-        }
-      ]
-    },
-    {
-      "jp": "おいしいです。そして、安いです。",
-      "vn": "Ngon. Và còn rẻ nữa.",
-      "furigana": [
-        {
-          "kanji": "安",
-          "reading": "やす"
-        }
-      ]
-    },
-    {
-      "jp": "ご飯を食べました。そして、映画を見ました。",
-      "vn": "Tôi ăn cơm. Và sau đó xem phim.",
-      "furigana": [
-        {
-          "kanji": "飯",
-          "reading": "はん"
-        },
-        {
-          "kanji": "食",
-          "reading": "た"
-        },
-        {
-          "kanji": "映画",
-          "reading": "えいが"
-        },
-        {
-          "kanji": "見",
-          "reading": "み"
-        }
-      ]
-    },
-    {
-      "jp": "8時です。そして、彼はまだ来ません。",
-      "vn": "8 giờ rồi. Và anh ấy vẫn chưa đến.",
-      "furigana": [
-        {
-          "kanji": "時",
-          "reading": "じ"
-        },
-        {
-          "kanji": "彼",
-          "reading": "かれ"
-        },
-        {
-          "kanji": "来",
-          "reading": "き"
-        }
-      ]
-    },
-    {
-      "jp": "東京へ行きました。そして、京都へ行きました。",
-      "vn": "Tôi đã đi Tokyo. Và sau đó đi Kyoto.",
-      "furigana": [
-        {
-          "kanji": "東京",
-          "reading": "とうきょう"
-        },
-        {
-          "kanji": "行",
-          "reading": "い"
-        },
-        {
-          "kanji": "京都",
-          "reading": "きょうと"
-        },
-        {
-          "kanji": "行",
-          "reading": "い"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'が', kanji: '～が、～', romaji: 'ga', mean: '～, nhưng ～', examples: [
-    {
-      "jp": "日本の食べ物は美味しいですが、高いです。",
-      "vn": "Đồ ăn Nhật ngon nhưng đắt.",
-      "furigana": [
-        {
-          "kanji": "日本",
-          "reading": "にほん"
-        },
-        {
-          "kanji": "食",
-          "reading": "た"
-        },
-        {
-          "kanji": "物",
-          "reading": "もの"
-        },
-        {
-          "kanji": "美味",
-          "reading": "おい"
-        },
-        {
-          "kanji": "高",
-          "reading": "たか"
-        }
-      ]
-    },
-    {
-      "jp": "雨ですが、行きます。",
-      "vn": "Trời mưa nhưng tôi vẫn đi.",
-      "furigana": [
-        {
-          "kanji": "雨",
-          "reading": "あめ"
-        },
-        {
-          "kanji": "行",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "便利ですが、車が多すぎます。",
-      "vn": "Tiện lợi nhưng nhiều xe quá.",
-      "furigana": [
-        {
-          "kanji": "便利",
-          "reading": "べんり"
-        },
-        {
-          "kanji": "車",
-          "reading": "くるま"
-        },
-        {
-          "kanji": "多",
-          "reading": "おお"
-        }
-      ]
-    },
-    {
-      "jp": "古いですが、きれいな家です。",
-      "vn": "Cũ nhưng là ngôi nhà đẹp/sạch.",
-      "furigana": [
-        {
-          "kanji": "古",
-          "reading": "ふる"
-        },
-        {
-          "kanji": "家",
-          "reading": "いえ"
-        }
-      ]
-    },
-    {
-      "jp": "高いですが、いい靴です。",
-      "vn": "Đắt nhưng là đôi giày tốt.",
-      "furigana": [
-        {
-          "kanji": "高",
-          "reading": "たか"
-        },
-        {
-          "kanji": "靴",
-          "reading": "くつ"
-        }
-      ]
-    },
-    {
-      "jp": "すみませんが、塩を取ってください。",
-      "vn": "Xin lỗi nhưng hãy lấy giúp tôi muối.",
-      "furigana": [
-        {
-          "kanji": "塩",
-          "reading": "しお"
-        },
-        {
-          "kanji": "取",
-          "reading": "と"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'おげんきですか', kanji: 'お元気ですか', romaji: 'ogenki desu ka', mean: 'Anh/Chị có khỏe không?', examples: [
-    {
-      "jp": "お元気ですか。",
-      "vn": "Bạn có khỏe không?",
-      "furigana": [
-        {
-          "kanji": "元気",
-          "reading": "げんき"
-        }
-      ]
-    },
-    {
-      "jp": "みなさん、お元気ですか。",
-      "vn": "Mọi người có khỏe không?",
-      "furigana": []
-    },
-    {
-      "jp": "ご家族はお元気ですか。",
-      "vn": "Gia đình bạn có khỏe không?",
-      "furigana": [
-        {
-          "kanji": "家族",
-          "reading": "かぞく"
-        },
-        {
-          "kanji": "元気",
-          "reading": "げんき"
-        }
-      ]
-    },
-    {
-      "jp": "先生、お元気ですか。",
-      "vn": "Thầy ơi, thầy có khỏe không?",
-      "furigana": [
-        {
-          "kanji": "先生",
-          "reading": "せんせい"
-        },
-        {
-          "kanji": "元気",
-          "reading": "げんき"
-        }
-      ]
-    },
-    {
-      "jp": "はい、元気です。",
-      "vn": "Vâng, tôi khỏe.",
-      "furigana": [
-        {
-          "kanji": "元気",
-          "reading": "げんき"
-        }
-      ]
-    },
-    {
-      "jp": "お変わりなく、お元気ですか。",
-      "vn": "Không có gì thay đổi chứ, bạn khỏe không?",
-      "furigana": [
-        {
-          "kanji": "変",
-          "reading": "か"
-        },
-        {
-          "kanji": "元気",
-          "reading": "げんき"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'そうですね', kanji: 'そうですね', romaji: 'sou desu ne', mean: 'Thế à./ Để tôi xem.', examples: [
-    {
-      "jp": "そうですね。",
-      "vn": "Thế à / Để tôi xem.",
-      "furigana": []
-    },
-    {
-      "jp": "あ、そうですね。",
-      "vn": "À, đúng vậy nhỉ.",
-      "furigana": []
-    },
-    {
-      "jp": "うーん、そうですね。",
-      "vn": "Ừm, để xem nào.",
-      "furigana": []
-    },
-    {
-      "jp": "東京はにぎやかですね。…そうですね。",
-      "vn": "Tokyo náo nhiệt nhỉ... Đúng vậy nhỉ.",
-      "furigana": [
-        {
-          "kanji": "東京",
-          "reading": "とうきょう"
-        }
-      ]
-    },
-    {
-      "jp": "いい天気ですね。…そうですね。",
-      "vn": "Thời tiết đẹp nhỉ... Đúng vậy nhỉ.",
-      "furigana": [
-        {
-          "kanji": "天気",
-          "reading": "てんき"
-        }
-      ]
-    },
-    {
-      "jp": "便利ですね。…そうですね。",
-      "vn": "Tiện lợi nhỉ... Đúng vậy.",
-      "furigana": [
-        {
-          "kanji": "便利",
-          "reading": "べんり"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'なれましたか', kanji: '日本の生活に慣れましたか', romaji: 'Nihon no seikatsu ni naremashita ka', mean: 'Anh/Chị đã quen với cuộc sống ở Nhật chưa?', examples: [
-    {
-      "jp": "日本の生活に慣れましたか。",
-      "vn": "Bạn đã quen với cuộc sống ở Nhật chưa?",
-      "furigana": [
-        {
-          "kanji": "日本",
-          "reading": "にほん"
-        },
-        {
-          "kanji": "生活",
-          "reading": "せいかつ"
-        },
-        {
-          "kanji": "慣",
-          "reading": "な"
-        }
-      ]
-    },
-    {
-      "jp": "はい、もう慣れました。",
-      "vn": "Vâng, tôi quen rồi.",
-      "furigana": [
-        {
-          "kanji": "慣",
-          "reading": "な"
-        }
-      ]
-    },
-    {
-      "jp": "仕事に慣れましたか。",
-      "vn": "Bạn đã quen việc chưa?",
-      "furigana": [
-        {
-          "kanji": "仕事",
-          "reading": "しごと"
-        },
-        {
-          "kanji": "慣",
-          "reading": "な"
-        }
-      ]
-    },
-    {
-      "jp": "まだ慣れていません。",
-      "vn": "Tôi vẫn chưa quen.",
-      "furigana": [
-        {
-          "kanji": "慣",
-          "reading": "な"
-        }
-      ]
-    },
-    {
-      "jp": "運転に慣れましたか。",
-      "vn": "Bạn đã quen lái xe chưa?",
-      "furigana": [
-        {
-          "kanji": "運転",
-          "reading": "うんてん"
-        },
-        {
-          "kanji": "慣",
-          "reading": "な"
-        }
-      ]
-    },
-    {
-      "jp": "学校に慣れましたか。",
-      "vn": "Bạn đã quen với trường học chưa?",
-      "furigana": [
-        {
-          "kanji": "学校",
-          "reading": "がっこう"
-        },
-        {
-          "kanji": "慣",
-          "reading": "な"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'いかがですか', kanji: '[～,] もう一杯いかがですか', romaji: 'mou ippai ikaga desu ka', mean: 'Anh/Chị dùng thêm một chén [~] nữa được không ạ?', examples: [
-    {
-      "jp": "もう一杯いかがですか。",
-      "vn": "Thêm một chén nữa nhé?",
-      "furigana": [
-        {
-          "kanji": "杯",
-          "reading": "ぱい"
-        }
-      ]
-    },
-    {
-      "jp": "コーヒーはいかがですか。",
-      "vn": "Dùng cà phê nhé?",
-      "furigana": []
-    },
-    {
-      "jp": "お茶はいかがですか。",
-      "vn": "Dùng trà nhé?",
-      "furigana": [
-        {
-          "kanji": "茶",
-          "reading": "ちゃ"
-        }
-      ]
-    },
-    {
-      "jp": "デザートはいかがですか。",
-      "vn": "Dùng tráng miệng nhé?",
-      "furigana": []
-    },
-    {
-      "jp": "調子はいかがですか。",
-      "vn": "Tình hình thế nào?",
-      "furigana": [
-        {
-          "kanji": "調子",
-          "reading": "ちょうし"
-        }
-      ]
-    },
-    {
-      "jp": "いかがですか。",
-      "vn": "Thế nào ạ?",
-      "furigana": []
-    }
-  ]
-},
-{
-  word: 'けっこうです', kanji: 'いいえ、けっこうです', romaji: 'iie, kekkou desu', mean: 'Không, đủ rồi ạ.', examples: [
-    {
-      "jp": "いいえ、けっこうです。",
-      "vn": "Không, tôi đủ rồi.",
-      "furigana": []
-    },
-    {
-      "jp": "もういいです、けっこうです。",
-      "vn": "Được rồi, đủ rồi ạ.",
-      "furigana": []
-    },
-    {
-      "jp": "それでけっこうです。",
-      "vn": "Như vậy là được rồi.",
-      "furigana": []
-    },
-    {
-      "jp": "お味はいかがですか。…けっこうです。",
-      "vn": "Vị thế nào? ...Rất ngon (được).",
-      "furigana": [
-        {
-          "kanji": "味",
-          "reading": "あじ"
-        }
-      ]
-    },
-    {
-      "jp": "けっこうなお手前で。",
-      "vn": "Trà rất ngon (trong trà đạo).",
-      "furigana": [
-        {
-          "kanji": "手前",
-          "reading": "てまえ"
-        }
-      ]
-    },
-    {
-      "jp": "けっこうな品",
-      "vn": "Món đồ tuyệt vời.",
-      "furigana": [
-        {
-          "kanji": "品",
-          "reading": "しな"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'もう～ですね', kanji: 'もう ～です[ね]', romaji: 'mou ~ desu ne', mean: 'Đã ~ rồi nhỉ./ Đã ~ rồi, đúng không ạ?', examples: [
-    {
-      "jp": "もう12時ですね。",
-      "vn": "Đã 12 giờ rồi nhỉ.",
-      "furigana": [
-        {
-          "kanji": "時",
-          "reading": "じ"
-        }
-      ]
-    },
-    {
-      "jp": "もう春ですね。",
-      "vn": "Đã mùa xuân rồi nhỉ.",
-      "furigana": [
-        {
-          "kanji": "春",
-          "reading": "はる"
-        }
-      ]
-    },
-    {
-      "jp": "もう金曜日ですね。",
-      "vn": "Đã thứ sáu rồi nhỉ.",
-      "furigana": [
-        {
-          "kanji": "金曜日",
-          "reading": "きんようび"
-        }
-      ]
-    },
-    {
-      "jp": "もう、時間ですね。",
-      "vn": "Đã đến giờ rồi.",
-      "furigana": [
-        {
-          "kanji": "時間",
-          "reading": "じかん"
-        }
-      ]
-    },
-    {
-      "jp": "もう終わりましたね。",
-      "vn": "Đã xong rồi nhỉ.",
-      "furigana": [
-        {
-          "kanji": "終",
-          "reading": "お"
-        }
-      ]
-    },
-    {
-      "jp": "もう9月ですね。",
-      "vn": "Đã tháng 9 rồi nhỉ.",
-      "furigana": [
-        {
-          "kanji": "月",
-          "reading": "がつ"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'しつれいします', kanji: 'そろそろ失礼します', romaji: 'sorosoro shitsurei shimasu', mean: 'Sắp đến lúc tôi phải xin phép rồi./ Đã đến lúc tôi phải về.', examples: [
-    {
-      "jp": "そろそろ失礼します。",
-      "vn": "Tôi sắp phải về rồi.",
-      "furigana": [
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    },
-    {
-      "jp": "お先に失礼します。",
-      "vn": "Tôi xin phép về trước.",
-      "furigana": [
-        {
-          "kanji": "先",
-          "reading": "さき"
-        },
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    },
-    {
-      "jp": "失礼します。",
-      "vn": "Xin phép.",
-      "furigana": [
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    },
-    {
-      "jp": "では、失礼します。",
-      "vn": "Vậy, tôi xin phép.",
-      "furigana": [
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    },
-    {
-      "jp": "ちょっと失礼します。",
-      "vn": "Xin lỗi một chút.",
-      "furigana": [
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    },
-    {
-      "jp": "失礼しました。",
-      "vn": "Tôi đã thất lễ (xin lỗi vì chuyện đã qua).",
-      "furigana": [
-        {
-          "kanji": "失礼",
-          "reading": "しつれい"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'いらっしゃってください', kanji: 'また いらっしゃって ください', romaji: 'mata irasshatte kudasai', mean: 'Lần sau anh/chị lại đến chơi nhé.', examples: [
-    {
-      "jp": "また、いらっしゃってください。",
-      "vn": "Lần sau lại đến chơi nhé.",
-      "furigana": []
-    },
-    {
-      "jp": "是非、いらっしゃってください。",
-      "vn": "Nhất định hãy đến nhé.",
-      "furigana": [
-        {
-          "kanji": "是非",
-          "reading": "ぜひ"
-        }
-      ]
-    },
-    {
-      "jp": "いつでもいらっしゃってください。",
-      "vn": "Hãy đến bất cứ lúc nào.",
-      "furigana": []
-    },
-    {
-      "jp": "遊びにいらっしゃってください。",
-      "vn": "Hãy đến chơi nhé.",
-      "furigana": [
-        {
-          "kanji": "遊",
-          "reading": "あそ"
-        }
-      ]
-    },
-    {
-      "jp": "明日、いらっしゃってください。",
-      "vn": "Ngày mai hãy đến nhé.",
-      "furigana": [
-        {
-          "kanji": "明日",
-          "reading": "あした"
-        }
-      ]
-    },
-    {
-      "jp": "皆さんでいらっしゃってください。",
-      "vn": "Mọi người hãy cùng đến nhé.",
-      "furigana": [
-        {
-          "kanji": "皆",
-          "reading": "みな"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'ふじさん', kanji: '富士山', romaji: 'Fujisan', mean: 'Núi Phú Sĩ', examples: [
-    {
-      "jp": "富士山は高いです。",
-      "vn": "Núi Phú Sĩ cao.",
-      "furigana": [
-        {
-          "kanji": "富士山",
-          "reading": "ふじさん"
-        },
-        {
-          "kanji": "高",
-          "reading": "たか"
-        }
-      ]
-    },
-    {
-      "jp": "富士山に登ります。",
-      "vn": "Leo núi Phú Sĩ.",
-      "furigana": [
-        {
-          "kanji": "富士山",
-          "reading": "ふじさん"
-        },
-        {
-          "kanji": "登",
-          "reading": "のぼ"
-        }
-      ]
-    },
-    {
-      "jp": "きれいな富士山",
-      "vn": "Núi Phú Sĩ đẹp.",
-      "furigana": [
-        {
-          "kanji": "富士山",
-          "reading": "ふじさん"
-        }
-      ]
-    },
-    {
-      "jp": "冬の富士山",
-      "vn": "Núi Phú Sĩ mùa đông.",
-      "furigana": [
-        {
-          "kanji": "冬",
-          "reading": "ふゆ"
-        },
-        {
-          "kanji": "富士山",
-          "reading": "ふじさん"
-        }
-      ]
-    },
-    {
-      "jp": "富士山が見えます。",
-      "vn": "Nhìn thấy núi Phú Sĩ.",
-      "furigana": [
-        {
-          "kanji": "富士山",
-          "reading": "ふじさん"
-        },
-        {
-          "kanji": "見",
-          "reading": "み"
-        }
-      ]
-    },
-    {
-      "jp": "富士山は日本にあります。",
-      "vn": "Núi Phú Sĩ ở Nhật Bản.",
-      "furigana": [
-        {
-          "kanji": "富士山",
-          "reading": "ふじさん"
-        },
-        {
-          "kanji": "日本",
-          "reading": "にほん"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "富",
-    "onyomi": "フ",
-    "kunyomi": "とみ",
-    "meaning": "Phú",
-    "strokes": 12,
-    "jlpt": "N3",
-    "radicals": "宀",
-    "components": [
-      {
-        "char": "宀",
-        "meaning": "nhà"
-      },
-      {
-        "char": "畐",
-        "meaning": "đầy"
-      }
-    ],
-    "mnemonic": "Nhà đầy của cải.",
-    "exampleSentences": [
-      {
-        "jp": "富士山",
-        "vn": "Núi Phú Sĩ.",
-        "furigana": [
-          {
-            "kanji": "富士山",
-            "reading": "ふじさん"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "士",
-    "onyomi": "シ",
-    "kunyomi": "",
-    "meaning": "Sĩ",
-    "strokes": 3,
-    "jlpt": "N4",
-    "radicals": "士",
-    "components": [
-      {
-        "char": "士",
-        "meaning": "sĩ"
-      }
-    ],
-    "mnemonic": "Người đứng thẳng.",
-    "exampleSentences": [
-      {
-        "jp": "富士山",
-        "vn": "Núi Phú Sĩ.",
-        "furigana": [
-          {
-            "kanji": "富士山",
-            "reading": "ふじさん"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "山",
-    "onyomi": "サン",
-    "kunyomi": "やま",
-    "meaning": "Núi",
-    "strokes": 3,
-    "jlpt": "N5",
-    "radicals": "山",
-    "components": [
-      {
-        "char": "山",
-        "meaning": "núi"
-      }
-    ],
-    "mnemonic": "Hình núi.",
-    "exampleSentences": [
-      {
-        "jp": "富士山",
-        "vn": "úi Phú Sĩ.",
-        "furigana": [
-          {
-            "kanji": "富士山",
-            "reading": "ふじさん"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'びわこ', kanji: '琵琶湖', romaji: 'Biwako', mean: 'Hồ Biwa', examples: [
-    {
-      "jp": "琵琶湖は大きいです。",
-      "vn": "Hồ Biwa lớn.",
-      "furigana": [
-        {
-          "kanji": "琵琶湖",
-          "reading": "びわこ"
-        },
-        {
-          "kanji": "大",
-          "reading": "おお"
-        }
-      ]
-    },
-    {
-      "jp": "滋賀県に琵琶湖があります。",
-      "vn": "Hồ Biwa ở tỉnh Shiga.",
-      "furigana": [
-        {
-          "kanji": "滋賀県",
-          "reading": "しがけん"
-        },
-        {
-          "kanji": "琵琶湖",
-          "reading": "びわこ"
-        }
-      ]
-    },
-    {
-      "jp": "琵琶湖へ行きます。",
-      "vn": "Đi hồ Biwa.",
-      "furigana": [
-        {
-          "kanji": "琵琶湖",
-          "reading": "びわこ"
-        },
-        {
-          "kanji": "行",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "きれいな琵琶湖",
-      "vn": "Hồ Biwa đẹp.",
-      "furigana": [
-        {
-          "kanji": "琵琶湖",
-          "reading": "びわこ"
-        }
-      ]
-    },
-    {
-      "jp": "琵琶湖の水",
-      "vn": "Nước hồ Biwa.",
-      "furigana": [
-        {
-          "kanji": "琵琶湖",
-          "reading": "びわこ"
-        },
-        {
-          "kanji": "水",
-          "reading": "みず"
-        }
-      ]
-    },
-    {
-      "jp": "琵琶湖一周",
-      "vn": "Một vòng hồ Biwa.",
-      "furigana": [
-        {
-          "kanji": "琵琶湖",
-          "reading": "びわこ"
-        },
-        {
-          "kanji": "一周",
-          "reading": "いっしゅう"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "琵",
-    "onyomi": "ビ",
-    "kunyomi": "",
-    "meaning": "Tỳ",
-    "strokes": 12,
-    "jlpt": "N1",
-    "radicals": "比",
-    "exampleSentences": [
-      {
-        "jp": "琵琶湖",
-        "vn": "Hồ Biwa.",
-        "furigana": [
-          {
-            "kanji": "琵琶湖",
-            "reading": "びわこ"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "琶",
-    "onyomi": "ワ",
-    "kunyomi": "",
-    "meaning": "Bà",
-    "strokes": 12,
-    "jlpt": "N1",
-    "radicals": "巴",
-    "exampleSentences": [
-      {
-        "jp": "琵琶湖",
-        "vn": "Hồ Biwa.",
-        "furigana": [
-          {
-            "kanji": "琵琶湖",
-            "reading": "びわこ"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "湖",
-    "onyomi": "コ",
-    "kunyomi": "みずうみ",
-    "meaning": "Hồ",
-    "strokes": 12,
-    "jlpt": "N3",
-    "radicals": "水",
-    "exampleSentences": [
-      {
-        "jp": "琵琶湖",
-        "vn": "Hồ Biwa.",
-        "furigana": [
-          {
-            "kanji": "琵琶湖",
-            "reading": "びわこ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-{
-  word: 'シャンハイ', kanji: 'シャンハイ', romaji: 'Shanhai', mean: 'Thượng Hải', examples: [
-    {
-      "jp": "シャンハイに行きます。",
-      "vn": "Đi Thượng Hải.",
-      "furigana": [
-        {
-          "kanji": "行",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "シャンハイはにぎやかです。",
-      "vn": "Thượng Hải rất náo nhiệt.",
-      "furigana": []
-    },
-    {
-      "jp": "シャンハイの人口",
-      "vn": "Dân số Thượng Hải.",
-      "furigana": [
-        {
-          "kanji": "人口",
-          "reading": "じんこう"
-        }
-      ]
-    },
-    {
-      "jp": "シャンハイの料理",
-      "vn": "Món ăn Thượng Hải.",
-      "furigana": [
-        {
-          "kanji": "料理",
-          "reading": "りょうり"
-        }
-      ]
-    },
-    {
-      "jp": "シャンハイは中国にあります。",
-      "vn": "Thượng Hải ở Trung Quốc.",
-      "furigana": [
-        {
-          "kanji": "中国",
-          "reading": "ちゅうごく"
-        }
-      ]
-    },
-    {
-      "jp": "夜のシャンハイ",
-      "vn": "Thượng Hải về đêm.",
-      "furigana": [
-        {
-          "kanji": "夜",
-          "reading": "よる"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'しちにんのさむらい', kanji: '七人の侍', romaji: 'Shichinin no Samurai', mean: 'Bảy chàng võ sĩ Samurai (tên phim)', examples: [
-    {
-      "jp": "「七人の侍」を見ましたか。",
-      "vn": "Bạn đã xem \"7 chàng võ sĩ Samurai\" chưa?",
-      "furigana": [
-        {
-          "kanji": "七人",
-          "reading": "しちにん"
-        },
-        {
-          "kanji": "侍",
-          "reading": "さむらい"
-        },
-        {
-          "kanji": "見",
-          "reading": "み"
-        }
-      ]
-    },
-    {
-      "jp": "「七人の侍」は映画です。",
-      "vn": "\"7 chàng võ sĩ Samurai\" là phim.",
-      "furigana": [
-        {
-          "kanji": "七人",
-          "reading": "しちにん"
-        },
-        {
-          "kanji": "侍",
-          "reading": "さむらい"
-        },
-        {
-          "kanji": "映画",
-          "reading": "えいが"
-        }
-      ]
-    },
-    {
-      "jp": "「七人の侍」は有名です。",
-      "vn": "\"7 chàng võ sĩ Samurai\" rất nổi tiếng.",
-      "furigana": [
-        {
-          "kanji": "七人",
-          "reading": "しちにん"
-        },
-        {
-          "kanji": "侍",
-          "reading": "さむらい"
-        },
-        {
-          "kanji": "有名",
-          "reading": "ゆうめい"
-        }
-      ]
-    },
-    {
-      "jp": "「七人の侍」はおもしろいです。",
-      "vn": "\"7 chàng võ sĩ Samurai\" rất hay.",
-      "furigana": [
-        {
-          "kanji": "七人",
-          "reading": "しちにん"
-        },
-        {
-          "kanji": "侍",
-          "reading": "さむらい"
-        },
-        {
-          "kanji": "面白",
-          "reading": "おもしろ"
-        }
-      ]
-    },
-    {
-      "jp": "黒澤明の「七人の侍」",
-      "vn": "\"7 chàng võ sĩ Samurai\" của Kurosawa Akira.",
-      "furigana": [
-        {
-          "kanji": "黒澤明",
-          "reading": "くろさわあきら"
-        },
-        {
-          "kanji": "七人",
-          "reading": "しちにん"
-        },
-        {
-          "kanji": "侍",
-          "reading": "さむらい"
-        }
-      ]
-    },
-    {
-      "jp": "昔の映画、「七人の侍」",
-      "vn": "Phim ngày xưa, \"7 chàng võ sĩ Samurai\".",
-      "furigana": [
-        {
-          "kanji": "昔",
-          "reading": "むかし"
-        },
-        {
-          "kanji": "映画",
-          "reading": "えいが"
-        },
-        {
-          "kanji": "七人",
-          "reading": "しちにん"
-        },
-        {
-          "kanji": "侍",
-          "reading": "さむらい"
-        }
-      ]
-    }
-  ]
-},
-{
-  word: 'きんかくじ', kanji: '金閣寺', romaji: 'Kinkakuji', mean: 'Chùa Kinkaku-ji (Chùa Vàng)', examples: [
-    {
-      "jp": "金閣寺はきれいです。",
-      "vn": "Chùa Vàng rất đẹp.",
-      "furigana": [
-        {
-          "kanji": "金閣寺",
-          "reading": "きんかくじ"
-        }
-      ]
-    },
-    {
-      "jp": "金閣寺へ行きました。",
-      "vn": "Tôi đã đi Chùa Vàng.",
-      "furigana": [
-        {
-          "kanji": "金閣寺",
-          "reading": "きんかくじ"
-        },
-        {
-          "kanji": "行",
-          "reading": "い"
-        }
-      ]
-    },
-    {
-      "jp": "金閣寺は京都にあります。",
-      "vn": "Chùa Vàng ở Kyoto.",
-      "furigana": [
-        {
-          "kanji": "金閣寺",
-          "reading": "きんかくじ"
-        },
-        {
-          "kanji": "京都",
-          "reading": "きょうと"
-        }
-      ]
-    },
-    {
-      "jp": "金閣寺の庭",
-      "vn": "Vườn của Chùa Vàng.",
-      "furigana": [
-        {
-          "kanji": "金閣寺",
-          "reading": "きんかくじ"
-        },
-        {
-          "kanji": "庭",
-          "reading": "にわ"
-        }
-      ]
-    },
-    {
-      "jp": "金閣寺を見ます。",
-      "vn": "Ngắm Chùa Vàng.",
-      "furigana": [
-        {
-          "kanji": "金閣寺",
-          "reading": "きんかくじ"
-        },
-        {
-          "kanji": "見",
-          "reading": "み"
-        }
-      ]
-    },
-    {
-      "jp": "金閣寺は有名です。",
-      "vn": "Chùa Vàng rất nổi tiếng.",
-      "furigana": [
-        {
-          "kanji": "金閣寺",
-          "reading": "きんかくじ"
-        },
-        {
-          "kanji": "有名",
-          "reading": "ゆうめい"
-        }
-      ]
-    }
-  ],
-    kanjiDetails: [
-  {
-    "kanji": "金",
-    "onyomi": "キン",
-    "kunyomi": "かね",
-    "meaning": "Vàng, tiền",
-    "strokes": 8,
-    "jlpt": "N5",
-    "radicals": "金 (vàng)",
-    "components": [
-      {
-        "char": "金",
-        "meaning": "vàng"
-      }
-    ],
-    "mnemonic": "Người ta (人) cất giấu vàng (trong đất).",
-    "exampleSentences": [
-      {
-        "jp": "お金があります。",
-        "vn": "Có tiền.",
-        "furigana": [
-          {
-            "kanji": "金",
-            "reading": "かね"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "閣",
-    "onyomi": "カク",
-    "kunyomi": "",
-    "meaning": "Các",
-    "strokes": 14,
-    "jlpt": "N2",
-    "radicals": "門",
-    "exampleSentences": [
-      {
-        "jp": "金閣寺",
-        "vn": "Chùa Vàng.",
-        "furigana": [
-          {
-            "kanji": "金閣寺",
-            "reading": "きんかくじ"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "kanji": "寺",
-    "onyomi": "ジ",
-    "kunyomi": "てら",
-    "meaning": "Chùa",
-    "strokes": 6,
-    "jlpt": "N3",
-    "radicals": "寸",
-    "exampleSentences": [
-      {
-        "jp": "金閣寺",
-        "vn": "Chùa Vàng.",
-        "furigana": [
-          {
-            "kanji": "金閣寺",
-            "reading": "きんかくじ"
-          }
-        ]
-      }
-    ]
-  }
-]
-  },
-  ],
-grammar: [
-  {
-    pattern: 'Tính từ',
-    explanation: 'Tính từ được chia làm 2 loại: Tính từ đuôi な và Tính từ đuôi い.',
-    example: 'ハンサム[な] (đẹp trai), 親切[な] (tốt bụng)\n大きい (to), 小さい (nhỏ)',
-    examples: [
-      {
-        jp: 'ハンサムな人', vn: 'Người đẹp trai',
-        furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }]
-      },
-      {
-        jp: '親切な先生', vn: 'Thầy giáo tốt bụng',
-        furigana: [{ kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }, { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }]
-      },
-      {
-        jp: '静かな町', vn: 'Thị trấn yên tĩnh',
-        furigana: [{ kanji: '静', reading: 'しず', meaning: 'TĨNH' }, { kanji: '町', reading: 'まち', meaning: 'ĐINH' }]
-      },
-      {
-        jp: 'きれいな花', vn: 'Hoa đẹp',
-        furigana: [{ kanji: '花', reading: 'はな', meaning: 'HOA' }]
-      },
-      {
-        jp: '有名な大学', vn: 'Đại học nổi tiếng',
-        furigana: [{ kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }, { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }]
-      },
-      {
-        jp: 'おいしい料理', vn: 'Món ăn ngon',
-        furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }]
-      },
-      {
-        jp: '大きい車', vn: 'Xe ô tô to',
-        furigana: [{ kanji: '大', reading: 'おお', meaning: 'ĐẠI' }, { kanji: '車', reading: 'くるま', meaning: 'XA' }]
-      },
-      {
-        jp: '新しい本', vn: 'Sách mới',
-        furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }]
-      },
-      {
-        jp: '暑い天気', vn: 'Thời tiết nóng',
-        furigana: [{ kanji: '暑', reading: 'あつ', meaning: 'THỬ' }, { kanji: '天気', reading: 'てんき', meaning: 'THIÊN KHÍ' }]
-      },
-      {
-        jp: '黒いかばん', vn: 'Cặp màu đen',
-        furigana: [{ kanji: '黒', reading: 'くろ', meaning: 'HẮC' }]
-      }
-    ]
-  },
-  {
-    pattern: 'Danh từ は Tính từ です',
-    explanation: 'Mẫu câu dùng để miêu tả trạng thái, tính chất của sự vật, sự việc.',
-    example: 'ワット先生は 親切です。 (Thầy Watt tốt bụng.)\n富士山は 高いです。 (Núi Phú Sĩ cao.)',
-    examples: [
-      {
-        jp: 'ワット先生は親切です。', vn: 'Thầy Watt tốt bụng.',
-        furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
-      },
-      {
-        jp: '富士山は高いです。', vn: 'Núi Phú Sĩ cao.',
-        furigana: [{ kanji: '富士山', reading: 'ふじさん', meaning: 'PHÚ SĨ SƠN' }, { kanji: '高', reading: 'たか', meaning: 'CAO' }]
-      },
-      {
-        jp: 'あそこは静かです。', vn: 'Chỗ kia yên tĩnh.',
-        furigana: [{ kanji: '静', reading: 'しず', meaning: 'TĨNH' }]
-      },
-      {
-        jp: 'この花はきれいです。', vn: 'Hoa này đẹp (sạch).',
-        furigana: [{ kanji: '花', reading: 'はな', meaning: 'HOA' }]
-      },
-      {
-        jp: 'その映画は有名です。', vn: 'Phim đó nổi tiếng.',
-        furigana: [{ kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
-      },
-      {
-        jp: '今日は暑いです。', vn: 'Hôm nay trời nóng.',
-        furigana: [{ kanji: '今日', reading: 'きょう', meaning: 'KIM NHẬT' }, { kanji: '暑', reading: 'あつ', meaning: 'THỬ' }]
-      },
-      {
-        jp: 'この料理はおいしいです。', vn: 'Món này ngon.',
-        furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }]
-      },
-      {
-        jp: '私の車は小さいです。', vn: 'Xe của tôi nhỏ.',
-        furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '小', reading: 'ちい', meaning: 'TIỂU' }]
-      },
-      {
-        jp: '日本語はおもしろいです。', vn: 'Tiếng Nhật thú vị.',
-        furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }]
-      },
-      {
-        jp: 'この辞書はいいです。', vn: 'Từ điển này tốt.',
-        furigana: [{ kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }]
-      }
-    ]
-  },
-  {
-    pattern: 'Tính từ な (bỏ な) ではありません',
-    explanation: 'Phủ định của tính từ đuôi な.',
-    example: 'あそこは 静かじゃ ありません。 (Chỗ kia không yên tĩnh.)',
-    examples: [
-      {
-        jp: 'あそこは静かじゃありません。', vn: 'Chỗ kia không yên tĩnh.',
-        furigana: [{ kanji: '静', reading: 'しず', meaning: 'TĨNH' }]
-      },
-      {
-        jp: 'この町はにぎやかじゃありません。', vn: 'Thị trấn này không náo nhiệt.',
-        furigana: [{ kanji: '町', reading: 'まち', meaning: 'ĐINH' }]
-      },
-      {
-        jp: '彼は親切じゃありません。', vn: 'Anh ấy không tốt bụng.',
-        furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }]
-      },
-      {
-        jp: 'その部屋はきれいじゃありません。', vn: 'Căn phòng đó không sạch/đẹp.',
-        furigana: [{ kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }]
-      },
-      {
-        jp: 'この公園は有名じゃありません。', vn: 'Công viên này không nổi tiếng.',
-        furigana: [{ kanji: '公園', reading: 'こうえん', meaning: 'CÔNG VIÊN' }, { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
-      },
-      {
-        jp: '私は暇じゃありません。', vn: 'Tôi không rảnh rỗi.',
-        furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '暇', reading: 'ひま', meaning: 'HẠ' }]
-      },
-      {
-        jp: 'このカメラは便利じゃありません。', vn: 'Cái máy ảnh này không tiện lợi.',
-        furigana: [{ kanji: '便利', reading: 'べんり', meaning: 'TIỆN LỢI' }]
-      },
-      {
-        jp: '彼は元気じゃありません。', vn: 'Anh ấy không khỏe.',
-        furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '元気', reading: 'げんき', meaning: 'NGUYÊN KHÍ' }]
-      },
-      {
-        jp: 'この料理は好きじゃありません。', vn: 'Tôi không thích món này.',
-        furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }]
-      },
-      {
-        jp: 'あの店は静かじゃありません。', vn: 'Cửa hàng kia không yên tĩnh.',
-        furigana: [{ kanji: '店', reading: 'みせ', meaning: 'ĐIẾM' }, { kanji: '静', reading: 'しず', meaning: 'TĨNH' }]
-      }
-    ]
-  },
-  {
-    pattern: 'Tính từ い (bỏ い) くないです',
-    explanation: 'Phủ định của tính từ đuôi い.',
-    example: 'この本は 面白くないです。 (Quyển sách này không hay.)',
-    examples: [
-      {
-        jp: 'この本は面白くないです。', vn: 'Sách này không hay.',
-        furigana: [{ kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '面白', reading: 'おもしろ', meaning: 'DIỆN BẠCH' }]
-      },
-      {
-        jp: '今日は寒くないです。', vn: 'Hôm nay không lạnh.',
-        furigana: [{ kanji: '今日', reading: 'きょう', meaning: 'KIM NHẬT' }, { kanji: '寒', reading: 'さむ', meaning: 'HÀN' }]
-      },
-      {
-        jp: 'この車は大きくないです。', vn: 'Xe này không to.',
-        furigana: [{ kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }]
-      },
-      {
-        jp: 'そのカメラは高くないです。', vn: 'Cái máy ảnh đó không đắt.',
-        furigana: [{ kanji: '高', reading: 'たか', meaning: 'CAO' }]
-      },
-      {
-        jp: 'この料理はおいしくないです。', vn: 'Món này không ngon.',
-        furigana: [{ kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }]
-      },
-      {
-        jp: '昨日は忙しくなかったです。', vn: 'Hôm qua không bận.',
-        furigana: [{ kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }, { kanji: '忙', reading: 'いそが', meaning: 'MANG' }]
-      },
-      {
-        jp: 'このお茶は熱くないです。', vn: 'Trà này không nóng.',
-        furigana: [{ kanji: '茶', reading: 'ちゃ', meaning: 'TRÀ' }, { kanji: '熱', reading: 'あつ', meaning: 'NHIỆT' }]
-      },
-      {
-        jp: '日本語は難しくないです。', vn: 'Tiếng Nhật không khó.',
-        furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '難', reading: 'むずか', meaning: 'NAN' }]
-      },
-      {
-        jp: 'この寮は古くないです。', vn: 'Ký túc xá này không cũ.',
-        furigana: [{ kanji: '寮', reading: 'りょう', meaning: 'LIÊU' }, { kanji: '古', reading: 'ふる', meaning: 'CỔ' }]
-      },
-      {
-        jp: 'その靴は白くないです。', vn: 'Đôi giày đó không phải màu trắng.',
-        furigana: [{ kanji: '靴', reading: 'くつ', meaning: 'IT' }, { kanji: '白', reading: 'しろ', meaning: 'BẠCH' }]
-      }
-    ]
-  }
-],
   kaiwa: [
     { char: 'A', jp: 'そろそろ失礼します。', vn: 'Sắp đến lúc tôi phải về rồi.' },
     { char: 'B', jp: 'また いらっしゃって ください。', vn: 'Lần sau anh/chị lại đến chơi nhé.' },
   ],
-    quiz: []
+  quiz: []
 };
 
 // Detailed data for Lesson 9
