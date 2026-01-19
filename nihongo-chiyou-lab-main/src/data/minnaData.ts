@@ -31102,135 +31102,136 @@ const lesson8Data: LessonDetail = {
           ]
         }
       ],
-    },
-  ],
-  kanjiDetails: [
-    {
-      "kanji": "親",
-      "onyomi": "シン",
-      "kunyomi": "おや",
-      "meaning": "Cha mẹ, thân thiết",
-      "strokes": 16,
-      "jlpt": "N4",
-      "radicals": "見",
-      "components": [
+
+      kanjiDetails: [
         {
-          "char": "立",
-          "meaning": "đứng"
-        },
-        {
-          "char": "木",
-          "meaning": "cây"
-        },
-        {
-          "char": "見",
-          "meaning": "nhìn"
-        }
-      ],
-      "mnemonic": "Cha mẹ đứng trên cây nhìn con.",
-      "exampleSentences": [
-        {
-          "jp": "親切な人",
-          "vn": "Người tốt bụng.",
-          "furigana": [
+          "kanji": "親",
+          "onyomi": "シン",
+          "kunyomi": "おや",
+          "meaning": "Cha mẹ, thân thiết",
+          "strokes": 16,
+          "jlpt": "N4",
+          "radicals": "見",
+          "components": [
             {
-              "kanji": "親切",
-              "reading": "しんせつ"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "kanji": "切",
-      "onyomi": "セツ",
-      "kunyomi": "き.る",
-      "meaning": "Cắt",
-      "strokes": 4,
-      "jlpt": "N4",
-      "radicals": "刀 (dao)",
-      "components": [
-        {
-          "char": "七",
-          "meaning": "số 7"
-        },
-        {
-          "char": "刀",
-          "meaning": "dao"
-        }
-      ],
-      "mnemonic": "Dùng dao (刀) cắt làm 7 (七) mảnh.",
-      "exampleSentences": [
-        {
-          "jp": "紙を切ります。",
-          "vn": "Cắt giấy.",
-          "furigana": [
-            {
-              "kanji": "紙",
-              "reading": "かみ"
+              "char": "立",
+              "meaning": "đứng"
             },
             {
-              "kanji": "切",
-              "reading": "き"
+              "char": "木",
+              "meaning": "cây"
+            },
+            {
+              "char": "見",
+              "meaning": "nhìn"
+            }
+          ],
+          "mnemonic": "Cha mẹ đứng trên cây nhìn con.",
+          "exampleSentences": [
+            {
+              "jp": "親切な人",
+              "vn": "Người tốt bụng.",
+              "furigana": [
+                {
+                  "kanji": "親切",
+                  "reading": "しんせつ"
+                }
+              ]
             }
           ]
         },
         {
-          "jp": "切手を買います。",
-          "vn": "Mua tem.",
-          "furigana": [
+          "kanji": "切",
+          "onyomi": "セツ",
+          "kunyomi": "き.る",
+          "meaning": "Cắt",
+          "strokes": 4,
+          "jlpt": "N4",
+          "radicals": "刀 (dao)",
+          "components": [
             {
-              "kanji": "切手",
-              "reading": "きって"
+              "char": "七",
+              "meaning": "số 7"
             },
             {
-              "kanji": "買",
-              "reading": "か"
+              "char": "刀",
+              "meaning": "dao"
+            }
+          ],
+          "mnemonic": "Dùng dao (刀) cắt làm 7 (七) mảnh.",
+          "exampleSentences": [
+            {
+              "jp": "紙を切ります。",
+              "vn": "Cắt giấy.",
+              "furigana": [
+                {
+                  "kanji": "紙",
+                  "reading": "かみ"
+                },
+                {
+                  "kanji": "切",
+                  "reading": "き"
+                }
+              ]
+            },
+            {
+              "jp": "切手を買います。",
+              "vn": "Mua tem.",
+              "furigana": [
+                {
+                  "kanji": "切手",
+                  "reading": "きって"
+                },
+                {
+                  "kanji": "買",
+                  "reading": "か"
+                }
+              ]
+            },
+            {
+              "jp": "親切な人",
+              "vn": "Người tốt bụng.",
+              "furigana": [
+                {
+                  "kanji": "親切",
+                  "reading": "しんせつ"
+                },
+                {
+                  "kanji": "人",
+                  "reading": "ひと"
+                }
+              ]
+            },
+            {
+              "jp": "大切な友達",
+              "vn": "Người bạn quan trọng.",
+              "furigana": [
+                {
+                  "kanji": "大切",
+                  "reading": "たいせつ"
+                },
+                {
+                  "kanji": "友達",
+                  "reading": "ともだち"
+                }
+              ]
+            },
+            {
+              "jp": "電話を切ります。",
+              "vn": "Cắt (cúp) điện thoại.",
+              "furigana": [
+                {
+                  "kanji": "電話",
+                  "reading": "でんわ"
+                },
+                {
+                  "kanji": "切",
+                  "reading": "き"
+                }
+              ]
             }
           ]
         },
-        {
-          "jp": "親切な人",
-          "vn": "Người tốt bụng.",
-          "furigana": [
-            {
-              "kanji": "親切",
-              "reading": "しんせつ"
-            },
-            {
-              "kanji": "人",
-              "reading": "ひと"
-            }
-          ]
-        },
-        {
-          "jp": "大切な友達",
-          "vn": "Người bạn quan trọng.",
-          "furigana": [
-            {
-              "kanji": "大切",
-              "reading": "たいせつ"
-            },
-            {
-              "kanji": "友達",
-              "reading": "ともだち"
-            }
-          ]
-        },
-        {
-          "jp": "電話を切ります。",
-          "vn": "Cắt (cúp) điện thoại.",
-          "furigana": [
-            {
-              "kanji": "電話",
-              "reading": "でんわ"
-            },
-            {
-              "kanji": "切",
-              "reading": "き"
-            }
-          ]
-        }
       ]
     },
     {
