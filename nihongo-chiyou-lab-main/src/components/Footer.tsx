@@ -7,8 +7,6 @@ const navLinks = [
   { name: "Nhập môn", href: "/nhap-mon" },
   { name: "Minna no Nihongo", href: "/minna" },
   { name: "Luyện thi JLPT", href: "/jlpt-n5" },
-  { name: "Tin tức", href: "#" },
-  { name: "Blog", href: "#" },
 ];
 
 const Footer = () => {
@@ -51,8 +49,8 @@ const Footer = () => {
             </h4>
             <div className="flex items-center gap-2 text-primary-foreground/80">
               <Mail className="h-4 w-4" />
-              <a 
-                href="mailto:hello@tiengnhatvuive.com" 
+              <a
+                href="mailto:hello@tiengnhatvuive.com"
                 className="hover:text-primary-foreground transition-colors"
               >
                 hello@tiengnhatvuive.com
@@ -77,9 +75,9 @@ const Footer = () => {
         {/* Copyright */}
         <div className="text-center text-primary-foreground/70 text-sm">
           Proudly built by{" "}
-          <a 
-            href="https://tanoshivietnam.com" 
-            target="_blank" 
+          <a
+            href="https://tanoshivietnam.com"
+            target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary-foreground transition-colors underline"
           >

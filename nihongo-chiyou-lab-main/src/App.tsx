@@ -35,10 +35,7 @@ import JlptExam from "./pages/JlptExam";
 import JlptLevelDetail from "./pages/JlptLevelDetail";
 import JlptPractice from "./pages/JlptPractice";
 import JlptExamRunner from "./pages/JlptExamRunner";
-import News from "./pages/News";
-import NewsDetail from "./pages/NewsDetail";
-import Blog from "./pages/Blog";
-import BlogDetail from "./pages/BlogDetail";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -82,10 +79,7 @@ const App = () => (
           <Route path="/jlpt/:level" element={<JlptLevelDetail />} />
           <Route path="/jlpt-practice" element={<JlptPractice />} />
           <Route path="/jlpt-exam/:level/:year/:session" element={<JlptExamRunner />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/news/:id" element={<NewsDetail />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogDetail />} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -28341,43 +28341,44 @@ const lesson7Data: LessonDetail = {
           ]
         }
       ],
-    },
-  ],
-  kanjiDetails: [
-    {
-      "kanji": "紙",
-      "onyomi": "シ",
-      "kunyomi": "かみ",
-      "meaning": "Giấy",
-      "strokes": 10,
-      "jlpt": "N4",
-      "radicals": "糸 (sợi chỉ)",
-      "components": [
+
+      kanjiDetails: [
         {
-          "char": "糸",
-          "meaning": "sợi chỉ"
-        },
-        {
-          "char": "氏",
-          "meaning": "họ/nhánh"
-        }
-      ],
-      "mnemonic": "Làm giấy (紙) từ các sợi (糸) cây của dòng họ (氏).",
-      "exampleSentences": [
-        {
-          "jp": "紙を切ります。",
-          "vn": "Cắt giấy.",
-          "furigana": [
+          "kanji": "紙",
+          "onyomi": "シ",
+          "kunyomi": "かみ",
+          "meaning": "Giấy",
+          "strokes": 10,
+          "jlpt": "N4",
+          "radicals": "糸 (sợi chỉ)",
+          "components": [
             {
-              "kanji": "紙",
-              "reading": "かみ"
+              "char": "糸",
+              "meaning": "sợi chỉ"
             },
             {
-              "kanji": "切",
-              "reading": "き"
+              "char": "氏",
+              "meaning": "họ/nhánh"
+            }
+          ],
+          "mnemonic": "Làm giấy (紙) từ các sợi (糸) cây của dòng họ (氏).",
+          "exampleSentences": [
+            {
+              "jp": "紙を切ります。",
+              "vn": "Cắt giấy.",
+              "furigana": [
+                {
+                  "kanji": "紙",
+                  "reading": "かみ"
+                },
+                {
+                  "kanji": "切",
+                  "reading": "き"
+                }
+              ]
             }
           ]
-        }
+        },
       ]
     },
     {

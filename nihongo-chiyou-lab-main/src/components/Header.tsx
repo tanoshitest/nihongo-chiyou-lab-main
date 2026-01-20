@@ -9,8 +9,6 @@ const navLinks = [
   { name: "Minna no Nihongo", href: "/minna" },
   { name: "Irodori", href: "/irodori" },
   { name: "Luyện thi JLPT", href: "/jlpt-n5" },
-  { name: "Tin tức", href: "/news" },
-  { name: "Blog", href: "/blog" },
 ];
 
 const Header = () => {
