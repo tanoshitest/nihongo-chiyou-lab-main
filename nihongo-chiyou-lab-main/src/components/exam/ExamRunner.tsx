@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
-import { ScrollArea } from "@/components/ui/scroll-area";
+// import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Clock,
   BookOpen,
@@ -15,8 +15,21 @@ import {
   Trophy,
   AlertTriangle,
   Play,
-  RotateCcw
+  RotateCcw,
+  FileText
 } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 import {
   N5_EXAM_STRUCTURE,
   generateMockExamData,
@@ -28,10 +41,25 @@ import {
 } from "@/data/jlptN5ExamData";
 import { cn } from "@/lib/utils";
 
+// JLPT Real 2025 Modes
+import {
+  jlptVocabData,
+  jlptGrammarData,
+  jlptListeningData,
+  calculateJLPTSectionScore,
+  JLPTMondai
+} from "@/data/jlptN5_Real2025";
+import JLPTCoverPage from "@/components/exam/jlpt/JLPTCoverPage";
+import JLPTSectionIntro from "@/components/exam/jlpt/JLPTSectionIntro";
+import JLPTQuestionView from "@/components/exam/jlpt/JLPTQuestionView";
+
 type ExamState =
   | "intro"
+  | "section1_intro"
   | "section1"
+  | "section2_intro"
   | "section2"
+  | "section3_intro"
   | "section3"
   | "result1"
   | "result2"
@@ -136,6 +164,55 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
 
   // Submit section and show section result
   const handleSubmitSection = useCallback(() => {
+    // Determine if this is the "Real JLPT 2025" exam
+    const isRealJLPT = session === "july" && year === 2025;
+
+    if (isRealJLPT) {
+      // Special Scoring for Real JLPT 2025
+      // We use the helper calculateJLPTSectionScore with the hardcoded data
+      let raw = 0;
+      let scaled = 0;
+      // Max score is 60 per section.
+      // We need to know total questions to scale? Or just use raw check?
+      // Let's assume raw score mapping for now or simple percentage.
+
+      // TODO: Get max points from data or constant.
+      const SECTION_MAX = 60;
+
+      if (examState === "section1") {
+        raw = calculateJLPTSectionScore(answers.section1, jlptVocabData);
+        // Total Questions: ? We need to count them.
+        // jlptVocabData has 4 mondais.
+        const totalQ = jlptVocabData.reduce((acc, m) => acc + m.questions.length, 0);
+        scaled = Math.round((raw / totalQ) * SECTION_MAX);
+
+        setRawScores(prev => ({ ...prev, section1: raw }));
+        setScores(prev => ({ ...prev, section1: scaled }));
+        // Go directly to next section intro
+        setExamState("section2_intro");
+      } else if (examState === "section2") {
+        raw = calculateJLPTSectionScore(answers.section2, jlptGrammarData);
+        const totalQ = jlptGrammarData.reduce((acc, m) => acc + m.questions.length, 0);
+        scaled = Math.round((raw / totalQ) * SECTION_MAX);
+
+        setRawScores(prev => ({ ...prev, section2: raw }));
+        setScores(prev => ({ ...prev, section2: scaled }));
+        // Go directly to next section intro
+        setExamState("section3_intro");
+      } else if (examState === "section3") {
+        raw = calculateJLPTSectionScore(answers.section3, jlptListeningData);
+        const totalQ = jlptListeningData.reduce((acc, m) => acc + m.questions.length, 0);
+        scaled = Math.round((raw / totalQ) * SECTION_MAX);
+
+        setRawScores(prev => ({ ...prev, section3: raw }));
+        setScores(prev => ({ ...prev, section3: scaled }));
+        // Go directly to final result
+        setExamState("final_result");
+      }
+      return;
+    }
+
+    // Default Scoring
     if (!examData) return;
 
     if (examState === "section1") {
@@ -157,7 +234,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
       setScores(prev => ({ ...prev, section3: scaled }));
       setExamState("result3");
     }
-  }, [examData, answers, examState]);
+  }, [examData, answers, examState, session, year]);
 
   // Auto-start for practice exams
   useEffect(() => {
@@ -185,13 +262,9 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
   // Move to next section from section result
   const handleContinueToNextSection = useCallback(() => {
     if (examState === "result1") {
-      setTimeLeft(N5_EXAM_STRUCTURE.sections[1].timeLimit);
-      setCurrentQuestionIndex(0);
-      setExamState("section2");
+      setExamState("section2_intro");
     } else if (examState === "result2") {
-      setTimeLeft(N5_EXAM_STRUCTURE.sections[2].timeLimit);
-      setCurrentQuestionIndex(0);
-      setExamState("section3");
+      setExamState("section3_intro");
     } else if (examState === "result3") {
       setExamState("final_result");
     }
@@ -206,7 +279,140 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
     setExamData(generateMockExamData());
   };
 
-  // RENDER: Intro State
+  /* -----------------------------------------------------------
+   * REAL JLPT 2025 RENDER LOGIC
+   * ----------------------------------------------------------- */
+  const isRealJLPT = session === "july" && year === 2025;
+  if (isRealJLPT) {
+    // 1. COVER PAGE
+    if (examState === "intro") {
+      return (
+        <JLPTCoverPage
+          onStart={() => setExamState("section1_intro")}
+          level={level}
+          sectionName="言語知識（文字・語彙）"
+        />
+      );
+    }
+
+    // 2. SECTION INTRO (Intermediate Step)
+    if (["section1_intro", "section2_intro", "section3_intro"].includes(examState)) {
+      const introData =
+        examState === "section1_intro" ? { section: "言語知識（文字・語彙）", next: "section1" } :
+          examState === "section2_intro" ? { section: "言語知識（文法）・読解", next: "section2" } :
+            { section: "聴解", next: "section3", variant: 'white' as const };
+
+      return (
+        <JLPTSectionIntro
+          level={level}
+          sectionName={introData.section}
+          variant={introData.variant || 'white'}
+          onNext={() => {
+            if (examState === "section1_intro") {
+              setTimeLeft(N5_EXAM_STRUCTURE.sections[0].timeLimit);
+              setCurrentQuestionIndex(0);
+              setExamState("section1");
+            } else if (examState === "section2_intro") {
+              setTimeLeft(N5_EXAM_STRUCTURE.sections[1].timeLimit);
+              setCurrentQuestionIndex(0);
+              setExamState("section2");
+            } else if (examState === "section3_intro") {
+              setTimeLeft(N5_EXAM_STRUCTURE.sections[2].timeLimit);
+              setCurrentQuestionIndex(0);
+              setExamState("section3");
+            }
+          }}
+        />
+      );
+    }
+
+    // 2. TAKING SECTIONS
+    if (["section1", "section2", "section3"].includes(examState)) {
+      const currentJLPTData =
+        examState === "section1" ? jlptVocabData :
+          examState === "section2" ? jlptGrammarData :
+            jlptListeningData;
+
+      const isListening = examState === "section3";
+
+      return (
+        <div className="min-h-screen bg-white pb-20 font-jlpt text-black">
+          {/* Header with Timer (Simplified for JLPT look) */}
+          <div className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-black z-50 flex items-center justify-between px-4 lg:px-8">
+            <div className="font-bold text-lg font-serif">
+              JLPT {level} - {examState === 'section1' ? 'もじ・ごい' : examState === 'section2' ? 'ぶんぽう・どっかい' : 'ちょうかい'}
+            </div>
+
+            <div className="flex items-center gap-4">
+              {/* Audio Player for Listening */}
+              {isListening && (
+                <>
+                  <div className="border border-black p-1 bg-white rounded-none">
+                    <audio controls className="h-8 w-64">
+                      <source src="/audio/jlpt_n5_audio.mp3" type="audio/mpeg" />
+                      Browser does not support audio.
+                    </audio>
+                  </div>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="h-10 border-black text-black gap-2 bg-white hover:bg-gray-100"
+                    onClick={() => window.open('/documents/script.pdf', '_blank')}
+                  >
+                    <FileText className="h-4 w-4" />
+                    Script
+                  </Button>
+                </>
+              )}
+
+              <div className={cn(
+                "flex items-center gap-2 px-3 py-1.5 rounded-lg font-mono text-lg font-bold bg-black text-white"
+              )}>
+                <Clock className="h-5 w-5" />
+                {formatTime(timeLeft)}
+              </div>
+
+              <AlertDialog>
+                <AlertDialogTrigger asChild>
+                  <Button variant="default" className="bg-red-600 hover:bg-red-700 text-white">
+                    Nộp bài
+                  </Button>
+                </AlertDialogTrigger>
+                <AlertDialogContent className="bg-white">
+                  <AlertDialogHeader>
+                    <AlertDialogTitle>Bạn có chắc chắn muốn nộp bài?</AlertDialogTitle>
+                    <AlertDialogDescription>
+                      Sau khi nộp, bạn sẽ chuyển sang phần thi tiếp theo và không thể quay lại sửa chữa đáp án của phần này.
+                    </AlertDialogDescription>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel>Hủy</AlertDialogCancel>
+                    <AlertDialogAction onClick={handleSubmitSection} className="bg-red-600 hover:bg-red-700 text-white">
+                      Nộp bài
+                    </AlertDialogAction>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
+            </div>
+          </div>
+
+          <div className="pt-20">
+            <JLPTQuestionView
+              mondaiList={currentJLPTData}
+              answers={answers[examState as keyof SectionAnswers]}
+              onAnswer={(qId, val) => handleAnswerChange(qId, val)}
+              hideQuestionId={false}
+            />
+          </div>
+        </div>
+      );
+    }
+
+    // Handle results/review using default or if needed custom
+    // We can fall through to default result view which uses `scores` state.
+  }
+
+  // RENDER: Intro State (Default)
   if (examState === "intro") {
     return (
       <div className="min-h-screen bg-background py-8 px-4">
@@ -215,7 +421,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
             <CardHeader className="text-center bg-primary/5">
               <CardTitle className="text-3xl text-primary flex items-center justify-center gap-3">
                 <BookOpen className="h-8 w-8" />
-                {isPractice ? `Luyện thi ${level} - ${practiceId || "Bài tập"}` : `JLPT ${level} - Năm ${year} (${sessionLabel})`}
+                {isPractice ? `Luyện tập ${level} - ${practiceId || "Bài tập"}` : `JLPT ${level} - Năm ${year} (${sessionLabel})`}
               </CardTitle>
               <p className="text-muted-foreground mt-2">
                 {isPractice ? "Bài luyện tập kỹ năng theo chuyên đề" : "Đề thi thử theo chuẩn JLPT"}
@@ -276,7 +482,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
     );
   }
 
-  // RENDER: Taking Section
+  // RENDER: Taking Section (Default)
   if (["section1", "section2", "section3"].includes(examState)) {
     const section = getCurrentSection();
     const questions = getCurrentQuestions();
@@ -459,8 +665,152 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
 
   // RENDER: Final Result
   if (examState === "final_result") {
-    const passResult = checkPassStatus(scores.section1, scores.section2, scores.section3);
+    // Determine if Real JLPT 2025
+    const isRealJLPT = session === "july" && year === 2025;
 
+    if (isRealJLPT) {
+      const passResult = checkPassStatus(scores.section1, scores.section2, scores.section3);
+      const totalScore = scores.section1 + scores.section2 + scores.section3;
+      const isPassed = totalScore >= 80 && scores.section1 >= 19 && scores.section2 >= 19 && scores.section3 >= 19; // Simplified check
+
+      return (
+        <div className="min-h-screen bg-white py-8 px-4 font-jlpt text-black">
+          <div className="max-w-6xl mx-auto space-y-8">
+            {/* 1. Overview Card */}
+            <div className="border border-black bg-white">
+              <div className="p-4 border-b border-black">
+                <h2 className="text-xl font-bold flex items-center gap-2">
+                  <span className="text-2xl">◎</span>
+                  Tổng quan kết quả
+                </h2>
+              </div>
+              <div className="p-6">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-black">
+                  {/* Section 1 Score */}
+                  <div className="text-center p-4 border-b md:border-b-0 border-r border-black last:border-r-0 last:border-b-0">
+                    <div className="text-sm font-bold mb-1">言語知識（文字・語彙）</div>
+                    <div className="text-xs mb-2">Language Knowledge (Vocab)</div>
+                    <div className="text-4xl font-bold my-2">{scores.section1}/60</div>
+                    <div className="text-sm">
+                      {Object.keys(answers.section1).filter(k => answers.section1[Number(k)] === jlptVocabData.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer).length}/{jlptVocabData.reduce((acc, m) => acc + m.questions.length, 0)} câu đúng
+                    </div>
+                  </div>
+
+                  {/* Section 2 Score */}
+                  <div className="text-center p-4 border-b md:border-b-0 border-r border-black last:border-r-0 last:border-b-0">
+                    <div className="text-sm font-bold mb-1">言語知識（文法）・読解</div>
+                    <div className="text-xs mb-2">Language Knowledge (Grammar)</div>
+                    <div className="text-4xl font-bold my-2">{scores.section2}/60</div>
+                    <div className="text-sm">
+                      {Object.keys(answers.section2).filter(k => answers.section2[Number(k)] === jlptGrammarData.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer).length}/{jlptGrammarData.reduce((acc, m) => acc + m.questions.length, 0)} câu đúng
+                    </div>
+                  </div>
+
+                  {/* Section 3 Score */}
+                  <div className="text-center p-4 border-b md:border-b-0 border-r border-black last:border-r-0 last:border-b-0">
+                    <div className="text-sm font-bold mb-1">聴解</div>
+                    <div className="text-xs mb-2">Listening</div>
+                    <div className="text-4xl font-bold my-2">{scores.section3}/60</div>
+                    <div className="text-sm">
+                      {Object.keys(answers.section3).filter(k => answers.section3[Number(k)] === jlptListeningData.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer).length}/{jlptListeningData.reduce((acc, m) => acc + m.questions.length, 0)} câu đúng
+                    </div>
+                  </div>
+
+                  {/* Total Score Badge */}
+                  <div className="flex flex-col items-center justify-center p-4 bg-white">
+                    <div className="text-base font-bold underline mb-1">TỔNG ĐIỂM</div>
+                    <div className="text-5xl font-black mb-2">
+                      {totalScore}/180
+                    </div>
+                    <div className="border border-black px-6 py-1 text-lg font-bold bg-black text-white">
+                      {isPassed ? "ĐẬU (合格)" : "TRƯỢT (不合格)"}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Comment Box */}
+                <div className="mt-8 border border-black p-4 flex gap-4">
+                  <div className="shrink-0 pt-0.5">
+                    <div className="w-6 h-6 border border-black rounded-full flex items-center justify-center font-bold text-sm">!</div>
+                  </div>
+                  <div>
+                    <div className="font-bold underline mb-1">Nhận xét chung:</div>
+                    <p className="text-sm leading-relaxed">
+                      {isPassed
+                        ? "Chúc mừng bạn đã hoàn thành xuất sắc bài thi! Hãy tiếp tục duy trì phong độ nhé!"
+                        : "Bạn cần cố gắng hơn ở các phần thi chưa đạt điểm cao. Hãy ôn tập lại từ vựng và luyện nghe thêm nhé!"}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 2. Review Tabs */}
+            <div className="bg-white min-h-[500px]">
+              <Tabs defaultValue="section1" className="w-full">
+                <div className="border-b border-black mb-6">
+                  <TabsList className="bg-transparent h-auto p-0 gap-0 w-full justify-start flex-wrap">
+                    <TabsTrigger
+                      value="section1"
+                      className="data-[state=active]:bg-black data-[state=active]:text-white rounded-none px-6 py-3 text-black font-bold border border-black border-b-0 mr-[-1px] mb-[-1px]"
+                    >
+                      Phần 1 文字・語彙 (Vocab)
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="section2"
+                      className="data-[state=active]:bg-black data-[state=active]:text-white rounded-none px-6 py-3 text-black font-bold border border-black border-b-0 mr-[-1px] mb-[-1px]"
+                    >
+                      Phần 2 文法・読解 (Grammar)
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="section3"
+                      className="data-[state=active]:bg-black data-[state=active]:text-white rounded-none px-6 py-3 text-black font-bold border border-black border-b-0 mb-[-1px]"
+                    >
+                      Phần 3 聴解 (Listening)
+                    </TabsTrigger>
+                  </TabsList>
+                </div>
+
+                <div className="">
+                  <TabsContent value="section1" className="mt-0 space-y-8">
+                    <JLPTQuestionView
+                      mondaiList={jlptVocabData}
+                      answers={answers.section1}
+                      onAnswer={() => { }}
+                      hideQuestionId={false}
+                      showResults={true} // Highlighting enabled
+                    />
+                  </TabsContent>
+
+                  <TabsContent value="section2" className="mt-0 space-y-8">
+                    <JLPTQuestionView
+                      mondaiList={jlptGrammarData}
+                      answers={answers.section2}
+                      onAnswer={() => { }}
+                      hideQuestionId={false}
+                      showResults={true}
+                    />
+                  </TabsContent>
+
+                  <TabsContent value="section3" className="mt-0 space-y-8">
+                    <JLPTQuestionView
+                      mondaiList={jlptListeningData}
+                      answers={answers.section3}
+                      onAnswer={() => { }}
+                      hideQuestionId={false}
+                      showResults={true}
+                    />
+                  </TabsContent>
+                </div>
+              </Tabs>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // Default Existing Final Result logic (for practice mode or other exams)
+    const passResult = checkPassStatus(scores.section1, scores.section2, scores.section3);
     return (
       <div className="min-h-screen bg-background py-8 px-4">
         <div className="max-w-2xl mx-auto">

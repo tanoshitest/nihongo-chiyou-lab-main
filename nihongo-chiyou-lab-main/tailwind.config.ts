@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Noto Sans', 'sans-serif'],
+        jlpt: ['"MS Mincho"', '"Hiragino Mincho Pro"', '"Yu Mincho"', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",

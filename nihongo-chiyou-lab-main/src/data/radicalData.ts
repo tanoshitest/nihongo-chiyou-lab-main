@@ -36,7 +36,7 @@ export const radicalData: Radical[] = [
     strokes: 1,
     meaning: "Một (Nhất)",
     category: "Numbers",
-    mnemonic_image: "https://placehold.co/300x200/e2e8f0/1e293b?text=One+Line",
+    mnemonic_image: "/images/radicals/radical_1.png",
     examples: [
       { kanji: "一", sentence: "**一**つください。(Cho tôi một cái.)", reading: "Hitotsu kudasai." },
       { kanji: "一人", sentence: "**一**人で住んでいます。(Tôi sống một mình.)", reading: "Hitori de sunde imasu." },
@@ -52,7 +52,7 @@ export const radicalData: Radical[] = [
     strokes: 1,
     meaning: "Nét sổ (Cổn)",
     category: "Objects",
-    mnemonic_image: "https://placehold.co/300x200/e2e8f0/1e293b?text=Vertical+Stroke",
+    mnemonic_image: "/images/radicals/radical_2.png",
     examples: [
       { kanji: "中", sentence: "箱の**中**にあります。(Ở trong hộp.)", reading: "Hako no naka ni arimasu." },
       { kanji: "串", sentence: "焼き鳥の**串**。(Xiên thịt nướng.)", reading: "Yakitori no kushi." },

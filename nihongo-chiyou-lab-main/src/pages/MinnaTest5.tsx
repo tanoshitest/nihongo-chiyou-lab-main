@@ -7,7 +7,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { ALL_TESTS, ALL_GRAMMAR_TESTS, Question } from "@/data/minnaTest5Data";
+import { ALL_TESTS, GRAMMAR_TESTS, Question } from "@/data/minnaTest5Data";
 
 // Helper to parse Furigana text:
 // 1. [先生|せんせい] -> <ruby>先生<rt>せんせい</rt></ruby>
@@ -134,7 +134,7 @@ const MinnaTest5 = () => {
 
     // Exam Data
     const currentExamData = ALL_TESTS && ALL_TESTS[selectedExamId] ? ALL_TESTS[selectedExamId] : [];
-    const currentGrammarData = ALL_GRAMMAR_TESTS && ALL_GRAMMAR_TESTS[selectedGrammarExamId] ? ALL_GRAMMAR_TESTS[selectedGrammarExamId] : [];
+    const currentGrammarData = GRAMMAR_TESTS && GRAMMAR_TESTS[selectedGrammarExamId] ? GRAMMAR_TESTS[selectedGrammarExamId] : [];
 
     useEffect(() => {
         setAnswers({});

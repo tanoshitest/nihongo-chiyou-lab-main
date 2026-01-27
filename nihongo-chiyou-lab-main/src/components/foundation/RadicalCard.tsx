@@ -57,9 +57,16 @@ const RadicalCard = ({ radical, isFlipped, onFlip }: RadicalCardProps) => {
               </Badge>
             </div>
 
-            {/* Radical character */}
-            <div className="text-center flex-1 flex items-center justify-center">
-              <span className="text-7xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+            {/* Radical character and Image */}
+            <div className="flex-1 flex flex-col items-center justify-center gap-4">
+              <div className="w-24 h-24 rounded-lg overflow-hidden bg-muted shadow-sm group-hover:shadow-md transition-all duration-300">
+                <img
+                  src={radical.mnemonic_image}
+                  alt={radical.char}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <span className="text-5xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                 {radical.char}
               </span>
             </div>
@@ -97,15 +104,6 @@ const RadicalCard = ({ radical, isFlipped, onFlip }: RadicalCardProps) => {
               </h3>
             </div>
 
-            {/* Mnemonic Image */}
-            <div className="mb-3 rounded-lg overflow-hidden bg-muted">
-              <img
-                src={radical.mnemonic_image}
-                alt={`Hình minh họa bộ ${radical.char}`}
-                className="w-full h-20 object-cover"
-              />
-            </div>
-
             {/* Examples Section */}
             <div className="flex-1 overflow-hidden">
               <h4 className="text-xs font-semibold text-muted-foreground mb-2">
@@ -117,7 +115,7 @@ const RadicalCard = ({ radical, isFlipped, onFlip }: RadicalCardProps) => {
                   const sentenceParts = example.sentence.split(/[（(]/);
                   const japaneseSentence = sentenceParts[0].trim();
                   const translation = example.translation || (sentenceParts[1] ? sentenceParts[1].replace(/[）)]/, '').trim() : '');
-                  
+
                   return (
                     <div
                       key={index}

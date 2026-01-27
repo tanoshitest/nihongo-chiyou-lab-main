@@ -20,22 +20,7 @@ const KanjiGrid = () => {
 
 
   // Selection State with Persistence
-  const [selectedKanji, setSelectedKanji] = useState<number[]>(() => {
-    const saved = localStorage.getItem("kanji_selection");
-    return saved ? JSON.parse(saved) : [];
-  });
 
-  useEffect(() => {
-    localStorage.setItem("kanji_selection", JSON.stringify(selectedKanji));
-  }, [selectedKanji]);
-
-  const toggleSelection = (id: number) => {
-    setSelectedKanji(prev =>
-      prev.includes(id)
-        ? prev.filter(item => item !== id)
-        : [...prev, id]
-    );
-  };
 
   const handleCardFlip = (id: number) => {
     setActiveCardId(activeCardId === id ? null : id);
@@ -64,7 +49,7 @@ const KanjiGrid = () => {
     }
 
     return filtered;
-  }, [selectedLesson, searchQuery, selectedKanji]);
+  }, [selectedLesson, searchQuery]);
 
   const lessons = Array.from({ length: 32 }, (_, i) => i + 1);
 
@@ -119,8 +104,6 @@ const KanjiGrid = () => {
             kanji={kanji}
             isFlipped={activeCardId === kanji.id}
             onFlip={() => handleCardFlip(kanji.id)}
-            isSelected={selectedKanji.includes(kanji.id)}
-            onToggleSelection={() => toggleSelection(kanji.id)}
           />
         ))}
       </div>

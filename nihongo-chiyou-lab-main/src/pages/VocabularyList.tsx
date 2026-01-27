@@ -17,23 +17,7 @@ import { KanjiHover } from "@/components/KanjiHover";
 const VocabularyList = () => {
     const [selectedTopic, setSelectedTopic] = useState<string>("all");
     const [searchQuery, setSearchQuery] = useState("");
-    const [selectedVocabulary, setSelectedVocabulary] = useState<number[]>(() => {
-        const saved = localStorage.getItem("vocabulary_selection");
-        return saved ? JSON.parse(saved) : [];
-    });
 
-
-    useEffect(() => {
-        localStorage.setItem("vocabulary_selection", JSON.stringify(selectedVocabulary));
-    }, [selectedVocabulary]);
-
-    const toggleSelection = (id: number) => {
-        setSelectedVocabulary(prev =>
-            prev.includes(id)
-                ? prev.filter(item => item !== id)
-                : [...prev, id]
-        );
-    };
 
     const filteredVocabulary = vocabularyList.filter((item) => {
         // 1. Filter by Topic
@@ -107,13 +91,10 @@ const VocabularyList = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {filteredVocabulary.map((item, index) => {
-                            const isSelected = selectedVocabulary.includes(item.id);
                             return (
                                 <Card
                                     key={item.id}
-                                    className={`hover:shadow-md transition-all relative cursor-pointer ${isSelected ? "bg-blue-50 border-blue-300 shadow-sm" : ""
-                                        }`}
-                                    onClick={() => toggleSelection(item.id)}
+                                    className="hover:shadow-md transition-all relative cursor-pointer"
                                 >
                                     <CardContent className="p-4">
                                         <div className="flex gap-3 items-start mb-3">
@@ -177,8 +158,8 @@ const VocabularyList = () => {
                         </div>
                     )}
                 </main>
-            </div>
-        </Layout>
+            </div >
+        </Layout >
     );
 };
 
