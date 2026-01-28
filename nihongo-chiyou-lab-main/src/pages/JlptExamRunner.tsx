@@ -15,10 +15,14 @@ const JlptExamRunner = () => {
     ? "Luyện tập"
     : (session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12");
 
-  const isRealJLPTSession = session === "july" && year === "2025";
+  const isRealJLPTSession = (session === "july" && year === "2025") || session === "practice-n5-kanji-1";
 
   return (
-    <Layout hideFooter={isRealJLPTSession && !isExamFinished} hideHeader={isRealJLPTSession && !isExamFinished}>
+    <Layout
+      hideFooter={isRealJLPTSession && (!isExamFinished || session === "practice-n5-kanji-1")}
+      hideHeader={isRealJLPTSession && !isExamFinished}
+    >
+
       {/* Back button header - Hide for Real JLPT 2025 */}
       {!isRealJLPTSession && (
         <div className="bg-background border-b px-4 py-3">

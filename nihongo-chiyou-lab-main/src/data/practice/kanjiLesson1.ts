@@ -1,0 +1,91 @@
+import { JLPTMondai } from "../jlptN5_Real2025";
+
+export const PRACTICE_KANJI_LESSON_1: JLPTMondai[] = [
+    {
+        id: 1,
+        instruction: "________の　ことばは　どう　よみますか。\n１・２・３・４から　いちばん　いい　ものを　ひとつ\nえらんで　ください。",
+        questions: [
+            {
+                id: 1,
+                mondaiId: 1,
+                questionText: "わたしは <u>学生</u> です。",
+                options: ["がくせい", "せんせい", "かいしゃいん", "いしゃ"],
+                correctAnswer: 0,
+                explanation: "学生 (Học sinh/Sinh viên) đọc là 'gakusei'.",
+            },
+            {
+                id: 2,
+                mondaiId: 1,
+                questionText: "あのひとは <u>先生</u> ですか。",
+                options: ["せんせ", "せんせい", "ぜんせい", "せんぜい"],
+                correctAnswer: 1,
+                explanation: "先生 (Giáo viên) đọc là 'sensei'. Long vowel 'ei'.",
+            },
+            {
+                id: 3,
+                mondaiId: 1,
+                questionText: "<u>会社員</u> ですか。",
+                options: ["かいしゃい", "かいしゃいん", "がいしゃいん", "かいしやいん"],
+                correctAnswer: 1,
+                explanation: "会社員 (Nhân viên công ty) đọc là 'kaishain'.",
+            },
+            {
+                id: 4,
+                mondaiId: 1,
+                questionText: "<u>日本</u> から 来ました。",
+                options: ["にほん", "にっぽん", "ひほん", "にちほん"],
+                correctAnswer: 0,
+                explanation: "日本 (Nhật Bản) đọc là 'nihon'.",
+            },
+            {
+                id: 5,
+                mondaiId: 1,
+                questionText: "あの <u>人</u> は だれ ですか。",
+                options: ["ひと", "じん", "にん", "びと"],
+                correctAnswer: 0,
+                explanation: "あの人 (Người kia) đọc là 'ano hito'.",
+            },
+            {
+                id: 6,
+                mondaiId: 1,
+                questionText: "ここは <u>大学</u> です。",
+                options: ["だいがく", "たいがく", "だいかく", "おおがく"],
+                correctAnswer: 0,
+                explanation: "大学 (Đại học) đọc là 'daigaku'.",
+            },
+            {
+                id: 7,
+                mondaiId: 1,
+                questionText: "<u>私</u> は マイク です。",
+                options: ["わたし", "わだす", "あてし", "わたくし"],
+                correctAnswer: 0,
+                explanation: "私 (Tôi) đọc là 'watashi' ở mức độ lịch sự thông thường.",
+            },
+            {
+                id: 8,
+                mondaiId: 1,
+                questionText: "<u>銀行員</u> です。",
+                options: ["ぎんこういん", "きんこういん", "ぎんこいん", "ぎんごういん"],
+                correctAnswer: 0,
+                explanation: "銀行員 (Nhân viên ngân hàng) đọc là 'ginkouin'.",
+            },
+            {
+                id: 9,
+                mondaiId: 1,
+                questionText: "父 は <u>医者</u> です。",
+                options: ["いしゃ", "いさ", "いしや", "ひしゃ"],
+                correctAnswer: 0,
+                explanation: "医者 (Bác sĩ) đọc là 'isha'.",
+            },
+            {
+                id: 10,
+                mondaiId: 1,
+                questionText: "お <u>名前</u> は 何 ですか。",
+                options: ["なまえ", "のまえ", "なまい", "めいぜん"],
+                correctAnswer: 0,
+                explanation: "名前 (Tên) đọc là 'namae'.",
+            },
+        ],
+    },
+];
+

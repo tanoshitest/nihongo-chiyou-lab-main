@@ -141,9 +141,16 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
                                         {/* Question Content */}
                                         <div className="flex-grow space-y-6 pt-1 w-full">
                                             {/* Question Text / Image */}
-                                            <div className="text-xl md:text-2xl leading-relaxed tracking-wide">
-                                                {q.questionText}
-                                            </div>
+                                            {typeof q.questionText === 'string' ? (
+                                                <div
+                                                    className="text-xl md:text-2xl leading-relaxed tracking-wide [&_u]:underline-offset-4 [&_u]:decoration-2"
+                                                    dangerouslySetInnerHTML={{ __html: q.questionText }}
+                                                />
+                                            ) : (
+                                                <div className="text-xl md:text-2xl leading-relaxed tracking-wide">
+                                                    {q.questionText}
+                                                </div>
+                                            )}
 
                                             {q.imageUrl && (
                                                 <div className="max-w-md overflow-hidden">
@@ -176,7 +183,7 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
 
                                             {/* Options */}
                                             <div className={cn(
-                                                "grid gap-x-8 gap-y-4 pt-4",
+                                                "grid gap-x-8 gap-y-4 pt-3",
                                                 q.optionsLayout === '1-col' ? "grid-cols-1" :
                                                     q.optionsLayout === '2-col' ? "grid-cols-1 md:grid-cols-2" :
                                                         q.optionsLayout === '3-col' ? "grid-cols-1 md:grid-cols-3" :
@@ -222,7 +229,7 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
                                                             {/* Option Number and Text */}
                                                             <div className={cn(
                                                                 "text-lg md:text-xl flex gap-3 items-baseline relative",
-                                                                isSelected ? "font-bold" : ""
+                                                                isSelected ? "[text-shadow:0_0_0.9px_currentColor]" : ""
                                                             )}>
                                                                 {/* Option Number with Red Circle if Correct */}
                                                                 <span className="font-normal relative inline-block">

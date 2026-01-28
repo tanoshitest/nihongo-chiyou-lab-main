@@ -52,6 +52,7 @@ import {
 import JLPTCoverPage from "@/components/exam/jlpt/JLPTCoverPage";
 import JLPTSectionIntro from "@/components/exam/jlpt/JLPTSectionIntro";
 import JLPTQuestionView from "@/components/exam/jlpt/JLPTQuestionView";
+import { PRACTICE_KANJI_LESSON_1 } from "@/data/practice/kanjiLesson1";
 
 type ExamState =
   | "intro"
@@ -86,6 +87,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
   const sessionLabel = isPractice ? "Luyện tập" : (session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12");
   const [examState, setExamState] = useState<ExamState>("intro");
   const [examData, setExamData] = useState<ExamData | null>(null);
+  const isSpecialPractice = practiceId === "practice-n5-kanji-1";
 
   // ... (rest of state items are same)
   const [timeLeft, setTimeLeft] = useState(0);
@@ -103,6 +105,17 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
 
   // Initialize exam data
   useEffect(() => {
+    // Check for specific practice exams
+    if (practiceId === "practice-n5-kanji-1") {
+      // Create a mock ExamData structure where section1 contains our practice questions
+      setExamData({
+        section1: [], // Not used for this mode as we use JLPTMondai
+        section2: [],
+        section3: []
+      } as any);
+      return;
+    }
+
     // If practice mode, we might want to load different structure or generic mock for now
     // For this demo, we will use the standard generateMockExamData but we should ideally custom-tailor it
     // In a real app, fetch(practiceId)
@@ -168,8 +181,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
 
   // Submit section and show section result
   const handleSubmitSection = useCallback(() => {
-    // Determine if this is the "Real JLPT 2025" exam
-    const isRealJLPT = session === "july" && year === 2025;
+    // Determine if this is the "Real JLPT 2025" exam OR our special practice exam
+    const isRealJLPT = (session === "july" && year === 2025) || isSpecialPractice;
 
     if (isRealJLPT) {
       // Special Scoring for Real JLPT 2025
@@ -184,16 +197,21 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
       const SECTION_MAX = 60;
 
       if (examState === "section1") {
-        raw = calculateJLPTSectionScore(answers.section1, jlptVocabData);
-        // Total Questions: ? We need to count them.
-        // jlptVocabData has 4 mondais.
-        const totalQ = jlptVocabData.reduce((acc, m) => acc + m.questions.length, 0);
+        const dataToUse = isSpecialPractice ? PRACTICE_KANJI_LESSON_1 : jlptVocabData;
+        raw = calculateJLPTSectionScore(answers.section1, dataToUse);
+        // Total Questions:
+        const totalQ = dataToUse.reduce((acc, m) => acc + m.questions.length, 0);
         scaled = Math.round((raw / totalQ) * SECTION_MAX);
 
         setRawScores(prev => ({ ...prev, section1: raw }));
         setScores(prev => ({ ...prev, section1: scaled }));
-        // Go directly to next section intro
-        setExamState("section2_intro");
+        // Go directly to next section intro OR finish if practice
+        if (isSpecialPractice) {
+          setExamState("final_result");
+          if (onFinish) onFinish();
+        } else {
+          setExamState("section2_intro");
+        }
       } else if (examState === "section2") {
         raw = calculateJLPTSectionScore(answers.section2, jlptGrammarData);
         const totalQ = jlptGrammarData.reduce((acc, m) => acc + m.questions.length, 0);
@@ -225,7 +243,12 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
       const scaled = calculateScaledScore(raw, examData.section1.length, 60);
       setRawScores(prev => ({ ...prev, section1: raw }));
       setScores(prev => ({ ...prev, section1: scaled }));
-      setExamState("result1");
+      if (isSpecialPractice) {
+        setExamState("final_result");
+        if (onFinish) onFinish();
+      } else {
+        setExamState("result1");
+      }
     } else if (examState === "section2") {
       const raw = calculateSectionScore(answers.section2, examData.section2);
       const scaled = calculateScaledScore(raw, examData.section2.length, 60);
@@ -246,7 +269,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
     if (isPractice && examData && examState === "intro") {
       handleStartExam();
     }
-  }, [isPractice, examData, examState]);
+  }, [isPractice, examData, examState, isSpecialPractice]);
 
   // Timer logic - auto submit section when time is up
   useEffect(() => {
@@ -286,17 +309,17 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
   };
 
   /* -----------------------------------------------------------
-   * REAL JLPT 2025 RENDER LOGIC
+   * REAL JLPT 2025 & PRACTICE RENDER LOGIC
    * ----------------------------------------------------------- */
-  const isRealJLPT = session === "july" && year === 2025;
+  const isRealJLPT = (session === "july" && year === 2025) || isSpecialPractice;
   if (isRealJLPT) {
     // 1. COVER PAGE
     if (examState === "intro") {
       return (
         <JLPTCoverPage
-          onStart={() => setExamState("section1_intro")}
+          onStart={() => setExamState(isSpecialPractice ? "section1" : "section1_intro")}
           level={level}
-          sectionName="言語知識（文字・語彙）"
+          sectionName={isSpecialPractice ? "Luyện tập Kanji (Bài 1)" : "言語知識（文字・語彙）"}
         />
       );
     }
@@ -334,15 +357,72 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
 
     // 2. TAKING SECTIONS
     if (["section1", "section2", "section3"].includes(examState)) {
+      // SPECIAL PRACTICE MODE (Explicit separation)
+      // This ensures we NEVER accidentally load real JLPT data for this specific practice
+      if (isSpecialPractice && examState === "section1") {
+        return (
+          <div className="min-h-screen bg-white pb-20 font-jlpt text-black">
+            {/* Header with Timer */}
+            <div className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-black z-50 flex items-center justify-between px-4 lg:px-8">
+              <div className="font-bold text-xl font-sans tracking-wide flex items-center gap-2">
+                <span>JLPT N5</span>
+                <span>-</span>
+                <span>Luyện tập Kanji</span>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg font-mono text-lg font-bold bg-black text-white">
+                  <Clock className="h-5 w-5" />
+                  {formatTime(timeLeft)}
+                </div>
+
+                <AlertDialog>
+                  <AlertDialogTrigger asChild>
+                    <Button variant="default" className="bg-red-600 hover:bg-red-700 text-white">
+                      Nộp bài
+                    </Button>
+                  </AlertDialogTrigger>
+                  <AlertDialogContent className="bg-white">
+                    <AlertDialogHeader>
+                      <AlertDialogTitle>Bạn có chắc chắn muốn nộp bài?</AlertDialogTitle>
+                      <AlertDialogDescription>
+                        Sau khi nộp, bạn sẽ xem được kết quả ngay lập tức.
+                      </AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                      <AlertDialogCancel>Hủy</AlertDialogCancel>
+                      <AlertDialogAction onClick={handleSubmitSection} className="bg-red-600 hover:bg-red-700 text-white">
+                        Nộp bài
+                      </AlertDialogAction>
+                    </AlertDialogFooter>
+                  </AlertDialogContent>
+                </AlertDialog>
+              </div>
+            </div>
+
+            <div className="pt-20">
+              <JLPTQuestionView
+                mondaiList={PRACTICE_KANJI_LESSON_1}
+                answers={answers.section1}
+                onAnswer={(qId, val) => handleAnswerChange(qId, val)}
+                hideQuestionId={false}
+              />
+            </div>
+
+
+          </div>
+        );
+      }
+
       const currentJLPTData =
         examState === "section1" ? jlptVocabData :
           examState === "section2" ? jlptGrammarData :
             jlptListeningData;
-
       const isListening = examState === "section3";
 
       return (
         <div className="min-h-screen bg-white pb-20 font-jlpt text-black">
+
           {/* Header with Timer (Simplified for JLPT look) */}
           <div className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-black z-50 flex items-center justify-between px-4 lg:px-8">
             <div className="font-bold text-xl font-sans tracking-wide flex items-center gap-2">
@@ -417,17 +497,19 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
           </div>
 
           {/* Fixed Submit Button */}
-          <div className="fixed bottom-0 left-0 right-0 p-4 bg-card border-t z-40">
-            <div className="max-w-4xl mx-auto flex items-center justify-between">
-              <div className="text-sm text-muted-foreground">
-                JLPT Exam
+          {!isSpecialPractice && (
+            <div className="fixed bottom-0 left-0 right-0 p-4 bg-card border-t z-40">
+              <div className="max-w-4xl mx-auto flex items-center justify-between">
+                <div className="text-sm text-muted-foreground">
+                  JLPT Exam
+                </div>
+                <Button onClick={handleSubmitSection} size="lg">
+                  Nộp phần {examState === 'section1' ? 1 : examState === 'section2' ? 2 : 3}
+                  <CheckCircle2 className="ml-2 h-4 w-4" />
+                </Button>
               </div>
-              <Button onClick={handleSubmitSection} size="lg">
-                Nộp phần {examState === 'section1' ? 1 : examState === 'section2' ? 2 : 3}
-                <CheckCircle2 className="ml-2 h-4 w-4" />
-              </Button>
             </div>
-          </div>
+          )}
         </div>
       );
     }
@@ -505,7 +587,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
     // RENDER: Final Result
     if (examState === "final_result") {
       // Determine if Real JLPT 2025
-      const isRealJLPT = session === "july" && year === 2025;
+      const isSpecialPractice = practiceId === "practice-n5-kanji-1";
+      const isRealJLPT = (session === "july" && year === 2025) || isSpecialPractice;
 
       if (isRealJLPT) {
         const passResult = checkPassStatus(scores.section1, scores.section2, scores.section3);
@@ -515,77 +598,100 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
         return (
           <div className="min-h-screen bg-white py-8 px-4 font-jlpt text-black">
             <div className="max-w-6xl mx-auto space-y-8">
-              {/* 1. Overview Card */}
-              <div className="border border-black bg-white">
-                <div className="p-4 border-b border-black">
-                  <h2 className="text-xl font-bold flex items-center gap-2">
-                    <span className="text-2xl">◎</span>
-                    Tổng quan kết quả
-                  </h2>
-                </div>
-                <div className="p-6">
-                  <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-black">
-                    {/* Section 1 Score */}
-                    <div className="text-center p-4 border-b md:border-b-0 border-r border-black last:border-r-0 last:border-b-0">
-                      <div className="text-sm font-bold mb-1">言語知識（文字・語彙）</div>
-                      <div className="text-xs mb-2">Language Knowledge (Vocab)</div>
-                      <div className="text-4xl font-bold my-2">{scores.section1}/60</div>
-                      <div className="text-sm">
-                        {Object.keys(answers.section1).filter(k => answers.section1[Number(k)] === jlptVocabData.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer).length}/{jlptVocabData.reduce((acc, m) => acc + m.questions.length, 0)} câu đúng
+              {/* 1. Overview Card - Hide for Special Practice */}
+              {!isSpecialPractice && (
+                <div className="border border-black bg-white">
+                  <div className="p-4 border-b border-black">
+                    <h2 className="text-xl font-bold flex items-center gap-2">
+                      <span className="text-2xl">◎</span>
+                      Tổng quan kết quả
+                    </h2>
+                  </div>
+                  <div className="p-6">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-black">
+                      {/* Section 1 Score */}
+                      <div className="text-center p-4 border-b md:border-b-0 border-r border-black last:border-r-0 last:border-b-0">
+                        <div className="text-sm font-bold mb-1">言語知識（文字・語彙）</div>
+                        <div className="text-xs mb-2">{isSpecialPractice ? "Kanji Practice" : "Language Knowledge (Vocab)"}</div>
+                        <div className="text-4xl font-bold my-2">{scores.section1}/60</div>
+                        <div className="text-sm">
+                          {Object.keys(answers.section1).filter(k => String(answers.section1[Number(k)]) === String((isSpecialPractice ? PRACTICE_KANJI_LESSON_1 : jlptVocabData).flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer)).length}/{(isSpecialPractice ? PRACTICE_KANJI_LESSON_1 : jlptVocabData).reduce((acc, m) => acc + m.questions.length, 0)} câu đúng
+                        </div>
+                      </div>
+
+                      {/* Section 2 Score */}
+                      {!isSpecialPractice && (
+                        <div className="text-center p-4 border-b md:border-b-0 border-r border-black last:border-r-0 last:border-b-0">
+                          <div className="text-sm font-bold mb-1">言語知識（文法）・読解</div>
+                          <div className="text-xs mb-2">Language Knowledge (Grammar)</div>
+                          <div className="text-4xl font-bold my-2">{scores.section2}/60</div>
+                          <div className="text-sm">
+                            {Object.keys(answers.section2).filter(k => String(answers.section2[Number(k)]) === String(jlptGrammarData.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer)).length}/{jlptGrammarData.reduce((acc, m) => acc + m.questions.length, 0)} câu đúng
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Section 3 Score */}
+                      {!isSpecialPractice && (
+                        <div className="text-center p-4 border-b md:border-b-0 border-r border-black last:border-r-0 last:border-b-0">
+                          <div className="text-sm font-bold mb-1">聴解</div>
+                          <div className="text-xs mb-2">Listening</div>
+                          <div className="text-4xl font-bold my-2">{scores.section3}/60</div>
+                          <div className="text-sm">
+                            {Object.keys(answers.section3).filter(k => String(answers.section3[Number(k)]) === String(jlptListeningData.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer)).length}/{jlptListeningData.reduce((acc, m) => acc + m.questions.length, 0)} câu đúng
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Total Score Badge */}
+                      <div className="flex flex-col items-center justify-center p-4 bg-white">
+                        <div className="text-base font-bold underline mb-1">TỔNG ĐIỂM</div>
+                        <div className="text-5xl font-black mb-2">
+                          {totalScore}/180
+                        </div>
+                        <div className="border border-black px-6 py-1 text-lg font-bold bg-black text-white">
+                          {isPassed ? "ĐẬU (合格)" : "TRƯỢT (不合格)"}
+                        </div>
                       </div>
                     </div>
 
-                    {/* Section 2 Score */}
-                    <div className="text-center p-4 border-b md:border-b-0 border-r border-black last:border-r-0 last:border-b-0">
-                      <div className="text-sm font-bold mb-1">言語知識（文法）・読解</div>
-                      <div className="text-xs mb-2">Language Knowledge (Grammar)</div>
-                      <div className="text-4xl font-bold my-2">{scores.section2}/60</div>
-                      <div className="text-sm">
-                        {Object.keys(answers.section2).filter(k => answers.section2[Number(k)] === jlptGrammarData.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer).length}/{jlptGrammarData.reduce((acc, m) => acc + m.questions.length, 0)} câu đúng
+                    {/* Comment Box */}
+                    <div className="mt-8 border border-black p-4 flex gap-4">
+                      <div className="shrink-0 pt-0.5">
+                        <div className="w-6 h-6 border border-black rounded-full flex items-center justify-center font-bold text-sm">!</div>
                       </div>
-                    </div>
-
-                    {/* Section 3 Score */}
-                    <div className="text-center p-4 border-b md:border-b-0 border-r border-black last:border-r-0 last:border-b-0">
-                      <div className="text-sm font-bold mb-1">聴解</div>
-                      <div className="text-xs mb-2">Listening</div>
-                      <div className="text-4xl font-bold my-2">{scores.section3}/60</div>
-                      <div className="text-sm">
-                        {Object.keys(answers.section3).filter(k => answers.section3[Number(k)] === jlptListeningData.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer).length}/{jlptListeningData.reduce((acc, m) => acc + m.questions.length, 0)} câu đúng
-                      </div>
-                    </div>
-
-                    {/* Total Score Badge */}
-                    <div className="flex flex-col items-center justify-center p-4 bg-white">
-                      <div className="text-base font-bold underline mb-1">TỔNG ĐIỂM</div>
-                      <div className="text-5xl font-black mb-2">
-                        {totalScore}/180
-                      </div>
-                      <div className="border border-black px-6 py-1 text-lg font-bold bg-black text-white">
-                        {isPassed ? "ĐẬU (合格)" : "TRƯỢT (不合格)"}
+                      <div>
+                        <div className="font-bold underline mb-1">Nhận xét chung:</div>
+                        <p className="text-sm leading-relaxed">
+                          {isPassed
+                            ? "Chúc mừng bạn đã hoàn thành xuất sắc bài thi! Hãy tiếp tục duy trì phong độ nhé!"
+                            : "Bạn cần cố gắng hơn ở các phần thi chưa đạt điểm cao. Hãy ôn tập lại từ vựng và luyện nghe thêm nhé!"}
+                        </p>
                       </div>
                     </div>
                   </div>
-
-                  {/* Comment Box */}
-                  <div className="mt-8 border border-black p-4 flex gap-4">
-                    <div className="shrink-0 pt-0.5">
-                      <div className="w-6 h-6 border border-black rounded-full flex items-center justify-center font-bold text-sm">!</div>
-                    </div>
-                    <div>
-                      <div className="font-bold underline mb-1">Nhận xét chung:</div>
-                      <p className="text-sm leading-relaxed">
-                        {isPassed
-                          ? "Chúc mừng bạn đã hoàn thành xuất sắc bài thi! Hãy tiếp tục duy trì phong độ nhé!"
-                          : "Bạn cần cố gắng hơn ở các phần thi chưa đạt điểm cao. Hãy ôn tập lại từ vựng và luyện nghe thêm nhé!"}
-                      </p>
-                    </div>
-                  </div>
                 </div>
-              </div>
+              )}
+            </div>
 
-              {/* 2. Review Tabs */}
-              <div className="bg-white min-h-[500px]">
+            {/* 2. Review Tabs / Section Review */}
+            <div className="bg-white min-h-[500px]">
+              {isSpecialPractice ? (
+                // For Special Practice: Show only Section 1 Review directly
+                <div className="space-y-8">
+                  <div className="border-b border-black mb-6 pb-2">
+                    <h2 className="text-xl font-bold">Xem lại đáp án</h2>
+                  </div>
+                  <JLPTQuestionView
+                    mondaiList={PRACTICE_KANJI_LESSON_1}
+                    answers={answers.section1}
+                    onAnswer={() => { }}
+                    hideQuestionId={false}
+                    showResults={true}
+                  />
+                </div>
+              ) : (
+                // For Real Exam: Show Tabs
                 <Tabs defaultValue="section1" className="w-full">
                   <div className="border-b border-black mb-6">
                     <TabsList className="bg-transparent h-auto p-0 gap-0 w-full justify-start flex-wrap">
@@ -617,7 +723,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                         answers={answers.section1}
                         onAnswer={() => { }}
                         hideQuestionId={false}
-                        showResults={true} // Highlighting enabled
+                        showResults={true}
                       />
                     </TabsContent>
 
@@ -642,7 +748,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                     </TabsContent>
                   </div>
                 </Tabs>
-              </div>
+              )}
             </div>
           </div>
         );

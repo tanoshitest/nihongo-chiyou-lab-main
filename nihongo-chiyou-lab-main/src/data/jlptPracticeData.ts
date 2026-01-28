@@ -15,12 +15,12 @@ const generateId = (level: string, category: string, index: number) =>
 export const JLPT_PRACTICE_EXAMS: PracticeExam[] = [
     // --- N5 KANJI ---
     {
-        id: generateId("N5", "kanji", 1),
-        title: "Đề luyện tập N5 - Kanji 1",
+        id: "practice-n5-kanji-1",
+        title: "Đề luyện tập N5 - Kanji 1 (Bài 1)",
         level: "N5",
         category: "kanji",
-        totalQuestions: 15,
-        duration: 15,
+        totalQuestions: 10,
+        duration: 10,
         difficulty: "Dễ"
     },
     {
