@@ -53,7 +53,11 @@ export const jlptVocabData: JLPTMondai[] = [
             {
                 id: 1,
                 mondaiId: 1,
-                questionText: "あたらしい　くるまです。",
+                questionText: (
+                    <span>
+                        <span className="underline underline-offset-4">あたらしい</span>　くるまです。
+                    </span>
+                ),
                 options: ["新しい", "新らしい", "新" + "しい", "新い"],
                 optionsLayout: '2-col',
                 correctAnswer: 0,
@@ -61,7 +65,11 @@ export const jlptVocabData: JLPTMondai[] = [
             {
                 id: 2,
                 mondaiId: 1,
-                questionText: "でんきを　消して　ください。",
+                questionText: (
+                    <span>
+                        <span className="underline underline-offset-4">でんき</span>を　消して　ください。
+                    </span>
+                ),
                 options: ["天気", "電気", "元気", "電氣"],
                 optionsLayout: '4-col',
                 correctAnswer: 1,
@@ -75,7 +83,11 @@ export const jlptVocabData: JLPTMondai[] = [
             {
                 id: 3,
                 mondaiId: 2,
-                questionText: "外で　たべましょう。",
+                questionText: (
+                    <span>
+                        <span className="underline underline-offset-4">外</span>で　たべましょう。
+                    </span>
+                ),
                 options: ["そと", "うち", "なか", "まえ"],
                 optionsLayout: '4-col',
                 correctAnswer: 0,
@@ -83,7 +95,11 @@ export const jlptVocabData: JLPTMondai[] = [
             {
                 id: 4,
                 mondaiId: 2,
-                questionText: "ホテルに　とまります。",
+                questionText: (
+                    <span>
+                        <span className="underline underline-offset-4">ホテル</span>に　とまります。
+                    </span>
+                ),
                 options: ["ほてる", "ほてら", "ほてり", "ほてろ"],
                 optionsLayout: '4-col',
                 correctAnswer: 0,

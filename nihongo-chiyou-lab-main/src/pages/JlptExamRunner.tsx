@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { ExamRunner } from "@/components/exam/ExamRunner";
@@ -7,6 +8,7 @@ import { ArrowLeft } from "lucide-react";
 const JlptExamRunner = () => {
   const { level, year, session } = useParams();
   const navigate = useNavigate();
+  const [isExamFinished, setIsExamFinished] = useState(false);
 
   const isPractice = year === "practice";
   const sessionLabel = isPractice
@@ -16,7 +18,7 @@ const JlptExamRunner = () => {
   const isRealJLPTSession = session === "july" && year === "2025";
 
   return (
-    <Layout hideFooter={isRealJLPTSession}>
+    <Layout hideFooter={isRealJLPTSession && !isExamFinished} hideHeader={isRealJLPTSession && !isExamFinished}>
       {/* Back button header - Hide for Real JLPT 2025 */}
       {!isRealJLPTSession && (
         <div className="bg-background border-b px-4 py-3">
@@ -46,6 +48,7 @@ const JlptExamRunner = () => {
         session={session as any}
         isPractice={isPractice}
         practiceId={isPractice ? session : undefined}
+        onFinish={() => setIsExamFinished(true)}
       />
     </Layout>
   );
