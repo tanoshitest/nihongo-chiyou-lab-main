@@ -407,88 +407,28 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
             </div>
           </div>
 
-          <div className="max-w-4xl mx-auto p-4">
-            <div className="space-y-6 pb-24">
-              {questions.map((question, index) => (
-                <Card
-                  key={question.id}
-                  id={`question-${question.id}`}
-                  className={cn(
-                    "border-2 transition-colors",
-                    currentAnswers[question.id] ? "border-primary/30" : "border-transparent"
-                  )}
-                >
-                  <CardContent className="p-5">
-                    <div className="flex items-start gap-4">
-                      <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm shrink-0">
-                        {index + 1}
-                      </div>
-                      <div className="flex-1 space-y-4">
-                        <div className="flex items-start justify-between">
-                          <p className="font-medium text-lg">{question.questionText}</p>
-                          {isListening && (
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              className="shrink-0 ml-2 hover:bg-gray-100"
-                              onClick={() => audioRef.current?.play()}
-                            >
-                              <Volume2 className="h-4 w-4 mr-1" />
-                              Phát âm thanh
-                            </Button>
-                          )}
-                        </div>
-                        <RadioGroup
-                          value={currentAnswers[question.id] || ""}
-                          onValueChange={(value) => handleAnswerChange(question.id, value)}
-                          className="grid grid-cols-2 gap-3"
-                        >
-                          {question.options.map((option, optIndex) => (
-                            <div key={optIndex} className="flex items-center space-x-2">
-                              <RadioGroupItem
-                                value={option}
-                                id={`q${question.id}-opt${optIndex}`}
-                                className="peer sr-only"
-                              />
-                              <Label
-                                htmlFor={`q${question.id}-opt${optIndex}`}
-                                className={cn(
-                                  "flex items-center gap-3 w-full p-3 rounded-lg border-2 cursor-pointer transition-all",
-                                  currentAnswers[question.id] === option
-                                    ? "border-primary bg-primary/5"
-                                    : "border-border hover:border-primary/50"
-                                )}
-                              >
-                                <span className="h-6 w-6 rounded-full border-2 flex items-center justify-center text-sm font-medium shrink-0">
-                                  {String.fromCharCode(65 + optIndex)}
-                                </span>
-                                <span>{option}</span>
-                              </Label>
-                            </div>
-                          ))}
-                        </RadioGroup>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card >
-              ))
-              }
-            </div >
-          </div >
+          <div className="pt-20">
+            <JLPTQuestionView
+              mondaiList={currentJLPTData}
+              answers={answers[examState as keyof SectionAnswers]}
+              onAnswer={(qId, val) => handleAnswerChange(qId, val)}
+              hideQuestionId={false}
+            />
+          </div>
 
           {/* Fixed Submit Button */}
-          < div className="fixed bottom-0 left-0 right-0 p-4 bg-card border-t" >
+          <div className="fixed bottom-0 left-0 right-0 p-4 bg-card border-t z-40">
             <div className="max-w-4xl mx-auto flex items-center justify-between">
               <div className="text-sm text-muted-foreground">
-                Đã trả lời: {Object.keys(currentAnswers).length}/{questions.length}
+                JLPT Exam
               </div>
               <Button onClick={handleSubmitSection} size="lg">
-                Nộp phần {getCurrentSectionIndex() + 1}
+                Nộp phần {examState === 'section1' ? 1 : examState === 'section2' ? 2 : 3}
                 <CheckCircle2 className="ml-2 h-4 w-4" />
               </Button>
             </div>
-          </div >
-        </div >
+          </div>
+        </div>
       );
     }
 

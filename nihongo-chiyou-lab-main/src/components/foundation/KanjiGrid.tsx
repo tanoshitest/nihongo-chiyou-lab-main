@@ -22,6 +22,9 @@ const KanjiGrid = () => {
   // Selection State with Persistence
 
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 24;
+
   const handleCardFlip = (id: number) => {
     setActiveCardId(activeCardId === id ? null : id);
   };
@@ -33,8 +36,6 @@ const KanjiGrid = () => {
     if (selectedLesson !== "all") {
       filtered = filtered.filter((kanji) => kanji.lesson === parseInt(selectedLesson));
     }
-
-
 
     // Filter by Search Query
     if (searchQuery.trim()) {
@@ -50,6 +51,17 @@ const KanjiGrid = () => {
 
     return filtered;
   }, [selectedLesson, searchQuery]);
+
+  // Reset to page 1 when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedLesson, searchQuery]);
+
+  const totalPages = Math.ceil(filteredKanji.length / ITEMS_PER_PAGE);
+  const paginatedKanji = filteredKanji.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
 
   const lessons = Array.from({ length: 32 }, (_, i) => i + 1);
 
@@ -98,7 +110,7 @@ const KanjiGrid = () => {
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {filteredKanji.map((kanji) => (
+        {paginatedKanji.map((kanji) => (
           <KanjiFlipCard
             key={kanji.id}
             kanji={kanji}
@@ -108,14 +120,45 @@ const KanjiGrid = () => {
         ))}
       </div>
 
-      {
-        filteredKanji.length === 0 && (
-          <div className="text-center py-12 text-muted-foreground">
-            Không tìm thấy Kanji nào phù hợp với tìm kiếm của bạn.
+      {filteredKanji.length === 0 ? (
+        <div className="text-center py-12 text-muted-foreground">
+          Không tìm thấy Kanji nào phù hợp với tìm kiếm của bạn.
+        </div>
+      ) : (
+        /* Pagination Controls */
+        <div className="flex justify-center items-center gap-2 mt-8">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => {
+              setCurrentPage(p => Math.max(1, p - 1));
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            disabled={currentPage === 1}
+          >
+            Trước
+          </Button>
+
+          <div className="flex items-center gap-2 mx-2">
+            <span className="text-sm font-medium">
+              Trang {currentPage} / {totalPages}
+            </span>
           </div>
-        )
-      }
-    </div >
+
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => {
+              setCurrentPage(p => Math.min(totalPages, p + 1));
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            disabled={currentPage === totalPages}
+          >
+            Sau
+          </Button>
+        </div>
+      )}
+    </div>
   );
 };
 
