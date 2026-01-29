@@ -6,7 +6,7 @@ const jlptLevels = [
   {
     icon: BookOpen,
     title: "JLPT N5",
-    description: "Cấp độ sơ cấp 1. Hiểu được Hiragana, Katakana và các biểu thức cơ bản trong giao tiếp hàng ngày.",
+    description: "Cấp độ sơ cấp 1. Hiểu được Hiragana, Katakana và giao tiếp cơ bản hàng ngày.",
     buttonText: "Xem đề thi",
     href: "/jlpt/n5",
   },

@@ -1,4 +1,4 @@
-import { BookOpen, GraduationCap, FileText, Video, PenTool, Palette } from "lucide-react";
+import { BookOpen, GraduationCap, FileText, Palette } from "lucide-react";
 import FeatureCard from "./FeatureCard";
 
 const features = [
@@ -30,20 +30,6 @@ const features = [
     buttonText: "Làm đề thi",
     href: "/jlpt-n5",
   },
-  {
-    icon: Video,
-    title: "Học qua Tin tức",
-    description: "Luyện nghe và đọc với video song ngữ, tính năng tra từ điển nhanh ngay trên phụ đề.",
-    buttonText: "Xem video",
-    href: "#",
-  },
-  {
-    icon: PenTool,
-    title: "Blog chia sẻ",
-    description: "Kinh nghiệm thi cử, văn hóa Nhật Bản và bí quyết học nhanh nhớ lâu.",
-    buttonText: "Đọc thêm",
-    href: "#",
-  },
 ];
 
 const FeaturesGrid = () => {
@@ -61,7 +47,7 @@ const FeaturesGrid = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
           {features.map((feature, index) => (
             <FeatureCard
               key={feature.title}
