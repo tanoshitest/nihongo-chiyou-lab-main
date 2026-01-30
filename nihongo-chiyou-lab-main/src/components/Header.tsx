@@ -15,11 +15,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background">
+    <header className="sticky top-0 z-50 w-full border-b border-black/10 bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-xl font-extrabold text-primary">
+          <span className="text-xl font-extrabold text-black">
             Tiếng nhật vui vẻ
           </span>
         </Link>
@@ -30,7 +30,7 @@ const Header = () => {
             <Link
               key={link.name}
               to={link.href}
-              className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors rounded-lg hover:bg-accent"
+              className="px-4 py-2 text-sm font-semibold text-black hover:bg-black/5 transition-colors rounded-lg"
             >
               {link.name}
             </Link>
@@ -41,7 +41,7 @@ const Header = () => {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden"
+          className="md:hidden text-black hover:bg-black/5"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -51,13 +51,13 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-border bg-background animate-fade-in">
+        <div className="md:hidden border-t border-black/10 bg-background animate-fade-in">
           <nav className="container py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
-                className="px-4 py-3 text-sm font-medium text-foreground/80 hover:text-primary transition-colors rounded-lg hover:bg-accent"
+                className="px-4 py-3 text-sm font-semibold text-black hover:bg-black/5 transition-colors rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}

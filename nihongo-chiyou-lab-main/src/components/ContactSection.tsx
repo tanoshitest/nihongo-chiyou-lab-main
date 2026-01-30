@@ -19,7 +19,7 @@ const ContactSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
       toast.error("Vui lòng điền đầy đủ thông tin bắt buộc");
       return;
@@ -32,10 +32,10 @@ const ContactSection = () => {
     }
 
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
     toast.success("Gửi tin nhắn thành công! Chúng tôi sẽ phản hồi sớm nhất.");
     setFormData({ name: "", email: "", phone: "", message: "" });
     setIsSubmitting(false);
@@ -44,32 +44,31 @@ const ContactSection = () => {
   return (
     <section className="py-20 lg:py-28 bg-background relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute inset-0 pointer-events-none">
+
       </div>
 
       <div className="container relative">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
               Liên hệ với chúng tôi
             </h2>
-            <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+            <p className="text-lg text-black/70 max-w-xl mx-auto">
               Bạn có câu hỏi hoặc góp ý? Hãy để lại tin nhắn, đội ngũ sẽ phản hồi trong thời gian sớm nhất.
             </p>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-card rounded-2xl shadow-card border border-border p-8 md:p-10">
+          <div className="bg-white rounded-2xl shadow-sm border border-black/10 p-8 md:p-10">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Name Field */}
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-foreground flex items-center gap-2">
-                    <User className="h-4 w-4 text-primary" />
-                    Họ và tên <span className="text-destructive">*</span>
+                  <label htmlFor="name" className="text-sm font-medium text-black flex items-center gap-2">
+                    <User className="h-4 w-4 text-black" />
+                    Họ và tên <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="text"
@@ -79,15 +78,15 @@ const ContactSection = () => {
                     onChange={handleChange}
                     maxLength={100}
                     placeholder="Nhập họ và tên của bạn"
-                    className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                    className="w-full px-4 py-3 rounded-lg border border-black/20 bg-background text-black placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-colors"
                   />
                 </div>
 
                 {/* Email Field */}
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium text-foreground flex items-center gap-2">
-                    <Mail className="h-4 w-4 text-primary" />
-                    Email <span className="text-destructive">*</span>
+                  <label htmlFor="email" className="text-sm font-medium text-black flex items-center gap-2">
+                    <Mail className="h-4 w-4 text-black" />
+                    Email <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="email"
@@ -97,16 +96,16 @@ const ContactSection = () => {
                     onChange={handleChange}
                     maxLength={255}
                     placeholder="Nhập địa chỉ email"
-                    className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                    className="w-full px-4 py-3 rounded-lg border border-black/20 bg-background text-black placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-colors"
                   />
                 </div>
               </div>
 
               {/* Phone Field */}
               <div className="space-y-2">
-                <label htmlFor="phone" className="text-sm font-medium text-foreground flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-primary" />
-                  Số điện thoại <span className="text-muted-foreground text-xs">(không bắt buộc)</span>
+                <label htmlFor="phone" className="text-sm font-medium text-black flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-black" />
+                  Số điện thoại <span className="text-black/50 text-xs">(không bắt buộc)</span>
                 </label>
                 <input
                   type="tel"
@@ -116,15 +115,15 @@ const ContactSection = () => {
                   onChange={handleChange}
                   maxLength={20}
                   placeholder="Nhập số điện thoại"
-                  className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                  className="w-full px-4 py-3 rounded-lg border border-black/20 bg-background text-black placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-colors"
                 />
               </div>
 
               {/* Message Field */}
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-foreground flex items-center gap-2">
-                  <MessageSquare className="h-4 w-4 text-primary" />
-                  Nội dung tin nhắn <span className="text-destructive">*</span>
+                <label htmlFor="message" className="text-sm font-medium text-black flex items-center gap-2">
+                  <MessageSquare className="h-4 w-4 text-black" />
+                  Nội dung tin nhắn <span className="text-red-500">*</span>
                 </label>
                 <textarea
                   id="message"
@@ -134,30 +133,29 @@ const ContactSection = () => {
                   maxLength={1000}
                   rows={5}
                   placeholder="Nhập nội dung bạn muốn gửi đến chúng tôi..."
-                  className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-black/20 bg-background text-black placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-colors resize-none"
                 />
-                <p className="text-xs text-muted-foreground text-right">
+                <p className="text-xs text-black/50 text-right">
                   {formData.message.length}/1000 ký tự
                 </p>
               </div>
 
               {/* Submit Button */}
               <div className="pt-2">
-                <Button 
-                  type="submit" 
-                  variant="hero" 
-                  size="lg" 
-                  className="w-full md:w-auto"
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full md:w-auto bg-black text-white hover:bg-black/90"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
                     <>
-                      <div className="h-5 w-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
+                      <div className="h-5 w-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                       Đang gửi...
                     </>
                   ) : (
                     <>
-                      <Send className="h-5 w-5" />
+                      <Send className="h-5 w-5 mr-2" />
                       Gửi tin nhắn
                     </>
                   )}
@@ -166,12 +164,12 @@ const ContactSection = () => {
             </form>
 
             {/* Contact Info */}
-            <div className="mt-10 pt-8 border-t border-border">
-              <p className="text-sm text-muted-foreground text-center">
-                Hoặc liên hệ trực tiếp qua email: 
-                <a 
-                  href="mailto:hello@tiengnhatvuive.com" 
-                  className="text-primary font-medium hover:underline ml-1"
+            <div className="mt-10 pt-8 border-t border-black/10">
+              <p className="text-sm text-black/60 text-center">
+                Hoặc liên hệ trực tiếp qua email:
+                <a
+                  href="mailto:hello@tiengnhatvuive.com"
+                  className="text-black font-medium hover:underline ml-1"
                 >
                   hello@tiengnhatvuive.com
                 </a>

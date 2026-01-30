@@ -67,28 +67,28 @@ const JlptPractice = () => {
           {currentExams.map((exam) => (
             <Card
               key={exam.id}
-              className="hover:shadow-md transition-all hover:border-primary/30 cursor-pointer group shadow-sm"
+              className="hover:shadow-md transition-all hover:border-black/30 cursor-pointer group shadow-sm bg-card border-black/10"
               onClick={() => handleStartExam(exam)}
             >
               <CardContent className="p-3">
                 <div className="flex flex-col md:flex-row md:items-center gap-3">
                   {/* Icon based on category */}
                   <div className={cn(
-                    "w-10 h-10 rounded-md flex items-center justify-center font-bold text-lg shrink-0 border bg-primary/10 text-primary border-primary/20",
+                    "w-10 h-10 rounded-md flex items-center justify-center font-bold text-lg shrink-0 border bg-gray-100 text-black border-black/20",
                   )}>
                     {exam.category === "kanji" && <span>漢</span>}
                     {exam.category === "vocabulary" && <span>字</span>}
                     {exam.category === "grammar" && <span>文</span>}
-                    {exam.category === "reading" && <BookOpen className="w-5 h-5" />}
-                    {exam.category === "listening" && <Headphones className="w-5 h-5" />}
+                    {exam.category === "reading" && <BookOpen className="w-5 h-5 text-black" />}
+                    {exam.category === "listening" && <Headphones className="w-5 h-5 text-black" />}
                   </div>
 
                   {/* Content */}
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-foreground text-sm mb-1 group-hover:text-primary transition-colors leading-tight">
+                    <h3 className="font-semibold text-black text-sm mb-1 group-hover:underline transition-colors leading-tight">
                       {exam.title}
                     </h3>
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
+                    <div className="flex flex-wrap items-center gap-3 text-xs text-black">
                       <span className="flex items-center gap-1">
                         <FileText className="w-3 h-3" />
                         {exam.totalQuestions} câu
@@ -104,7 +104,7 @@ const JlptPractice = () => {
                   {/* Action Button */}
                   <Button
                     size="sm"
-                    className="shrink-0 gap-2 h-8 text-xs px-3"
+                    className="shrink-0 gap-2 h-8 text-xs px-3 bg-black text-white hover:bg-gray-800"
                     onClick={(e) => {
                       e.stopPropagation();
                       handleStartExam(exam);
@@ -123,33 +123,38 @@ const JlptPractice = () => {
         {totalPages > 1 && (
           <div className="flex items-center justify-center gap-2 mt-4">
             <Button
-              variant="outline"
-              size="icon"
+              variant="ghost"
+              size="sm"
               onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
               disabled={currentPage === 1}
+              className="h-8 px-2 text-black hover:bg-gray-100 disabled:opacity-30"
             >
               <ChevronLeft className="w-4 h-4" />
             </Button>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1">
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                <Button
+                <button
                   key={page}
-                  variant={currentPage === page ? "default" : "outline"}
-                  size="sm"
                   onClick={() => setCurrentPage(page)}
-                  className="w-8 h-8 p-0"
+                  className={cn(
+                    "w-8 h-8 flex items-center justify-center text-sm rounded transition-colors",
+                    currentPage === page
+                      ? "font-bold text-black border border-black"
+                      : "text-black hover:bg-gray-100"
+                  )}
                 >
                   {page}
-                </Button>
+                </button>
               ))}
             </div>
 
             <Button
-              variant="outline"
-              size="icon"
+              variant="ghost"
+              size="sm"
               onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
               disabled={currentPage === totalPages}
+              className="h-8 px-2 text-black hover:bg-gray-100 disabled:opacity-30"
             >
               <ChevronRight className="w-4 h-4" />
             </Button>
@@ -167,18 +172,18 @@ const JlptPractice = () => {
 
           {/* Controls */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-2 mb-2">
-            <div className="flex items-center gap-2">
-              <Filter className="w-5 h-5 text-primary" />
-              <span className="font-semibold text-foreground">Chọn cấp độ:</span>
+            <div className="flex items-center gap-2 text-black">
+              <Filter className="w-5 h-5 text-black" />
+              <span className="font-semibold">Chọn cấp độ:</span>
             </div>
 
             <Select value={selectedLevel} onValueChange={setSelectedExamLevel}>
-              <SelectTrigger className="w-[200px] border-primary/20">
+              <SelectTrigger className="w-[200px] border-black/20 text-black">
                 <SelectValue placeholder="Chọn cấp độ" />
               </SelectTrigger>
               <SelectContent>
                 {levels.map((level) => (
-                  <SelectItem key={level.value} value={level.value}>
+                  <SelectItem key={level.value} value={level.value} className="text-black">
                     {level.label}
                   </SelectItem>
                 ))}
@@ -188,28 +193,28 @@ const JlptPractice = () => {
 
           {/* Tabs */}
           <Tabs defaultValue="kanji" className="space-y-6" onValueChange={handleTabChange}>
-            <TabsList className="grid w-full grid-cols-5 h-auto p-1 bg-muted/50">
-              <TabsTrigger value="kanji" className="py-2.5 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">
+            <TabsList className="grid w-full grid-cols-5 h-auto p-1 bg-gray-100">
+              <TabsTrigger value="kanji" className="py-2.5 text-gray-600 data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow-sm data-[state=active]:font-semibold">
                 Kanji
               </TabsTrigger>
-              <TabsTrigger value="vocab" className="py-2.5 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">
+              <TabsTrigger value="vocab" className="py-2.5 text-gray-600 data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow-sm data-[state=active]:font-semibold">
                 Từ vựng
               </TabsTrigger>
-              <TabsTrigger value="grammar" className="py-2.5 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">
+              <TabsTrigger value="grammar" className="py-2.5 text-gray-600 data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow-sm data-[state=active]:font-semibold">
                 Ngữ pháp
               </TabsTrigger>
-              <TabsTrigger value="reading" className="py-2.5 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">
+              <TabsTrigger value="reading" className="py-2.5 text-gray-600 data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow-sm data-[state=active]:font-semibold">
                 Đọc hiểu
               </TabsTrigger>
-              <TabsTrigger value="listening" className="py-2.5 data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:shadow-sm">
+              <TabsTrigger value="listening" className="py-2.5 text-gray-600 data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow-sm data-[state=active]:font-semibold">
                 Nghe hiểu
               </TabsTrigger>
             </TabsList>
 
             <TabsContent value="kanji" className="focus-visible:outline-none space-y-2 animate-in fade-in slide-in-from-bottom-2 duration-300">
               <div className="mb-2">
-                <h2 className="text-lg font-bold flex items-center gap-2 text-foreground">
-                  <span className="bg-primary/10 text-primary p-1.5 rounded-lg text-sm">漢</span>
+                <h2 className="text-lg font-bold flex items-center gap-2 text-black">
+                  <span className="bg-gray-100 text-black border border-black/10 p-1.5 rounded-lg text-sm">漢</span>
                   Luyện tập Kanji {selectedLevel}
                 </h2>
               </div>
@@ -218,8 +223,8 @@ const JlptPractice = () => {
 
             <TabsContent value="vocab" className="focus-visible:outline-none space-y-2 animate-in fade-in slide-in-from-bottom-2 duration-300">
               <div className="mb-2">
-                <h2 className="text-lg font-bold flex items-center gap-2 text-foreground">
-                  <span className="bg-primary/10 text-primary p-1.5 rounded-lg text-sm">字</span>
+                <h2 className="text-lg font-bold flex items-center gap-2 text-black">
+                  <span className="bg-gray-100 text-black border border-black/10 p-1.5 rounded-lg text-sm">字</span>
                   Luyện tập Từ vựng {selectedLevel}
                 </h2>
               </div>
@@ -228,8 +233,8 @@ const JlptPractice = () => {
 
             <TabsContent value="grammar" className="focus-visible:outline-none space-y-2 animate-in fade-in slide-in-from-bottom-2 duration-300">
               <div className="mb-2">
-                <h2 className="text-lg font-bold flex items-center gap-2 text-foreground">
-                  <span className="bg-primary/10 text-primary p-1.5 rounded-lg text-sm">文</span>
+                <h2 className="text-lg font-bold flex items-center gap-2 text-black">
+                  <span className="bg-gray-100 text-black border border-black/10 p-1.5 rounded-lg text-sm">文</span>
                   Luyện tập Ngữ pháp {selectedLevel}
                 </h2>
               </div>
@@ -238,8 +243,8 @@ const JlptPractice = () => {
 
             <TabsContent value="reading" className="focus-visible:outline-none space-y-2 animate-in fade-in slide-in-from-bottom-2 duration-300">
               <div className="mb-2">
-                <h2 className="text-lg font-bold flex items-center gap-2 text-foreground">
-                  <BookOpen className="w-6 h-6 bg-primary/10 text-primary p-1 rounded-lg" />
+                <h2 className="text-lg font-bold flex items-center gap-2 text-black">
+                  <BookOpen className="w-6 h-6 bg-gray-100 text-black border border-black/10 p-1 rounded-lg" />
                   Luyện tập Đọc hiểu {selectedLevel}
                 </h2>
               </div>
@@ -248,8 +253,8 @@ const JlptPractice = () => {
 
             <TabsContent value="listening" className="focus-visible:outline-none space-y-2 animate-in fade-in slide-in-from-bottom-2 duration-300">
               <div className="mb-2">
-                <h2 className="text-lg font-bold flex items-center gap-2 text-foreground">
-                  <Headphones className="w-6 h-6 bg-primary/10 text-primary p-1 rounded-lg" />
+                <h2 className="text-lg font-bold flex items-center gap-2 text-black">
+                  <Headphones className="w-6 h-6 bg-gray-100 text-black border border-black/10 p-1 rounded-lg" />
                   Luyện tập Nghe hiểu {selectedLevel}
                 </h2>
               </div>

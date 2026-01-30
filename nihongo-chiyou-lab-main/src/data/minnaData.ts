@@ -37890,46 +37890,1166 @@ export const lesson14Data: LessonDetail = {
   id: 14,
   title: 'Bài 14',
   vocabulary: [
-    { word: 'つけます', kanji: 'つけます', romaji: 'tsukemasu', mean: 'Bật (điện, máy điều hòa)' },
-    { word: 'けします', kanji: '消します', romaji: 'keshimasu', mean: 'Tắt (điện, máy điều hòa)' },
-    { word: 'あけます', kanji: '開けます', romaji: 'akemasu', mean: 'Mở (cửa, cửa và)' },
-    { word: 'しめます', kanji: '閉めます', romaji: 'shimemasu', mean: 'Đóng (cửa, cửa sổ)' },
-    { word: 'いそぎます', kanji: '急ぎます', romaji: 'isogimasu', mean: 'Vội, gấp' },
-    { word: 'まちます', kanji: '待ちます', romaji: 'machimasu', mean: 'Đợi, chờ' },
-    { word: 'とめます', kanji: '止めます', romaji: 'tomemasu', mean: 'Dừng (băng, ô-tô), đỗ (ô-tô)' },
-    { word: 'まがります', kanji: '曲がります', romaji: 'magarimasu', mean: 'Rẽ, quẹo [phải]' },
-    { word: 'もちます', kanji: '持ちます', romaji: 'mochimasu', mean: 'Mang, cầm' },
-    { word: 'とります', kanji: '取ります', romaji: 'torimasu', mean: 'Lấy (muối)' },
-    { word: 'てつだいます', kanji: '手伝います', romaji: 'tetsudaimasu', mean: 'Giúp (làm việc)' },
-    { word: 'よびます', kanji: '呼びます', romaji: 'yobimasu', mean: 'Gọi (tắc-xi, tên)' },
-    { word: 'はなします', kanji: '話します', romaji: 'hanashimasu', mean: 'Nói, nói chuyện' },
-    { word: 'みせます', kanji: '見せます', romaji: 'misemasu', mean: 'Cho xem, trình' },
-    { word: 'おしえます', kanji: '教えます', romaji: 'oshiemasu', mean: 'Nói, cho biết [địa chỉ]' },
-    { word: 'はじめます', kanji: '始めます', romaji: 'hajimemasu', mean: 'Bắt đầu' },
-    { word: 'ふります', kanji: '降ります', romaji: 'furimasu', mean: 'Rơi [mưa, tuyết]' },
-    { word: 'コピーします', kanji: 'コピーします', romaji: 'kopiishimasu', mean: 'Copy' },
-    { word: 'エアコン', kanji: 'エアコン', romaji: 'eakon', mean: 'Máy điều hòa' },
-    { word: 'パスポート', kanji: 'パスポート', romaji: 'pasupooto', mean: 'Hộ chiếu' },
-    { word: 'なまえ', kanji: '名前', romaji: 'namae', mean: 'Tên' },
-    { word: 'じゅうしょ', kanji: '住所', romaji: 'juusho', mean: 'Địa chỉ' },
-    { word: 'ちず', kanji: '地図', romaji: 'chizu', mean: 'Bản đồ' },
-    { word: 'しお', kanji: '塩', romaji: 'shio', mean: 'Muối' },
-    { word: 'さとう', kanji: '砂糖', romaji: 'satou', mean: 'Đường' },
-    { word: 'よみかた', kanji: '読み方', romaji: 'yomikata', mean: 'Cách đọc' },
-    { word: '～かた', kanji: '～方', romaji: 'kata', mean: 'Cách ~' },
-    { word: 'ゆっくり', kanji: 'ゆっくり', romaji: 'yukkuri', mean: 'Chậm, thong thả, thoải mái' },
-    { word: 'すぐ', kanji: '直ぐ', romaji: 'sugu', mean: 'Ngay, lập tức' },
-    { word: 'また', kanji: 'また', romaji: 'mata', mean: 'Lại (~đến)' },
-    { word: 'あとで', kanji: '後で', romaji: 'atode', mean: 'Sau' },
-    { word: 'もう すこし', kanji: 'もう 少し', romaji: 'mousukoshi', mean: 'Thêm một chút nữa thôi' },
-    { word: 'もう～', kanji: 'もう～', romaji: 'mou', mean: 'Thêm ~' },
-    { word: 'いいですよ', kanji: 'いいですよ', romaji: 'iidesuyo', mean: 'Được chứ./Được ạ.' },
-    { word: 'さあ', kanji: 'さあ', romaji: 'saa', mean: 'Thôi,/nào, (dùng để thúc giục hoặc khuyến khích ai đó làm gì)' },
-    { word: 'あれ？', kanji: 'あれ？', romaji: 'are', mean: 'Ô! (câu cảm thán khi phát hiện hoặc thấy cái gì đó lạ hoặc bất ngờ)' },
-    { word: 'しんごうを みぎへ まがってください', kanji: '信号を 右へ 曲がって ください', romaji: 'shingouwomigiemagattekudasai', mean: 'Anh/Chị rẽ phải ở chỗ đèn tín hiệu.' },
-    { word: 'まっすぐ', kanji: '真っ直ぐ', romaji: 'massugu', mean: 'Thẳng' },
-    { word: 'これで おねがいします', kanji: 'これで お願いします', romaji: 'koredeonegaishimasu', mean: 'Gửi anh tiền này.' },
-    { word: 'おつり', kanji: 'お釣り', romaji: 'otsuri', mean: 'Tiền lẻ' },
+    {
+      word: 'つけます', kanji: 'つけます', romaji: 'tsukemasu', mean: 'Bật (điện, máy điều hòa)',
+      examples: [
+        {
+          jp: '電気をつけましょうか。', romaji: 'Denki o tsukemashou ka.', vn: 'Tôi bật đèn giúp bạn nhé?',
+          furigana: [{ kanji: '電気', reading: 'でんき', meaning: 'Điện' }]
+        },
+        {
+          jp: 'エアコンをつけます。', romaji: 'Eakon o tsukemasu.', vn: 'Bật điều hòa.',
+          furigana: []
+        },
+        {
+          jp: 'テレビをつけてください。', romaji: 'Terebi o tsukete kudasai.', vn: 'Hãy bật tivi lên.',
+          furigana: []
+        },
+        {
+          jp: '火をつけます。', romaji: 'Hi o tsukemasu.', vn: 'Bật lửa / Châm lửa.',
+          furigana: [{ kanji: '火', reading: 'ひ', meaning: 'Lửa' }]
+        },
+        {
+          jp: 'ラジオをつけました。', romaji: 'Rajio o tsukemashita.', vn: 'Tôi đã bật đài.',
+          furigana: []
+        },
+        {
+          jp: 'ストーブをつけます。', romaji: 'Sutoobu o tsukemasu.', vn: 'Bật lò sưởi.',
+          furigana: []
+        }
+      ]
+    },
+    {
+      word: 'けします', kanji: '消します', romaji: 'keshimasu', mean: 'Tắt (điện, máy điều hòa)',
+      examples: [
+        {
+          jp: '電気を消してください。', romaji: 'Denki o keshite kudasai.', vn: 'Hãy tắt điện đi.',
+          furigana: [{ kanji: '電気', reading: 'でんき' }, { kanji: '消', reading: 'け' }]
+        },
+        {
+          jp: 'テレビを消します。', romaji: 'Terebi o keshimasu.', vn: 'Tắt tivi.',
+          furigana: [{ kanji: '消', reading: 'け' }]
+        },
+        {
+          jp: 'エアコンを消しましょうか。', romaji: 'Eakon o keshimashou ka.', vn: 'Tôi tắt điều hòa giúp bạn nhé?',
+          furigana: [{ kanji: '消', reading: 'け' }]
+        },
+        {
+          jp: '火を消します。', romaji: 'Hi o keshimasu.', vn: 'Dập lửa / Tắt lửa.',
+          furigana: [{ kanji: '火', reading: 'ひ' }, { kanji: '消', reading: 'け' }]
+        },
+        {
+          jp: 'ろうそくを消しました。', romaji: 'Rousoku o keshimashita.', vn: 'Tôi đã thổi tắt nến.',
+          furigana: [{ kanji: '消', reading: 'け' }]
+        },
+        {
+          jp: 'パソコンを消します。', romaji: 'Pasokon o keshimasu.', vn: 'Tắt máy tính.',
+          furigana: [{ kanji: '消', reading: 'け' }]
+        }
+      ]
+    },
+    {
+      word: 'あけます', kanji: '開けます', romaji: 'akemasu', mean: 'Mở (cửa, cửa sổ)',
+      examples: [
+        {
+          jp: 'ドアを開けてください。', romaji: 'Doa o akete kudasai.', vn: 'Hãy mở cửa ra.',
+          furigana: [{ kanji: '開', reading: 'あ' }]
+        },
+        {
+          jp: '窓を開けましょうか。', romaji: 'Mado o akemashou ka.', vn: 'Tôi mở cửa sổ giúp bạn nhé?',
+          furigana: [{ kanji: '窓', reading: 'まど' }, { kanji: '開', reading: 'あ' }]
+        },
+        {
+          jp: 'かばんを開けます。', romaji: 'Kaban o akemasu.', vn: 'Mở cặp.',
+          furigana: [{ kanji: '開', reading: 'あ' }]
+        },
+        {
+          jp: 'プレゼントを開けました。', romaji: 'Purezento o akemashita.', vn: 'Tôi đã mở quà.',
+          furigana: [{ kanji: '開', reading: 'あ' }]
+        },
+        {
+          jp: '教科書を開けてください。', romaji: 'Kyoukasho o akete kudasai.', vn: 'Hãy mở sách giáo khoa ra.',
+          furigana: [{ kanji: '教科書', reading: 'きょうかしょ' }, { kanji: '開', reading: 'あ' }]
+        },
+        {
+          jp: '口を開けてください。', romaji: 'Kuchi o akete kudasai.', vn: 'Hãy há miệng ra.',
+          furigana: [{ kanji: '口', reading: 'くち' }, { kanji: '開', reading: 'あ' }]
+        }
+      ]
+    },
+    {
+      word: 'しめます', kanji: '閉めます', romaji: 'shimemasu', mean: 'Đóng (cửa, cửa sổ)',
+      examples: [
+        {
+          jp: 'ドアを閉めてください。', romaji: 'Doa o shimete kudasai.', vn: 'Hãy đóng cửa lại.',
+          furigana: [{ kanji: '閉', reading: 'し' }]
+        },
+        {
+          jp: '窓を閉めます。', romaji: 'Mado o shimemasu.', vn: 'Đóng cửa sổ.',
+          furigana: [{ kanji: '窓', reading: 'まど' }, { kanji: '閉', reading: 'し' }]
+        },
+        {
+          jp: 'カーテンを閉めましょうか。', romaji: 'Kaaten o shimemashou ka.', vn: 'Tôi kéo rèm giúp bạn nhé?',
+          furigana: [{ kanji: '閉', reading: 'し' }]
+        },
+        {
+          jp: '本を閉じてください。', romaji: 'Hon o tojite kudasai.', vn: 'Hãy gấp sách lại.',
+          furigana: [{ kanji: '本', reading: 'ほん' }, { kanji: '閉', reading: 'と' }]
+        },
+        {
+          jp: '店を閉めます。', romaji: 'Mise o shimemasu.', vn: 'Đóng cửa hàng.',
+          furigana: [{ kanji: '店', reading: 'みせ' }, { kanji: '閉', reading: 'し' }]
+        },
+        {
+          jp: 'ふたを閉めます。', romaji: 'Futa o shimemasu.', vn: 'Đóng nắp lại.',
+          furigana: [{ kanji: '閉', reading: 'し' }]
+        }
+      ]
+    },
+    {
+      word: 'いそぎます', kanji: '急ぎます', romaji: 'isogimasu', mean: 'Vội, gấp',
+      examples: [
+        {
+          jp: '急いでください。', romaji: 'Isoide kudasai.', vn: 'Hãy nhanh lên / khẩn trương lên.',
+          furigana: [{ kanji: '急', reading: 'いそ' }]
+        },
+        {
+          jp: '時間がありませんから、急ぎます。', romaji: 'Jikan ga arimasen kara, isogimasu.', vn: 'Vì không có thời gian nên tôi vội.',
+          furigana: [{ kanji: '時間', reading: 'じかん' }, { kanji: '急', reading: 'いそ' }]
+        },
+        {
+          jp: '急ぎましょう。', romaji: 'Isogimashou.', vn: 'Chúng ta hãy nhanh lên nào.',
+          furigana: [{ kanji: '急', reading: 'いそ' }]
+        },
+        {
+          jp: '急いで行きます。', romaji: 'Isoide ikimasu.', vn: 'Tôi đi gấp đây.',
+          furigana: [{ kanji: '急', reading: 'いそ' }, { kanji: '行', reading: 'い' }]
+        },
+        {
+          jp: '急いで食べます。', romaji: 'Isoide tabemasu.', vn: 'Ăn vội vàng.',
+          furigana: [{ kanji: '急', reading: 'いそ' }, { kanji: '食', reading: 'た' }]
+        },
+        {
+          jp: 'そんなに急がないでください。', romaji: 'Sonnani isoganai de kudasai.', vn: 'Đừng vội vàng như thế.',
+          furigana: [{ kanji: '急', reading: 'いそ' }]
+        }
+      ]
+    },
+    {
+      word: 'まちます', kanji: '待ちます', romaji: 'machimasu', mean: 'Đợi, chờ',
+      examples: [
+        {
+          jp: 'ちょっと待ってください。', romaji: 'Chotto matte kudasai.', vn: 'Xin hãy đợi một chút.',
+          furigana: [{ kanji: '待', reading: 'ま' }]
+        },
+        {
+          jp: 'ここで友達を待ちます。', romaji: 'Koko de tomodachi o machimasu.', vn: 'Tôi đợi bạn ở đây.',
+          furigana: [{ kanji: '友', reading: 'とも' }, { kanji: '達', reading: 'だち' }, { kanji: '待', reading: 'ま' }]
+        },
+        {
+          jp: 'タクシーを待っています。', romaji: 'Takushii o matte imasu.', vn: 'Tôi đang đợi taxi.',
+          furigana: [{ kanji: '待', reading: 'ま' }]
+        },
+        {
+          jp: '彼を待ちました。', romaji: 'Kare o machimashita.', vn: 'Tôi đã đợi anh ấy.',
+          furigana: [{ kanji: '彼', reading: 'かれ' }, { kanji: '待', reading: 'ま' }]
+        },
+        {
+          jp: 'バスを待ちます。', romaji: 'Basu o machimasu.', vn: 'Đợi xe buýt.',
+          furigana: [{ kanji: '待', reading: 'ま' }]
+        },
+        {
+          jp: '何時まで待ちますか。', romaji: 'Nanji made machimasu ka.', vn: 'Bạn sẽ đợi đến mấy giờ?',
+          furigana: [{ kanji: '何時', reading: 'なんじ' }, { kanji: '待', reading: 'ま' }]
+        }
+      ]
+    },
+    {
+      word: 'とめます', kanji: '止めます', romaji: 'tomemasu', mean: 'Dừng (băng, ô-tô), đỗ (ô-tô)',
+      examples: [
+        {
+          jp: 'ここに車を止めてください。', romaji: 'Koko ni kuruma o tomete kudasai.', vn: 'Hãy đỗ xe ở đây.',
+          furigana: [{ kanji: '車', reading: 'くるま' }, { kanji: '止', reading: 'と' }]
+        },
+        {
+          jp: 'タクシーを止めます。', romaji: 'Takushii o tomemasu.', vn: 'Bắt (dừng) taxi.',
+          furigana: [{ kanji: '止', reading: 'と' }]
+        },
+        {
+          jp: 'テープを止めましょうか。', romaji: 'Teepu o tomemashou ka.', vn: 'Tôi tắt băng giúp bạn nhé?',
+          furigana: [{ kanji: '止', reading: 'と' }]
+        },
+        {
+          jp: '車を止めて、地図を見ます。', romaji: 'Kuruma o tomete, chizu o mimasu.', vn: 'Dừng xe lại rồi xem bản đồ.',
+          furigana: [{ kanji: '車', reading: 'くるま' }, { kanji: '止', reading: 'と' }, { kanji: '地図', reading: 'ちず' }, { kanji: '見', reading: 'み' }]
+        },
+        {
+          jp: '自転車を止めます。', romaji: 'Jitensha o tomemasu.', vn: 'Đỗ xe đạp.',
+          furigana: [{ kanji: '自転車', reading: 'じてんしゃ' }, { kanji: '止', reading: 'と' }]
+        },
+        {
+          jp: '足を止めました。', romaji: 'Ashi o tomemashita.', vn: 'Đã dừng chân.',
+          furigana: [{ kanji: '足', reading: 'あし' }, { kanji: '止', reading: 'と' }]
+        }
+      ]
+    },
+    {
+      word: 'まがります', kanji: '曲がります', romaji: 'magarimasu', mean: 'Rẽ, quẹo [phải]',
+      examples: [
+        {
+          jp: '右へ曲がってください。', romaji: 'Migi e magatte kudasai.', vn: 'Hãy rẽ phải.',
+          furigana: [{ kanji: '右', reading: 'みぎ' }, { kanji: '曲', reading: 'ま' }]
+        },
+        {
+          jp: '次の角を左へ曲がります。', romaji: 'Tsugi no kado o hidari e magarimasu.', vn: 'Rẽ trái ở góc tiếp theo.',
+          furigana: [{ kanji: '次', reading: 'つぎ' }, { kanji: '角', reading: 'かど' }, { kanji: '左', reading: 'ひだり' }, { kanji: '曲', reading: 'ま' }]
+        },
+        {
+          jp: 'そこを曲がると、駅があります。', romaji: 'Soko o magaru to, eki ga arimasu.', vn: 'Rẽ ở đó thì sẽ thấy nhà ga.',
+          furigana: [{ kanji: '曲', reading: 'ま' }, { kanji: '駅', reading: 'えき' }]
+        },
+        {
+          jp: 'まっすぐ行って、右へ曲がります。', romaji: 'Massugu itte, migi e magarimasu.', vn: 'Đi thẳng, rồi rẽ phải.',
+          furigana: [{ kanji: '行', reading: 'い' }, { kanji: '右', reading: 'みぎ' }, { kanji: '曲', reading: 'ま' }]
+        },
+        {
+          jp: '交差点を曲がります。', romaji: 'Kousaten o magarimasu.', vn: 'Rẽ ở ngã tư.',
+          furigana: [{ kanji: '交差点', reading: 'こうさてん' }, { kanji: '曲', reading: 'ま' }]
+        },
+        {
+          jp: '曲がってください。', romaji: 'Magatte kudasai.', vn: 'Hãy rẽ đi.',
+          furigana: [{ kanji: '曲', reading: 'ま' }]
+        }
+      ]
+    },
+    {
+      word: 'もちます', kanji: '持ちます', romaji: 'mochimasu', mean: 'Mang, cầm',
+      examples: [
+        {
+          jp: '荷物を持ちましょうか。', romaji: 'Nimotsu o mochimashou ka.', vn: 'Tôi mang hành lý giúp bạn nhé?',
+          furigana: [{ kanji: '荷物', reading: 'にもつ' }, { kanji: '持', reading: 'も' }]
+        },
+        {
+          jp: '傘を持っています。', romaji: 'Kasa o motte imasu.', vn: 'Tôi có mang ô.',
+          furigana: [{ kanji: '傘', reading: 'かさ' }, { kanji: '持', reading: 'も' }]
+        },
+        {
+          jp: 'これを持ってください。', romaji: 'Kore o motte kudasai.', vn: 'Hãy cầm cái này.',
+          furigana: [{ kanji: '持', reading: 'も' }]
+        },
+        {
+          jp: 'パスポートを持ちましたか。', romaji: 'Pasupooto o mochimashita ka.', vn: 'Bạn đã mang hộ chiếu chưa?',
+          furigana: [{ kanji: '持', reading: 'も' }]
+        },
+        {
+          jp: '重いかばんを持ちます。', romaji: 'Omoi kaban o mochimasu.', vn: 'Xách cái cặp nặng.',
+          furigana: [{ kanji: '重', reading: 'おも' }, { kanji: '持', reading: 'も' }]
+        },
+        {
+          jp: 'お金を持っていますか。', romaji: 'Okane o motte imasu ka.', vn: 'Bạn có mang tiền không?',
+          furigana: [{ kanji: '金', reading: 'かね' }, { kanji: '持', reading: 'も' }]
+        }
+      ]
+    },
+    {
+      word: 'とります', kanji: '取ります', romaji: 'torimasu', mean: 'Lấy (muối)',
+      examples: [
+        {
+          jp: '塩を取ってください。', romaji: 'Shio o totte kudasai.', vn: 'Hãy lấy giúp tôi lọ muối.',
+          furigana: [{ kanji: '塩', reading: 'しお' }, { kanji: '取', reading: 'と' }]
+        },
+        {
+          jp: 'その本を取ってください。', romaji: 'Sono hon o totte kudasai.', vn: 'Hãy lấy giúp tôi quyển sách đó.',
+          furigana: [{ kanji: '本', reading: 'ほん' }, { kanji: '取', reading: 'と' }]
+        },
+        {
+          jp: '写真を撮ります。', romaji: 'Shashin o torimasu.', vn: 'Chụp ảnh. (Chữ Hán khác: 撮ります)',
+          furigana: [{ kanji: '写真', reading: 'しゃしん' }, { kanji: '撮', reading: 'と' }]
+        },
+        {
+          jp: '年を取ります。', romaji: 'Toshi o torimasu.', vn: 'Có tuổi / Già đi.',
+          furigana: [{ kanji: '年', reading: 'とし' }, { kanji: '取', reading: 'と' }]
+        },
+        {
+          jp: '休みを取ります。', romaji: 'Yasumi o torimasu.', vn: 'Xin nghỉ phép.',
+          furigana: [{ kanji: '休', reading: 'やす' }, { kanji: '取', reading: 'と' }]
+        },
+        {
+          jp: '砂糖を取ってください。', romaji: 'Satou o totte kudasai.', vn: 'Lấy giúp tôi đường.',
+          furigana: [{ kanji: '砂糖', reading: 'さとう' }, { kanji: '取', reading: 'と' }]
+        }
+      ]
+    },
+    {
+      word: 'てつだいます', kanji: '手伝います', romaji: 'tetsudaimasu', mean: 'Giúp (làm việc)',
+      examples: [
+        {
+          jp: '手伝ってください。', romaji: 'Tetsudatte kudasai.', vn: 'Hãy giúp tôi một tay.',
+          furigana: [{ kanji: '手伝', reading: 'てつだ' }]
+        },
+        {
+          jp: '仕事を手伝いましょうか。', romaji: 'Shigoto o tetsudaimashou ka.', vn: 'Tôi giúp bạn làm việc nhé?',
+          furigana: [{ kanji: '仕事', reading: 'しごと' }, { kanji: '手伝', reading: 'てつだ' }]
+        },
+        {
+          jp: '母を手伝います。', romaji: 'Haha o tetsudaimasu.', vn: 'Giúp đỡ mẹ.',
+          furigana: [{ kanji: '母', reading: 'はは' }, { kanji: '手伝', reading: 'てつだ' }]
+        },
+        {
+          jp: '引っ越しを手伝います。', romaji: 'Hikkoshi o tetsudaimasu.', vn: 'Giúp chuyển nhà.',
+          furigana: [{ kanji: '手伝', reading: 'てつだ' }]
+        },
+        {
+          jp: '料理を手伝います。', romaji: 'Ryouri o tetsudaimasu.', vn: 'Giúp nấu ăn.',
+          furigana: [{ kanji: '料理', reading: 'りょうり' }, { kanji: '手伝', reading: 'てつだ' }]
+        },
+        {
+          jp: '宿題を手伝ってください。', romaji: 'Shukudai o tetsudatte kudasai.', vn: 'Hãy giúp tôi làm bài tập.',
+          furigana: [{ kanji: '宿題', reading: 'しゅくだい' }, { kanji: '手伝', reading: 'てつだ' }]
+        }
+      ]
+    },
+    {
+      word: 'よびます', kanji: '呼びます', romaji: 'yobimasu', mean: 'Gọi (tắc-xi, tên)',
+      examples: [
+        {
+          jp: 'タクシーを呼びましょうか。', romaji: 'Takushii o yobimashou ka.', vn: 'Tôi gọi taxi cho bạn nhé?',
+          furigana: [{ kanji: '呼', reading: 'よ' }]
+        },
+        {
+          jp: '友達を呼びます。', romaji: 'Tomodachi o yobimasu.', vn: 'Gọi bạn.',
+          furigana: [{ kanji: '友', reading: 'とも' }, { kanji: '達', reading: 'だち' }, { kanji: '呼', reading: 'よ' }]
+        },
+        {
+          jp: '名前を呼んでください。', romaji: 'Namae o yonde kudasai.', vn: 'Hãy gọi tên tôi.',
+          furigana: [{ kanji: '名前', reading: 'なまえ' }, { kanji: '呼', reading: 'よ' }]
+        },
+        {
+          jp: '警察を呼びます。', romaji: 'Keisatsu o yobimasu.', vn: 'Gọi cảnh sát.',
+          furigana: [{ kanji: '警察', reading: 'けいさつ' }, { kanji: '呼', reading: 'よ' }]
+        },
+        {
+          jp: '先生を呼んでください。', romaji: 'Sensei o yonde kudasai.', vn: 'Hãy gọi thầy giáo.',
+          furigana: [{ kanji: '先生', reading: 'せんせい' }, { kanji: '呼', reading: 'よ' }]
+        },
+        {
+          jp: '彼を呼んできてください。', romaji: 'Kare o yonde kite kudasai.', vn: 'Hãy đi gọi anh ấy lại đây.',
+          furigana: [{ kanji: '彼', reading: 'かれ' }, { kanji: '呼', reading: 'よ' }]
+        }
+      ]
+    },
+    {
+      word: 'はなします', kanji: '話します', romaji: 'hanashimasu', mean: 'Nói, nói chuyện',
+      examples: [
+        {
+          jp: '日本語を話してください。', romaji: 'Nihongo o hanashite kudasai.', vn: 'Hãy nói tiếng Nhật.',
+          furigana: [{ kanji: '日本語', reading: 'にほんご' }, { kanji: '話', reading: 'はな' }]
+        },
+        {
+          jp: '英語を話しますか。', romaji: 'Eigo o hanashimasu ka.', vn: 'Bạn có nói tiếng Anh không?',
+          furigana: [{ kanji: '英語', reading: 'えいご' }, { kanji: '話', reading: 'はな' }]
+        },
+        {
+          jp: 'もっとゆっくり話してください。', romaji: 'Motto yukkuri hanashite kudasai.', vn: 'Hãy nói chậm hơn một chút.',
+          furigana: [{ kanji: '話', reading: 'はな' }]
+        },
+        {
+          jp: '友達と話します。', romaji: 'Tomodachi to hanashimasu.', vn: 'Nói chuyện với bạn bè.',
+          furigana: [{ kanji: '友', reading: 'とも' }, { kanji: '達', reading: 'だち' }, { kanji: '話', reading: 'はな' }]
+        },
+        {
+          jp: '先生に話しました。', romaji: 'Sensei ni hanashimashita.', vn: 'Đã nói chuyện với giáo viên.',
+          furigana: [{ kanji: '先生', reading: 'せんせい' }, { kanji: '話', reading: 'はな' }]
+        },
+        {
+          jp: '電話で話します。', romaji: 'Denwa de hanashimasu.', vn: 'Nói chuyện điện thoại.',
+          furigana: [{ kanji: '電話', reading: 'でんわ' }, { kanji: '話', reading: 'はな' }]
+        }
+      ]
+    },
+    {
+      word: 'みせます', kanji: '見せます', romaji: 'misemasu', mean: 'Cho xem, trình',
+      examples: [
+        {
+          jp: 'パスポートを見せてください。', romaji: 'Pasupooto o misete kudasai.', vn: 'Hãy cho tôi xem hộ chiếu.',
+          furigana: [{ kanji: '見', reading: 'み' }]
+        },
+        {
+          jp: '写真を見せました。', romaji: 'Shashin o misemashita.', vn: 'Tôi đã cho xem ảnh.',
+          furigana: [{ kanji: '写真', reading: 'しゃしん' }, { kanji: '見', reading: 'み' }]
+        },
+        {
+          jp: 'その地図を見せてください。', romaji: 'Sono chizu o misete kudasai.', vn: 'Cho tôi xem bản đồ đó.',
+          furigana: [{ kanji: '地図', reading: 'ちず' }, { kanji: '見', reading: 'み' }]
+        },
+        {
+          jp: 'チケットを見せます。', romaji: 'Chiketto o misemasu.', vn: 'Trình vé.',
+          furigana: [{ kanji: '見', reading: 'み' }]
+        },
+        {
+          jp: '部屋を見せてください。', romaji: 'Heya o misete kudasai.', vn: 'Hãy cho tôi xem phòng.',
+          furigana: [{ kanji: '部屋', reading: 'へや' }, { kanji: '見', reading: 'み' }]
+        },
+        {
+          jp: '新しい車を見せます。', romaji: 'Atarashii kuruma o misemasu.', vn: 'Cho xem xe ô tô mới.',
+          furigana: [{ kanji: '新', reading: 'あたら' }, { kanji: '車', reading: 'くるま' }, { kanji: '見', reading: 'み' }]
+        }
+      ]
+    },
+    {
+      word: 'おしえます', kanji: '教えます', romaji: 'oshiemasu', mean: 'Nói, cho biết [địa chỉ]',
+      examples: [
+        {
+          jp: '住所を教えてください。', romaji: 'Juusho o oshiete kudasai.', vn: 'Hãy cho tôi biết địa chỉ.',
+          furigana: [{ kanji: '住所', reading: 'じゅうしょ' }, { kanji: '教', reading: 'おし' }]
+        },
+        {
+          jp: '日本語を教えています。', romaji: 'Nihongo o oshiete imasu.', vn: 'Tôi đang dạy tiếng Nhật.',
+          furigana: [{ kanji: '日本語', reading: 'にほんご' }, { kanji: '教', reading: 'おし' }]
+        },
+        {
+          jp: '電話番号を教えてください。', romaji: 'Denwa bangou o oshiete kudasai.', vn: 'Hãy cho tôi biết số điện thoại.',
+          furigana: [{ kanji: '電話番号', reading: 'でんわばんごう' }, { kanji: '教', reading: 'おし' }]
+        },
+        {
+          jp: '読み方を教えましょうか。', romaji: 'Yomikata o oshiemashou ka.', vn: 'Tôi chỉ cho bạn cách đọc nhé?',
+          furigana: [{ kanji: '読', reading: 'よ' }, { kanji: '方', reading: 'かた' }, { kanji: '教', reading: 'おし' }]
+        },
+        {
+          jp: '地図をかいて教えます。', romaji: 'Chizu o kaite oshiemasu.', vn: 'Tôi sẽ vẽ bản đồ để chỉ đường.',
+          furigana: [{ kanji: '地図', reading: 'ちず' }, { kanji: '教', reading: 'おし' }]
+        },
+        {
+          jp: '名前を教えてください。', romaji: 'Namae o oshiete kudasai.', vn: 'Hãy cho tôi biết tên.',
+          furigana: [{ kanji: '名前', reading: 'なまえ' }, { kanji: '教', reading: 'おし' }]
+        }
+      ]
+    },
+    {
+      word: 'はじめます', kanji: '始めます', romaji: 'hajimemasu', mean: 'Bắt đầu',
+      examples: [
+        {
+          jp: '会議を始めましょう。', romaji: 'Kaigi o hajimemashou.', vn: 'Chúng ta bắt đầu cuộc họp nào.',
+          furigana: [{ kanji: '会議', reading: 'かいぎ' }, { kanji: '始', reading: 'はじ' }]
+        },
+        {
+          jp: '今から試験を始めます。', romaji: 'Ima kara shiken o hajimemasu.', vn: 'Bây giờ sẽ bắt đầu bài thi.',
+          furigana: [{ kanji: '今', reading: 'いま' }, { kanji: '試験', reading: 'しけん' }, { kanji: '始', reading: 'はじ' }]
+        },
+        {
+          jp: '勉強を始めます。', romaji: 'Benkyou o hajimemasu.', vn: 'Bắt đầu học.',
+          furigana: [{ kanji: '勉強', reading: 'べんきょう' }, { kanji: '始', reading: 'はじ' }]
+        },
+        {
+          jp: '授業を始めます。', romaji: 'Jugyou o hajimemasu.', vn: 'Bắt đầu giờ học.',
+          furigana: [{ kanji: '授業', reading: 'じゅぎょう' }, { kanji: '始', reading: 'はじ' }]
+        },
+        {
+          jp: 'パーティーを始めましょう。', romaji: 'Paatii o hajimemashou.', vn: 'Bắt đầu tiệc nào.',
+          furigana: [{ kanji: '始', reading: 'はじ' }]
+        },
+        {
+          jp: 'まだ始めないでください。', romaji: 'Mada hajimenai de kudasai.', vn: 'Vẫn chưa bắt đầu nhé (đừng bắt đầu vội).',
+          furigana: [{ kanji: '始', reading: 'はじ' }]
+        }
+      ]
+    },
+    {
+      word: 'ふります', kanji: '降ります', romaji: 'furimasu', mean: 'Rơi [mưa, tuyết]',
+      examples: [
+        {
+          jp: '雨が降っています。', romaji: 'Ame ga futte imasu.', vn: 'Trời đang mưa.',
+          furigana: [{ kanji: '雨', reading: 'あめ' }, { kanji: '降', reading: 'ふ' }]
+        },
+        {
+          jp: '雪が降りました。', romaji: 'Yuki ga furimashita.', vn: 'Tuyết đã rơi.',
+          furigana: [{ kanji: '雪', reading: 'ゆき' }, { kanji: '降', reading: 'ふ' }]
+        },
+        {
+          jp: '雨が降るかもしれません。', romaji: 'Ame ga furu kamo shiremasen.', vn: 'Có thể trời sẽ mưa.',
+          furigana: [{ kanji: '雨', reading: 'あめ' }, { kanji: '降', reading: 'ふ' }]
+        },
+        {
+          jp: '雨が降ったら、行きません。', romaji: 'Ame ga futtara, ikimasen.', vn: 'Nếu trời mưa thì tôi sẽ không đi.',
+          furigana: [{ kanji: '雨', reading: 'あめ' }, { kanji: '降', reading: 'ふ' }]
+        },
+        {
+          jp: 'ひどい雨が降っています。', romaji: 'Hidoi ame ga futte imasu.', vn: 'Trời đang mưa rất to.',
+          furigana: [{ kanji: '雨', reading: 'あめ' }, { kanji: '降', reading: 'ふ' }]
+        },
+        {
+          jp: '雪が降って、寒いです。', romaji: 'Yuki ga futte, samui desu.', vn: 'Tuyết rơi nên lạnh.',
+          furigana: [{ kanji: '雪', reading: 'ゆき' }, { kanji: '降', reading: 'ふ' }, { kanji: '寒', reading: 'さむ' }]
+        }
+      ]
+    },
+    {
+      word: 'コピーします', kanji: 'コピーします', romaji: 'kopiishimasu', mean: 'Copy',
+      examples: [
+        {
+          jp: 'これをコピーしてください。', romaji: 'Kore o kopiishite kudasai.', vn: 'Hãy copy cái này.',
+          furigana: []
+        },
+        {
+          jp: '地図をコピーしました。', romaji: 'Chizu o kopiishimashita.', vn: 'Tôi đã copy bản đồ.',
+          furigana: [{ kanji: '地図', reading: 'ちず' }]
+        },
+        {
+          jp: 'コピーしましょうか。', romaji: 'Kopiishimashou ka.', vn: 'Tôi copy giúp bạn nhé?',
+          furigana: []
+        },
+        {
+          jp: '資料をコピーします。', romaji: 'Shiryou o kopiishimasu.', vn: 'Copy tài liệu.',
+          furigana: [{ kanji: '資料', reading: 'しりょう' }]
+        },
+        {
+          jp: '5枚コピーしてください。', romaji: 'Gomai kopiishite kudasai.', vn: 'Hãy copy 5 tờ.',
+          furigana: [{ kanji: '枚', reading: 'まい' }]
+        },
+        {
+          jp: '拡大コピーします。', romaji: 'Kakudai kopiishimasu.', vn: 'Copy phóng to.',
+          furigana: [{ kanji: '拡大', reading: 'かくだい' }]
+        }
+      ]
+    },
+    {
+      word: 'エアコン', kanji: 'エアコン', romaji: 'eakon', mean: 'Máy điều hòa',
+      examples: [
+        {
+          jp: 'エアコンをつけてください。', romaji: 'Eakon o tsukete kudasai.', vn: 'Hãy bật điều hòa lên.',
+          furigana: []
+        },
+        {
+          jp: 'エアコンを消します。', romaji: 'Eakon o keshimasu.', vn: 'Tắt điều hòa.',
+          furigana: [{ kanji: '消', reading: 'け' }]
+        },
+        {
+          jp: 'エアコンがあります。', romaji: 'Eakon ga arimasu.', vn: 'Có điều hòa.',
+          furigana: []
+        },
+        {
+          jp: 'エアコンが故障しました。', romaji: 'Eakon ga koshoushimashita.', vn: 'Điều hòa bị hỏng rồi.',
+          furigana: [{ kanji: '故障', reading: 'こしょう' }]
+        },
+        {
+          jp: '新しいエアコン', romaji: 'Atarashii eakon', vn: 'Điều hòa mới.',
+          furigana: [{ kanji: '新', reading: 'あたら' }]
+        },
+        {
+          jp: 'エアコンのリモコン', romaji: 'Eakon no rimokon', vn: 'Điều khiển điều hòa.',
+          furigana: []
+        }
+      ]
+    },
+    {
+      word: 'パスポート', kanji: 'パスポート', romaji: 'pasupooto', mean: 'Hộ chiếu',
+      examples: [
+        {
+          jp: 'パスポートを見せてください。', romaji: 'Pasupooto o misete kudasai.', vn: 'Hãy cho xem hộ chiếu.',
+          furigana: [{ kanji: '見', reading: 'み' }]
+        },
+        {
+          jp: 'パスポートを持っていますか。', romaji: 'Pasupooto o motte imasu ka.', vn: 'Bạn có mang hộ chiếu không?',
+          furigana: [{ kanji: '持', reading: 'も' }]
+        },
+        {
+          jp: 'パスポートをなくしました。', romaji: 'Pasupooto o nakushimashita.', vn: 'Tôi làm mất hộ chiếu rồi.',
+          furigana: []
+        },
+        {
+          jp: 'パスポートを作ります。', romaji: 'Pasupooto o tsukurimasu.', vn: 'Làm hộ chiếu.',
+          furigana: [{ kanji: '作', reading: 'つく' }]
+        },
+        {
+          jp: 'パスポート番号', romaji: 'Pasupooto bangou', vn: 'Số hộ chiếu.',
+          furigana: [{ kanji: '番号', reading: 'ばんごう' }]
+        },
+        {
+          jp: 'パスポートのコピー', romaji: 'Pasupooto no kopii', vn: 'Bản copy hộ chiếu.',
+          furigana: []
+        }
+      ]
+    },
+    {
+      word: 'なまえ', kanji: '名前', romaji: 'namae', mean: 'Tên',
+      examples: [
+        {
+          jp: 'お名前は？', romaji: 'Onamae wa?', vn: 'Tên bạn là gì?',
+          furigana: [{ kanji: '名前', reading: 'なまえ' }]
+        },
+        {
+          jp: '名前を書きます。', romaji: 'Namae o kakimasu.', vn: 'Viết tên.',
+          furigana: [{ kanji: '名前', reading: 'なまえ' }, { kanji: '書', reading: 'か' }]
+        },
+        {
+          jp: 'あなたの名前を知っています。', romaji: 'Anata no namae o shitte imasu.', vn: 'Tôi biết tên bạn.',
+          furigana: [{ kanji: '名前', reading: 'なまえ' }, { kanji: '知', reading: 'し' }]
+        },
+        {
+          jp: '学校の名前', romaji: 'Gakkou no namae', vn: 'Tên trường.',
+          furigana: [{ kanji: '学校', reading: 'がっこう' }, { kanji: '名前', reading: 'なまえ' }]
+        },
+        {
+          jp: 'この花の名前', romaji: 'Kono hana no namae', vn: 'Tên của loài hoa này.',
+          furigana: [{ kanji: '花', reading: 'はな' }, { kanji: '名前', reading: 'なまえ' }]
+        },
+        {
+          jp: '名前を教えてください。', romaji: 'Namae o oshiete kudasai.', vn: 'Hãy cho tôi biết tên.',
+          furigana: [{ kanji: '名前', reading: 'なまえ' }, { kanji: '教', reading: 'おし' }]
+        }
+      ]
+    },
+    {
+      word: 'じゅうしょ', kanji: '住所', romaji: 'juusho', mean: 'Địa chỉ',
+      examples: [
+        {
+          jp: 'ここに住所を書いてください。', romaji: 'Koko ni juusho o kaite kudasai.', vn: 'Hãy viết địa chỉ vào đây.',
+          furigana: [{ kanji: '住所', reading: 'じゅうしょ' }, { kanji: '書', reading: 'か' }]
+        },
+        {
+          jp: '住所を教えましょうか。', romaji: 'Juusho o oshiemashou ka.', vn: 'Tôi cho bạn biết địa chỉ nhé?',
+          furigana: [{ kanji: '住所', reading: 'じゅうしょ' }, { kanji: '教', reading: 'おし' }]
+        },
+        {
+          jp: '住所が変わりました。', romaji: 'Juusho ga kawarimashita.', vn: 'Địa chỉ đã thay đổi.',
+          furigana: [{ kanji: '住所', reading: 'じゅうしょ' }, { kanji: '変', reading: 'か' }]
+        },
+        {
+          jp: '住所を知っていますか。', romaji: 'Juusho o shitte imasu ka.', vn: 'Bạn có biết địa chỉ không?',
+          furigana: [{ kanji: '住所', reading: 'じゅうしょ' }, { kanji: '知', reading: 'し' }]
+        },
+        {
+          jp: '会社の住所', romaji: 'Kaisha no juusho', vn: 'Địa chỉ công ty.',
+          furigana: [{ kanji: '会社', reading: 'かいしゃ' }, { kanji: '住所', reading: 'じゅうしょ' }]
+        },
+        {
+          jp: '新しい住所', romaji: 'Atarashii juusho', vn: 'Địa chỉ mới.',
+          furigana: [{ kanji: '新', reading: 'あたら' }, { kanji: '住所', reading: 'じゅうしょ' }]
+        }
+      ]
+    },
+    {
+      word: 'ちず', kanji: '地図', romaji: 'chizu', mean: 'Bản đồ',
+      examples: [
+        {
+          jp: '地図をかいてください。', romaji: 'Chizu o kaite kudasai.', vn: 'Hãy vẽ bản đồ.',
+          furigana: [{ kanji: '地図', reading: 'ちず' }]
+        },
+        {
+          jp: '地図を見ます。', romaji: 'Chizu o mimasu.', vn: 'Xem bản đồ.',
+          furigana: [{ kanji: '地図', reading: 'ちず' }, { kanji: '見', reading: 'み' }]
+        },
+        {
+          jp: '地図がありますか。', romaji: 'Chizu ga arimasu ka.', vn: 'Có bản đồ không?',
+          furigana: [{ kanji: '地図', reading: 'ちず' }]
+        },
+        {
+          jp: '日本の地図', romaji: 'Nihon no chizu', vn: 'Bản đồ Nhật Bản.',
+          furigana: [{ kanji: '日本', reading: 'にほん' }, { kanji: '地図', reading: 'ちず' }]
+        },
+        {
+          jp: '駅の地図', romaji: 'Eki no chizu', vn: 'Bản đồ nhà ga.',
+          furigana: [{ kanji: '駅', reading: 'えき' }, { kanji: '地図', reading: 'ちず' }]
+        },
+        {
+          jp: '詳しい地図', romaji: 'Kuwashii chizu', vn: 'Bản đồ chi tiết.',
+          furigana: [{ kanji: '詳', reading: 'くわ' }, { kanji: '地図', reading: 'ちず' }]
+        }
+      ]
+    },
+    {
+      word: 'しお', kanji: '塩', romaji: 'shio', mean: 'Muối',
+      examples: [
+        {
+          jp: '塩を取ってください。', romaji: 'Shio o totte kudasai.', vn: 'Hãy lấy giúp tôi muối.',
+          furigana: [{ kanji: '塩', reading: 'しお' }, { kanji: '取', reading: 'と' }]
+        },
+        {
+          jp: '塩を入れます。', romaji: 'Shio o iremasu.', vn: 'Cho muối vào.',
+          furigana: [{ kanji: '塩', reading: 'しお' }, { kanji: '入', reading: 'い' }]
+        },
+        {
+          jp: '塩辛い', romaji: 'Shiokarai', vn: 'Mặn.',
+          furigana: [{ kanji: '塩', reading: 'しお' }, { kanji: '辛', reading: 'から' }]
+        },
+        {
+          jp: '塩を少し入れてください。', romaji: 'Shio o sukoshi irete kudasai.', vn: 'Hãy cho một chút muối.',
+          furigana: [{ kanji: '塩', reading: 'しお' }, { kanji: '少', reading: 'すこ' }, { kanji: '入', reading: 'い' }]
+        },
+        {
+          jp: 'いい塩', romaji: 'Ii shio', vn: 'Muối tốt (ngon).',
+          furigana: [{ kanji: '塩', reading: 'しお' }]
+        },
+        {
+          jp: '塩がありません。', romaji: 'Shio ga arimasen.', vn: 'Không có muối.',
+          furigana: [{ kanji: '塩', reading: 'しお' }]
+        }
+      ]
+    },
+    {
+      word: 'さとう', kanji: '砂糖', romaji: 'satou', mean: 'Đường',
+      examples: [
+        {
+          jp: '砂糖を入れますか。', romaji: 'Satou o iremasu ka.', vn: 'Bạn có cho đường vào không?',
+          furigana: [{ kanji: '砂糖', reading: 'さとう' }, { kanji: '入', reading: 'い' }]
+        },
+        {
+          jp: '砂糖をたくさん入れました。', romaji: 'Satou o takusan iremashita.', vn: 'Tôi đã cho nhiều đường.',
+          furigana: [{ kanji: '砂糖', reading: 'さとう' }, { kanji: '入', reading: 'い' }]
+        },
+        {
+          jp: '砂糖を取ってください。', romaji: 'Satou o totte kudasai.', vn: 'Lấy giúp tôi đường.',
+          furigana: [{ kanji: '砂糖', reading: 'さとう' }, { kanji: '取', reading: 'と' }]
+        },
+        {
+          jp: '砂糖なしのコーヒー', romaji: 'Satou nashi no koohii', vn: 'Cà phê không đường.',
+          furigana: [{ kanji: '砂糖', reading: 'さとう' }]
+        },
+        {
+          jp: 'このケーキは砂糖が多いです。', romaji: 'Kono keeki wa satou ga ooi desu.', vn: 'Cái bánh này nhiều đường.',
+          furigana: [{ kanji: '砂糖', reading: 'さとう' }, { kanji: '多', reading: 'おお' }]
+        },
+        {
+          jp: '砂糖を買います。', romaji: 'Satou o kaimasu.', vn: 'Mua đường.',
+          furigana: [{ kanji: '砂糖', reading: 'さとう' }, { kanji: '買', reading: 'か' }]
+        }
+      ]
+    },
+    {
+      word: 'よみかた', kanji: '読み方', romaji: 'yomikata', mean: 'Cách đọc',
+      examples: [
+        {
+          jp: '漢字の読み方', romaji: 'Kanji no yomikata', vn: 'Cách đọc chữ Hán.',
+          furigana: [{ kanji: '漢字', reading: 'かんじ' }, { kanji: '読', reading: 'よ' }, { kanji: '方', reading: 'かた' }]
+        },
+        {
+          jp: '読み方を教えてください。', romaji: 'Yomikata o oshiete kudasai.', vn: 'Hãy chỉ cho tôi cách đọc.',
+          furigana: [{ kanji: '読', reading: 'よ' }, { kanji: '方', reading: 'かた' }, { kanji: '教', reading: 'おし' }]
+        },
+        {
+          jp: 'この読み方は何ですか。', romaji: 'Kono yomikata wa nan desu ka.', vn: 'Cách đọc này là gì?',
+          furigana: [{ kanji: '読', reading: 'よ' }, { kanji: '方', reading: 'かた' }]
+        },
+        {
+          jp: '読み方がわかりません。', romaji: 'Yomikata ga wakarimasen.', vn: 'Tôi không hiểu cách đọc.',
+          furigana: [{ kanji: '読', reading: 'よ' }, { kanji: '方', reading: 'かた' }]
+        },
+        {
+          jp: '難しい読み方', romaji: 'Muzukashii yomikata', vn: 'Cách đọc khó.',
+          furigana: [{ kanji: '難', reading: 'むずか' }, { kanji: '読', reading: 'よ' }, { kanji: '方', reading: 'かた' }]
+        },
+        {
+          jp: '住所の読み方', romaji: 'Juusho no yomikata', vn: 'Cách đọc địa chỉ.',
+          furigana: [{ kanji: '住所', reading: 'じゅうしょ' }, { kanji: '読', reading: 'よ' }, { kanji: '方', reading: 'かた' }]
+        }
+      ]
+    },
+    {
+      word: '～かた', kanji: '～方', romaji: 'kata', mean: 'Cách ~',
+      examples: [
+        {
+          jp: '書き方', romaji: 'Kakikata', vn: 'Cách viết.',
+          furigana: [{ kanji: '書', reading: 'か' }, { kanji: '方', reading: 'かた' }]
+        },
+        {
+          jp: '作り方', romaji: 'Tsukurikata', vn: 'Cách làm.',
+          furigana: [{ kanji: '作', reading: 'つく' }, { kanji: '方', reading: 'かた' }]
+        },
+        {
+          jp: '使い方', romaji: 'Tsukaikata', vn: 'Cách sử dụng.',
+          furigana: [{ kanji: '使', reading: 'つか' }, { kanji: '方', reading: 'かた' }]
+        },
+        {
+          jp: '行き方', romaji: 'Ikikata', vn: 'Cách đi.',
+          furigana: [{ kanji: '行', reading: 'い' }, { kanji: '方', reading: 'かた' }]
+        },
+        {
+          jp: '食べ方', romaji: 'Tabekata', vn: 'Cách ăn.',
+          furigana: [{ kanji: '食', reading: 'た' }, { kanji: '方', reading: 'かた' }]
+        },
+        {
+          jp: '話し方', romaji: 'Hanashikata', vn: 'Cách nói chuyện.',
+          furigana: [{ kanji: '話', reading: 'はな' }, { kanji: '方', reading: 'かた' }]
+        }
+      ]
+    },
+    {
+      word: 'ゆっくり', kanji: 'ゆっくり', romaji: 'yukkuri', mean: 'Chậm, thong thả, thoải mái',
+      examples: [
+        {
+          jp: 'ゆっくり話してください。', romaji: 'Yukkuri hanashite kudasai.', vn: 'Hãy nói chậm lại.',
+          furigana: [{ kanji: '話', reading: 'はな' }]
+        },
+        {
+          jp: 'ゆっくり食べてください。', romaji: 'Yukkuri tabete kudasai.', vn: 'Hãy ăn thong thả.',
+          furigana: [{ kanji: '食', reading: 'た' }]
+        },
+        {
+          jp: '今日はゆっくり休みます。', romaji: 'Kyou wa yukkuri yasumimasu.', vn: 'Hôm nay tôi sẽ nghỉ ngơi thoải mái.',
+          furigana: [{ kanji: '今日', reading: 'きょう' }, { kanji: '休', reading: 'やす' }]
+        },
+        {
+          jp: 'ゆっくり歩きましょう。', romaji: 'Yukkuri arukimashou.', vn: 'Chúng ta hãy đi bộ chậm thôi.',
+          furigana: [{ kanji: '歩', reading: 'ある' }]
+        },
+        {
+          jp: 'もっとゆっくりお願いします。', romaji: 'Motto yukkuri onegaishimasu.', vn: 'Làm ơn chậm hơn chút nữa.',
+          furigana: [{ kanji: '願', reading: 'ねが' }]
+        },
+        {
+          jp: 'ゆっくりしてください。', romaji: 'Yukkuri shite kudasai.', vn: 'Hãy cứ thoải mái đi.',
+          furigana: []
+        }
+      ]
+    },
+    {
+      word: 'すぐ', kanji: '直ぐ', romaji: 'sugu', mean: 'Ngay, lập tức',
+      examples: [
+        {
+          jp: 'すぐに来てください。', romaji: 'Sugu ni kite kudasai.', vn: 'Hãy đến ngay.',
+          furigana: [{ kanji: '来', reading: 'き' }]
+        },
+        {
+          jp: 'すぐに終わります。', romaji: 'Sugu ni owarimasu.', vn: 'Sẽ xong ngay thôi.',
+          furigana: [{ kanji: '終', reading: 'お' }]
+        },
+        {
+          jp: 'すぐ行きます。', romaji: 'Sugu ikimasu.', vn: 'Tôi đi ngay đây.',
+          furigana: [{ kanji: '行', reading: 'い' }]
+        },
+        {
+          jp: 'すぐ近くです。', romaji: 'Sugu chikaku desu.', vn: 'Ở ngay gần.',
+          furigana: [{ kanji: '近', reading: 'ちか' }]
+        },
+        {
+          jp: 'すぐ始めましょう。', romaji: 'Sugu hajimemashou.', vn: 'Hãy bắt đầu ngay nào.',
+          furigana: [{ kanji: '始', reading: 'はじ' }]
+        },
+        {
+          jp: 'すぐに寝ます。', romaji: 'Sugu ni nemasu.', vn: 'Ngủ ngay.',
+          furigana: [{ kanji: '寝', reading: 'ね' }]
+        }
+      ]
+    },
+    {
+      word: 'また', kanji: 'また', romaji: 'mata', mean: 'Lại (~đến)',
+      examples: [
+        {
+          jp: 'また来てください。', romaji: 'Mata kite kudasai.', vn: 'Lần sau lại đến nhé.',
+          furigana: [{ kanji: '来', reading: 'き' }]
+        },
+        {
+          jp: 'また会いましょう。', romaji: 'Mata aimashou.', vn: 'Hẹn gặp lại.',
+          furigana: [{ kanji: '会', reading: 'あ' }]
+        },
+        {
+          jp: 'また明日。', romaji: 'Mata ashita.', vn: 'Hẹn mai gặp lại.',
+          furigana: [{ kanji: '明日', reading: 'あした' }]
+        },
+        {
+          jp: 'また来週。', romaji: 'Mata raishuu.', vn: 'Hẹn tuần sau.',
+          furigana: [{ kanji: '来週', reading: 'らいしゅう' }]
+        },
+        {
+          jp: 'また電話します。', romaji: 'Mata denwa shimasu.', vn: 'Tôi sẽ gọi điện lại sau.',
+          furigana: [{ kanji: '電話', reading: 'でんわ' }]
+        },
+        {
+          jp: 'それじゃ、また。', romaji: 'Soreja, mata.', vn: 'Vậy thì, hẹn gặp lại.',
+          furigana: []
+        }
+      ]
+    },
+    {
+      word: 'あとで', kanji: '後で', romaji: 'atode', mean: 'Sau',
+      examples: [
+        {
+          jp: '後で電話します。', romaji: 'Atode denwa shimasu.', vn: 'Tôi sẽ gọi lại sau.',
+          furigana: [{ kanji: '後', reading: 'あと' }, { kanji: '電話', reading: 'でんわ' }]
+        },
+        {
+          jp: '後で行きます。', romaji: 'Atode ikimasu.', vn: 'Tôi sẽ đi sau.',
+          furigana: [{ kanji: '後', reading: 'あと' }, { kanji: '行', reading: 'い' }]
+        },
+        {
+          jp: '後で食べます。', romaji: 'Atode tabemasu.', vn: 'Tôi sẽ ăn sau.',
+          furigana: [{ kanji: '後', reading: 'あと' }, { kanji: '食', reading: 'た' }]
+        },
+        {
+          jp: '後で来てください。', romaji: 'Atode kite kudasai.', vn: 'Hãy đến sau.',
+          furigana: [{ kanji: '後', reading: 'あと' }, { kanji: '来', reading: 'き' }]
+        },
+        {
+          jp: 'では、また後で。', romaji: 'Dewa, mata atode.', vn: 'Vậy thì, hẹn gặp lại sau.',
+          furigana: [{ kanji: '後', reading: 'あと' }]
+        },
+        {
+          jp: '後で教えます。', romaji: 'Atode oshiemasu.', vn: 'Tôi sẽ cho biết sau.',
+          furigana: [{ kanji: '後', reading: 'あと' }, { kanji: '教', reading: 'おし' }]
+        }
+      ]
+    },
+    {
+      word: 'もう すこし', kanji: 'もう 少し', romaji: 'mousukoshi', mean: 'Thêm một chút nữa thôi',
+      examples: [
+        {
+          jp: 'もう少し待ってください。', romaji: 'Mousukoshi matte kudasai.', vn: 'Hãy đợi thêm một chút nữa.',
+          furigana: [{ kanji: '少', reading: 'すこ' }, { kanji: '待', reading: 'ま' }]
+        },
+        {
+          jp: 'もう少しゆっくり話してください。', romaji: 'Mousukoshi yukkuri hanashite kudasai.', vn: 'Hãy nói chậm thêm một chút nữa.',
+          furigana: [{ kanji: '少', reading: 'すこ' }, { kanji: '話', reading: 'はな' }]
+        },
+        {
+          jp: 'もう少し大きいのが欲しいです。', romaji: 'Mousukoshi ookii no ga hoshii desu.', vn: 'Tôi muốn cái to hơn một chút nữa.',
+          furigana: [{ kanji: '少', reading: 'すこ' }, { kanji: '大', reading: 'おお' }, { kanji: '欲', reading: 'ほ' }]
+        },
+        {
+          jp: 'もう少しで終わります。', romaji: 'Mousukoshi de owarimasu.', vn: 'Chỉ còn một chút nữa là xong.',
+          furigana: [{ kanji: '少', reading: 'すこ' }, { kanji: '終', reading: 'お' }]
+        },
+        {
+          jp: 'もう少し安くなりませんか。', romaji: 'Mousukoshi yasuku narimasen ka.', vn: 'Có thể rẻ hơn một chút nữa không?',
+          furigana: [{ kanji: '少', reading: 'すこ' }, { kanji: '安', reading: 'やす' }]
+        },
+        {
+          jp: 'もう少し右です。', romaji: 'Mousukoshi migi desu.', vn: 'Sang phải thêm một chút nữa.',
+          furigana: [{ kanji: '少', reading: 'すこ' }, { kanji: '右', reading: 'みぎ' }]
+        }
+      ]
+    },
+    {
+      word: 'もう～', kanji: 'もう～', romaji: 'mou', mean: 'Thêm ~',
+      examples: [
+        {
+          jp: 'もう一杯いかがですか。', romaji: 'Mou ippai ikaga desu ka.', vn: 'Anh dùng thêm một chén nữa nhé?',
+          furigana: [{ kanji: '一杯', reading: 'いっぱい' }]
+        },
+        {
+          jp: 'もう一度言ってください。', romaji: 'Mou ichido itte kudasai.', vn: 'Hãy nói lại thêm một lần nữa.',
+          furigana: [{ kanji: '一度', reading: 'いちど' }, { kanji: '言', reading: 'い' }]
+        },
+        {
+          jp: 'もう一人来ます。', romaji: 'Mou hitori kimasu.', vn: 'Có thêm một người nữa sẽ đến.',
+          furigana: [{ kanji: '一人', reading: 'ひとり' }, { kanji: '来', reading: 'き' }]
+        },
+        {
+          jp: 'もう一枚コピーします。', romaji: 'Mou ichimai kopiishimasu.', vn: 'Copy thêm một tờ nữa.',
+          furigana: [{ kanji: '一枚', reading: 'いちまい' }]
+        },
+        {
+          jp: 'もう一つください。', romaji: 'Mou hitotsu kudasai.', vn: 'Cho tôi thêm một cái nữa.',
+          furigana: [{ kanji: '一', reading: 'ひと' }]
+        },
+        {
+          jp: 'もう一回お願いします。', romaji: 'Mou ikkai onegaishimasu.', vn: 'Làm ơn thêm một lần nữa.',
+          furigana: [{ kanji: '一回', reading: 'いっかい' }, { kanji: '願', reading: 'ねが' }]
+        }
+      ]
+    },
+    {
+      word: 'いいですよ', kanji: 'いいですよ', romaji: 'iidesuyo', mean: 'Được chứ./Được ạ.',
+      examples: [
+        {
+          jp: '「傘を貸しましょうか。」「ええ、いいですよ。」', romaji: 'Kasa o kashimashou ka. Ee, ii desu yo.', vn: '"Tôi cho mượn ô nhé?" "Vâng, được ạ."',
+          furigana: [{ kanji: '傘', reading: 'かさ' }, { kanji: '貸', reading: 'か' }]
+        },
+        {
+          jp: '「一緒に帰りませんか。」「いいですよ。」', romaji: 'Issho ni kaerimasen ka. Ii desu yo.', vn: '"Cùng về không?" "Được chứ."',
+          furigana: [{ kanji: '一緒', reading: 'いっしょ' }, { kanji: '帰', reading: 'かえ' }]
+        },
+        {
+          jp: '「手伝いましょうか。」「いいですよ。」', romaji: 'Tetsudaimashou ka. Ii desu yo.', vn: '"Tôi giúp nhé?" "Được ạ."',
+          furigana: [{ kanji: '手伝', reading: 'てつだ' }]
+        },
+        {
+          jp: '「これを使ってもいいですか。」「いいですよ。」', romaji: 'Kore o tsukattemo ii desu ka. Ii desu yo.', vn: '"Tôi dùng cái này được không?" "Được chứ."',
+          furigana: [{ kanji: '使', reading: 'つか' }]
+        },
+        {
+          jp: '「写真を見てもいいですか。」「いいですよ。」', romaji: 'Shashin o mitemo ii desu ka. Ii desu yo.', vn: '"Tôi xem ảnh được không?" "Được chứ."',
+          furigana: [{ kanji: '写真', reading: 'しゃしん' }, { kanji: '見', reading: 'み' }]
+        },
+        {
+          jp: '「窓を開けましょうか。」「いいですよ。お願いします。」', romaji: 'Mado o akemashou ka. Ii desu yo. Onegaishimasu.', vn: '"Tôi mở cửa sổ giúp nhé?" "Được ạ. Nhờ bạn."',
+          furigana: [{ kanji: '窓', reading: 'まど' }, { kanji: '開', reading: 'あ' }, { kanji: '願', reading: 'ねが' }]
+        }
+      ]
+    },
+    {
+      word: 'さあ', kanji: 'さあ', romaji: 'saa', mean: 'Thôi,/nào, (dùng để thúc giục hoặc khuyến khích ai đó làm gì)',
+      examples: [
+        {
+          jp: 'さあ、行きましょう。', romaji: 'Saa, ikimashou.', vn: 'Nào, chúng ta đi thôi.',
+          furigana: [{ kanji: '行', reading: 'い' }]
+        },
+        {
+          jp: 'さあ、始めましょう。', romaji: 'Saa, hajimemashou.', vn: 'Nào, chúng ta bắt đầu nào.',
+          furigana: [{ kanji: '始', reading: 'はじ' }]
+        },
+        {
+          jp: 'さあ、食べてください。', romaji: 'Saa, tabete kudasai.', vn: 'Nào, hãy ăn đi.',
+          furigana: [{ kanji: '食', reading: 'た' }]
+        },
+        {
+          jp: 'さあ、どうぞ。', romaji: 'Saa, douzo.', vn: 'Nào, xin mời.',
+          furigana: []
+        },
+        {
+          jp: 'さあ、お入りください。', romaji: 'Saa, ohairi kudasai.', vn: 'Nào, xin mời vào.',
+          furigana: [{ kanji: '入', reading: 'はい' }]
+        },
+        {
+          jp: 'さあ、わかりません。', romaji: 'Saa, wakarimasen.', vn: 'Chà, tôi cũng không biết nữa.',
+          furigana: []
+        }
+      ]
+    },
+    {
+      word: 'あれ？', kanji: 'あれ？', romaji: 'are', mean: 'Ô! (câu cảm thán khi phát hiện hoặc thấy cái gì đó lạ hoặc bất ngờ)',
+      examples: [
+        {
+          jp: 'あれ？かばんがありません。', romaji: 'Are? Kaban ga arimasen.', vn: 'Ô! Không có cặp.',
+          furigana: []
+        },
+        {
+          jp: 'あれ？誰ですか。', romaji: 'Are? Dare desu ka.', vn: 'Ô! Ai vậy?',
+          furigana: [{ kanji: '誰', reading: 'だれ' }]
+        },
+        {
+          jp: 'あれ？雨ですよ。', romaji: 'Are? Ame desu yo.', vn: 'Ô! Mưa kìa.',
+          furigana: [{ kanji: '雨', reading: 'あめ' }]
+        },
+        {
+          jp: 'あれ？間違えました。', romaji: 'Are? Machigaemashita.', vn: 'Ô! Nhầm rồi.',
+          furigana: [{ kanji: '間違', reading: 'まちが' }]
+        },
+        {
+          jp: 'あれ？おかしいですね。', romaji: 'Are? Okashii desu ne.', vn: 'Ô! Lạ thật nhỉ.',
+          furigana: []
+        },
+        {
+          jp: 'あれ？ミラーさんじゃありませんか。', romaji: 'Are? Mira san ja arimasen ka.', vn: 'Ô! Anh Miller phải không?',
+          furigana: []
+        }
+      ]
+    },
+    {
+      word: 'しんごうを みぎへ まがってください', kanji: '信号を 右へ 曲がって ください', romaji: 'shingouwomigiemagattekudasai', mean: 'Anh/Chị rẽ phải ở chỗ đèn tín hiệu.',
+      examples: [
+        {
+          jp: 'あの信号を右へ曲がってください。', romaji: 'Ano shingou o migi e magatte kudasai.', vn: 'Hãy rẽ phải ở đèn tín hiệu kia.',
+          furigana: [{ kanji: '信号', reading: 'しんごう' }, { kanji: '右', reading: 'みぎ' }, { kanji: '曲', reading: 'ま' }]
+        },
+        {
+          jp: '信号を左へ曲がってください。', romaji: 'Shingou o hidari e magatte kudasai.', vn: 'Hãy rẽ trái ở đèn tín hiệu.',
+          furigana: [{ kanji: '信号', reading: 'しんごう' }, { kanji: '左', reading: 'ひだり' }, { kanji: '曲', reading: 'ま' }]
+        },
+        {
+          jp: '次の信号を右へ。', romaji: 'Tsugi no shingou o migi e.', vn: 'Rẽ phải ở đèn tín hiệu tiếp theo.',
+          furigana: [{ kanji: '次', reading: 'つぎ' }, { kanji: '信号', reading: 'しんごう' }, { kanji: '右', reading: 'みぎ' }]
+        },
+        {
+          jp: '信号を曲がると、銀行があります。', romaji: 'Shingou o magaru to, ginkou ga arimasu.', vn: 'Rẽ ở đèn tín hiệu thì sẽ thấy ngân hàng.',
+          furigana: [{ kanji: '信号', reading: 'しんごう' }, { kanji: '曲', reading: 'ま' }, { kanji: '銀行', reading: 'ぎんこう' }]
+        },
+        {
+          jp: '信号をまっすぐ行ってください。', romaji: 'Shingou o massugu itte kudasai.', vn: 'Hãy đi thẳng qua đèn tín hiệu.',
+          furigana: [{ kanji: '信号', reading: 'しんごう' }, { kanji: '行', reading: 'い' }]
+        },
+        {
+          jp: '2つ目の信号を右へ曲がってください。', romaji: 'Futatsume no shingou o migi e magatte kudasai.', vn: 'Hãy rẽ phải ở đèn tín hiệu thứ 2.',
+          furigana: [{ kanji: '目', reading: 'め' }, { kanji: '信号', reading: 'しんごう' }, { kanji: '右', reading: 'みぎ' }, { kanji: '曲', reading: 'ま' }]
+        }
+      ]
+    },
+    {
+      word: 'まっすぐ', kanji: '真っ直ぐ', romaji: 'massugu', mean: 'Thẳng',
+      examples: [
+        {
+          jp: 'まっすぐ行ってください。', romaji: 'Massugu itte kudasai.', vn: 'Hãy đi thẳng.',
+          furigana: [{ kanji: '行', reading: 'い' }]
+        },
+        {
+          jp: 'まっすぐ帰ります。', romaji: 'Massugu kaerimasu.', vn: 'Về thẳng nhà.',
+          furigana: [{ kanji: '帰', reading: 'かえ' }]
+        },
+        {
+          jp: 'この道をまっすぐ行きます。', romaji: 'Kono michi o massugu ikimasu.', vn: 'Đi thẳng con đường này.',
+          furigana: [{ kanji: '道', reading: 'みち' }, { kanji: '行', reading: 'い' }]
+        },
+        {
+          jp: 'まっすぐ歩いてください。', romaji: 'Massugu aruite kudasai.', vn: 'Hãy đi bộ thẳng.',
+          furigana: [{ kanji: '歩', reading: 'ある' }]
+        },
+        {
+          jp: 'まっすぐな道', romaji: 'Massugu na michi', vn: 'Con đường thẳng tắp.',
+          furigana: [{ kanji: '道', reading: 'みち' }]
+        },
+        {
+          jp: '駅までまっすぐです。', romaji: 'Eki made massugu desu.', vn: 'Đến nhà ga thì đi thẳng.',
+          furigana: [{ kanji: '駅', reading: 'えき' }]
+        }
+      ]
+    },
+    {
+      word: 'これで おねがいします', kanji: 'これで お願いします', romaji: 'koredeonegaishimasu', mean: 'Gửi anh tiền này.',
+      examples: [
+        {
+          jp: '1000円でお願いします。', romaji: 'Sen en de onegaishimasu.', vn: 'Gửi anh 1000 yên.',
+          furigana: [{ kanji: '円', reading: 'えん' }, { kanji: '願', reading: 'ねが' }]
+        },
+        {
+          jp: 'カードでお願いします。', romaji: 'Kaado de onegaishimasu.', vn: 'Cho tôi thanh toán bằng thẻ.',
+          furigana: [{ kanji: '願', reading: 'ねが' }]
+        },
+        {
+          jp: 'おつりはこれでお願いします。', romaji: 'Otsuri wa kore de onegaishimasu.', vn: 'Tiền lẻ thì xin gửi bằng cái này.',
+          furigana: [{ kanji: '釣', reading: 'つ' }, { kanji: '願', reading: 'ねが' }]
+        },
+        {
+          jp: 'これで。', romaji: 'Kore de.', vn: 'Gửi anh (ngắn gọn).',
+          furigana: []
+        },
+        {
+          jp: 'すみません、これでお願いします。', romaji: 'Sumimasen, kore de onegaishimasu.', vn: 'Xin lỗi, tôi gửi tiền này.',
+          furigana: [{ kanji: '願', reading: 'ねが' }]
+        },
+        {
+          jp: 'はい、これでお願いします。', romaji: 'Hai, kore de onegaishimasu.', vn: 'Vâng, gửi anh tiền này.',
+          furigana: [{ kanji: '願', reading: 'ねが' }]
+        }
+      ]
+    },
+    {
+      word: 'おつり', kanji: 'お釣り', romaji: 'otsuri', mean: 'Tiền lẻ',
+      examples: [
+        {
+          jp: 'お釣りです。', romaji: 'Otsuri desu.', vn: 'Tiền lẻ đây ạ.',
+          furigana: [{ kanji: '釣', reading: 'つ' }]
+        },
+        {
+          jp: 'お釣りを取ってください。', romaji: 'Otsuri o totte kudasai.', vn: 'Hãy nhận tiền lẻ.',
+          furigana: [{ kanji: '釣', reading: 'つ' }, { kanji: '取', reading: 'と' }]
+        },
+        {
+          jp: 'お釣りがいりますか。', romaji: 'Otsuri ga irimasu ka.', vn: 'Bạn có cần tiền lẻ không?',
+          furigana: [{ kanji: '釣', reading: 'つ' }]
+        },
+        {
+          jp: 'お釣りを忘れないでください。', romaji: 'Otsuri o wasurenai de kudasai.', vn: 'Đừng quên tiền lẻ.',
+          furigana: [{ kanji: '釣', reading: 'つ' }, { kanji: '忘', reading: 'わす' }]
+        },
+        {
+          jp: 'お釣りは300円です。', romaji: 'Otsuri wa sanbyaku en desu.', vn: 'Tiền thừa là 300 yên.',
+          furigana: [{ kanji: '釣', reading: 'つ' }, { kanji: '円', reading: 'えん' }]
+        },
+        {
+          jp: '細かいお釣り', romaji: 'Komakai otsuri', vn: 'Tiền lẻ vụn.',
+          furigana: [{ kanji: '細', reading: 'こま' }, { kanji: '釣', reading: 'つ' }]
+        }
+      ]
+    },
     // Reference Words: Station
     { word: 'きっぷうりば', kanji: '切符売り場', romaji: 'kippuuriba', mean: 'Chỗ bán vé' },
     { word: 'じどうけんばいき', kanji: '自動券売機', romaji: 'jidoukenbaiki', mean: 'Máy bán vé tự động' },
@@ -38007,33 +39127,789 @@ export const lesson15Data: LessonDetail = {
   id: 15,
   title: 'Bài 15',
   vocabulary: [
-    { word: 'たちます', kanji: '立ちます', romaji: 'tachimasu', mean: 'Đứng' },
-    { word: 'すわります', kanji: '座ります', romaji: 'suwarimasu', mean: 'Ngồi' },
-    { word: 'つかいます', kanji: '使います', romaji: 'tsukaimasu', mean: 'Dùng, sử dụng' },
-    { word: 'おきます', kanji: '置きます', romaji: 'okimasu', mean: 'Đặt, để' },
-    { word: 'つくります', kanji: '作ります', romaji: 'tsukurimasu', mean: 'Làm, chế tạo, sản xuất' },
-    { word: 'うります', kanji: '売ります', romaji: 'urimasu', mean: 'Bán' },
-    { word: 'しります', kanji: '知ります', romaji: 'shirimasu', mean: 'Biết' },
-    { word: 'すみます', kanji: '住みます', romaji: 'sumimasu', mean: 'Sống, ở' },
-    { word: 'けんきゅうします', kanji: '研究します', romaji: 'kenkyuushimasu', mean: 'Nghiên cứu' },
-    { word: 'しっています', kanji: '知っています', romaji: 'shitteimasu', mean: 'Biết (trạng thái)' },
-    { word: 'すんでいます', kanji: '住んでいます', romaji: 'sundeimasu', mean: 'Sống (trạng thái) [ở Osaka]' },
-    { word: 'しりょう', kanji: '資料', romaji: 'shiryou', mean: 'Tài liệu, tư liệu' },
-    { word: 'カタログ', kanji: 'カタログ', romaji: 'katarogu', mean: 'Ca-ta-lô' },
-    { word: 'じこくひょう', kanji: '時刻表', romaji: 'jikokuhyou', mean: 'Bảng giờ chạy tàu' },
-    { word: 'ふく', kanji: '服', romaji: 'fuku', mean: 'Quần áo' },
-    { word: 'せいひん', kanji: '製品', romaji: 'seihin', mean: 'Sản phẩm' },
-    { word: 'ソフト', kanji: 'ソフト', romaji: 'sofuto', mean: 'Phần mềm' },
-    { word: 'せんもん', kanji: '専門', romaji: 'senmon', mean: 'Chuyên môn' },
-    { word: 'はいしゃ', kanji: '歯医者', romaji: 'haisha', mean: 'Nha sĩ' },
-    { word: 'とこや', kanji: '床屋', romaji: 'tokoya', mean: 'Hiệu cắt tóc' },
-    { word: 'プレイガイド', kanji: 'プレイガイド', romaji: 'pureigaido', mean: 'Quầy bán vé (trong nhà hát)' },
-    { word: 'どくしん', kanji: '独身', romaji: 'dokushin', mean: 'Độc thân' },
-    { word: 'とくに', kanji: '特に', romaji: 'tokuni', mean: 'Đặc biệt' },
-    { word: 'おもいだします', kanji: '思い出します', romaji: 'omoidashimasu', mean: 'Nhớ lại, hồi tưởng lại' },
-    { word: 'ごかぞく', kanji: 'ご家族', romaji: 'gokazoku', mean: 'Gia đình (dùng cho người khác)' },
-    { word: 'いらっしゃいます', kanji: 'いらっしゃいます', romaji: 'irasshaimasu', mean: 'Thể kính trọng của 「います」' },
-    { word: 'こうこう', kanji: '高校', romaji: 'koukou', mean: 'Trường trung học phổ thông' },
+    {
+      word: 'たちます', kanji: '立ちます', romaji: 'tachimasu', mean: 'Đứng',
+      examples: [
+        {
+          jp: 'ここで立ってもいいですか。', romaji: 'Koko de tattemo ii desu ka.', vn: 'Tôi đứng ở đây được không?',
+          furigana: [{ kanji: '立', reading: 'た', meaning: 'LẬP' }]
+        },
+        {
+          jp: 'ドアの前に立ってはいけません。', romaji: 'Doa no mae ni tatte wa ikemasen.', vn: 'Không được đứng trước cửa.',
+          furigana: [{ kanji: '前', reading: 'まえ', meaning: 'TIỀN' }, { kanji: '立', reading: 'た', meaning: 'LẬP' }]
+        },
+        {
+          jp: '電車で立っています。', romaji: 'Densha de tatte imasu.', vn: 'Tôi đang đứng trên tàu điện.',
+          furigana: [{ kanji: '電車', reading: 'でんしゃ', meaning: 'ĐIỆN XA' }, { kanji: '立', reading: 'た', meaning: 'LẬP' }]
+        },
+        {
+          jp: '危ないですから、立たないでください。', romaji: 'Abunai desu kara, tatanaide kudasai.', vn: 'Vì nguy hiểm nên xin đừng đứng.',
+          furigana: [{ kanji: '危', reading: 'あぶ', meaning: 'NGUY' }, { kanji: '立', reading: 'た', meaning: 'LẬP' }]
+        },
+        {
+          jp: '田中さんはあそこで立っています。', romaji: 'Tanaka-san wa asoko de tatte imasu.', vn: 'Anh Tanaka đang đứng ở đằng kia.',
+          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '立', reading: 'た', meaning: 'LẬP' }]
+        },
+        {
+          jp: '立って話をしましょう。', romaji: 'Tatte hanashi wo shimashou.', vn: 'Chúng ta hãy đứng nói chuyện nào.',
+          furigana: [{ kanji: '立', reading: 'た', meaning: 'LẬP' }, { kanji: '話', reading: 'はなし', meaning: 'THOẠI' }]
+        }
+      ]
+    },
+    {
+      word: 'すわります', kanji: '座ります', romaji: 'suwarimasu', mean: 'Ngồi',
+      examples: [
+        {
+          jp: 'ここに座ってもいいですか。', romaji: 'Koko ni suwattemo ii desu ka.', vn: 'Tôi ngồi ở đây được không?',
+          furigana: [{ kanji: '座', reading: 'すわ', meaning: 'TỌA' }]
+        },
+        {
+          jp: 'この椅子に座ってはいけません。', romaji: 'Kono isu ni suwatte wa ikemasen.', vn: 'Không được ngồi vào cái ghế này.',
+          furigana: [{ kanji: '椅子', reading: 'いす', meaning: 'KỶ TỬ' }, { kanji: '座', reading: 'すわ', meaning: 'TỌA' }]
+        },
+        {
+          jp: 'どうぞ座ってください。', romaji: 'Douzo suwatte kudasai.', vn: 'Xin mời ngồi.',
+          furigana: [{ kanji: '座', reading: 'すわ', meaning: 'TỌA' }]
+        },
+        {
+          jp: '父はソファーに座って新聞を読んでいます。', romaji: 'Chichi wa sofaa ni suwatte shinbun wo yonde imasu.', vn: 'Bố tôi đang ngồi trên ghế sofa đọc báo.',
+          furigana: [{ kanji: '父', reading: 'ちち', meaning: 'PHỤ' }, { kanji: '座', reading: 'すわ', meaning: 'TỌA' }, { kanji: '新聞', reading: 'しんぶん', meaning: 'TÂN VĂN' }, { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }]
+        },
+        {
+          jp: '私の隣に座りませんか。', romaji: 'Watashi no tonari ni suwarimasen ka.', vn: 'Bạn ngồi cạnh tôi nhé?',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '隣', reading: 'となり', meaning: 'LÂN' }, { kanji: '座', reading: 'すわ', meaning: 'TỌA' }]
+        },
+        {
+          jp: '座って待ちます。', romaji: 'Suwatte machimasu.', vn: 'Tôi sẽ ngồi đợi.',
+          furigana: [{ kanji: '座', reading: 'すわ', meaning: 'TỌA' }, { kanji: '待', reading: 'ま', meaning: 'ĐÃI' }]
+        }
+      ]
+    },
+    {
+      word: 'つかいます', kanji: '使います', romaji: 'tsukaimasu', mean: 'Dùng, sử dụng',
+      examples: [
+        {
+          jp: 'このパソコンを使ってもいいですか。', romaji: 'Kono pasokon wo tsukattemo ii desu ka.', vn: 'Tôi dùng máy tính này được không?',
+          furigana: [{ kanji: '使', reading: 'つか', meaning: 'SỬ' }]
+        },
+        {
+          jp: '辞書を使ってはいけません。', romaji: 'Jisho wo tsukatte wa ikemasen.', vn: 'Không được dùng từ điển.',
+          furigana: [{ kanji: '辞書', reading: 'じしょ', meaning: 'TỪ THƯ' }, { kanji: '使', reading: 'つか', meaning: 'SỬ' }]
+        },
+        {
+          jp: '日本の箸の使い方を知っていますか。', romaji: 'Nihon no hashi no tsukaikata wo shitte imasu ka.', vn: 'Bạn có biết cách dùng đũa Nhật không?',
+          furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '箸', reading: 'はし', meaning: 'TRỨ' }, { kanji: '使', reading: 'つか', meaning: 'SỬ' }, { kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: '今この部屋を使っています。', romaji: 'Ima kono heya wo tsukatte imasu.', vn: 'Bây giờ tôi đang dùng phòng này.',
+          furigana: [{ kanji: '今', reading: 'いま', meaning: 'KIM' }, { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }, { kanji: '使', reading: 'つか', meaning: 'SỬ' }]
+        },
+        {
+          jp: 'クレジットカードを使えますか。', romaji: 'Kurejitto kaado wo tsukaemasu ka.', vn: 'Tôi có thể dùng thẻ tín dụng không?',
+          furigana: [{ kanji: '使', reading: 'つか', meaning: 'SỬ' }]
+        },
+        {
+          jp: '大切に使ってください。', romaji: 'Taisetsu ni tsukatte kudasai.', vn: 'Hãy sử dụng cẩn thận nhé.',
+          furigana: [{ kanji: '大切', reading: 'たいせつ', meaning: 'ĐẠI THIẾT' }, { kanji: '使', reading: 'つか', meaning: 'SỬ' }]
+        }
+      ]
+    },
+    {
+      word: 'おきます', kanji: '置きます', romaji: 'okimasu', mean: 'Đặt, để',
+      examples: [
+        {
+          jp: '荷物をここに置いてもいいですか。', romaji: 'Nimotsu wo koko ni oitemo ii desu ka.', vn: 'Tôi để hành lý ở đây được không?',
+          furigana: [{ kanji: '荷物', reading: 'にもつ', meaning: 'HÀ VẬT' }, { kanji: '置', reading: 'お', meaning: 'TRÍ' }]
+        },
+        {
+          jp: 'そこに自転車を置いてはいけません。', romaji: 'Soko ni jitensha wo oite wa ikemasen.', vn: 'Không được để xe đạp ở đó.',
+          furigana: [{ kanji: '自転車', reading: 'じてんしゃ', meaning: 'TỰ CHUYỂN XA' }, { kanji: '置', reading: 'お', meaning: 'TRÍ' }]
+        },
+        {
+          jp: '机の上に本が置いてあります。', romaji: 'Tsukue no ue ni hon ga oite arimasu.', vn: 'Trên bàn có đặt cuốn sách.',
+          furigana: [{ kanji: '机', reading: 'つくえ', meaning: 'KỶ' }, { kanji: '上', reading: 'うえ', meaning: 'THƯỢNG' }, { kanji: '本', reading: 'ほん', meaning: 'BẢN' }, { kanji: '置', reading: 'お', meaning: 'TRÍ' }]
+        },
+        {
+          jp: '傘は傘立てに置いてください。', romaji: 'Kasa wa kasatate ni oite kudasai.', vn: 'Hãy để dù vào giá cắm dù.',
+          furigana: [{ kanji: '傘', reading: 'かさ', meaning: 'TẢN' }, { kanji: '傘立て', reading: 'かさたて', meaning: 'TẢN LẬP' }, { kanji: '置', reading: 'お', meaning: 'TRÍ' }]
+        },
+        {
+          jp: '鞄を椅子に置きました。', romaji: 'Kaban wo isu ni okimashita.', vn: 'Tôi đã đặt cặp lên ghế.',
+          furigana: [{ kanji: '鞄', reading: 'かばん', meaning: 'BẠC' }, { kanji: '椅子', reading: 'いす', meaning: 'KỶ TỬ' }, { kanji: '置', reading: 'お', meaning: 'TRÍ' }]
+        },
+        {
+          jp: '車をどこに置きますか。', romaji: 'Kuruma wo doko ni okimasu ka.', vn: 'Bạn sẽ đỗ xe ở đâu?',
+          furigana: [{ kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '置', reading: 'お', meaning: 'TRÍ' }]
+        }
+      ]
+    },
+    {
+      word: 'つくります', kanji: '作ります', romaji: 'tsukurimasu', mean: 'Làm, chế tạo, sản xuất',
+      examples: [
+        {
+          jp: '夕飯を作っています。', romaji: 'Yuuhan wo tsukutte imasu.', vn: 'Tôi đang làm bữa tối.',
+          furigana: [{ kanji: '夕飯', reading: 'ゆうはん', meaning: 'TỊCH PHẠN' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }]
+        },
+        {
+          jp: 'IMCはソフトを作っています。', romaji: 'IMC wa sofuto wo tsukutte imasu.', vn: 'IMC đang sản xuất phần mềm.',
+          furigana: [{ kanji: '作', reading: 'つく', meaning: 'TÁC' }]
+        },
+        {
+          jp: '母は料理を作るのが上手です。', romaji: 'Haha wa ryouri wo tsukuru no ga jouzu desu.', vn: 'Mẹ tôi nấu ăn rất giỏi.',
+          furigana: [{ kanji: '母', reading: 'はは', meaning: 'MẪU' }, { kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }, { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }]
+        },
+        {
+          jp: 'ケーキを作ってもいいですか。', romaji: 'Keeki wo tsukuttemo ii desu ka.', vn: 'Tôi làm bánh kem được không?',
+          furigana: [{ kanji: '作', reading: 'つく', meaning: 'TÁC' }]
+        },
+        {
+          jp: '日本でカメラを作っています。', romaji: 'Nihon de kamera wo tsukutte imasu.', vn: 'Đang sản xuất máy ảnh tại Nhật Bản.',
+          furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }]
+        },
+        {
+          jp: '一緒に遊びましょう。', romaji: 'Issho ni asobimashou.', vn: 'Cùng chơi nhé.',
+          furigana: [{ kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '遊', reading: 'あそ', meaning: 'DU' }]
+        }
+      ]
+    },
+    {
+      word: 'うります', kanji: '売ります', romaji: 'urimasu', mean: 'Bán',
+      examples: [
+        {
+          jp: 'この店でパンを売っています。', romaji: 'Kono mise de pan wo utte imasu.', vn: 'Cửa hàng này đang bán bánh mì.',
+          furigana: [{ kanji: '店', reading: 'みせ', meaning: 'ĐIẾM' }, { kanji: '売', reading: 'う', meaning: 'MẠI' }]
+        },
+        {
+          jp: 'チケットはどこで売っていますか。', romaji: 'Chiketto wa doko de utte imasu ka.', vn: 'Vé đang được bán ở đâu vậy?',
+          furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }]
+        },
+        {
+          jp: '古い車を売りました。', romaji: 'Furui kuruma wo urimashita.', vn: 'Tôi đã bán chiếc xe cũ.',
+          furigana: [{ kanji: '古', reading: 'ふる', meaning: 'CỔ' }, { kanji: '車', reading: 'くるま', meaning: 'XA' }, { kanji: '売', reading: 'う', meaning: 'MẠI' }]
+        },
+        {
+          jp: 'それを売ってもいいですか。', romaji: 'Sore wo uttemo ii desu ka.', vn: 'Tôi bán cái đó được không?',
+          furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }]
+        },
+        {
+          jp: 'ここではタバコを売っていません。', romaji: 'Koko de wa tabako wo utte imasen.', vn: 'Ở đây không bán thuốc lá.',
+          furigana: [{ kanji: '売', reading: 'う', meaning: 'MẠI' }]
+        },
+        {
+          jp: '家を売って、アパートを買います。', romaji: 'Ie wo utte, apaato wo kaimasu.', vn: 'Tôi bán nhà rồi mua căn hộ.',
+          furigana: [{ kanji: '家', reading: 'いえ', meaning: 'GIA' }, { kanji: '売', reading: 'う', meaning: 'MẠI' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        }
+      ]
+    },
+    {
+      word: 'しります', kanji: '知ります', romaji: 'shirimasu', mean: 'Biết',
+      examples: [
+        {
+          jp: 'あの人の名前を知っていますか。', romaji: 'Ano hito no namae wo shitte imasu ka.', vn: 'Bạn có biết tên người kia không?',
+          furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: 'いいえ、知りません。', romaji: 'Iie, shirimasen.', vn: 'Không, tôi không biết. (Chú ý: Phủ định là Shirimasen, không phải Shitteimasen)',
+          furigana: [{ kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: 'ニュースで知りました。', romaji: 'Nyuusu de shirimashita.', vn: 'Tôi đã biết qua tin tức.',
+          furigana: [{ kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: '住所を知っていますか。', romaji: 'Juusho wo shitte imasu ka.', vn: 'Bạn có biết địa chỉ không?',
+          furigana: [{ kanji: '住所', reading: 'じゅうしょ', meaning: 'TRÚ SỞ' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: '誰もそのことを知りません。', romaji: 'Dare mo sono koto wo shirimasen.', vn: 'Không ai biết việc đó cả.',
+          furigana: [{ kanji: '誰', reading: 'だれ', meaning: 'THÙY' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: '先生を知っていますか。', romaji: 'Sensei wo shitte imasu ka.', vn: 'Bạn có biết thầy giáo không?',
+          furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        }
+      ]
+    },
+    {
+      word: 'すみます', kanji: '住みます', romaji: 'sumimasu', mean: 'Sống, ở',
+      examples: [
+        {
+          jp: '大阪に住んでいます。', romaji: 'Oosaka ni sunde imasu.', vn: 'Tôi đang sống ở Osaka.',
+          furigana: [{ kanji: '大阪', reading: 'おおさか', meaning: 'ĐẠI PHẢN' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: 'どこに住んでいますか。', romaji: 'Doko ni sunde imasu ka.', vn: 'Bạn đang sống ở đâu?',
+          furigana: [{ kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: '家族と日本に住んでいます。', romaji: 'Kazoku to nihon ni sunde imasu.', vn: 'Tôi đang sống cùng gia đình tại Nhật.',
+          furigana: [{ kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: 'ずっと東京に住みたいです。', romaji: 'Zutto Toukyou ni sumitai desu.', vn: 'Tôi muốn sống mãi ở Tokyo.',
+          furigana: [{ kanji: '東京', reading: 'とうきょう', meaning: 'ĐÔNG KINH' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: 'アパートに住んでいます。', romaji: 'Apaato ni sunde imasu.', vn: 'Tôi đang sống ở căn hộ.',
+          furigana: [{ kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: '田舎に住んでもいいですか。', romaji: 'Inaka ni sundemo ii desu ka.', vn: 'Tôi sống ở quê có được không?',
+          furigana: [{ kanji: '田舎', reading: 'いなか', meaning: 'ĐIỀN XÁ' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        }
+      ]
+    },
+    {
+      word: 'けんきゅうします', kanji: '研究します', romaji: 'kenkyuushimasu', mean: 'Nghiên cứu',
+      examples: [
+        {
+          jp: '大学で経済を研究しています。', romaji: 'Daigaku de keizai wo kenkyuu shite imasu.', vn: 'Tôi đang nghiên cứu kinh tế học tại đại học.',
+          furigana: [{ kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' }, { kanji: '経済', reading: 'けいざい', meaning: 'KINH TẾ' }, { kanji: '研究', reading: 'けんきゅう', meaning: 'NGHIÊN CỨU' }]
+        },
+        {
+          jp: '何を研究していますか。', romaji: 'Nani wo kenkyuu shite imasu ka.', vn: 'Bạn đang nghiên cứu cái gì?',
+          furigana: [{ kanji: '何', reading: 'なに', meaning: 'HÀ' }, { kanji: '研究', reading: 'けんきゅう', meaning: 'NGHIÊN CỨU' }]
+        },
+        {
+          jp: '新しい薬を研究します。', romaji: 'Atarashii kusuri wo kenkyuu shimasu.', vn: 'Nghiên cứu loại thuốc mới.',
+          furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' }, { kanji: '研究', reading: 'けんきゅう', meaning: 'NGHIÊN CỨU' }]
+        },
+        {
+          jp: '日本について研究したいです。', romaji: 'Nihon ni tsuite kenkyuu shitai desu.', vn: 'Tôi muốn nghiên cứu về Nhật Bản.',
+          furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '研究', reading: 'けんきゅう', meaning: 'NGHIÊN CỨU' }]
+        },
+        {
+          jp: '父は歴史を研究しています。', romaji: 'Chichi wa rekishi wo kenkyuu shite imasu.', vn: 'Bố tôi đang nghiên cứu lịch sử.',
+          furigana: [{ kanji: '父', reading: 'ちち', meaning: 'PHỤ' }, { kanji: '歴史', reading: 'れきし', meaning: 'LỊCH SỬ' }, { kanji: '研究', reading: 'けんきゅう', meaning: 'NGHIÊN CỨU' }]
+        },
+        {
+          jp: '皆で研究しましょう。', romaji: 'Mina de kenkyuu shimashou.', vn: 'Mọi người hãy cùng nghiên cứu nào.',
+          furigana: [{ kanji: '皆', reading: 'みな', meaning: 'GIAI' }, { kanji: '研究', reading: 'けんきゅう', meaning: 'NGHIÊN CỨU' }]
+        }
+      ]
+    },
+    {
+      word: 'しっています', kanji: '知っています', romaji: 'shitteimasu', mean: 'Biết (trạng thái)',
+      examples: [
+        {
+          jp: '田中さんを知っていますか。', romaji: 'Tanaka-san wo shitte imasu ka.', vn: 'Bạn có biết anh Tanaka không?',
+          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: 'あの店の電話番号を知っています。', romaji: 'Ano mise no denwabangou wo shitte imasu.', vn: 'Tôi biết số điện thoại của cửa hàng đó.',
+          furigana: [{ kanji: '店', reading: 'みせ', meaning: 'ĐIẾM' }, { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: 'このニュースを知っていますか。', romaji: 'Kono nyuusu wo shitte imasu ka.', vn: 'Bạn có biết tin tức này không?',
+          furigana: [{ kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: '彼は日本のことをよく知っています。', romaji: 'Kare wa nihon no koto wo yoku shitte imasu.', vn: 'Anh ấy biết rất rõ về Nhật Bản.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: '漢字をいくつ知っていますか。', romaji: 'Kanji wo ikutsu shitte imasu ka.', vn: 'Bạn biết bao nhiêu chữ Hán?',
+          furigana: [{ kanji: '漢字', reading: 'かんじ', meaning: 'HÁN TỰ' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: '道をよく知っています。', romaji: 'Michi wo yoku shitte imasu.', vn: 'Tôi biết rõ đường đi.',
+          furigana: [{ kanji: '道', reading: 'みち', meaning: 'ĐẠO' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        }
+      ]
+    },
+    {
+      word: 'すんでいます', kanji: '住んでいます', romaji: 'sundeimasu', mean: 'Sống (trạng thái) [ở Osaka]',
+      examples: [
+        {
+          jp: '私は東京に住んでいます。', romaji: 'Watashi wa Toukyou ni sunde imasu.', vn: 'Tôi đang sống ở Tokyo.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '東京', reading: 'とうきょう', meaning: 'ĐÔNG KINH' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: '家族はハノイに住んでいます。', romaji: 'Kazoku wa Hanoi ni sunde imasu.', vn: 'Gia đình tôi sống ở Hà Nội.',
+          furigana: [{ kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: '今、どこに住んでいますか。', romaji: 'Ima, doko ni sunde imasu ka.', vn: 'Bây giờ bạn đang sống ở đâu?',
+          furigana: [{ kanji: '今', reading: 'いま', meaning: 'KIM' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: '駅から遠い所に住んでいます。', romaji: 'Eki kara tooi tokoro ni sunde imasu.', vn: 'Tôi sống ở nơi xa nhà ga.',
+          furigana: [{ kanji: '駅', reading: 'えき', meaning: 'DỊCH' }, { kanji: '遠', reading: 'とお', meaning: 'VIỄN' }, { kanji: '所', reading: 'ところ', meaning: 'SỞ' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: '一人で住んでいます。', romaji: 'Hitori de sunde imasu.', vn: 'Tôi đang sống một mình.',
+          furigana: [{ kanji: '一人', reading: 'ひとり', meaning: 'NHẤT NHÂN' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: '寮に住んでいます。', romaji: 'Ryou ni sunde imasu.', vn: 'Tôi đang sống ở ký túc xá.',
+          furigana: [{ kanji: '寮', reading: 'りょう', meaning: 'LIÊU' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        }
+      ]
+    },
+    {
+      word: 'しりょう', kanji: '資料', romaji: 'shiryou', mean: 'Tài liệu, tư liệu',
+      examples: [
+        {
+          jp: '研究の資料を集めています。', romaji: 'Kenkyuu no shiryou wo atsumete imasu.', vn: 'Tôi đang thu thập tài liệu nghiên cứu.',
+          furigana: [{ kanji: '研究', reading: 'けんきゅう', meaning: 'NGHIÊN CỨU' }, { kanji: '資料', reading: 'しりょう', meaning: 'TƯ LIỆU' }, { kanji: '集', reading: 'あつ', meaning: 'TẬP' }]
+        },
+        {
+          jp: 'この資料を見てもいいですか。', romaji: 'Kono shiryou wo mitemo ii desu ka.', vn: 'Tôi xem tài liệu này được không?',
+          furigana: [{ kanji: '資料', reading: 'しりょう', meaning: 'TƯ LIỆU' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: '大切な資料ですから、無くさないでください。', romaji: 'Taisetsu na shiryou desu kara, nakusanaide kudasai.', vn: 'Vì là tài liệu quan trọng nên đừng làm mất nhé.',
+          furigana: [{ kanji: '大切', reading: 'たいせつ', meaning: 'ĐẠI THIẾT' }, { kanji: '資料', reading: 'しりょう', meaning: 'TƯ LIỆU' }, { kanji: '無', reading: 'な', meaning: 'VÔ' }]
+        },
+        {
+          jp: '会議の資料を作っています。', romaji: 'Kaigi no shiryou wo tsukutte imasu.', vn: 'Tôi đang làm tài liệu cho cuộc họp.',
+          furigana: [{ kanji: '会議', reading: 'かいぎ', meaning: 'HỘI NGHỊ' }, { kanji: '資料', reading: 'しりょう', meaning: 'TƯ LIỆU' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }]
+        },
+        {
+          jp: '資料をコピーしましょうか。', romaji: 'Shiryou wo kopii shimashou ka.', vn: 'Tôi photo tài liệu giúp bạn nhé?',
+          furigana: [{ kanji: '資料', reading: 'しりょう', meaning: 'TƯ LIỆU' }]
+        },
+        {
+          jp: '資料がたくさんあります。', romaji: 'Shiryou ga takusan arimasu.', vn: 'Có rất nhiều tài liệu.',
+          furigana: [{ kanji: '資料', reading: 'しりょう', meaning: 'TƯ LIỆU' }]
+        }
+      ]
+    },
+    {
+      word: 'カタログ', kanji: 'カタログ', romaji: 'katarogu', mean: 'Ca-ta-lô',
+      examples: [
+        {
+          jp: 'このカタログをもらってもいいですか。', romaji: 'Kono katarogu wo morattemo ii desu ka.', vn: 'Tôi nhận cuốn catalog này được không?',
+          furigana: []
+        },
+        {
+          jp: '製品のカタログを送ってください。', romaji: 'Seihin no katarogu wo okutte kudasai.', vn: 'Hãy gửi cho tôi catalog sản phẩm.',
+          furigana: [{ kanji: '製品', reading: 'せいひん', meaning: 'CHẾ PHẨM' }, { kanji: '送', reading: 'おく', meaning: 'TỐNG' }]
+        },
+        {
+          jp: '新しいカタログができました。', romaji: 'Atarashii katarogu ga dekimashita.', vn: 'Đã có catalog mới rồi.',
+          furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }]
+        },
+        {
+          jp: 'カタログを見て、注文します。', romaji: 'Katarogu wo mite, chuumon shimasu.', vn: 'Xem catalog rồi đặt hàng.',
+          furigana: [{ kanji: '見', reading: 'み', meaning: 'KIẾN' }, { kanji: '注文', reading: 'ちゅうもん', meaning: 'CHÚ VĂN' }]
+        },
+        {
+          jp: 'カタログが欲しいんですが。', romaji: 'Katarogu ga hoshii ndesu ga.', vn: 'Tôi muốn có catalog.',
+          furigana: [{ kanji: '欲', reading: 'ほ', meaning: 'DỤC' }]
+        },
+        {
+          jp: 'きれいなカタログですね。', romaji: 'Kireina katarogu desu ne.', vn: 'Catalog đẹp nhỉ.',
+          furigana: []
+        }
+      ]
+    },
+    {
+      word: 'じこくひょう', kanji: '時刻表', romaji: 'jikokuhyou', mean: 'Bảng giờ chạy tàu',
+      examples: [
+        {
+          jp: '時刻表で時間を調べます。', romaji: 'Jikokuhyou de jikan wo shirabemasu.', vn: 'Tra cứu giờ tàu chạy bằng bảng giờ tàu.',
+          furigana: [{ kanji: '時刻表', reading: 'じこくひょう', meaning: 'THỜI KHẮC BIỂU' }, { kanji: '時間', reading: 'じかん', meaning: 'THỜI GIAN' }, { kanji: '調', reading: 'しら', meaning: 'ĐIỀU' }]
+        },
+        {
+          jp: '時刻表を持っていますか。', romaji: 'Jikokuhyou wo motte imasu ka.', vn: 'Bạn có bảng giờ tàu không?',
+          furigana: [{ kanji: '時刻表', reading: 'じこくひょう', meaning: 'THỜI KHẮC BIỂU' }, { kanji: '持', reading: 'も', meaning: 'TRÌ' }]
+        },
+        {
+          jp: 'この時刻表は古いです。', romaji: 'Kono jikokuhyou wa furui desu.', vn: 'Bảng giờ tàu này cũ rồi.',
+          furigana: [{ kanji: '時刻表', reading: 'じこくひょう', meaning: 'THỜI KHẮC BIỂU' }, { kanji: '古', reading: 'ふる', meaning: 'CỔ' }]
+        },
+        {
+          jp: '時刻表を見てください。', romaji: 'Jikokuhyou wo mite kudasai.', vn: 'Hãy xem bảng giờ tàu.',
+          furigana: [{ kanji: '時刻表', reading: 'じこくひょう', meaning: 'THỜI KHẮC BIỂU' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: '新しい時刻表をもらいました。', romaji: 'Atarashii jikokuhyou wo moraimashita.', vn: 'Tôi đã nhận được bảng giờ tàu mới.',
+          furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '時刻表', reading: 'じこくひょう', meaning: 'THỜI KHẮC BIỂU' }]
+        },
+        {
+          jp: '時刻表はどこですか。', romaji: 'Jikokuhyou wa doko desu ka.', vn: 'Bảng giờ tàu ở đâu vậy?',
+          furigana: [{ kanji: '時刻表', reading: 'じこくひょう', meaning: 'THỜI KHẮC BIỂU' }]
+        }
+      ]
+    },
+    {
+      word: 'ふく', kanji: '服', romaji: 'fuku', mean: 'Quần áo',
+      examples: [
+        {
+          jp: '新しい服を買いました。', romaji: 'Atarashii fuku wo kaimashita.', vn: 'Tôi đã mua quần áo mới.',
+          furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '服', reading: 'ふく', meaning: 'PHỤC' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        },
+        {
+          jp: 'この服を着てもいいですか。', romaji: 'Kono fuku wo kitemo ii desu ka.', vn: 'Tôi mặc thử bộ đồ này được không?',
+          furigana: [{ kanji: '服', reading: 'ふく', meaning: 'PHỤC' }, { kanji: '着', reading: 'き', meaning: 'TRƯỚC' }]
+        },
+        {
+          jp: '服を洗っています。', romaji: 'Fuku wo aratte imasu.', vn: 'Tôi đang giặt quần áo.',
+          furigana: [{ kanji: '服', reading: 'ふく', meaning: 'PHỤC' }, { kanji: '洗', reading: 'あら', meaning: 'TẨY' }]
+        },
+        {
+          jp: 'あの店で安い服を売っています。', romaji: 'Ano mise de yasui fuku wo utte imasu.', vn: 'Cửa hàng kia đang bán quần áo rẻ.',
+          furigana: [{ kanji: '店', reading: 'みせ', meaning: 'ĐIẾM' }, { kanji: '安', reading: 'やす', meaning: 'AN' }, { kanji: '服', reading: 'ふく', meaning: 'PHỤC' }, { kanji: '売', reading: 'う', meaning: 'MẠI' }]
+        },
+        {
+          jp: '服をたくさん持っています。', romaji: 'Fuku wo takusan motte imasu.', vn: 'Tôi có nhiều quần áo.',
+          furigana: [{ kanji: '服', reading: 'ふく', meaning: 'PHỤC' }, { kanji: '持', reading: 'も', meaning: 'TRÌ' }]
+        },
+        {
+          jp: 'どんな服が好きですか。', romaji: 'Donna fuku ga suki desu ka.', vn: 'Bạn thích loại quần áo nào?',
+          furigana: [{ kanji: '服', reading: 'ふく', meaning: 'PHỤC' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        }
+      ]
+    },
+    {
+      word: 'せいひん', kanji: '製品', romaji: 'seihin', mean: 'Sản phẩm',
+      examples: [
+        {
+          jp: '日本の電気製品はいいです。', romaji: 'Nihon no denkiseihin wa ii desu.', vn: 'Kinh kiện điện tử của Nhật rất tốt.',
+          furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '電気製品', reading: 'でんきせいひん', meaning: 'ĐIỆN KHÍ CHẾ PHẨM' }]
+        },
+        {
+          jp: '新しい製品を作っています。', romaji: 'Atarashii seihin wo tsukutte imasu.', vn: 'Đang chế tạo sản phẩm mới.',
+          furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '製品', reading: 'せいひん', meaning: 'CHẾ PHẨM' }, { kanji: '作', reading: 'つく', meaning: 'TÁC' }]
+        },
+        {
+          jp: '製品のカタログを見せてください。', romaji: 'Seihin no katarogu wo misete kudasai.', vn: 'Cho tôi xem catalog sản phẩm.',
+          furigana: [{ kanji: '製品', reading: 'せいひん', meaning: 'CHẾ PHẨM' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        },
+        {
+          jp: 'この製品はどこで買えますか。', romaji: 'Kono seihin wa doko de kaemasu ka.', vn: 'Sản phẩm này có thể mua ở đâu?',
+          furigana: [{ kanji: '製品', reading: 'せいひん', meaning: 'CHẾ PHẨM' }, { kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        },
+        {
+          jp: 'あの会社の製品は有名です。', romaji: 'Ano kaisha no seihin wa yuumei desu.', vn: 'Sản phẩm của công ty đó rất nổi tiếng.',
+          furigana: [{ kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' }, { kanji: '製品', reading: 'せいひん', meaning: 'CHẾ PHẨM' }, { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' }]
+        },
+        {
+          jp: '製品をチェックしています。', romaji: 'Seihin wo chekku shite imasu.', vn: 'Tôi đang kiểm tra sản phẩm.',
+          furigana: [{ kanji: '製品', reading: 'せいひん', meaning: 'CHẾ PHẨM' }]
+        }
+      ]
+    },
+    {
+      word: 'ソフト', kanji: 'ソフト', romaji: 'sofuto', mean: 'Phần mềm',
+      examples: [
+        {
+          jp: '新しいソフトを入手しました。', romaji: 'Atarashii sofuto wo nyuushu shimashita.', vn: 'Tôi đã có được phần mềm mới.',
+          furigana: [{ kanji: '新', reading: 'あたら', meaning: 'TÂN' }, { kanji: '入手', reading: 'にゅうしゅ', meaning: 'NHẬP THỦ' }]
+        },
+        {
+          jp: 'このソフトは便利です。', romaji: 'Kono sofuto wa benri desu.', vn: 'Phần mềm này tiện lợi.',
+          furigana: [{ kanji: '便利', reading: 'べんり', meaning: 'TIỆN LỢI' }]
+        },
+        {
+          jp: 'ソフトを開発しています。', romaji: 'Sofuto wo kaihatsu shite imasu.', vn: 'Tôi đang phát triển phần mềm.',
+          furigana: [{ kanji: '開発', reading: 'かいはつ', meaning: 'KHAI PHÁT' }]
+        },
+        {
+          jp: 'どんなソフトを使っていますか。', romaji: 'Donna sofuto wo tsukatte imasu ka.', vn: 'Bạn đang dùng phần mềm nào?',
+          furigana: [{ kanji: '使', reading: 'つか', meaning: 'SỬ' }]
+        },
+        {
+          jp: 'ソフトの使い方が分かりません。', romaji: 'Sofuto no tsukaikata ga wakarimasen.', vn: 'Tôi không hiểu cách sử dụng phần mềm.',
+          furigana: [{ kanji: '使', reading: 'つか', meaning: 'SỬ' }, { kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }, { kanji: '分', reading: 'わ', meaning: 'PHÂN' }]
+        },
+        {
+          jp: '日本語学習ソフトです。', romaji: 'Nihongo gakushuu sofuto desu.', vn: 'Là phần mềm học tiếng Nhật.',
+          furigana: [{ kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' }, { kanji: '学習', reading: 'がくしゅう', meaning: 'HỌC TẬP' }]
+        }
+      ]
+    },
+    {
+      word: 'せんもん', kanji: '専門', romaji: 'senmon', mean: 'Chuyên môn',
+      examples: [
+        {
+          jp: 'ご専門は何ですか。', romaji: 'Gosenmon wa nan desu ka.', vn: 'Chuyên môn của bạn là gì?',
+          furigana: [{ kanji: '専門', reading: 'せんもん', meaning: 'CHUYÊN MÔN' }, { kanji: '何', reading: 'なん', meaning: 'HÀ' }]
+        },
+        {
+          jp: '専門はコンピューターです。', romaji: 'Senmon wa konpyuutaa desu.', vn: 'Chuyên môn của tôi là máy tính.',
+          furigana: [{ kanji: '専門', reading: 'せんもん', meaning: 'CHUYÊN MÔN' }]
+        },
+        {
+          jp: '専門学校に通っています。', romaji: 'Senmongakkou ni kayotte imasu.', vn: 'Tôi đang đi học trường chuyên môn.',
+          furigana: [{ kanji: '専門学校', reading: 'せんもんがっこう', meaning: 'CHUYÊN MÔN HỌC HIỆU' }, { kanji: '通', reading: 'かよ', meaning: 'THÔNG' }]
+        },
+        {
+          jp: '専門書を読みます。', romaji: 'Senmonsho wo yomimasu.', vn: 'Tôi đọc sách chuyên môn.',
+          furigana: [{ kanji: '専門書', reading: 'せんもんしょ', meaning: 'CHUYÊN MÔN THƯ' }, { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }]
+        },
+        {
+          jp: '彼の専門は経済です。', romaji: 'Kare no senmon wa keizai desu.', vn: 'Chuyên môn của anh ấy là kinh tế.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '専門', reading: 'せんもん', meaning: 'CHUYÊN MÔN' }, { kanji: '経済', reading: 'けいざい', meaning: 'KINH TẾ' }]
+        },
+        {
+          jp: '専門知識が必要です。', romaji: 'Senmon chishiki ga hitsuyou desu.', vn: 'Cần có kiến thức chuyên môn.',
+          furigana: [{ kanji: '専門', reading: 'せんもん', meaning: 'CHUYÊN MÔN' }, { kanji: '知識', reading: 'ちしき', meaning: 'TRI THỨC' }, { kanji: '必要', reading: 'ひつよう', meaning: 'TẤT YẾU' }]
+        }
+      ]
+    },
+    {
+      word: 'はいしゃ', kanji: '歯医者', romaji: 'haisha', mean: 'Nha sĩ',
+      examples: [
+        {
+          jp: '歯医者へ行きます。', romaji: 'Haisha e ikimasu.', vn: 'Tôi đi nha sĩ.',
+          furigana: [{ kanji: '歯医者', reading: 'はいしゃ', meaning: 'XỈ Y GIẢ' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '歯医者は嫌いです。', romaji: 'Haisha wa kirai desu.', vn: 'Tôi ghét nha sĩ.',
+          furigana: [{ kanji: '歯医者', reading: 'はいしゃ', meaning: 'XỈ Y GIẢ' }, { kanji: '嫌', reading: 'きら', meaning: 'HIỀM' }]
+        },
+        {
+          jp: 'いい歯医者を知っていますか。', romaji: 'Ii haisha wo shitte imasu ka.', vn: 'Bạn có biết nha sĩ nào tốt không?',
+          furigana: [{ kanji: '歯医者', reading: 'はいしゃ', meaning: 'XỈ Y GIẢ' }, { kanji: '知', reading: 'し', meaning: 'TRI' }]
+        },
+        {
+          jp: '歯医者で歯を治しました。', romaji: 'Haisha de ha wo naoshimashita.', vn: 'Tôi đã chữa răng ở nha sĩ.',
+          furigana: [{ kanji: '歯医者', reading: 'はいしゃ', meaning: 'XỈ Y GIẢ' }, { kanji: '歯', reading: 'は', meaning: 'XỈ' }, { kanji: '治', reading: 'なお', meaning: 'TRỊ' }]
+        },
+        {
+          jp: '歯医者の予約があります。', romaji: 'Haisha no yoyaku ga arimasu.', vn: 'Tôi có lịch hẹn với nha sĩ.',
+          furigana: [{ kanji: '歯医者', reading: 'はいしゃ', meaning: 'XỈ Y GIẢ' }, { kanji: '予約', reading: 'よやく', meaning: 'DỰ ƯỚC' }]
+        },
+        {
+          jp: 'あの人は歯医者です。', romaji: 'Ano hito wa haisha desu.', vn: 'Người kia là nha sĩ.',
+          furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '歯医者', reading: 'はいしゃ', meaning: 'XỈ Y GIẢ' }]
+        }
+      ]
+    },
+    {
+      word: 'とこや', kanji: '床屋', romaji: 'tokoya', mean: 'Hiệu cắt tóc',
+      examples: [
+        {
+          jp: '床屋で髪を切りました。', romaji: 'Tokoya de kami wo kirimashita.', vn: 'Tôi đã cắt tóc ở tiệm cắt tóc.',
+          furigana: [{ kanji: '床屋', reading: 'とこや', meaning: 'SÀNG ỐC' }, { kanji: '髪', reading: 'かみ', meaning: 'PHÁT' }, { kanji: '切', reading: 'き', meaning: 'THIẾT' }]
+        },
+        {
+          jp: '月に一回床屋へ行きます。', romaji: 'Tsuki ni ikkai tokoya e ikimasu.', vn: 'Một tháng tôi đi tiệm cắt tóc một lần.',
+          furigana: [{ kanji: '月', reading: 'つき', meaning: 'NGUYỆT' }, { kanji: '一回', reading: 'いっかい', meaning: 'NHẤT HỒI' }, { kanji: '床屋', reading: 'とこや', meaning: 'SÀNG ỐC' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '駅の近くに床屋があります。', romaji: 'Eki no chikaku ni tokoya ga arimasu.', vn: 'Gần ga có tiệm cắt tóc.',
+          furigana: [{ kanji: '駅', reading: 'えき', meaning: 'DỊCH' }, { kanji: '近', reading: 'ちか', meaning: 'CẬN' }, { kanji: '床屋', reading: 'とこや', meaning: 'SÀNG ỐC' }]
+        },
+        {
+          jp: 'あの床屋は上手です。', romaji: 'Ano tokoya wa jouzu desu.', vn: 'Tiệm cắt tóc kia làm đẹp (giỏi).',
+          furigana: [{ kanji: '床屋', reading: 'とこや', meaning: 'SÀNG ỐC' }, { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }]
+        },
+        {
+          jp: '父は床屋です。', romaji: 'Chichi wa tokoya desu.', vn: 'Bố tôi là thợ cắt tóc (nghĩa rộng: làm nghề cắt tóc).',
+          furigana: [{ kanji: '父', reading: 'ちち', meaning: 'PHỤ' }, { kanji: '床屋', reading: 'とこや', meaning: 'SÀNG ỐC' }]
+        },
+        {
+          jp: '床屋へ行ってから、映画を見ます。', romaji: 'Tokoya e itte kara, eiga wo mimasu.', vn: 'Sau khi đi cắt tóc tôi sẽ đi xem phim.',
+          furigana: [{ kanji: '床屋', reading: 'とこや', meaning: 'SÀNG ỐC' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }, { kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }]
+        }
+      ]
+    },
+    {
+      word: 'プレイガイド', kanji: 'プレイガイド', romaji: 'pureigaido', mean: 'Quầy bán vé (trong nhà hát)',
+      examples: [
+        {
+          jp: 'プレイガイドでチケットを買います。', romaji: 'Pureigaido de chiketto wo kaimasu.', vn: 'Tôi mua vé tại quầy bán vé.',
+          furigana: [{ kanji: '買', reading: 'か', meaning: 'MÃI' }]
+        },
+        {
+          jp: 'プレイガイドはどこですか。', romaji: 'Pureigaido wa doko desu ka.', vn: 'Quầy bán vé ở đâu vậy?',
+          furigana: []
+        },
+        {
+          jp: 'プレイガイドに人がたくさんいます。', romaji: 'Pureigaido ni hito ga takusan imasu.', vn: 'Ở quầy bán vé có rất nhiều người.',
+          furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }]
+        },
+        {
+          jp: 'プレイガイドでコンサートの情報を聞きました。', romaji: 'Pureigaido de konsaato no jouhou wo kikimashita.', vn: 'Tôi đã hỏi thông tin về buổi hòa nhạc tại quầy bán vé.',
+          furigana: [{ kanji: '情報', reading: 'じょうほう', meaning: 'TÌNH BÁO' }, { kanji: '聞', reading: 'き', meaning: 'VĂN' }]
+        },
+        {
+          jp: 'デパートの中にプレイガイドがあります。', romaji: 'Depaato no naka ni pureigaido ga arimasu.', vn: 'Trong trung tâm thương mại có quầy bán vé.',
+          furigana: [{ kanji: '中', reading: 'なか', meaning: 'TRUNG' }]
+        },
+        {
+          jp: 'プレイガイドへ行って、予約しました。', romaji: 'Pureigaido e itte, yoyaku shimashita.', vn: 'Tôi đã đến quầy bán vé và đặt trước.',
+          furigana: [{ kanji: '行', reading: 'い', meaning: 'HÀNH' }, { kanji: '予約', reading: 'よやく', meaning: 'DỰ ƯỚC' }]
+        }
+      ]
+    },
+    {
+      word: 'どくしん', kanji: '独身', romaji: 'dokushin', mean: 'Độc thân',
+      examples: [
+        {
+          jp: '私は独身です。', romaji: 'Watashi wa dokushin desu.', vn: 'Tôi độc thân.',
+          furigana: [{ kanji: '私', reading: 'わたし', meaning: 'TƯ' }, { kanji: '独身', reading: 'どくしん', meaning: 'ĐỘC THÂN' }]
+        },
+        {
+          jp: '田中さんは独身ですか。', romaji: 'Tanaka-san wa dokushin desu ka.', vn: 'Anh Tanaka có độc thân không?',
+          furigana: [{ kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' }, { kanji: '独身', reading: 'どくしん', meaning: 'ĐỘC THÂN' }]
+        },
+        {
+          jp: '独身生活を楽しんでいます。', romaji: 'Dokushin seikatsu wo tanoshinde imasu.', vn: 'Tôi đang tận hưởng cuộc sống độc thân.',
+          furigana: [{ kanji: '独身生活', reading: 'どくしんせいかつ', meaning: 'ĐỘC THÂN SINH HOẠT' }, { kanji: '楽', reading: 'たの', meaning: 'LẠC' }]
+        },
+        {
+          jp: '兄はまだ独身です。', romaji: 'Ani wa mada dokushin desu.', vn: 'Anh trai tôi vẫn còn độc thân.',
+          furigana: [{ kanji: '兄', reading: 'あに', meaning: 'HUYNH' }, { kanji: '独身', reading: 'どくしん', meaning: 'ĐỘC THÂN' }]
+        },
+        {
+          jp: '独身の人は多いです。', romaji: 'Dokushin no hito wa ooi desu.', vn: 'Người độc thân thì nhiều.',
+          furigana: [{ kanji: '独身', reading: 'どくしん', meaning: 'ĐỘC THÂN' }, { kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '多', reading: 'おお', meaning: 'ĐA' }]
+        },
+        {
+          jp: '彼は独身じゃありません。', romaji: 'Kare wa dokushin ja arimasen.', vn: 'Anh ấy không phải độc thân.',
+          furigana: [{ kanji: '彼', reading: 'かれ', meaning: 'BỈ' }, { kanji: '独身', reading: 'どくしん', meaning: 'ĐỘC THÂN' }]
+        }
+      ]
+    },
+    {
+      word: 'とくに', kanji: '特に', romaji: 'tokuni', mean: 'Đặc biệt',
+      examples: [
+        {
+          jp: '日本料理が好きです。特にお寿司が好きです。', romaji: 'Nihonryouri ga suki desu. Tokuni osushi ga suki desu.', vn: 'Tôi thích món ăn Nhật. Đặc biệt là thích Sushi.',
+          furigana: [{ kanji: '日本料理', reading: 'にほんりょうり', meaning: 'NHẬT BẢN LIỆU LÝ' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }, { kanji: '特', reading: 'とく', meaning: 'ĐẶC' }, { kanji: '寿司', reading: 'すし', meaning: 'THỌ TƯ' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        },
+        {
+          jp: '特に質問はありません。', romaji: 'Tokuni shitsumon wa arimasen.', vn: 'Không có câu hỏi gì đặc biệt.',
+          furigana: [{ kanji: '特', reading: 'とく', meaning: 'ĐẶC' }, { kanji: '質問', reading: 'しつもん', meaning: 'CHẤT VẤN' }]
+        },
+        {
+          jp: '果物が好きです。特にみかんが好きです。', romaji: 'Kudamono ga suki desu. Tokuni mikan ga suki desu.', vn: 'Tôi thích hoa quả. Đặc biệt là quýt.',
+          furigana: [{ kanji: '果物', reading: 'くだもの', meaning: 'QUẢ VẬT' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }, { kanji: '特', reading: 'とく', meaning: 'ĐẶC' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        },
+        {
+          jp: 'この店は特に安いです。', romaji: 'Kono mise wa tokuni yasui desu.', vn: 'Cửa hàng này rẻ đặc biệt.',
+          furigana: [{ kanji: '店', reading: 'みせ', meaning: 'ĐIẾM' }, { kanji: '特', reading: 'とく', meaning: 'ĐẶC' }, { kanji: '安', reading: 'やす', meaning: 'AN' }]
+        },
+        {
+          jp: '特に問題はないでしょう。', romaji: 'Tokuni mondai wa nai deshou.', vn: 'Chắc là không có vấn đề gì đặc biệt đâu.',
+          furigana: [{ kanji: '特', reading: 'とく', meaning: 'ĐẶC' }, { kanji: '問題', reading: 'もんだい', meaning: 'VẤN ĐỀ' }]
+        },
+        {
+          jp: 'スポーツの中では特にサッカーが好きです。', romaji: 'Supootsu no naka de wa tokuni sakkaa ga suki desu.', vn: 'Trong các môn thể thao tôi đặc biệt thích bóng đá.',
+          furigana: [{ kanji: '中', reading: 'なか', meaning: 'TRUNG' }, { kanji: '特', reading: 'とく', meaning: 'ĐẶC' }, { kanji: '好', reading: 'す', meaning: 'HẢO' }]
+        }
+      ]
+    },
+    {
+      word: 'おもいだします', kanji: '思い出します', romaji: 'omoidashimasu', mean: 'Nhớ lại, hồi tưởng lại',
+      examples: [
+        {
+          jp: '子供の時を思い出しました。', romaji: 'Kodomo no toki wo omoidashimashita.', vn: 'Tôi nhớ lại thời còn bé.',
+          furigana: [{ kanji: '子供', reading: 'こども', meaning: 'TỬ CUNG' }, { kanji: '時', reading: 'とき', meaning: 'THỜI' }, { kanji: '思', reading: 'おも', meaning: 'TƯ' }, { kanji: '出', reading: 'だ', meaning: 'XUẤT' }]
+        },
+        {
+          jp: '母の言葉を思い出します。', romaji: 'Haha no kotoba wo omoidashimasu.', vn: 'Tôi nhớ lại lời của mẹ.',
+          furigana: [{ kanji: '母', reading: 'はは', meaning: 'MẪU' }, { kanji: '言葉', reading: 'ことば', meaning: 'NGÔN DIỆP' }, { kanji: '思', reading: 'おも', meaning: 'TƯ' }, { kanji: '出', reading: 'だ', meaning: 'XUẤT' }]
+        },
+        {
+          jp: '急に用事を思い出しました。', romaji: 'Kyuu ni youji wo omoidashimashita.', vn: 'Tôi chợt nhớ ra việc bận.',
+          furigana: [{ kanji: '急', reading: 'きゅう', meaning: 'CẤP' }, { kanji: '用事', reading: 'ようじ', meaning: 'DỤNG SỰ' }, { kanji: '思', reading: 'おも', meaning: 'TƯ' }, { kanji: '出', reading: 'だ', meaning: 'XUẤT' }]
+        },
+        {
+          jp: 'あの人の名前を思い出せません。', romaji: 'Ano hito no namae wo omoidasemasen.', vn: 'Tôi không thể nhớ ra tên người kia.',
+          furigana: [{ kanji: '人', reading: 'ひと', meaning: 'NHÂN' }, { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' }, { kanji: '思', reading: 'おも', meaning: 'TƯ' }, { kanji: '出', reading: 'だ', meaning: 'XUẤT' }]
+        },
+        {
+          jp: '写真を見て、旅行を思い出しています。', romaji: 'Shashin wo mite, ryokou wo omoidashite imasu.', vn: 'Xem ảnh và tôi đang nhớ lại chuyến du lịch.',
+          furigana: [{ kanji: '写真', reading: 'しゃしん', meaning: 'TẢ CHÂN' }, { kanji: '見', reading: 'み', meaning: 'KIẾN' }, { kanji: '旅行', reading: 'りょこう', meaning: 'LỮ HÀNH' }, { kanji: '思', reading: 'おも', meaning: 'TƯ' }, { kanji: '出', reading: 'だ', meaning: 'XUẤT' }]
+        },
+        {
+          jp: '何か思い出しましたか。', romaji: 'Nanika omoidashimashita ka.', vn: 'Bạn có nhớ ra điều gì không?',
+          furigana: [{ kanji: '何', reading: 'なに', meaning: 'HÀ' }, { kanji: '思', reading: 'おも', meaning: 'TƯ' }, { kanji: '出', reading: 'だ', meaning: 'XUẤT' }]
+        }
+      ]
+    },
+    {
+      word: 'ごかぞく', kanji: 'ご家族', romaji: 'gokazoku', mean: 'Gia đình (dùng cho người khác)',
+      examples: [
+        {
+          jp: 'ご家族はお元気ですか。', romaji: 'Gokazoku wa ogenki desu ka.', vn: 'Gia đình bạn có khỏe không?',
+          furigana: [{ kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '元気', reading: 'げんき', meaning: 'NGUYÊN KHÍ' }]
+        },
+        {
+          jp: 'ご家族と一緒に住んでいますか。', romaji: 'Gokazoku to issho ni sunde imasu ka.', vn: 'Bạn đang sống cùng gia đình phải không?',
+          furigana: [{ kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }, { kanji: '住', reading: 'す', meaning: 'TRÚ' }]
+        },
+        {
+          jp: 'ご家族は何人ですか。', romaji: 'Gokazoku wa nannin desu ka.', vn: 'Gia đình bạn có mấy người?',
+          furigana: [{ kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '何人', reading: 'なんにん', meaning: 'HÀ NHÂN' }]
+        },
+        {
+          jp: 'ご家族に挨拶しました。', romaji: 'Gokazoku ni aisatsu shimashita.', vn: 'Tôi đã chào hỏi gia đình (người khác).',
+          furigana: [{ kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '挨拶', reading: 'あいさつ', meaning: 'AI TẠT' }]
+        },
+        {
+          jp: 'ご家族も一緒ですか。', romaji: 'Gokazoku mo issho desu ka.', vn: 'Gia đình bạn cũng đi cùng à?',
+          furigana: [{ kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }, { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' }]
+        },
+        {
+          jp: 'ご家族によろしく。', romaji: 'Gokazoku ni yoroshiku.', vn: 'Cho tôi gửi lời hỏi thăm gia đình bạn.',
+          furigana: [{ kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' }]
+        }
+      ]
+    },
+    {
+      word: 'いらっしゃいます', kanji: 'いらっしゃいます', romaji: 'irasshaimasu', mean: 'Thể kính trọng của 「います」',
+      examples: [
+        {
+          jp: '社長はいらっしゃいますか。', romaji: 'Shachou wa irasshaimasu ka.', vn: 'Giám đốc có ở đây không ạ?',
+          furigana: [{ kanji: '社長', reading: 'しゃちょう', meaning: 'XÃ TRƯỞNG' }]
+        },
+        {
+          jp: '先生は教室にいらっしゃいます。', romaji: 'Sensei wa kyoushitsu ni irasshaimasu.', vn: 'Thầy giáo đang ở trong lớp học.',
+          furigana: [{ kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }, { kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' }]
+        },
+        {
+          jp: '奥様はいらっしゃいますか。', romaji: 'Okusama wa irasshaimasu ka.', vn: 'Vợ ngài có nhà không ạ?',
+          furigana: [{ kanji: '奥様', reading: 'おくさま', meaning: 'ÁO DẠNG' }]
+        },
+        {
+          jp: 'どちらにいらっしゃいますか。', romaji: 'Dochira ni irasshaimasu ka.', vn: 'Ngài đang ở đâu ạ?',
+          furigana: []
+        },
+        {
+          jp: '明日はいらっしゃいますか。', romaji: 'Ashita wa irasshaimasu ka.', vn: 'Ngày mai ngài có ở đây không ạ?',
+          furigana: [{ kanji: '明日', reading: 'あした', meaning: 'MINH NHẬT' }]
+        },
+        {
+          jp: 'よくいらっしゃいました。', romaji: 'Yoku irasshaimashita.', vn: 'Hoan nghênh quý khách đã đến.',
+          furigana: []
+        }
+      ]
+    },
+    {
+      word: 'こうこう', kanji: '高校', romaji: 'koukou', mean: 'Trường trung học phổ thông',
+      examples: [
+        {
+          jp: '高校で英語を教えています。', romaji: 'Koukou de eigo wo oshiete imasu.', vn: 'Tôi đang dạy tiếng Anh ở trường cấp 3.',
+          furigana: [{ kanji: '高校', reading: 'こうこう', meaning: 'CAO HIỆU' }, { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' }, { kanji: '教', reading: 'おし', meaning: 'GIÁO' }]
+        },
+        {
+          jp: '高校の時の友達に会いました。', romaji: 'Koukou no toki no tomodachi ni aimashita.', vn: 'Tôi đã gặp lại bạn thời cấp 3.',
+          furigana: [{ kanji: '高校', reading: 'こうこう', meaning: 'CAO HIỆU' }, { kanji: '時', reading: 'とき', meaning: 'THỜI' }, { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' }, { kanji: '会', reading: 'あ', meaning: 'HỘI' }]
+        },
+        {
+          jp: '妹は高校へ行きます。', romaji: 'Imouto wa koukou e ikimasu.', vn: 'Em gái tôi đi học cấp 3.',
+          furigana: [{ kanji: '妹', reading: 'いもうと', meaning: 'MUỘI' }, { kanji: '高校', reading: 'こうこう', meaning: 'CAO HIỆU' }, { kanji: '行', reading: 'い', meaning: 'HÀNH' }]
+        },
+        {
+          jp: '近い高校がいいです。', romaji: 'Chikai koukou ga ii desu.', vn: 'Học trường cấp 3 gần nhà thì tốt.',
+          furigana: [{ kanji: '近', reading: 'ちか', meaning: 'CẬN' }, { kanji: '高校', reading: 'こうこう', meaning: 'CAO HIỆU' }]
+        },
+        {
+          jp: '日本の高校を見学しました。', romaji: 'Nihon no koukou wo kengaku shimashita.', vn: 'Tôi đã đi tham quan trường cấp 3 của Nhật.',
+          furigana: [{ kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' }, { kanji: '高校', reading: 'こうこう', meaning: 'CAO HIỆU' }, { kanji: '見学', reading: 'けんがく', meaning: 'KIẾN HỌC' }]
+        },
+        {
+          jp: '高校生', romaji: 'Koukousei', vn: 'Học sinh cấp 3',
+          furigana: [{ kanji: '高校生', reading: 'こうこうせい', meaning: 'CAO HIỆU SINH' }]
+        }
+      ]
+    },
     // Reference Words: Professions
     { word: 'かいしゃいん', kanji: '会社員', romaji: 'kaishain', mean: 'Nhân viên công ty' },
     { word: 'こうむいん', kanji: '公務員', romaji: 'koumuin', mean: 'Công chức' },
@@ -38068,27 +39944,433 @@ export const lesson15Data: LessonDetail = {
     {
       pattern: 'Động từ thể て + も いいです',
       explanation: 'Mẫu câu này dùng để biểu thị sự được phép làm một điều gì. (Làm ~ được). Nếu chuyển thành câu nghi vấn thì sẽ được một câu xin phép.',
-      example: '写真を 撮っても いいです。 (Có thể chụp ảnh được.)\nたばこを 吸っても いいですか。 (Tôi hút thuốc được không?)\n...ええ、いいですよ。どうぞ。 (...Vâng, được. Xin mời.)\n...すみません。ちょっと。 (...Xin lỗi. Không được.)'
+      example: '写真を 撮っても いいです。 (Có thể chụp ảnh được.)\nたばこを 吸っても いいですか。 (Tôi hút thuốc được không?)\n...ええ、いいですよ。どうぞ。 (...Vâng, được. Xin mời.)\n...すみません。ちょっと。 (...Xin lỗi. Không được.)',
+      examples: [
+        {
+          jp: '写真を撮ってもいいですか。',
+          vn: 'Tôi chụp ảnh được không?',
+          furigana: [
+            { kanji: '写真', reading: 'しゃしん', meaning: 'TẢ CHÂN' },
+            { kanji: '撮', reading: 'と', meaning: 'TOÁT' }
+          ]
+        },
+        {
+          jp: 'ここでたばこを吸ってもいいですか。',
+          vn: 'Tôi hút thuốc ở đây được không?',
+          furigana: [
+            { kanji: '吸', reading: 'す', meaning: 'HẤP' }
+          ]
+        },
+        {
+          jp: 'このカタログをもらってもいいですか。',
+          vn: 'Tôi lấy vựng này có được không?',
+          furigana: []
+        },
+        {
+          jp: '地図を借りてもいいですか。',
+          vn: 'Tôi mượn bản đồ được không?',
+          furigana: [
+            { kanji: '地図', reading: 'ちず', meaning: 'ĐỊA ĐỒ' },
+            { kanji: '借', reading: 'か', meaning: 'TÁ' }
+          ]
+        },
+        {
+          jp: 'ここに入ってもいいですか。',
+          vn: 'Tôi vào đây được không?',
+          furigana: [
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'テレビをつけてもいいですか。',
+          vn: 'Tôi bật tivi được không?',
+          furigana: []
+        },
+        {
+          jp: '今帰ってもいいですか。',
+          vn: 'Bây giờ tôi về được không?',
+          furigana: [
+            { kanji: '今', reading: 'いま', meaning: 'KIM' },
+            { kanji: '帰', reading: 'かえ', meaning: 'QUY' }
+          ]
+        },
+        {
+          jp: 'この傘を使ってもいいですか。',
+          vn: 'Tôi dùng cái dù này được không?',
+          furigana: [
+            { kanji: '傘', reading: 'かさ', meaning: 'TẢN' },
+            { kanji: '使', reading: 'つか', meaning: 'SỬ' }
+          ]
+        },
+        {
+          jp: 'ここに座ってもいいですか。',
+          vn: 'Tôi ngồi đây được không?',
+          furigana: [
+            { kanji: '座', reading: 'すわ', meaning: 'TỌA' }
+          ]
+        },
+        {
+          jp: '窓を開けてもいいですか。',
+          vn: 'Tôi mở cửa sổ được không?',
+          furigana: [
+            { kanji: '窓', reading: 'まど', meaning: 'SONG' },
+            { kanji: '開', reading: 'あ', meaning: 'KHAI' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Động từ thể て + は いけません',
       explanation: 'Mẫu câu này biểu thị ý nghĩa "cấm", hay "không được" làm một việc gì. (Không được làm ~).',
-      example: 'ここで たばこを 吸っては いけません。禁煙ですから。 (Không được hút thuốc ở đây, vì là nơi "cấm hút thuốc".)\n先生、ここで 遊んでも いいですか。 (Thưa thầy/cô, em chơi ở đây có được không ạ?)\n...いいえ、いけません。 (...Không, không được.)'
+      example: 'ここで たばこを 吸っては いけません。禁煙ですから。 (Không được hút thuốc ở đây, vì là nơi "cấm hút thuốc".)\n先生、ここで 遊んでも いいですか。 (Thưa thầy/cô, em chơi ở đây có được không ạ?)\n...いいえ、いけません。 (...Không, không được.)',
+      examples: [
+        {
+          jp: 'ここでたばこを吸ってはいけません。',
+          vn: 'Không được hút thuốc ở đây.',
+          furigana: [
+            { kanji: '吸', reading: 'す', meaning: 'HẤP' }
+          ]
+        },
+        {
+          jp: '写真を撮ってはいけません。',
+          vn: 'Không được chụp ảnh.',
+          furigana: [
+            { kanji: '写真', reading: 'しゃしん', meaning: 'TẢ CHÂN' },
+            { kanji: '撮', reading: 'と', meaning: 'TOÁT' }
+          ]
+        },
+        {
+          jp: '車を止めてはいけません。',
+          vn: 'Không được đỗ xe.',
+          furigana: [
+            { kanji: '車', reading: 'くるま', meaning: 'XA' },
+            { kanji: '止', reading: 'と', meaning: 'CHỈ' }
+          ]
+        },
+        {
+          jp: 'ここに入ってはいけません。',
+          vn: 'Không được vào đây.',
+          furigana: [
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: '教室で携帯電話を使ってはいけません。',
+          vn: 'Không được dùng điện thoại di động trong lớp học.',
+          furigana: [
+            { kanji: '教室', reading: 'きょうしつ', meaning: 'GIÁO THẤT' },
+            { kanji: '携帯電話', reading: 'けいたいでんわ', meaning: 'HUỀ ĐỚI ĐIỆN THOẠI' },
+            { kanji: '使', reading: 'つか', meaning: 'SỬ' }
+          ]
+        },
+        {
+          jp: 'お酒を飲んではいけません。',
+          vn: 'Không được uống rượu.',
+          furigana: [
+            { kanji: '酒', reading: 'さけ', meaning: 'TỬU' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: 'ここで遊んではいけません。',
+          vn: 'Không được chơi ở đây.',
+          furigana: [
+            { kanji: '遊', reading: 'あそ', meaning: 'DU' }
+          ]
+        },
+        {
+          jp: '図書館で話してはいけません。',
+          vn: 'Không được nói chuyện trong thư viện.',
+          furigana: [
+            { kanji: '図書館', reading: 'としょかん', meaning: 'ĐỒ THƯ QUÁN' },
+            { kanji: '話', reading: 'はな', meaning: 'THOẠI' }
+          ]
+        },
+        {
+          jp: 'ゴミを捨ててはいけません。',
+          vn: 'Không được vứt rác.',
+          furigana: [
+            { kanji: '捨', reading: 'す', meaning: 'XẢ' }
+          ]
+        },
+        {
+          jp: '美術品に触ってはいけません。',
+          vn: 'Không được chạm vào tác phẩm nghệ thuật.',
+          furigana: [
+            { kanji: '美術品', reading: 'びじゅつひん', meaning: 'MỸ THUẬT PHẨM' },
+            { kanji: '触', reading: 'さわ', meaning: 'XÚC' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Động từ thể て + います (Trạng thái)',
       explanation: 'Dùng để nói về một trạng thái (là kết quả của một hành động) vẫn còn lại, vẫn tiếp diễn ở hiện tại. Các động từ thường dùng: Kekkonshimasu, Shirimasu, Sumimasu, Mochimasu.',
-      example: 'わたしは 結婚して います。 (Tôi đã lập gia đình.)\nわたしは 田中さんを 知って います。 (Tôi biết anh Tanaka.)\nわたしは 大阪に 住んで います。 (Tôi sống ở Osaka.)\nわたしは カメラを 持って います。 (Tôi có máy ảnh.)'
+      example: 'わたしは 結婚して います。 (Tôi đã lập gia đình.)\nわたしは 田中さんを 知って います。 (Tôi biết anh Tanaka.)\nわたしは 大阪に 住んで います。 (Tôi sống ở Osaka.)\nわたしは カメラを 持って います。 (Tôi có máy ảnh.)',
+      examples: [
+        {
+          jp: '私は結婚しています。',
+          vn: 'Tôi đã kết hôn.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '結婚', reading: 'けっこん', meaning: 'KẾT HÔN' }
+          ]
+        },
+        {
+          jp: '私は田中さんを知っています。',
+          vn: 'Tôi biết anh Tanaka.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: '私は大阪に住んでいます。',
+          vn: 'Tôi sống ở Osaka.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '大阪', reading: 'おおさか', meaning: 'ĐẠI PHẢN' },
+            { kanji: '住', reading: 'す', meaning: 'TRÚ' }
+          ]
+        },
+        {
+          jp: '私はカメラを持っています。',
+          vn: 'Tôi có máy ảnh.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' }
+          ]
+        },
+        {
+          jp: '私は車を持っています。',
+          vn: 'Tôi có ô tô.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '車', reading: 'くるま', meaning: 'XA' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' }
+          ]
+        },
+        {
+          jp: '佐藤さんは結婚していません。',
+          vn: 'Chị Satou chưa kết hôn.',
+          furigana: [
+            { kanji: '佐藤', reading: 'さとう', meaning: 'TÁ ĐẰNG' },
+            { kanji: '結婚', reading: 'けっこん', meaning: 'KẾT HÔN' }
+          ]
+        },
+        {
+          jp: 'どこに住んでいますか。',
+          vn: 'Bạn sống ở đâu?',
+          furigana: [
+            { kanji: '住', reading: 'す', meaning: 'TRÚ' }
+          ]
+        },
+        {
+          jp: '住所を知っていますか。',
+          vn: 'Bạn có biết địa chỉ không?',
+          furigana: [
+            { kanji: '住所', reading: 'じゅうしょ', meaning: 'TRÚ SỞ' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: '木村さんは彼を知っています。',
+          vn: 'Chị Kimura biết anh ấy.',
+          furigana: [
+            { kanji: '木村', reading: 'きむら', meaning: 'MỘC THÔN' },
+            { kanji: '彼', reading: 'かれ', meaning: 'BỈ' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: '私は自転車を持っています。',
+          vn: 'Tôi có xe đạp.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '自転車', reading: 'じてんしゃ', meaning: 'TỰ CHUYỂN XA' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Động từ thể て + います (Thói quen/Nghề nghiệp)',
       explanation: 'Dùng để nói về các tập quán, thói quen (hành vi được lặp đi lặp lại trong thời gian dài). Cũng dùng để nói về nghề nghiệp hoặc tình cảnh của ai đó.',
-      example: 'IMCは コンピューターソフトを 作って います。 (Công ty IMC chế tạo phần mềm máy vi tính.)\nスーパーで フィルムを 売って います。 (Siêu thị có bán phim.)\nミラーさんは IMCで 働いて います。 (Anh Miller làm việc ở Công ty IMC.)\n妹は 大学で 勉強して います。 (Em gái tôi (đang) học đại học.)'
+      example: 'IMCは コンピューターソフトを 作って います。 (Công ty IMC chế tạo phần mềm máy vi tính.)\nスーパーで フィルムを 売って います。 (Siêu thị có bán phim.)\nミラーさんは IMCで 働いて います。 (Anh Miller làm việc ở Công ty IMC.)\n妹は 大学で 勉強して います。 (Em gái tôi (đang) học đại học.)',
+      examples: [
+        {
+          jp: 'IMCはソフトを作っています。',
+          vn: 'IMC sản xuất phần mềm.',
+          furigana: [
+            { kanji: '作', reading: 'つく', meaning: 'TÁC' }
+          ]
+        },
+        {
+          jp: '父は銀行で働いています。',
+          vn: 'Bố tôi làm việc ở ngân hàng.',
+          furigana: [
+            { kanji: '父', reading: 'ちち', meaning: 'PHỤ' },
+            { kanji: '銀行', reading: 'ぎんこう', meaning: 'NGÂN HÀNH' },
+            { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }
+          ]
+        },
+        {
+          jp: '妹は大学で勉強しています。',
+          vn: 'Em gái tôi đang học đại học.',
+          furigana: [
+            { kanji: '妹', reading: 'いもうと', meaning: 'MUỘI' },
+            { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' },
+            { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }
+          ]
+        },
+        {
+          jp: 'スーパーでフィルムを売っています。',
+          vn: 'Siêu thị có bán phim.',
+          furigana: [
+            { kanji: '売', reading: 'う', meaning: 'MẠI' }
+          ]
+        },
+        {
+          jp: '母は英語を教えています。',
+          vn: 'Mẹ tôi dạy tiếng Anh.',
+          furigana: [
+            { kanji: '母', reading: 'はは', meaning: 'MẪU' },
+            { kanji: '英語', reading: 'えいご', meaning: 'ANH NGỮ' },
+            { kanji: '教', reading: 'おし', meaning: 'GIÁO' }
+          ]
+        },
+        {
+          jp: '兄は車を作っています。',
+          vn: 'Anh trai tôi sản xuất ô tô.',
+          furigana: [
+            { kanji: '兄', reading: 'あに', meaning: 'HUYNH' },
+            { kanji: '車', reading: 'くるま', meaning: 'XA' },
+            { kanji: '作', reading: 'つく', meaning: 'TÁC' }
+          ]
+        },
+        {
+          jp: '私はパワー電気で働いています。',
+          vn: 'Tôi làm việc ở công ty Power Denki.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '電気', reading: 'でんき', meaning: 'ĐIỆN KHÍ' },
+            { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }
+          ]
+        },
+        {
+          jp: 'あの店で古い時計を売っています。',
+          vn: 'Cửa hàng kia bán đồng hồ cũ.',
+          furigana: [
+            { kanji: '店', reading: 'みせ', meaning: 'ĐIẾM' },
+            { kanji: '古', reading: 'ふる', meaning: 'CỔ' },
+            { kanji: '時計', reading: 'とけい', meaning: 'THỜI KẾ' },
+            { kanji: '売', reading: 'う', meaning: 'MẠI' }
+          ]
+        },
+        {
+          jp: '弟はコンピュータを研究しています。',
+          vn: 'Em trai tôi nghiên cứu máy tính.',
+          furigana: [
+            { kanji: '弟', reading: 'おとうと', meaning: 'ĐỆ' },
+            { kanji: '研究', reading: 'けんきゅう', meaning: 'NGHIÊN CỨU' }
+          ]
+        },
+        {
+          jp: '姉はデパートで働いています。',
+          vn: 'Chị tôi làm việc ở trung tâm thương mại.',
+          furigana: [
+            { kanji: '姉', reading: 'あね', meaning: 'TỶ' },
+            { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }
+          ]
+        }
+      ]
     },
     {
       pattern: '知りません (Không biết)',
       explanation: 'Thể phủ định của 「知って います」 là 「知りません」, không phải là 「知って いません」.',
-      example: '市役所の 電話番号を 知って いますか。 (Anh/Chị có biết số điện thoại của Văn phòng hành chính quận không?)\n...はい、知って います。 (...Có, tôi biết.)\n...いいえ、知りません。 (...Không, tôi không biết.)'
+      example: '市役所の 電話番号を 知って いますか。 (Anh/Chị có biết số điện thoại của Văn phòng hành chính quận không?)\n...はい、知って います。 (...Có, tôi biết.)\n...いいえ、知りません。 (...Không, tôi không biết.)',
+      examples: [
+        {
+          jp: 'あの人の名前を知りません。',
+          vn: 'Tôi không biết tên người kia.',
+          furigana: [
+            { kanji: '人', reading: 'ひと', meaning: 'NHÂN' },
+            { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: '住所を知りません。',
+          vn: 'Tôi không biết địa chỉ.',
+          furigana: [
+            { kanji: '住所', reading: 'じゅうしょ', meaning: 'TRÚ SỞ' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: '田中さんを知りません。',
+          vn: 'Tôi không biết anh Tanaka.',
+          furigana: [
+            { kanji: '田中', reading: 'たなか', meaning: 'ĐIỀN TRUNG' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: '電話番号を知りません。',
+          vn: 'Tôi không biết số điện thoại.',
+          furigana: [
+            { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: '漢字を知りません。',
+          vn: 'Tôi không biết Kanji.',
+          furigana: [
+            { kanji: '漢字', reading: 'かんじ', meaning: 'HÁN TỰ' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: 'そのニュースを知りません。',
+          vn: 'Tôi không biết tin tức đó.',
+          furigana: [
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: '道を知りません。',
+          vn: 'Tôi không biết đường.',
+          furigana: [
+            { kanji: '道', reading: 'みち', meaning: 'ĐẠO' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: 'いつ来るか知りません。',
+          vn: 'Tôi không biết khi nào đến.',
+          furigana: [
+            { kanji: '来', reading: 'く', meaning: 'LAI' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: 'どこに住んでいるか知りません。',
+          vn: 'Tôi không biết sống ở đâu.',
+          furigana: [
+            { kanji: '住', reading: 'す', meaning: 'TRÚ' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: 'パスワードを知りません。',
+          vn: 'Tôi không biết mật khẩu.',
+          furigana: [
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        }
+      ]
     }
   ],
   kaiwa: [],
@@ -38099,83 +40381,2638 @@ export const lesson16Data: LessonDetail = {
   id: 16,
   title: 'Bài 16',
   vocabulary: [
-    { word: 'のります', kanji: '乗ります', romaji: 'norimasu', mean: 'Đi, lên [tàu]' },
-    { word: 'おります', kanji: '降ります', romaji: 'orimasu', mean: 'Xuống [tàu]' },
-    { word: 'のりかえます', kanji: '乗り換えます', romaji: 'norikaemasu', mean: 'Chuyển, đổi (tàu)' },
-    { word: 'あびます', kanji: '浴びます', romaji: 'abimasu', mean: 'Tắm [vòi hoa sen]' },
-    { word: 'いれます', kanji: '入れます', romaji: 'iremasu', mean: 'Cho vào, bỏ vào' },
-    { word: 'だします', kanji: '出します', romaji: 'dashimasu', mean: 'Lấy ra, rút (tiền)' },
-    { word: 'はいります', kanji: '入ります', romaji: 'hairimasu', mean: 'Vào, nhập học [đại học]' },
-    { word: 'でます', kanji: '出ます', romaji: 'demasu', mean: 'Ra, tốt nghiệp [đại học]' },
-    { word: 'やめます', kanji: '辞めます', romaji: 'yamemasu', mean: 'Bỏ, thôi [việc công ty]' },
-    { word: 'おします', kanji: '押します', romaji: 'oshimasu', mean: 'Bấm, ấn (nút)' },
-    { word: 'わかい', kanji: '若い', romaji: 'wakai', mean: 'Trẻ' },
-    { word: 'ながい', kanji: '長い', romaji: 'nagai', mean: 'Dài' },
-    { word: 'みじかい', kanji: '短い', romaji: 'mijikai', mean: 'Ngắn' },
-    { word: 'あかるい', kanji: '明るい', romaji: 'akarui', mean: 'Sáng' },
-    { word: 'くらい', kanji: '暗い', romaji: 'kurai', mean: 'Tối' },
-    { word: 'せがたかい', kanji: '背が高い', romaji: 'segatakai', mean: 'Cao (dùng cho người)' },
-    { word: 'あたまがいい', kanji: '頭がいい', romaji: 'atamagaii', mean: 'Thông minh' },
-    { word: 'からだ', kanji: '体', romaji: 'karada', mean: 'Người, cơ thể' },
-    { word: 'あたま', kanji: '頭', romaji: 'atama', mean: 'Đầu' },
-    { word: 'かみ', kanji: '髪', romaji: 'kami', mean: 'Tóc' },
-    { word: 'かお', kanji: '顔', romaji: 'kao', mean: 'Mặt' },
-    { word: 'め', kanji: '目', romaji: 'me', mean: 'Mắt' },
-    { word: 'みみ', kanji: '耳', romaji: 'mimi', mean: 'Tai' },
-    { word: 'くち', kanji: '口', romaji: 'kuchi', mean: 'Miệng' },
-    { word: 'は', kanji: '歯', romaji: 'ha', mean: 'Răng' },
-    { word: 'おなか', kanji: 'お腹', romaji: 'onaka', mean: 'Bụng' },
-    { word: 'あし', kanji: '足', romaji: 'ashi', mean: 'Chân' },
-    { word: 'サービス', kanji: 'サービス', romaji: 'saabisu', mean: 'Dịch vụ' },
-    { word: 'ジョギング', kanji: 'ジョギング', romaji: 'jogingu', mean: 'Việc chạy bộ (~wo shimasu: chạy bộ)' },
-    { word: 'シャワー', kanji: 'シャワー', romaji: 'shawaa', mean: 'Vòi hoa sen' },
-    { word: 'みどり', kanji: '緑', romaji: 'midori', mean: 'Màu xanh lá cây' },
-    { word: 'おてら', kanji: '[お]寺', romaji: 'tera', mean: 'Chùa' },
-    { word: 'じんじゃ', kanji: '神社', romaji: 'jinja', mean: 'Đền thờ đạo Thần' },
-    { word: 'りゅうがくせい', kanji: '留学生', romaji: 'ryuugakusei', mean: 'Lưu học sinh, du học sinh' },
-    { word: 'ばん', kanji: '番', romaji: 'ban', mean: 'Số ~' },
-    { word: 'どうやって', kanji: 'どうやって', romaji: 'douyatte', mean: 'Làm thế nào ~' },
-    { word: 'どの', kanji: 'どの', romaji: 'dono', mean: 'Cái nào ~ (dùng đối với trường hợp từ ba thứ trở lên)' },
-    { word: 'いいえ、まだまだです', kanji: 'いいえ、まだまだです', romaji: 'iiemadamadadesu', mean: '[Không,] tôi còn kém lắm. (cách nói khiêm nhường khi được ai đó khen)' },
-    { word: 'おひきだしですか', kanji: 'お引き出しですか', romaji: 'ohikidashidesuka', mean: 'Anh/Chị rút tiền ạ?' },
-    { word: 'まず', kanji: 'まず', romaji: 'mazu', mean: 'Trước hết, đầu tiên' },
-    { word: 'キャッシュカード', kanji: 'キャッシュカード', romaji: 'kyasshukaado', mean: 'Thẻ ngân hàng, thẻ ATM' },
-    { word: 'あんしょうばんごう', kanji: '暗証番号', romaji: 'anshoubangou', mean: 'Mã số bí mật (mật khẩu)' },
-    { word: 'つぎに', kanji: '次に', romaji: 'tsugini', mean: 'Tiếp theo' },
-    { word: 'きんがく', kanji: '金額', romaji: 'kingaku', mean: 'Số tiền, khoản tiền' },
-    { word: 'かくにん', kanji: '確認', romaji: 'kakunin', mean: 'Sự xác nhận, sự kiểm tra (~shimasu: xác nhận)' },
-    { word: 'ボタン', kanji: 'ボタン', romaji: 'botan', mean: 'Nút' }
+    {
+      word: 'のります', kanji: '乗ります', romaji: 'norimasu', mean: 'Đi, lên [tàu]',
+      examples: [
+        {
+          jp: '電車に乗ります。', vn: 'Lên tàu điện.',
+          furigana: [
+            { kanji: '電車', reading: 'でんしゃ', meaning: 'ĐIỆN XA' },
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' }
+          ]
+        },
+        {
+          jp: 'バスに乗ります。', vn: 'Lên xe buýt.',
+          furigana: [
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' }
+          ]
+        },
+        {
+          jp: 'タクシーに乗ります。', vn: 'Lên taxi.',
+          furigana: [
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' }
+          ]
+        },
+        {
+          jp: '自転車に乗ります。', vn: 'Đi xe đạp.',
+          furigana: [
+            { kanji: '自転車', reading: 'じてんしゃ', meaning: 'TỰ CHUYỂN XA' },
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' }
+          ]
+        },
+        {
+          jp: '馬に乗ります。', vn: 'Cưỡi ngựa.',
+          furigana: [
+            { kanji: '馬', reading: 'うま', meaning: 'MÃ' },
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' }
+          ]
+        },
+        {
+          jp: '飛行機に乗ります。', vn: 'Lên máy bay.',
+          furigana: [
+            { kanji: '飛行機', reading: 'ひこうき', meaning: 'PHI HÀNH CƠ' },
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おります', kanji: '降ります', romaji: 'orimasu', mean: 'Xuống [tàu]',
+      examples: [
+        {
+          jp: '電車を降ります。', vn: 'Xuống tàu điện.',
+          furigana: [
+            { kanji: '電車', reading: 'でんしゃ', meaning: 'ĐIỆN XA' },
+            { kanji: '降', reading: 'お', meaning: 'GIÁNG' }
+          ]
+        },
+        {
+          jp: 'バスを降ります。', vn: 'Xuống xe buýt.',
+          furigana: [
+            { kanji: '降', reading: 'お', meaning: 'GIÁNG' }
+          ]
+        },
+        {
+          jp: '次の駅で降ります。', vn: 'Xuống ở ga tiếp theo.',
+          furigana: [
+            { kanji: '次', reading: 'つぎ', meaning: 'THỨ' },
+            { kanji: '駅', reading: 'えき', meaning: 'DỊCH' },
+            { kanji: '降', reading: 'お', meaning: 'GIÁNG' }
+          ]
+        },
+        {
+          jp: 'タクシーを降ります。', vn: 'Xuống taxi.',
+          furigana: [
+            { kanji: '降', reading: 'お', meaning: 'GIÁNG' }
+          ]
+        },
+        {
+          jp: 'ここで降ります。', vn: 'Tôi xuống ở đây.',
+          furigana: [
+            { kanji: '降', reading: 'お', meaning: 'GIÁNG' }
+          ]
+        },
+        {
+          jp: '大学前でバスを降ります。', vn: 'Xuống xe buýt ở trước trường đại học.',
+          furigana: [
+            { kanji: '大学前', reading: 'だいがくまえ', meaning: 'ĐẠI HỌC TIỀN' },
+            { kanji: '降', reading: 'お', meaning: 'GIÁNG' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'のりかえます', kanji: '乗り換えます', romaji: 'norikaemasu', mean: 'Chuyển, đổi (tàu)',
+      examples: [
+        {
+          jp: '電車を乗り換えます。', vn: 'Chuyển tàu điện.',
+          furigana: [
+            { kanji: '電車', reading: 'でんしゃ', meaning: 'ĐIỆN XA' },
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' },
+            { kanji: '換', reading: 'か', meaning: 'HOÁN' }
+          ]
+        },
+        {
+          jp: '東京駅で乗り換えます。', vn: 'Chuyển tàu ở ga Tokyo.',
+          furigana: [
+            { kanji: '東京駅', reading: 'とうきょうえき', meaning: 'ĐÔNG KINH DỊCH' },
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' },
+            { kanji: '換', reading: 'か', meaning: 'HOÁN' }
+          ]
+        },
+        {
+          jp: '地下鉄に乗り換えます。', vn: 'Chuyển sang tàu điện ngầm.',
+          furigana: [
+            { kanji: '地下鉄', reading: 'ちかてつ', meaning: 'ĐỊA HẠ THIẾT' },
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' },
+            { kanji: '換', reading: 'か', meaning: 'HOÁN' }
+          ]
+        },
+        {
+          jp: 'バスに乗り換えます。', vn: 'Chuyển sang xe buýt.',
+          furigana: [
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' },
+            { kanji: '換', reading: 'か', meaning: 'HOÁN' }
+          ]
+        },
+        {
+          jp: 'ここで乗り換えてください。', vn: 'Hãy chuyển tàu ở đây.',
+          furigana: [
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' },
+            { kanji: '換', reading: 'か', meaning: 'HOÁN' }
+          ]
+        },
+        {
+          jp: '新幹線に乗り換えます。', vn: 'Chuyển sang tàu Shinkansen.',
+          furigana: [
+            { kanji: '新幹線', reading: 'しんかんせん', meaning: 'TÂN CÁN TUYẾN' },
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' },
+            { kanji: '換', reading: 'か', meaning: 'HOÁN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'あびます', kanji: '浴びます', romaji: 'abimasu', mean: 'Tắm [vòi hoa sen]',
+      examples: [
+        {
+          jp: 'シャワーを浴びます。', vn: 'Tắm vòi hoa sen.',
+          furigana: [
+            { kanji: '浴', reading: 'あ', meaning: 'DỤC' }
+          ]
+        },
+        {
+          jp: '朝シャワーを浴びます。', vn: 'Tắm vòi hoa sen vào buổi sáng.',
+          furigana: [
+            { kanji: '朝', reading: 'あさ', meaning: 'TRIỀU' },
+            { kanji: '浴', reading: 'あ', meaning: 'DỤC' }
+          ]
+        },
+        {
+          jp: '家に帰ってから、シャワーを浴びます。', vn: 'Sau khi về nhà, tôi tắm vòi hoa sen.',
+          furigana: [
+            { kanji: '家', reading: 'うち', meaning: 'GIA' },
+            { kanji: '帰', reading: 'かえ', meaning: 'QUY' },
+            { kanji: '浴', reading: 'あ', meaning: 'DỤC' }
+          ]
+        },
+        {
+          jp: 'お湯を浴びます。', vn: 'Tắm nước nóng.',
+          furigana: [
+            { kanji: '湯', reading: 'ゆ', meaning: 'THANG' },
+            { kanji: '浴', reading: 'あ', meaning: 'DỤC' }
+          ]
+        },
+        {
+          jp: '毎日シャワーを浴びます。', vn: 'Mỗi ngày đều tắm vòi hoa sen.',
+          furigana: [
+            { kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' },
+            { kanji: '浴', reading: 'あ', meaning: 'DỤC' }
+          ]
+        },
+        {
+          jp: 'スポーツの後でシャワーを浴びます。', vn: 'Tắm vòi hoa sen sau khi chơi thể thao.',
+          furigana: [
+            { kanji: '後', reading: 'あと', meaning: 'HẬU' },
+            { kanji: '浴', reading: 'あ', meaning: 'DỤC' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'いれます', kanji: '入れます', romaji: 'iremasu', mean: 'Cho vào, bỏ vào',
+      examples: [
+        {
+          jp: 'お金を入れます。', vn: 'Bỏ tiền vào.',
+          furigana: [
+            { kanji: '金', reading: 'かね', meaning: 'KIM' },
+            { kanji: '入', reading: 'い', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'カードを入れます。', vn: 'Cho thẻ vào.',
+          furigana: [
+            { kanji: '入', reading: 'い', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'コーヒーに砂糖を入れます。', vn: 'Cho đường vào cà phê.',
+          furigana: [
+            { kanji: '砂糖', reading: 'さとう', meaning: 'SA ĐƯỜNG' },
+            { kanji: '入', reading: 'い', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'かばんに本を入れます。', vn: 'Cho sách vào cặp.',
+          furigana: [
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '入', reading: 'い', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: '冷蔵庫にビールを入れます。', vn: 'Cho bia vào tủ lạnh.',
+          furigana: [
+            { kanji: '冷蔵庫', reading: 'れいぞうこ', meaning: 'LÃNH TÀNG KHỐ' },
+            { kanji: '入', reading: 'い', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'スイッチを入れます。', vn: 'Bật công tắc.',
+          furigana: [
+            { kanji: '入', reading: 'い', meaning: 'NHẬP' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'だします', kanji: '出します', romaji: 'dashimasu', mean: 'Lấy ra, rút (tiền)',
+      examples: [
+        {
+          jp: 'お金を出します。', vn: 'Rút tiền.',
+          furigana: [
+            { kanji: '金', reading: 'かね', meaning: 'KIM' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: 'かばんから本を出します。', vn: 'Lấy sách từ trong cặp ra.',
+          furigana: [
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '宿題を出します。', vn: 'Nộp bài tập về nhà.',
+          furigana: [
+            { kanji: '宿題', reading: 'しゅくだい', meaning: 'TÚC ĐỀ' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '手紙を出します。', vn: 'Gửi thư.',
+          furigana: [
+            { kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: 'ゴミを出します。', vn: 'Đổ rác.',
+          furigana: [
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '答えを出します。', vn: 'Đưa ra câu trả lời.',
+          furigana: [
+            { kanji: '答', reading: 'こた', meaning: 'ĐÁP' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'はいります', kanji: '入ります', romaji: 'hairimasu', mean: 'Vào, nhập học [đại học]',
+      examples: [
+        {
+          jp: '大学に入ります。', vn: 'Vào đại học.',
+          furigana: [
+            { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'お風呂に入ります。', vn: 'Tắm bồn.',
+          furigana: [
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: '喫茶店に入ります。', vn: 'Vào quán giải khát.',
+          furigana: [
+            { kanji: '喫茶店', reading: 'きっさてん', meaning: 'KHIẾT TRÀ ĐIẾM' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: '部屋に入ります。', vn: 'Vào phòng.',
+          furigana: [
+            { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'どうぞ入ってください。', vn: 'Xin mời vào.',
+          furigana: [
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: '会社に入ります。', vn: 'Vào công ty.',
+          furigana: [
+            { kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'でます', kanji: '出ます', romaji: 'demasu', mean: 'Ra, tốt nghiệp [đại học]',
+      examples: [
+        {
+          jp: '大学を出ます。', vn: 'Tốt nghiệp đại học.',
+          furigana: [
+            { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '喫茶店を出ます。', vn: 'Ra khỏi quán giải khát.',
+          furigana: [
+            { kanji: '喫茶店', reading: 'きっさてん', meaning: 'KHIẾT TRÀ ĐIẾM' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '部屋を出ます。', vn: 'Ra khỏi phòng.',
+          furigana: [
+            { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '家を7時に出ます。', vn: 'Ra khỏi nhà lúc 7 giờ.',
+          furigana: [
+            { kanji: '家', reading: 'うち', meaning: 'GIA' },
+            { kanji: '時', reading: 'じ', meaning: 'THỜI' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: 'お釣りが出ます。', vn: 'Tiền thừa chạy ra.',
+          furigana: [
+            { kanji: '釣', reading: 'つ', meaning: 'ĐIẾU' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: 'バスが出ます。', vn: 'Xe buýt xuất phát.',
+          furigana: [
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'やめます', kanji: '辞めます', romaji: 'yamemasu', mean: 'Bỏ, thôi [việc công ty]',
+      examples: [
+        {
+          jp: '会社を辞めます。', vn: 'Bỏ việc công ty.',
+          furigana: [
+            { kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' },
+            { kanji: '辞', reading: 'や', meaning: 'TỪ' }
+          ]
+        },
+        {
+          jp: '仕事を辞めます。', vn: 'Bỏ việc.',
+          furigana: [
+            { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' },
+            { kanji: '辞', reading: 'や', meaning: 'TỪ' }
+          ]
+        },
+        {
+          jp: 'たばこを辞めます。', vn: 'Bỏ thuốc lá.',
+          furigana: [
+            { kanji: '辞', reading: 'や', meaning: 'TỪ' }
+          ]
+        },
+        {
+          jp: '学校を辞めます。', vn: 'Thôi học.',
+          furigana: [
+            { kanji: '学校', reading: 'がっこう', meaning: 'HỌC HIỆU' },
+            { kanji: '辞', reading: 'や', meaning: 'TỪ' }
+          ]
+        },
+        {
+          jp: 'バイトを辞めます。', vn: 'Bỏ việc làm thêm.',
+          furigana: [
+            { kanji: '辞', reading: 'や', meaning: 'TỪ' }
+          ]
+        },
+        {
+          jp: 'お酒を辞めます。', vn: 'Bỏ rượu.',
+          furigana: [
+            { kanji: '酒', reading: 'さけ', meaning: 'TỬU' },
+            { kanji: '辞', reading: 'や', meaning: 'TỪ' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おします', kanji: '押します', romaji: 'oshimasu', mean: 'Bấm, ấn (nút)',
+      examples: [
+        {
+          jp: 'ボタンを押します。', vn: 'Bấm nút.',
+          furigana: [
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        },
+        {
+          jp: 'スイッチを押します。', vn: 'Bấm công tắc.',
+          furigana: [
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        },
+        {
+          jp: 'はんこを押します。', vn: 'Đóng dấu.',
+          furigana: [
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        },
+        {
+          jp: 'ドアのベルを押します。', vn: 'Bấm chuông cửa.',
+          furigana: [
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        },
+        {
+          jp: '背中を押します。', vn: 'Đẩy lưng.',
+          furigana: [
+            { kanji: '背中', reading: 'せなか', meaning: 'BỐI TRUNG' },
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        },
+        {
+          jp: '車椅子を押します。', vn: 'Đẩy xe lăn.',
+          furigana: [
+            { kanji: '車椅子', reading: 'くるまいす', meaning: 'XA KỶ TỬ' },
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'わかい', kanji: '若い', romaji: 'wakai', mean: 'Trẻ',
+      examples: [
+        {
+          jp: '若い人', vn: 'Người trẻ.',
+          furigana: [
+            { kanji: '若', reading: 'わか', meaning: 'NHƯỢC' },
+            { kanji: '人', reading: 'ひと', meaning: 'NHÂN' }
+          ]
+        },
+        {
+          jp: 'あの先生は若いです。', vn: 'Thầy giáo kia trẻ.',
+          furigana: [
+            { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' },
+            { kanji: '若', reading: 'わか', meaning: 'NHƯỢC' }
+          ]
+        },
+        {
+          jp: '彼は若くて元気です。', vn: 'Anh ấy trẻ và khỏe mạnh.',
+          furigana: [
+            { kanji: '彼', reading: 'かれ', meaning: 'BỈ' },
+            { kanji: '若', reading: 'わか', meaning: 'NHƯỢC' },
+            { kanji: '元気', reading: 'げんき', meaning: 'NGUYÊN KHÍ' }
+          ]
+        },
+        {
+          jp: '若い時', vn: 'Khi còn trẻ.',
+          furigana: [
+            { kanji: '若', reading: 'わか', meaning: 'NHƯỢC' },
+            { kanji: '時', reading: 'とき', meaning: 'THỜI' }
+          ]
+        },
+        {
+          jp: '若い女性', vn: 'Cô gái trẻ.',
+          furigana: [
+            { kanji: '若', reading: 'わか', meaning: 'NHƯỢC' },
+            { kanji: '女性', reading: 'じょせい', meaning: 'NỮ TÍNH' }
+          ]
+        },
+        {
+          jp: '気持ちは若いです。', vn: 'Tâm hồn thì trẻ.',
+          furigana: [
+            { kanji: '気持', reading: 'きも', meaning: 'KHÍ TRÌ' },
+            { kanji: '若', reading: 'わか', meaning: 'NHƯỢC' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ながい', kanji: '長い', romaji: 'nagai', mean: 'Dài',
+      examples: [
+        {
+          jp: '髪が長いです。', vn: 'Tóc dài.',
+          furigana: [
+            { kanji: '髪', reading: 'かみ', meaning: 'PHÁT' },
+            { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' }
+          ]
+        },
+        {
+          jp: '足が長いです。', vn: 'Chân dài.',
+          furigana: [
+            { kanji: '足', reading: 'あし', meaning: 'TÚC' },
+            { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' }
+          ]
+        },
+        {
+          jp: '長い手紙', vn: 'Bức thư dài.',
+          furigana: [
+            { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' },
+            { kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' }
+          ]
+        },
+        {
+          jp: '長い間', vn: 'Một thời gian dài.',
+          furigana: [
+            { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' },
+            { kanji: '間', reading: 'あいだ', meaning: 'GIAN' }
+          ]
+        },
+        {
+          jp: '首が長いです。', vn: 'Cổ dài.',
+          furigana: [
+            { kanji: '首', reading: 'くび', meaning: 'THỦ' },
+            { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' }
+          ]
+        },
+        {
+          jp: '長い休み', vn: 'Kỳ nghỉ dài.',
+          furigana: [
+            { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' },
+            { kanji: '休', reading: 'やす', meaning: 'HƯU' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'みじかい', kanji: '短い', romaji: 'mijikai', mean: 'Ngắn',
+      examples: [
+        {
+          jp: '髪が短いです。', vn: 'Tóc ngắn.',
+          furigana: [
+            { kanji: '髪', reading: 'かみ', meaning: 'PHÁT' },
+            { kanji: '短', reading: 'みじか', meaning: 'ĐOẢN' }
+          ]
+        },
+        {
+          jp: 'スカートが短いです。', vn: 'Váy ngắn.',
+          furigana: [
+            { kanji: '短', reading: 'みじか', meaning: 'ĐOẢN' }
+          ]
+        },
+        {
+          jp: '足が短いです。', vn: 'Chân ngắn.',
+          furigana: [
+            { kanji: '足', reading: 'あし', meaning: 'TÚC' },
+            { kanji: '短', reading: 'みじか', meaning: 'ĐOẢN' }
+          ]
+        },
+        {
+          jp: '短い鉛筆', vn: 'Bút chì ngắn.',
+          furigana: [
+            { kanji: '短', reading: 'みじか', meaning: 'ĐOẢN' },
+            { kanji: '鉛筆', reading: 'えんぴつ', meaning: 'DUYÊN BÚT' }
+          ]
+        },
+        {
+          jp: '日が短いです。', vn: 'Ngày ngắn.',
+          furigana: [
+            { kanji: '日', reading: 'ひ', meaning: 'NHẬT' },
+            { kanji: '短', reading: 'みじか', meaning: 'ĐOẢN' }
+          ]
+        },
+        {
+          jp: '短い時間', vn: 'Thời gian ngắn.',
+          furigana: [
+            { kanji: '短', reading: 'みじか', meaning: 'ĐOẢN' },
+            { kanji: '時間', reading: 'じかん', meaning: 'THỜI GIAN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'あかるい', kanji: '明るい', romaji: 'akarui', mean: 'Sáng',
+      examples: [
+        {
+          jp: '明るい部屋', vn: 'Phòng sáng sủa.',
+          furigana: [
+            { kanji: '明', reading: 'あか', meaning: 'MINH' },
+            { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }
+          ]
+        },
+        {
+          jp: '性格が明るいです。', vn: 'Tính cách vui vẻ (sáng sủa).',
+          furigana: [
+            { kanji: '性格', reading: 'せいかく', meaning: 'TÍNH CÁCH' },
+            { kanji: '明', reading: 'あか', meaning: 'MINH' }
+          ]
+        },
+        {
+          jp: '色が明るいです。', vn: 'Màu sáng.',
+          furigana: [
+            { kanji: '色', reading: 'いろ', meaning: 'SẮC' },
+            { kanji: '明', reading: 'あか', meaning: 'MINH' }
+          ]
+        },
+        {
+          jp: '外は明るいです。', vn: 'Bên ngoài trời sáng.',
+          furigana: [
+            { kanji: '外', reading: 'そと', meaning: 'NGOẠI' },
+            { kanji: '明', reading: 'あか', meaning: 'MINH' }
+          ]
+        },
+        {
+          jp: '明るい人', vn: 'Người vui vẻ.',
+          furigana: [
+            { kanji: '明', reading: 'あか', meaning: 'MINH' },
+            { kanji: '人', reading: 'ひと', meaning: 'NHÂN' }
+          ]
+        },
+        {
+          jp: '月が明るいです。', vn: 'Trăng sáng.',
+          furigana: [
+            { kanji: '月', reading: 'つき', meaning: 'NGUYỆT' },
+            { kanji: '明', reading: 'あか', meaning: 'MINH' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'くらい', kanji: '暗い', romaji: 'kurai', mean: 'Tối',
+      examples: [
+        {
+          jp: '暗い部屋', vn: 'Phòng tối.',
+          furigana: [
+            { kanji: '暗', reading: 'くら', meaning: 'ÁM' },
+            { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' }
+          ]
+        },
+        {
+          jp: '外は暗いです。', vn: 'Bên ngoài trời tối.',
+          furigana: [
+            { kanji: '外', reading: 'そと', meaning: 'NGOẠI' },
+            { kanji: '暗', reading: 'くら', meaning: 'ÁM' }
+          ]
+        },
+        {
+          jp: '色が暗いです。', vn: 'Màu tối.',
+          furigana: [
+            { kanji: '色', reading: 'いろ', meaning: 'SẮC' },
+            { kanji: '暗', reading: 'くら', meaning: 'ÁM' }
+          ]
+        },
+        {
+          jp: '暗いニュース', vn: 'Tin tức u ám.',
+          furigana: [
+            { kanji: '暗', reading: 'くら', meaning: 'ÁM' }
+          ]
+        },
+        {
+          jp: '性格が暗いです。', vn: 'Tính cách trầm (u ám).',
+          furigana: [
+            { kanji: '性格', reading: 'せいかく', meaning: 'TÍNH CÁCH' },
+            { kanji: '暗', reading: 'くら', meaning: 'ÁM' }
+          ]
+        },
+        {
+          jp: '部屋が暗くて見えません。', vn: 'Phòng tối nên không nhìn thấy gì.',
+          furigana: [
+            { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' },
+            { kanji: '暗', reading: 'くら', meaning: 'ÁM' },
+            { kanji: '見', reading: 'み', meaning: 'KIẾN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'せがたかい', kanji: '背が高い', romaji: 'segatakai', mean: 'Cao (dùng cho người)',
+      examples: [
+        {
+          jp: '彼は背が高いです。', vn: 'Anh ấy cao.',
+          furigana: [
+            { kanji: '彼', reading: 'かれ', meaning: 'BỈ' },
+            { kanji: '背', reading: 'せ', meaning: 'BỐI' },
+            { kanji: '高', reading: 'たか', meaning: 'CAO' }
+          ]
+        },
+        {
+          jp: '背が高い人', vn: 'Người cao.',
+          furigana: [
+            { kanji: '背', reading: 'せ', meaning: 'BỐI' },
+            { kanji: '高', reading: 'たか', meaning: 'CAO' },
+            { kanji: '人', reading: 'ひと', meaning: 'NHÂN' }
+          ]
+        },
+        {
+          jp: '父は背が高いです。', vn: 'Bố tôi cao.',
+          furigana: [
+            { kanji: '父', reading: 'ちち', meaning: 'PHỤ' },
+            { kanji: '背', reading: 'せ', meaning: 'BỐI' },
+            { kanji: '高', reading: 'たか', meaning: 'CAO' }
+          ]
+        },
+        {
+          jp: 'ミラーさんは背が高いですか。', vn: 'Anh Miller có cao không?',
+          furigana: [
+            { kanji: '背', reading: 'せ', meaning: 'BỐI' },
+            { kanji: '高', reading: 'たか', meaning: 'CAO' }
+          ]
+        },
+        {
+          jp: '背が高くて、ハンサムです。', vn: 'Cao và đẹp trai.',
+          furigana: [
+            { kanji: '背', reading: 'せ', meaning: 'BỐI' },
+            { kanji: '高', reading: 'たか', meaning: 'CAO' }
+          ]
+        },
+        {
+          jp: '兄は私より背が高いです。', vn: 'Anh trai cao hơn tôi.',
+          furigana: [
+            { kanji: '兄', reading: 'あに', meaning: 'HUYNH' },
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '背', reading: 'せ', meaning: 'BỐI' },
+            { kanji: '高', reading: 'たか', meaning: 'CAO' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'あたまがいい', kanji: '頭がいい', romaji: 'atamagaii', mean: 'Thông minh',
+      examples: [
+        {
+          jp: '彼は頭がいいです。', vn: 'Anh ấy thông minh.',
+          furigana: [
+            { kanji: '彼', reading: 'かれ', meaning: 'BỈ' },
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' }
+          ]
+        },
+        {
+          jp: 'イーさんは頭がいい学生です。', vn: 'Y là một sinh viên thông minh.',
+          furigana: [
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' },
+            { kanji: '学生', reading: 'がくせい', meaning: 'HỌC SINH' }
+          ]
+        },
+        {
+          jp: '頭がよくて、面白いです。', vn: 'Thông minh và thú vị.',
+          furigana: [
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' },
+            { kanji: '面白', reading: 'おもしろ', meaning: 'DIỆN BẠCH' }
+          ]
+        },
+        {
+          jp: '姉は頭がいいです。', vn: 'Chị tôi thông minh.',
+          furigana: [
+            { kanji: '姉', reading: 'あね', meaning: 'TỶ' },
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' }
+          ]
+        },
+        {
+          jp: '頭がいい犬', vn: 'Chú chó thông minh.',
+          furigana: [
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' },
+            { kanji: '犬', reading: 'いぬ', meaning: 'KHIỂN' }
+          ]
+        },
+        {
+          jp: '彼は若くて頭がいいです。', vn: 'Anh ấy trẻ và thông minh.',
+          furigana: [
+            { kanji: '彼', reading: 'かれ', meaning: 'BỈ' },
+            { kanji: '若', reading: 'わか', meaning: 'NHƯỢC' },
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'からだ', kanji: '体', romaji: 'karada', mean: 'Người, cơ thể',
+      examples: [
+        {
+          jp: '体が大きいです。', vn: 'Cơ thể to lớn.',
+          furigana: [
+            { kanji: '体', reading: 'からだ', meaning: 'THỂ' },
+            { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }
+          ]
+        },
+        {
+          jp: '体にいいです。', vn: 'Tốt cho cơ thể.',
+          furigana: [
+            { kanji: '体', reading: 'からだ', meaning: 'THỂ' }
+          ]
+        },
+        {
+          jp: '体の調子が悪いです。', vn: 'Tình trạng cơ thể không tốt.',
+          furigana: [
+            { kanji: '体', reading: 'からだ', meaning: 'THỂ' },
+            { kanji: '調子', reading: 'ちょうし', meaning: 'ĐIỀU TỬ' },
+            { kanji: '悪', reading: 'わる', meaning: 'ÁC' }
+          ]
+        },
+        {
+          jp: '体を洗います。', vn: 'Rửa người (tắm).',
+          furigana: [
+            { kanji: '体', reading: 'からだ', meaning: 'THỂ' },
+            { kanji: '洗', reading: 'あら', meaning: 'TẨY' }
+          ]
+        },
+        {
+          jp: '体を大切にしてください。', vn: 'Hãy giữ gìn sức khỏe.',
+          furigana: [
+            { kanji: '体', reading: 'からだ', meaning: 'THỂ' },
+            { kanji: '大切', reading: 'たいせつ', meaning: 'ĐẠI THIẾT' }
+          ]
+        },
+        {
+          jp: '体がかゆいです。', vn: 'Ngứa người.',
+          furigana: [
+            { kanji: '体', reading: 'からだ', meaning: 'THỂ' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'あたま', kanji: '頭', romaji: 'atama', mean: 'Đầu',
+      examples: [
+        {
+          jp: '頭が痛いです。', vn: 'Đau đầu.',
+          furigana: [
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: '頭を洗います。', vn: 'Gội đầu.',
+          furigana: [
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' },
+            { kanji: '洗', reading: 'あら', meaning: 'TẨY' }
+          ]
+        },
+        {
+          jp: '頭がいいです。', vn: 'Thông minh.',
+          furigana: [
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' }
+          ]
+        },
+        {
+          jp: '頭を使います。', vn: 'Dùng cái đầu (suy nghĩ).',
+          furigana: [
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' },
+            { kanji: '使', reading: 'つか', meaning: 'SỬ' }
+          ]
+        },
+        {
+          jp: '頭を下げます。', vn: 'Cúi đầu.',
+          furigana: [
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' },
+            { kanji: '下', reading: 'さ', meaning: 'HẠ' }
+          ]
+        },
+        {
+          jp: '頭がかたいです。', vn: 'Cứng đầu.',
+          furigana: [
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'かみ', kanji: '髪', romaji: 'kami', mean: 'Tóc',
+      examples: [
+        {
+          jp: '髪が長いです。', vn: 'Tóc dài.',
+          furigana: [
+            { kanji: '髪', reading: 'かみ', meaning: 'PHÁT' },
+            { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' }
+          ]
+        },
+        {
+          jp: '髪を切ります。', vn: 'Cắt tóc.',
+          furigana: [
+            { kanji: '髪', reading: 'かみ', meaning: 'PHÁT' },
+            { kanji: '切', reading: 'き', meaning: 'THIẾT' }
+          ]
+        },
+        {
+          jp: '髪が短いです。', vn: 'Tóc ngắn.',
+          furigana: [
+            { kanji: '髪', reading: 'かみ', meaning: 'PHÁT' },
+            { kanji: '短', reading: 'みじか', meaning: 'ĐOẢN' }
+          ]
+        },
+        {
+          jp: '髪が黒いです。', vn: 'Tóc đen.',
+          furigana: [
+            { kanji: '髪', reading: 'かみ', meaning: 'PHÁT' },
+            { kanji: '黒', reading: 'くろ', meaning: 'HẮC' }
+          ]
+        },
+        {
+          jp: '髪を洗います。', vn: 'Gội đầu.',
+          furigana: [
+            { kanji: '髪', reading: 'かみ', meaning: 'PHÁT' },
+            { kanji: '洗', reading: 'あら', meaning: 'TẨY' }
+          ]
+        },
+        {
+          jp: 'きれいな髪ですね。', vn: 'Tóc đẹp nhỉ.',
+          furigana: [
+            { kanji: '髪', reading: 'かみ', meaning: 'PHÁT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'かお', kanji: '顔', romaji: 'kao', mean: 'Mặt',
+      examples: [
+        {
+          jp: '顔を洗います。', vn: 'Rửa mặt.',
+          furigana: [
+            { kanji: '顔', reading: 'かお', meaning: 'NHAN' },
+            { kanji: '洗', reading: 'あら', meaning: 'TẨY' }
+          ]
+        },
+        {
+          jp: '顔が赤いです。', vn: 'Mặt đỏ.',
+          furigana: [
+            { kanji: '顔', reading: 'かお', meaning: 'NHAN' },
+            { kanji: '赤', reading: 'あか', meaning: 'XÍCH' }
+          ]
+        },
+        {
+          jp: 'いい顔をしています。', vn: 'Trông mặt tươi tỉnh/có thần thái tốt.',
+          furigana: [
+            { kanji: '顔', reading: 'かお', meaning: 'NHAN' }
+          ]
+        },
+        {
+          jp: '顔色が悪いですね。', vn: 'Sắc mặt không tốt nhỉ.',
+          furigana: [
+            { kanji: '顔色', reading: 'かおいろ', meaning: 'NHAN SẮC' },
+            { kanji: '悪', reading: 'わる', meaning: 'ÁC' }
+          ]
+        },
+        {
+          jp: '真面目な顔', vn: 'Khuôn mặt nghiêm túc.',
+          furigana: [
+            { kanji: '真面目', reading: 'まじめ', meaning: 'CHÂN DIỆN MỤC' },
+            { kanji: '顔', reading: 'かお', meaning: 'NHAN' }
+          ]
+        },
+        {
+          jp: '知らない顔', vn: 'Mặt lạ.',
+          furigana: [
+            { kanji: '知', reading: 'し', meaning: 'TRI' },
+            { kanji: '顔', reading: 'かお', meaning: 'NHAN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'め', kanji: '目', romaji: 'me', mean: 'Mắt',
+      examples: [
+        {
+          jp: '目が大きいです。', vn: 'Mắt to.',
+          furigana: [
+            { kanji: '目', reading: 'め', meaning: 'MỤC' },
+            { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }
+          ]
+        },
+        {
+          jp: '目がいいです。', vn: 'Mắt tinh.',
+          furigana: [
+            { kanji: '目', reading: 'め', meaning: 'MỤC' }
+          ]
+        },
+        {
+          jp: '目が悪いです。', vn: 'Mắt kém.',
+          furigana: [
+            { kanji: '目', reading: 'め', meaning: 'MỤC' },
+            { kanji: '悪', reading: 'わる', meaning: 'ÁC' }
+          ]
+        },
+        {
+          jp: '目が痛いです。', vn: 'Đau mắt.',
+          furigana: [
+            { kanji: '目', reading: 'め', meaning: 'MỤC' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: '目を閉じてください。', vn: 'Hãy nhắm mắt lại.',
+          furigana: [
+            { kanji: '目', reading: 'め', meaning: 'MỤC' },
+            { kanji: '閉', reading: 'と', meaning: 'BẾ' }
+          ]
+        },
+        {
+          jp: '目を開けてください。', vn: 'Hãy mở mắt ra.',
+          furigana: [
+            { kanji: '目', reading: 'め', meaning: 'MỤC' },
+            { kanji: '開', reading: 'あ', meaning: 'KHAI' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'みみ', kanji: '耳', romaji: 'mimi', mean: 'Tai',
+      examples: [
+        {
+          jp: '耳が大きいです。', vn: 'Tai to.',
+          furigana: [
+            { kanji: '耳', reading: 'みみ', meaning: 'NHĨ' },
+            { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }
+          ]
+        },
+        {
+          jp: '耳が痛いです。', vn: 'Đau tai.',
+          furigana: [
+            { kanji: '耳', reading: 'みみ', meaning: 'NHĨ' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: '耳が遠いです。', vn: 'Lãng tai (nghe kém).',
+          furigana: [
+            { kanji: '耳', reading: 'みみ', meaning: 'NHĨ' },
+            { kanji: '遠', reading: 'とお', meaning: 'VIỄN' }
+          ]
+        },
+        {
+          jp: '耳がいいです。', vn: 'Thính tai.',
+          furigana: [
+            { kanji: '耳', reading: 'みみ', meaning: 'NHĨ' }
+          ]
+        },
+        {
+          jp: '右の耳', vn: 'Tai phải.',
+          furigana: [
+            { kanji: '右', reading: 'みぎ', meaning: 'HỮU' },
+            { kanji: '耳', reading: 'みみ', meaning: 'NHĨ' }
+          ]
+        },
+        {
+          jp: '犬の耳', vn: 'Tai chó.',
+          furigana: [
+            { kanji: '犬', reading: 'いぬ', meaning: 'KHIỂN' },
+            { kanji: '耳', reading: 'みみ', meaning: 'NHĨ' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'くち', kanji: '口', romaji: 'kuchi', mean: 'Miệng',
+      examples: [
+        {
+          jp: '口が小さいです。', vn: 'Miệng nhỏ.',
+          furigana: [
+            { kanji: '口', reading: 'くち', meaning: 'KHẨU' },
+            { kanji: '小', reading: 'ちい', meaning: 'TIỂU' }
+          ]
+        },
+        {
+          jp: '口を開けてください。', vn: 'Hãy mở miệng ra.',
+          furigana: [
+            { kanji: '口', reading: 'くち', meaning: 'KHẨU' },
+            { kanji: '開', reading: 'あ', meaning: 'KHAI' }
+          ]
+        },
+        {
+          jp: '口を閉じてください。', vn: 'Hãy ngậm miệng lại.',
+          furigana: [
+            { kanji: '口', reading: 'くち', meaning: 'KHẨU' },
+            { kanji: '閉', reading: 'と', meaning: 'BẾ' }
+          ]
+        },
+        {
+          jp: '口が悪いです。', vn: 'Độc mồm độc miệng.',
+          furigana: [
+            { kanji: '口', reading: 'くち', meaning: 'KHẨU' },
+            { kanji: '悪', reading: 'わる', meaning: 'ÁC' }
+          ]
+        },
+        {
+          jp: '出口', vn: 'Cửa ra.',
+          furigana: [
+            { kanji: '出口', reading: 'でぐち', meaning: 'XUẤT KHẨU' }
+          ]
+        },
+        {
+          jp: '入口', vn: 'Cửa vào.',
+          furigana: [
+            { kanji: '入口', reading: 'いりぐち', meaning: 'NHẬP KHẨU' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'は', kanji: '歯', romaji: 'ha', mean: 'Răng',
+      examples: [
+        {
+          jp: '歯を磨きます。', vn: 'Đánh răng.',
+          furigana: [
+            { kanji: '歯', reading: 'は', meaning: 'XỈ' },
+            { kanji: '磨', reading: 'みが', meaning: 'MA' }
+          ]
+        },
+        {
+          jp: '歯が痛いです。', vn: 'Đau răng.',
+          furigana: [
+            { kanji: '歯', reading: 'は', meaning: 'XỈ' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: '白い歯', vn: 'Răng trắng.',
+          furigana: [
+            { kanji: '白', reading: 'しろ', meaning: 'BẠCH' },
+            { kanji: '歯', reading: 'は', meaning: 'XỈ' }
+          ]
+        },
+        {
+          jp: '歯医者へ行きます。', vn: 'Đi nha sĩ.',
+          furigana: [
+            { kanji: '歯医者', reading: 'はいしゃ', meaning: 'XỈ Y GIẢ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '歯がきれいですね。', vn: 'Răng đẹp nhỉ.',
+          furigana: [
+            { kanji: '歯', reading: 'は', meaning: 'XỈ' }
+          ]
+        },
+        {
+          jp: '虫歯', vn: 'Răng sâu.',
+          furigana: [
+            { kanji: '虫歯', reading: 'むしば', meaning: 'TRÙNG XỈ' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おなか', kanji: 'お腹', romaji: 'onaka', mean: 'Bụng',
+      examples: [
+        {
+          jp: 'お腹が痛いです。', vn: 'Đau bụng.',
+          furigana: [
+            { kanji: '腹', reading: 'なか', meaning: 'PHÚC' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: 'お腹がすきました。', vn: 'Đói bụng.',
+          furigana: [
+            { kanji: '腹', reading: 'なか', meaning: 'PHÚC' }
+          ]
+        },
+        {
+          jp: 'お腹がいっぱいです。', vn: 'No bụng.',
+          furigana: [
+            { kanji: '腹', reading: 'なか', meaning: 'PHÚC' }
+          ]
+        },
+        {
+          jp: 'お腹の調子が悪いです。', vn: 'Bụng dạ không tốt.',
+          furigana: [
+            { kanji: '腹', reading: 'なか', meaning: 'PHÚC' },
+            { kanji: '調子', reading: 'ちょうし', meaning: 'ĐIỀU TỬ' },
+            { kanji: '悪', reading: 'わる', meaning: 'ÁC' }
+          ]
+        },
+        {
+          jp: 'お腹を壊しました。', vn: 'Bị rối loạn tiêu hóa.',
+          furigana: [
+            { kanji: '腹', reading: 'なか', meaning: 'PHÚC' },
+            { kanji: '壊', reading: 'こわ', meaning: 'HOẠI' }
+          ]
+        },
+        {
+          jp: '大きいお腹', vn: 'Bụng to (bụng bia/mang bầu).',
+          furigana: [
+            { kanji: '大', reading: 'おお', meaning: 'ĐẠI' },
+            { kanji: '腹', reading: 'なか', meaning: 'PHÚC' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'あし', kanji: '足', romaji: 'ashi', mean: 'Chân',
+      examples: [
+        {
+          jp: '足が長いです。', vn: 'Chân dài.',
+          furigana: [
+            { kanji: '足', reading: 'あし', meaning: 'TÚC' },
+            { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' }
+          ]
+        },
+        {
+          jp: '足が痛いです。', vn: 'Đau chân.',
+          furigana: [
+            { kanji: '足', reading: 'あし', meaning: 'TÚC' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: '足が大きいです。', vn: 'Chân to (size giày lớn).',
+          furigana: [
+            { kanji: '足', reading: 'あし', meaning: 'TÚC' },
+            { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }
+          ]
+        },
+        {
+          jp: '足を洗います。', vn: 'Rửa chân.',
+          furigana: [
+            { kanji: '足', reading: 'あし', meaning: 'TÚC' },
+            { kanji: '洗', reading: 'あら', meaning: 'TẨY' }
+          ]
+        },
+        {
+          jp: '右足', vn: 'Chân phải.',
+          furigana: [
+            { kanji: '右足', reading: 'みぎあし', meaning: 'HỮU TÚC' }
+          ]
+        },
+        {
+          jp: '左足', vn: 'Chân trái.',
+          furigana: [
+            { kanji: '左足', reading: 'ひだりあし', meaning: 'TẢ TÚC' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'サービス', kanji: 'サービス', romaji: 'saabisu', mean: 'Dịch vụ',
+      examples: [
+        {
+          jp: 'サービスがいい店', vn: 'Cửa hàng có dịch vụ tốt.',
+          furigana: [
+            { kanji: '店', reading: 'みせ', meaning: 'ĐIẾM' }
+          ]
+        },
+        {
+          jp: 'サービスが悪いです。', vn: 'Dịch vụ kém.',
+          furigana: [
+            { kanji: '悪', reading: 'わる', meaning: 'ÁC' }
+          ]
+        },
+        {
+          jp: 'アフターサービス', vn: 'Dịch vụ hậu mãi.',
+          furigana: []
+        },
+        {
+          jp: 'これはサービスです。', vn: 'Cái này là khuyến mãi/miễn phí.',
+          furigana: []
+        },
+        {
+          jp: 'サービス残業', vn: 'Làm thêm giờ không lương.',
+          furigana: [
+            { kanji: '残業', reading: 'ざんぎょう', meaning: 'TÀN NGHIỆP' }
+          ]
+        },
+        {
+          jp: 'サービスの仕事', vn: 'Công việc ngành dịch vụ.',
+          furigana: [
+            { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ジョギング', kanji: 'ジョギング', romaji: 'jogingu', mean: 'Việc chạy bộ (~wo shimasu: chạy bộ)',
+      examples: [
+        {
+          jp: 'ジョギングをします。', vn: 'Chạy bộ.',
+          furigana: []
+        },
+        {
+          jp: '朝ジョギングをします。', vn: 'Chạy bộ vào buổi sáng.',
+          furigana: [
+            { kanji: '朝', reading: 'あさ', meaning: 'TRIỀU' }
+          ]
+        },
+        {
+          jp: '公園でジョギングをします。', vn: 'Chạy bộ ở công viên.',
+          furigana: [
+            { kanji: '公園', reading: 'こうえん', meaning: 'CÔNG VIÊN' }
+          ]
+        },
+        {
+          jp: 'ジョギングが好きです。', vn: 'Thích chạy bộ.',
+          furigana: [
+            { kanji: '好', reading: 'す', meaning: 'HẢO' }
+          ]
+        },
+        {
+          jp: 'ジョギングシューズ', vn: 'Giày chạy bộ.',
+          furigana: []
+        },
+        {
+          jp: '毎日ジョギングをしています。', vn: 'Ngày nào tôi cũng chạy bộ.',
+          furigana: [
+            { kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'シャワー', kanji: 'シャワー', romaji: 'shawaa', mean: 'Vòi hoa sen',
+      examples: [
+        {
+          jp: 'シャワーを浴びます。', vn: 'Tắm vòi hoa sen.',
+          furigana: [
+            { kanji: '浴', reading: 'あ', meaning: 'DỤC' }
+          ]
+        },
+        {
+          jp: 'シャワーのお湯が出ません。', vn: 'Nước nóng ở vòi hoa sen không chảy ra.',
+          furigana: [
+            { kanji: '湯', reading: 'ゆ', meaning: 'THANG' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: 'シャワールーム', vn: 'Phòng tắm vòi hoa sen.',
+          furigana: []
+        },
+        {
+          jp: '朝シャワー', vn: 'Tắm sáng.',
+          furigana: [
+            { kanji: '朝', reading: 'あさ', meaning: 'TRIỀU' }
+          ]
+        },
+        {
+          jp: '熱いシャワー', vn: 'Vòi hoa sen nóng.',
+          furigana: [
+            { kanji: '熱', reading: 'あつ', meaning: 'NHIỆT' }
+          ]
+        },
+        {
+          jp: '冷たいシャワー', vn: 'Vòi hoa sen lạnh.',
+          furigana: [
+            { kanji: '冷', reading: 'つめ', meaning: 'LÃNH' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'みどり', kanji: '緑', romaji: 'midori', mean: 'Màu xanh lá cây',
+      examples: [
+        {
+          jp: '緑のシャツ', vn: 'Áo sơ mi màu xanh lá.',
+          furigana: [
+            { kanji: '緑', reading: 'みどり', meaning: 'LỤC' }
+          ]
+        },
+        {
+          jp: '緑が多いです。', vn: 'Nhiều cây xanh (màu xanh).',
+          furigana: [
+            { kanji: '緑', reading: 'みどり', meaning: 'LỤC' },
+            { kanji: '多', reading: 'おお', meaning: 'ĐA' }
+          ]
+        },
+        {
+          jp: '緑茶', vn: 'Trà xanh.',
+          furigana: [
+            { kanji: '緑茶', reading: 'りょくちゃ', meaning: 'LỤC TRÀ' }
+          ]
+        },
+        {
+          jp: 'きれいな緑色', vn: 'Màu xanh đẹp.',
+          furigana: [
+            { kanji: '緑色', reading: 'みどりいろ', meaning: 'LỤC SẮC' }
+          ]
+        },
+        {
+          jp: '山が緑になりました。', vn: 'Núi đã chuyển sang màu xanh.',
+          furigana: [
+            { kanji: '山', reading: 'やま', meaning: 'SƠN' },
+            { kanji: '緑', reading: 'みどり', meaning: 'LỤC' }
+          ]
+        },
+        {
+          jp: '信号の緑', vn: 'Đèn xanh (tín hiệu).',
+          furigana: [
+            { kanji: '信号', reading: 'しんごう', meaning: 'TÍN HIỆU' },
+            { kanji: '緑', reading: 'みどり', meaning: 'LỤC' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おてら', kanji: '[お]寺', romaji: 'tera', mean: 'Chùa',
+      examples: [
+        {
+          jp: 'お寺へ行きます。', vn: 'Đi chùa.',
+          furigana: [
+            { kanji: '寺', reading: 'てら', meaning: 'TỰ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '京都のお寺', vn: 'Chùa ở Kyoto.',
+          furigana: [
+            { kanji: '京都', reading: 'きょうと', meaning: 'KINH ĐÔ' },
+            { kanji: '寺', reading: 'てら', meaning: 'TỰ' }
+          ]
+        },
+        {
+          jp: '有名なお寺', vn: 'Ngôi chùa nổi tiếng.',
+          furigana: [
+            { kanji: '有名', reading: 'ゆうめい', meaning: 'HỮU DANH' },
+            { kanji: '寺', reading: 'てら', meaning: 'TỰ' }
+          ]
+        },
+        {
+          jp: '古いお寺', vn: 'Ngôi chùa cổ.',
+          furigana: [
+            { kanji: '古', reading: 'ふる', meaning: 'CỔ' },
+            { kanji: '寺', reading: 'てら', meaning: 'TỰ' }
+          ]
+        },
+        {
+          jp: 'お寺を見学します。', vn: 'Tham quan chùa.',
+          furigana: [
+            { kanji: '寺', reading: 'てら', meaning: 'TỰ' },
+            { kanji: '見学', reading: 'けんがく', meaning: 'KIẾN HỌC' }
+          ]
+        },
+        {
+          jp: '金閣寺', vn: 'Chùa Kinkaku (Chùa Vàng).',
+          furigana: [
+            { kanji: '金閣寺', reading: 'きんかくじ', meaning: 'KIM CÁC TỰ' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'じんじゃ', kanji: '神社', romaji: 'jinja', mean: 'Đền thờ đạo Thần',
+      examples: [
+        {
+          jp: '神社へ行きます。', vn: 'Đi đền thờ.',
+          furigana: [
+            { kanji: '神社', reading: 'じんじゃ', meaning: 'THẦN XÃ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '日本で神社を見ました。', vn: 'Tôi đã xem đền thờ ở Nhật Bản.',
+          furigana: [
+            { kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' },
+            { kanji: '神社', reading: 'じんじゃ', meaning: 'THẦN XÃ' },
+            { kanji: '見', reading: 'み', meaning: 'KIẾN' }
+          ]
+        },
+        {
+          jp: '静かな神社', vn: 'Ngôi đền yên tĩnh.',
+          furigana: [
+            { kanji: '静', reading: 'しず', meaning: 'TĨNH' },
+            { kanji: '神社', reading: 'じんじゃ', meaning: 'THẦN XÃ' }
+          ]
+        },
+        {
+          jp: '近くの神社', vn: 'Ngôi đền ở gần.',
+          furigana: [
+            { kanji: '近', reading: 'ちか', meaning: 'CẬN' },
+            { kanji: '神社', reading: 'じんじゃ', meaning: 'THẦN XÃ' }
+          ]
+        },
+        {
+          jp: '神社でお祈りします。', vn: 'Cầu nguyện ở đền thờ.',
+          furigana: [
+            { kanji: '神社', reading: 'じんじゃ', meaning: 'THẦN XÃ' },
+            { kanji: '祈', reading: 'いの', meaning: 'KÌ' }
+          ]
+        },
+        {
+          jp: '明治神宮', vn: 'Đền Meiji.',
+          furigana: [
+            { kanji: '明治神宮', reading: 'めいじじんぐう', meaning: 'MINH TRỊ THẦN CUNG' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'りゅうがくせい', kanji: '留学生', romaji: 'ryuugakusei', mean: 'Lưu học sinh, du học sinh',
+      examples: [
+        {
+          jp: '私は留学生です。', vn: 'Tôi là du học sinh.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '留学生', reading: 'ryuugakusei', meaning: 'LƯU HỌC SINH' }
+          ]
+        },
+        {
+          jp: '大学の留学生', vn: 'Du học sinh đại học.',
+          furigana: [
+            { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' },
+            { kanji: '留学生', reading: 'ryuugakusei', meaning: 'LƯU HỌC SINH' }
+          ]
+        },
+        {
+          jp: '留学生センター', vn: 'Trung tâm du học sinh.',
+          furigana: [
+            { kanji: '留学生', reading: 'ryuugakusei', meaning: 'LƯU HỌC SINH' }
+          ]
+        },
+        {
+          jp: 'ベトナムからの留学生', vn: 'Du học sinh từ Việt Nam.',
+          furigana: [
+            { kanji: '留学生', reading: 'ryuugakusei', meaning: 'LƯU HỌC SINH' }
+          ]
+        },
+        {
+          jp: '留学生が多いです。', vn: 'Nhiều du học sinh.',
+          furigana: [
+            { kanji: '留学生', reading: 'ryuugakusei', meaning: 'LƯU HỌC SINH' },
+            { kanji: '多', reading: 'おお', meaning: 'ĐA' }
+          ]
+        },
+        {
+          jp: '留学生会館', vn: 'Hội quán du học sinh (Ký túc xá).',
+          furigana: [
+            { kanji: '留学生会館', reading: 'りゅうがくせいかいかん', meaning: 'LƯU HỌC SINH HỘI QUÁN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ばん', kanji: '番', romaji: 'ban', mean: 'Số ~',
+      examples: [
+        {
+          jp: '一番', vn: 'Số 1 (nhất).',
+          furigana: [
+            { kanji: '一', reading: 'いち', meaning: 'NHẤT' },
+            { kanji: '番', reading: 'ばん', meaning: 'PHIÊN' }
+          ]
+        },
+        {
+          jp: '18番のバス', vn: 'Xe buýt số 18.',
+          furigana: [
+            { kanji: '番', reading: 'ばん', meaning: 'PHIÊN' }
+          ]
+        },
+        {
+          jp: '電話番号は何番ですか。', vn: 'Số điện thoại là số mấy?',
+          furigana: [
+            { kanji: '電話番号', reading: 'でんわばんごう', meaning: 'ĐIỆN THOẠI PHIÊN HIỆU' },
+            { kanji: '何番', reading: 'なんばん', meaning: 'HÀ PHIÊN' }
+          ]
+        },
+        {
+          jp: '部屋番号', vn: 'Số phòng.',
+          furigana: [
+            { kanji: '部屋番号', reading: 'へやばんごう', meaning: 'BỘ ỐC PHIÊN HIỆU' }
+          ]
+        },
+        {
+          jp: '順番', vn: 'Thứ tự.',
+          furigana: [
+            { kanji: '順番', reading: 'じゅんばん', meaning: 'THUẬN PHIÊN' }
+          ]
+        },
+        {
+          jp: '交番', vn: 'Đồn cảnh sát.',
+          furigana: [
+            { kanji: '交番', reading: 'こうばん', meaning: 'GIAO PHIÊN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'どうやって', kanji: 'どうやって', romaji: 'douyatte', mean: 'Làm thế nào ~',
+      examples: [
+        {
+          jp: '大学までどうやって行きますか。', vn: 'Đến đại học đi như thế nào?',
+          furigana: [
+            { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: 'どうやって使いますか。', vn: 'Sử dụng như thế nào?',
+          furigana: [
+            { kanji: '使', reading: 'つか', meaning: 'SỬ' }
+          ]
+        },
+        {
+          jp: 'どうやって食べますか。', vn: 'Ăn như thế nào?',
+          furigana: [
+            { kanji: '食', reading: 'た', meaning: 'THỰC' }
+          ]
+        },
+        {
+          jp: '駅までどうやって行きますか。', vn: 'Đến nhà ga đi như thế nào?',
+          furigana: [
+            { kanji: '駅', reading: 'えき', meaning: 'DỊCH' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: 'これをどうやって作りましたか。', vn: 'Cái này làm như thế nào vậy?',
+          furigana: [
+            { kanji: '作', reading: 'つく', meaning: 'TÁC' }
+          ]
+        },
+        {
+          jp: 'これ、どうやって開けますか。', vn: 'Cái này mở như thế nào?',
+          furigana: [
+            { kanji: '開', reading: 'あ', meaning: 'KHAI' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'どの', kanji: 'どの', romaji: 'dono', mean: 'Cái nào ~ (dùng đối với trường hợp từ ba thứ trở lên)',
+      examples: [
+        {
+          jp: 'どの方ですか。', vn: 'Là vị nào?',
+          furigana: [
+            { kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }
+          ]
+        },
+        {
+          jp: 'どの人ですか。', vn: 'Là người nào?',
+          furigana: [
+            { kanji: '人', reading: 'ひと', meaning: 'NHÂN' }
+          ]
+        },
+        {
+          jp: 'どのバスですか。', vn: 'Là xe buýt nào?',
+          furigana: []
+        },
+        {
+          jp: 'どの本ですか。', vn: 'Là quyển sách nào?',
+          furigana: [
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' }
+          ]
+        },
+        {
+          jp: 'ミラーさんはどの人ですか。', vn: 'Anh Miller là người nào?',
+          furigana: [
+            { kanji: '人', reading: 'ひと', meaning: 'NHÂN' }
+          ]
+        },
+        {
+          jp: 'どの靴が好きですか。', vn: 'Bạn thích đôi giày nào?',
+          furigana: [
+            { kanji: '靴', reading: 'くつ', meaning: 'OA' },
+            { kanji: '好', reading: 'す', meaning: 'HẢO' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'いいえ、まだまだです', kanji: 'いいえ、まだまだです', romaji: 'iiemadamadadesu', mean: '[Không,] tôi còn kém lắm. (cách nói khiêm nhường khi được ai đó khen)',
+      examples: [
+        {
+          jp: '日本語が上手ですね。', vn: 'Tiếng Nhật giỏi nhỉ.',
+          furigana: [
+            { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' },
+            { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }
+          ]
+        },
+        {
+          jp: 'いいえ、まだまだです。', vn: 'Không, tôi còn kém lắm.',
+          furigana: []
+        },
+        {
+          jp: 'ピアノが上手ですね。', vn: 'Chơi piano giỏi nhỉ.',
+          furigana: [
+            { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }
+          ]
+        },
+        {
+          jp: '歌が上手ですね。', vn: 'Hát hay nhỉ.',
+          furigana: [
+            { kanji: '歌', reading: 'うた', meaning: 'CA' },
+            { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }
+          ]
+        },
+        {
+          jp: '料理が上手ですね。', vn: 'Nấu ăn giỏi nhỉ.',
+          furigana: [
+            { kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' },
+            { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }
+          ]
+        },
+        {
+          jp: '絵がきれいですね。', vn: 'Tranh đẹp nhỉ.',
+          furigana: [
+            { kanji: '絵', reading: 'え', meaning: 'HỘI' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おひきだしですか', kanji: 'お引き出しですか', romaji: 'ohikidashidesuka', mean: 'Anh/Chị rút tiền ạ?',
+      examples: [
+        {
+          jp: 'お引き出しですか。', vn: 'Anh/Chị rút tiền ạ?',
+          furigana: [
+            { kanji: '引', reading: 'ひ', meaning: 'DẪN' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: 'はい、そうです。', vn: 'Vâng, đúng vậy.',
+          furigana: []
+        },
+        {
+          jp: '銀行で「お引き出しですか」と聞かれました。', vn: 'Tôi được hỏi ở ngân hàng là "Anh rút tiền ạ?".',
+          furigana: [
+            { kanji: '銀行', reading: 'ぎんこう', meaning: 'NGÂN HÀNH' },
+            { kanji: '引', reading: 'ひ', meaning: 'DẪN' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' },
+            { kanji: '聞', reading: 'き', meaning: 'VĂN' }
+          ]
+        },
+        {
+          jp: '引き出しの中にあります。', vn: 'Có trong ngăn kéo.',
+          furigana: [
+            { kanji: '引', reading: 'ひ', meaning: 'DẪN' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' },
+            { kanji: '中', reading: 'なか', meaning: 'TRUNG' }
+          ]
+        },
+        {
+          jp: 'お金を引き出します。', vn: 'Rút tiền.',
+          furigana: [
+            { kanji: '金', reading: 'かね', meaning: 'KIM' },
+            { kanji: '引', reading: 'ひ', meaning: 'DẪN' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '預け入れですか、お引き出しですか。', vn: 'Gửi tiền hay rút tiền ạ?',
+          furigana: [
+            { kanji: '預', reading: 'あず', meaning: 'DỰ' },
+            { kanji: '入', reading: 'い', meaning: 'NHẬP' },
+            { kanji: '引', reading: 'ひ', meaning: 'DẪN' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'まず', kanji: 'まず', romaji: 'mazu', mean: 'Trước hết, đầu tiên',
+      examples: [
+        {
+          jp: 'まず、カードを入れます。', vn: 'Trước hết, cho thẻ vào.',
+          furigana: [
+            { kanji: '入', reading: 'い', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'まず、野菜を切ります。', vn: 'Trước hết, cắt rau.',
+          furigana: [
+            { kanji: '野菜', reading: 'やさい', meaning: 'DÃ THÁI' },
+            { kanji: '切', reading: 'き', meaning: 'THIẾT' }
+          ]
+        },
+        {
+          jp: 'まず、手を洗ってください。', vn: 'Trước hết, hãy rửa tay.',
+          furigana: [
+            { kanji: '手', reading: 'て', meaning: 'THỦ' },
+            { kanji: '洗', reading: 'あら', meaning: 'TẨY' }
+          ]
+        },
+        {
+          jp: 'まず、説明を聞いてください。', vn: 'Trước hết, hãy nghe giải thích.',
+          furigana: [
+            { kanji: '説明', reading: 'せつめい', meaning: 'THUYẾT MINH' },
+            { kanji: '聞', reading: 'き', meaning: 'VĂN' }
+          ]
+        },
+        {
+          jp: 'まず、名前を書いてください。', vn: 'Trước hết, hãy viết tên.',
+          furigana: [
+            { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' },
+            { kanji: '書', reading: 'か', meaning: 'THƯ' }
+          ]
+        },
+        {
+          jp: 'まず、ここを押してください。', vn: 'Trước hết, hãy ấn vào đây.',
+          furigana: [
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'キャッシュカード', kanji: 'キャッシュカード', romaji: 'kyasshukaado', mean: 'Thẻ ngân hàng, thẻ ATM',
+      examples: [
+        {
+          jp: 'キャッシュカードを作ります。', vn: 'Làm thẻ ngân hàng.',
+          furigana: [
+            { kanji: '作', reading: 'つく', meaning: 'TÁC' }
+          ]
+        },
+        {
+          jp: 'キャッシュカードをなくしました。', vn: 'Tôi làm mất thẻ ngân hàng.',
+          furigana: []
+        },
+        {
+          jp: 'キャッシュカードがありますか。', vn: 'Bạn có thẻ ngân hàng không?',
+          furigana: []
+        },
+        {
+          jp: 'キャッシュカードで払います。', vn: 'Trả bằng thẻ ngân hàng.',
+          furigana: [
+            { kanji: '払', reading: 'はら', meaning: 'PHẤT' }
+          ]
+        },
+        {
+          jp: 'キャッシュカードを入れてください。', vn: 'Hãy cho thẻ ngân hàng vào.',
+          furigana: [
+            { kanji: '入', reading: 'い', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'キャッシュカードの暗証番号', vn: 'Mật khẩu thẻ ngân hàng.',
+          furigana: [
+            { kanji: '暗証番号', reading: 'あんしょうばんごう', meaning: 'ÁM CHỨNG PHIÊN HIỆU' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'あんしょうばんごう', kanji: '暗証番号', romaji: 'anshoubangou', mean: 'Mã số bí mật (mật khẩu)',
+      examples: [
+        {
+          jp: '暗証番号を押します。', vn: 'Nhập mật khẩu.',
+          furigana: [
+            { kanji: '暗証番号', reading: 'あんしょうばんごう', meaning: 'ÁM CHỨNG PHIÊN HIỆU' },
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        },
+        {
+          jp: '暗証番号忘れました。', vn: 'Tôi quên mật khẩu.',
+          furigana: [
+            { kanji: '暗証番号', reading: 'あんしょうばんごう', meaning: 'ÁM CHỨNG PHIÊN HIỆU' },
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' }
+          ]
+        },
+        {
+          jp: '暗証番号を確認します。', vn: 'Xác nhận mật khẩu.',
+          furigana: [
+            { kanji: '暗証番号', reading: 'あんしょうばんごう', meaning: 'ÁM CHỨNG PHIÊN HIỆU' },
+            { kanji: '確認', reading: 'かくにん', meaning: 'XÁC NHẬN' }
+          ]
+        },
+        {
+          jp: '暗証番号を変えます。', vn: 'Đổi mật khẩu.',
+          furigana: [
+            { kanji: '暗証番号', reading: 'あんしょうばんごう', meaning: 'ÁM CHỨNG PHIÊN HIỆU' },
+            { kanji: '変', reading: 'か', meaning: 'BIẾN' }
+          ]
+        },
+        {
+          jp: '暗証番号を教えてください。', vn: 'Hãy cho tôi biết mật khẩu.',
+          furigana: [
+            { kanji: '暗証番号', reading: 'あんしょうばんごう', meaning: 'ÁM CHỨNG PHIÊN HIỆU' },
+            { kanji: '教', reading: 'おし', meaning: 'GIÁO' }
+          ]
+        },
+        {
+          jp: '暗証番号が違います。', vn: 'Mật khẩu bị sai.',
+          furigana: [
+            { kanji: '暗証番号', reading: 'あんしょうばんごう', meaning: 'ÁM CHỨNG PHIÊN HIỆU' },
+            { kanji: '違', reading: 'ちが', meaning: 'VI' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'つぎに', kanji: '次に', romaji: 'tsugini', mean: 'Tiếp theo',
+      examples: [
+        {
+          jp: '次に、暗証番号を押して下さい。', vn: 'Tiếp theo, hãy nhập mật khẩu.',
+          furigana: [
+            { kanji: '次', reading: 'つぎ', meaning: 'THỨ' },
+            { kanji: '暗証番号', reading: 'あんしょうばんごう', meaning: 'ÁM CHỨNG PHIÊN HIỆU' },
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        },
+        {
+          jp: '次に、右へ曲がります。', vn: 'Tiếp theo, rẽ phải.',
+          furigana: [
+            { kanji: '次', reading: 'つぎ', meaning: 'THỨ' },
+            { kanji: '右', reading: 'みぎ', meaning: 'HỮU' },
+            { kanji: '曲', reading: 'ま', meaning: 'KHÚC' }
+          ]
+        },
+        {
+          jp: '次に、金額を選びます。', vn: 'Tiếp theo, chọn số tiền.',
+          furigana: [
+            { kanji: '次', reading: 'つぎ', meaning: 'THỨ' },
+            { kanji: '金額', reading: 'きんがく', meaning: 'KIM NGẠCH' },
+            { kanji: '選', reading: 'えら', meaning: 'TUYỂN' }
+          ]
+        },
+        {
+          jp: '次に、確認ボタンを押します。', vn: 'Tiếp theo, ấn nút xác nhận.',
+          furigana: [
+            { kanji: '次', reading: 'つぎ', meaning: 'THỨ' },
+            { kanji: '確認', reading: 'かくにん', meaning: 'XÁC NHẬN' },
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        },
+        {
+          jp: '次に何をしますか。', vn: 'Tiếp theo làm gì?',
+          furigana: [
+            { kanji: '次', reading: 'つぎ', meaning: 'THỨ' },
+            { kanji: '何', reading: 'なに', meaning: 'HÀ' }
+          ]
+        },
+        {
+          jp: '次に誰が歌いますか。', vn: 'Tiếp theo ai sẽ hát?',
+          furigana: [
+            { kanji: '次', reading: 'つぎ', meaning: 'THỨ' },
+            { kanji: '誰', reading: 'だれ', meaning: 'THÙY' },
+            { kanji: '歌', reading: 'うた', meaning: 'CA' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'きんがく', kanji: '金額', romaji: 'kingaku', mean: 'Số tiền, khoản tiền',
+      examples: [
+        {
+          jp: '金額を確認します。', vn: 'Kiểm tra số tiền.',
+          furigana: [
+            { kanji: '金額', reading: 'きんがく', meaning: 'KIM NGẠCH' },
+            { kanji: '確認', reading: 'かくにん', meaning: 'XÁC NHẬN' }
+          ]
+        },
+        {
+          jp: '金額を押します。', vn: 'Nhập số tiền.',
+          furigana: [
+            { kanji: '金額', reading: 'きんがく', meaning: 'KIM NGẠCH' },
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        },
+        {
+          jp: '金額が大きいです。', vn: 'Số tiền lớn.',
+          furigana: [
+            { kanji: '金額', reading: 'きんがく', meaning: 'KIM NGẠCH' },
+            { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }
+          ]
+        },
+        {
+          jp: '金額を見てください。', vn: 'Hãy nhìn số tiền.',
+          furigana: [
+            { kanji: '金額', reading: 'きんがく', meaning: 'KIM NGẠCH' },
+            { kanji: '見', reading: 'み', meaning: 'KIẾN' }
+          ]
+        },
+        {
+          jp: '金額はいくらですか。', vn: 'Số tiền là bao nhiêu?',
+          furigana: [
+            { kanji: '金額', reading: 'きんがく', meaning: 'KIM NGẠCH' }
+          ]
+        },
+        {
+          jp: '正しい金額', vn: 'Số tiền chính xác.',
+          furigana: [
+            { kanji: '正', reading: 'ただ', meaning: 'CHÍNH' },
+            { kanji: '金額', reading: 'きんがく', meaning: 'KIM NGẠCH' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'かくにん', kanji: '確認', romaji: 'kakunin', mean: 'Sự xác nhận, sự kiểm tra (~shimasu: xác nhận)',
+      examples: [
+        {
+          jp: '確認します。', vn: 'Xác nhận.',
+          furigana: [
+            { kanji: '確認', reading: 'かくにん', meaning: 'XÁC NHẬN' }
+          ]
+        },
+        {
+          jp: 'もう一度確認してください。', vn: 'Hãy xác nhận lại một lần nữa.',
+          furigana: [
+            { kanji: '一度', reading: 'いちど', meaning: 'NHẤT ĐỘ' },
+            { kanji: '確認', reading: 'かくにん', meaning: 'XÁC NHẬN' }
+          ]
+        },
+        {
+          jp: '確認ボタン', vn: 'Nút xác nhận.',
+          furigana: [
+            { kanji: '確認', reading: 'かくにん', meaning: 'XÁC NHẬN' }
+          ]
+        },
+        {
+          jp: '電話で確認します。', vn: 'Xác nhận qua điện thoại.',
+          furigana: [
+            { kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' },
+            { kanji: '確認', reading: 'かくにん', meaning: 'XÁC NHẬN' }
+          ]
+        },
+        {
+          jp: '予約の確認', vn: 'Xác nhận đặt chỗ.',
+          furigana: [
+            { kanji: '予約', reading: 'よやく', meaning: 'DỰ ƯỚC' },
+            { kanji: '確認', reading: 'かくにん', meaning: 'XÁC NHẬN' }
+          ]
+        },
+        {
+          jp: '安全確認', vn: 'Kiểm tra an toàn.',
+          furigana: [
+            { kanji: '安全', reading: 'あんぜん', meaning: 'AN TOÀN' },
+            { kanji: '確認', reading: 'かくにん', meaning: 'XÁC NHẬN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ボタン', kanji: 'ボタン', romaji: 'botan', mean: 'Nút',
+      examples: [
+        {
+          jp: 'ボタンを押します。', vn: 'Bấm nút.',
+          furigana: [
+            { kanji: '押', reading: 'お', meaning: 'ÁP' }
+          ]
+        },
+        {
+          jp: '確認ボタン', vn: 'Nút xác nhận.',
+          furigana: [
+            { kanji: '確認', reading: 'かくにん', meaning: 'XÁC NHẬN' }
+          ]
+        },
+        {
+          jp: 'シャツのボタン', vn: 'Cúc áo sơ mi.',
+          furigana: []
+        },
+        {
+          jp: 'ボタンがとれました。', vn: 'Cúc áo bị tuột.',
+          furigana: []
+        },
+        {
+          jp: 'ボタンを留めます。', vn: 'Cài cúc áo.',
+          furigana: [
+            { kanji: '留', reading: 'と', meaning: 'LƯU' }
+          ]
+        },
+        {
+          jp: '赤いボタン', vn: 'Nút màu đỏ.',
+          furigana: [
+            { kanji: '赤', reading: 'あか', meaning: 'XÍCH' }
+          ]
+        }
+      ]
+    }
   ],
   grammar: [
     {
       pattern: 'Động từ thể て, [động từ thể て,] ~',
       explanation: 'Dùng để nối các động từ với nhau khi liệt kê các hành động xảy ra theo trình tự thời gian. Thì của câu do động từ cuối cùng quyết định.',
-      example: '朝 ジョギングをして、シャワーを 浴びて、会社へ 行きます。 (Buổi sáng tôi chạy bộ, tắm, rồi đến công ty.)\n神戸へ 行って、映画を 見て、お茶を 飲みました。 (Tôi (đã) đi đến Kobe, xem phim, rồi uống trà.)'
+      example: '朝 ジョギングをして、シャワーを 浴びて、会社へ 行きます。 (Buổi sáng tôi chạy bộ, tắm, rồi đến công ty.)\n神戸へ 行って、映画を 見て、お茶を 飲みました。 (Tôi (đã) đi đến Kobe, xem phim, rồi uống trà.)',
+      examples: [
+        {
+          jp: '朝起きて、歯を磨いて、顔を洗います。',
+          vn: 'Buổi sáng tôi dậy, đánh răng, rồi rửa mặt.',
+          furigana: [
+            { kanji: '朝', reading: 'あさ', meaning: 'TRIỀU' },
+            { kanji: '起', reading: 'お', meaning: 'KHỞI' },
+            { kanji: '歯', reading: 'は', meaning: 'XỈ' },
+            { kanji: '磨', reading: 'みが', meaning: 'MA' },
+            { kanji: '顔', reading: 'かお', meaning: 'NHAN' },
+            { kanji: '洗', reading: 'あら', meaning: 'TẨY' }
+          ]
+        },
+        {
+          jp: '図書館へ行って、本を借りて、うちへ帰りました。',
+          vn: 'Tôi đã đi thư viện, mượn sách, rồi về nhà.',
+          furigana: [
+            { kanji: '図書館', reading: 'としょかん', meaning: 'ĐỒ THƯ QUÁN' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' },
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '借', reading: 'か', meaning: 'TÁ' },
+            { kanji: '帰', reading: 'かえ', meaning: 'QUY' }
+          ]
+        },
+        {
+          jp: '今日は宿題をして、テレビを見て、寝ます。',
+          vn: 'Hôm nay tôi làm bài tập, xem tivi, rồi ngủ.',
+          furigana: [
+            { kanji: '今日', reading: 'きょう', meaning: 'KIM NHẬT' },
+            { kanji: '宿題', reading: 'しゅくだい', meaning: 'TÚC ĐỀ' },
+            { kanji: '見', reading: 'み', meaning: 'KIẾN' },
+            { kanji: '寝', reading: 'ね', meaning: 'TẨM' }
+          ]
+        },
+        {
+          jp: '駅で新聞を買って、電車に乗りました。',
+          vn: 'Tôi đã mua báo ở ga, rồi lên tàu điện.',
+          furigana: [
+            { kanji: '駅', reading: 'えき', meaning: 'DỊCH' },
+            { kanji: '新聞', reading: 'しんぶん', meaning: 'TÂN VĂN' },
+            { kanji: '買', reading: 'か', meaning: 'MÃI' },
+            { kanji: '電車', reading: 'でんしゃ', meaning: 'ĐIỆN XA' },
+            { kanji: '乗', reading: 'の', meaning: 'THỪA' }
+          ]
+        },
+        {
+          jp: '神戸へ行って、映画を見ました。',
+          vn: 'Tôi đã đi Kobe, rồi xem phim.',
+          furigana: [
+            { kanji: '神戸', reading: 'こうべ', meaning: 'THẦN HỘ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' },
+            { kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' },
+            { kanji: '見', reading: 'み', meaning: 'KIẾN' }
+          ]
+        },
+        {
+          jp: '大阪城を見学して、写真を撮りました。',
+          vn: 'Tôi đã tham quan thành Osaka, rồi chụp ảnh.',
+          furigana: [
+            { kanji: '大阪城', reading: 'おおさかじょう', meaning: 'ĐẠI PHẢN THÀNH' },
+            { kanji: '見学', reading: 'けんがく', meaning: 'KIẾN HỌC' },
+            { kanji: '写真', reading: 'しゃしん', meaning: 'TẢ CHÂN' },
+            { kanji: '撮', reading: 'と', meaning: 'TOÁT' }
+          ]
+        },
+        {
+          jp: '友達に会って、一緒にご飯を食べました。',
+          vn: 'Tôi đã gặp bạn, rồi cùng nhau ăn cơm.',
+          furigana: [
+            { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' },
+            { kanji: '会', reading: 'あ', meaning: 'HỘI' },
+            { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' },
+            { kanji: '飯', reading: 'はん', meaning: 'PHẠN' },
+            { kanji: '食', reading: 'た', meaning: 'THỰC' }
+          ]
+        },
+        {
+          jp: 'うちへ帰って、すぐシャワーを浴びました。',
+          vn: 'Tôi về nhà, rồi tắm vòi hoa sen ngay.',
+          furigana: [
+            { kanji: '帰', reading: 'かえ', meaning: 'QUY' },
+            { kanji: '浴', reading: 'あ', meaning: 'DỤC' }
+          ]
+        },
+        {
+          jp: 'デパートへ行って、買い物をしました。',
+          vn: 'Tôi đã đi bách hóa, rồi mua sắm.',
+          furigana: [
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' },
+            { kanji: '買', reading: 'か', meaning: 'MÃI' },
+            { kanji: '物', reading: 'もの', meaning: 'VẬT' }
+          ]
+        },
+        {
+          jp: '今晩テレビを見て、本を読んで、寝ます。',
+          vn: 'Tối nay tôi xem tivi, đọc sách, rồi ngủ.',
+          furigana: [
+            { kanji: '今晩', reading: 'こんばん', meaning: 'KIM VÃN' },
+            { kanji: '見', reading: 'み', meaning: 'KIẾN' },
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '読', reading: 'よ', meaning: 'ĐỘC' },
+            { kanji: '寝', reading: 'ね', meaning: 'TẨM' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Tính từ đuôi い (~くて) / Tính từ đuôi な (~で) / Danh từ (~で)',
       explanation: 'Cách nối tính từ và danh từ trong câu. Tính từ đuôi い bỏ い thêm くて. Tính từ đuôi な và Danh từ thêm で.',
-      example: '大きい -> 大きくて (to và...)\n小さい -> 小さくて (nhỏ và...)\nいい -> よくて (tốt và...) (ngoại lệ)\nミラーさんは 若くて、元気です。 (Anh Miller trẻ và khỏe mạnh.)\nカリナさんは インドネシア人で、京都大学の 留学生です。 (Chị Karina là người Indonesia và là lưu học sinh ở Đại học Kyoto.)\nミラーさんは ハンサムで、親切です。 (Anh Miller đẹp trai và tốt bụng.)'
+      example: '大きい -> 大きくて (to và...)\n小さい -> 小さくて (nhỏ và...)\nいい -> よくて (tốt và...) (ngoại lệ)\nミラーさんは 若くて、元気です。 (Anh Miller trẻ và khỏe mạnh.)\nカリナさんは インドネシア人で、京都大学の 留学生です。 (Chị Karina là người Indonesia và là lưu học sinh ở Đại học Kyoto.)\nミラーさんは ハンサムで、親切です。 (Anh Miller đẹp trai và tốt bụng.)',
+      examples: [
+        {
+          jp: '東京は人が多くて、にぎやかです。',
+          vn: 'Tokyo người đông và náo nhiệt.',
+          furigana: [
+            { kanji: '東京', reading: 'とうきょう', meaning: 'ĐÔNG KINH' },
+            { kanji: '人', reading: 'ひと', meaning: 'NHÂN' },
+            { kanji: '多', reading: 'おお', meaning: 'ĐA' }
+          ]
+        },
+        {
+          jp: 'この部屋は狭くて、暗いです。',
+          vn: 'Căn phòng này hẹp và tối.',
+          furigana: [
+            { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' },
+            { kanji: '狭', reading: 'せま', meaning: 'HIỆP' },
+            { kanji: '暗', reading: 'くら', meaning: 'ÁM' }
+          ]
+        },
+        {
+          jp: 'ミラーさんは若くて、元気です。',
+          vn: 'Anh Miller trẻ và khỏe mạnh.',
+          furigana: [
+            { kanji: '若', reading: 'わか', meaning: 'NHƯỢC' },
+            { kanji: '元気', reading: 'げんき', meaning: 'NGUYÊN KHÍ' }
+          ]
+        },
+        {
+          jp: 'カリナさんはきれいで、親切です。',
+          vn: 'Chị Karina xinh đẹp và tốt bụng.',
+          furigana: [
+            { kanji: '親切', reading: 'しんせつ', meaning: 'THÂN THIẾT' }
+          ]
+        },
+        {
+          jp: '奈良は静かで、きれいな町です。',
+          vn: 'Nara là thành phố yên tĩnh và đẹp.',
+          furigana: [
+            { kanji: '奈良', reading: 'なら', meaning: 'NẠI LƯƠNG' },
+            { kanji: '静', reading: 'しず', meaning: 'TĨNH' },
+            { kanji: '町', reading: 'まち', meaning: 'ĐINH' }
+          ]
+        },
+        {
+          jp: '私はベトナム人で、留学生です。',
+          vn: 'Tôi là người Việt Nam và là du học sinh.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '人', reading: 'じん', meaning: 'NHÂN' },
+            { kanji: '留学生', reading: 'りゅうがくせい', meaning: 'LƯU HỌC SINH' }
+          ]
+        },
+        {
+          jp: 'このパソコンは軽くて、便利です。',
+          vn: 'Cái máy tính này nhẹ và tiện lợi.',
+          furigana: [
+            { kanji: '軽', reading: 'かる', meaning: 'KHINH' },
+            { kanji: '便利', reading: 'べんり', meaning: 'TIỆN LỢI' }
+          ]
+        },
+        {
+          jp: 'あのレストランは安くて、おいしいです。',
+          vn: 'Nhà hàng đó rẻ và ngon.',
+          furigana: [
+            { kanji: '安', reading: 'やす', meaning: 'AN' }
+          ]
+        },
+        {
+          jp: '昨日は天気がよくて、暑かったです。',
+          vn: 'Hôm qua thời tiết đẹp và nóng.',
+          furigana: [
+            { kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' },
+            { kanji: '天気', reading: 'てんき', meaning: 'THIÊN KHÍ' },
+            { kanji: '暑', reading: 'あつ', meaning: 'THỬ' }
+          ]
+        },
+        {
+          jp: 'サントスさんは40歳で、独身です。',
+          vn: 'Anh Santos 40 tuổi và độc thân.',
+          furigana: [
+            { kanji: '歳', reading: 'さい', meaning: 'TUẾ' },
+            { kanji: '独身', reading: 'どくしん', meaning: 'ĐỘC THÂN' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Động từ thể て + から、~',
       explanation: 'Biểu thị hành động ở vế sau được thực hiện sau khi hành động ở vế trước đã kết thúc.',
-      example: '国へ 帰ってから、父の 会社で 働きます。 (Sau khi về nước tôi làm việc ở công ty của bố tôi.)\nコンサートが 終わってから、レストランで 食事しました。 (Sau khi buổi hòa nhạc kết thúc tôi đi ăn cơm ở nhà hàng.)'
+      example: '国へ 帰ってから、父の 会社で 働きます。 (Sau khi về nước tôi làm việc ở công ty của bố tôi.)\nコンサートが 終わってから、レストランで 食事しました。 (Sau khi buổi hòa nhạc kết thúc tôi đi ăn cơm ở nhà hàng.)',
+      examples: [
+        {
+          jp: '仕事が終わってから、飲みに行きます。',
+          vn: 'Sau khi xong việc, tôi đi uống (rượu/bia).',
+          furigana: [
+            { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' },
+            { kanji: '終', reading: 'お', meaning: 'CHUNG' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '国へ帰ってから、父の会社で働きます。',
+          vn: 'Sau khi về nước, tôi làm việc ở công ty của bố.',
+          furigana: [
+            { kanji: '国', reading: 'くに', meaning: 'QUỐC' },
+            { kanji: '帰', reading: 'かえ', meaning: 'QUY' },
+            { kanji: '父', reading: 'ちち', meaning: 'PHỤ' },
+            { kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' },
+            { kanji: '働', reading: 'はたら', meaning: 'ĐỘNG' }
+          ]
+        },
+        {
+          jp: '手を洗ってから、ご飯を食べます。',
+          vn: 'Sau khi rửa tay, tôi ăn cơm.',
+          furigana: [
+            { kanji: '手', reading: 'て', meaning: 'THỦ' },
+            { kanji: '洗', reading: 'あら', meaning: 'TẨY' },
+            { kanji: '飯', reading: 'はん', meaning: 'PHẠN' },
+            { kanji: '食', reading: 'た', meaning: 'THỰC' }
+          ]
+        },
+        {
+          jp: 'ご飯を食べてから、歯を磨きます。',
+          vn: 'Sau khi ăn cơm, tôi đánh răng.',
+          furigana: [
+            { kanji: '飯', reading: 'はん', meaning: 'PHẠN' },
+            { kanji: '食', reading: 'た', meaning: 'THỰC' },
+            { kanji: '歯', reading: 'は', meaning: 'XỈ' },
+            { kanji: '磨', reading: 'みが', meaning: 'MA' }
+          ]
+        },
+        {
+          jp: 'テレビを見てから、勉強します。',
+          vn: 'Sau khi xem tivi, tôi học bài.',
+          furigana: [
+            { kanji: '見', reading: 'み', meaning: 'KIẾN' },
+            { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }
+          ]
+        },
+        {
+          jp: '電話をかけてから、友達のうちへ行きます。',
+          vn: 'Sau khi gọi điện, tôi đến nhà bạn.',
+          furigana: [
+            { kanji: '電話', reading: 'でんわ', meaning: 'ĐIỆN THOẠI' },
+            { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '買い物をしてから、映画を見ます。',
+          vn: 'Sau khi mua sắm, tôi xem phim.',
+          furigana: [
+            { kanji: '買', reading: 'か', meaning: 'MÃI' },
+            { kanji: '物', reading: 'もの', meaning: 'VẬT' },
+            { kanji: '映画', reading: 'えいが', meaning: 'ÁNH HỌA' },
+            { kanji: '見', reading: 'み', meaning: 'KIẾN' }
+          ]
+        },
+        {
+          jp: 'シャワーを浴びてから、寝ます。',
+          vn: 'Sau khi tắm vòi hoa sen, tôi ngủ.',
+          furigana: [
+            { kanji: '浴', reading: 'あ', meaning: 'DỤC' },
+            { kanji: '寝', reading: 'ね', meaning: 'TẨM' }
+          ]
+        },
+        {
+          jp: 'お金を下ろしてから、買い物に行きます。',
+          vn: 'Sau khi rút tiền, tôi đi mua sắm.',
+          furigana: [
+            { kanji: '金', reading: 'かね', meaning: 'KIM' },
+            { kanji: '下', reading: 'お', meaning: 'HẠ' },
+            { kanji: '買', reading: 'か', meaning: 'MÃI' },
+            { kanji: '物', reading: 'もの', meaning: 'VẬT' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '大学を出てから、何をしますか。',
+          vn: 'Sau khi tốt nghiệp đại học, bạn sẽ làm gì?',
+          furigana: [
+            { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' },
+            { kanji: '何', reading: 'なに', meaning: 'HÀ' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Danh từ 1 は Danh từ 2 が Tính từ',
       explanation: 'Dùng để miêu tả một thuộc tính cụ thể (N2) của chủ đề (N1).',
-      example: '大阪は 食べ物が おいしいです。 (Thức ăn ở Osaka ngon.)\nドイツの フランケンは ワインが 有名です。 (Rượu vang ở vùng Franken của Đức nổi tiếng.)\nマリアさんは 髪が 長いです。 (Chị Maria tóc dài.)'
+      example: '大阪は 食べ物が おいしいです。 (Thức ăn ở Osaka ngon.)\nドイツの フランケンは ワインが 有名です。 (Rượu vang ở vùng Franken của Đức nổi tiếng.)\nマリアさんは 髪が 長いです。 (Chị Maria tóc dài.)',
+      examples: [
+        {
+          jp: 'ハンさんは背が高いです。',
+          vn: 'Anh/Chị Hạnh cao.',
+          furigana: [
+            { kanji: '背', reading: 'せ', meaning: 'BỐI' },
+            { kanji: '高', reading: 'たか', meaning: 'CAO' }
+          ]
+        },
+        {
+          jp: '象は鼻が長いです。',
+          vn: 'Con voi có cái mũi dài.',
+          furigana: [
+            { kanji: '象', reading: 'ぞう', meaning: 'TƯỢNG' },
+            { kanji: '鼻', reading: 'はな', meaning: 'TỊ' },
+            { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' }
+          ]
+        },
+        {
+          jp: 'マリアさんは髪が長いです。',
+          vn: 'Chị Maria tóc dài.',
+          furigana: [
+            { kanji: '髪', reading: 'かみ', meaning: 'PHÁT' },
+            { kanji: '長', reading: 'なが', meaning: 'TRƯỜNG' }
+          ]
+        },
+        {
+          jp: '彼女は目が大きいです。',
+          vn: 'Cô ấy có mắt to.',
+          furigana: [
+            { kanji: '彼女', reading: 'かのじょ', meaning: 'BỈ NỮ' },
+            { kanji: '目', reading: 'め', meaning: 'MỤC' },
+            { kanji: '大', reading: 'おお', meaning: 'ĐẠI' }
+          ]
+        },
+        {
+          jp: '大阪は食べ物がおいしいです。',
+          vn: 'Đồ ăn ở Osaka ngon.',
+          furigana: [
+            { kanji: '大阪', reading: 'おおさか', meaning: 'ĐẠI PHẢN' },
+            { kanji: '食', reading: 'た', meaning: 'THỰC' },
+            { kanji: '物', reading: 'もの', meaning: 'VẬT' }
+          ]
+        },
+        {
+          jp: '東京は人が多いです。',
+          vn: 'Tokyo đông người.',
+          furigana: [
+            { kanji: '東京', reading: 'とうきょう', meaning: 'ĐÔNG KINH' },
+            { kanji: '人', reading: 'ひと', meaning: 'NHÂN' },
+            { kanji: '多', reading: 'おお', meaning: 'ĐA' }
+          ]
+        },
+        {
+          jp: 'あの店はコーヒーがおいしいです。',
+          vn: 'Cửa hàng đó cà phê ngon.',
+          furigana: [
+            { kanji: '店', reading: 'みせ', meaning: 'ĐIẾM' }
+          ]
+        },
+        {
+          jp: '私はお腹が痛いです。',
+          vn: 'Tôi bị đau bụng.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '腹', reading: 'なか', meaning: 'PHÚC' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: 'カリナさんは歌が上手です。',
+          vn: 'Chị Karina hát hay.',
+          furigana: [
+            { kanji: '歌', reading: 'うた', meaning: 'CA' },
+            { kanji: '上手', reading: 'じょうず', meaning: 'THƯỢNG THỦ' }
+          ]
+        },
+        {
+          jp: '日本は交通が便利です。',
+          vn: 'Nhật Bản giao thông thuận tiện.',
+          furigana: [
+            { kanji: '日本', reading: 'にほん', meaning: 'NHẬT BẢN' },
+            { kanji: '交通', reading: 'こうつう', meaning: 'GIAO THÔNG' },
+            { kanji: '便利', reading: 'べんり', meaning: 'TIỆN LỢI' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'どうやって',
       explanation: 'Dùng để hỏi về trình tự hoặc cách làm một việc gì đó (làm thế nào, bằng cách nào).',
-      example: '大学まで どうやって 行きますか。 (Đến trường đại học bằng cách nào?)\n...京都駅から 16番の バスに 乗って、大学前で 降ります。 (...Lên xe buýt số 16 từ ga Kyoto, rồi xuống ở điểm đỗ Daigaku-mae.)'
+      example: '大学まで どうやって 行きますか。 (Đến trường đại học bằng cách nào?)\n...京都駅から 16番の バスに 乗って、大学前で 降ります。 (...Lên xe buýt số 16 từ ga Kyoto, rồi xuống ở điểm đỗ Daigaku-mae.)',
+      examples: [
+        {
+          jp: '大学までどうやって行きますか。',
+          vn: 'Đến trường đại học đi như thế nào?',
+          furigana: [
+            { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '駅までどうやって行きますか。',
+          vn: 'Đến nhà ga đi như thế nào?',
+          furigana: [
+            { kanji: '駅', reading: 'えき', meaning: 'DỊCH' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: 'これはどうやって食べますか。',
+          vn: 'Cái này ăn như thế nào?',
+          furigana: [
+            { kanji: '食', reading: 'た', meaning: 'THỰC' }
+          ]
+        },
+        {
+          jp: 'この機械はどうやって使いますか。',
+          vn: 'Cái máy này dùng như thế nào?',
+          furigana: [
+            { kanji: '機械', reading: 'きかい', meaning: 'CƠ GIỚI' },
+            { kanji: '使', reading: 'つか', meaning: 'SỬ' }
+          ]
+        },
+        {
+          jp: '空港までどうやって行きますか。',
+          vn: 'Đến sân bay đi như thế nào?',
+          furigana: [
+            { kanji: '空港', reading: 'くうこう', meaning: 'KHÔNG CẢNG' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: 'この料理はどうやって作りますか。',
+          vn: 'Món ăn này làm như thế nào?',
+          furigana: [
+            { kanji: '料理', reading: 'りょうり', meaning: 'LIỆU LÝ' },
+            { kanji: '作', reading: 'つく', meaning: 'TÁC' }
+          ]
+        },
+        {
+          jp: '日本語の言葉はどうやって覚えますか。',
+          vn: 'Từ vựng tiếng Nhật nhớ như thế nào?',
+          furigana: [
+            { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' },
+            { kanji: '言葉', reading: 'ことば', meaning: 'NGÔN DIỆP' },
+            { kanji: '覚', reading: 'おぼ', meaning: 'GIÁC' }
+          ]
+        },
+        {
+          jp: 'ここからどうやって帰りますか。',
+          vn: 'Từ đây về như thế nào?',
+          furigana: [
+            { kanji: '帰', reading: 'かえ', meaning: 'QUY' }
+          ]
+        },
+        {
+          jp: 'インターネットでどうやって調べますか。',
+          vn: 'Tra cứu trên internet như thế nào?',
+          furigana: [
+            { kanji: '調', reading: 'しら', meaning: 'ĐIỀU' }
+          ]
+        },
+        {
+          jp: 'この漢字はどうやって読みますか。',
+          vn: 'Chữ Hán này đọc như thế nào?',
+          furigana: [
+            { kanji: '漢字', reading: 'かんじ', meaning: 'HÁN TỰ' },
+            { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'どの Danh từ',
       explanation: 'Dùng để hỏi xác định một đối tượng trong một nhóm gồm 3 đối tượng trở lên (Cái nào, Người nào...).',
-      example: 'サントスさんは どの 人ですか。 (Anh Santos là người nào?)\n...あの 背が 高くて、 髪が 黒い 人です。 (...Là người cao, tóc đen đó.)'
+      example: 'サントスさんは どの 人ですか。 (Anh Santos là người nào?)\n...あの 背が 高くて、 髪が 黒い 人です。 (...Là người cao, tóc đen đó.)',
+      examples: [
+        {
+          jp: 'どの人がミラーさんですか。',
+          vn: 'Người nào là anh Miller?',
+          furigana: [
+            { kanji: '人', reading: 'ひと', meaning: 'NHÂN' }
+          ]
+        },
+        {
+          jp: 'どのかばんがあなたのですか。',
+          vn: 'Cái cặp nào là của bạn?',
+          furigana: []
+        },
+        {
+          jp: 'どの本が面白いですか。',
+          vn: 'Quyển sách nào thú vị?',
+          furigana: [
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '面白', reading: 'おもしろ', meaning: 'DIỆN BẠCH' }
+          ]
+        },
+        {
+          jp: 'どの車がいいですか。',
+          vn: 'Cái xe nào thì tốt?',
+          furigana: [
+            { kanji: '車', reading: 'くるま', meaning: 'XA' }
+          ]
+        },
+        {
+          jp: 'どのノートが安いですか。',
+          vn: 'Quyển vở nào rẻ?',
+          furigana: [
+            { kanji: '安', reading: 'やす', meaning: 'AN' }
+          ]
+        },
+        {
+          jp: 'どの時計を買いますか。',
+          vn: 'Bạn mua cái đồng hồ nào?',
+          furigana: [
+            { kanji: '時計', reading: 'とけい', meaning: 'THỜI KẾ' },
+            { kanji: '買', reading: 'か', meaning: 'MÃI' }
+          ]
+        },
+        {
+          jp: 'どの傘がカリナさんのですか。',
+          vn: 'Cái ô nào là của chị Karina?',
+          furigana: [
+            { kanji: '傘', reading: 'かさ', meaning: 'TẢN' }
+          ]
+        },
+        {
+          jp: 'どの道が近いですか。',
+          vn: 'Con đường nào gần?',
+          furigana: [
+            { kanji: '道', reading: 'みち', meaning: 'ĐẠO' },
+            { kanji: '近', reading: 'ちか', meaning: 'CẬN' }
+          ]
+        },
+        {
+          jp: 'どのカメラが欲しいですか。',
+          vn: 'Bạn muốn cái máy ảnh nào?',
+          furigana: [
+            { kanji: '欲', reading: 'ほ', meaning: 'DỤC' }
+          ]
+        },
+        {
+          jp: 'どのレストランで食べますか。',
+          vn: 'Ăn ở nhà hàng nào?',
+          furigana: [
+            { kanji: '食', reading: 'た', meaning: 'THỰC' }
+          ]
+        }
+      ]
     }
   ],
   kaiwa: [],
@@ -38186,75 +43023,2280 @@ export const lesson17Data: LessonDetail = {
   id: 17,
   title: 'Bài 17',
   vocabulary: [
-    { word: 'おぼえます', kanji: '覚えます', romaji: 'oboemasu', mean: 'Nhớ' },
-    { word: 'わすれます', kanji: '忘れます', romaji: 'wasuremasu', mean: 'Quên' },
-    { word: 'なくします', kanji: '無くします', romaji: 'nakushimasu', mean: 'Mất, đánh mất' },
-    { word: 'だします', kanji: '出します', romaji: 'dashimasu', mean: 'Nộp [bản/bài báo cáo]' },
-    { word: 'はらいます', kanji: '払います', romaji: 'haraimasu', mean: 'Trả tiền' },
-    { word: 'かえします', kanji: '返します', romaji: 'kaeshimasu', mean: 'Trả lại' },
-    { word: 'でかけます', kanji: '出かけます', romaji: 'dekakemasu', mean: 'Ra ngoài' },
-    { word: 'ぬぎます', kanji: '脱ぎます', romaji: 'nugimasu', mean: 'Cởi (quần áo, giày)' },
-    { word: 'もっていきます', kanji: '持って行きます', romaji: 'motteikimasu', mean: 'Mang đi, mang theo' },
-    { word: 'もってきます', kanji: '持って来ます', romaji: 'mottekimasu', mean: 'Mang đến' },
-    { word: 'しんぱいします', kanji: '心配します', romaji: 'shinpaishimasu', mean: 'Lo lắng' },
-    { word: 'ざんぎょうします', kanji: '残業します', romaji: 'zangyoushimasu', mean: 'Làm thêm, làm quá giờ' },
-    { word: 'しゅっちょうします', kanji: '出張します', romaji: 'shucchoushimasu', mean: 'Đi công tác' },
-    { word: 'のみます', kanji: '飲みます', romaji: 'nomimasu', mean: 'Uống [thuốc]' },
-    { word: 'はいります', kanji: '入ります', romaji: 'hairimasu', mean: 'Tắm bồn [vào bồn tắm]' },
-    { word: 'たいせつ', kanji: '大切', romaji: 'taisetsu', mean: 'Quan trọng, quý giá' },
-    { word: 'だいじょうぶ', kanji: '大丈夫', romaji: 'daijoubu', mean: 'Không sao, không có vấn đề gì' },
-    { word: 'あぶない', kanji: '危ない', romaji: 'abunai', mean: 'Nguy hiểm' },
-    { word: 'もんだい', kanji: '問題', romaji: 'mondai', mean: 'Vấn đề' },
-    { word: 'こたえ', kanji: '答え', romaji: 'kotae', mean: 'Câu trả lời' },
-    { word: 'きんえん', kanji: '禁煙', romaji: 'kinen', mean: 'Cấm hút thuốc' },
-    { word: 'けんこうほけんしょう', kanji: '[健康]保険証', romaji: 'kenkouhokenshou', mean: 'Thẻ bảo hiểm [y tế]' },
-    { word: 'かぜ', kanji: 'かぜ', romaji: 'kaze', mean: 'Cảm, cúm' },
-    { word: 'ねつ', kanji: '熱', romaji: 'netsu', mean: 'Sốt' },
-    { word: 'びょうき', kanji: '病気', romaji: 'byouki', mean: 'Ốm, bệnh' },
-    { word: 'くすり', kanji: '薬', romaji: 'kusuri', mean: 'Thuốc' },
-    { word: 'おふろ', kanji: '[お]ふろ', romaji: 'ofuro', mean: 'Bồn tắm' },
-    { word: 'うわぎ', kanji: '上着', romaji: 'uwagi', mean: 'Áo khoác' },
-    { word: 'したぎ', kanji: '下着', romaji: 'shitagi', mean: 'Quần áo lót' },
-    { word: 'せんせい', kanji: '先生', romaji: 'sensei', mean: 'Bác sĩ (cách gọi bác sĩ)' },
-    { word: '2、3にち', kanji: '2、3日', romaji: 'nisannichi', mean: 'Vài ngày' },
-    { word: '2、3～', kanji: '2、3～', romaji: 'nisan', mean: 'Vài ~ ("~" là hậu tố chỉ cách đếm)' },
-    { word: '～までに', kanji: '～までに', romaji: 'madeni', mean: 'Trước ~ (chỉ thời hạn)' },
-    { word: 'ですから', kanji: 'ですから', romaji: 'desukara', mean: 'Vì thế, vì vậy, do đó' },
-    { word: 'どうしましたか。', kanji: 'どうしましたか。', romaji: 'doushimashitaka', mean: 'Có vấn đề gì?/Anh/Chị bị làm sao? (cách bác sĩ hỏi bệnh nhân)' },
-    { word: '～がいたいです。', kanji: '～が痛いです。', romaji: 'gaitaidesu', mean: 'Tôi bị đau [~].' },
-    { word: 'のど', kanji: 'のど', romaji: 'nodo', mean: 'Họng' },
-    { word: 'おだいじに。', kanji: 'お大事に。', romaji: 'odaijini', mean: 'Anh/Chị nhớ giữ gìn sức khỏe. (câu nói với người bị ốm hoặc bị bệnh)' }
+    {
+      word: 'おぼえます', kanji: '覚えます', romaji: 'oboemasu', mean: 'Nhớ',
+      examples: [
+        {
+          jp: '言葉を覚えます。', vn: 'Nhớ từ vựng.',
+          furigana: [
+            { kanji: '言葉', reading: 'ことば', meaning: 'NGÔN DIỆP' },
+            { kanji: '覚', reading: 'おぼ', meaning: 'GIÁC' }
+          ]
+        },
+        {
+          jp: '漢字を覚えます。', vn: 'Nhớ chữ Hán.',
+          furigana: [
+            { kanji: '漢字', reading: 'かんじ', meaning: 'HÁN TỰ' },
+            { kanji: '覚', reading: 'おぼ', meaning: 'GIÁC' }
+          ]
+        },
+        {
+          jp: '道を覚えます。', vn: 'Nhớ đường.',
+          furigana: [
+            { kanji: '道', reading: 'みち', meaning: 'ĐẠO' },
+            { kanji: '覚', reading: 'おぼ', meaning: 'GIÁC' }
+          ]
+        },
+        {
+          jp: '名前を覚えていますか。', vn: 'Bạn còn nhớ tên không?',
+          furigana: [
+            { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' },
+            { kanji: '覚', reading: 'おぼ', meaning: 'GIÁC' }
+          ]
+        },
+        {
+          jp: 'よく覚えています。', vn: 'Tôi nhớ rất rõ.',
+          furigana: [
+            { kanji: '覚', reading: 'おぼ', meaning: 'GIÁC' }
+          ]
+        },
+        {
+          jp: '覚え方', vn: 'Cách nhớ.',
+          furigana: [
+            { kanji: '覚', reading: 'おぼ', meaning: 'GIÁC' },
+            { kanji: '方', reading: 'かた', meaning: 'PHƯƠNG' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'わすれます', kanji: '忘れます', romaji: 'wasuremasu', mean: 'Quên',
+      examples: [
+        {
+          jp: '傘を忘れました。', vn: 'Tôi để quên ô.',
+          furigana: [
+            { kanji: '傘', reading: 'かさ', meaning: 'TẢN' },
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' }
+          ]
+        },
+        {
+          jp: '宿題を忘れました。', vn: 'Tôi quên làm bài tập.',
+          furigana: [
+            { kanji: '宿題', reading: 'しゅくだい', meaning: 'TÚC ĐỀ' },
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' }
+          ]
+        },
+        {
+          jp: '名前を忘れました。', vn: 'Tôi quên tên rồi.',
+          furigana: [
+            { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' },
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' }
+          ]
+        },
+        {
+          jp: '財布を忘れました。', vn: 'Tôi quên ví.',
+          furigana: [
+            { kanji: '財布', reading: 'さいふ', meaning: 'TÀI BỐ' },
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' }
+          ]
+        },
+        {
+          jp: '電車に鞄を忘れました。', vn: 'Tôi để quên cặp trên tàu điện.',
+          furigana: [
+            { kanji: '電車', reading: 'でんしゃ', meaning: 'ĐIỆN XA' },
+            { kanji: '鞄', reading: 'かばん', meaning: 'CÁCH' },
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' }
+          ]
+        },
+        {
+          jp: '忘れないでください。', vn: 'Xin đừng quên.',
+          furigana: [
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'なくします', kanji: '無くします', romaji: 'nakushimasu', mean: 'Mất, đánh mất',
+      examples: [
+        {
+          jp: 'パスポートをなくしました。', vn: 'Tôi làm mất hộ chiếu.',
+          furigana: [
+            { kanji: '無', reading: 'な', meaning: 'VÔ' }
+          ]
+        },
+        {
+          jp: '鍵をなくしました。', vn: 'Tôi làm mất chìa khóa.',
+          furigana: [
+            { kanji: '鍵', reading: 'かぎ', meaning: 'KIỆN' },
+            { kanji: '無', reading: 'な', meaning: 'VÔ' }
+          ]
+        },
+        {
+          jp: '財布をなくしました。', vn: 'Tôi làm mất ví.',
+          furigana: [
+            { kanji: '財布', reading: 'さいふ', meaning: 'TÀI BỐ' },
+            { kanji: '無', reading: 'な', meaning: 'VÔ' }
+          ]
+        },
+        {
+          jp: '切符をなくしました。', vn: 'Tôi làm mất vé.',
+          furigana: [
+            { kanji: '切符', reading: 'きっぷ', meaning: 'THIẾT PHÙ' },
+            { kanji: '無', reading: 'な', meaning: 'VÔ' }
+          ]
+        },
+        {
+          jp: 'カードをなくしました。', vn: 'Tôi làm mất thẻ.',
+          furigana: [
+            { kanji: '無', reading: 'な', meaning: 'VÔ' }
+          ]
+        },
+        {
+          jp: '自信をなくしました。', vn: 'Tôi đánh mất sự tự tin.',
+          furigana: [
+            { kanji: '自信', reading: 'じしん', meaning: 'TỰ TÍN' },
+            { kanji: '無', reading: 'な', meaning: 'VÔ' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'だします', kanji: '出します', romaji: 'dashimasu', mean: 'Nộp [bản/bài báo cáo]',
+      examples: [
+        {
+          jp: 'レポートを出します。', vn: 'Nộp báo cáo.',
+          furigana: [
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '宿題を出します。', vn: 'Nộp bài tập.',
+          furigana: [
+            { kanji: '宿題', reading: 'しゅくだい', meaning: 'TÚC ĐỀ' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '手紙を出します。', vn: 'Gửi thư.',
+          furigana: [
+            { kanji: '手紙', reading: 'てがみ', meaning: 'THỦ CHỈ' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: 'ごみを出します。', vn: 'Đổ rác.',
+          furigana: [
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '答えを出します。', vn: 'Đưa ra câu trả lời.',
+          furigana: [
+            { kanji: '答', reading: 'こた', meaning: 'ĐÁP' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '元気を出してください。', vn: 'Hãy vui lên đi (Lấy lại sự khỏe mạnh).',
+          furigana: [
+            { kanji: '元気', reading: 'げんき', meaning: 'NGUYÊN KHÍ' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'はらいます', kanji: '払います', romaji: 'haraimasu', mean: 'Trả tiền',
+      examples: [
+        {
+          jp: 'お金を払います。', vn: 'Trả tiền.',
+          furigana: [
+            { kanji: '金', reading: 'かね', meaning: 'KIM' },
+            { kanji: '払', reading: 'はら', meaning: 'PHẤT' }
+          ]
+        },
+        {
+          jp: 'カードで払います。', vn: 'Trả bằng thẻ.',
+          furigana: [
+            { kanji: '払', reading: 'はら', meaning: 'PHẤT' }
+          ]
+        },
+        {
+          jp: '現金で払います。', vn: 'Trả bằng tiền mặt.',
+          furigana: [
+            { kanji: '現金', reading: 'げんきん', meaning: 'HIỆN KIM' },
+            { kanji: '払', reading: 'はら', meaning: 'PHẤT' }
+          ]
+        },
+        {
+          jp: '家賃を払います。', vn: 'Trả tiền thuê nhà.',
+          furigana: [
+            { kanji: '家賃', reading: 'やちん', meaning: 'GIA NHẪM' },
+            { kanji: '払', reading: 'はら', meaning: 'PHẤT' }
+          ]
+        },
+        {
+          jp: '税金を払います。', vn: 'Nộp thuế.',
+          furigana: [
+            { kanji: '税金', reading: 'ぜいきん', meaning: 'THUẾ KIM' },
+            { kanji: '払', reading: 'はら', meaning: 'PHẤT' }
+          ]
+        },
+        {
+          jp: '飲み代を払います。', vn: 'Trả tiền uống nước.',
+          furigana: [
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' },
+            { kanji: '代', reading: 'だい', meaning: 'ĐẠI' },
+            { kanji: '払', reading: 'はら', meaning: 'PHẤT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'かえます', kanji: '返します', romaji: 'kaeshimasu', mean: 'Trả lại',
+      examples: [
+        {
+          jp: '本を返します。', vn: 'Trả lại sách.',
+          furigana: [
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }
+          ]
+        },
+        {
+          jp: 'お金を返します。', vn: 'Trả lại tiền.',
+          furigana: [
+            { kanji: '金', reading: 'かね', meaning: 'KIM' },
+            { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }
+          ]
+        },
+        {
+          jp: '図書館に本を返します。', vn: 'Trả sách cho thư viện.',
+          furigana: [
+            { kanji: '図書館', reading: 'としょかん', meaning: 'ĐỒ THƯ QUÁN' },
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }
+          ]
+        },
+        {
+          jp: '借金を返します。', vn: 'Trả nợ.',
+          furigana: [
+            { kanji: '借金', reading: 'しゃっきん', meaning: 'TÁ KIM' },
+            { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }
+          ]
+        },
+        {
+          jp: '今度返します。', vn: 'Lần tới tôi sẽ trả.',
+          furigana: [
+            { kanji: '今度', reading: 'こんど', meaning: 'KIM ĐỘ' },
+            { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }
+          ]
+        },
+        {
+          jp: '明日までに返してください。', vn: 'Hãy trả lại trước ngày mai.',
+          furigana: [
+            { kanji: '明日', reading: 'あした', meaning: 'MINH NHẬT' },
+            { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'でかけます', kanji: '出かけます', romaji: 'dekakemasu', mean: 'Ra ngoài',
+      examples: [
+        {
+          jp: 'ちょっと出かけます。', vn: 'Tôi đi ra ngoài một chút.',
+          furigana: [
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '日曜日は出かけません。', vn: 'Chủ nhật tôi không đi ra ngoài.',
+          furigana: [
+            { kanji: '日曜日', reading: 'にちようび', meaning: 'NHẬT DIỆU NHẬT' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '買い物に出かけます。', vn: 'Đi mua sắm.',
+          furigana: [
+            { kanji: '買', reading: 'か', meaning: 'MÃI' },
+            { kanji: '物', reading: 'もの', meaning: 'VẬT' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '友達と出かけます。', vn: 'Đi ra ngoài (chơi) với bạn.',
+          furigana: [
+            { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '早く出かけましょう。', vn: 'Cùng đi sớm nào.',
+          furigana: [
+            { kanji: '早', reading: 'はや', meaning: 'TẢO' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: 'これから出かけますか。', vn: 'Bây giờ bạn có đi ra ngoài không?',
+          furigana: [
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ぬぎます', kanji: '脱ぎます', romaji: 'nugimasu', mean: 'Cởi (quần áo, giày)',
+      examples: [
+        {
+          jp: '靴を脱ぎます。', vn: 'Cởi giày.',
+          furigana: [
+            { kanji: '靴', reading: 'くつ', meaning: 'OA' },
+            { kanji: '脱', reading: 'ぬ', meaning: 'THOÁT' }
+          ]
+        },
+        {
+          jp: '服を脱ぎます。', vn: 'Cởi quần áo.',
+          furigana: [
+            { kanji: '服', reading: 'ふく', meaning: 'PHỤC' },
+            { kanji: '脱', reading: 'ぬ', meaning: 'THOÁT' }
+          ]
+        },
+        {
+          jp: 'コートを脱いでください。', vn: 'Hãy cởi áo khoác ra.',
+          furigana: [
+            { kanji: '脱', reading: 'ぬ', meaning: 'THOÁT' }
+          ]
+        },
+        {
+          jp: '帽子を脱ぎます。', vn: 'Cởi mũ.',
+          furigana: [
+            { kanji: '帽子', reading: 'ぼうし', meaning: 'MẠO TỬ' },
+            { kanji: '脱', reading: 'ぬ', meaning: 'THOÁT' }
+          ]
+        },
+        {
+          jp: 'シャツを脱ぎます。', vn: 'Cởi áo sơ mi.',
+          furigana: [
+            { kanji: '脱', reading: 'ぬ', meaning: 'THOÁT' }
+          ]
+        },
+        {
+          jp: 'ここで靴を脱がなくてもいいです。', vn: 'Ở đây không cần cởi giày cũng được.',
+          furigana: [
+            { kanji: '靴', reading: 'くつ', meaning: 'OA' },
+            { kanji: '脱', reading: 'ぬ', meaning: 'THOÁT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'もっていきます', kanji: '持って行きます', romaji: 'motteikimasu', mean: 'Mang đi, mang theo',
+      examples: [
+        {
+          jp: 'お弁当を持って行きます。', vn: 'Mang theo cơm hộp.',
+          furigana: [
+            { kanji: '弁当', reading: 'べんとう', meaning: 'BIỆN ĐƯƠNG' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '傘を持って行きます。', vn: 'Mang theo ô.',
+          furigana: [
+            { kanji: '傘', reading: 'かさ', meaning: 'TẢN' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '何か持って行きますか。', vn: 'Bạn có mang theo cái gì không?',
+          furigana: [
+            { kanji: '何', reading: 'なに', meaning: 'HÀ' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: 'カメラを持って行きます。', vn: 'Mang theo máy ảnh.',
+          furigana: [
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: 'パスポートを持って行かなければなりません。', vn: 'Phải mang theo hộ chiếu.',
+          furigana: [
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '病院へ保険証を持って行きます。', vn: 'Mang thẻ bảo hiểm đến bệnh viện.',
+          furigana: [
+            { kanji: '病院', reading: 'びょういん', meaning: 'BỆNH VIỆN' },
+            { kanji: '保険証', reading: 'ほけんしょう', meaning: 'BẢO HIỂM CHỨNG' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'もってきます', kanji: '持って来ます', romaji: 'mottekimasu', mean: 'Mang đến',
+      examples: [
+        {
+          jp: '明日写真を持って来ます。', vn: 'Ngày mai tôi sẽ mang ảnh đến.',
+          furigana: [
+            { kanji: '明日', reading: 'あした', meaning: 'MINH NHẬT' },
+            { kanji: '写真', reading: 'しゃしん', meaning: 'TẢ CHÂN' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '来', reading: 'き', meaning: 'LAI' }
+          ]
+        },
+        {
+          jp: '宿題を持って来ましたか。', vn: 'Bạn đã mang bài tập đến chưa?',
+          furigana: [
+            { kanji: '宿題', reading: 'しゅくだい', meaning: 'TÚC ĐỀ' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '来', reading: 'き', meaning: 'LAI' }
+          ]
+        },
+        {
+          jp: '飲み物を持って来てください。', vn: 'Hãy mang đồ uống đến.',
+          furigana: [
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' },
+            { kanji: '物', reading: 'もの', meaning: 'VẬT' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '来', reading: 'き', meaning: 'LAI' }
+          ]
+        },
+        {
+          jp: 'お弁当を持って来ました。', vn: 'Tôi đã mang cơm hộp đến.',
+          furigana: [
+            { kanji: '弁当', reading: 'べんとう', meaning: 'BIỆN ĐƯƠNG' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '来', reading: 'き', meaning: 'LAI' }
+          ]
+        },
+        {
+          jp: '忘れずに持って来てください。', vn: 'Đừng quên mang đến nhé.',
+          furigana: [
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '来', reading: 'き', meaning: 'LAI' }
+          ]
+        },
+        {
+          jp: '友達を連れて来ます。', vn: 'Dẫn bạn đến.',
+          furigana: [
+            { kanji: '友達', reading: 'ともだち', meaning: 'HỮU ĐẠT' },
+            { kanji: '連', reading: 'つ', meaning: 'LIÊN' },
+            { kanji: '来', reading: 'き', meaning: 'LAI' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'しんぱいします', kanji: '心配します', romaji: 'shinpaishimasu', mean: 'Lo lắng',
+      examples: [
+        {
+          jp: '心配しないでください。', vn: 'Xin đừng lo lắng.',
+          furigana: [
+            { kanji: '心配', reading: 'しんぱい', meaning: 'TÂM PHỐI' }
+          ]
+        },
+        {
+          jp: '家族のことを心配しています。', vn: 'Tôi đang lo lắng về gia đình.',
+          furigana: [
+            { kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' },
+            { kanji: '心配', reading: 'しんぱい', meaning: 'TÂM PHỐI' }
+          ]
+        },
+        {
+          jp: '試験の結果が心配です。', vn: 'Lo lắng về kết quả thi.',
+          furigana: [
+            { kanji: '試験', reading: 'しけん', meaning: 'THÍ NGHIỆM' },
+            { kanji: '結果', reading: 'けっか', meaning: 'KẾT QUẢ' },
+            { kanji: '心配', reading: 'しんぱい', meaning: 'TÂM PHỐI' }
+          ]
+        },
+        {
+          jp: '親を心配させます。', vn: 'Làm cho bố mẹ lo lắng.',
+          furigana: [
+            { kanji: '親', reading: 'おや', meaning: 'THÂN' },
+            { kanji: '心配', reading: 'しんぱい', meaning: 'TÂM PHỐI' }
+          ]
+        },
+        {
+          jp: '何も心配していません。', vn: 'Tôi không lo lắng gì cả.',
+          furigana: [
+            { kanji: '何', reading: 'なに', meaning: 'HÀ' },
+            { kanji: '心配', reading: 'しんぱい', meaning: 'TÂM PHỐI' }
+          ]
+        },
+        {
+          jp: '将来を心配します。', vn: 'Lo lắng cho tương lai.',
+          furigana: [
+            { kanji: '将来', reading: 'しょうらい', meaning: 'TƯƠNG LAI' },
+            { kanji: '心配', reading: 'しんぱい', meaning: 'TÂM PHỐI' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ざんぎょうします', kanji: '残業します', romaji: 'zangyoushimasu', mean: 'Làm thêm, làm quá giờ',
+      examples: [
+        {
+          jp: '今日は残業します。', vn: 'Hôm nay tôi làm thêm giờ.',
+          furigana: [
+            { kanji: '今日', reading: 'きょう', meaning: 'KIM NHẬT' },
+            { kanji: '残業', reading: 'ざんぎょう', meaning: 'TÀN NGHIỆP' }
+          ]
+        },
+        {
+          jp: '毎日残業しなければなりません。', vn: 'Hàng ngày tôi phải làm thêm giờ.',
+          furigana: [
+            { kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' },
+            { kanji: '残業', reading: 'ざんぎょう', meaning: 'TÀN NGHIỆP' }
+          ]
+        },
+        {
+          jp: '残業しないでください。', vn: 'Xin đừng làm thêm giờ.',
+          furigana: [
+            { kanji: '残業', reading: 'ざんぎょう', meaning: 'TÀN NGHIỆP' }
+          ]
+        },
+        {
+          jp: '昨日は3時間残業しました。', vn: 'Hôm qua tôi đã làm thêm 3 tiếng.',
+          furigana: [
+            { kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' },
+            { kanji: '時間', reading: 'じかん', meaning: 'THỜI GIAN' },
+            { kanji: '残業', reading: 'ざんぎょう', meaning: 'TÀN NGHIỆP' }
+          ]
+        },
+        {
+          jp: '残業手当', vn: 'Trợ cấp làm thêm giờ.',
+          furigana: [
+            { kanji: '残業', reading: 'ざんぎょう', meaning: 'TÀN NGHIỆP' },
+            { kanji: '手当', reading: 'てあて', meaning: 'THỦ ĐƯƠNG' }
+          ]
+        },
+        {
+          jp: '残業は嫌です。', vn: 'Tôi ghét làm thêm giờ.',
+          furigana: [
+            { kanji: '残業', reading: 'ざんぎょう', meaning: 'TÀN NGHIỆP' },
+            { kanji: '嫌', reading: 'いや', meaning: 'HIỀM' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'しゅっちょうします', kanji: '出張します', romaji: 'shucchoushimasu', mean: 'Đi công tác',
+      examples: [
+        {
+          jp: '来週出張します。', vn: 'Tuần sau tôi đi công tác.',
+          furigana: [
+            { kanji: '来週', reading: 'らいしゅう', meaning: 'LAI CHU' },
+            { kanji: '出張', reading: 'しゅっちょう', meaning: 'XUẤT TRƯƠNG' }
+          ]
+        },
+        {
+          jp: 'アメリカへ出張します。', vn: 'Đi công tác Mỹ.',
+          furigana: [
+            { kanji: '出張', reading: 'しゅっちょう', meaning: 'XUẤT TRƯƠNG' }
+          ]
+        },
+        {
+          jp: '一週間出張します。', vn: 'Đi công tác 1 tuần.',
+          furigana: [
+            { kanji: '一週間', reading: 'いっしゅうかん', meaning: 'NHẤT CHU GIAN' },
+            { kanji: '出張', reading: 'しゅっちょう', meaning: 'XUẤT TRƯƠNG' }
+          ]
+        },
+        {
+          jp: '出張の準備をします。', vn: 'Chuẩn bị đi công tác.',
+          furigana: [
+            { kanji: '出張', reading: 'しゅっちょう', meaning: 'XUẤT TRƯƠNG' },
+            { kanji: '準備', reading: 'じゅんび', meaning: 'CHUẨN BỊ' }
+          ]
+        },
+        {
+          jp: '父はよく出張します。', vn: 'Bố tôi thường hay đi công tác.',
+          furigana: [
+            { kanji: '父', reading: 'ちち', meaning: 'PHỤ' },
+            { kanji: '出張', reading: 'しゅっちょう', meaning: 'XUẤT TRƯƠNG' }
+          ]
+        },
+        {
+          jp: '大阪へ出張しました。', vn: 'Tôi đã đi công tác Osaka.',
+          furigana: [
+            { kanji: '大阪', reading: 'おおさか', meaning: 'ĐẠI PHẢN' },
+            { kanji: '出張', reading: 'しゅっちょう', meaning: 'XUẤT TRƯƠNG' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'のみます', kanji: '飲みます', romaji: 'nomimasu', mean: 'Uống [thuốc]',
+      examples: [
+        {
+          jp: '薬を飲みます。', vn: 'Uống thuốc.',
+          furigana: [
+            { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: '毎食後薬を飲まなければなりません。', vn: 'Phải uống thuốc sau mỗi bữa ăn.',
+          furigana: [
+            { kanji: '毎食後', reading: 'まいしょくご', meaning: 'MỖI THỰC HẬU' },
+            { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: '風邪薬を飲みます。', vn: 'Uống thuốc cảm.',
+          furigana: [
+            { kanji: '風邪薬', reading: 'かぜぐすり', meaning: 'PHONG TÀ DƯỢC' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: 'この薬を飲んでもいいですか。', vn: 'Tôi uống thuốc này được không?',
+          furigana: [
+            { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: 'お酒を飲みます。', vn: 'Uống rượu.',
+          furigana: [
+            { kanji: '酒', reading: 'さけ', meaning: 'TỬU' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: 'ジュースを飲みますか。', vn: 'Bạn uống nước trái cây không?',
+          furigana: [
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'はいります', kanji: '入ります', romaji: 'hairimasu', mean: 'Tắm bồn [vào bồn tắm]',
+      examples: [
+        {
+          jp: 'お風呂に入ります。', vn: 'Tắm bồn (vào bồn tắm).',
+          furigana: [
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: '温泉に入ります。', vn: 'Tắm suối nước nóng.',
+          furigana: [
+            { kanji: '温泉', reading: 'おんせん', meaning: 'ÔN TUYỀN' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'お風呂に入らなくてもいいです。', vn: 'Không cần tắm bồn cũng được.',
+          furigana: [
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'お風呂に入ってから、寝ます。', vn: 'Sau khi tắm bồn thì ngủ.',
+          furigana: [
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' },
+            { kanji: '寝', reading: 'ね', meaning: 'TẨM' }
+          ]
+        },
+        {
+          jp: '部屋に入ります。', vn: 'Vào phòng.',
+          furigana: [
+            { kanji: '部屋', reading: 'へや', meaning: 'BỘ ỐC' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: '大学に入ります。', vn: 'Vào đại học.',
+          furigana: [
+            { kanji: '大学', reading: 'だいがく', meaning: 'ĐẠI HỌC' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'たいせつ', kanji: '大切', romaji: 'taisetsu', mean: 'Quan trọng, quý giá',
+      examples: [
+        {
+          jp: '大切な書類', vn: 'Tài liệu quan trọng.',
+          furigana: [
+            { kanji: '大切', reading: 'たいせつ', meaning: 'ĐẠI THIẾT' },
+            { kanji: '書類', reading: 'しょるい', meaning: 'THƯ LOẠI' }
+          ]
+        },
+        {
+          jp: '家族は大切です。', vn: 'Gia đình là quan trọng.',
+          furigana: [
+            { kanji: '家族', reading: 'かぞく', meaning: 'GIA TỘC' },
+            { kanji: '大切', reading: 'たいせつ', meaning: 'ĐẠI THIẾT' }
+          ]
+        },
+        {
+          jp: '大切にしています。', vn: 'Tôi luôn trân trọng.',
+          furigana: [
+            { kanji: '大切', reading: 'たいせつ', meaning: 'ĐẠI THIẾT' }
+          ]
+        },
+        {
+          jp: '大切な思い出', vn: 'Kỷ niệm quý giá.',
+          furigana: [
+            { kanji: '大切', reading: 'たいせつ', meaning: 'ĐẠI THIẾT' },
+            { kanji: '思', reading: 'おも', meaning: 'TƯ' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: 'お金も大切ですが、時間がもっと大切です。', vn: 'Tiền cũng quan trọng nhưng thời gian còn quan trọng hơn.',
+          furigana: [
+            { kanji: '金', reading: 'かね', meaning: 'KIM' },
+            { kanji: '大切', reading: 'たいせつ', meaning: 'ĐẠI THIẾT' },
+            { kanji: '時間', reading: 'じかん', meaning: 'THỜI GIAN' }
+          ]
+        },
+        {
+          jp: '体を大切にしてください。', vn: 'Hãy giữ gìn sức khỏe.',
+          furigana: [
+            { kanji: '体', reading: 'からだ', meaning: 'THỂ' },
+            { kanji: '大切', reading: 'たいせつ', meaning: 'ĐẠI THIẾT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'だいじょうぶ', kanji: '大丈夫', romaji: 'daijoubu', mean: 'Không sao, không có vấn đề gì',
+      examples: [
+        {
+          jp: '大丈夫です。', vn: 'Không sao đâu/Tôi ổn.',
+          furigana: [
+            { kanji: '大丈夫', reading: 'だいじょうぶ', meaning: 'ĐẠI TRƯỢNG PHU' }
+          ]
+        },
+        {
+          jp: '大丈夫ですか。', vn: 'Bạn có sao không?/Ổn không?',
+          furigana: [
+            { kanji: '大丈夫', reading: 'だいじょうぶ', meaning: 'ĐẠI TRƯỢNG PHU' }
+          ]
+        },
+        {
+          jp: '時間は大丈夫ですか。', vn: 'Thời gian có OK không?',
+          furigana: [
+            { kanji: '時間', reading: 'じかん', meaning: 'THỜI GIAN' },
+            { kanji: '大丈夫', reading: 'だいじょうぶ', meaning: 'ĐẠI TRƯỢNG PHU' }
+          ]
+        },
+        {
+          jp: '一人で大丈夫です。', vn: 'Một mình tôi vẫn ổn.',
+          furigana: [
+            { kanji: '一人', reading: 'ひとり', meaning: 'NHẤT NHÂN' },
+            { kanji: '大丈夫', reading: 'だいじょうぶ', meaning: 'ĐẠI TRƯỢNG PHU' }
+          ]
+        },
+        {
+          jp: '全然大丈夫です。', vn: 'Hoàn toàn không sao cả.',
+          furigana: [
+            { kanji: '全然', reading: 'ぜんぜん', meaning: 'TOÀN NHIÊN' },
+            { kanji: '大丈夫', reading: 'だいじょうぶ', meaning: 'ĐẠI TRƯỢNG PHU' }
+          ]
+        },
+        {
+          jp: '明日は大丈夫です。', vn: 'Ngày mai thì được/ổn.',
+          furigana: [
+            { kanji: '明日', reading: 'あした', meaning: 'MINH NHẬT' },
+            { kanji: '大丈夫', reading: 'だいじょうぶ', meaning: 'ĐẠI TRƯỢNG PHU' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'あぶない', kanji: '危ない', romaji: 'abunai', mean: 'Nguy hiểm',
+      examples: [
+        {
+          jp: '危ないですから、入らないでください。', vn: 'Vì nguy hiểm nên xin đừng vào.',
+          furigana: [
+            { kanji: '危', reading: 'あぶ', meaning: 'NGUY' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: '危ない仕事', vn: 'Công việc nguy hiểm.',
+          furigana: [
+            { kanji: '危', reading: 'あぶ', meaning: 'NGUY' },
+            { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' }
+          ]
+        },
+        {
+          jp: '夜道は危ないです。', vn: 'Đường ban đêm nguy hiểm.',
+          furigana: [
+            { kanji: '夜道', reading: 'よみち', meaning: 'DẠ ĐẠO' },
+            { kanji: '危', reading: 'あぶ', meaning: 'NGUY' }
+          ]
+        },
+        {
+          jp: '危ない！', vn: 'Nguy hiểm!/Cẩn thận!',
+          furigana: [
+            { kanji: '危', reading: 'あぶ', meaning: 'NGUY' }
+          ]
+        },
+        {
+          jp: 'ここは危ないです。', vn: 'Ở đây nguy hiểm lắm.',
+          furigana: [
+            { kanji: '危', reading: 'あぶ', meaning: 'NGUY' }
+          ]
+        },
+        {
+          jp: '危ない所', vn: 'Nơi nguy hiểm.',
+          furigana: [
+            { kanji: '危', reading: 'あぶ', meaning: 'NGUY' },
+            { kanji: '所', reading: 'ところ', meaning: 'SỞ' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'もんだい', kanji: '問題', romaji: 'mondai', mean: 'Vấn đề',
+      examples: [
+        {
+          jp: '問題があります。', vn: 'Có vấn đề.',
+          furigana: [
+            { kanji: '問題', reading: 'もんだい', meaning: 'VẤN ĐỀ' }
+          ]
+        },
+        {
+          jp: '難しい問題', vn: 'Vấn đề khó/Bài tập khó.',
+          furigana: [
+            { kanji: '難', reading: 'むずか', meaning: 'NAN' },
+            { kanji: '問題', reading: 'もんだい', meaning: 'VẤN ĐỀ' }
+          ]
+        },
+        {
+          jp: '問題がわかりません。', vn: 'Tôi không hiểu câu hỏi/vấn đề.',
+          furigana: [
+            { kanji: '問題', reading: 'もんだい', meaning: 'VẤN ĐỀ' }
+          ]
+        },
+        {
+          jp: '大問題', vn: 'Vấn đề lớn.',
+          furigana: [
+            { kanji: '大問題', reading: 'だいもんだい', meaning: 'ĐẠI VẤN ĐỀ' }
+          ]
+        },
+        {
+          jp: '問題ありません。', vn: 'Không có vấn đề gì.',
+          furigana: [
+            { kanji: '問題', reading: 'もんだい', meaning: 'VẤN ĐỀ' }
+          ]
+        },
+        {
+          jp: '環境問題', vn: 'Vấn đề môi trường.',
+          furigana: [
+            { kanji: '環境問題', reading: 'かんきょうもんだい', meaning: 'HOÀN CẢNH VẤN ĐỀ' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'こたえ', kanji: '答え', romaji: 'kotae', mean: 'Câu trả lời',
+      examples: [
+        {
+          jp: '答えを書きます。', vn: 'Viết câu trả lời.',
+          furigana: [
+            { kanji: '答', reading: 'こた', meaning: 'ĐÁP' },
+            { kanji: '書', reading: 'か', meaning: 'THƯ' }
+          ]
+        },
+        {
+          jp: '答えが違います。', vn: 'Câu trả lời sai.',
+          furigana: [
+            { kanji: '答', reading: 'こた', meaning: 'ĐÁP' },
+            { kanji: '違', reading: 'ちが', meaning: 'VI' }
+          ]
+        },
+        {
+          jp: '正しい答え', vn: 'Câu trả lời đúng.',
+          furigana: [
+            { kanji: '正', reading: 'ただ', meaning: 'CHÍNH' },
+            { kanji: '答', reading: 'こた', meaning: 'ĐÁP' }
+          ]
+        },
+        {
+          jp: '答えを知っていますか。', vn: 'Bạn có biết câu trả lời không?',
+          furigana: [
+            { kanji: '答', reading: 'こた', meaning: 'ĐÁP' },
+            { kanji: '知', reading: 'し', meaning: 'TRI' }
+          ]
+        },
+        {
+          jp: '答え合わせをします。', vn: 'Kiểm tra câu trả lời (đọ đáp án).',
+          furigana: [
+            { kanji: '答', reading: 'こた', meaning: 'ĐÁP' },
+            { kanji: '合', reading: 'あ', meaning: 'HỢP' }
+          ]
+        },
+        {
+          jp: '質問の答え', vn: 'Câu trả lời cho câu hỏi.',
+          furigana: [
+            { kanji: '質問', reading: 'しつもん', meaning: 'CHẤT VẤN' },
+            { kanji: '答', reading: 'こた', meaning: 'ĐÁP' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'きんえん', kanji: '禁煙', romaji: 'kinen', mean: 'Cấm hút thuốc',
+      examples: [
+        {
+          jp: 'ここは禁煙です。', vn: 'Ở đây cấm hút thuốc.',
+          furigana: [
+            { kanji: '禁煙', reading: 'きんえん', meaning: 'CẤM YÊN' }
+          ]
+        },
+        {
+          jp: '禁煙席', vn: 'Ghế cấm hút thuốc (khu vực không hút thuốc).',
+          furigana: [
+            { kanji: '禁煙席', reading: 'きんえんせき', meaning: 'CẤM YÊN TỊCH' }
+          ]
+        },
+        {
+          jp: '病院は禁煙です。', vn: 'Bệnh viện cấm hút thuốc.',
+          furigana: [
+            { kanji: '病院', reading: 'びょういん', meaning: 'BỆNH VIỆN' },
+            { kanji: '禁煙', reading: 'きんえん', meaning: 'CẤM YÊN' }
+          ]
+        },
+        {
+          jp: '禁煙をお願いします。', vn: 'Xin vui lòng không hút thuốc.',
+          furigana: [
+            { kanji: '禁煙', reading: 'きんえん', meaning: 'CẤM YÊN' },
+            { kanji: '願', reading: 'ねが', meaning: 'NGUYỆN' }
+          ]
+        },
+        {
+          jp: '禁煙車', vn: 'Toa tàu cấm hút thuốc.',
+          furigana: [
+            { kanji: '禁煙車', reading: 'きんえんしゃ', meaning: 'CẤM YÊN XA' }
+          ]
+        },
+        {
+          jp: '禁煙にご協力ください。', vn: 'Xin hãy hợp tác việc không hút thuốc.',
+          furigana: [
+            { kanji: '禁煙', reading: 'きんえん', meaning: 'CẤM YÊN' },
+            { kanji: '協力', reading: 'きょうりょく', meaning: 'HIỆP LỰC' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'けんこうほけんしょう', kanji: '[健康]保険証', romaji: 'kenkouhokenshou', mean: 'Thẻ bảo hiểm [y tế]',
+      examples: [
+        {
+          jp: '保険証を見せてください。', vn: 'Xin hãy cho xem thẻ bảo hiểm.',
+          furigana: [
+            { kanji: '保険証', reading: 'ほけんしょう', meaning: 'BẢO HIỂM CHỨNG' },
+            { kanji: '見', reading: 'み', meaning: 'KIẾN' }
+          ]
+        },
+        {
+          jp: '保険証を忘れました。', vn: 'Tôi quên thẻ bảo hiểm.',
+          furigana: [
+            { kanji: '保険証', reading: 'ほけんしょう', meaning: 'BẢO HIỂM CHỨNG' },
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' }
+          ]
+        },
+        {
+          jp: '保険証を持っていますか。', vn: 'Bạn có mang thẻ bảo hiểm không?',
+          furigana: [
+            { kanji: '保険証', reading: 'ほけんしょう', meaning: 'BẢO HIỂM CHỨNG' },
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' }
+          ]
+        },
+        {
+          jp: '保険証がいります。', vn: 'Cần thẻ bảo hiểm.',
+          furigana: [
+            { kanji: '保険証', reading: 'ほけんしょう', meaning: 'BẢO HIỂM CHỨNG' }
+          ]
+        },
+        {
+          jp: '健康保険証', vn: 'Thẻ bảo hiểm y tế.',
+          furigana: [
+            { kanji: '健康保険証', reading: 'けんこうほけんしょう', meaning: 'KIỆN KHANG BẢO HIỂM CHỨNG' }
+          ]
+        },
+        {
+          jp: '保険証を返します。', vn: 'Trả lại thẻ bảo hiểm.',
+          furigana: [
+            { kanji: '保険証', reading: 'ほけんしょう', meaning: 'BẢO HIỂM CHỨNG' },
+            { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'かぜ', kanji: 'かぜ', romaji: 'kaze', mean: 'Cảm, cúm',
+      examples: [
+        {
+          jp: '風邪を引きました。', vn: 'Tôi bị cảm.',
+          furigana: [
+            { kanji: '風邪', reading: 'かぜ', meaning: 'PHONG TÀ' },
+            { kanji: '引', reading: 'ひ', meaning: 'DẪN' }
+          ]
+        },
+        {
+          jp: '風邪薬', vn: 'Thuốc cảm.',
+          furigana: [
+            { kanji: '風邪薬', reading: 'かぜぐすり', meaning: 'PHONG TÀ DƯỢC' }
+          ]
+        },
+        {
+          jp: '風邪ですから、休みます。', vn: 'Vì bị cảm nên tôi nghỉ.',
+          furigana: [
+            { kanji: '風邪', reading: 'かぜ', meaning: 'PHONG TÀ' },
+            { kanji: '休', reading: 'やす', meaning: 'HƯU' }
+          ]
+        },
+        {
+          jp: '風邪が治りました。', vn: 'Đã khỏi cảm.',
+          furigana: [
+            { kanji: '風邪', reading: 'かぜ', meaning: 'PHONG TÀ' },
+            { kanji: '治', reading: 'なお', meaning: 'TRÌ' }
+          ]
+        },
+        {
+          jp: '風邪に気をつけてください。', vn: 'Hãy cẩn thận kẻo bị cảm.',
+          furigana: [
+            { kanji: '風邪', reading: 'かぜ', meaning: 'PHONG TÀ' },
+            { kanji: '気', reading: 'き', meaning: 'KHÍ' }
+          ]
+        },
+        {
+          jp: 'ひどい風邪', vn: 'Cảm nặng.',
+          furigana: [
+            { kanji: '風邪', reading: 'かぜ', meaning: 'PHONG TÀ' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ねつ', kanji: '熱', romaji: 'netsu', mean: 'Sốt',
+      examples: [
+        {
+          jp: '熱があります。', vn: 'Tôi bị sốt.',
+          furigana: [
+            { kanji: '熱', reading: 'ねつ', meaning: 'NHIỆT' }
+          ]
+        },
+        {
+          jp: '熱が高いです。', vn: 'Sốt cao.',
+          furigana: [
+            { kanji: '熱', reading: 'ねつ', meaning: 'NHIỆT' },
+            { kanji: '高', reading: 'たか', meaning: 'CAO' }
+          ]
+        },
+        {
+          jp: '熱を測ります。', vn: 'Đo nhiệt độ (cặp nhiệt độ).',
+          furigana: [
+            { kanji: '熱', reading: 'ねつ', meaning: 'NHIỆT' },
+            { kanji: '測', reading: 'はか', meaning: 'TRẮC' }
+          ]
+        },
+        {
+          jp: '熱が下がりました。', vn: 'Đã hạ sốt.',
+          furigana: [
+            { kanji: '熱', reading: 'ねつ', meaning: 'NHIỆT' },
+            { kanji: '下', reading: 'さ', meaning: 'HẠ' }
+          ]
+        },
+        {
+          jp: '微熱があります。', vn: 'Bị sốt nhẹ.',
+          furigana: [
+            { kanji: '微熱', reading: 'びねつ', meaning: 'VI NHIỆT' }
+          ]
+        },
+        {
+          jp: '熱が出ました。', vn: 'Bị lên cơn sốt.',
+          furigana: [
+            { kanji: '熱', reading: 'ねつ', meaning: 'NHIỆT' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'びょうき', kanji: '病気', romaji: 'byouki', mean: 'Ốm, bệnh',
+      examples: [
+        {
+          jp: '病気になります。', vn: 'Bị bệnh.',
+          furigana: [
+            { kanji: '病気', reading: 'びょうき', meaning: 'BỆNH KHÍ' }
+          ]
+        },
+        {
+          jp: '病気が治りました。', vn: 'Bệnh đã khỏi.',
+          furigana: [
+            { kanji: '病気', reading: 'びょうき', meaning: 'BỆNH KHÍ' },
+            { kanji: '治', reading: 'なお', meaning: 'TRÌ' }
+          ]
+        },
+        {
+          jp: '重い病気', vn: 'Bệnh nặng.',
+          furigana: [
+            { kanji: '重', reading: 'おも', meaning: 'TRỌNG' },
+            { kanji: '病気', reading: 'びょうき', meaning: 'BỆNH KHÍ' }
+          ]
+        },
+        {
+          jp: '病気の理由', vn: 'Nguyên nhân bệnh.',
+          furigana: [
+            { kanji: '病気', reading: 'びょうき', meaning: 'BỆNH KHÍ' },
+            { kanji: '理由', reading: 'りゆう', meaning: 'LÝ DO' }
+          ]
+        },
+        {
+          jp: '心の病気', vn: 'Bệnh tâm lý.',
+          furigana: [
+            { kanji: '心', reading: 'こころ', meaning: 'TÂM' },
+            { kanji: '病気', reading: 'びょうき', meaning: 'BỆNH KHÍ' }
+          ]
+        },
+        {
+          jp: '病気で休みます。', vn: 'Nghỉ vì bị ốm.',
+          furigana: [
+            { kanji: '病気', reading: 'びょうき', meaning: 'BỆNH KHÍ' },
+            { kanji: '休', reading: 'やす', meaning: 'HƯU' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'くすり', kanji: '薬', romaji: 'kusuri', mean: 'Thuốc',
+      examples: [
+        {
+          jp: '薬を飲みます。', vn: 'Uống thuốc.',
+          furigana: [
+            { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: '薬屋', vn: 'Hiệu thuốc.',
+          furigana: [
+            { kanji: '薬屋', reading: 'くすりや', meaning: 'DƯỢC ỐC' }
+          ]
+        },
+        {
+          jp: 'いい薬', vn: 'Thuốc tốt.',
+          furigana: [
+            { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' }
+          ]
+        },
+        {
+          jp: '薬をつけます。', vn: 'Bôi thuốc.',
+          furigana: [
+            { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' }
+          ]
+        },
+        {
+          jp: '胃の薬', vn: 'Thuốc dạ dày.',
+          furigana: [
+            { kanji: '胃', reading: 'い', meaning: 'VỊ' },
+            { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' }
+          ]
+        },
+        {
+          jp: '薬局', vn: 'Hiệu thuốc (Tây).',
+          furigana: [
+            { kanji: '薬局', reading: 'やっきょく', meaning: 'DƯỢC CỤC' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おふろ', kanji: '[お]ふろ', romaji: 'ofuro', mean: 'Bồn tắm',
+      examples: [
+        {
+          jp: 'お風呂に入ります。', vn: 'Tắm bồn (vào bồn tắm).',
+          furigana: [
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'お風呂を沸かします。', vn: 'Đun nước bồn tắm.',
+          furigana: [
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' },
+            { kanji: '沸', reading: 'わ', meaning: 'PHÍ' }
+          ]
+        },
+        {
+          jp: '広いお風呂', vn: 'Bồn tắm rộng.',
+          furigana: [
+            { kanji: '広', reading: 'ひろ', meaning: 'QUẢNG' },
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' }
+          ]
+        },
+        {
+          jp: 'お風呂から上がります。', vn: 'Ra khỏi bồn tắm.',
+          furigana: [
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' },
+            { kanji: '上', reading: 'あ', meaning: 'THƯỢNG' }
+          ]
+        },
+        {
+          jp: 'お風呂掃除', vn: 'Dọn bồn tắm.',
+          furigana: [
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' },
+            { kanji: '掃除', reading: 'そうじ', meaning: 'TẢO TRỪ' }
+          ]
+        },
+        {
+          jp: '一緒にお風呂に入ります。', vn: 'Tắm chung.',
+          furigana: [
+            { kanji: '一緒', reading: 'いっしょ', meaning: 'NHẤT TỰ' },
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'うわぎ', kanji: '上着', romaji: 'uwagi', mean: 'Áo khoác',
+      examples: [
+        {
+          jp: '上着を着ます。', vn: 'Mặc áo khoác.',
+          furigana: [
+            { kanji: '上着', reading: 'うわぎ', meaning: 'THƯỢNG TRƯỚC' },
+            { kanji: '着', reading: 'き', meaning: 'TRƯỚC' }
+          ]
+        },
+        {
+          jp: '上着を脱ぎます。', vn: 'Cởi áo khoác.',
+          furigana: [
+            { kanji: '上着', reading: 'うわぎ', meaning: 'THƯỢNG TRƯỚC' },
+            { kanji: '脱', reading: 'ぬ', meaning: 'THOÁT' }
+          ]
+        },
+        {
+          jp: '暖かい上着', vn: 'Áo khoác ấm.',
+          furigana: [
+            { kanji: '暖', reading: 'あたた', meaning: 'NOÃN' },
+            { kanji: '上着', reading: 'うわぎ', meaning: 'THƯỢNG TRƯỚC' }
+          ]
+        },
+        {
+          jp: '新しい上着', vn: 'Áo khoác mới.',
+          furigana: [
+            { kanji: '新', reading: 'あたら', meaning: 'TÂN' },
+            { kanji: '上着', reading: 'うわぎ', meaning: 'THƯỢNG TRƯỚC' }
+          ]
+        },
+        {
+          jp: '上着を忘れないでください。', vn: 'Đừng quên áo khoác.',
+          furigana: [
+            { kanji: '上着', reading: 'うわぎ', meaning: 'THƯỢNG TRƯỚC' },
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' }
+          ]
+        },
+        {
+          jp: '上着をハンガーにかけます。', vn: 'Treo áo khoác lên mắc.',
+          furigana: [
+            { kanji: '上着', reading: 'うわぎ', meaning: 'THƯỢNG TRƯỚC' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'したぎ', kanji: '下着', romaji: 'shitagi', mean: 'Quần áo lót',
+      examples: [
+        {
+          jp: '下着を買います。', vn: 'Mua đồ lót.',
+          furigana: [
+            { kanji: '下着', reading: 'したぎ', meaning: 'HẠ TRƯỚC' },
+            { kanji: '買', reading: 'か', meaning: 'MÃI' }
+          ]
+        },
+        {
+          jp: '下着を替えます。', vn: 'Thay đồ lót.',
+          furigana: [
+            { kanji: '下着', reading: 'したぎ', meaning: 'HẠ TRƯỚC' },
+            { kanji: '替', reading: 'か', meaning: 'THẾ' }
+          ]
+        },
+        {
+          jp: '綿の下着', vn: 'Đồ lót bằng bông (cotton).',
+          furigana: [
+            { kanji: '綿', reading: 'めん', meaning: 'MIÊN' },
+            { kanji: '下着', reading: 'したぎ', meaning: 'HẠ TRƯỚC' }
+          ]
+        },
+        {
+          jp: '下着売り場', vn: 'Quầy bán đồ lót.',
+          furigana: [
+            { kanji: '下着', reading: 'したぎ', meaning: 'HẠ TRƯỚC' },
+            { kanji: '売', reading: 'う', meaning: 'MẠI' },
+            { kanji: '場', reading: 'ば', meaning: 'TRƯỜNG' }
+          ]
+        },
+        {
+          jp: 'きれいな下着', vn: 'Đồ lót đẹp/sạch.',
+          furigana: [
+            { kanji: '下着', reading: 'したぎ', meaning: 'HẠ TRƯỚC' }
+          ]
+        },
+        {
+          jp: '下着を洗います。', vn: 'Giặt đồ lót.',
+          furigana: [
+            { kanji: '下着', reading: 'したぎ', meaning: 'HẠ TRƯỚC' },
+            { kanji: '洗', reading: 'あら', meaning: 'TẨY' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'せんせい', kanji: '先生', romaji: 'sensei', mean: 'Bác sĩ (cách gọi bác sĩ)',
+      examples: [
+        {
+          jp: '先生、お腹が痛いです。', vn: 'Bác sĩ ơi, tôi bị đau bụng.',
+          furigana: [
+            { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' },
+            { kanji: '腹', reading: 'なか', meaning: 'PHÚC' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: '先生に相談します。', vn: 'Thảo luận với bác sĩ.',
+          furigana: [
+            { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' },
+            { kanji: '相談', reading: 'そうだん', meaning: 'TƯƠNG ĐÀM' }
+          ]
+        },
+        {
+          jp: 'いい先生', vn: 'Bác sĩ tốt.',
+          furigana: [
+            { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }
+          ]
+        },
+        {
+          jp: '先生の言うことを聞きます。', vn: 'Nghe lời bác sĩ.',
+          furigana: [
+            { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' },
+            { kanji: '言', reading: 'い', meaning: 'NGÔN' },
+            { kanji: '聞', reading: 'き', meaning: 'VĂN' }
+          ]
+        },
+        {
+          jp: '病院の先生', vn: 'Bác sĩ ở bệnh viện.',
+          furigana: [
+            { kanji: '病院', reading: 'びょういん', meaning: 'BỆNH VIỆN' },
+            { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }
+          ]
+        },
+        {
+          jp: '先生、ありがとうございました。', vn: 'Cảm ơn bác sĩ.',
+          furigana: [
+            { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' }
+          ]
+        }
+      ]
+    },
+    {
+      word: '2、3にち', kanji: '2、3日', romaji: 'nisannichi', mean: 'Vài ngày',
+      examples: [
+        {
+          jp: '2、3日休みます。', vn: 'Nghỉ vài ngày.',
+          furigana: [
+            { kanji: '日', reading: 'にち', meaning: 'NHẬT' },
+            { kanji: '休', reading: 'やす', meaning: 'HƯU' }
+          ]
+        },
+        {
+          jp: '2、3日かかります。', vn: 'Mất vài ngày.',
+          furigana: [
+            { kanji: '日', reading: 'にち', meaning: 'NHẬT' }
+          ]
+        },
+        {
+          jp: 'あと2、3日', vn: 'Còn 2, 3 ngày nữa.',
+          furigana: [
+            { kanji: '日', reading: 'にち', meaning: 'NHẬT' }
+          ]
+        },
+        {
+          jp: '2、3日入院します。', vn: 'Nhập viện vài ngày.',
+          furigana: [
+            { kanji: '日', reading: 'にち', meaning: 'NHẬT' },
+            { kanji: '入院', reading: 'にゅういん', meaning: 'NHẬP VIỆN' }
+          ]
+        },
+        {
+          jp: '2、3日旅行します。', vn: 'Đi du lịch vài ngày.',
+          furigana: [
+            { kanji: '日', reading: 'にち', meaning: 'NHẬT' },
+            { kanji: '旅行', reading: 'りょこう', meaning: 'LỮ HÀNH' }
+          ]
+        },
+        {
+          jp: '2、3日待ってください。', vn: 'Hãy đợi vài ngày.',
+          furigana: [
+            { kanji: '日', reading: 'にち', meaning: 'NHẬT' },
+            { kanji: '待', reading: 'ま', meaning: 'ĐÃI' }
+          ]
+        }
+      ]
+    },
+    {
+      word: '2、3～', kanji: '2、3～', romaji: 'nisan', mean: 'Vài ~ ("~" là hậu tố chỉ cách đếm)',
+      examples: [
+        {
+          jp: '2、3回', vn: 'Vài lần (2, 3 lần).',
+          furigana: [
+            { kanji: '回', reading: 'かい', meaning: 'HỒI' }
+          ]
+        },
+        {
+          jp: '2、3人', vn: 'Vài người.',
+          furigana: [
+            { kanji: '人', reading: 'にん', meaning: 'NHÂN' }
+          ]
+        },
+        {
+          jp: '2、3本', vn: 'Vài cái (chai, bút...).',
+          furigana: [
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' }
+          ]
+        },
+        {
+          jp: '2、3枚', vn: 'Vài tờ (tấm, chiếc).',
+          furigana: [
+            { kanji: '枚', reading: 'まい', meaning: 'MAI' }
+          ]
+        },
+        {
+          jp: '2、3時間', vn: 'Vài tiếng.',
+          furigana: [
+            { kanji: '時間', reading: 'じかん', meaning: 'THỜI GIAN' }
+          ]
+        },
+        {
+          jp: '2、3週間', vn: 'Vài tuần.',
+          furigana: [
+            { kanji: '週間', reading: 'しゅうかん', meaning: 'CHU GIAN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: '～までに', kanji: '～までに', romaji: 'madeni', mean: 'Trước ~ (chỉ thời hạn)',
+      examples: [
+        {
+          jp: '5時までに帰ります。', vn: 'Tôi sẽ về trước 5 giờ.',
+          furigana: [
+            { kanji: '時', reading: 'じ', meaning: 'THỜI' },
+            { kanji: '帰', reading: 'かえ', meaning: 'QUY' }
+          ]
+        },
+        {
+          jp: '明日までに宿題を出してください。', vn: 'Hãy nộp bài tập trước ngày mai.',
+          furigana: [
+            { kanji: '明日', reading: 'あした', meaning: 'MINH NHẬT' },
+            { kanji: '宿題', reading: 'しゅくだい', meaning: 'TÚC ĐỀ' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '来週までにレポートを書かなければなりません。', vn: 'Phải viết báo cáo trước tuần sau.',
+          furigana: [
+            { kanji: '来週', reading: 'らいしゅう', meaning: 'LAI CHU' },
+            { kanji: '書', reading: 'か', meaning: 'THƯ' }
+          ]
+        },
+        {
+          jp: '12時までに寝ます。', vn: 'Tôi ngủ trước 12 giờ.',
+          furigana: [
+            { kanji: '時', reading: 'じ', meaning: 'THỜI' },
+            { kanji: '寝', reading: 'ね', meaning: 'TẨM' }
+          ]
+        },
+        {
+          jp: '土曜日までに本を返します。', vn: 'Tôi sẽ trả sách trước thứ 7.',
+          furigana: [
+            { kanji: '土曜日', reading: 'どようび', meaning: 'THỔ DIỆU NHẬT' },
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }
+          ]
+        },
+        {
+          jp: '会議までに資料をコピーします。', vn: 'Tôi sẽ photo tài liệu trước cuộc họp.',
+          furigana: [
+            { kanji: '会議', reading: 'かいぎ', meaning: 'HỘI NGHỊ' },
+            { kanji: '資料', reading: 'しりょう', meaning: 'TƯ LIỆU' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'ですから', kanji: 'ですから', romaji: 'desukara', mean: 'Vì thế, vì vậy, do đó',
+      examples: [
+        {
+          jp: '明日は休みです。ですから、学校へ行きません。', vn: 'Ngày mai là ngày nghỉ. Vì thế tôi không đến trường.',
+          furigana: [
+            { kanji: '明日', reading: 'あした', meaning: 'MINH NHẬT' },
+            { kanji: '休', reading: 'やす', meaning: 'HƯU' },
+            { kanji: '学校', reading: 'がっこう', meaning: 'HỌC HIỆU' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '天気が悪いです。ですから、出かけません。', vn: 'Thời tiết xấu. Vì thế tôi không ra ngoài.',
+          furigana: [
+            { kanji: '天気', reading: 'てんき', meaning: 'THIÊN KHÍ' },
+            { kanji: '悪', reading: 'わる', meaning: 'ÁC' },
+            { kanji: '出', reading: 'で', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '時間がありません。ですから、急ぎましょう。', vn: 'Không có thời gian. Vì thế hãy khẩn trương lên.',
+          furigana: [
+            { kanji: '時間', reading: 'じかん', meaning: 'THỜI GIAN' },
+            { kanji: '急', reading: 'いそ', meaning: 'CẤP' }
+          ]
+        },
+        {
+          jp: 'お金がありません。ですから、買いません。', vn: 'Tôi không có tiền. Vì thế tôi không mua.',
+          furigana: [
+            { kanji: '金', reading: 'かね', meaning: 'KIM' },
+            { kanji: '買', reading: 'か', meaning: 'MÃI' }
+          ]
+        },
+        {
+          jp: '日本料理が好きです。ですから、よく食べます。', vn: 'Tôi thích món ăn Nhật. Vì thế tôi hay ăn.',
+          furigana: [
+            { kanji: '日本料理', reading: 'にほんりょうり', meaning: 'NHẬT BẢN LIỆU LÝ' },
+            { kanji: '好', reading: 'す', meaning: 'HẢO' },
+            { kanji: '食', reading: 'た', meaning: 'THỰC' }
+          ]
+        },
+        {
+          jp: '危ないです。ですから、入らないでください。', vn: 'Nguy hiểm. Vì thế xin đừng vào.',
+          furigana: [
+            { kanji: '危', reading: 'あぶ', meaning: 'NGUY' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'どうしましたか。', kanji: 'どうしましたか。', romaji: 'doushimashitaka', mean: 'Có vấn đề gì?/Anh/Chị bị làm sao? (cách bác sĩ hỏi bệnh nhân)',
+      examples: [
+        {
+          jp: 'どうしましたか。どこか痛いですか。', vn: 'Anh/Chị bị làm sao vậy? Có đau ở đâu không?',
+          furigana: [
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: 'どうしましたか。顔色が悪いですよ。', vn: 'Bạn bị sao thế? Sắc mặt kém lắm.',
+          furigana: [
+            { kanji: '顔色', reading: 'かおいろ', meaning: 'NHAN SẮC' },
+            { kanji: '悪', reading: 'わる', meaning: 'ÁC' }
+          ]
+        },
+        {
+          jp: 'どうしましたか。元気がないですね。', vn: 'Bạn sao thế? Trông không được khỏe.',
+          furigana: [
+            { kanji: '元気', reading: 'げんき', meaning: 'NGUYÊN KHÍ' }
+          ]
+        },
+        {
+          jp: '先生：どうしましたか。患者：お腹が痛いです。', vn: 'Bác sĩ: Anh bị sao? Bệnh nhân: Tôi bị đau bụng.',
+          furigana: [
+            { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' },
+            { kanji: '患者', reading: 'かんじゃ', meaning: 'HOẠN GIẢ' },
+            { kanji: '腹', reading: 'なか', meaning: 'PHÚC' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: 'どうしましたか。何かあったんですか。', vn: 'Bị làm sao vậy? Đã có chuyện gì à?',
+          furigana: [
+            { kanji: '何', reading: 'なに', meaning: 'HÀ' }
+          ]
+        },
+        {
+          jp: 'どうしましたか。困っていますか。', vn: 'Sao vậy? Bạn đang gặp khó khăn à?',
+          furigana: [
+            { kanji: '困', reading: 'こま', meaning: 'KHỐN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: '～がいたいです。', kanji: '～が痛いです。', romaji: 'gaitaidesu', mean: 'Tôi bị đau [~].',
+      examples: [
+        {
+          jp: '頭が痛いです。', vn: 'Tôi bị đau đầu.',
+          furigana: [
+            { kanji: '頭', reading: 'あたま', meaning: 'ĐẦU' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: 'お腹が痛いです。', vn: 'Tôi bị đau bụng.',
+          furigana: [
+            { kanji: '腹', reading: 'なか', meaning: 'PHÚC' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: '歯が痛いです。', vn: 'Tôi bị đau răng.',
+          furigana: [
+            { kanji: '歯', reading: 'は', meaning: 'XỈ' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: '喉が痛いです。', vn: 'Tôi bị đau họng.',
+          furigana: [
+            { kanji: '喉', reading: 'のど', meaning: 'HẦU' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: '目が痛いです。', vn: 'Tôi bị đau mắt.',
+          furigana: [
+            { kanji: '目', reading: 'め', meaning: 'MỤC' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: '足が痛いです。', vn: 'Tôi bị đau chân.',
+          furigana: [
+            { kanji: '足', reading: 'あし', meaning: 'TÚC' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'のど', kanji: 'のど', romaji: 'nodo', mean: 'Họng',
+      examples: [
+        {
+          jp: 'のどが痛いです。', vn: 'Tôi bị đau họng.',
+          furigana: [
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: 'のどが渇きました。', vn: 'Tôi khát nước.',
+          furigana: [
+            { kanji: '渇', reading: 'かわ', meaning: 'KHÁT' }
+          ]
+        },
+        {
+          jp: 'のど飴', vn: 'Kẹo ngậm ho.',
+          furigana: [
+            { kanji: '飴', reading: 'あめ', meaning: 'DI' }
+          ]
+        },
+        {
+          jp: 'のど薬', vn: 'Thuốc họng.',
+          furigana: [
+            { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' }
+          ]
+        },
+        {
+          jp: '風邪でのどが痛いです。', vn: 'Đau họng do cảm.',
+          furigana: [
+            { kanji: '風邪', reading: 'かぜ', meaning: 'PHONG TÀ' },
+            { kanji: '痛', reading: 'いた', meaning: 'THỐNG' }
+          ]
+        },
+        {
+          jp: 'のどが変です。', vn: 'Họng tôi bị lạ (khó chịu).',
+          furigana: [
+            { kanji: '変', reading: 'へん', meaning: 'BIẾN' }
+          ]
+        }
+      ]
+    },
+    {
+      word: 'おだいじに。', kanji: 'お大事に。', romaji: 'odaijini', mean: 'Anh/Chị nhớ giữ gìn sức khỏe. (câu nói với người bị ốm hoặc bị bệnh)',
+      examples: [
+        {
+          jp: 'どうぞお大事に。', vn: 'Xin hãy giữ gìn sức khỏe.',
+          furigana: [
+            { kanji: '大事', reading: 'だいじ', meaning: 'ĐẠI SỰ' }
+          ]
+        },
+        {
+          jp: '先生：お大事に。患者：ありがとうございます。', vn: 'Bác sĩ: Giữ gìn sức khỏe nhé. Bệnh nhân: Cảm ơn bác sĩ.',
+          furigana: [
+            { kanji: '先生', reading: 'せんせい', meaning: 'TIÊN SINH' },
+            { kanji: '大事', reading: 'だいじ', meaning: 'ĐẠI SỰ' },
+            { kanji: '患者', reading: 'かんじゃ', meaning: 'HOẠN GIẢ' }
+          ]
+        },
+        {
+          jp: 'お体、お大事に。', vn: 'Hãy giữ gìn sức khỏe (cơ thể).',
+          furigana: [
+            { kanji: '体', reading: 'からだ', meaning: 'THỂ' },
+            { kanji: '大事', reading: 'だいじ', meaning: 'ĐẠI SỰ' }
+          ]
+        },
+        {
+          jp: 'みなさん、お大事に。', vn: 'Mọi người hãy giữ gìn sức khỏe.',
+          furigana: [
+            { kanji: '大事', reading: 'だいじ', meaning: 'ĐẠI SỰ' }
+          ]
+        },
+        {
+          jp: '母にお大事にと伝えてください。', vn: 'Hãy nhắn với mẹ bạn là nhớ giữ gìn sức khỏe nhé.',
+          furigana: [
+            { kanji: '母', reading: 'はは', meaning: 'MẪU' },
+            { kanji: '大事', reading: 'だいじ', meaning: 'ĐẠI SỰ' },
+            { kanji: '伝', reading: 'つた', meaning: 'TRUYỀN' }
+          ]
+        },
+        {
+          jp: '無理をしないで、お大事にしてくいださい。', vn: 'Đừng quá sức, hãy giữ gìn sức khỏe.',
+          furigana: [
+            { kanji: '無理', reading: 'むり', meaning: 'VÔ LÝ' },
+            { kanji: '大事', reading: 'だいじ', meaning: 'ĐẠI SỰ' }
+          ]
+        }
+      ]
+    }
   ],
   grammar: [
     {
       pattern: 'Động từ thể ない',
       explanation: 'Cách chia động từ thể Nai (Phủ định ngắn):\n1. Nhóm I: Chuyển âm cuối hàng [i] sang hàng [a] rồi thêm [nai]. (Ngoại lệ: âm cuối [i] -> [wanai]).\nVí dụ: kakimasu -> kakanai, yomimasu -> yomanai, aimasu -> awanai.\n2. Nhóm II: Bỏ [masu] thêm [nai].\nVí dụ: tabemasu -> tabenai, mimasu -> minai.\n3. Nhóm III: shimasu -> shinai, kimasu -> konai.',
-      example: '書きます -> 書かない (Không viết)\n食べます -> 食べない (Không ăn)\n勉強します -> 勉強しない (Không học)\n来ます -> 来ない (Không đến)'
+      example: '書きます -> 書かない (Không viết)\n食べます -> 食べない (Không ăn)\n勉強します -> 勉強しない (Không học)\n来ます -> 来ない (Không đến)',
+      examples: [
+        {
+          jp: '写真を撮りません -> 撮らない',
+          vn: 'Không chụp ảnh.',
+          furigana: [
+            { kanji: '写真', reading: 'しゃしん', meaning: 'TẢ CHÂN' },
+            { kanji: '撮', reading: 'と', meaning: 'TOÁT' }
+          ]
+        },
+        {
+          jp: 'タバコを吸いません -> 吸わない',
+          vn: 'Không hút thuốc.',
+          furigana: [
+            { kanji: '吸', reading: 'す', meaning: 'HẤP' }
+          ]
+        },
+        {
+          jp: '卵を食べません -> 食べない',
+          vn: 'Không ăn trứng.',
+          furigana: [
+            { kanji: '卵', reading: 'たまご', meaning: 'NOÃN' },
+            { kanji: '食', reading: 'た', meaning: 'THỰC' }
+          ]
+        },
+        {
+          jp: 'お酒を飲みません -> 飲まない',
+          vn: 'Không uống rượu.',
+          furigana: [
+            { kanji: '酒', reading: 'さけ', meaning: 'TỬU' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: '彼に会いません -> 会わない',
+          vn: 'Không gặp anh ấy.',
+          furigana: [
+            { kanji: '彼', reading: 'かれ', meaning: 'BỈ' },
+            { kanji: '会', reading: 'あ', meaning: 'HỘI' }
+          ]
+        },
+        {
+          jp: '残業しません -> 残業しない',
+          vn: 'Không làm thêm giờ.',
+          furigana: [
+            { kanji: '残業', reading: 'ざんぎょう', meaning: 'TÀN NGHIỆP' }
+          ]
+        },
+        {
+          jp: 'ここに入りません -> 入らない',
+          vn: 'Không vào đây.',
+          furigana: [
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: '急ぎません -> 急がない',
+          vn: 'Không vội.',
+          furigana: [
+            { kanji: '急', reading: 'いそ', meaning: 'CẤP' }
+          ]
+        },
+        {
+          jp: 'この本を読みません -> 読まない',
+          vn: 'Không đọc sách này.',
+          furigana: [
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }
+          ]
+        },
+        {
+          jp: '遊びません -> 遊ばない',
+          vn: 'Không chơi.',
+          furigana: [
+            { kanji: '遊', reading: 'あそ', meaning: 'DU' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Động từ thể ない + で ください',
       explanation: 'Mẫu câu dùng khi muốn yêu cầu, nhờ vả ai đó đừng làm một việc gì đó. (Xin đừng/Không được...).',
-      example: 'わたしは 元気ですから、心配しないで ください。 (Tôi khỏe nên anh/chị đừng lo lắng.)\nここで 写真を 撮らないで ください。 (Xin đừng chụp ảnh ở đây.)'
+      example: 'わたしは 元気ですから、心配しないで ください。 (Tôi khỏe nên anh/chị đừng lo lắng.)\nここで 写真を 撮らないで ください。 (Xin đừng chụp ảnh ở đây.)',
+      examples: [
+        {
+          jp: 'ここで写真を撮らないでください。',
+          vn: 'Xin đừng chụp ảnh ở đây.',
+          furigana: [
+            { kanji: '写真', reading: 'しゃしん', meaning: 'TẢ CHÂN' },
+            { kanji: '撮', reading: 'と', meaning: 'TOÁT' }
+          ]
+        },
+        {
+          jp: 'ここでタバコを吸わないでください。',
+          vn: 'Xin đừng hút thuốc ở đây.',
+          furigana: [
+            { kanji: '吸', reading: 'す', meaning: 'HẤP' }
+          ]
+        },
+        {
+          jp: 'ここに入らないでください。',
+          vn: 'Xin đừng vào đây.',
+          furigana: [
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: 'パスポートをなくさないでください。',
+          vn: 'Xin đừng làm mất hộ chiếu.',
+          furigana: [
+            { kanji: '無', reading: 'な', meaning: 'VÔ' }
+          ]
+        },
+        {
+          jp: '心配しないでください。',
+          vn: 'Xin đừng lo lắng.',
+          furigana: [
+            { kanji: '心配', reading: 'しんぱい', meaning: 'TÂM PHỐI' }
+          ]
+        },
+        {
+          jp: '窓を開けないでください。',
+          vn: 'Xin đừng mở cửa sổ.',
+          furigana: [
+            { kanji: '窓', reading: 'まど', meaning: 'SONG' },
+            { kanji: '開', reading: 'あ', meaning: 'KHAI' }
+          ]
+        },
+        {
+          jp: '忘れないでください。',
+          vn: 'Xin đừng quên.',
+          furigana: [
+            { kanji: '忘', reading: 'わす', meaning: 'VONG' }
+          ]
+        },
+        {
+          jp: 'そこに車を止めないでください。',
+          vn: 'Xin đừng đỗ xe ở đó.',
+          furigana: [
+            { kanji: '車', reading: 'くるま', meaning: 'XA' },
+            { kanji: '止', reading: 'と', meaning: 'CHỈ' }
+          ]
+        },
+        {
+          jp: '私を待たないでください。',
+          vn: 'Xin đừng đợi tôi.',
+          furigana: [
+            { kanji: '私', reading: 'わたし', meaning: 'TƯ' },
+            { kanji: '待', reading: 'ま', meaning: 'ĐÃI' }
+          ]
+        },
+        {
+          jp: '無理をしないでください。',
+          vn: 'Xin đừng quá sức.',
+          furigana: [
+            { kanji: '無理', reading: 'むり', meaning: 'VÔ LÝ' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Động từ thể ない (bỏ い) + ければ なりません',
       explanation: 'Mẫu câu biểu thị sự bắt buộc phải làm gì đó (nếu không làm thì không được). Chú ý: Mẫu câu này không mang ý nghĩa phủ định.',
-      example: '薬を 飲まなければ なりません。 (Tôi phải uống thuốc.)\n明日は 早く 起きなければ なりません。 (Ngày mai tôi phải dậy sớm.)'
+      example: '薬を 飲まなければ なりません。 (Tôi phải uống thuốc.)\n明日は 早く 起きなければ なりません。 (Ngày mai tôi phải dậy sớm.)',
+      examples: [
+        {
+          jp: '薬を飲まなければなりません。',
+          vn: 'Phải uống thuốc.',
+          furigana: [
+            { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: '宿題をしなければなりません。',
+          vn: 'Phải làm bài tập.',
+          furigana: [
+            { kanji: '宿題', reading: 'しゅくだい', meaning: 'TÚC ĐỀ' }
+          ]
+        },
+        {
+          jp: '早く帰らなければなりません。',
+          vn: 'Phải về sớm.',
+          furigana: [
+            { kanji: '早', reading: 'はや', meaning: 'TẢO' },
+            { kanji: '帰', reading: 'かえ', meaning: 'QUY' }
+          ]
+        },
+        {
+          jp: 'パスポートを持って行かなければなりません。',
+          vn: 'Phải mang theo hộ chiếu.',
+          furigana: [
+            { kanji: '持', reading: 'も', meaning: 'TRÌ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '毎日日本語を勉強しなければなりません。',
+          vn: 'Hàng ngày phải học tiếng Nhật.',
+          furigana: [
+            { kanji: '毎日', reading: 'まいにち', meaning: 'MỖI NHẬT' },
+            { kanji: '日本語', reading: 'にほんご', meaning: 'NHẬT BẢN NGỮ' },
+            { kanji: '勉強', reading: 'べんきょう', meaning: 'MIỄN CƯỜNG' }
+          ]
+        },
+        {
+          jp: '明日までに本を返さなければなりません。',
+          vn: 'Phải trả sách trước ngày mai.',
+          furigana: [
+            { kanji: '明日', reading: 'あした', meaning: 'MINH NHẬT' },
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }
+          ]
+        },
+        {
+          jp: '病院へ行かなければなりません。',
+          vn: 'Phải đi bệnh viện.',
+          furigana: [
+            { kanji: '病院', reading: 'びょういん', meaning: 'BỆNH VIỆN' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: 'レポートを書かなければなりません。',
+          vn: 'Phải viết báo cáo.',
+          furigana: [
+            { kanji: '書', reading: 'か', meaning: 'THƯ' }
+          ]
+        },
+        {
+          jp: '残業しなければなりません。',
+          vn: 'Phải làm thêm giờ.',
+          furigana: [
+            { kanji: '残業', reading: 'ざんぎょう', meaning: 'TÀN NGHIỆP' }
+          ]
+        },
+        {
+          jp: '試験を受けなければなりません。',
+          vn: 'Phải dự thi.',
+          furigana: [
+            { kanji: '試験', reading: 'しけん', meaning: 'THÍ NGHIỆM' },
+            { kanji: '受', reading: 'う', meaning: 'THỤ' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Động từ thể ない (bỏ い) + くても いいです',
       explanation: 'Mẫu câu biểu thị sự không cần thiết phải làm gì đó (không làm cũng được).',
-      example: 'あした 来なくても いいです。 (Ngày mai anh/chị không đến cũng được.)\n靴を 脱がなくても いいです。 (Anh/Chị không cần cởi giày cũng được.)'
+      example: 'あした 来なくても いいです。 (Ngày mai anh/chị không đến cũng được.)\n靴を 脱がなくても いいです。 (Anh/Chị không cần cởi giày cũng được.)',
+      examples: [
+        {
+          jp: '明日来なくてもいいです。',
+          vn: 'Ngày mai không đến cũng được.',
+          furigana: [
+            { kanji: '明日', reading: 'あした', meaning: 'MINH NHẬT' },
+            { kanji: '来', reading: 'こ', meaning: 'LAI' }
+          ]
+        },
+        {
+          jp: '急がなくてもいいです。',
+          vn: 'Không cần gấp đâu.',
+          furigana: [
+            { kanji: '急', reading: 'いそ', meaning: 'CẤP' }
+          ]
+        },
+        {
+          jp: '薬を飲まなくてもいいです。',
+          vn: 'Không cần uống thuốc cũng được.',
+          furigana: [
+            { kanji: '薬', reading: 'くすり', meaning: 'DƯỢC' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: '名前を書かなくてもいいです。',
+          vn: 'Không cần viết tên cũng được.',
+          furigana: [
+            { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' },
+            { kanji: '書', reading: 'か', meaning: 'THƯ' }
+          ]
+        },
+        {
+          jp: '靴を脱がなくてもいいです。',
+          vn: 'Không cần cởi giày cũng được.',
+          furigana: [
+            { kanji: '靴', reading: 'くつ', meaning: 'OA' },
+            { kanji: '脱', reading: 'ぬ', meaning: 'THOÁT' }
+          ]
+        },
+        {
+          jp: '残業しなくてもいいです。',
+          vn: 'Không cần làm thêm giờ cũng được.',
+          furigana: [
+            { kanji: '残業', reading: 'ざんぎょう', meaning: 'TÀN NGHIỆP' }
+          ]
+        },
+        {
+          jp: '払わなくてもいいです。',
+          vn: 'Không trả tiền cũng được (miễn phí).',
+          furigana: [
+            { kanji: '払', reading: 'はら', meaning: 'PHẤT' }
+          ]
+        },
+        {
+          jp: '答えなくてもいいです。',
+          vn: 'Không trả lời cũng được.',
+          furigana: [
+            { kanji: '答', reading: 'こた', meaning: 'ĐÁP' }
+          ]
+        },
+        {
+          jp: '無理をしなくてもいいです。',
+          vn: 'Không cần phải cố quá sức đâu.',
+          furigana: [
+            { kanji: '無理', reading: 'むり', meaning: 'VÔ LÝ' }
+          ]
+        },
+        {
+          jp: '心配しなくてもいいです。',
+          vn: 'Không cần phải lo lắng đâu.',
+          furigana: [
+            { kanji: '心配', reading: 'しんぱい', meaning: 'TÂM PHỐI' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Danh từ (tân ngữ) は',
       explanation: 'Khi muốn nhấn mạnh vào tân ngữ của hành động, ta đưa tân ngữ lên làm chủ đề của câu (thay trợ từ [o] bằng [wa]).',
-      example: 'ここに 荷物を 置かないで ください。 (Đừng để hành lý ở đây.)\n-> 荷物は ここに 置かないで ください。 (Hành lý thì xin đừng để ở đây.)\n会社の 食堂で 昼ごはんを 食べます。\n-> 昼ごはんは 会社の 食堂で 食べます。 (Cơm trưa thì tôi ăn ở nhà ăn của công ty.)'
+      example: 'ここに 荷物を 置かないで ください。 (Đừng để hành lý ở đây.)\n-> 荷物は ここに 置かないで ください。 (Hành lý thì xin đừng để ở đây.)\n会社の 食堂で 昼ごはんを 食べます。\n-> 昼ごはんは 会社の 食堂で 食べます。 (Cơm trưa thì tôi ăn ở nhà ăn của công ty.)',
+      examples: [
+        {
+          jp: '荷物はここに置かないでください。',
+          vn: 'Hành lý thì xin đừng để ở đây.',
+          furigana: [
+            { kanji: '荷物', reading: 'にもつ', meaning: 'HÀ VẬT' },
+            { kanji: '置', reading: 'お', meaning: 'TRÍ' }
+          ]
+        },
+        {
+          jp: '昼ご飯は会社の食堂で食べます。',
+          vn: 'Cơm trưa thì tôi ăn ở nhà ăn công ty.',
+          furigana: [
+            { kanji: '昼', reading: 'ひる', meaning: 'TRÚ' },
+            { kanji: '飯', reading: 'はん', meaning: 'PHẠN' },
+            { kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' },
+            { kanji: '食堂', reading: 'しょくどう', meaning: 'THỰC ĐƯỜNG' },
+            { kanji: '食', reading: 'た', meaning: 'THỰC' }
+          ]
+        },
+        {
+          jp: 'タバコは外で吸ってください。',
+          vn: 'Thuốc lá thì hãy hút ở bên ngoài.',
+          furigana: [
+            { kanji: '外', reading: 'そと', meaning: 'NGOẠI' },
+            { kanji: '吸', reading: 'す', meaning: 'HẤP' }
+          ]
+        },
+        {
+          jp: 'パパスポートは見せなくてもいいです。',
+          vn: 'Hộ chiếu thì không cần cho xem cũng được.',
+          furigana: [
+            { kanji: '見', reading: 'み', meaning: 'KIẾN' }
+          ]
+        },
+        {
+          jp: '名前はここに書いてください。',
+          vn: 'Tên thì hãy viết vào đây.',
+          furigana: [
+            { kanji: '名前', reading: 'なまえ', meaning: 'DANH TIỀN' },
+            { kanji: '書', reading: 'か', meaning: 'THƯ' }
+          ]
+        },
+        {
+          jp: 'その本はもう読みました。',
+          vn: 'Quyển sách đó thì tôi đã đọc rồi.',
+          furigana: [
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '読', reading: 'よ', meaning: 'ĐỘC' }
+          ]
+        },
+        {
+          jp: 'お酒は飲みません。',
+          vn: 'Rượu thì tôi không uống.',
+          furigana: [
+            { kanji: '酒', reading: 'さけ', meaning: 'TỬU' },
+            { kanji: '飲', reading: 'の', meaning: 'ẨM' }
+          ]
+        },
+        {
+          jp: 'この仕事は今日中に終わります。',
+          vn: 'Công việc này thì sẽ xong trong hôm nay.',
+          furigana: [
+            { kanji: '仕事', reading: 'しごと', meaning: 'SĨ SỰ' },
+            { kanji: '今日中', reading: 'きょうじゅう', meaning: 'KIM NHẬT TRUNG' },
+            { kanji: '終', reading: 'お', meaning: 'CHUNG' }
+          ]
+        },
+        {
+          jp: 'お風呂はまだ入っていません。',
+          vn: 'Bồn tắm (việc tắm) thì tôi vẫn chưa tắm.',
+          furigana: [
+            { kanji: '風呂', reading: 'ふろ', meaning: 'PHONG LỮ' },
+            { kanji: '入', reading: 'はい', meaning: 'NHẬP' }
+          ]
+        },
+        {
+          jp: '宿題は昨日しました。',
+          vn: 'Bài tập thì tôi đã làm hôm qua rồi.',
+          furigana: [
+            { kanji: '宿題', reading: 'しゅくだい', meaning: 'TÚC ĐỀ' },
+            { kanji: '昨日', reading: 'きのう', meaning: 'TẠC NHẬT' }
+          ]
+        }
+      ]
     },
     {
       pattern: 'Danh từ (thời gian) までに + Động từ',
       explanation: 'Biểu thị thời hạn mà hành động phải được thực hiện (trước thời điểm đó). Khác với [made] (cho đến khi).',
-      example: '会議は 5時までに 終わります。 (Cuộc họp sẽ kết thúc trước 5 giờ.)\n土曜日までに 本を 返さなければ なりません。 (Phải trả sách trước thứ Bảy.)'
+      example: '会議は 5時までに 終わります。 (Cuộc họp sẽ kết thúc trước 5 giờ.)\n土曜日までに 本を 返さなければ なりません。 (Phải trả sách trước thứ Bảy.)',
+      examples: [
+        {
+          jp: '12時までに寝ます。',
+          vn: 'Tôi sẽ ngủ trước 12 giờ.',
+          furigana: [
+            { kanji: '時', reading: 'じ', meaning: 'THỜI' },
+            { kanji: '寝', reading: 'ね', meaning: 'TẨM' }
+          ]
+        },
+        {
+          jp: '土曜日までに本を返さなければなりません。',
+          vn: 'Phải trả sách trước thứ bảy.',
+          furigana: [
+            { kanji: '土曜日', reading: 'どようび', meaning: 'THỔ DIỆU NHẬT' },
+            { kanji: '本', reading: 'ほん', meaning: 'BẢN' },
+            { kanji: '返', reading: 'かえ', meaning: 'PHẢN' }
+          ]
+        },
+        {
+          jp: '会議は5時までに終わります。',
+          vn: 'Cuộc họp sẽ kết thúc trước 5 giờ.',
+          furigana: [
+            { kanji: '会議', reading: 'かいぎ', meaning: 'HỘI NGHỊ' },
+            { kanji: '時', reading: 'じ', meaning: 'THỜI' },
+            { kanji: '終', reading: 'お', meaning: 'CHUNG' }
+          ]
+        },
+        {
+          jp: '明日までにレポートを出してください。',
+          vn: 'Hãy nộp báo cáo trước ngày mai.',
+          furigana: [
+            { kanji: '明日', reading: 'あした', meaning: 'MINH NHẬT' },
+            { kanji: '出', reading: 'だ', meaning: 'XUẤT' }
+          ]
+        },
+        {
+          jp: '8時半までに会社へ行きます。',
+          vn: 'Tôi sẽ đến công ty trước 8 giờ rưỡi.',
+          furigana: [
+            { kanji: '時', reading: 'じ', meaning: 'THỜI' },
+            { kanji: '半', reading: 'はん', meaning: 'BÁN' },
+            { kanji: '会社', reading: 'かいしゃ', meaning: 'HỘI XÃ' },
+            { kanji: '行', reading: 'い', meaning: 'HÀNH' }
+          ]
+        },
+        {
+          jp: '金曜日までに払わなければなりません。',
+          vn: 'Phải trả tiền trước thứ sáu.',
+          furigana: [
+            { kanji: '金曜日', reading: 'きんようび', meaning: 'KIM DIỆU NHẬT' },
+            { kanji: '払', reading: 'はら', meaning: 'PHẤT' }
+          ]
+        },
+        {
+          jp: '来週までに覚えてください。',
+          vn: 'Hãy nhớ (học thuộc) trước tuần sau.',
+          furigana: [
+            { kanji: '来週', reading: 'らいしゅう', meaning: 'LAI CHU' },
+            { kanji: '覚', reading: 'おぼ', meaning: 'GIÁC' }
+          ]
+        },
+        {
+          jp: '授業が始まるまでに来てください。',
+          vn: 'Hãy đến trước khi giờ học bắt đầu.',
+          furigana: [
+            { kanji: '授業', reading: 'じゅぎょう', meaning: 'THỤ NGHIỆP' },
+            { kanji: '始', reading: 'はじ', meaning: 'THỦY' },
+            { kanji: '来', reading: 'き', meaning: 'LAI' }
+          ]
+        },
+        {
+          jp: '暗くなるまでに帰りたいです。',
+          vn: 'Tôi muốn về trước khi trời tối.',
+          furigana: [
+            { kanji: '暗', reading: 'くら', meaning: 'ÁM' },
+            { kanji: '帰', reading: 'かえ', meaning: 'QUY' }
+          ]
+        },
+        {
+          jp: '30歳までに結婚したいです。',
+          vn: 'Tôi muốn kết hôn trước 30 tuổi.',
+          furigana: [
+            { kanji: '歳', reading: 'さい', meaning: 'TUẾ' },
+            { kanji: '結婚', reading: 'けっこん', meaning: 'KẾT HÔN' }
+          ]
+        }
+      ]
     }
   ],
   kaiwa: [],

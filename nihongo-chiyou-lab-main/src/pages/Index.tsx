@@ -9,7 +9,6 @@ const Index = () => {
     <Layout>
       <HeroSection />
       <FeaturesGrid />
-      <StatsSection />
       <ContactSection />
     </Layout>
   );
