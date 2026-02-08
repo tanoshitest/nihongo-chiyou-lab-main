@@ -20,7 +20,7 @@ const FuriganaText = ({ text }: { text: string }) => {
                 const match3 = part.match(/^\[([^\|]+)\|([^\|]+)\|([^\]]+)\]$/);
                 if (match3) {
                     return (
-                        <span key={i} className="mx-1 font-medium text-[#008001]">
+                        <span key={i} className="mx-1 font-medium text-black">
                             {match3[1]}
                             <span className="text-foreground font-normal ml-0.5">({match3[2]})</span>
                             <span className="text-muted-foreground font-normal ml-1">- {match3[3]}</span>
@@ -30,7 +30,7 @@ const FuriganaText = ({ text }: { text: string }) => {
                 const match2 = part.match(/^\[([^\|]+)\|([^\]]+)\]$/);
                 if (match2) {
                     return (
-                        <span key={i} className="mx-1 font-medium text-[#008001]">
+                        <span key={i} className="mx-1 font-medium text-black">
                             {match2[1]}
                             <span className="text-foreground font-normal ml-0.5">({match2[2]})</span>
                         </span>
@@ -39,7 +39,7 @@ const FuriganaText = ({ text }: { text: string }) => {
                 const matchMeaning = part.match(/^\[([^\|]+)\|\|([^\]]+)\]$/);
                 if (matchMeaning) {
                     return (
-                        <span key={i} className="mx-1 font-medium text-[#008001]">
+                        <span key={i} className="mx-1 font-medium text-black">
                             {matchMeaning[1]}
                             <span className="text-muted-foreground font-normal ml-1">({matchMeaning[2]})</span>
                         </span>
@@ -71,12 +71,12 @@ const QuestionItem = ({
         <Card className={cn(
             "border transition-colors",
             showResult
-                ? (isCorrect ? "border-[#008001]/50 bg-[#008001]/5" : "border-red-500/50 bg-red-50")
+                ? (isCorrect ? "border-black/50 bg-black/5" : "border-red-500/50 bg-red-50")
                 : "hover:border-gray-400"
         )}>
             <CardHeader className="py-3 px-4 pb-0">
                 {q.text_context && (
-                    <div className="mb-2 p-2 bg-muted/30 rounded text-sm text-muted-foreground italic border-l-2 border-[#008001]/30">
+                    <div className="mb-2 p-2 bg-muted/30 rounded text-sm text-muted-foreground italic border-l-2 border-black/30">
                         {q.text_context}
                     </div>
                 )}
@@ -90,27 +90,27 @@ const QuestionItem = ({
                     {q.options.map((opt: string, i: number) => {
                         const isAnswer = opt === q.answer;
                         const isChecked = userAnswer === opt;
-                        let itemClass = "border-gray-200 hover:border-[#008001]/50 hover:bg-[#008001]/5 cursor-pointer";
+                        let itemClass = "border-gray-200 hover:border-black/50 hover:bg-black/5 cursor-pointer";
                         if (showResult) {
-                            if (isAnswer) itemClass = "border-[#008001] bg-[#008001]/10 text-[#008001] font-medium";
+                            if (isAnswer) itemClass = "border-black bg-black/10 text-black font-medium";
                             else if (isChecked && !isCorrect) itemClass = "border-red-500 bg-red-100 text-red-700";
                             else itemClass = "opacity-50";
                         } else if (isChecked) {
-                            itemClass = "border-[#008001] bg-[#008001]/10 text-[#008001]";
+                            itemClass = "border-black bg-black/10 text-black";
                         }
 
                         return (
                             <div key={i} className={cn("flex items-center space-x-2 border rounded-md p-2 transition-all", itemClass, showResult && "pointer-events-none")}>
-                                <RadioGroupItem value={opt} id={`q${q.id}-opt${i}`} className="data-[state=checked]:border-[#008001] data-[state=checked]:text-[#008001]" />
+                                <RadioGroupItem value={opt} id={`q${q.id}-opt${i}`} className="data-[state=checked]:border-black data-[state=checked]:text-black" />
                                 <Label htmlFor={`q${q.id}-opt${i}`} className="flex-1 cursor-pointer">{opt}</Label>
-                                {showResult && isAnswer && <CheckCircle2 className="w-4 h-4 text-[#008001] ml-auto shrink-0" />}
+                                {showResult && isAnswer && <CheckCircle2 className="w-4 h-4 text-black ml-auto shrink-0" />}
                                 {showResult && isChecked && !isCorrect && <XCircle className="w-4 h-4 text-red-500 ml-auto shrink-0" />}
                             </div>
                         )
                     })}
                 </RadioGroup>
                 {showResult && (
-                    <div className="mt-3 text-sm bg-white p-3 rounded border text-muted-foreground animate-in fade-in slide-in-from-top-2 whitespace-pre-wrap leading-loose">
+                    <div className="mt-3 text-sm bg-black/5 p-4 rounded-lg border border-black text-black animate-in fade-in slide-in-from-top-2 whitespace-pre-wrap leading-loose">
                         <span className="font-semibold text-foreground block mb-1">Giải thích:</span>
                         <FuriganaText text={q.explain.replace(/\], \[/g, '],\n[')} />
                     </div>
@@ -197,7 +197,7 @@ const MinnaTest11 = () => {
                                 variant={examId === id ? "default" : "outline"}
                                 className={cn(
                                     "gap-2",
-                                    examId === id ? "bg-[#008001] hover:bg-[#006801]" : "hover:text-[#008001] hover:border-[#008001]"
+                                    examId === id ? "bg-black hover:bg-neutral-800" : "hover:text-black hover:border-black"
                                 )}
                                 onClick={() => setExamId(id)}
                             >
@@ -209,9 +209,9 @@ const MinnaTest11 = () => {
                 </div>
 
                 {showResult && (
-                    <div className="text-center p-4 bg-[#008001]/10 rounded-lg border border-[#008001]/20">
+                    <div className="text-center p-4 bg-black/10 rounded-lg border border-black/20">
                         <p className="text-lg font-medium text-foreground">Kết quả của bạn</p>
-                        <span className="text-4xl font-bold text-[#008001]">{scoreVal}/{total}</span>
+                        <span className="text-4xl font-bold text-black">{scoreVal}/{total}</span>
                     </div>
                 )}
 
@@ -219,7 +219,7 @@ const MinnaTest11 = () => {
                     {data.map((q, idx) => (
                         <div key={q.id}>
                             {(idx === 0 || data[idx - 1].section !== q.section) && q.section && (
-                                <h3 className="text-lg font-bold border-b pb-2 mb-4 text-[#008001] mt-8 first:mt-0">{q.section}</h3>
+                                <h3 className="text-lg font-bold border-b pb-2 mb-4 text-black mt-8 first:mt-0">{q.section}</h3>
                             )}
                             <QuestionItem
                                 index={idx + 1}
@@ -236,7 +236,7 @@ const MinnaTest11 = () => {
                     {!showResult ? (
                         <Button
                             size="lg"
-                            className="bg-[#008001] hover:bg-[#006801] min-w-[200px]"
+                            className="bg-black hover:bg-neutral-800 min-w-[200px]"
                             onClick={() => setShowResult(true)}
                         >
                             Nộp bài
@@ -244,8 +244,8 @@ const MinnaTest11 = () => {
                     ) : (
                         <Button
                             size="lg"
-                            variant="outline"
-                            className="min-w-[200px]"
+                            className="border-black text-black hover:bg-black/5"
+                            className="min-w-[200px] border-black text-black hover:bg-black/5"
                             onClick={() => {
                                 setShowResult(false);
                                 setAnswersVal({});
@@ -263,7 +263,7 @@ const MinnaTest11 = () => {
     return (
         <Layout>
             <div className="container mx-auto px-4 py-8">
-                <h1 className="text-3xl font-bold text-[#008001] mb-2">Bài Kiểm Tra 11 - N5</h1>
+                <h1 className="text-3xl font-bold text-black mb-2">Bài Kiểm Tra 11 - N5</h1>
                 <p className="text-muted-foreground mb-6">Tổng hợp kiến thức Bài 21 & 22</p>
                 <Tabs defaultValue="kanji-vocab" className="space-y-6">
                     <TabsList className="grid w-full max-w-md grid-cols-2">

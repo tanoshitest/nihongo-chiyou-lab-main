@@ -45,24 +45,24 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
     <Card className={cn(
       "group hover:shadow-lg transition-all duration-300 h-full flex flex-col min-h-[220px]",
       isTest || (lesson.id >= 10020 && lesson.id <= 10050)
-        ? "border-orange-500/50 hover:border-orange-500 bg-orange-50/10"
-        : "hover:border-[#008001]/50"
+        ? "border-black/50 hover:border-black bg-black/5"
+        : "hover:border-black/50"
     )}>
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between">
           <span className={cn(
             "text-xs font-medium uppercase tracking-wide",
-            isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? "text-orange-600" : "text-muted-foreground"
+            isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? "text-black font-bold" : "text-muted-foreground"
           )}>
             {isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? "Kiểm tra" : isReference ? "Tổng hợp" : `Bài ${lesson.id}`}
           </span>
           {isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? (
-            <ClipboardCheck className="w-4 h-4 text-orange-600 opacity-60 group-hover:opacity-100 transition-opacity" />
+            <ClipboardCheck className="w-4 h-4 text-black opacity-60 group-hover:opacity-100 transition-opacity" />
           ) : (
-            <BookOpen className="w-4 h-4 text-[#008001] opacity-60 group-hover:opacity-100 transition-opacity" />
+            <BookOpen className="w-4 h-4 text-black opacity-60 group-hover:opacity-100 transition-opacity" />
           )}
         </div>
-        <CardTitle className={cn("text-lg", isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? "text-orange-700" : "text-[#008001]")}>
+        <CardTitle className="text-lg text-black">
           {lesson.title}
         </CardTitle>
       </CardHeader>
@@ -72,12 +72,7 @@ const LessonCard = ({ lesson }: { lesson: LessonSummary }) => {
       <CardFooter>
         <Link to={linkUrl} className="w-full">
           <Button
-            className={cn(
-              "w-full text-white",
-              isTest || (lesson.id >= 10020 && lesson.id <= 10050)
-                ? "bg-orange-600 hover:bg-orange-700"
-                : "bg-[#008001] hover:bg-[#006801]"
-            )}
+            className="w-full text-white bg-black hover:bg-neutral-800"
           >
             {isTest || (lesson.id >= 10020 && lesson.id <= 10050) ? "Làm bài" : "Vào học"}
           </Button>
@@ -101,8 +96,8 @@ const LessonSection = ({
   return (
     <section className="space-y-6">
       <div className="flex items-center gap-3">
-        <div className="p-2 bg-[#008001]/10 rounded-lg">
-          <Icon className="w-6 h-6 text-[#008001]" />
+        <div className="p-2 bg-black/10 rounded-lg">
+          <Icon className="w-6 h-6 text-black" />
         </div>
         <div>
           <h2 className="text-xl font-bold text-foreground">{title}</h2>
@@ -336,7 +331,7 @@ const MinnaNoNihongo = () => {
         {/* Page Header */}
         <div className="border-b bg-gradient-to-br from-accent to-secondary py-8">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-3xl font-bold text-[#008001]">Minna no Nihongo</h1>
+            <h1 className="text-3xl font-bold text-black">Minna no Nihongo</h1>
             <p className="text-muted-foreground mt-2">みんなの日本語 - 50 bài học</p>
           </div>
         </div>
@@ -348,19 +343,19 @@ const MinnaNoNihongo = () => {
               <TabsList className="grid w-full max-w-md grid-cols-3 h-12">
                 <TabsTrigger
                   value="n5"
-                  className="text-base data-[state=active]:bg-[#008001] data-[state=active]:text-white"
+                  className="text-base data-[state=active]:bg-black data-[state=active]:text-white"
                 >
                   Sơ cấp 1 (N5)
                 </TabsTrigger>
                 <TabsTrigger
                   value="n4"
-                  className="text-base data-[state=active]:bg-[#008001] data-[state=active]:text-white"
+                  className="text-base data-[state=active]:bg-black data-[state=active]:text-white"
                 >
                   Sơ cấp 2 (N4)
                 </TabsTrigger>
                 <TabsTrigger
                   value="reference"
-                  className="text-base data-[state=active]:bg-[#008001] data-[state=active]:text-white"
+                  className="text-base data-[state=active]:bg-black data-[state=active]:text-white"
                 >
                   Phụ lục
                 </TabsTrigger>

@@ -22,13 +22,12 @@ const CharacterCard = ({ item, isFlipped, onFlip }: CharacterCardProps) => {
       onClick={onFlip}
     >
       <div
-        className={`relative w-full h-full transition-transform duration-500 transform-style-3d ${
-          isFlipped ? "rotate-y-180" : ""
-        }`}
+        className={`relative w-full h-full transition-transform duration-500 transform-style-3d ${isFlipped ? "rotate-y-180" : ""
+          }`}
       >
         {/* Front Side */}
         <div className="absolute inset-0 backface-hidden bg-card border border-border rounded-lg p-1 sm:p-2 flex flex-col items-center justify-center hover:scale-105 hover:shadow-md hover:border-primary/50 hover:bg-accent transition-all duration-300">
-          <span className="text-xl sm:text-2xl md:text-3xl font-bold text-[#008001]">
+          <span className="text-xl sm:text-2xl md:text-3xl font-bold text-black">
             {char}
           </span>
           <span className="text-[10px] sm:text-xs text-muted-foreground mt-1">{romaji}</span>
@@ -43,10 +42,10 @@ const CharacterCard = ({ item, isFlipped, onFlip }: CharacterCardProps) => {
             ) : image ? (
               <img src={image} alt={`Image for ${char}`} className="w-full h-full object-cover" />
             ) : (
-              <span className="text-sm font-bold text-primary">{char}</span>
+              <span className="text-sm font-bold text-black">{char}</span>
             )}
           </div>
-          
+
           {/* Vocabulary Word + English meaning */}
           {firstExample && (
             <div className="text-center">

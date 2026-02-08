@@ -13,15 +13,15 @@ interface LessonCardProps {
 
 const LessonCard = ({ lesson, levelPath }: LessonCardProps) => {
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 hover:border-[#008001]/50">
+    <Card className="group hover:shadow-lg transition-all duration-300 hover:border-black/50">
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between">
           <span className="text-xs font-medium text-muted-foreground uppercase tracking-wide">
             Bài {lesson.id}
           </span>
-          <BookOpen className="w-4 h-4 text-[#008001] opacity-60 group-hover:opacity-100 transition-opacity" />
+          <BookOpen className="w-4 h-4 text-black opacity-60 group-hover:opacity-100 transition-opacity" />
         </div>
-        <CardTitle className="text-lg text-[#008001]">{lesson.title}</CardTitle>
+        <CardTitle className="text-lg text-black">{lesson.title}</CardTitle>
       </CardHeader>
       <CardContent className="pb-3">
         <p className="text-sm text-muted-foreground">{lesson.description}</p>
@@ -30,7 +30,7 @@ const LessonCard = ({ lesson, levelPath }: LessonCardProps) => {
       <CardFooter>
         <Link to={`/irodori/${levelPath}/${lesson.id}`} className="w-full">
           <Button
-            className="w-full bg-[#008001] hover:bg-[#006801] text-white"
+            className="w-full bg-black hover:bg-neutral-800 text-white"
           >
             Vào học
           </Button>
@@ -56,8 +56,8 @@ const LessonSection = ({
   return (
     <section className="space-y-6">
       <div className="flex items-center gap-3">
-        <div className="p-2 bg-[#008001]/10 rounded-lg">
-          <Icon className="w-6 h-6 text-[#008001]" />
+        <div className="p-2 bg-black/10 rounded-lg">
+          <Icon className="w-6 h-6 text-black" />
         </div>
         <div>
           <h2 className="text-xl font-bold text-foreground">{title}</h2>
@@ -80,7 +80,7 @@ const Irodori = () => {
         {/* Page Header */}
         <div className="border-b bg-gradient-to-br from-accent to-secondary py-8">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-3xl font-bold text-[#008001]">Irodori</h1>
+            <h1 className="text-3xl font-bold text-black">Irodori</h1>
             <p className="text-muted-foreground mt-2">いろどり - 54 bài học giao tiếp thực tế</p>
           </div>
         </div>
@@ -99,10 +99,10 @@ const Irodori = () => {
           {/* Divider */}
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t border-[#008001]/20" />
+              <span className="w-full border-t border-black/20" />
             </div>
             <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-background px-4 text-[#008001] font-semibold">
+              <span className="bg-background px-4 text-black font-semibold">
                 Tiếp tục hành trình
               </span>
             </div>
@@ -120,10 +120,10 @@ const Irodori = () => {
           {/* Divider */}
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t border-[#008001]/20" />
+              <span className="w-full border-t border-black/20" />
             </div>
             <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-background px-4 text-[#008001] font-semibold">
+              <span className="bg-background px-4 text-black font-semibold">
                 Nâng cao hơn nữa
               </span>
             </div>

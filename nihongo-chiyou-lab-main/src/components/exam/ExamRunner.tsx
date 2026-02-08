@@ -694,7 +694,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                 // For Real Exam: Show Tabs
                 <Tabs defaultValue="section1" className="w-full">
                   <div className="border-b border-black mb-6">
-                    <TabsList className="bg-transparent h-auto p-0 gap-0 w-full justify-start flex-wrap">
+                    <TabsList className="bg-transparent h-auto p-0 gap-0 w-full justify-center flex-wrap">
                       <TabsTrigger
                         value="section1"
                         className="data-[state=active]:bg-black data-[state=active]:text-white rounded-none px-6 py-3 text-black font-bold border border-black border-b-0 mr-[-1px] mb-[-1px]"

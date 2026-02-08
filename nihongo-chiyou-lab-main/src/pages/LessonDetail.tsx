@@ -1,7 +1,7 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import { ArrowLeft, Volume2, BookOpen, MessageSquare, PenTool, CheckCircle2, XCircle, RotateCcw, ChevronDown, ChevronUp, BookMarked, Search } from "lucide-react";
+import { ArrowLeft, Volume2, BookOpen, MessageSquare, PenTool, CheckCircle2, XCircle, RotateCcw, ChevronDown, ChevronUp, BookMarked, Search, Layers, ChevronLeft, ChevronRight } from "lucide-react";
 import { FuriganaText } from "@/components/FuriganaText";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -174,11 +174,13 @@ const KanjiHoverCard = ({ kanjiChar, detail, children }: { kanjiChar: string; de
 const SentenceWithFurigana = ({
   sentence,
   showFurigana = true,
-  kanjiDetails
+  kanjiDetails,
+  highlightWord
 }: {
   sentence: VocabularyExample;
   showFurigana?: boolean;
   kanjiDetails?: KanjiDetail[];
+  highlightWord?: string;
 }) => {
   const { jp, furigana } = sentence;
 
@@ -206,21 +208,38 @@ const SentenceWithFurigana = ({
     return jp.indexOf(a.kanji) - jp.indexOf(b.kanji);
   });
 
+  const splitAndHighlight = (text: string) => {
+    if (!highlightWord || !text.includes(highlightWord)) return <span>{text}</span>;
+    const parts = text.split(highlightWord);
+    return (
+      <span>
+        {parts.map((part, i) => (
+          <span key={i}>
+            {part}
+            {i < parts.length - 1 && <span className="text-red-500 font-bold">{highlightWord}</span>}
+          </span>
+        ))}
+      </span>
+    );
+  };
+
   sortedFurigana.forEach((item) => {
     const kanjiIndex = remainingText.indexOf(item.kanji);
     if (kanjiIndex !== -1) {
       // Thêm text phía trước
       if (kanjiIndex > 0) {
-        result.push(<span key={`text-${keyIndex++}`}>{remainingText.slice(0, kanjiIndex)}</span>);
+        result.push(<span key={`text-${keyIndex++}`}>{splitAndHighlight(remainingText.slice(0, kanjiIndex))}</span>);
       }
 
       const kanjiChars = item.kanji.split('');
+      const isHighlight = highlightWord && (item.kanji === highlightWord || item.reading === highlightWord);
+      const colorClass = isHighlight ? "text-red-500 font-bold" : "text-[#008001] font-medium";
 
       if (showFurigana) {
         result.push(
           <span key={`ruby-${keyIndex++}`} className="inline-flex flex-col items-center mx-0.5 align-middle">
-            <span className="text-[10px] text-muted-foreground leading-none mb-0.5 min-h-[10px]">{item.reading}</span>
-            <span className="text-[#008001] font-medium leading-none">
+            <span className={`text-[10px] leading-none mb-0.5 min-h-[10px] ${isHighlight ? "text-red-500 font-bold" : "text-muted-foreground"}`}>{item.reading}</span>
+            <span className={`leading-none ${colorClass}`}>
               {kanjiChars.map((char, idx) => {
                 const detail = getKanjiDetail(char, kanjiDetails);
                 if (detail) return <KanjiHoverCard key={idx} kanjiChar={char} detail={detail} />;
@@ -232,7 +251,7 @@ const SentenceWithFurigana = ({
         );
       } else {
         result.push(
-          <span key={`kanji-${keyIndex++}`} className="text-[#008001] font-medium">
+          <span key={`kanji-${keyIndex++}`} className={colorClass}>
             {kanjiChars.map((char, idx) => {
               const detail = getKanjiDetail(char, kanjiDetails);
               if (detail) return <KanjiHoverCard key={idx} kanjiChar={char} detail={detail} />;
@@ -246,7 +265,7 @@ const SentenceWithFurigana = ({
   });
 
   if (remainingText) {
-    result.push(<span key={`text-${keyIndex++}`}>{remainingText}</span>);
+    result.push(<span key={`text-${keyIndex++}`}>{splitAndHighlight(remainingText)}</span>);
   }
 
   return <span className="inline-flex items-center flex-wrap gap-y-1 py-1">{result}</span>;
@@ -1068,6 +1087,197 @@ const KanjiTab = ({ vocabulary, lessonId }: { vocabulary: LessonDetailType['voca
 };
 
 
+// Flashcard Tab Component
+const FlashcardTab = ({ vocabulary }: { vocabulary: VocabularyItem[] }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  // Reset khi chuyển bài
+  useEffect(() => {
+    setCurrentIndex(0);
+    setIsFlipped(false);
+  }, [vocabulary]);
+
+  const handleNext = () => {
+    setIsFlipped(false);
+    setTimeout(() => {
+      setCurrentIndex((prev) => (prev + 1) % vocabulary.length);
+    }, 150);
+  };
+
+  const handlePrev = () => {
+    setIsFlipped(false);
+    setTimeout(() => {
+      setCurrentIndex((prev) => (prev - 1 + vocabulary.length) % vocabulary.length);
+    }, 150);
+  };
+
+  const handlePlaySound = (word: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    console.log(`Playing sound for: ${word}`);
+    // Implement text-to-speech here eventually
+  };
+
+  const currentItem = vocabulary[currentIndex];
+
+  // Collect kanji details for SentenceWithFurigana
+  const allLessonKanjiDetails = useMemo(() => {
+    return vocabulary.reduce((acc: KanjiDetail[], item) => {
+      if (item.kanjiDetails) {
+        item.kanjiDetails.forEach(detail => {
+          if (!acc.some(d => d.kanji === detail.kanji)) acc.push(detail);
+        });
+      }
+      return acc;
+    }, []);
+  }, [vocabulary]);
+
+  // Touch handling for swipe
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+
+  // Minimum swipe distance (in px)
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null); // otherwise the swipe is fired even with usual touch events
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      // Swipe Left -> Next
+      handleNext();
+    } else if (isRightSwipe) {
+      // Swipe Right -> Prev
+      handlePrev();
+    }
+  };
+
+  return (
+    <div className="max-w-2xl mx-auto space-y-6">
+      {/* Progress Display */}
+      <div className="flex items-center justify-center mb-4">
+        <span className="font-medium text-lg text-muted-foreground">
+          {currentIndex + 1} / {vocabulary.length}
+        </span>
+      </div>
+
+      <div
+        className="relative flex items-center justify-center"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
+        {/* Desktop Navigation - Left */}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="absolute left-0 md:-left-16 z-10 hidden md:flex h-12 w-12 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground shadow-sm"
+          onClick={handlePrev}
+          disabled={vocabulary.length <= 1}
+        >
+          <ChevronLeft className="w-6 h-6" />
+        </Button>
+
+        {/* Card Container */}
+        <div className="relative h-96 w-full cursor-pointer perspective-1000 group max-w-md mx-auto" onClick={() => setIsFlipped(!isFlipped)}>
+          <div className={cn(
+            "w-full h-full relative transition-all duration-500 transform-style-3d shadow-xl rounded-2xl",
+            isFlipped ? "rotate-y-180" : ""
+          )}>
+            {/* Front Face */}
+            <div className="absolute w-full h-full backface-hidden bg-white border-2 border-[#008001] rounded-2xl flex flex-col items-center justify-center p-6 bg-[url('/pattern-bg.png')] bg-opacity-5">
+              <div className="absolute top-4 right-4 animate-bounce">
+                <RotateCcw className="w-6 h-6 text-[#008001] opacity-50" />
+              </div>
+
+              <div className="flex-1 flex flex-col items-center justify-center space-y-4">
+                {currentItem.image && (
+                  <div className="w-32 h-32 mb-4 rounded-lg bg-muted/20 overflow-hidden flex items-center justify-center">
+                    <img src={currentItem.image} alt={currentItem.word} className="w-full h-full object-contain" />
+                  </div>
+                )}
+
+                <div className="text-center space-y-2">
+                  <h2 className="text-4xl md:text-5xl font-bold text-[#008001]">{currentItem.word}</h2>
+                  {currentItem.kanji && currentItem.kanji !== '—' && (
+                    <p className="text-2xl text-muted-foreground font-medium">{currentItem.kanji}</p>
+                  )}
+                </div>
+              </div>
+
+
+              <p className="absolute bottom-4 text-xs text-muted-foreground">Chạm để lật</p>
+            </div>
+
+            {/* Back Face */}
+            <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white border-2 border-[#008001] rounded-2xl p-6 flex flex-col overflow-y-auto bg-[url('/pattern-bg.png')] bg-opacity-5">
+              <div className="text-center border-b border-[#008001]/20 pb-4 mb-4">
+                <h3 className="text-2xl font-bold mb-1 text-[#008001]">{currentItem.mean}</h3>
+                <p className="text-muted-foreground italic">{currentItem.romaji}</p>
+              </div>
+
+              <div className="flex-1 space-y-4 overflow-y-auto pr-1 custom-scrollbar">
+                {currentItem.examples && currentItem.examples.length > 0 ? (
+                  <div className="space-y-4">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-[#008001] opacity-80 border-b border-[#008001]/20 pb-1 inline-block">Ví dụ mẫu</p>
+                    {currentItem.examples.slice(0, 1).map((ex, i) => (
+                      <div key={i} className="bg-[#008001]/5 rounded-lg p-3 space-y-2 border border-[#008001]/10">
+                        <div className="text-lg font-japanese text-foreground px-2 py-1 rounded">
+                          <SentenceWithFurigana
+                            sentence={{ ...ex, furigana: ex.furigana }}
+                            showFurigana={true}
+                            kanjiDetails={allLessonKanjiDetails}
+                            highlightWord={currentItem.kanji || currentItem.word}
+                          />
+                        </div>
+                        <p className="text-sm text-foreground/80 pl-1 border-l-2 border-[#008001]/30">{ex.vn}</p>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="flex flex-col items-center justify-center h-full opacity-60 text-muted-foreground">
+                    <MessageSquare className="w-12 h-12 mb-2" />
+                    <p>Chưa có ví dụ cho từ này.</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Navigation - Right */}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="absolute right-0 md:-right-16 top-1/2 -translate-y-1/2 z-10 hidden md:flex h-12 w-12 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground shadow-sm"
+          onClick={handleNext}
+          disabled={vocabulary.length <= 1}
+        >
+          <ChevronRight className="w-6 h-6" />
+        </Button>
+
+        <style>{`
+            .perspective-1000 { perspective: 1000px; }
+            .transform-style-3d { transform-style: preserve-3d; }
+            .backface-hidden { backface-visibility: hidden; }
+            .rotate-y-180 { transform: rotateY(180deg); }
+        `}</style>
+      </div>
+    </div>
+  );
+};
+
 // Quiz Tab Component
 // Reusable Quiz Engine Component
 const QuizEngine = ({ questions }: { questions: QuizQuestion[] }) => {
@@ -1450,7 +1660,7 @@ const applyFurigana = (text: string, furiganaList?: { kanji: string; reading: st
   const sorted = [...furiganaList].sort((a, b) => b.kanji.length - a.kanji.length);
   sorted.forEach(f => {
     if (!f.kanji || !f.reading) return;
-    const escaped = f.kanji.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const escaped = f.kanji.replace(/[.*+?^${ }()|[\]\\]/g, '\\$&');
     result = result.replace(new RegExp(escaped, 'g'), `{${f.kanji}|${f.reading}}`);
   });
   return result;
@@ -1832,10 +2042,14 @@ const LessonDetail = () => {
         {/* Main Content with Tabs */}
         <main className="container mx-auto px-4 pb-6">
           <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-0">
-            <TabsList className="grid w-full grid-cols-4 h-auto p-1 z-30 bg-background shadow-sm transition-all border-b -mx-4 w-[calc(100%+2rem)] px-1 rounded-none">
+            <TabsList className="grid w-full grid-cols-5 h-auto p-1 z-30 bg-background shadow-sm transition-all border-b -mx-4 w-[calc(100%+2rem)] px-1 rounded-none">
               <TabsTrigger value="vocabulary" className="flex flex-col sm:flex-row items-center gap-1 py-2 data-[state=active]:bg-[#008001] data-[state=active]:text-white">
                 <BookOpen className="w-4 h-4" />
                 <span className="text-xs sm:text-sm">Từ vựng</span>
+              </TabsTrigger>
+              <TabsTrigger value="flashcard" className="flex flex-col sm:flex-row items-center gap-1 py-2 data-[state=active]:bg-[#008001] data-[state=active]:text-white">
+                <Layers className="w-4 h-4" />
+                <span className="text-xs sm:text-sm">Flashcard</span>
               </TabsTrigger>
               <TabsTrigger value="kanji" className="flex flex-col sm:flex-row items-center gap-1 py-2 data-[state=active]:bg-[#008001] data-[state=active]:text-white">
                 <PenTool className="w-4 h-4" />
@@ -1854,6 +2068,10 @@ const LessonDetail = () => {
 
             <TabsContent value="vocabulary">
               <VocabularyTab vocabulary={lesson.vocabulary} />
+            </TabsContent>
+
+            <TabsContent value="flashcard">
+              <FlashcardTab vocabulary={lesson.vocabulary} />
             </TabsContent>
 
             <TabsContent value="kanji">
