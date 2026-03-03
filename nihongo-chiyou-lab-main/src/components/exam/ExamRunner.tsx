@@ -53,6 +53,7 @@ import JLPTCoverPage from "@/components/exam/jlpt/JLPTCoverPage";
 import JLPTSectionIntro from "@/components/exam/jlpt/JLPTSectionIntro";
 import JLPTQuestionView from "@/components/exam/jlpt/JLPTQuestionView";
 import { PRACTICE_KANJI_LESSON_1 } from "@/data/practice/kanjiLesson1";
+import { PRACTICE_VOCAB_N4_1 } from "@/data/practice/jlptN4Vocab1";
 
 type ExamState =
   | "intro"
@@ -87,7 +88,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
   const sessionLabel = isPractice ? "Luyện tập" : (session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12");
   const [examState, setExamState] = useState<ExamState>("intro");
   const [examData, setExamData] = useState<ExamData | null>(null);
-  const isSpecialPractice = practiceId === "practice-n5-kanji-1";
+  const isSpecialPractice = practiceId === "practice-n5-kanji-1" || practiceId === "jlpt-n4-vocabulary-1";
 
   // ... (rest of state items are same)
   const [timeLeft, setTimeLeft] = useState(0);
@@ -106,7 +107,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
   // Initialize exam data
   useEffect(() => {
     // Check for specific practice exams
-    if (practiceId === "practice-n5-kanji-1") {
+    if (practiceId === "practice-n5-kanji-1" || practiceId === "jlpt-n4-vocabulary-1") {
       // Create a mock ExamData structure where section1 contains our practice questions
       setExamData({
         section1: [], // Not used for this mode as we use JLPTMondai
@@ -197,7 +198,10 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
       const SECTION_MAX = 60;
 
       if (examState === "section1") {
-        const dataToUse = isSpecialPractice ? PRACTICE_KANJI_LESSON_1 : jlptVocabData;
+        const dataToUse =
+          practiceId === "practice-n5-kanji-1" ? PRACTICE_KANJI_LESSON_1 :
+            practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 :
+              jlptVocabData;
         raw = calculateJLPTSectionScore(answers.section1, dataToUse);
         // Total Questions:
         const totalQ = dataToUse.reduce((acc, m) => acc + m.questions.length, 0);
@@ -319,7 +323,11 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
         <JLPTCoverPage
           onStart={() => setExamState(isSpecialPractice ? "section1" : "section1_intro")}
           level={level}
-          sectionName={isSpecialPractice ? "Luyện tập Kanji (Bài 1)" : "言語知識（文字・語彙）"}
+          sectionName={
+            practiceId === "practice-n5-kanji-1" ? "Luyện tập Kanji (Bài 1)" :
+              practiceId === "jlpt-n4-vocabulary-1" ? "Luyện tập Từ vựng N4 (Đề 1)" :
+                "言語知識（文字・語彙）"
+          }
         />
       );
     }
@@ -365,9 +373,9 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
             {/* Header with Timer */}
             <div className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-black z-50 flex items-center justify-between px-4 lg:px-8">
               <div className="font-bold text-xl font-sans tracking-wide flex items-center gap-2">
-                <span>JLPT N5</span>
+                <span>{practiceId === "jlpt-n4-vocabulary-1" ? "JLPT N4" : "JLPT N5"}</span>
                 <span>-</span>
-                <span>Luyện tập Kanji</span>
+                <span>{practiceId === "jlpt-n4-vocabulary-1" ? "Luyện tập Từ vựng" : "Luyện tập Kanji"}</span>
               </div>
 
               <div className="flex items-center gap-4">
@@ -402,7 +410,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
 
             <div className="pt-20">
               <JLPTQuestionView
-                mondaiList={PRACTICE_KANJI_LESSON_1}
+                mondaiList={practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 : PRACTICE_KANJI_LESSON_1}
                 answers={answers.section1}
                 onAnswer={(qId, val) => handleAnswerChange(qId, val)}
                 hideQuestionId={false}
@@ -587,13 +595,14 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
     // RENDER: Final Result
     if (examState === "final_result") {
       // Determine if Real JLPT 2025
-      const isSpecialPractice = practiceId === "practice-n5-kanji-1";
       const isRealJLPT = (session === "july" && year === 2025) || isSpecialPractice;
 
       if (isRealJLPT) {
         const passResult = checkPassStatus(scores.section1, scores.section2, scores.section3);
         const totalScore = scores.section1 + scores.section2 + scores.section3;
-        const isPassed = totalScore >= 80 && scores.section1 >= 19 && scores.section2 >= 19 && scores.section3 >= 19; // Simplified check
+        const isPassed = isSpecialPractice
+          ? scores.section1 >= 30
+          : totalScore >= 80 && scores.section1 >= 19 && scores.section2 >= 19 && scores.section3 >= 19; // Simplified check
 
         return (
           <div className="min-h-screen bg-white py-8 px-4 font-jlpt text-black">
@@ -612,10 +621,24 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                       {/* Section 1 Score */}
                       <div className="text-center p-4 border-b md:border-b-0 border-r border-black last:border-r-0 last:border-b-0">
                         <div className="text-sm font-bold mb-1">言語知識（文字・語彙）</div>
-                        <div className="text-xs mb-2">{isSpecialPractice ? "Kanji Practice" : "Language Knowledge (Vocab)"}</div>
+                        <div className="text-xs mb-2">{practiceId === 'practice-n5-kanji-1' ? "Kanji Practice" : "Vocabulary Practice"}</div>
                         <div className="text-4xl font-bold my-2">{scores.section1}/60</div>
                         <div className="text-sm">
-                          {Object.keys(answers.section1).filter(k => String(answers.section1[Number(k)]) === String((isSpecialPractice ? PRACTICE_KANJI_LESSON_1 : jlptVocabData).flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer)).length}/{(isSpecialPractice ? PRACTICE_KANJI_LESSON_1 : jlptVocabData).reduce((acc, m) => acc + m.questions.length, 0)} câu đúng
+                          {
+                            Object.keys(answers.section1).filter(k => {
+                              const dataToUse =
+                                practiceId === "practice-n5-kanji-1" ? PRACTICE_KANJI_LESSON_1 :
+                                  practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 :
+                                    jlptVocabData;
+                              const correct = dataToUse.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer;
+                              return String(answers.section1[Number(k)]) === String(correct);
+                            }).length
+                          }/
+                          {
+                            (practiceId === "practice-n5-kanji-1" ? PRACTICE_KANJI_LESSON_1 :
+                              practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 :
+                                jlptVocabData).reduce((acc, m) => acc + m.questions.length, 0)
+                          } câu đúng
                         </div>
                       </div>
 
@@ -650,7 +673,9 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                           {totalScore}/180
                         </div>
                         <div className="border border-black px-6 py-1 text-lg font-bold bg-black text-white">
-                          {isPassed ? "ĐẬU (合格)" : "TRƯỢT (不合格)"}
+                          {isSpecialPractice
+                            ? (isPassed ? "HOÀN THÀNH" : "CẦN CỐ GẮNG")
+                            : (isPassed ? "ĐẬU (合格)" : "TRƯỢT (不合格)")}
                         </div>
                       </div>
                     </div>
@@ -683,7 +708,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                     <h2 className="text-xl font-bold">Xem lại đáp án</h2>
                   </div>
                   <JLPTQuestionView
-                    mondaiList={PRACTICE_KANJI_LESSON_1}
+                    mondaiList={practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 : PRACTICE_KANJI_LESSON_1}
                     answers={answers.section1}
                     onAnswer={() => { }}
                     hideQuestionId={false}

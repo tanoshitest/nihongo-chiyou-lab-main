@@ -7,7 +7,6 @@ const navLinks = [
   { name: "Trang chủ", href: "/" },
   { name: "Nhập môn", href: "/nhap-mon" },
   { name: "Minna no Nihongo", href: "/minna" },
-  { name: "Irodori", href: "/irodori" },
   { name: "Luyện thi JLPT", href: "/jlpt-n5" },
 ];
 

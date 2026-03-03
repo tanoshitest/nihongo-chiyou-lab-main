@@ -1,4 +1,4 @@
-import { BookOpen, GraduationCap, FileText, Palette } from "lucide-react";
+import { BookOpen, GraduationCap, FileText } from "lucide-react";
 import FeatureCard from "./FeatureCard";
 
 const features = [
@@ -15,13 +15,6 @@ const features = [
     description: "50 bài giảng chi tiết (N5-N4). Đầy đủ Từ vựng, Ngữ pháp, Kaiwa và Bài tập chấm điểm tự động.",
     buttonText: "Chọn bài học",
     href: "/minna",
-  },
-  {
-    icon: Palette,
-    title: "Irodori",
-    description: "54 bài học giao tiếp thực tế. Nhập môn, Sơ cấp 1 và Sơ cấp 2 - mỗi cấp 18 bài.",
-    buttonText: "Khám phá",
-    href: "/irodori",
   },
   {
     icon: FileText,

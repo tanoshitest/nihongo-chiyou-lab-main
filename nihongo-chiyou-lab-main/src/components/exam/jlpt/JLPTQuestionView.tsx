@@ -1,8 +1,9 @@
-
+﻿
 import React, { useRef } from 'react';
 import { cn } from "@/lib/utils";
 import JLPTImageGrid from './JLPTImageGrid';
 import { JLPTMondai } from '@/data/jlptN5_Real2025';
+import KanjiAnnotated from './KanjiAnnotated';
 
 export interface JLPTQuestionViewProps {
     mondaiList: JLPTMondai[];
@@ -26,69 +27,6 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
         <div className="w-full max-w-5xl mx-auto p-4 md:p-8 space-y-12 pb-32 font-jlpt text-black">
             {mondaiList.map((mondai) => (
                 <div key={mondai.id} className="space-y-8 animate-in fade-in duration-500 slide-in-from-bottom-4">
-                    {/* Mongdai Instruction */}
-                    <div className="bg-white p-6 md:p-8 border-2 border-black relative">
-                        {/* Mondai Label Sticker */}
-                        <div className="absolute -top-4 -left-[2px] bg-black text-white px-4 py-1 text-lg font-bold">
-                            もんだい {mondai.id}
-                        </div>
-
-                        {/* Instruction Text */}
-                        <div className="text-xl md:text-2xl leading-loose whitespace-pre-line mt-2">
-                            {mondai.instruction}
-                        </div>
-
-                        {/* Optional Passage */}
-                        {mondai.passage && (
-                            <div className="mt-8 border-t border-black pt-6">
-                                {mondai.passage}
-                            </div>
-                        )}
-
-                        {/* Example Section */}
-                        {(mondai.example || mondai.customExample) && (
-                            <div className="mt-8 bg-white border border-black p-4 md:p-6">
-                                {mondai.customExample ? (
-                                    mondai.customExample
-                                ) : (
-                                    <>
-                                        <div className="flex gap-4 mb-4">
-                                            <span className="font-bold text-lg whitespace-nowrap">（れい）</span>
-                                            <div className="text-xl md:text-2xl">
-                                                {mondai.example?.questionText}
-                                            </div>
-                                        </div>
-                                        <div className="flex flex-wrap gap-x-8 gap-y-2 pl-4 md:pl-16 mb-6">
-                                            {mondai.example?.options.map((opt, idx) => (
-                                                <span key={idx} className="text-lg md:text-xl">{opt}</span>
-                                            ))}
-                                        </div>
-                                        {/* Answer Example Box */}
-                                        <div className="flex justify-end pr-4 md:pr-12">
-                                            <div className="border border-black px-4 py-2 flex items-center gap-4 bg-white">
-                                                <span className="font-bold text-sm">（かいとうようし）</span>
-                                                <div className="flex gap-1">
-                                                    <span className="font-bold mr-2 text-lg">（れい）</span>
-                                                    {[1, 2, 3, 4].map((num) => (
-                                                        <div key={num} className="w-8 h-8 flex items-center justify-center">
-                                                            {num === mondai.example?.correctAnswer ? (
-                                                                <div className="w-6 h-6 bg-black rounded-full" />
-                                                            ) : (
-                                                                <span className="border border-black rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold text-black">
-                                                                    {num}
-                                                                </span>
-                                                            )}
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </>
-                                )}
-                            </div>
-                        )}
-                    </div>
-
                     {/* Questions List */}
                     <div className="space-y-12 pl-0 md:pl-4">
                         {mondai.questions.map((q, qIdx) => {
@@ -142,10 +80,22 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
                                         <div className="flex-grow space-y-6 pt-1 w-full">
                                             {/* Question Text / Image */}
                                             {typeof q.questionText === 'string' ? (
-                                                <div
-                                                    className="text-xl md:text-2xl leading-relaxed tracking-wide [&_u]:underline-offset-4 [&_u]:decoration-2"
-                                                    dangerouslySetInnerHTML={{ __html: q.questionText }}
-                                                />
+                                                showResults ? (
+                                                    // In review mode: show kanji annotations
+                                                    <div className="text-xl md:text-2xl leading-relaxed tracking-wide">
+                                                        <KanjiAnnotated
+                                                            html={q.questionText}
+                                                            showAnnotations={true}
+                                                            className="text-xl md:text-2xl"
+                                                        />
+                                                    </div>
+                                                ) : (
+                                                    // In exam mode: plain HTML render
+                                                    <div
+                                                        className="text-xl md:text-2xl leading-relaxed tracking-wide [&_u]:underline-offset-4 [&_u]:decoration-2"
+                                                        dangerouslySetInnerHTML={{ __html: q.questionText }}
+                                                    />
+                                                )
                                             ) : (
                                                 <div className="text-xl md:text-2xl leading-relaxed tracking-wide">
                                                     {q.questionText}
@@ -238,7 +188,13 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
                                                                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-[3px] border-red-400 rounded-full pointer-events-none opacity-80" />
                                                                     )}
                                                                 </span>
-                                                                <span>{option}</span>
+                                                                <span className={showResults && typeof option === 'string' ? "inline-flex items-end" : ""}>
+                                                                    {showResults && typeof option === 'string' ? (
+                                                                        <KanjiAnnotated html={option} showAnnotations={true} className="text-lg md:text-xl" />
+                                                                    ) : (
+                                                                        option
+                                                                    )}
+                                                                </span>
                                                             </div>
                                                         </label>
                                                     );
@@ -249,7 +205,13 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
                                             {showResults && q.explanation && (
                                                 <div className="mt-4 p-4 bg-gray-50 border border-black text-black">
                                                     <span className="font-bold block mb-1">解説 (Giải thích):</span>
-                                                    {q.explanation}
+                                                    <div className="text-sm md:text-base leading-[2.8] space-y-1">
+                                                        <KanjiAnnotated
+                                                            html={q.explanation}
+                                                            showAnnotations={true}
+                                                            className="text-sm md:text-base"
+                                                        />
+                                                    </div>
                                                 </div>
                                             )}
                                         </div>

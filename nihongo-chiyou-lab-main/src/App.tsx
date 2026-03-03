@@ -29,8 +29,6 @@ import Counters from "./pages/Counters";
 import GrammarReview from "./pages/GrammarReview";
 import VocabularyList from "./pages/VocabularyList";
 import LessonDetail from "./pages/LessonDetail";
-import Irodori from "./pages/Irodori";
-import IrodoriLessonDetail from "./pages/IrodoriLessonDetail";
 import JlptExam from "./pages/JlptExam";
 import JlptLevelDetail from "./pages/JlptLevelDetail";
 import JlptPractice from "./pages/JlptPractice";
@@ -73,8 +71,6 @@ const App = () => (
           <Route path="/minna/grammar-review" element={<GrammarReview />} />
           <Route path="/minna/vocabulary" element={<VocabularyList />} />
           <Route path="/minna/:id" element={<LessonDetail />} />
-          <Route path="/irodori" element={<Irodori />} />
-          <Route path="/irodori/:level/:id" element={<IrodoriLessonDetail />} />
           <Route path="/jlpt-n5" element={<JlptExam />} />
           <Route path="/jlpt/:level" element={<JlptLevelDetail />} />
           <Route path="/jlpt-practice" element={<JlptPractice />} />
