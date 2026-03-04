@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 const JlptExamRunner = () => {
-  const { level, year, session } = useParams();
+  const { level, year, session, mode } = useParams();
   const navigate = useNavigate();
   const [isExamFinished, setIsExamFinished] = useState(false);
 
@@ -15,7 +15,8 @@ const JlptExamRunner = () => {
     ? "Luyện tập"
     : (session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12");
 
-  const isRealJLPTSession = (session === "july" && year === "2025") || session === "practice-n5-kanji-1";
+  const isSpecialPractice = session === "practice-n5-kanji-1" || (session && session.includes("jlpt-n4-vocabulary"));
+  const isRealJLPTSession = (session === "july" && year === "2025") || isSpecialPractice;
 
   return (
     <Layout
@@ -52,6 +53,7 @@ const JlptExamRunner = () => {
         session={session as any}
         isPractice={isPractice}
         practiceId={isPractice ? session : undefined}
+        mode={mode as any}
         onFinish={() => setIsExamFinished(true)}
       />
     </Layout>

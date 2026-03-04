@@ -73,8 +73,8 @@ const App = () => (
           <Route path="/minna/:id" element={<LessonDetail />} />
           <Route path="/jlpt-n5" element={<JlptExam />} />
           <Route path="/jlpt/:level" element={<JlptLevelDetail />} />
-          <Route path="/jlpt-practice" element={<JlptPractice />} />
-          <Route path="/jlpt-exam/:level/:year/:session" element={<JlptExamRunner />} />
+          <Route path="/jlpt-practice/:level?/:category?" element={<JlptPractice />} />
+          <Route path="/jlpt-exam/:level/:year/:session/:mode?" element={<JlptExamRunner />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

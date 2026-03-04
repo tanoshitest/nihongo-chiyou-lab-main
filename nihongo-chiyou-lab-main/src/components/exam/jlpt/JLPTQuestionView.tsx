@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import JLPTImageGrid from './JLPTImageGrid';
 import { JLPTMondai } from '@/data/jlptN5_Real2025';
 import KanjiAnnotated from './KanjiAnnotated';
+import KanjiBreakdown from './KanjiBreakdown';
 
 export interface JLPTQuestionViewProps {
     mondaiList: JLPTMondai[];
@@ -213,6 +214,14 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
                                                         />
                                                     </div>
                                                 </div>
+                                            )}
+
+                                            {/* Kanji Breakdown (Result Mode) */}
+                                            {showResults && (
+                                                <KanjiBreakdown
+                                                    questionText={typeof q.questionText === 'string' ? q.questionText : ''}
+                                                    options={q.options}
+                                                />
                                             )}
                                         </div>
                                     </div>

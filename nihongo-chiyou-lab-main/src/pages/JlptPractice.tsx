@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -21,19 +21,61 @@ const levels = [
 
 
 
+const categoryToTab: Record<string, string> = {
+  "kanji": "kanji",
+  "vocab": "vocab",
+  "grammar": "grammar",
+  "reading": "reading",
+  "listening": "listening"
+};
+
+const tabToCategory: Record<string, string> = {
+  "kanji": "kanji",
+  "vocab": "vocab",
+  "grammar": "grammar",
+  "reading": "reading",
+  "listening": "listening"
+};
+
 const JlptPractice = () => {
   const navigate = useNavigate();
+  const { level: urlLevel, category: urlCategory } = useParams();
   const ITEMS_PER_PAGE = 5;
-  const [selectedLevel, setSelectedLevel] = useState("N5");
+  const [selectedLevel, setSelectedLevel] = useState(urlLevel || "N5");
+  const [activeTab, setActiveTab] = useState(urlCategory ? (categoryToTab[urlCategory] || "kanji") : "kanji");
   const [currentPage, setCurrentPage] = useState(1);
+
+  // Sync state with URL when it changes (e.g. back button)
+  useEffect(() => {
+    if (urlLevel && urlLevel !== selectedLevel) {
+      setSelectedLevel(urlLevel);
+      setCurrentPage(1);
+    }
+    if (urlCategory) {
+      const tab = categoryToTab[urlCategory] || "kanji";
+      if (tab !== activeTab) {
+        setActiveTab(tab);
+        setCurrentPage(1);
+      }
+    } else if (activeTab !== "kanji" && !urlCategory) {
+      // Default to kanji if no category in URL
+      setActiveTab("kanji");
+    }
+  }, [urlLevel, urlCategory]);
 
   const setSelectedExamLevel = (level: string) => {
     setSelectedLevel(level);
     setCurrentPage(1); // Reset to first page when level changes
+    const categorySegment = tabToCategory[activeTab] || activeTab;
+    navigate(`/jlpt-practice/${level}/${categorySegment}`);
   };
 
-  const handleTabChange = () => {
+  const handleTabChange = (tab: string) => {
+    setActiveTab(tab);
     setCurrentPage(1); // Reset to first page when tab changes
+    const levelSegment = selectedLevel || "N5";
+    const categorySegment = tabToCategory[tab] || tab;
+    navigate(`/jlpt-practice/${levelSegment}/${categorySegment}`);
   };
 
   // Filter exams based on selected level
@@ -64,59 +106,76 @@ const JlptPractice = () => {
     return (
       <div className="space-y-3">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-3">
-          {currentExams.map((exam) => (
-            <Card
-              key={exam.id}
-              className="hover:shadow-md transition-all hover:border-black/30 cursor-pointer group shadow-sm bg-card border-black/10"
-              onClick={() => handleStartExam(exam)}
-            >
-              <CardContent className="p-3">
-                <div className="flex flex-col md:flex-row md:items-center gap-3">
-                  {/* Icon based on category */}
-                  <div className={cn(
-                    "w-10 h-10 rounded-md flex items-center justify-center font-bold text-lg shrink-0 border bg-gray-100 text-black border-black/20",
-                  )}>
-                    {exam.category === "kanji" && <span>漢</span>}
-                    {exam.category === "vocabulary" && <span>字</span>}
-                    {exam.category === "grammar" && <span>文</span>}
-                    {exam.category === "reading" && <BookOpen className="w-5 h-5 text-black" />}
-                    {exam.category === "listening" && <Headphones className="w-5 h-5 text-black" />}
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-black text-sm mb-1 group-hover:underline transition-colors leading-tight">
-                      {exam.title}
-                    </h3>
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-black">
-                      <span className="flex items-center gap-1">
-                        <FileText className="w-3 h-3" />
-                        {exam.totalQuestions} câu
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
-                        {exam.duration}p
-                      </span>
-
+          {currentExams.map((exam) => {
+            const isUpdated = ["jlpt-n4-vocabulary-1", "jlpt-n4-vocabulary-2", "jlpt-n4-vocabulary-3", "jlpt-n4-vocabulary-4"].includes(exam.id);
+            return (
+              <Card
+                key={exam.id}
+                className={cn(
+                  "hover:shadow-md transition-all hover:border-black/30 cursor-pointer group shadow-sm bg-card border-black/10",
+                  isUpdated && "border-black/30 bg-gray-50/50"
+                )}
+                onClick={() => handleStartExam(exam)}
+              >
+                <CardContent className="p-3">
+                  <div className="flex flex-col md:flex-row md:items-center gap-3">
+                    {/* Icon based on category */}
+                    <div className={cn(
+                      "w-10 h-10 rounded-md flex items-center justify-center font-bold text-lg shrink-0 border bg-gray-100 text-black border-black/20",
+                      isUpdated && "border-black/40 bg-white"
+                    )}>
+                      {exam.category === "kanji" && <span>漢</span>}
+                      {exam.category === "vocabulary" && <span>字</span>}
+                      {exam.category === "grammar" && <span>文</span>}
+                      {exam.category === "reading" && <BookOpen className="w-5 h-5 text-black" />}
+                      {exam.category === "listening" && <Headphones className="w-5 h-5 text-black" />}
                     </div>
-                  </div>
 
-                  {/* Action Button */}
-                  <Button
-                    size="sm"
-                    className="shrink-0 gap-2 h-8 text-xs px-3 bg-black text-white hover:bg-gray-800"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      handleStartExam(exam);
-                    }}
-                  >
-                    <Play className="w-3 h-3" />
-                    Làm bài
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                    {/* Content */}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1">
+                        <h3 className={cn(
+                          "font-semibold text-black text-sm group-hover:underline transition-colors leading-tight",
+                          isUpdated && "font-bold text-base"
+                        )}>
+                          {exam.title}
+                        </h3>
+                        {isUpdated && (
+                          <Badge variant="outline" className="h-5 px-1.5 text-[10px] bg-black text-white border-none font-bold uppercase tracking-wider animate-pulse">
+                            Mới
+                          </Badge>
+                        )}
+                      </div>
+                      <div className="flex flex-wrap items-center gap-3 text-xs text-black">
+                        <span className="flex items-center gap-1">
+                          <FileText className="w-3 h-3" />
+                          {exam.totalQuestions} câu
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="w-3 h-3" />
+                          {exam.duration}p
+                        </span>
+
+                      </div>
+                    </div>
+
+                    {/* Action Button */}
+                    <Button
+                      size="sm"
+                      className="shrink-0 gap-2 h-8 text-xs px-3 bg-black text-white hover:bg-gray-800"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleStartExam(exam);
+                      }}
+                    >
+                      <Play className="w-3 h-3" />
+                      Làm bài
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
 
         {/* Pagination Controls */}
@@ -192,7 +251,7 @@ const JlptPractice = () => {
           </div>
 
           {/* Tabs */}
-          <Tabs defaultValue="kanji" className="space-y-6" onValueChange={handleTabChange}>
+          <Tabs value={activeTab} className="space-y-6" onValueChange={handleTabChange}>
             <TabsList className="grid w-full grid-cols-5 h-auto p-1 bg-gray-100">
               <TabsTrigger value="kanji" className="py-2.5 text-gray-600 data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow-sm data-[state=active]:font-semibold">
                 Kanji

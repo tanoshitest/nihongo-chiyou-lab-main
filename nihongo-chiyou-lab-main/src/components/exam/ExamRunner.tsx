@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
@@ -54,6 +55,9 @@ import JLPTSectionIntro from "@/components/exam/jlpt/JLPTSectionIntro";
 import JLPTQuestionView from "@/components/exam/jlpt/JLPTQuestionView";
 import { PRACTICE_KANJI_LESSON_1 } from "@/data/practice/kanjiLesson1";
 import { PRACTICE_VOCAB_N4_1 } from "@/data/practice/jlptN4Vocab1";
+import { PRACTICE_VOCAB_N4_2 } from "@/data/practice/jlptN4Vocab2";
+import { PRACTICE_VOCAB_N4_3 } from "@/data/practice/jlptN4Vocab3";
+import { PRACTICE_VOCAB_N4_4 } from "@/data/practice/jlptN4Vocab4";
 
 type ExamState =
   | "intro"
@@ -81,17 +85,19 @@ interface ExamRunnerProps {
   session?: "july" | "december";
   isPractice?: boolean;
   practiceId?: string;
+  mode?: "result" | "review";
   onFinish?: () => void;
 }
 
-export function ExamRunner({ level = "N5", year = 2024, session = "july", isPractice = false, practiceId, onFinish }: ExamRunnerProps) {
+export function ExamRunner({ level = "N5", year = 2024, session = "july", isPractice = false, practiceId, mode, onFinish }: ExamRunnerProps) {
+  const navigate = useNavigate();
   const sessionLabel = isPractice ? "Luyện tập" : (session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12");
-  const [examState, setExamState] = useState<ExamState>("intro");
+  const [examState, setExamState] = useState<ExamState>(isPractice ? "section1" : "intro");
   const [examData, setExamData] = useState<ExamData | null>(null);
-  const isSpecialPractice = practiceId === "practice-n5-kanji-1" || practiceId === "jlpt-n4-vocabulary-1";
+  const isSpecialPractice = practiceId === "practice-n5-kanji-1" || (practiceId && practiceId.includes("jlpt-n4-vocabulary"));
 
   // ... (rest of state items are same)
-  const [timeLeft, setTimeLeft] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(isPractice ? N5_EXAM_STRUCTURE.sections[0].timeLimit : 0);
   const [answers, setAnswers] = useState<SectionAnswers>({
     section1: {},
     section2: {},
@@ -106,29 +112,40 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
 
   // Initialize exam data
   useEffect(() => {
-    // Check for specific practice exams
-    if (practiceId === "practice-n5-kanji-1" || practiceId === "jlpt-n4-vocabulary-1") {
-      // Create a mock ExamData structure where section1 contains our practice questions
-      setExamData({
-        section1: [], // Not used for this mode as we use JLPTMondai
-        section2: [],
-        section3: []
-      } as any);
+    // For practice tests, we might already be in section1
+    if (isPractice) {
+      if (isSpecialPractice) {
+        setExamData({
+          section1: [],
+          section2: [],
+          section3: []
+        } as any);
+      } else {
+        setExamData(generateMockExamData());
+      }
       return;
     }
 
-    // If practice mode, we might want to load different structure or generic mock for now
-    // For this demo, we will use the standard generateMockExamData but we should ideally custom-tailor it
-    // In a real app, fetch(practiceId)
     setExamData(generateMockExamData());
-  }, [practiceId]); // Add practiceId dependency
+  }, [practiceId, isPractice]);
 
   // Calculate total time for all sections
   const getTotalTime = () => {
     return N5_EXAM_STRUCTURE.sections.reduce((acc, s) => acc + s.timeLimit, 0);
   };
 
-  // Get current section index (0, 1, 2)
+  // Sync examState with URL mode
+  useEffect(() => {
+    if (mode === "result" && examState !== "final_result") {
+      setExamState("final_result");
+    } else if (mode === "review" && examState !== "review") {
+      setExamState("review");
+    } else if (!mode && (examState === "final_result" || examState === "review")) {
+      // If we go back from result to exam
+      setExamState(isPractice ? "section1" : "intro");
+    }
+  }, [mode]);
+
   const getCurrentSectionIndex = () => {
     if (examState === "section1") return 0;
     if (examState === "section2") return 1;
@@ -201,7 +218,10 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
         const dataToUse =
           practiceId === "practice-n5-kanji-1" ? PRACTICE_KANJI_LESSON_1 :
             practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 :
-              jlptVocabData;
+              practiceId === "jlpt-n4-vocabulary-2" ? PRACTICE_VOCAB_N4_2 :
+                practiceId === "jlpt-n4-vocabulary-3" ? PRACTICE_VOCAB_N4_3 :
+                  practiceId === "jlpt-n4-vocabulary-4" ? PRACTICE_VOCAB_N4_4 :
+                    jlptVocabData;
         raw = calculateJLPTSectionScore(answers.section1, dataToUse);
         // Total Questions:
         const totalQ = dataToUse.reduce((acc, m) => acc + m.questions.length, 0);
@@ -211,8 +231,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
         setScores(prev => ({ ...prev, section1: scaled }));
         // Go directly to next section intro OR finish if practice
         if (isSpecialPractice) {
-          setExamState("final_result");
           if (onFinish) onFinish();
+          navigate("./result");
         } else {
           setExamState("section2_intro");
         }
@@ -233,10 +253,10 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
         setRawScores(prev => ({ ...prev, section3: raw }));
         setScores(prev => ({ ...prev, section3: scaled }));
         // Go directly to final result
-        setExamState("final_result");
         if (onFinish) onFinish();
+        navigate("./result");
+        return;
       }
-      return;
     }
 
     // Default Scoring
@@ -248,8 +268,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
       setRawScores(prev => ({ ...prev, section1: raw }));
       setScores(prev => ({ ...prev, section1: scaled }));
       if (isSpecialPractice) {
-        setExamState("final_result");
         if (onFinish) onFinish();
+        navigate("./result");
       } else {
         setExamState("result1");
       }
@@ -266,7 +286,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
       setScores(prev => ({ ...prev, section3: scaled }));
       setExamState("result3");
     }
-  }, [examData, answers, examState, session, year, onFinish]);
+  }, [examData, answers, examState, session, year, onFinish, navigate]);
 
   // Auto-start for practice exams
   useEffect(() => {
@@ -298,24 +318,24 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
     } else if (examState === "result2") {
       setExamState("section3_intro");
     } else if (examState === "result3") {
-      setExamState("final_result");
       if (onFinish) onFinish();
+      navigate("./result");
     }
-  }, [examState, onFinish]);
+  }, [examState, onFinish, navigate]);
 
   const handleRestartExam = () => {
-    setExamState("intro");
     setAnswers({ section1: {}, section2: {}, section3: {} });
     setScores({ section1: 0, section2: 0, section3: 0 });
     setRawScores({ section1: 0, section2: 0, section3: 0 });
     setCurrentQuestionIndex(0);
     setExamData(generateMockExamData());
+    navigate(".."); // Go back to exam view (up one level from /result)
   };
 
   /* -----------------------------------------------------------
-   * REAL JLPT 2025 & PRACTICE RENDER LOGIC
+   * REAL JLPT 2025 RENDER LOGIC
    * ----------------------------------------------------------- */
-  const isRealJLPT = (session === "july" && year === 2025) || isSpecialPractice;
+  const isRealJLPT = (session === "july" && year === 2025) || isPractice;
   if (isRealJLPT) {
     // 1. COVER PAGE
     if (examState === "intro") {
@@ -326,7 +346,10 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
           sectionName={
             practiceId === "practice-n5-kanji-1" ? "Luyện tập Kanji (Bài 1)" :
               practiceId === "jlpt-n4-vocabulary-1" ? "Luyện tập Từ vựng N4 (Đề 1)" :
-                "言語知識（文字・語彙）"
+                practiceId === "jlpt-n4-vocabulary-2" ? "Luyện tập Từ vựng N4 (Đề 2)" :
+                  practiceId === "jlpt-n4-vocabulary-3" ? "Luyện tập Từ vựng N4 (Đề 3)" :
+                    practiceId === "jlpt-n4-vocabulary-4" ? "Luyện tập Từ vựng N4 (Đề 4)" :
+                      "言語知識（文字・語彙）"
           }
         />
       );
@@ -373,9 +396,9 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
             {/* Header with Timer */}
             <div className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-black z-50 flex items-center justify-between px-4 lg:px-8">
               <div className="font-bold text-xl font-sans tracking-wide flex items-center gap-2">
-                <span>{practiceId === "jlpt-n4-vocabulary-1" ? "JLPT N4" : "JLPT N5"}</span>
+                <span>{(practiceId === "jlpt-n4-vocabulary-1" || practiceId === "jlpt-n4-vocabulary-2" || practiceId === "jlpt-n4-vocabulary-3" || practiceId === "jlpt-n4-vocabulary-4") ? "JLPT N4" : "JLPT N5"}</span>
                 <span>-</span>
-                <span>{practiceId === "jlpt-n4-vocabulary-1" ? "Luyện tập Từ vựng" : "Luyện tập Kanji"}</span>
+                <span>{(practiceId === "jlpt-n4-vocabulary-1" || practiceId === "jlpt-n4-vocabulary-2" || practiceId === "jlpt-n4-vocabulary-3" || practiceId === "jlpt-n4-vocabulary-4") ? "Luyện tập Từ vựng" : "Luyện tập Kanji"}</span>
               </div>
 
               <div className="flex items-center gap-4">
@@ -410,7 +433,13 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
 
             <div className="pt-20">
               <JLPTQuestionView
-                mondaiList={practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 : PRACTICE_KANJI_LESSON_1}
+                mondaiList={
+                  practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 :
+                    practiceId === "jlpt-n4-vocabulary-2" ? PRACTICE_VOCAB_N4_2 :
+                      practiceId === "jlpt-n4-vocabulary-3" ? PRACTICE_VOCAB_N4_3 :
+                        practiceId === "jlpt-n4-vocabulary-4" ? PRACTICE_VOCAB_N4_4 :
+                          PRACTICE_KANJI_LESSON_1
+                }
                 answers={answers.section1}
                 onAnswer={(qId, val) => handleAnswerChange(qId, val)}
                 hideQuestionId={false}
@@ -629,7 +658,10 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                               const dataToUse =
                                 practiceId === "practice-n5-kanji-1" ? PRACTICE_KANJI_LESSON_1 :
                                   practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 :
-                                    jlptVocabData;
+                                    practiceId === "jlpt-n4-vocabulary-2" ? PRACTICE_VOCAB_N4_2 :
+                                      practiceId === "jlpt-n4-vocabulary-3" ? PRACTICE_VOCAB_N4_3 :
+                                        practiceId === "jlpt-n4-vocabulary-4" ? PRACTICE_VOCAB_N4_4 :
+                                          jlptVocabData;
                               const correct = dataToUse.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer;
                               return String(answers.section1[Number(k)]) === String(correct);
                             }).length
@@ -637,7 +669,10 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                           {
                             (practiceId === "practice-n5-kanji-1" ? PRACTICE_KANJI_LESSON_1 :
                               practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 :
-                                jlptVocabData).reduce((acc, m) => acc + m.questions.length, 0)
+                                practiceId === "jlpt-n4-vocabulary-2" ? PRACTICE_VOCAB_N4_2 :
+                                  practiceId === "jlpt-n4-vocabulary-3" ? PRACTICE_VOCAB_N4_3 :
+                                    practiceId === "jlpt-n4-vocabulary-4" ? PRACTICE_VOCAB_N4_4 :
+                                      jlptVocabData).reduce((acc, m) => acc + m.questions.length, 0)
                           } câu đúng
                         </div>
                       </div>
@@ -704,11 +739,16 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
               {isSpecialPractice ? (
                 // For Special Practice: Show only Section 1 Review directly
                 <div className="space-y-8">
-                  <div className="border-b border-black mb-6 pb-2">
-                    <h2 className="text-xl font-bold">Xem lại đáp án</h2>
+                  <div className="mb-6">
                   </div>
                   <JLPTQuestionView
-                    mondaiList={practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 : PRACTICE_KANJI_LESSON_1}
+                    mondaiList={
+                      practiceId === "jlpt-n4-vocabulary-1" ? PRACTICE_VOCAB_N4_1 :
+                        practiceId === "jlpt-n4-vocabulary-2" ? PRACTICE_VOCAB_N4_2 :
+                          practiceId === "jlpt-n4-vocabulary-3" ? PRACTICE_VOCAB_N4_3 :
+                            practiceId === "jlpt-n4-vocabulary-4" ? PRACTICE_VOCAB_N4_4 :
+                              PRACTICE_KANJI_LESSON_1
+                    }
                     answers={answers.section1}
                     onAnswer={() => { }}
                     hideQuestionId={false}
@@ -839,7 +879,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
 
                 <div className="flex gap-3">
                   <Button
-                    onClick={() => setExamState("review")}
+                    onClick={() => navigate("../review")}
                     variant="outline"
                     className="flex-1"
                     size="lg"
@@ -871,8 +911,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
         <div className="min-h-screen bg-background py-8 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold">Xem lại đáp án & Giải thích</h2>
-              <Button onClick={() => setExamState("final_result")} variant="outline">
+              <h2 className="text-2xl font-bold">Giải thích</h2>
+              <Button onClick={() => navigate("../result")} variant="outline">
                 Quay lại kết quả
               </Button>
             </div>

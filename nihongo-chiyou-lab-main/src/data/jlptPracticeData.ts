@@ -247,9 +247,45 @@ export const JLPT_PRACTICE_EXAMS: PracticeExam[] = [
     })),
 
     // --- N4 VOCABULARY ---
-    ...Array.from({ length: 50 }, (_, i) => ({
-        id: generateId("N4", "vocabulary", i + 1),
-        title: `Đề luyện tập N4 - Từ vựng ${i + 1}`,
+    {
+        id: generateId("N4", "vocabulary", 1),
+        title: "Đề luyện tập N4 - Từ vựng 1",
+        level: "N4",
+        category: "vocabulary",
+        totalQuestions: 100,
+        duration: 25,
+        difficulty: "Dễ"
+    },
+    {
+        id: generateId("N4", "vocabulary", 2),
+        title: "Đề luyện tập N4 - Từ vựng 2",
+        level: "N4",
+        category: "vocabulary",
+        totalQuestions: 100,
+        duration: 25,
+        difficulty: "Dễ"
+    },
+    {
+        id: generateId("N4", "vocabulary", 3),
+        title: "Đề luyện tập N4 - Từ vựng 3",
+        level: "N4",
+        category: "vocabulary",
+        totalQuestions: 100,
+        duration: 25,
+        difficulty: "Dễ"
+    },
+    {
+        id: generateId("N4", "vocabulary", 4),
+        title: "Đề luyện tập N4 - Từ vựng 4",
+        level: "N4",
+        category: "vocabulary",
+        totalQuestions: 108,
+        duration: 25,
+        difficulty: "Dễ"
+    },
+    ...Array.from({ length: 46 }, (_, i) => ({
+        id: generateId("N4", "vocabulary", i + 5),
+        title: `Đề luyện tập N4 - Từ vựng ${i + 5}`,
         level: "N4" as const,
         category: "vocabulary" as const,
         totalQuestions: 30,
