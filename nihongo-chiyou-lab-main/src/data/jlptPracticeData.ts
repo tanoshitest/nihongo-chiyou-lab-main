@@ -50,5 +50,15 @@ export const JLPT_PRACTICE_EXAMS: PracticeExam[] = [
         duration: 25,
         difficulty: "Dễ"
     },
+    // --- N4 KANJI ---
+    {
+        id: "jlpt-n4-kanji-1",
+        title: "Luyện tập N4 - Kanji 1 (Bài 26)",
+        level: "N4",
+        category: "kanji",
+        totalQuestions: 150,
+        duration: 45,
+        difficulty: "Trung bình"
+    },
 ];
 

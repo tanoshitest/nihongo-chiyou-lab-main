@@ -58,6 +58,7 @@ import { PRACTICE_VOCAB_N4_1 } from "@/data/practice/jlptN4Vocab1";
 import { PRACTICE_VOCAB_N4_2 } from "@/data/practice/jlptN4Vocab2";
 import { PRACTICE_VOCAB_N4_3 } from "@/data/practice/jlptN4Vocab3";
 import { PRACTICE_VOCAB_N4_4 } from "@/data/practice/jlptN4Vocab4";
+import { PRACTICE_KANJI_N4_1 } from "@/data/practice/jlptN4Kanji1";
 
 type ExamState =
   | "intro"
@@ -94,7 +95,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
   const sessionLabel = isPractice ? "Luyện tập" : (session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12");
   const [examState, setExamState] = useState<ExamState>(isPractice ? "section1" : "intro");
   const [examData, setExamData] = useState<ExamData | null>(null);
-  const isSpecialPractice = practiceId === "practice-n5-kanji-1" || (practiceId && practiceId.includes("jlpt-n4-vocabulary"));
+  const isSpecialPractice = practiceId === "practice-n5-kanji-1" || (practiceId && (practiceId.includes("jlpt-n4-vocabulary") || practiceId.includes("jlpt-n4-kanji")));
 
   // ... (rest of state items are same)
   const [timeLeft, setTimeLeft] = useState(isPractice ? N5_EXAM_STRUCTURE.sections[0].timeLimit : 0);
@@ -221,7 +222,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
               practiceId === "jlpt-n4-vocabulary-2" ? PRACTICE_VOCAB_N4_2 :
                 practiceId === "jlpt-n4-vocabulary-3" ? PRACTICE_VOCAB_N4_3 :
                   practiceId === "jlpt-n4-vocabulary-4" ? PRACTICE_VOCAB_N4_4 :
-                    jlptVocabData;
+                    practiceId === "jlpt-n4-kanji-1" ? PRACTICE_KANJI_N4_1 :
+                      jlptVocabData;
         raw = calculateJLPTSectionScore(answers.section1, dataToUse);
         // Total Questions:
         const totalQ = dataToUse.reduce((acc, m) => acc + m.questions.length, 0);
@@ -349,7 +351,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                 practiceId === "jlpt-n4-vocabulary-2" ? "Luyện tập Từ vựng N4 (Đề 2)" :
                   practiceId === "jlpt-n4-vocabulary-3" ? "Luyện tập Từ vựng N4 (Đề 3)" :
                     practiceId === "jlpt-n4-vocabulary-4" ? "Luyện tập Từ vựng N4 (Đề 4)" :
-                      "言語知識（文字・語彙）"
+                      practiceId === "jlpt-n4-kanji-1" ? "Luyện tập Kanji N4 (Bài 26)" :
+                        "言語知識（文字・語彙）"
           }
         />
       );
@@ -396,9 +399,9 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
             {/* Header with Timer */}
             <div className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-black z-50 flex items-center justify-between px-4 lg:px-8">
               <div className="font-bold text-xl font-sans tracking-wide flex items-center gap-2">
-                <span>{(practiceId === "jlpt-n4-vocabulary-1" || practiceId === "jlpt-n4-vocabulary-2" || practiceId === "jlpt-n4-vocabulary-3" || practiceId === "jlpt-n4-vocabulary-4") ? "JLPT N4" : "JLPT N5"}</span>
+                <span>{(practiceId && (practiceId.includes("jlpt-n4-vocabulary") || practiceId.includes("jlpt-n4-kanji"))) ? "JLPT N4" : "JLPT N5"}</span>
                 <span>-</span>
-                <span>{(practiceId === "jlpt-n4-vocabulary-1" || practiceId === "jlpt-n4-vocabulary-2" || practiceId === "jlpt-n4-vocabulary-3" || practiceId === "jlpt-n4-vocabulary-4") ? "Luyện tập Từ vựng" : "Luyện tập Kanji"}</span>
+                <span>{(practiceId && practiceId.includes("jlpt-n4-vocabulary")) ? "Luyện tập Từ vựng" : (practiceId && practiceId.includes("jlpt-n4-kanji")) ? "Luyện tập Kanji" : "Luyện tập Kanji"}</span>
               </div>
 
               <div className="flex items-center gap-4">
@@ -438,7 +441,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                     practiceId === "jlpt-n4-vocabulary-2" ? PRACTICE_VOCAB_N4_2 :
                       practiceId === "jlpt-n4-vocabulary-3" ? PRACTICE_VOCAB_N4_3 :
                         practiceId === "jlpt-n4-vocabulary-4" ? PRACTICE_VOCAB_N4_4 :
-                          PRACTICE_KANJI_LESSON_1
+                          practiceId === "jlpt-n4-kanji-1" ? PRACTICE_KANJI_N4_1 :
+                            PRACTICE_KANJI_LESSON_1
                 }
                 answers={answers.section1}
                 onAnswer={(qId, val) => handleAnswerChange(qId, val)}
@@ -661,7 +665,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                                     practiceId === "jlpt-n4-vocabulary-2" ? PRACTICE_VOCAB_N4_2 :
                                       practiceId === "jlpt-n4-vocabulary-3" ? PRACTICE_VOCAB_N4_3 :
                                         practiceId === "jlpt-n4-vocabulary-4" ? PRACTICE_VOCAB_N4_4 :
-                                          jlptVocabData;
+                                          practiceId === "jlpt-n4-kanji-1" ? PRACTICE_KANJI_N4_1 :
+                                            jlptVocabData;
                               const correct = dataToUse.flatMap(m => m.questions).find(q => q.id === Number(k))?.correctAnswer;
                               return String(answers.section1[Number(k)]) === String(correct);
                             }).length
@@ -672,7 +677,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                                 practiceId === "jlpt-n4-vocabulary-2" ? PRACTICE_VOCAB_N4_2 :
                                   practiceId === "jlpt-n4-vocabulary-3" ? PRACTICE_VOCAB_N4_3 :
                                     practiceId === "jlpt-n4-vocabulary-4" ? PRACTICE_VOCAB_N4_4 :
-                                      jlptVocabData).reduce((acc, m) => acc + m.questions.length, 0)
+                                      practiceId === "jlpt-n4-kanji-1" ? PRACTICE_KANJI_N4_1 :
+                                        jlptVocabData).reduce((acc, m) => acc + m.questions.length, 0)
                           } câu đúng
                         </div>
                       </div>
@@ -747,7 +753,8 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                         practiceId === "jlpt-n4-vocabulary-2" ? PRACTICE_VOCAB_N4_2 :
                           practiceId === "jlpt-n4-vocabulary-3" ? PRACTICE_VOCAB_N4_3 :
                             practiceId === "jlpt-n4-vocabulary-4" ? PRACTICE_VOCAB_N4_4 :
-                              PRACTICE_KANJI_LESSON_1
+                              practiceId === "jlpt-n4-kanji-1" ? PRACTICE_KANJI_N4_1 :
+                                PRACTICE_KANJI_LESSON_1
                     }
                     answers={answers.section1}
                     onAnswer={() => { }}
