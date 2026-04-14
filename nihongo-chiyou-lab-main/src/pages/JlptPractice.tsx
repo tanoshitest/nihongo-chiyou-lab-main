@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Clock, FileText, Play, Filter, BookOpen, Headphones, ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { JLPT_PRACTICE_EXAMS, PracticeExam } from "@/data/jlptPracticeData";
+import KanjiAnnotated from "@/components/exam/jlpt/KanjiAnnotated";
 
 const levels = [
   { value: "N5", label: "N5 - Sơ cấp 1" },
@@ -134,12 +135,14 @@ const JlptPractice = () => {
                     {/* Content */}
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        <h3 className={cn(
-                          "font-semibold text-black text-sm group-hover:underline transition-colors leading-tight",
-                          isUpdated && "font-bold text-base"
-                        )}>
-                          {exam.title}
-                        </h3>
+                          <KanjiAnnotated 
+                              html={exam.title} 
+                              showAnnotations={exam.level === 'N4' || exam.level === 'N5'} 
+                              className={cn(
+                                "font-semibold text-black text-sm group-hover:underline transition-colors leading-tight",
+                                isUpdated && "font-bold text-base"
+                              )} 
+                          />
                         {isUpdated && (
                           <Badge variant="outline" className="h-5 px-1.5 text-[10px] bg-black text-white border-none font-bold uppercase tracking-wider animate-pulse">
                             Mới
