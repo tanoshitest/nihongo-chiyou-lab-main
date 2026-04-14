@@ -1,4 +1,4 @@
-﻿
+
 import React, { useRef } from 'react';
 import { cn } from "@/lib/utils";
 import JLPTImageGrid from './JLPTImageGrid';
@@ -55,9 +55,9 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
                                             )}>
                                                 {/* Number */}
                                                 {!hideQuestionId ? (
-                                                    <span>{qIdx + 1}</span>
+                                                    <span>{q.id}</span>
                                                 ) : (
-                                                    <span className="text-sm">問{qIdx + 1}</span>
+                                                    <span className="text-sm">問{q.id}</span>
                                                 )}
 
                                                 {/* Status Indicator (Check/X) */}
