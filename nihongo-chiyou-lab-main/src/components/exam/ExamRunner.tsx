@@ -447,6 +447,7 @@ export function ExamRunner({ level = "N5", year = 2024, session = "july", isPrac
                 answers={answers.section1}
                 onAnswer={(qId, val) => handleAnswerChange(qId, val)}
                 hideQuestionId={false}
+                showAnnotations={isSpecialPractice}
               />
             </div>
 

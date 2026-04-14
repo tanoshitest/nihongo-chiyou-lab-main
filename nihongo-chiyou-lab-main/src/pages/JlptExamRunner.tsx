@@ -15,7 +15,7 @@ const JlptExamRunner = () => {
     ? "Luyện tập"
     : (session === "july" ? "Kỳ tháng 7" : "Kỳ tháng 12");
 
-  const isSpecialPractice = session === "practice-n5-kanji-1" || (session && session.includes("jlpt-n4-vocabulary"));
+  const isSpecialPractice = session === "practice-n5-kanji-1" || (session && (session.includes("jlpt-n4-vocabulary") || session.includes("jlpt-n4-kanji")));
   const isRealJLPTSession = (session === "july" && year === "2025") || isSpecialPractice;
 
   return (
