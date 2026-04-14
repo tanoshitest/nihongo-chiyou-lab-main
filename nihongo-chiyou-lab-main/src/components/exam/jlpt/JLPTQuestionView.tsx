@@ -12,6 +12,7 @@ export interface JLPTQuestionViewProps {
     onAnswer?: (questionId: number, answer: string) => void;
     hideQuestionId?: boolean;
     showResults?: boolean;
+    showAnnotations?: boolean;
 }
 
 const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
@@ -20,6 +21,7 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
     onAnswer,
     hideQuestionId = false,
     showResults = false,
+    showAnnotations = false,
 }) => {
     // Refs for smooth scrolling if needed
     const questionRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});
@@ -81,8 +83,8 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
                                         <div className="flex-grow space-y-6 pt-1 w-full">
                                             {/* Question Text / Image */}
                                             {typeof q.questionText === 'string' ? (
-                                                showResults ? (
-                                                    // In review mode: show kanji annotations
+                                                showResults || showAnnotations ? (
+                                                    // In review mode or forced annotation mode: show kanji annotations
                                                     <div className="text-xl md:text-2xl leading-relaxed tracking-wide">
                                                         <KanjiAnnotated
                                                             html={q.questionText}
@@ -189,8 +191,8 @@ const JLPTQuestionView: React.FC<JLPTQuestionViewProps> = ({
                                                                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-[3px] border-red-400 rounded-full pointer-events-none opacity-80" />
                                                                     )}
                                                                 </span>
-                                                                <span className={showResults && typeof option === 'string' ? "inline-flex items-end" : ""}>
-                                                                    {showResults && typeof option === 'string' ? (
+                                                                <span className={(showResults || showAnnotations) && typeof option === 'string' ? "inline-flex items-end" : ""}>
+                                                                    {(showResults || showAnnotations) && typeof option === 'string' ? (
                                                                         <KanjiAnnotated html={option} showAnnotations={true} className="text-lg md:text-xl" />
                                                                     ) : (
                                                                         option
